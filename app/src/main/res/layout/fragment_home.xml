@@ -16,6 +16,7 @@
         android:orientation="horizontal">
 
         <androidx.cardview.widget.CardView
+            android:id="@+id/cv_agriculture"
             android:layout_gravity="center"
             android:layout_width="90dp"
             app:cardCornerRadius="10dp"
