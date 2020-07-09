@@ -21,7 +21,7 @@ import androidx.appcompat.widget.Toolbar;
 import org.ygba.youthgobudget.agriculture.AgricultureActivity;
 
 public class MainActivity extends AppCompatActivity {
-    private CardView cv_agriculture;
+
 
     private AppBarConfiguration mAppBarConfiguration;
 
@@ -30,7 +30,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         Toolbar toolbar = findViewById(R.id.toolbar);
-        cv_agriculture = findViewById(R.id.cv_agriculture)
+
 
 
         setSupportActionBar(toolbar);
@@ -46,13 +46,6 @@ public class MainActivity extends AppCompatActivity {
         NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment);
         NavigationUI.setupActionBarWithNavController(this, navController, mAppBarConfiguration);
         NavigationUI.setupWithNavController(navigationView, navController);
-
-        cv_agriculture.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                startActivity(new Intent(MainActivity.this, AgricultureActivity.class));
-            }
-        });
     }
 
     @Override
