@@ -1,5 +1,6 @@
 package org.ygba.youthgobudget.ui.home;
 
+import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -20,8 +21,15 @@ import org.ygba.youthgobudget.agriculture.AgricultureActivity;
 
 public class HomeFragment extends Fragment {
     private CardView cv_agriculture;
+    private OnAgricultureIconClickListener agricultureIconClickListener;
 
     private HomeViewModel homeViewModel;
+
+    @Override
+    public void onAttach(@NonNull Context context) {
+        super.onAttach(context);
+        agricultureIconClickListener = (OnAgricultureIconClickListener) context;
+    }
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
@@ -33,7 +41,9 @@ public class HomeFragment extends Fragment {
         cv_agriculture.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(HomeFragment.this, AgricultureActivity.class));
+                if (agricultureIconClickListener != null ) {
+                    agricultureIconClickListener.onAgricultureIconClick();
+                }
             }
         });
         return root;
