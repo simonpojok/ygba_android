@@ -63,12 +63,13 @@
                     <ImageView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:src="@drawable/ic_baseline_home_24"/>
+                        android:src="@drawable/ic_batch_prediction_white_50dp"/>
 
                     <TextView
+                        android:textColor="#ffffff"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Accounts" />
+                        android:text="Allocation" />
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
 
