@@ -88,12 +88,13 @@
                     <ImageView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:src="@drawable/ic_baseline_home_24"/>
+                        android:src="@drawable/ic_baseline_nature_people_24"/>
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Accounts" />
+                        android:textColor="#ffffff"
+                        android:text="Social Dev.." />
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
         </LinearLayout>
@@ -120,12 +121,13 @@
                     <ImageView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:src="@drawable/ic_baseline_home_24"/>
+                        android:src="@drawable/ic_baseline_local_drink_24"/>
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Accounts" />
+                        android:textColor="#ffffff"
+                        android:text="Water San.." />
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
 
@@ -145,12 +147,13 @@
                     <ImageView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:src="@drawable/ic_baseline_home_24"/>
+                        android:src="@drawable/ic_baseline_account_balance_24"/>
 
                     <TextView
+                        android:textColor="#ffffff"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Accounts" />
+                        android:text="Local Gov." />
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
 
@@ -169,12 +172,13 @@
                     <ImageView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:src="@drawable/ic_baseline_home_24"/>
+                        android:src="@drawable/ic_baseline_autorenew_24"/>
 
                     <TextView
+                        android:textColor="#ffffff"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Accounts" />
+                        android:text="Budget Cy.." />
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
         </LinearLayout>
@@ -201,12 +205,13 @@
                     <ImageView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:src="@drawable/ic_baseline_home_24"/>
+                        android:src="@drawable/ic_baseline_local_hospital_24"/>
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Accounts" />
+                        android:textColor="#ffffff"
+                        android:text="Hospital" />
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
 
@@ -226,12 +231,13 @@
                     <ImageView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:src="@drawable/ic_baseline_home_24"/>
+                        android:src="@drawable/ic_baseline_how_to_vote_24"/>
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Accounts" />
+                        android:textColor="#ffffff"
+                        android:text="Polls" />
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
 
@@ -250,12 +256,13 @@
                     <ImageView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:src="@drawable/ic_baseline_home_24"/>
+                        android:src="@drawable/ic_baseline_account_circle_24"/>
 
                     <TextView
+                        android:textColor="#ffffff"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Accounts" />
+                        android:text="User" />
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
         </LinearLayout>
@@ -269,74 +276,53 @@
 
             <androidx.cardview.widget.CardView
                 android:layout_gravity="center"
-                android:layout_width="90dp"
+                android:layout_width="150dp"
                 app:cardCornerRadius="10dp"
                 app:cardBackgroundColor="@color/colorPrimary"
-                android:layout_height="90dp">
+                android:layout_height="50dp">
 
                 <LinearLayout
                     android:gravity="center"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:orientation="vertical">
+                    android:orientation="horizontal">
                     <ImageView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:src="@drawable/ic_baseline_home_24"/>
+                        android:src="@drawable/ic_baseline_cloud_download_24"/>
 
                     <TextView
+                        android:textColor="#fff"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Accounts" />
+                        android:text="Download" />
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
 
             <androidx.cardview.widget.CardView
                 android:layout_gravity="center_horizontal"
-                android:layout_width="90dp"
+                android:layout_width="150dp"
                 app:cardCornerRadius="10dp"
                 android:layout_marginHorizontal="15dp"
                 app:cardBackgroundColor="@color/colorPrimary"
-                android:layout_height="90dp">
+                android:layout_height="50dp">
 
                 <LinearLayout
                     android:gravity="center"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:orientation="vertical">
+                    android:orientation="horizontal">
                     <ImageView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:src="@drawable/ic_baseline_home_24"/>
+                        android:src="@drawable/ic_baseline_cloud_upload_24"/>
 
                     <TextView
+                        android:layout_marginHorizontal="5dp"
                         android:layout_width="wrap_content"
+                        android:textColor="#fff"
                         android:layout_height="wrap_content"
-                        android:text="Accounts" />
-                </LinearLayout>
-            </androidx.cardview.widget.CardView>
-
-            <androidx.cardview.widget.CardView
-                android:layout_gravity="end"
-                android:layout_width="90dp"
-                app:cardCornerRadius="10dp"
-                app:cardBackgroundColor="@color/colorPrimary"
-                android:layout_height="90dp">
-
-                <LinearLayout
-                    android:gravity="center"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:orientation="vertical">
-                    <ImageView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:src="@drawable/ic_baseline_home_24"/>
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Accounts" />
+                        android:text="Upload" />
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
         </LinearLayout>
