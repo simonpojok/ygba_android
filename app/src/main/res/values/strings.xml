@@ -74,4 +74,11 @@
     <string name="question_3_2" >
         3.2 If yes How many were done during the quarter
     </string>
+    <string name="question_3_3" >
+        3.3 Mention the areas (Cells/Villages or parishes) where the visits were made
+    </string>
+    <string name="question_3_4" >
+        3.4 Number of farmers visited for advisory services during the partner (get contacts and address of at least
+        two farmers visited)
+    </string>
 </resources>

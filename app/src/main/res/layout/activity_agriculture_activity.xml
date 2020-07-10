@@ -711,8 +711,39 @@
             android:layout_height="wrap_content"
             android:text="@string/question_3_2"
             android:textSize="13sp"
-            android:textColor="@color/white"
-            android:textStyle="bold" />
+            android:textColor="@color/white" />
+
+        <EditText
+            android:textSize="13sp"
+            android:inputType="number"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:background="@drawable/edit_text_style"
+            android:autofillHints=""
+            tools:ignore="LabelFor" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/question_3_3"
+            android:textSize="13sp"
+            android:textColor="@color/white" />
+
+        <EditText
+            android:textSize="13sp"
+            android:inputType="number"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:background="@drawable/edit_text_style"
+            android:autofillHints=""
+            tools:ignore="LabelFor" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/question_3_4"
+            android:textSize="13sp"
+            android:textColor="@color/white" />
 
     </LinearLayout>
 
