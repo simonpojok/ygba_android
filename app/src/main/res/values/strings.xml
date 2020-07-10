@@ -41,4 +41,11 @@
     <string name="extension_service_label">Extension Service</string>
     <string name="development_label">Development</string>
     <string name="expected_approved_label">Expected / Approved</string>
+    <string name="amount_received_label">Amount Recieved</string>
+    <string name="date_received">Date Recieved</string>
+    <string name="date_withdrawn">Date withdrawn</string>
+    <string name="date_withdrawn_hint">Date Withdrawn</string>
+    <string name="date_received_hint">Date Received</string>
+    <string name="amount_received">Amount Received</string>
+    <string name="amount_expected">Amount Expected</string>
 </resources>

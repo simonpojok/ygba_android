@@ -309,70 +309,191 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginVertical="10dp"
         android:text="@string/question_2_text"
         android:textSize="18sp"
         android:textColor="@color/white"
         android:textStyle="bold" />
 
     <LinearLayout
+        android:padding="10dp"
         android:background="@drawable/white_background_rectangle"
         android:layout_marginVertical="10dp"
         android:layout_width="match_parent"
-        android:orientation="horizontal"
-        android:layout_height="wrap_content">
+        android:layout_height="match_parent"
+        android:orientation="vertical">
         <LinearLayout
-            android:layout_width="0dp"
-            android:layout_weight="2"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical">
+            android:orientation="horizontal">
             <TextView
-                android:layout_width="match_parent"
+                android:gravity="center_horizontal"
+                android:layout_width="0dp"
+                android:layout_weight="2"
                 android:layout_height="wrap_content"
-                android:text="@string/expected_approved_label"
+                android:text="@string/extension_service_label"
                 android:textSize="15sp"
-                android:height="40dp"
                 android:textColor="@color/white"
                 android:textStyle="bold" />
 
-<!--            <TextView-->
-<!--                android:layout_width="wrap_content"-->
-<!--                android:layout_height="wrap_content"-->
-<!--                android:text="@string/extension_service_label"-->
-<!--                android:textSize="15sp"-->
-<!--                android:textColor="@color/white"-->
-<!--                android:textStyle="bold" />-->
+            <TextView
+                android:gravity="center_horizontal"
+                android:layout_width="0dp"
+                android:layout_weight="4"
+                android:layout_height="wrap_content"
+                android:text="@string/extension_service_label"
+                android:textSize="15sp"
+                android:textColor="@color/white"
+                android:textStyle="bold" />
 
-<!--            <TextView-->
-<!--                android:layout_width="wrap_content"-->
-<!--                android:layout_height="wrap_content"-->
-<!--                android:text="@string/development_label"-->
-<!--                android:textSize="15sp"-->
-<!--                android:textColor="@color/white"-->
-<!--                android:textStyle="bold" />-->
-
+            <TextView
+                android:gravity="center_horizontal"
+                android:layout_width="0dp"
+                android:layout_weight="4"
+                android:layout_height="wrap_content"
+                android:text="@string/development_label"
+                android:textSize="15sp"
+                android:textColor="@color/white"
+                android:textStyle="bold" />
         </LinearLayout>
         <LinearLayout
-            android:layout_width="0dp"
-            android:layout_weight="4"
-            android:layout_height="wrap_content"
-            android:orientation="vertical">
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/expected_approved_label"
+                    android:textSize="15sp"
+                    android:height="40dp"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
 
-            <EditText
-                android:layout_width="match_parent"
-                android:layout_height="40dp"
-                android:background="@drawable/edit_text_style" />
-        </LinearLayout>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/amount_received_label"
+                    android:textSize="15sp"
+                    android:height="40dp"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
 
-        <LinearLayout
-            android:layout_width="0dp"
-            android:layout_weight="4"
-            android:layout_height="wrap_content"
-            android:orientation="vertical">
-            <EditText
-                android:layout_width="match_parent"
-                android:layout_height="40dp"
-                android:background="@drawable/edit_text_style" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/date_received"
+                    android:textSize="15sp"
+                    android:height="40dp"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
 
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/date_withdrawn"
+                    android:textSize="15sp"
+                    android:height="40dp"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="4"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <EditText
+                    android:inputType="numberDecimal"
+                    android:id="@+id/extensions_amount_expected"
+                    android:paddingHorizontal="10dp"
+                    android:hint="@string/amount_expected"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:background="@drawable/edit_text_style"
+                    android:autofillHints="" />
+
+                <EditText
+                    android:inputType="numberDecimal"
+                    android:id="@+id/extensions_amount_received"
+                    android:paddingHorizontal="10dp"
+                    android:hint="@string/amount_expected"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:background="@drawable/edit_text_style"
+                    android:autofillHints="" />
+
+                <EditText
+                    android:paddingHorizontal="10dp"
+                    android:inputType="date"
+                    android:id="@+id/extensions_date_received"
+                    android:hint="@string/date_received_hint"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:background="@drawable/edit_text_style"
+                    android:autofillHints="" />
+
+                <EditText
+                    android:paddingHorizontal="10dp"
+                    android:inputType="date"
+                    android:id="@+id/extensions_date_withdrawn"
+                    android:hint="@string/date_withdrawn_hint"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:background="@drawable/edit_text_style"
+                    android:autofillHints="" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="4"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <EditText
+                    android:inputType="numberDecimal"
+                    android:id="@+id/development_amount_expected"
+                    android:paddingHorizontal="10dp"
+                    android:hint="@string/amount_expected"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:background="@drawable/edit_text_style"
+                    android:autofillHints="" />
+
+                <EditText
+                    android:paddingHorizontal="10dp"
+                    android:id="@+id/development_amount_received"
+                    android:inputType="numberDecimal"
+                    android:hint="@string/amount_received"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:background="@drawable/edit_text_style"
+                    android:autofillHints="" />
+
+                <EditText
+                    android:paddingHorizontal="10dp"
+                    android:inputType="date"
+                    android:id="@+id/development_date_received"
+                    android:hint="@string/date_received_hint"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:background="@drawable/edit_text_style"
+                    android:autofillHints="" />
+
+                <EditText
+                    android:paddingHorizontal="10dp"
+                    android:id="@+id/development_date_withdrawn"
+                    android:inputType="date"
+                    android:hint="@string/date_withdrawn_hint"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:background="@drawable/edit_text_style"
+                    android:autofillHints="" />
+
+            </LinearLayout>
         </LinearLayout>
     </LinearLayout>
 
