@@ -252,7 +252,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/question_1_text_objective"
-            android:textSize="15sp"
+            android:textSize="18sp"
             android:textColor="@color/white" />
 
         <LinearLayout
@@ -261,18 +261,20 @@
             android:orientation="horizontal">
 
             <CheckBox
+                android:id="@+id/yesSubCountyHasExtensionWorker"
                 android:textSize="15sp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textColor="@color/white"
-                android:text="Yes"/>
+                android:text="@string/yes"/>
 
             <CheckBox
+                android:id="@+id/noSubCountyHasExtensionWorker"
                 android:textSize="15sp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textColor="@color/white"
-                android:text="No"/>
+                android:text="@string/no"/>
         </LinearLayout>
 
         <TextView
