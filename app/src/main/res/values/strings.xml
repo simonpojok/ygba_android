@@ -93,4 +93,8 @@
         4.1 Have you given any Agriculture inputs and livestock from Operation Wealth creation and
         or otherwise during the quarter?
     </string>
+    <string name="question_4_3" >
+        4.3 If none, what are the reasons for not providing farmers with agriculture inputs and
+        livestock during the quarter
+    </string>
 </resources>
