@@ -36,4 +36,8 @@
     </string>
     <string name="question_1_reason_text_edit">Please tell us why the answer is no</string>
     <string name="question_1_reason_label">If no, why?</string>
+    <string name="question_2_text">2. BUDGET INFORMATION AND TRANSPARENCY</string>
+    <string name="grants_label">Grants</string>
+    <string name="extension_service_label">Extension Service</string>
+    <string name="development_label">Development</string>
 </resources>
