@@ -680,6 +680,7 @@
             android:textColor="@color/white"/>
 
         <TextView
+            android:layout_marginTop="10dp"
             android:layout_marginBottom="10dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -732,6 +733,7 @@
             android:orientation="horizontal">
 
             <TextView
+                android:height="40dp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/question_3_4_female"
@@ -762,16 +764,17 @@
             <TextView
                 android:layout_marginEnd="10dp"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_height="40dp"
                 android:text="@string/question_3_4_male"
                 android:textSize="15sp"
                 android:textColor="@color/white" />
 
             <EditText
+                android:id="@+id/question34MaleNumber"
                 android:textColor="@color/white"
                 android:layout_marginStart="5dp"
                 android:textSize="15sp"
-                android:inputType="text"
+                android:inputType="number"
                 android:layout_width="0dp"
                 android:layout_weight="4"
                 android:layout_height="40dp"
@@ -788,12 +791,15 @@
             android:textColor="@color/white" />
 
         <EditText
+            android:id="@+id/question35Reason"
+            android:padding="5dp"
+            android:gravity="start"
             android:textColor="@color/white"
             android:layout_marginStart="5dp"
             android:textSize="15sp"
             android:inputType="textMultiLine"
-            android:layout_width="0dp"
-            android:layout_height="40dp"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
             android:background="@drawable/edit_text_style"
             android:autofillHints=""
             tools:ignore="LabelFor" />
@@ -826,28 +832,20 @@
             android:orientation="horizontal">
 
             <CheckBox
+                android:id="@+id/question41YesCheckBox"
+                android:textSize="15sp"
                 android:textColor="@color/white"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Yes"/>
 
             <CheckBox
+                android:id="@+id/question41NoCheckBox"
                 android:textColor="@color/white"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="No"/>
         </LinearLayout>
-
-
-        <EditText
-            android:layout_marginBottom="10dp"
-            android:textColor="@color/white"
-            android:layout_width="match_parent"
-            android:layout_height="40dp"
-            android:background="@drawable/edit_text_style"
-            android:paddingStart="10dp"
-            android:paddingEnd="10dp"
-            android:autofillHints="" />
 
         <TextView
             android:layout_marginBottom="10dp"
