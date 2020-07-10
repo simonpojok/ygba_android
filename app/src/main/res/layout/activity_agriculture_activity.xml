@@ -623,7 +623,7 @@
     </LinearLayout>
 
     <LinearLayout
-        android:padding="5dp"
+        android:padding="10dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
@@ -634,13 +634,13 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/question_2_4_text"
-            android:textSize="13sp"
+            android:textSize="15sp"
             android:layout_marginVertical="10dp"
             android:textColor="@color/white"
             android:textStyle="bold" />
 
         <EditText
-            android:textSize="13sp"
+            android:textSize="15sp"
             android:layout_marginVertical="10dp"
             android:id="@+id/demonstration_meeting_place_text_view"
             android:layout_width="match_parent"
@@ -687,12 +687,12 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/question_3_0"
-        android:textSize="15sp"
+        android:textSize="18sp"
         android:textColor="@color/white"
         android:textStyle="bold" />
 
     <LinearLayout
-        android:padding="5dp"
+        android:padding="10dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
@@ -702,22 +702,22 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/question_3_1"
-            android:textSize="13sp"
-            android:textColor="@color/white"
-            android:textStyle="bold" />
+            android:textSize="15sp"
+            android:textColor="@color/white"/>
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/question_3_2"
-            android:textSize="13sp"
+            android:textSize="15sp"
             android:textColor="@color/white" />
 
         <EditText
-            android:textSize="13sp"
+            android:textSize="15sp"
             android:inputType="number"
             android:layout_width="match_parent"
-            android:layout_height="30dp"
+            android:layout_height="40dp"
+            android:paddingHorizontal="10dp"
             android:background="@drawable/edit_text_style"
             android:autofillHints=""
             tools:ignore="LabelFor" />
@@ -726,14 +726,15 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/question_3_3"
-            android:textSize="13sp"
+            android:textSize="15sp"
             android:textColor="@color/white" />
 
         <EditText
-            android:textSize="13sp"
+            android:textSize="15sp"
             android:inputType="number"
             android:layout_width="match_parent"
-            android:layout_height="30dp"
+            android:layout_height="40dp"
+            android:paddingHorizontal="10dp"
             android:background="@drawable/edit_text_style"
             android:autofillHints=""
             tools:ignore="LabelFor" />
@@ -742,7 +743,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/question_3_4"
-            android:textSize="13sp"
+            android:textSize="15sp"
             android:textColor="@color/white" />
 
         <LinearLayout
@@ -815,17 +816,50 @@
             tools:ignore="LabelFor" />
     </LinearLayout>
 
-    <EditText
+    <TextView
         android:layout_width="match_parent"
-        android:layout_height="30dp"
-        android:background="@drawable/edit_text_style"
-        android:paddingStart="10dp"
-        android:paddingEnd="10dp"
-        android:layout_marginTop="5dp"
-        android:layout_marginLeft="20dp"
-        android:layout_marginStart="20dp"
-        android:layout_marginRight="20dp"
-        android:layout_marginEnd="20dp"/>
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:text="@string/question_4_introduction"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/white_background_rectangle"
+        android:padding="10dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:text="@string/question_4_1"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Yes"/>
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="No"/>
+        </LinearLayout>
+
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/edit_text_style"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+            android:autofillHints="" />
+    </LinearLayout>
 
     <EditText
         android:id="@+id/lName"

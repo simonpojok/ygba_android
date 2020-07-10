@@ -86,4 +86,11 @@
     <string name="question_3_5" >
         3.5 If no, what are the reasons for not conducting the farmer advisory services visit
     </string>
+    <string name="question_4_introduction" >
+        4.0 DISTRIBUTION OF INPUTS (OWC)
+    </string>
+    <string name="question_4_1" >
+        4.1 Have you given any Agriculture inputs and livestock from Operation Wealth creation and
+        or otherwise during the quarter?
+    </string>
 </resources>
