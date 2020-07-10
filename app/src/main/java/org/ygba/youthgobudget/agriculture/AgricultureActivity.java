@@ -34,6 +34,9 @@ public class AgricultureActivity extends AppCompatActivity {
     EditText question22NumberEditText;
     EditText question24NumberEditText;
     EditText question25ReasonNotMeetingEditEdit;
+    EditText question32MeetingCapacity;
+    EditText question24MeetingCell;
+    EditText question34FemaleNumber;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -64,5 +67,8 @@ public class AgricultureActivity extends AppCompatActivity {
         question22NumberEditText = findViewById(R.id.number_of_meeting_text_edit);
         question24NumberEditText = findViewById(R.id.demonstration_meeting_place_text_edit);
         question25ReasonNotMeetingEditEdit = findViewById(R.id.reason_for_not_conduction_meeting_text_view);
+        question32MeetingCapacity = findViewById(R.id.question32MeetingCapacity);
+        question24MeetingCell = findViewById(R.id.question24MeetingCell);
+        question34FemaleNumber = findViewById(R.id.question34FemaleNumber);
     }
 }

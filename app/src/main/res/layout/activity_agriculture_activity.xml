@@ -676,9 +676,11 @@
             android:layout_height="wrap_content"
             android:text="@string/question_3_1"
             android:textSize="15sp"
+            android:layout_marginBottom="10dp"
             android:textColor="@color/white"/>
 
         <TextView
+            android:layout_marginBottom="10dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/question_3_2"
@@ -686,6 +688,8 @@
             android:textColor="@color/white" />
 
         <EditText
+            android:layout_marginBottom="10dp"
+            android:id="@+id/question32MeetingCapacity"
             android:textSize="15sp"
             android:inputType="number"
             android:layout_width="match_parent"
@@ -696,6 +700,7 @@
             tools:ignore="LabelFor" />
 
         <TextView
+            android:layout_marginBottom="10dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/question_3_3"
@@ -703,6 +708,7 @@
             android:textColor="@color/white" />
 
         <EditText
+            android:id="@+id/question24MeetingCell"
             android:textSize="15sp"
             android:inputType="number"
             android:layout_width="match_parent"
@@ -729,16 +735,18 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/question_3_4_female"
-                android:textSize="13sp"
+                android:textSize="15sp"
                 android:textColor="@color/white" />
 
             <EditText
+                android:id="@+id/question34FemaleNumber"
                 android:layout_marginStart="3dp"
-                android:textSize="13sp"
-                android:inputType="text"
+                android:textSize="15sp"
+                android:inputType="number"
                 android:layout_width="0dp"
                 android:layout_weight="2"
-                android:layout_height="30dp"
+                android:layout_height="40dp"
+                android:padding="5dp"
                 android:background="@drawable/edit_text_style"
                 android:autofillHints=""
                 tools:ignore="LabelFor" />
