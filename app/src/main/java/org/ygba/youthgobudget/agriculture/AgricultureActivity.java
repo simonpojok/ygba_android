@@ -1,8 +1,10 @@
 package org.ygba.youthgobudget.agriculture;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.cardview.widget.CardView;
 
 import android.os.Bundle;
+import android.view.View;
 import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.Spinner;
@@ -68,6 +70,7 @@ public class AgricultureActivity extends AppCompatActivity {
     EditText question42Plant5;
     EditText question43Reason;
     EditText question43AnyReason;
+    CardView saveFormData;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -132,5 +135,13 @@ public class AgricultureActivity extends AppCompatActivity {
         question42Plant5 =  findViewById(R.id.question42Plant5);
         question43Reason = findViewById(R.id.question43Reason);
         question43AnyReason =  findViewById(R.id.question43AnyReason);
+        saveFormData = findViewById(R.id.saved_form_data);
+
+        saveFormData.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+            }
+        });
     }
 }
