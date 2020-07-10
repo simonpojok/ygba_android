@@ -12,6 +12,8 @@ import org.ygba.youthgobudget.R;
 public class AgricultureActivity extends AppCompatActivity {
     Spinner financialYearSpinner;
     EditText villageEditText;
+    EditText parishTextEdit;
+    EditText divisionEditText;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -20,5 +22,7 @@ public class AgricultureActivity extends AppCompatActivity {
 
         financialYearSpinner = findViewById(R.id.financial_year_spinner);
         villageEditText = findViewById(R.id.village_text_edit);
+        parishTextEdit = findViewById(R.id.parish_text_edit);
+        divisionEditText = findViewById(R.id.division_text_edit);
     }
 }

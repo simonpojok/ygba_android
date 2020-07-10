@@ -104,7 +104,6 @@
             tools:ignore="LabelFor" />
 
         <TextView
-            android:layout_marginVertical="10dp"
             android:labelFor="@id/parish_text_edit"
             android:layout_width="wrap_content"
             android:layout_height="40dp"
@@ -171,78 +170,70 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal">
 
-        <LinearLayout
-            android:layout_marginEnd="5dp"
+        <TextView
+            android:layout_marginBottom="10dp"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="vertical">
+            android:text="@string/ygb_agent_name_label"
+            android:textSize="15sp"
+            android:layout_height="40dp"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:text="@string/ygb_agent_name_label"
-                android:textSize="15sp"
-                android:layout_height="40dp"
-                android:textColor="@color/white"
-                android:textStyle="bold" />
+        <EditText
+            android:layout_marginBottom="10dp"
+            android:hint="@string/fullname_hint"
+            android:inputType="text"
+            android:textSize="15sp"
+            android:id="@+id/ygb_agent_name_edit_view"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/edit_text_style"
+            android:paddingStart="5dp"
+            android:paddingEnd="5dp"
+            android:autofillHints="" />
 
-            <TextView
-                android:layout_marginVertical="10dp"
-                android:layout_width="wrap_content"
-                android:layout_height="40dp"
-                android:text="@string/ygb_agent_tel_label"
-                android:textSize="15sp"
-                android:textColor="@color/white"
-                android:textStyle="bold" />
+        <EditText
+            android:layout_marginBottom="10dp"
+            android:layout_marginVertical="10dp"
+            android:inputType="phone"
+            android:hint="@string/telephone_hint"
+            android:id="@+id/ygb_agent_tel_edit_view"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:textSize="15sp"
+            android:background="@drawable/edit_text_style"
+            android:paddingStart="5dp"
+            android:paddingEnd="5dp" />
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="40dp"
-                android:text="@string/ygb_agent_no_label"
-                android:textSize="15sp"
-                android:textColor="@color/white"
-                android:textStyle="bold" />
-        </LinearLayout>
+        <TextView
+            android:layout_marginBottom="10dp"
+            android:layout_marginVertical="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:text="@string/ygb_agent_tel_label"
+            android:textSize="15sp"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
 
-        <LinearLayout
-            android:layout_width="0dp"
-            android:layout_weight="1"
-            android:layout_height="wrap_content"
-            android:orientation="vertical">
+        <TextView
+            android:layout_marginBottom="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:text="@string/ygb_agent_no_label"
+            android:textSize="15sp"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
 
-            <EditText
-                android:hint="@string/fullname_hint"
-                android:inputType="text"
-                android:textSize="15sp"
-                android:id="@+id/ygb_agent_name_edit_view"
-                android:layout_width="match_parent"
-                android:layout_height="40dp"
-                android:background="@drawable/edit_text_style"
-                android:paddingStart="5dp"
-                android:paddingEnd="5dp"
-                android:autofillHints="" />
-
-            <EditText
-                android:layout_marginVertical="10dp"
-                android:inputType="phone"
-                android:hint="@string/telephone_hint"
-                android:id="@+id/ygb_agent_tel_edit_view"
-                android:layout_width="match_parent"
-                android:layout_height="40dp"
-                android:textSize="15sp"
-                android:background="@drawable/edit_text_style"
-                android:paddingStart="5dp"
-                android:paddingEnd="5dp" />
-            <EditText
-                android:hint="@string/agent_number_hint"
-                android:id="@+id/ygb_agent_no_edit_view"
-                android:layout_width="match_parent"
-                android:layout_height="40dp"
-                android:background="@drawable/edit_text_style"
-                android:paddingStart="5dp"
-                android:textSize="15sp"
-                android:paddingEnd="5dp" />
-
-        </LinearLayout>
+        <EditText
+            android:layout_marginBottom="10dp"
+            android:hint="@string/agent_number_hint"
+            android:id="@+id/ygb_agent_no_edit_view"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/edit_text_style"
+            android:paddingStart="5dp"
+            android:textSize="15sp"
+            android:paddingEnd="5dp" />
     </LinearLayout>
 
     <TextView
