@@ -940,6 +940,7 @@
                         android:text="1"/>
 
                     <EditText
+                        android:id="@+id/question42Plant1"
                         android:layout_marginHorizontal="10dp"
                         android:textColor="@color/white"
                         android:background="@drawable/edit_text_style"
@@ -948,9 +949,11 @@
                         android:autofillHints=""
                         android:layout_width="200dp"
                         android:layout_height="40dp"
-                        android:layout_column="1" />
+                        android:layout_column="1"
+                        android:inputType="text" />
 
                     <EditText
+                        android:id="@+id/question42Date1"
                         android:layout_marginHorizontal="10dp"
                         android:textColor="@color/white"
                         android:layout_width="250dp"
@@ -959,9 +962,12 @@
                         android:paddingStart="10dp"
                         android:paddingEnd="10dp"
                         android:autofillHints=""
-                        android:layout_column="2"/>
+                        android:layout_column="2"
+                        android:inputType="date"
+                        tools:ignore="LabelFor" />
 
                     <EditText
+                        android:id="@+id/question42Male1"
                         android:textColor="@color/white"
                         android:layout_width="200dp"
                         android:layout_height="40dp"
@@ -970,9 +976,11 @@
                         android:paddingEnd="10dp"
                         android:autofillHints=""
                         android:layout_column="3"
-                        android:inputType="number" />
+                        android:inputType="number"
+                        tools:ignore="LabelFor" />
 
                     <EditText
+                        android:id="@+id/question42Female1"
                         android:layout_marginHorizontal="10dp"
                         android:textColor="@color/white"
                         android:layout_width="200dp"
@@ -981,9 +989,11 @@
                         android:paddingStart="10dp"
                         android:paddingEnd="10dp"
                         android:layout_column="4"
-                        android:inputType="number" />
+                        android:inputType="number"
+                        android:autofillHints="" />
 
                     <EditText
+                        android:id="@+id/question42Village1"
                         android:textColor="@color/white"
                         android:layout_width="200dp"
                         android:layout_height="40dp"
@@ -991,7 +1001,8 @@
                         android:paddingStart="10dp"
                         android:paddingEnd="10dp"
                         android:autofillHints=""
-                        android:layout_column="5"/>
+                        android:layout_column="5"
+                        android:inputType="text" />
 
                 </TableRow>
 
