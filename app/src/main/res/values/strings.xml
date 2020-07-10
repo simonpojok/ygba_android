@@ -65,6 +65,13 @@
     <string name="question_2_5_text" >
         2.5 If No, what are the reasons for not conducting the community meetings on farming
     </string>
-    <string name="reason_hint">Plase Type Reasion Here</string>
+    <string name="reason_hint">Please Type Reason Here</string>
     <string name="question_3_0">3.0 EXTENSION SERVICES</string>
+    <string name="question_3_1" >
+        3.1 Are there any advisory services you have extended to individual farmers during the
+        quarter? (Obtain schedule)
+    </string>
+    <string name="question_3_2" >
+        3.2 If yes How many were done during the quarter
+    </string>
 </resources>
