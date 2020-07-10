@@ -30,4 +30,10 @@
     <string name="telephone_hint">0772241709</string>
     <string name="fullname_hint">Simon Adam</string>
     <string name="agent_number_hint">25554</string>
+    <string name="note_text">Note: This tool is completed with the help of sub county production/agriculture/community development officer</string>
+    <string name="question_1_text_objective" >
+        1. Does the sub-county/Division have a substantive agricultural extension worker ?
+    </string>
+    <string name="question_1_reason_text_edit">Please tell us why the answer is no</string>
+    <string name="question_1_reason_label">If no, why?</string>
 </resources>
