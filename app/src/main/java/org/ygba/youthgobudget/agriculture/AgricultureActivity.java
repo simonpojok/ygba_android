@@ -14,6 +14,9 @@ public class AgricultureActivity extends AppCompatActivity {
     EditText villageEditText;
     EditText parishTextEdit;
     EditText divisionEditText;
+    EditText agentFullNameEditText;
+    EditText agentTelephoneEditText;
+    EditText agentNumberEditText;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,5 +27,8 @@ public class AgricultureActivity extends AppCompatActivity {
         villageEditText = findViewById(R.id.village_text_edit);
         parishTextEdit = findViewById(R.id.parish_text_edit);
         divisionEditText = findViewById(R.id.division_text_edit);
+        agentFullNameEditText = findViewById(R.id.ygb_agent_name_edit_view);
+        agentTelephoneEditText = findViewById(R.id.ygb_agent_tel_edit_view);
+        agentNumberEditText = findViewById(R.id.ygb_agent_no_edit_view);
     }
 }
