@@ -885,6 +885,7 @@
                 android:layout_height="wrap_content">
 
                 <TableRow
+                    android:layout_marginBottom="10dp"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content">
 
@@ -960,7 +961,7 @@
                         android:text="1"/>
 
                     <EditText
-                        android:layout_marginBottom="10dp"
+                        android:layout_marginHorizontal="10dp"
                         android:textColor="@color/white"
                         android:background="@drawable/edit_text_style"
                         android:paddingStart="10dp"
@@ -972,7 +973,6 @@
 
                     <EditText
                         android:layout_marginHorizontal="10dp"
-                        android:layout_marginBottom="10dp"
                         android:textColor="@color/white"
                         android:layout_width="250dp"
                         android:layout_height="40dp"
@@ -983,7 +983,6 @@
                         android:layout_column="2"/>
 
                     <EditText
-                        android:layout_marginBottom="10dp"
                         android:textColor="@color/white"
                         android:layout_width="200dp"
                         android:layout_height="40dp"
@@ -996,7 +995,6 @@
 
                     <EditText
                         android:layout_marginHorizontal="10dp"
-                        android:layout_marginBottom="10dp"
                         android:textColor="@color/white"
                         android:layout_width="200dp"
                         android:layout_height="40dp"
@@ -1007,7 +1005,6 @@
                         android:inputType="number" />
 
                     <EditText
-                        android:layout_marginBottom="10dp"
                         android:textColor="@color/white"
                         android:layout_width="200dp"
                         android:layout_height="40dp"
@@ -1031,10 +1028,10 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_column="1"
-                        android:text="2"/>
+                        android:text="1"/>
 
                     <EditText
-                        android:layout_marginBottom="10dp"
+                        android:layout_marginHorizontal="10dp"
                         android:textColor="@color/white"
                         android:background="@drawable/edit_text_style"
                         android:paddingStart="10dp"
@@ -1046,7 +1043,6 @@
 
                     <EditText
                         android:layout_marginHorizontal="10dp"
-                        android:layout_marginBottom="10dp"
                         android:textColor="@color/white"
                         android:layout_width="250dp"
                         android:layout_height="40dp"
@@ -1057,7 +1053,6 @@
                         android:layout_column="2"/>
 
                     <EditText
-                        android:layout_marginBottom="10dp"
                         android:textColor="@color/white"
                         android:layout_width="200dp"
                         android:layout_height="40dp"
@@ -1070,7 +1065,6 @@
 
                     <EditText
                         android:layout_marginHorizontal="10dp"
-                        android:layout_marginBottom="10dp"
                         android:textColor="@color/white"
                         android:layout_width="200dp"
                         android:layout_height="40dp"
@@ -1081,7 +1075,6 @@
                         android:inputType="number" />
 
                     <EditText
-                        android:layout_marginBottom="10dp"
                         android:textColor="@color/white"
                         android:layout_width="200dp"
                         android:layout_height="40dp"
@@ -1092,7 +1085,6 @@
                         android:layout_column="5"/>
 
                 </TableRow>
-
                 <TableRow
                     android:layout_marginBottom="10dp"
                     android:layout_width="wrap_content"
@@ -1105,10 +1097,10 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_column="1"
-                        android:text="3"/>
+                        android:text="1"/>
 
                     <EditText
-                        android:layout_marginBottom="10dp"
+                        android:layout_marginHorizontal="10dp"
                         android:textColor="@color/white"
                         android:background="@drawable/edit_text_style"
                         android:paddingStart="10dp"
@@ -1120,7 +1112,6 @@
 
                     <EditText
                         android:layout_marginHorizontal="10dp"
-                        android:layout_marginBottom="10dp"
                         android:textColor="@color/white"
                         android:layout_width="250dp"
                         android:layout_height="40dp"
@@ -1131,7 +1122,6 @@
                         android:layout_column="2"/>
 
                     <EditText
-                        android:layout_marginBottom="10dp"
                         android:textColor="@color/white"
                         android:layout_width="200dp"
                         android:layout_height="40dp"
@@ -1144,7 +1134,6 @@
 
                     <EditText
                         android:layout_marginHorizontal="10dp"
-                        android:layout_marginBottom="10dp"
                         android:textColor="@color/white"
                         android:layout_width="200dp"
                         android:layout_height="40dp"
@@ -1155,7 +1144,6 @@
                         android:inputType="number" />
 
                     <EditText
-                        android:layout_marginBottom="10dp"
                         android:textColor="@color/white"
                         android:layout_width="200dp"
                         android:layout_height="40dp"
@@ -1166,7 +1154,6 @@
                         android:layout_column="5"/>
 
                 </TableRow>
-
                 <TableRow
                     android:layout_marginBottom="10dp"
                     android:layout_width="wrap_content"
@@ -1179,10 +1166,10 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_column="1"
-                        android:text="4"/>
+                        android:text="1"/>
 
                     <EditText
-                        android:layout_marginBottom="10dp"
+                        android:layout_marginHorizontal="10dp"
                         android:textColor="@color/white"
                         android:background="@drawable/edit_text_style"
                         android:paddingStart="10dp"
@@ -1194,7 +1181,6 @@
 
                     <EditText
                         android:layout_marginHorizontal="10dp"
-                        android:layout_marginBottom="10dp"
                         android:textColor="@color/white"
                         android:layout_width="250dp"
                         android:layout_height="40dp"
@@ -1205,7 +1191,6 @@
                         android:layout_column="2"/>
 
                     <EditText
-                        android:layout_marginBottom="10dp"
                         android:textColor="@color/white"
                         android:layout_width="200dp"
                         android:layout_height="40dp"
@@ -1218,7 +1203,6 @@
 
                     <EditText
                         android:layout_marginHorizontal="10dp"
-                        android:layout_marginBottom="10dp"
                         android:textColor="@color/white"
                         android:layout_width="200dp"
                         android:layout_height="40dp"
@@ -1229,7 +1213,6 @@
                         android:inputType="number" />
 
                     <EditText
-                        android:layout_marginBottom="10dp"
                         android:textColor="@color/white"
                         android:layout_width="200dp"
                         android:layout_height="40dp"
@@ -1240,80 +1223,6 @@
                         android:layout_column="5"/>
 
                 </TableRow>
-
-                <TableRow
-                    android:layout_marginBottom="10dp"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content">
-                    <TextView
-                        android:gravity="center_horizontal"
-                        android:textSize="15sp"
-                        android:textColor="@color/white"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_column="1"
-                        android:text="5"/>
-
-                    <EditText
-                        android:layout_marginBottom="10dp"
-                        android:textColor="@color/white"
-                        android:background="@drawable/edit_text_style"
-                        android:paddingStart="10dp"
-                        android:paddingEnd="10dp"
-                        android:autofillHints=""
-                        android:layout_width="200dp"
-                        android:layout_height="40dp"
-                        android:layout_column="1" />
-
-                    <EditText
-                        android:layout_marginHorizontal="10dp"
-                        android:layout_marginBottom="10dp"
-                        android:textColor="@color/white"
-                        android:layout_width="250dp"
-                        android:layout_height="40dp"
-                        android:background="@drawable/edit_text_style"
-                        android:paddingStart="10dp"
-                        android:paddingEnd="10dp"
-                        android:autofillHints=""
-                        android:layout_column="2"/>
-
-                    <EditText
-                        android:layout_marginBottom="10dp"
-                        android:textColor="@color/white"
-                        android:layout_width="200dp"
-                        android:layout_height="40dp"
-                        android:background="@drawable/edit_text_style"
-                        android:paddingStart="10dp"
-                        android:paddingEnd="10dp"
-                        android:autofillHints=""
-                        android:layout_column="3"
-                        android:inputType="number" />
-
-                    <EditText
-                        android:layout_marginHorizontal="10dp"
-                        android:layout_marginBottom="10dp"
-                        android:textColor="@color/white"
-                        android:layout_width="200dp"
-                        android:layout_height="40dp"
-                        android:background="@drawable/edit_text_style"
-                        android:paddingStart="10dp"
-                        android:paddingEnd="10dp"
-                        android:layout_column="4"
-                        android:inputType="number" />
-
-                    <EditText
-                        android:layout_marginBottom="10dp"
-                        android:textColor="@color/white"
-                        android:layout_width="200dp"
-                        android:layout_height="40dp"
-                        android:background="@drawable/edit_text_style"
-                        android:paddingStart="10dp"
-                        android:paddingEnd="10dp"
-                        android:autofillHints=""
-                        android:layout_column="5"/>
-
-                </TableRow>
-
                 <TableRow
                     android:layout_marginBottom="10dp"
                     android:layout_width="wrap_content"
@@ -1326,10 +1235,10 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_column="1"
-                        android:text="6"/>
+                        android:text="1"/>
 
                     <EditText
-                        android:layout_marginBottom="10dp"
+                        android:layout_marginHorizontal="10dp"
                         android:textColor="@color/white"
                         android:background="@drawable/edit_text_style"
                         android:paddingStart="10dp"
@@ -1341,7 +1250,6 @@
 
                     <EditText
                         android:layout_marginHorizontal="10dp"
-                        android:layout_marginBottom="10dp"
                         android:textColor="@color/white"
                         android:layout_width="250dp"
                         android:layout_height="40dp"
@@ -1352,7 +1260,6 @@
                         android:layout_column="2"/>
 
                     <EditText
-                        android:layout_marginBottom="10dp"
                         android:textColor="@color/white"
                         android:layout_width="200dp"
                         android:layout_height="40dp"
@@ -1365,7 +1272,6 @@
 
                     <EditText
                         android:layout_marginHorizontal="10dp"
-                        android:layout_marginBottom="10dp"
                         android:textColor="@color/white"
                         android:layout_width="200dp"
                         android:layout_height="40dp"
@@ -1376,7 +1282,75 @@
                         android:inputType="number" />
 
                     <EditText
-                        android:layout_marginBottom="10dp"
+                        android:textColor="@color/white"
+                        android:layout_width="200dp"
+                        android:layout_height="40dp"
+                        android:background="@drawable/edit_text_style"
+                        android:paddingStart="10dp"
+                        android:paddingEnd="10dp"
+                        android:autofillHints=""
+                        android:layout_column="5"/>
+
+                </TableRow>
+                <TableRow
+                    android:layout_marginBottom="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:gravity="center_horizontal"
+                        android:textSize="15sp"
+                        android:textColor="@color/white"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_column="1"
+                        android:text="1"/>
+
+                    <EditText
+                        android:layout_marginHorizontal="10dp"
+                        android:textColor="@color/white"
+                        android:background="@drawable/edit_text_style"
+                        android:paddingStart="10dp"
+                        android:paddingEnd="10dp"
+                        android:autofillHints=""
+                        android:layout_width="200dp"
+                        android:layout_height="40dp"
+                        android:layout_column="1" />
+
+                    <EditText
+                        android:layout_marginHorizontal="10dp"
+                        android:textColor="@color/white"
+                        android:layout_width="250dp"
+                        android:layout_height="40dp"
+                        android:background="@drawable/edit_text_style"
+                        android:paddingStart="10dp"
+                        android:paddingEnd="10dp"
+                        android:autofillHints=""
+                        android:layout_column="2"/>
+
+                    <EditText
+                        android:textColor="@color/white"
+                        android:layout_width="200dp"
+                        android:layout_height="40dp"
+                        android:background="@drawable/edit_text_style"
+                        android:paddingStart="10dp"
+                        android:paddingEnd="10dp"
+                        android:autofillHints=""
+                        android:layout_column="3"
+                        android:inputType="number" />
+
+                    <EditText
+                        android:layout_marginHorizontal="10dp"
+                        android:textColor="@color/white"
+                        android:layout_width="200dp"
+                        android:layout_height="40dp"
+                        android:background="@drawable/edit_text_style"
+                        android:paddingStart="10dp"
+                        android:paddingEnd="10dp"
+                        android:layout_column="4"
+                        android:inputType="number" />
+
+                    <EditText
                         android:textColor="@color/white"
                         android:layout_width="200dp"
                         android:layout_height="40dp"
