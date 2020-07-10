@@ -572,12 +572,13 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/question_2_3_text"
-            android:textSize="13sp"
+            android:textSize="15sp"
+            android:padding="5dp"
             android:textColor="@color/white"
             android:textStyle="bold" />
 
         <EditText
-            android:textSize="13sp"
+            android:textSize="15sp"
             android:layout_marginVertical="10dp"
             android:inputType="number"
             android:paddingHorizontal="5dp"
@@ -610,7 +611,7 @@
         <EditText
             android:textSize="15sp"
             android:layout_marginVertical="10dp"
-            android:id="@+id/demonstration_meeting_place_text_view"
+            android:id="@+id/demonstration_meeting_place_text_edit"
             android:layout_width="match_parent"
             android:inputType="text"
             android:paddingHorizontal="5dp"
@@ -629,15 +630,18 @@
         android:layout_marginVertical="10dp">
 
         <TextView
+            android:gravity="start"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/question_2_5_text"
-            android:textSize="13sp"
+            android:textSize="15sp"
             android:layout_marginVertical="10dp"
             android:textColor="@color/white"
             android:textStyle="bold" />
 
         <EditText
+            android:gravity="start"
+            android:padding="5dp"
             android:id="@+id/reason_for_not_conduction_meeting_text_view"
             android:layout_width="match_parent"
             android:inputType="textMultiLine"
@@ -645,13 +649,14 @@
             android:layout_marginVertical="10dp"
             android:hint="@string/reason_hint"
             android:layout_height="100dp"
-            android:textSize="13sp"
+            android:textSize="15sp"
             android:background="@drawable/edit_text_style"
             android:autofillHints="" />
 
     </LinearLayout>
 
     <TextView
+        android:layout_marginVertical="10dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/question_3_0"

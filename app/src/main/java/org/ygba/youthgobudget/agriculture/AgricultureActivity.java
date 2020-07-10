@@ -31,6 +31,9 @@ public class AgricultureActivity extends AppCompatActivity {
     EditText question21EditText;
     CheckBox question22YesCheckBox;
     CheckBox question22NoCheckBox;
+    EditText question22NumberEditText;
+    EditText question24NumberEditText;
+    EditText question25ReasonNotMeetingEditEdit;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -58,5 +61,8 @@ public class AgricultureActivity extends AppCompatActivity {
         question21EditText = findViewById(R.id.question_2_1_edit_text);
         question22YesCheckBox = findViewById(R.id.question_2_2_yes_check_box);
         question22NoCheckBox = findViewById(R.id.question_2_2_no_check_box);
+        question22NumberEditText = findViewById(R.id.number_of_meeting_text_edit);
+        question24NumberEditText = findViewById(R.id.demonstration_meeting_place_text_edit);
+        question25ReasonNotMeetingEditEdit = findViewById(R.id.reason_for_not_conduction_meeting_text_view);
     }
 }
