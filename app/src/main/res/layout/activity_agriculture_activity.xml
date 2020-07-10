@@ -867,13 +867,12 @@
             android:paddingEnd="10dp"
             android:autofillHints="" />
 
-        <ScrollView
+        <HorizontalScrollView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:overScrollMode="always">
 
-
-        </ScrollView>
+        </HorizontalScrollView>
 
         <TextView
             android:textColor="@color/white"
