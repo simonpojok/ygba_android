@@ -21,6 +21,16 @@ public class AgricultureActivity extends AppCompatActivity {
     CheckBox noWorkerCheckBox;
     EditText questionReasonEditText;
     EditText extensionServiceExpectedOrReceivedEditText;
+    EditText extensionServiceAmountReceivedTextEdit;
+    EditText extensionServiceDateReceivedEditText;
+    EditText extensionServiceDateWithdrawnEditText;
+    EditText developmentExpectedOrApprovedTextEdit;
+    EditText developmentAmountReceived;
+    EditText developmentDateReceived;
+    EditText developmentDateWithdrawn;
+    EditText question21EditText;
+    CheckBox question22YesCheckBox;
+    CheckBox question22NoCheckBox;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -38,5 +48,15 @@ public class AgricultureActivity extends AppCompatActivity {
         noWorkerCheckBox = findViewById(R.id.noSubCountyHasExtensionWorker);
         questionReasonEditText = findViewById(R.id.question_1_reason_text_edit);
         extensionServiceExpectedOrReceivedEditText = findViewById(R.id.extension_services_expected_or_approved);
+        extensionServiceAmountReceivedTextEdit = findViewById(R.id.extension_services_amount_received);
+        extensionServiceDateReceivedEditText = findViewById(R.id.extension_services_date_received);
+        extensionServiceDateWithdrawnEditText = findViewById(R.id.extension_services_date_withdrawn);
+        developmentExpectedOrApprovedTextEdit = findViewById(R.id.development_expected_or_approved);
+        developmentAmountReceived = findViewById(R.id.development_amount_received);
+        developmentDateReceived = findViewById(R.id.development_date_received);
+        developmentDateWithdrawn = findViewById(R.id.development_date_withdrawn);
+        question21EditText = findViewById(R.id.question_2_1_edit_text);
+        question22YesCheckBox = findViewById(R.id.question_2_2_yes_check_box);
+        question22NoCheckBox = findViewById(R.id.question_2_2_no_check_box);
     }
 }
