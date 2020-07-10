@@ -6,7 +6,6 @@ import android.os.Bundle;
 import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.Spinner;
-import android.widget.TextView;
 
 import org.ygba.youthgobudget.R;
 
@@ -20,6 +19,8 @@ public class AgricultureActivity extends AppCompatActivity {
     EditText agentNumberEditText;
     CheckBox yesWorkerCheckBox;
     CheckBox noWorkerCheckBox;
+    EditText questionReasonEditText;
+    EditText extensionServiceExpectedOrReceivedEditText;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -34,6 +35,8 @@ public class AgricultureActivity extends AppCompatActivity {
         agentTelephoneEditText = findViewById(R.id.ygb_agent_tel_edit_view);
         agentNumberEditText = findViewById(R.id.ygb_agent_no_edit_view);
         yesWorkerCheckBox = findViewById(R.id.yesSubCountyHasExtensionWorker);
-        noWorkerCheckBox = findViewById(R.id.noSubCountyHasExtensionWorker);;
+        noWorkerCheckBox = findViewById(R.id.noSubCountyHasExtensionWorker);
+        questionReasonEditText = findViewById(R.id.question_1_reason_text_edit);
+        extensionServiceExpectedOrReceivedEditText = findViewById(R.id.extension_services_expected_or_approved);
     }
 }

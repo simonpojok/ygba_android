@@ -249,6 +249,7 @@
         android:orientation="vertical">
 
         <TextView
+            android:textStyle="bold"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/question_1_text_objective"
@@ -287,6 +288,7 @@
             android:textColor="@color/white" />
 
         <EditText
+            android:layout_marginTop="5dp"
             android:gravity="start"
             android:textSize="15sp"
             android:inputType="textMultiLine"
@@ -315,7 +317,7 @@
         android:layout_height="wrap_content">
 
         <TableLayout
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content">
 
             <TableRow
@@ -381,6 +383,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_column="1"
+                    android:height="40dp"
                     android:text="@string/extension_services"/>
 
                 <EditText
