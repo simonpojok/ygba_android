@@ -31,7 +31,7 @@
         android:layout_marginTop="10dp"
         android:padding="10dp"
         android:text="@string/agriculture_form_description"
-        android:textSize="15sp"
+        android:textSize="18sp"
         android:textColor="@color/white"
         android:textStyle="bold" />
 
@@ -43,7 +43,7 @@
         android:layout_marginStart="10dp"
         android:layout_marginEnd="20dp"
         android:text="23 - October 2020"
-        android:textSize="15sp"
+        android:textSize="18sp"
         android:textColor="@color/white"
         android:textStyle="bold" />
 
@@ -52,7 +52,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/financial_year_label"
-        android:textSize="13sp"
+        android:textSize="15sp"
         android:textColor="@color/white"
         android:textStyle="bold" />
 
@@ -60,7 +60,7 @@
         android:id="@+id/financial_year_spinner"
         android:layout_width="match_parent"
         android:layout_height="30dp"
-        android:textSize="13sp"
+        android:textSize="15sp"
         android:background="@drawable/edit_text_style"
         tools:ignore="RtlSymmetry" />
 
@@ -69,7 +69,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/district_label"
-        android:textSize="13sp"
+        android:textSize="15sp"
         android:textColor="@color/white"
         android:textStyle="bold" />
 
@@ -88,27 +88,27 @@
             <TextView
                 android:labelFor="@id/village_text_edit"
                 android:layout_width="wrap_content"
-                android:layout_height="30dp"
+                android:layout_height="40dp"
                 android:text="@string/village_label"
-                android:textSize="13sp"
+                android:textSize="15sp"
                 android:textColor="@color/white"
                 android:textStyle="bold" />
             <TextView
                 android:layout_marginVertical="10dp"
                 android:labelFor="@id/parish_text_edit"
                 android:layout_width="wrap_content"
-                android:layout_height="30dp"
+                android:layout_height="40dp"
                 android:text="@string/parish_label"
-                android:textSize="13sp"
+                android:textSize="15sp"
                 android:textColor="@color/white"
                 android:textStyle="bold" />
 
             <TextView
                 android:labelFor="@id/division_text_edit"
                 android:layout_width="wrap_content"
-                android:layout_height="30dp"
+                android:layout_height="40dp"
                 android:text="@string/division_label"
-                android:textSize="13sp"
+                android:textSize="15sp"
                 android:textColor="@color/white"
                 android:textStyle="bold" />
         </LinearLayout>
@@ -125,10 +125,10 @@
                 android:hint="@string/village_hint"
                 android:id="@+id/village_text_edit"
                 android:layout_width="match_parent"
-                android:layout_height="30dp"
+                android:layout_height="40dp"
                 android:background="@drawable/edit_text_style"
                 android:autofillHints=""
-                android:textSize="13sp"
+                android:textSize="15sp"
                 android:inputType="text"
                 tools:ignore="LabelFor" />
             <EditText
@@ -138,23 +138,22 @@
                 android:id="@+id/parish_text_edit"
                 android:layout_width="match_parent"
                 android:layout_marginVertical="10dp"
-                android:layout_height="30dp"
+                android:layout_height="40dp"
                 android:background="@drawable/edit_text_style"
                 android:autofillHints=""
                 android:inputType="text"
-                android:textSize="13sp"
+                android:textSize="15sp"
                 tools:ignore="LabelFor" />
             <EditText
                 android:hint="@string/division_hint"
                 android:id="@+id/division_text_edit"
                 android:layout_width="match_parent"
-                android:layout_height="30dp"
+                android:layout_height="40dp"
                 android:background="@drawable/edit_text_style"
                 android:autofillHints=""
                 android:paddingStart="5dp"
                 android:paddingEnd="5dp"
-                android:textSize="13sp"
-
+                android:textSize="15sp"
                 android:overScrollMode="always"
                 android:inputType="text"
                 tools:ignore="LabelFor" />
@@ -167,7 +166,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/ygb_agent_label"
-        android:textSize="15sp"
+        android:textSize="18sp"
         android:textColor="@color/white"
         android:textStyle="bold" />
 
@@ -188,25 +187,25 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:text="@string/ygb_agent_name_label"
-                android:textSize="13sp"
-                android:layout_height="30dp"
+                android:textSize="15sp"
+                android:layout_height="40dp"
                 android:textColor="@color/white"
                 android:textStyle="bold" />
 
             <TextView
                 android:layout_marginVertical="10dp"
                 android:layout_width="wrap_content"
-                android:layout_height="30dp"
+                android:layout_height="40dp"
                 android:text="@string/ygb_agent_tel_label"
-                android:textSize="13sp"
+                android:textSize="15sp"
                 android:textColor="@color/white"
                 android:textStyle="bold" />
 
             <TextView
                 android:layout_width="wrap_content"
-                android:layout_height="30dp"
+                android:layout_height="40dp"
                 android:text="@string/ygb_agent_no_label"
-                android:textSize="13sp"
+                android:textSize="15sp"
                 android:textColor="@color/white"
                 android:textStyle="bold" />
         </LinearLayout>
@@ -220,10 +219,10 @@
             <EditText
                 android:hint="@string/fullname_hint"
                 android:inputType="text"
-                android:textSize="13sp"
+                android:textSize="15sp"
                 android:id="@+id/ygb_agent_name_edit_view"
                 android:layout_width="match_parent"
-                android:layout_height="30dp"
+                android:layout_height="40dp"
                 android:background="@drawable/edit_text_style"
                 android:paddingStart="5dp"
                 android:paddingEnd="5dp"
@@ -235,8 +234,8 @@
                 android:hint="@string/telephone_hint"
                 android:id="@+id/ygb_agent_tel_edit_view"
                 android:layout_width="match_parent"
-                android:layout_height="30dp"
-                android:textSize="13sp"
+                android:layout_height="40dp"
+                android:textSize="15sp"
                 android:background="@drawable/edit_text_style"
                 android:paddingStart="5dp"
                 android:paddingEnd="5dp" />
@@ -244,10 +243,10 @@
                 android:hint="@string/agent_number_hint"
                 android:id="@+id/ygb_agent_no_edit_view"
                 android:layout_width="match_parent"
-                android:layout_height="30dp"
+                android:layout_height="40dp"
                 android:background="@drawable/edit_text_style"
                 android:paddingStart="5dp"
-                android:textSize="13sp"
+                android:textSize="15sp"
                 android:paddingEnd="5dp" />
 
         </LinearLayout>
@@ -257,7 +256,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/note_text"
-        android:textSize="13sp"
+        android:textSize="15sp"
         android:layout_marginBottom="10dp"
         android:textColor="@color/white"
         android:textStyle="bold" />
@@ -273,9 +272,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/question_1_text_objective"
-            android:textSize="13sp"
-            android:textColor="@color/white"
-            android:textStyle="bold" />
+            android:textSize="15sp"
+            android:textColor="@color/white" />
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -283,14 +281,14 @@
             android:orientation="horizontal">
 
             <CheckBox
-                android:textSize="13sp"
+                android:textSize="15sp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textColor="@color/white"
                 android:text="Yes"/>
 
             <CheckBox
-                android:textSize="13sp"
+                android:textSize="15sp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textColor="@color/white"
@@ -303,12 +301,12 @@
             android:layout_height="wrap_content"
             android:text="@string/question_1_reason_label"
             android:layout_marginVertical="10dp"
-            android:textSize="13sp"
-            android:textColor="@color/white"
-            android:textStyle="bold" />
+            android:textSize="15sp"
+            android:textColor="@color/white" />
 
         <EditText
-            android:textSize="13sp"
+            android:gravity="start"
+            android:textSize="15sp"
             android:inputType="textMultiLine"
             android:id="@+id/question_1_reason_text_edit"
             android:hint="@string/question_1_reason_text_edit"
@@ -326,214 +324,144 @@
         android:layout_height="wrap_content"
         android:layout_marginVertical="10dp"
         android:text="@string/question_2_text"
-        android:textSize="13sp"
+        android:textSize="18sp"
         android:textColor="@color/white"
         android:textStyle="bold" />
 
-    <LinearLayout
-        android:padding="5dp"
-        android:background="@drawable/white_background_rectangle"
-        android:layout_marginVertical="10dp"
+    <HorizontalScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical">
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="10dp"
-            android:orientation="horizontal">
-            <TextView
-                android:gravity="center_horizontal"
-                android:layout_width="0dp"
-                android:layout_weight="2"
-                android:layout_height="wrap_content"
-                android:text="@string/extension_service_label"
-                android:textSize="13sp"
-                android:textColor="@color/white"
-                android:textStyle="bold" />
+        android:layout_height="wrap_content">
 
-            <TextView
-                android:gravity="center_horizontal"
-                android:layout_width="0dp"
-                android:layout_weight="4"
-                android:layout_height="wrap_content"
-                android:text="@string/extension_service_label"
-                android:textSize="13sp"
-                android:textColor="@color/white"
-                android:textStyle="bold" />
-
-            <TextView
-                android:gravity="center_horizontal"
-                android:layout_width="0dp"
-                android:layout_weight="4"
-                android:layout_height="wrap_content"
-                android:text="@string/development_label"
-                android:textSize="13sp"
-                android:textColor="@color/white"
-                android:textStyle="bold" />
-        </LinearLayout>
-        <LinearLayout
+        <TableLayout
             android:layout_width="match_parent"
-            android:orientation="horizontal"
             android:layout_height="wrap_content">
-            <LinearLayout
-                android:layout_width="0dp"
-                android:layout_weight="2"
-                android:layout_height="wrap_content"
-                android:orientation="vertical">
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="@string/expected_approved_label"
-                    android:textSize="13sp"
-                    android:layout_marginBottom="10dp"
-                    android:height="30dp"
-                    android:textColor="@color/white"
-                    android:textStyle="bold" />
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="@string/amount_received_label"
-                    android:textSize="13sp"
-                    android:layout_marginBottom="10dp"
-                    android:height="30dp"
-                    android:textColor="@color/white"
-                    android:textStyle="bold" />
+                    android:layout_column="1"
+                    android:text="@string/grants"/>
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="@string/date_received"
-                    android:textSize="13sp"
-                    android:layout_marginBottom="10dp"
-                    android:height="30dp"
-                    android:textColor="@color/white"
-                    android:textStyle="bold" />
+                    android:layout_column="2"
+                    android:text="@string/expected_or_approved"/>
 
                 <TextView
-                    android:layout_marginBottom="10dp"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="@string/date_withdrawn"
-                    android:textSize="13sp"
-                    android:height="30dp"
-                    android:textColor="@color/white"
-                    android:textStyle="bold" />
-            </LinearLayout>
-            <LinearLayout
-                android:layout_width="0dp"
-                android:layout_weight="4"
-                android:layout_height="wrap_content"
-                android:orientation="vertical">
+                    android:layout_column="3"
+                    android:text="@string/amount_received"/>
 
-                <EditText
-                    android:layout_marginBottom="10dp"
-                    android:inputType="numberDecimal"
-                    android:id="@+id/extensions_amount_expected"
-                    android:paddingHorizontal="5dp"
-                    android:hint="@string/amount_expected"
+                <TextView
                     android:layout_width="match_parent"
-                    android:layout_height="30dp"
-                    android:textSize="13sp"
-                    android:background="@drawable/edit_text_style"
-                    android:autofillHints="" />
+                    android:layout_height="wrap_content"
+                    android:layout_column="4"
+                    android:text="@string/date_received"/>
 
-                <EditText
-                    android:layout_marginBottom="10dp"
-                    android:inputType="numberDecimal"
-                    android:id="@+id/extensions_amount_received"
-                    android:paddingHorizontal="5dp"
-                    android:hint="@string/amount_expected"
+                <TextView
                     android:layout_width="match_parent"
-                    android:layout_height="30dp"
-                    android:textSize="13sp"
-                    android:background="@drawable/edit_text_style"
-                    android:autofillHints="" />
+                    android:layout_height="wrap_content"
+                    android:layout_column="5"
+                    android:text="@string/date_withdrawn"/>
+
+            </TableRow>
+
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_column="1"
+                    android:text="@string/extension_services"/>
 
                 <EditText
-                    android:textSize="13sp"
-                    android:layout_marginBottom="10dp"
-                    android:paddingHorizontal="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_column="2"
+                    android:inputType="number"
+                    android:id="@+id/extension_services_expected_or_approved"/>
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_column="3"
+                    android:inputType="number"
+                    android:id="@+id/extension_services_amount_received"/>
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_column="4"
+                    android:hint="@string/dd_mm_yyyy"
                     android:inputType="date"
-                    android:id="@+id/extensions_date_received"
-                    android:hint="@string/date_received_hint"
-                    android:layout_width="match_parent"
-                    android:layout_height="30dp"
-                    android:background="@drawable/edit_text_style"
-                    android:autofillHints="" />
+                    android:id="@+id/extension_services_date_received"/>
 
                 <EditText
-                    android:textSize="13sp"
-                    android:layout_marginBottom="10dp"
-                    android:paddingHorizontal="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_column="5"
                     android:inputType="date"
-                    android:id="@+id/extensions_date_withdrawn"
-                    android:hint="@string/date_withdrawn_hint"
-                    android:layout_width="match_parent"
-                    android:layout_height="30dp"
-                    android:background="@drawable/edit_text_style"
-                    android:autofillHints="" />
-            </LinearLayout>
+                    android:hint="@string/dd_mm_yyyy"
+                    android:id="@+id/extension_services_date_withdrawn"/>
 
-            <LinearLayout
-                android:layout_width="0dp"
-                android:layout_weight="4"
-                android:layout_height="wrap_content"
-                android:orientation="vertical">
-                <EditText
-                    android:textSize="13sp"
-                    android:layout_marginBottom="10dp"
-                    android:layout_marginStart="5dp"
-                    android:inputType="numberDecimal"
-                    android:id="@+id/development_amount_expected"
-                    android:paddingHorizontal="5dp"
-                    android:hint="@string/amount_expected"
+            </TableRow>
+
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
                     android:layout_width="match_parent"
-                    android:layout_height="30dp"
-                    android:background="@drawable/edit_text_style"
-                    android:autofillHints="" />
+                    android:layout_height="wrap_content"
+                    android:layout_column="1"
+                    android:text="@string/development"/>
 
                 <EditText
-                    android:textSize="13sp"
-                    android:layout_marginStart="5dp"
-                    android:paddingHorizontal="5dp"
-                    android:id="@+id/development_amount_received"
-                    android:inputType="numberDecimal"
-                    android:hint="@string/amount_received"
                     android:layout_width="match_parent"
-                    android:layout_height="30dp"
-                    android:background="@drawable/edit_text_style"
-                    android:autofillHints="" />
+                    android:layout_height="wrap_content"
+                    android:layout_column="2"
+                    android:inputType="number"
+                    android:id="@+id/development_expected_or_approved"/>
 
                 <EditText
-                    android:textSize="13sp"
-                    android:layout_marginVertical="10dp"
-                    android:layout_marginStart="5dp"
-                    android:paddingHorizontal="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_column="3"
+                    android:inputType="number"
+                    android:id="@+id/development_amount_received"/>
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_column="4"
+                    android:hint="@string/dd_mm_yyyy"
                     android:inputType="date"
-                    android:id="@+id/development_date_received"
-                    android:hint="@string/date_received_hint"
-                    android:layout_width="match_parent"
-                    android:layout_height="30dp"
-                    android:background="@drawable/edit_text_style"
-                    android:autofillHints="" />
+                    android:id="@+id/development_date_received"/>
 
                 <EditText
-                    android:textSize="13sp"
-                    android:layout_marginStart="5dp"
-                    android:paddingHorizontal="5dp"
-                    android:id="@+id/development_date_withdrawn"
-                    android:inputType="date"
-                    android:hint="@string/date_withdrawn_hint"
                     android:layout_width="match_parent"
-                    android:layout_height="30dp"
-                    android:background="@drawable/edit_text_style"
-                    android:autofillHints="" />
+                    android:layout_height="wrap_content"
+                    android:layout_column="5"
+                    android:inputType="date"
+                    android:hint="@string/dd_mm_yyyy"
+                    android:id="@+id/development_date_withdrawn"/>
 
-            </LinearLayout>
-        </LinearLayout>
-    </LinearLayout>
+            </TableRow>
+
+        </TableLayout>
+
+    </HorizontalScrollView>
+
 
     <LinearLayout
         android:layout_width="match_parent"
