@@ -81,7 +81,6 @@
         android:layout_height="wrap_content">
 
         <TextView
-            android:layout_marginBottom="10dp"
             android:labelFor="@id/village_text_edit"
             android:layout_width="wrap_content"
             android:layout_height="40dp"
@@ -105,7 +104,6 @@
             tools:ignore="LabelFor" />
 
         <TextView
-            android:layout_marginBottom="10dp"
             android:layout_marginVertical="10dp"
             android:labelFor="@id/parish_text_edit"
             android:layout_width="wrap_content"
@@ -131,7 +129,6 @@
             tools:ignore="LabelFor" />
 
         <TextView
-            android:layout_marginBottom="10dp"
             android:labelFor="@id/division_text_edit"
             android:layout_width="wrap_content"
             android:layout_height="40dp"
