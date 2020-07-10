@@ -10,5 +10,9 @@
     <string name="menu_home">Home</string>
     <string name="menu_gallery">Gallery</string>
     <string name="menu_slideshow">Slideshow</string>
-    <string name="agriculture_form_description">some in for</string>
+    <string name="agriculture_form_description">
+        COMMUNITY BUDGET PERFORMANCE AND SERVICE DELIVERY TRACKING TOOL
+    </string>
+    <string name="agriculture_sector_header">AGRICULTURE SECTOR</string>
+    <string name="financial_year_lable">Financial Year</string>
 </resources>

@@ -13,12 +13,36 @@ tools:context=".agriculture.AgricultureActivity">
 
     <TextView
         android:layout_gravity="center_horizontal"
+        android:gravity="center_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/agriculture_sector_header"
+        android:textSize="30sp"
+        android:textColor="@color/white"
+        android:textStyle="bold" />
+
+    <TextView
+        android:gravity="center"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:padding="10dp"
+        android:text="@string/agriculture_form_description"
+        android:textSize="20sp"
+        android:textColor="@color/white"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_gravity="end"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
         android:layout_marginStart="20dp"
-        android:text="@string/agriculture_form_description"
-        android:textSize="30sp"
+        android:layout_marginEnd="20dp"
+        android:text="23 - October 2020"
+        android:textSize="20sp"
         android:textColor="@color/white"
         android:textStyle="bold" />
 
@@ -28,8 +52,8 @@ tools:context=".agriculture.AgricultureActivity">
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
         android:layout_marginStart="20dp"
-        android:text="First Name"
-        android:textSize="18dp"
+        android:text="@string/financial_year_lable"
+        android:textSize="18sp"
         android:textColor="@color/white"
         android:textStyle="bold" />
 
