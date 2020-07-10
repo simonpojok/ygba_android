@@ -101,4 +101,13 @@
         Give any other observations or Challenges
     </string>
     <string name="please_type_here">Please type here</string>
+    <string name="question_4_2" >
+        4.2 If yes what types of inputs and livestock were provided during the quarter ( provide list of
+        some of the recipients ) for the different inputs
+    </string>
+    <string name="inputs_or_planting_materials">Inputs / plant materials</string>
+    <string name="date">Date</string>
+    <string name="male_that_received_input">Male</string>
+    <string name="female_that_received_input">Female</string>
+    <string name="sub_county_or_village">Subcounty / Village</string>
 </resources>
