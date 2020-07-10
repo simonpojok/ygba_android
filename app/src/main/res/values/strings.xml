@@ -48,4 +48,9 @@
     <string name="date_received_hint">Date Received</string>
     <string name="amount_received">Amount Received</string>
     <string name="amount_expected">Amount Expected</string>
+    <string name="question_2_1_text" >2.1 Number of field visits for farmer support conducted during the quarter</string>
+    <string name="field_visits_hint">Number Of Field Visits</string>
+    <string name="question_2_2_text" >2.2 Are there any advisory demonstration community/ meetings
+    you conducted during the quarter by the extension work? </string>
+    <string name="demonstration_meeting_hint">Please explain</string>
 </resources>
