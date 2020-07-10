@@ -61,4 +61,9 @@
         2.4 Mention the areas (Cells/ Villages or parishes) where the meetings or workshops were
         held
     </string>
+    <string name="demonstration_meeting_place_name">Place Name</string>
+    <string name="question_2_5_text" >
+        2.5 If No, what are the reasons for not conducting the community meetings on farming
+    </string>
+    <string name="reason_hint">Plase Type Reasion Here</string>
 </resources>
