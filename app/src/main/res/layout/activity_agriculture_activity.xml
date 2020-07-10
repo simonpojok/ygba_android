@@ -1169,9 +1169,10 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_column="1"
-                        android:text="1"/>
+                        android:text="4"/>
 
                     <EditText
+                        android:id="@+id/question42Plant4"
                         android:layout_marginHorizontal="10dp"
                         android:textColor="@color/white"
                         android:background="@drawable/edit_text_style"
@@ -1183,6 +1184,7 @@
                         android:layout_column="1" />
 
                     <EditText
+                        android:id="@+id/question42Date4"
                         android:layout_marginHorizontal="10dp"
                         android:textColor="@color/white"
                         android:layout_width="250dp"
@@ -1194,6 +1196,7 @@
                         android:layout_column="2"/>
 
                     <EditText
+                        android:id="@+id/question42Male4"
                         android:textColor="@color/white"
                         android:layout_width="200dp"
                         android:layout_height="40dp"
@@ -1205,6 +1208,7 @@
                         android:inputType="number" />
 
                     <EditText
+                        android:id="@+id/question42Female4"
                         android:layout_marginHorizontal="10dp"
                         android:textColor="@color/white"
                         android:layout_width="200dp"
@@ -1216,6 +1220,7 @@
                         android:inputType="number" />
 
                     <EditText
+                        android:id="@+id/question42Village4"
                         android:textColor="@color/white"
                         android:layout_width="200dp"
                         android:layout_height="40dp"
@@ -1241,6 +1246,7 @@
                         android:text="1"/>
 
                     <EditText
+                        android:id="@+id/question42Plant5"
                         android:layout_marginHorizontal="10dp"
                         android:textColor="@color/white"
                         android:background="@drawable/edit_text_style"
@@ -1252,6 +1258,7 @@
                         android:layout_column="1" />
 
                     <EditText
+                        android:id="@+id/question42Date5"
                         android:layout_marginHorizontal="10dp"
                         android:textColor="@color/white"
                         android:layout_width="250dp"
@@ -1263,6 +1270,7 @@
                         android:layout_column="2"/>
 
                     <EditText
+                        android:id="@+id/question42Male5"
                         android:textColor="@color/white"
                         android:layout_width="200dp"
                         android:layout_height="40dp"
@@ -1274,6 +1282,7 @@
                         android:inputType="number" />
 
                     <EditText
+                        android:id="@+id/question42Female5"
                         android:layout_marginHorizontal="10dp"
                         android:textColor="@color/white"
                         android:layout_width="200dp"
@@ -1285,75 +1294,7 @@
                         android:inputType="number" />
 
                     <EditText
-                        android:textColor="@color/white"
-                        android:layout_width="200dp"
-                        android:layout_height="40dp"
-                        android:background="@drawable/edit_text_style"
-                        android:paddingStart="10dp"
-                        android:paddingEnd="10dp"
-                        android:autofillHints=""
-                        android:layout_column="5"/>
-
-                </TableRow>
-                <TableRow
-                    android:layout_marginBottom="10dp"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content">
-
-                    <TextView
-                        android:gravity="center_horizontal"
-                        android:textSize="15sp"
-                        android:textColor="@color/white"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_column="1"
-                        android:text="1"/>
-
-                    <EditText
-                        android:layout_marginHorizontal="10dp"
-                        android:textColor="@color/white"
-                        android:background="@drawable/edit_text_style"
-                        android:paddingStart="10dp"
-                        android:paddingEnd="10dp"
-                        android:autofillHints=""
-                        android:layout_width="200dp"
-                        android:layout_height="40dp"
-                        android:layout_column="1" />
-
-                    <EditText
-                        android:layout_marginHorizontal="10dp"
-                        android:textColor="@color/white"
-                        android:layout_width="250dp"
-                        android:layout_height="40dp"
-                        android:background="@drawable/edit_text_style"
-                        android:paddingStart="10dp"
-                        android:paddingEnd="10dp"
-                        android:autofillHints=""
-                        android:layout_column="2"/>
-
-                    <EditText
-                        android:textColor="@color/white"
-                        android:layout_width="200dp"
-                        android:layout_height="40dp"
-                        android:background="@drawable/edit_text_style"
-                        android:paddingStart="10dp"
-                        android:paddingEnd="10dp"
-                        android:autofillHints=""
-                        android:layout_column="3"
-                        android:inputType="number" />
-
-                    <EditText
-                        android:layout_marginHorizontal="10dp"
-                        android:textColor="@color/white"
-                        android:layout_width="200dp"
-                        android:layout_height="40dp"
-                        android:background="@drawable/edit_text_style"
-                        android:paddingStart="10dp"
-                        android:paddingEnd="10dp"
-                        android:layout_column="4"
-                        android:inputType="number" />
-
-                    <EditText
+                        android:id="@+id/question42Village5"
                         android:textColor="@color/white"
                         android:layout_width="200dp"
                         android:layout_height="40dp"
@@ -1377,12 +1318,14 @@
             android:text="@string/question_4_3"/>
 
         <EditText
+            android:gravity="start"
+            android:id="@+id/question43Reason"
+            android:layout_marginVertical="10dp"
             android:textColor="@color/white"
             android:layout_width="match_parent"
-            android:layout_height="40dp"
+            android:layout_height="100dp"
             android:background="@drawable/edit_text_style"
-            android:paddingStart="10dp"
-            android:paddingEnd="10dp"
+            android:padding="10dp"
             android:autofillHints="" />
 
         <TextView
@@ -1393,6 +1336,8 @@
             android:text="@string/question_4_3_observation"/>
 
         <EditText
+            android:id="@+id/question43AnyReason"
+            android:layout_marginVertical="10dp"
             android:textColor="@color/white"
             android:hint="@string/please_type_here"
             android:gravity="start"

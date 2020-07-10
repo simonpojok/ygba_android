@@ -56,6 +56,18 @@ public class AgricultureActivity extends AppCompatActivity {
     EditText question42Male3;
     EditText question42Female3;
     EditText question42Village3;
+    EditText question42Plant4;
+    EditText question42Date4;
+    EditText question42Male4;
+    EditText question42Female4;
+    EditText question42Village4;
+    EditText question42Village5;
+    EditText question42Female5;
+    EditText question42Male5;
+    EditText question42Date5;
+    EditText question42Plant5;
+    EditText question43Reason;
+    EditText question43AnyReason;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -108,5 +120,17 @@ public class AgricultureActivity extends AppCompatActivity {
         question42Male3 = findViewById(R.id.question42Male3);
         question42Female3 = findViewById(R.id.question42Female3);
         question42Village3 = findViewById(R.id.question42Village3);
+        question42Plant4 = findViewById(R.id.question42Plant4);
+        question42Date4 = findViewById(R.id.question42Date4);
+        question42Male4 = findViewById(R.id.question42Male4);
+        question42Female4 = findViewById(R.id.question42Female4);
+        question42Village4 = findViewById(R.id.question42Village4);
+        question42Village5 = findViewById(R.id.question42Village5);
+        question42Female5 = findViewById(R.id.question42Female5);
+        question42Male5 = findViewById(R.id.question42Male5);
+        question42Date5 = findViewById(R.id.question42Date5);
+        question42Plant5 =  findViewById(R.id.question42Plant5);
+        question43Reason = findViewById(R.id.question43Reason);
+        question43AnyReason =  findViewById(R.id.question43AnyReason);
     }
 }
