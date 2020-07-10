@@ -1005,7 +1005,6 @@
                         android:inputType="text" />
 
                 </TableRow>
-
                 <TableRow
                     android:layout_marginBottom="10dp"
                     android:layout_width="wrap_content"
@@ -1017,7 +1016,7 @@
                         android:textColor="@color/white"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_column="2"
+                        android:layout_column="1"
                         android:text="2"/>
 
                     <EditText
@@ -1030,8 +1029,7 @@
                         android:autofillHints=""
                         android:layout_width="200dp"
                         android:layout_height="40dp"
-                        android:layout_column="1"
-                        android:inputType="text" />
+                        android:layout_column="1" />
 
                     <EditText
                         android:id="@+id/question42Date2"
@@ -1043,8 +1041,7 @@
                         android:paddingStart="10dp"
                         android:paddingEnd="10dp"
                         android:autofillHints=""
-                        android:layout_column="2"
-                        android:inputType="date" />
+                        android:layout_column="2"/>
 
                     <EditText
                         android:id="@+id/question42Male2"
@@ -1056,8 +1053,7 @@
                         android:paddingEnd="10dp"
                         android:autofillHints=""
                         android:layout_column="3"
-                        android:inputType="number"
-                        tools:ignore="LabelFor" />
+                        android:inputType="number" />
 
                     <EditText
                         android:id="@+id/question42Female2"
@@ -1094,8 +1090,8 @@
                         android:textColor="@color/white"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_column="3"
-                        android:text="1"/>
+                        android:layout_column="1"
+                        android:text="3"/>
 
                     <EditText
                         android:id="@+id/question42Plant3"
@@ -1243,7 +1239,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_column="1"
-                        android:text="1"/>
+                        android:text="5"/>
 
                     <EditText
                         android:id="@+id/question42Plant5"
