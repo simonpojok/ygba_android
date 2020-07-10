@@ -40,4 +40,5 @@
     <string name="grants_label">Grants</string>
     <string name="extension_service_label">Extension Service</string>
     <string name="development_label">Development</string>
+    <string name="expected_approved_label">Expected / Approved</string>
 </resources>
