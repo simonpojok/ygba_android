@@ -75,10 +75,75 @@ tools:context=".agriculture.AgricultureActivity">
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
         android:layout_marginStart="20dp"
-        android:text="Last Name"
-        android:textSize="18dp"
+        android:text="@string/district_label"
+        android:textSize="18sp"
         android:textColor="@color/white"
         android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="20dp"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/village_label"
+                android:textSize="18sp"
+                android:layout_marginEnd="20dp"
+                android:textColor="@color/white"
+                android:textStyle="bold" />
+            <EditText
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:background="@drawable/edit_text_style"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="10dp"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/parish_label"
+                android:textSize="18sp"
+                android:layout_marginEnd="20dp"
+                android:textColor="@color/white"
+                android:textStyle="bold" />
+            <EditText
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:background="@drawable/edit_text_style"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/division_label"
+                android:textSize="18sp"
+                android:layout_marginEnd="20dp"
+                android:textColor="@color/white"
+                android:textStyle="bold" />
+            <EditText
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:background="@drawable/edit_text_style"/>
+        </LinearLayout>
+
+
+    </LinearLayout>
 
     <EditText
         android:id="@+id/lName"
