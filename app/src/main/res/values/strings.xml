@@ -110,4 +110,7 @@
     <string name="male_that_received_input">Male</string>
     <string name="female_that_received_input">Female</string>
     <string name="sub_county_or_village">Subcounty / Village</string>
+    <string name="expected_or_approved">Expected / Approved</string>
+    <string name="grants">Grants</string>
+    <string name="extension_services">Extension Service</string>
 </resources>
