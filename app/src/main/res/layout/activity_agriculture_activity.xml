@@ -1018,7 +1018,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_column="2"
-                        android:text="1"/>
+                        android:text="2"/>
 
                     <EditText
                         android:id="@+id/question42Plant2"
@@ -1094,10 +1094,11 @@
                         android:textColor="@color/white"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_column="1"
+                        android:layout_column="3"
                         android:text="1"/>
 
                     <EditText
+                        android:id="@+id/question42Plant3"
                         android:layout_marginHorizontal="10dp"
                         android:textColor="@color/white"
                         android:background="@drawable/edit_text_style"
@@ -1109,6 +1110,7 @@
                         android:layout_column="1" />
 
                     <EditText
+                        android:id="@+id/question42Date3"
                         android:layout_marginHorizontal="10dp"
                         android:textColor="@color/white"
                         android:layout_width="250dp"
@@ -1120,6 +1122,7 @@
                         android:layout_column="2"/>
 
                     <EditText
+                        android:id="@+id/question42Male3"
                         android:textColor="@color/white"
                         android:layout_width="200dp"
                         android:layout_height="40dp"
@@ -1131,6 +1134,7 @@
                         android:inputType="number" />
 
                     <EditText
+                        android:id="@+id/question42Female3"
                         android:layout_marginHorizontal="10dp"
                         android:textColor="@color/white"
                         android:layout_width="200dp"
@@ -1142,6 +1146,7 @@
                         android:inputType="number" />
 
                     <EditText
+                        android:id="@+id/question42Village3"
                         android:textColor="@color/white"
                         android:layout_width="200dp"
                         android:layout_height="40dp"
