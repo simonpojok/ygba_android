@@ -71,6 +71,8 @@
         android:textStyle="bold" />
 
     <LinearLayout
+        android:padding="10dp"
+        android:background="@drawable/white_background_rectangle"
         android:layout_width="match_parent"
         android:orientation="horizontal"
         android:layout_height="wrap_content">
