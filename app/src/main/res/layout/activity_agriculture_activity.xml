@@ -59,7 +59,7 @@
     <Spinner
         android:id="@+id/financial_year_spinner"
         android:layout_width="match_parent"
-        android:layout_height="30dp"
+        android:layout_height="40dp"
         android:textSize="15sp"
         android:background="@drawable/edit_text_style"
         tools:ignore="RtlSymmetry" />
@@ -77,87 +77,83 @@
         android:padding="10dp"
         android:background="@drawable/white_background_rectangle"
         android:layout_width="match_parent"
-        android:orientation="horizontal"
+        android:orientation="vertical"
         android:layout_height="wrap_content">
 
-        <LinearLayout
-            android:layout_marginEnd="15dp"
+        <TextView
+            android:layout_marginBottom="10dp"
+            android:labelFor="@id/village_text_edit"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="vertical">
-            <TextView
-                android:labelFor="@id/village_text_edit"
-                android:layout_width="wrap_content"
-                android:layout_height="40dp"
-                android:text="@string/village_label"
-                android:textSize="15sp"
-                android:textColor="@color/white"
-                android:textStyle="bold" />
-            <TextView
-                android:layout_marginVertical="10dp"
-                android:labelFor="@id/parish_text_edit"
-                android:layout_width="wrap_content"
-                android:layout_height="40dp"
-                android:text="@string/parish_label"
-                android:textSize="15sp"
-                android:textColor="@color/white"
-                android:textStyle="bold" />
+            android:layout_height="40dp"
+            android:text="@string/village_label"
+            android:textSize="15sp"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
 
-            <TextView
-                android:labelFor="@id/division_text_edit"
-                android:layout_width="wrap_content"
-                android:layout_height="40dp"
-                android:text="@string/division_label"
-                android:textSize="15sp"
-                android:textColor="@color/white"
-                android:textStyle="bold" />
-        </LinearLayout>
+        <EditText
+            android:layout_marginBottom="10dp"
+            android:paddingStart="5dp"
+            android:paddingEnd="5dp"
+            android:hint="@string/village_hint"
+            android:id="@+id/village_text_edit"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/edit_text_style"
+            android:autofillHints=""
+            android:textSize="15sp"
+            android:inputType="text"
+            tools:ignore="LabelFor" />
 
-        <LinearLayout
-            android:layout_width="0dp"
-            android:layout_weight="1"
-            android:layout_height="wrap_content"
-            android:orientation="vertical">
+        <TextView
+            android:layout_marginBottom="10dp"
+            android:layout_marginVertical="10dp"
+            android:labelFor="@id/parish_text_edit"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:text="@string/parish_label"
+            android:textSize="15sp"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
 
-            <EditText
-                android:paddingStart="5dp"
-                android:paddingEnd="5dp"
-                android:hint="@string/village_hint"
-                android:id="@+id/village_text_edit"
-                android:layout_width="match_parent"
-                android:layout_height="40dp"
-                android:background="@drawable/edit_text_style"
-                android:autofillHints=""
-                android:textSize="15sp"
-                android:inputType="text"
-                tools:ignore="LabelFor" />
-            <EditText
-                android:paddingStart="5dp"
-                android:paddingEnd="5dp"
-                android:hint="@string/parish_hint"
-                android:id="@+id/parish_text_edit"
-                android:layout_width="match_parent"
-                android:layout_marginVertical="10dp"
-                android:layout_height="40dp"
-                android:background="@drawable/edit_text_style"
-                android:autofillHints=""
-                android:inputType="text"
-                android:textSize="15sp"
-                tools:ignore="LabelFor" />
-            <EditText
-                android:hint="@string/division_hint"
-                android:id="@+id/division_text_edit"
-                android:layout_width="match_parent"
-                android:layout_height="40dp"
-                android:background="@drawable/edit_text_style"
-                android:autofillHints=""
-                android:paddingStart="5dp"
-                android:paddingEnd="5dp"
-                android:textSize="15sp"
-                android:overScrollMode="always"
-                android:inputType="text"
-                tools:ignore="LabelFor" />
-        </LinearLayout>
+        <EditText
+            android:layout_marginBottom="10dp"
+            android:paddingStart="5dp"
+            android:paddingEnd="5dp"
+            android:hint="@string/parish_hint"
+            android:id="@+id/parish_text_edit"
+            android:layout_width="match_parent"
+            android:layout_marginVertical="10dp"
+            android:layout_height="40dp"
+            android:background="@drawable/edit_text_style"
+            android:autofillHints=""
+            android:inputType="text"
+            android:textSize="15sp"
+            tools:ignore="LabelFor" />
+
+        <TextView
+            android:layout_marginBottom="10dp"
+            android:labelFor="@id/division_text_edit"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:text="@string/division_label"
+            android:textSize="15sp"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+
+        <EditText
+            android:layout_marginBottom="10dp"
+            android:hint="@string/division_hint"
+            android:id="@+id/division_text_edit"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/edit_text_style"
+            android:autofillHints=""
+            android:paddingStart="5dp"
+            android:paddingEnd="5dp"
+            android:textSize="15sp"
+            android:overScrollMode="always"
+            android:inputType="text"
+            tools:ignore="LabelFor" />
 
     </LinearLayout>
 
