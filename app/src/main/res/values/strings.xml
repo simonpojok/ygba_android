@@ -20,7 +20,7 @@
     <string name="sub_county_label">Town Council</string>
     <string name="parish_label">Parish</string>
     <string name="division_label">Division</string>
-    <string name="parish_hint">Sub county/ Division/ Town Council</string>
-    <string name="division_hint" />
+    <string name="parish_hint">Parish</string>
+    <string name="division_hint" >Sub county/ Division/ Town Council</string>
     <string name="village_hint">Village</string>
 </resources>
