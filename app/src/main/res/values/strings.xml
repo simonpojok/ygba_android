@@ -81,4 +81,9 @@
         3.4 Number of farmers visited for advisory services during the partner (get contacts and address of at least
         two farmers visited)
     </string>
+    <string name="question_3_4_female">Female</string>
+    <string name="question_3_4_male">Male</string>
+    <string name="question_3_5" >
+        3.5 If no, what are the reasons for not conducting the farmer advisory services visit
+    </string>
 </resources>
