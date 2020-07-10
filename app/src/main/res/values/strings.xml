@@ -23,4 +23,11 @@
     <string name="parish_hint">Parish</string>
     <string name="division_hint" >Sub county/ Division/ Town Council</string>
     <string name="village_hint">Village</string>
+    <string name="ygb_agent_label">Monitor/YGB Agent</string>
+    <string name="ygb_agent_name_label">Full Name</string>
+    <string name="ygb_agent_tel_label">Tel</string>
+    <string name="ygb_agent_no_label">No</string>
+    <string name="telephone_hint">0772241709</string>
+    <string name="fullname_hint">Simon Adam</string>
+    <string name="agent_number_hint">25554</string>
 </resources>

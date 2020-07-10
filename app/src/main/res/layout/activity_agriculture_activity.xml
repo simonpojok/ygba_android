@@ -64,6 +64,7 @@
         tools:ignore="RtlSymmetry" />
 
     <TextView
+        android:layout_marginVertical="10dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/district_label"
@@ -79,6 +80,7 @@
         android:layout_height="wrap_content">
 
         <LinearLayout
+            android:layout_marginEnd="20dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="vertical">
@@ -88,7 +90,6 @@
                 android:layout_height="40dp"
                 android:text="@string/village_label"
                 android:textSize="18sp"
-                android:layout_marginEnd="20dp"
                 android:textColor="@color/white"
                 android:textStyle="bold" />
             <TextView
@@ -97,7 +98,6 @@
                 android:layout_height="40dp"
                 android:text="@string/parish_label"
                 android:textSize="18sp"
-                android:layout_marginEnd="20dp"
                 android:textColor="@color/white"
                 android:textStyle="bold" />
 
@@ -107,7 +107,6 @@
                 android:layout_height="40dp"
                 android:text="@string/division_label"
                 android:textSize="18sp"
-                android:layout_marginEnd="20dp"
                 android:textColor="@color/white"
                 android:textStyle="bold" />
         </LinearLayout>
@@ -156,33 +155,90 @@
 
     </LinearLayout>
 
+    <TextView
+        android:layout_marginVertical="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/ygb_agent_label"
+        android:textSize="18sp"
+        android:textColor="@color/white"
+        android:textStyle="bold" />
+
     <LinearLayout
+        android:padding="10dp"
+        android:layout_marginVertical="10dp"
+        android:background="@drawable/white_background_rectangle"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical">
+        android:orientation="horizontal">
 
-        <TextView
+        <LinearLayout
+            android:layout_marginEnd="5dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
-            android:layout_marginStart="20dp"
-            android:text="Full Name"
-            android:textSize="18sp"
-            android:textColor="@color/white"
-            android:textStyle="bold" />
+            android:orientation="vertical">
 
-        <EditText
-            android:layout_width="match_parent"
-            android:layout_height="40dp"
-            android:background="@drawable/edit_text_style"
-            android:paddingStart="10dp"
-            android:paddingEnd="10dp"
-            android:layout_marginTop="5dp"
-            android:layout_marginLeft="20dp"
-            android:layout_marginStart="20dp"
-            android:layout_marginRight="20dp"
-            android:layout_marginEnd="20dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="@string/ygb_agent_name_label"
+                android:textSize="18sp"
+                android:layout_height="40dp"
+                android:textColor="@color/white"
+                android:textStyle="bold" />
 
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:text="@string/ygb_agent_tel_label"
+                android:textSize="18sp"
+                android:textColor="@color/white"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:text="@string/ygb_agent_no_label"
+                android:textSize="18sp"
+                android:textColor="@color/white"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <EditText
+                android:hint="@string/fullname_hint"
+                android:inputType="text"
+                android:id="@+id/ygb_agent_name_edit_view"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/edit_text_style"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                android:autofillHints="" />
+
+            <EditText
+                android:inputType="phone"
+                android:hint="@string/telephone_hint"
+                android:id="@+id/ygb_agent_tel_edit_view"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/edit_text_style"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp" />
+            <EditText
+                android:hint="@string/agent_number_hint"
+                android:id="@+id/ygb_agent_no_edit_view"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/edit_text_style"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp" />
+
+        </LinearLayout>
     </LinearLayout>
 
     <TextView
