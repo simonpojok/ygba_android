@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
-xmlns:tools="http://schemas.android.com/tools"
-android:layout_width="match_parent"
-android:layout_height="match_parent"
-android:background="@color/colorActivityBackground"
-tools:context=".agriculture.AgricultureActivity">
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" android:padding="8dp"
+    android:background="@color/colorActivityBackground"
+    tools:context=".agriculture.AgricultureActivity">
 
 <LinearLayout
     android:layout_width="match_parent"
@@ -50,8 +50,6 @@ tools:context=".agriculture.AgricultureActivity">
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:layout_marginStart="20dp"
         android:text="@string/financial_year_label"
         android:textSize="18sp"
         android:textColor="@color/white"
@@ -62,88 +60,112 @@ tools:context=".agriculture.AgricultureActivity">
         android:layout_width="match_parent"
         android:layout_height="40dp"
         android:background="@drawable/edit_text_style"
-        android:paddingStart="10dp"
-        android:layout_marginTop="5dp"
-        android:layout_marginLeft="20dp"
-        android:layout_marginStart="20dp"
-        android:layout_marginRight="20dp"
-        android:layout_marginEnd="20dp"
         tools:ignore="RtlSymmetry" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        android:layout_marginStart="20dp"
         android:text="@string/district_label"
         android:textSize="18sp"
         android:textColor="@color/white"
         android:textStyle="bold" />
 
     <LinearLayout
-        android:layout_marginTop="10dp"
-        android:layout_marginStart="20dp"
         android:layout_width="match_parent"
-        android:orientation="vertical"
+        android:orientation="horizontal"
         android:layout_height="wrap_content">
 
         <LinearLayout
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:orientation="horizontal">
+            android:orientation="vertical">
             <TextView
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_height="40dp"
                 android:text="@string/village_label"
                 android:textSize="18sp"
                 android:layout_marginEnd="20dp"
                 android:textColor="@color/white"
                 android:textStyle="bold" />
-            <EditText
-                android:layout_width="100dp"
-                android:layout_height="40dp"
-                android:background="@drawable/edit_text_style"/>
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginVertical="10dp"
-            android:orientation="horizontal">
             <TextView
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_height="40dp"
                 android:text="@string/parish_label"
                 android:textSize="18sp"
                 android:layout_marginEnd="20dp"
                 android:textColor="@color/white"
                 android:textStyle="bold" />
-            <EditText
-                android:layout_width="100dp"
-                android:layout_height="40dp"
-                android:background="@drawable/edit_text_style"/>
-        </LinearLayout>
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
             <TextView
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_height="40dp"
                 android:text="@string/division_label"
                 android:textSize="18sp"
                 android:layout_marginEnd="20dp"
                 android:textColor="@color/white"
                 android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
             <EditText
-                android:layout_width="100dp"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/edit_text_style"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/edit_text_style"/>
+            <EditText
+                android:layout_width="match_parent"
                 android:layout_height="40dp"
                 android:background="@drawable/edit_text_style"/>
         </LinearLayout>
 
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="20dp"
+            android:text="Full Name"
+            android:textSize="18sp"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/edit_text_style"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginEnd="20dp"/>
 
     </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="20dp"
+        android:text="Initials"
+        android:textSize="18dp"
+        android:textColor="@color/white"
+        android:textStyle="bold" />
 
     <EditText
         android:id="@+id/lName"
