@@ -868,9 +868,280 @@
             android:autofillHints="" />
 
         <HorizontalScrollView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:overScrollMode="always">
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_column="1"
+                        android:text="@string/inputs_or_planting_materials"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_column="2"
+                        android:text="@string/date"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_column="3"
+                        android:text="@string/male_that_received_input"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_column="4"
+                        android:text="@string/female_that_received_input"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/sub_county_or_village"
+                        android:layout_column="5"/>
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_column="1"
+                        android:id="@+id/inputs_or_planting_materials_one"/>
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_column="2"
+                        android:id="@+id/date_one"/>
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_column="3"
+                        android:inputType="number"
+                        android:id="@+id/male_that_received_input_one"/>
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_column="4"
+                        android:inputType="number"
+                        android:id="@+id/female_that_received_input_one"/>
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/sub_county_or_village_one"
+                        android:layout_column="5"/>
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_column="1"
+                        android:id="@+id/inputs_or_planting_materials_two"/>
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_column="2"
+                        android:id="@+id/date_two"/>
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_column="3"
+                        android:inputType="number"
+                        android:id="@+id/male_that_received_input_two"/>
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_column="4"
+                        android:inputType="number"
+                        android:id="@+id/female_that_received_input_two"/>
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/sub_county_or_village_two"
+                        android:layout_column="5"/>
+
+                </TableRow>
+
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_column="1"
+                        android:id="@+id/inputs_or_planting_materials_three"/>
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_column="2"
+                        android:id="@+id/date_three"/>
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_column="3"
+                        android:inputType="number"
+                        android:id="@+id/male_that_received_input_three"/>
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_column="4"
+                        android:inputType="number"
+                        android:id="@+id/female_that_received_input_three"/>
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/sub_county_or_village_three"
+                        android:layout_column="5"/>
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_column="1"
+                        android:id="@+id/inputs_or_planting_materials_four"/>
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_column="2"
+                        android:id="@+id/date_four"/>
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_column="3"
+                        android:inputType="number"
+                        android:id="@+id/male_that_received_input_four"/>
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_column="4"
+                        android:inputType="number"
+                        android:id="@+id/female_that_received_input_four"/>
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/sub_county_or_village_four"
+                        android:layout_column="5"/>
+
+                </TableRow>
+
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_column="1"
+                        android:id="@+id/inputs_or_planting_materials_five"/>
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_column="2"
+                        android:id="@+id/date_five"/>
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_column="3"
+                        android:inputType="number"
+                        android:id="@+id/male_that_received_input_five"/>
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_column="4"
+                        android:inputType="number"
+                        android:id="@+id/female_that_received_input_five"/>
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/sub_county_or_village_five"
+                        android:layout_column="5"/>
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_column="1"
+                        android:id="@+id/inputs_or_planting_materials_six"/>
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_column="2"
+                        android:id="@+id/date_six"/>
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_column="3"
+                        android:inputType="number"
+                        android:id="@+id/male_that_received_input_six"/>
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_column="4"
+                        android:inputType="number"
+                        android:id="@+id/female_that_received_input_six"/>
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/sub_county_or_village_six"
+                        android:layout_column="5"/>
+
+                </TableRow>
+
+            </TableLayout>
 
         </HorizontalScrollView>
 
