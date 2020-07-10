@@ -1017,10 +1017,11 @@
                         android:textColor="@color/white"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_column="1"
+                        android:layout_column="2"
                         android:text="1"/>
 
                     <EditText
+                        android:id="@+id/question42Plant2"
                         android:layout_marginHorizontal="10dp"
                         android:textColor="@color/white"
                         android:background="@drawable/edit_text_style"
@@ -1029,9 +1030,11 @@
                         android:autofillHints=""
                         android:layout_width="200dp"
                         android:layout_height="40dp"
-                        android:layout_column="1" />
+                        android:layout_column="1"
+                        android:inputType="text" />
 
                     <EditText
+                        android:id="@+id/question42Date2"
                         android:layout_marginHorizontal="10dp"
                         android:textColor="@color/white"
                         android:layout_width="250dp"
@@ -1040,9 +1043,11 @@
                         android:paddingStart="10dp"
                         android:paddingEnd="10dp"
                         android:autofillHints=""
-                        android:layout_column="2"/>
+                        android:layout_column="2"
+                        android:inputType="date" />
 
                     <EditText
+                        android:id="@+id/question42Male2"
                         android:textColor="@color/white"
                         android:layout_width="200dp"
                         android:layout_height="40dp"
@@ -1051,9 +1056,11 @@
                         android:paddingEnd="10dp"
                         android:autofillHints=""
                         android:layout_column="3"
-                        android:inputType="number" />
+                        android:inputType="number"
+                        tools:ignore="LabelFor" />
 
                     <EditText
+                        android:id="@+id/question42Female2"
                         android:layout_marginHorizontal="10dp"
                         android:textColor="@color/white"
                         android:layout_width="200dp"
@@ -1065,6 +1072,7 @@
                         android:inputType="number" />
 
                     <EditText
+                        android:id="@+id/question42Village2"
                         android:textColor="@color/white"
                         android:layout_width="200dp"
                         android:layout_height="40dp"

@@ -46,6 +46,11 @@ public class AgricultureActivity extends AppCompatActivity {
     EditText question42Male1;
     EditText question42Female1;
     EditText question42Village1;
+    EditText question42Village2;
+    EditText question42Female2;
+    EditText question42Male2;
+    EditText question42Date2;
+    EditText question42Plant2;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -88,5 +93,10 @@ public class AgricultureActivity extends AppCompatActivity {
         question42Male1 = findViewById(R.id.question42Male1);
         question42Female1 = findViewById(R.id.question42Female1);
         question42Village1 = findViewById(R.id.question42Village1);
+        question42Village2 = findViewById(R.id.question42Village2);
+        question42Female2 = findViewById(R.id.question42Female2);
+        question42Male2 = findViewById(R.id.question42Male2);
+        question42Date2 = findViewById(R.id.question42Date2);
+        question42Plant2 = findViewById(R.id.question42Plant2);
     }
 }
