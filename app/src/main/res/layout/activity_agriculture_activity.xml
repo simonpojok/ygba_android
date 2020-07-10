@@ -806,6 +806,7 @@
     </LinearLayout>
 
     <TextView
+        android:layout_marginVertical="10dp"
         android:textColor="@color/white"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
