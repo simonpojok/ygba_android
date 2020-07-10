@@ -53,4 +53,12 @@
     <string name="question_2_2_text" >2.2 Are there any advisory demonstration community/ meetings
     you conducted during the quarter by the extension work? </string>
     <string name="demonstration_meeting_hint">Please explain</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="question_2_3_text">2.3 If yes How many during the qarter</string>
+    <string name="number_of_meeting_hint">Number of Meetings</string>
+    <string name="question_2_4_text" >
+        2.4 Mention the areas (Cells/ Villages or parishes) where the meetings or workshops were
+        held
+    </string>
 </resources>
