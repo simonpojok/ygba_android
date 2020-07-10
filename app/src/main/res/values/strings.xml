@@ -97,4 +97,7 @@
         4.3 If none, what are the reasons for not providing farmers with agriculture inputs and
         livestock during the quarter
     </string>
+    <string name="question_4_3_observation" >
+        Give any other observations or Challenges
+    </string>
 </resources>
