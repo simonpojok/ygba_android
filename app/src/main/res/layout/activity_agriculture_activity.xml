@@ -52,13 +52,13 @@ tools:context=".agriculture.AgricultureActivity">
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
         android:layout_marginStart="20dp"
-        android:text="@string/financial_year_lable"
+        android:text="@string/financial_year_label"
         android:textSize="18sp"
         android:textColor="@color/white"
         android:textStyle="bold" />
 
-    <EditText
-        android:id="@+id/fName"
+    <Spinner
+        android:id="@+id/financial_year_spinner"
         android:layout_width="match_parent"
         android:layout_height="40dp"
         android:background="@drawable/edit_text_style"
