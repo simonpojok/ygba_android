@@ -28,7 +28,7 @@
         android:layout_gravity="center_horizontal"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="10dp"
         android:padding="10dp"
         android:text="@string/agriculture_form_description"
         android:textSize="15sp"
@@ -39,8 +39,8 @@
         android:layout_gravity="end"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="10dp"
         android:layout_marginEnd="20dp"
         android:text="23 - October 2020"
         android:textSize="15sp"
@@ -59,7 +59,8 @@
     <Spinner
         android:id="@+id/financial_year_spinner"
         android:layout_width="match_parent"
-        android:layout_height="40dp"
+        android:layout_height="30dp"
+        android:textSize="13sp"
         android:background="@drawable/edit_text_style"
         tools:ignore="RtlSymmetry" />
 
@@ -87,7 +88,7 @@
             <TextView
                 android:labelFor="@id/village_text_edit"
                 android:layout_width="wrap_content"
-                android:layout_height="40dp"
+                android:layout_height="30dp"
                 android:text="@string/village_label"
                 android:textSize="13sp"
                 android:textColor="@color/white"
@@ -96,7 +97,7 @@
                 android:layout_marginVertical="10dp"
                 android:labelFor="@id/parish_text_edit"
                 android:layout_width="wrap_content"
-                android:layout_height="40dp"
+                android:layout_height="30dp"
                 android:text="@string/parish_label"
                 android:textSize="13sp"
                 android:textColor="@color/white"
@@ -105,7 +106,7 @@
             <TextView
                 android:labelFor="@id/division_text_edit"
                 android:layout_width="wrap_content"
-                android:layout_height="40dp"
+                android:layout_height="30dp"
                 android:text="@string/division_label"
                 android:textSize="13sp"
                 android:textColor="@color/white"
@@ -124,9 +125,10 @@
                 android:hint="@string/village_hint"
                 android:id="@+id/village_text_edit"
                 android:layout_width="match_parent"
-                android:layout_height="40dp"
+                android:layout_height="30dp"
                 android:background="@drawable/edit_text_style"
                 android:autofillHints=""
+                android:textSize="13sp"
                 android:inputType="text"
                 tools:ignore="LabelFor" />
             <EditText
@@ -136,20 +138,23 @@
                 android:id="@+id/parish_text_edit"
                 android:layout_width="match_parent"
                 android:layout_marginVertical="10dp"
-                android:layout_height="40dp"
+                android:layout_height="30dp"
                 android:background="@drawable/edit_text_style"
                 android:autofillHints=""
                 android:inputType="text"
+                android:textSize="13sp"
                 tools:ignore="LabelFor" />
             <EditText
                 android:hint="@string/division_hint"
                 android:id="@+id/division_text_edit"
                 android:layout_width="match_parent"
-                android:layout_height="40dp"
+                android:layout_height="30dp"
                 android:background="@drawable/edit_text_style"
                 android:autofillHints=""
                 android:paddingStart="5dp"
                 android:paddingEnd="5dp"
+                android:textSize="13sp"
+
                 android:overScrollMode="always"
                 android:inputType="text"
                 tools:ignore="LabelFor" />
@@ -167,7 +172,7 @@
         android:textStyle="bold" />
 
     <LinearLayout
-        android:padding="10dp"
+        android:padding="5dp"
         android:layout_marginVertical="10dp"
         android:background="@drawable/white_background_rectangle"
         android:layout_width="match_parent"
@@ -184,14 +189,14 @@
                 android:layout_width="wrap_content"
                 android:text="@string/ygb_agent_name_label"
                 android:textSize="13sp"
-                android:layout_height="40dp"
+                android:layout_height="30dp"
                 android:textColor="@color/white"
                 android:textStyle="bold" />
 
             <TextView
                 android:layout_marginVertical="10dp"
                 android:layout_width="wrap_content"
-                android:layout_height="40dp"
+                android:layout_height="30dp"
                 android:text="@string/ygb_agent_tel_label"
                 android:textSize="13sp"
                 android:textColor="@color/white"
@@ -199,7 +204,7 @@
 
             <TextView
                 android:layout_width="wrap_content"
-                android:layout_height="40dp"
+                android:layout_height="30dp"
                 android:text="@string/ygb_agent_no_label"
                 android:textSize="13sp"
                 android:textColor="@color/white"
@@ -215,9 +220,10 @@
             <EditText
                 android:hint="@string/fullname_hint"
                 android:inputType="text"
+                android:textSize="13sp"
                 android:id="@+id/ygb_agent_name_edit_view"
                 android:layout_width="match_parent"
-                android:layout_height="40dp"
+                android:layout_height="30dp"
                 android:background="@drawable/edit_text_style"
                 android:paddingStart="5dp"
                 android:paddingEnd="5dp"
@@ -229,7 +235,8 @@
                 android:hint="@string/telephone_hint"
                 android:id="@+id/ygb_agent_tel_edit_view"
                 android:layout_width="match_parent"
-                android:layout_height="40dp"
+                android:layout_height="30dp"
+                android:textSize="13sp"
                 android:background="@drawable/edit_text_style"
                 android:paddingStart="5dp"
                 android:paddingEnd="5dp" />
@@ -237,9 +244,10 @@
                 android:hint="@string/agent_number_hint"
                 android:id="@+id/ygb_agent_no_edit_view"
                 android:layout_width="match_parent"
-                android:layout_height="40dp"
+                android:layout_height="30dp"
                 android:background="@drawable/edit_text_style"
                 android:paddingStart="5dp"
+                android:textSize="13sp"
                 android:paddingEnd="5dp" />
 
         </LinearLayout>
@@ -249,7 +257,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/note_text"
-        android:textSize="10sp"
+        android:textSize="13sp"
         android:layout_marginBottom="10dp"
         android:textColor="@color/white"
         android:textStyle="bold" />
@@ -275,12 +283,14 @@
             android:orientation="horizontal">
 
             <CheckBox
+                android:textSize="13sp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textColor="@color/white"
                 android:text="Yes"/>
 
             <CheckBox
+                android:textSize="13sp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textColor="@color/white"
@@ -298,6 +308,7 @@
             android:textStyle="bold" />
 
         <EditText
+            android:textSize="13sp"
             android:inputType="textMultiLine"
             android:id="@+id/question_1_reason_text_edit"
             android:hint="@string/question_1_reason_text_edit"
@@ -329,6 +340,7 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
             android:orientation="horizontal">
             <TextView
                 android:gravity="center_horizontal"
@@ -336,7 +348,7 @@
                 android:layout_weight="2"
                 android:layout_height="wrap_content"
                 android:text="@string/extension_service_label"
-                android:textSize="10sp"
+                android:textSize="13sp"
                 android:textColor="@color/white"
                 android:textStyle="bold" />
 
@@ -346,7 +358,7 @@
                 android:layout_weight="4"
                 android:layout_height="wrap_content"
                 android:text="@string/extension_service_label"
-                android:textSize="10sp"
+                android:textSize="13sp"
                 android:textColor="@color/white"
                 android:textStyle="bold" />
 
@@ -356,7 +368,7 @@
                 android:layout_weight="4"
                 android:layout_height="wrap_content"
                 android:text="@string/development_label"
-                android:textSize="10sp"
+                android:textSize="13sp"
                 android:textColor="@color/white"
                 android:textStyle="bold" />
         </LinearLayout>
@@ -373,8 +385,9 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="@string/expected_approved_label"
-                    android:textSize="10sp"
-                    android:height="40dp"
+                    android:textSize="13sp"
+                    android:layout_marginBottom="10dp"
+                    android:height="30dp"
                     android:textColor="@color/white"
                     android:textStyle="bold" />
 
@@ -382,8 +395,9 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="@string/amount_received_label"
-                    android:textSize="10sp"
-                    android:height="40dp"
+                    android:textSize="13sp"
+                    android:layout_marginBottom="10dp"
+                    android:height="30dp"
                     android:textColor="@color/white"
                     android:textStyle="bold" />
 
@@ -391,17 +405,19 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="@string/date_received"
-                    android:textSize="10sp"
-                    android:height="40dp"
+                    android:textSize="13sp"
+                    android:layout_marginBottom="10dp"
+                    android:height="30dp"
                     android:textColor="@color/white"
                     android:textStyle="bold" />
 
                 <TextView
+                    android:layout_marginBottom="10dp"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="@string/date_withdrawn"
-                    android:textSize="10sp"
-                    android:height="40dp"
+                    android:textSize="13sp"
+                    android:height="30dp"
                     android:textColor="@color/white"
                     android:textStyle="bold" />
             </LinearLayout>
@@ -412,42 +428,50 @@
                 android:orientation="vertical">
 
                 <EditText
+                    android:layout_marginBottom="10dp"
                     android:inputType="numberDecimal"
                     android:id="@+id/extensions_amount_expected"
                     android:paddingHorizontal="5dp"
                     android:hint="@string/amount_expected"
                     android:layout_width="match_parent"
-                    android:layout_height="40dp"
+                    android:layout_height="30dp"
+                    android:textSize="13sp"
                     android:background="@drawable/edit_text_style"
                     android:autofillHints="" />
 
                 <EditText
+                    android:layout_marginBottom="10dp"
                     android:inputType="numberDecimal"
                     android:id="@+id/extensions_amount_received"
                     android:paddingHorizontal="5dp"
                     android:hint="@string/amount_expected"
                     android:layout_width="match_parent"
-                    android:layout_height="40dp"
+                    android:layout_height="30dp"
+                    android:textSize="13sp"
                     android:background="@drawable/edit_text_style"
                     android:autofillHints="" />
 
                 <EditText
+                    android:textSize="13sp"
+                    android:layout_marginBottom="10dp"
                     android:paddingHorizontal="5dp"
                     android:inputType="date"
                     android:id="@+id/extensions_date_received"
                     android:hint="@string/date_received_hint"
                     android:layout_width="match_parent"
-                    android:layout_height="40dp"
+                    android:layout_height="30dp"
                     android:background="@drawable/edit_text_style"
                     android:autofillHints="" />
 
                 <EditText
+                    android:textSize="13sp"
+                    android:layout_marginBottom="10dp"
                     android:paddingHorizontal="5dp"
                     android:inputType="date"
                     android:id="@+id/extensions_date_withdrawn"
                     android:hint="@string/date_withdrawn_hint"
                     android:layout_width="match_parent"
-                    android:layout_height="40dp"
+                    android:layout_height="30dp"
                     android:background="@drawable/edit_text_style"
                     android:autofillHints="" />
             </LinearLayout>
@@ -458,42 +482,52 @@
                 android:layout_height="wrap_content"
                 android:orientation="vertical">
                 <EditText
+                    android:textSize="13sp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginStart="5dp"
                     android:inputType="numberDecimal"
                     android:id="@+id/development_amount_expected"
                     android:paddingHorizontal="5dp"
                     android:hint="@string/amount_expected"
                     android:layout_width="match_parent"
-                    android:layout_height="40dp"
+                    android:layout_height="30dp"
                     android:background="@drawable/edit_text_style"
                     android:autofillHints="" />
 
                 <EditText
+                    android:textSize="13sp"
+                    android:layout_marginStart="5dp"
                     android:paddingHorizontal="5dp"
                     android:id="@+id/development_amount_received"
                     android:inputType="numberDecimal"
                     android:hint="@string/amount_received"
                     android:layout_width="match_parent"
-                    android:layout_height="40dp"
+                    android:layout_height="30dp"
                     android:background="@drawable/edit_text_style"
                     android:autofillHints="" />
 
                 <EditText
+                    android:textSize="13sp"
+                    android:layout_marginVertical="10dp"
+                    android:layout_marginStart="5dp"
                     android:paddingHorizontal="5dp"
                     android:inputType="date"
                     android:id="@+id/development_date_received"
                     android:hint="@string/date_received_hint"
                     android:layout_width="match_parent"
-                    android:layout_height="40dp"
+                    android:layout_height="30dp"
                     android:background="@drawable/edit_text_style"
                     android:autofillHints="" />
 
                 <EditText
+                    android:textSize="13sp"
+                    android:layout_marginStart="5dp"
                     android:paddingHorizontal="5dp"
                     android:id="@+id/development_date_withdrawn"
                     android:inputType="date"
                     android:hint="@string/date_withdrawn_hint"
                     android:layout_width="match_parent"
-                    android:layout_height="40dp"
+                    android:layout_height="30dp"
                     android:background="@drawable/edit_text_style"
                     android:autofillHints="" />
 
@@ -519,12 +553,14 @@
             android:textStyle="bold" />
 
         <EditText
+            android:layout_marginVertical="10dp"
             android:inputType="number"
+            android:textSize="13sp"
             android:paddingHorizontal="5dp"
             android:hint="@string/field_visits_hint"
             android:id="@+id/field_visits_text_edit"
             android:layout_width="match_parent"
-            android:layout_height="40dp"
+            android:layout_height="30dp"
             android:background="@drawable/edit_text_style"/>
     </LinearLayout>
 
@@ -533,7 +569,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        android:padding="10dp"
+        android:padding="5dp"
         android:background="@drawable/white_background_rectangle">
 
         <TextView
@@ -550,12 +586,14 @@
             android:orientation="horizontal">
 
             <CheckBox
+                android:textSize="13sp"
                 android:textColor="@color/white"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/yes" />
 
             <CheckBox
+                android:textSize="13sp"
                 android:textColor="@color/white"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -571,6 +609,7 @@
             android:textStyle="bold" />
 
         <EditText
+            android:textSize="13sp"
             android:layout_marginVertical="10dp"
             android:inputType="number"
             android:paddingHorizontal="5dp"
@@ -596,10 +635,13 @@
             android:layout_height="wrap_content"
             android:text="@string/question_2_4_text"
             android:textSize="13sp"
+            android:layout_marginVertical="10dp"
             android:textColor="@color/white"
             android:textStyle="bold" />
 
         <EditText
+            android:textSize="13sp"
+            android:layout_marginVertical="10dp"
             android:id="@+id/demonstration_meeting_place_text_view"
             android:layout_width="match_parent"
             android:inputType="text"
@@ -623,6 +665,7 @@
             android:layout_height="wrap_content"
             android:text="@string/question_2_5_text"
             android:textSize="13sp"
+            android:layout_marginVertical="10dp"
             android:textColor="@color/white"
             android:textStyle="bold" />
 
@@ -631,138 +674,162 @@
             android:layout_width="match_parent"
             android:inputType="textMultiLine"
             android:paddingHorizontal="5dp"
+            android:layout_marginVertical="10dp"
             android:hint="@string/reason_hint"
             android:layout_height="100dp"
+            android:textSize="13sp"
             android:background="@drawable/edit_text_style"
             android:autofillHints="" />
 
     </LinearLayout>
 
-<!--    <EditText-->
-<!--        android:id="@+id/lName"-->
-<!--        android:layout_width="match_parent"-->
-<!--        android:layout_height="40dp"-->
-<!--        android:background="@drawable/edit_text_style"-->
-<!--        android:paddingStart="10dp"-->
-<!--        android:paddingEnd="10dp"-->
-<!--        android:layout_marginTop="5dp"-->
-<!--        android:layout_marginLeft="20dp"-->
-<!--        android:layout_marginStart="20dp"-->
-<!--        android:layout_marginRight="20dp"-->
-<!--        android:layout_marginEnd="20dp"/>-->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="20dp"
+        android:text="@string/question_3_0"
+        android:textSize="15sp"
+        android:textColor="@color/white"
+        android:textStyle="bold" />
 
-<!--    <TextView-->
-<!--        android:layout_width="wrap_content"-->
-<!--        android:layout_height="wrap_content"-->
-<!--        android:layout_marginTop="10dp"-->
-<!--        android:layout_marginStart="20dp"-->
-<!--        android:text="Initials"-->
-<!--        android:textSize="18dp"-->
-<!--        android:textColor="@color/white"-->
-<!--        android:textStyle="bold" />-->
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:background="@drawable/edit_text_style"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginEnd="20dp"/>
 
-<!--    <EditText-->
-<!--        android:id="@+id/initials"-->
-<!--        android:layout_width="match_parent"-->
-<!--        android:layout_height="40dp"-->
-<!--        android:background="@drawable/edit_text_style"-->
-<!--        android:paddingLeft="10dp"-->
-<!--        android:layout_marginTop="5dp"-->
-<!--        android:layout_marginLeft="20dp"-->
-<!--        android:layout_marginStart="20dp"-->
-<!--        android:layout_marginRight="20dp"-->
-<!--        android:layout_marginEnd="20dp"/>-->
+    <EditText
+        android:id="@+id/lName"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/edit_text_style"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginEnd="20dp"/>
 
-<!--    <TextView-->
-<!--        android:layout_width="wrap_content"-->
-<!--        android:layout_height="wrap_content"-->
-<!--        android:layout_marginTop="10dp"-->
-<!--        android:layout_marginStart="20dp"-->
-<!--        android:text="Phone Number"-->
-<!--        android:textSize="18dp"-->
-<!--        android:textColor="@color/white"-->
-<!--        android:textStyle="bold" />-->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="20dp"
+        android:text="Initials"
+        android:textSize="18dp"
+        android:textColor="@color/white"
+        android:textStyle="bold" />
 
-<!--    <EditText-->
-<!--        android:id="@+id/phoneNo"-->
-<!--        android:layout_width="match_parent"-->
-<!--        android:layout_height="40dp"-->
-<!--        android:background="@drawable/edit_text_style"-->
-<!--        android:paddingLeft="10dp"-->
-<!--        android:layout_marginTop="5dp"-->
-<!--        android:layout_marginLeft="20dp"-->
-<!--        android:layout_marginStart="20dp"-->
-<!--        android:layout_marginRight="20dp"-->
-<!--        android:layout_marginEnd="20dp"/>-->
+    <EditText
+        android:id="@+id/initials"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/edit_text_style"
+        android:paddingLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginEnd="20dp"/>
 
-<!--    <TextView-->
-<!--        android:layout_width="wrap_content"-->
-<!--        android:layout_height="wrap_content"-->
-<!--        android:layout_marginTop="10dp"-->
-<!--        android:layout_marginLeft="20dp"-->
-<!--        android:layout_marginStart="20dp"-->
-<!--        android:text="E-mail Address"-->
-<!--        android:textSize="18dp"-->
-<!--        android:textColor="@color/white"-->
-<!--        android:textStyle="bold" />-->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="20dp"
+        android:text="Phone Number"
+        android:textSize="18dp"
+        android:textColor="@color/white"
+        android:textStyle="bold" />
 
-<!--    <EditText-->
-<!--        android:id="@+id/email"-->
-<!--        android:layout_width="match_parent"-->
-<!--        android:layout_height="40dp"-->
-<!--        android:background="@drawable/edit_text_style"-->
-<!--        android:paddingLeft="10dp"-->
-<!--        android:layout_marginTop="5dp"-->
-<!--        android:layout_marginLeft="20dp"-->
-<!--        android:layout_marginStart="20dp"-->
-<!--        android:layout_marginRight="20dp"-->
-<!--        android:layout_marginEnd="20dp"/>-->
+    <EditText
+        android:id="@+id/phoneNo"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/edit_text_style"
+        android:paddingLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginEnd="20dp"/>
 
-<!--    <TextView-->
-<!--        android:layout_width="wrap_content"-->
-<!--        android:layout_height="wrap_content"-->
-<!--        android:layout_marginTop="10dp"-->
-<!--        android:layout_marginLeft="20dp"-->
-<!--        android:layout_marginStart="20dp"-->
-<!--        android:text="National Id"-->
-<!--        android:textSize="18dp"-->
-<!--        android:textColor="@color/white"-->
-<!--        android:textStyle="bold" />-->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginStart="20dp"
+        android:text="E-mail Address"
+        android:textSize="18dp"
+        android:textColor="@color/white"
+        android:textStyle="bold" />
 
-<!--    <EditText-->
-<!--        android:id="@+id/nationalId"-->
-<!--        android:layout_width="match_parent"-->
-<!--        android:layout_height="40dp"-->
-<!--        android:background="@drawable/edit_text_style"-->
-<!--        android:paddingLeft="10dp"-->
-<!--        android:layout_marginTop="5dp"-->
-<!--        android:layout_marginLeft="20dp"-->
-<!--        android:layout_marginStart="20dp"-->
-<!--        android:layout_marginRight="20dp"-->
-<!--        android:layout_marginEnd="20dp"/>-->
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/edit_text_style"
+        android:paddingLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginEnd="20dp"/>
 
-<!--    <TextView-->
-<!--        android:layout_width="wrap_content"-->
-<!--        android:layout_height="wrap_content"-->
-<!--        android:layout_marginTop="10dp"-->
-<!--        android:layout_marginLeft="20dp"-->
-<!--        android:layout_marginStart="20dp"-->
-<!--        android:text="Gender"-->
-<!--        android:textSize="18dp"-->
-<!--        android:textColor="@color/white"-->
-<!--        android:textStyle="bold" />-->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginStart="20dp"
+        android:text="National Id"
+        android:textSize="18dp"
+        android:textColor="@color/white"
+        android:textStyle="bold" />
 
-<!--    <EditText-->
-<!--        android:id="@+id/gender"-->
-<!--        android:layout_width="match_parent"-->
-<!--        android:layout_height="40dp"-->
-<!--        android:background="@drawable/edit_text_style"-->
-<!--        android:paddingLeft="10dp"-->
-<!--        android:layout_marginTop="5dp"-->
-<!--        android:layout_marginLeft="20dp"-->
-<!--        android:layout_marginStart="20dp"-->
-<!--        android:layout_marginRight="20dp"-->
-<!--        android:layout_marginEnd="20dp"/>-->
+    <EditText
+        android:id="@+id/nationalId"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/edit_text_style"
+        android:paddingLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginEnd="20dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginStart="20dp"
+        android:text="Gender"
+        android:textSize="18dp"
+        android:textColor="@color/white"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/gender"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/edit_text_style"
+        android:paddingLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginEnd="20dp"/>
 
 
     <androidx.cardview.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
