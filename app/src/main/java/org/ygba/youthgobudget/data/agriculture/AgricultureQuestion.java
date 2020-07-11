@@ -162,4 +162,20 @@ public class AgricultureQuestion {
 
     @ColumnInfo(name = AgricultureConstants.QUESTION_4_2_VILLAGE_4)
     private String answerQuestion4_2_village_4;
+
+    // row 3
+    @ColumnInfo(name = AgricultureConstants.QUESTION_4_2_INPUT_5)
+    private String answerQuestion4_2_Input_5;
+
+    @ColumnInfo(name = AgricultureConstants.QUESTION_4_2_DATE_5)
+    private String answerQuestion4_2_Date_5;
+
+    @ColumnInfo(name = AgricultureConstants.QUESTION_4_2_MALE_NUMBER_5)
+    private String answerQuestion4_2_Male_Number_5;
+
+    @ColumnInfo(name = AgricultureConstants.QUESTION_4_2_FEMALE_NUMBER_5)
+    private String answerQuestion4_2_Female_Number_5;
+
+    @ColumnInfo(name = AgricultureConstants.QUESTION_4_2_VILLAGE_5)
+    private String answerQuestion4_2_village_5;
 }
