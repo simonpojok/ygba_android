@@ -110,7 +110,7 @@ public class AgricultureActivity extends AppCompatActivity implements  AdapterVi
 
     private void saveAgricultureQuestion(View view) {
         AgricultureQuestion agricultureQuestion = new AgricultureQuestion(
-                null,
+                selectedFinancialYear,
                 null,
                 null,
                 null,
