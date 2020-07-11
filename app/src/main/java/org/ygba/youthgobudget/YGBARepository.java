@@ -17,7 +17,7 @@ public class YGBARepository {
         this.ygbDatabase = ygbDatabase;
     }
 
-    private YGBARepository getInstance(YGBDatabase ygbDatabase){
+    public static YGBARepository getInstance(YGBDatabase ygbDatabase){
         if (INSTANCE == null ) {
             synchronized (YGBARepository.class) {
                 if (INSTANCE == null ) {
