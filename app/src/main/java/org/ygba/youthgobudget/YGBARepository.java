@@ -1,7 +1,13 @@
 package org.ygba.youthgobudget;
 
+import androidx.lifecycle.LiveData;
+
 import org.ygba.youthgobudget.data.YGBDatabase;
 import org.ygba.youthgobudget.data.agriculture.AgricultureQuestion;
+
+import java.util.List;
+import java.util.concurrent.Callable;
+import java.util.concurrent.ExecutionException;
 
 public class YGBARepository {
     private static YGBARepository INSTANCE;
@@ -29,5 +35,16 @@ public class YGBARepository {
                 ygbDatabase.agricultureDao().saveAgricultureQuestion(agricultureQuestion);
             }
         });
+    }
+
+    public LiveData<List<AgricultureQuestion>> getAllAgricultureQuestions() throws ExecutionException, InterruptedException {
+        Callable<LiveData<List<AgricultureQuestion>>> dataCallable = new Callable<LiveData<List<AgricultureQuestion>>>() {
+            @Override
+            public LiveData<List<AgricultureQuestion>> call() throws Exception {
+                return ygbDatabase.agricultureDao().getAllAgricultureAnswers();
+            }
+        };
+
+        return YGBDatabase.db_executor.submit(dataCallable).get();
     }
 }
