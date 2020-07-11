@@ -30,4 +30,95 @@ public class EducationQuestion {
 
     @ColumnInfo(name = EducationQuestionConstants.AGENT_TELL)
     private String tel;
+
+    @ColumnInfo(name = EducationQuestionConstants.QUESTION_1_UPE_SCHOOL)
+    private String question1;
+
+    @ColumnInfo(name = EducationQuestionConstants.QUESTION_2_TEACHERS_MALE)
+    private String question2TeacherMale;
+
+    @ColumnInfo(name = EducationQuestionConstants.QUESTION_2_TEACHERS_FEMALE)
+    private String question2TeacherFemale;
+
+    @ColumnInfo(name = EducationQuestionConstants.QUESTION_2_TEACHERS_MALE_PWDS)
+    private String question2TeacherMalePWDS;
+
+    @ColumnInfo(name = EducationQuestionConstants.QUESTION_2_TEACHERS_FEMALE_PWDS)
+    private String question2TeacherFemalePWDS;
+
+    @ColumnInfo(name = EducationQuestionConstants.QUESTION_2_TEACHERS_TOTAL)
+    private String question2TeacherTotal;
+
+    @ColumnInfo(name = EducationQuestionConstants.QUESTION_2_PUPIL_MALE)
+    private String question2PupilMale;
+
+    @ColumnInfo(name = EducationQuestionConstants.QUESTION_2_PUPIL_FEMALE)
+    private String question2PupilFemale;
+
+    @ColumnInfo(name = EducationQuestionConstants.QUESTION_2_PUPIL_MALE_PWDS)
+    private String question2PupilMalePWDS;
+
+    @ColumnInfo(name = EducationQuestionConstants.QUESTION_2_PUPIL_FEMALE_PWDS)
+    private String question2PupilFemalePWDS;
+
+    @ColumnInfo(name = EducationQuestionConstants.QUESTION_2_PUPIL_TOTAL)
+    private String question2PupilTotal;
+
+    @ColumnInfo(name = EducationQuestionConstants.QUESTION_2_P7_MALE)
+    private String question2P7Male;
+
+    @ColumnInfo(name = EducationQuestionConstants.QUESTION_2_P7_FEMALE)
+    private String question2P7Female;
+
+    @ColumnInfo(name = EducationQuestionConstants.QUESTION_2_P7_MALE_PWDS)
+    private String question2P7MalePWDS;
+
+    @ColumnInfo(name = EducationQuestionConstants.QUESTION_2_P7_FEMALE_PWDS)
+    private String question2P7FemalePWDS;
+
+    @ColumnInfo(name = EducationQuestionConstants.QUESTION_2_PUPIL_TOTAL)
+    private String question2P7Total;
+
+    @ColumnInfo(name = EducationQuestionConstants.QUESTION_2_DROP_MALE)
+    private String question2DropMale;
+
+    @ColumnInfo(name = EducationQuestionConstants.QUESTION_2_DROP_FEMALE)
+    private String question2DropFemale;
+
+    @ColumnInfo(name = EducationQuestionConstants.QUESTION_2_DROP_MALE_PWDS)
+    private String question2DropMalePWDS;
+
+    @ColumnInfo(name = EducationQuestionConstants.QUESTION_2_DROP_FEMALE_PWDS)
+    private String question2DropFemalePWDS;
+
+    @ColumnInfo(name = EducationQuestionConstants.QUESTION_2_DROP_TOTAL)
+    private String question2DropTotal;
+
+    @ColumnInfo(name = EducationQuestionConstants.QUESTION_2_1_REASON)
+    private String question21Reason;
+
+    @ColumnInfo(name = EducationQuestionConstants.QUESTION_3_GRANT_APPROVED_BUDGET)
+    private String question3GrantApprovedBudget;
+
+    @ColumnInfo(name = EducationQuestionConstants.QUESTION_3_GRANT_BUDGET_RELEASED)
+    private String question3GrantBudgetReleased;
+
+    @ColumnInfo(name = EducationQuestionConstants.QUESTION_3_GRANT_DATE_RECEIVED)
+    private String question3GrantDateReceived;
+
+    @ColumnInfo(name = EducationQuestionConstants.QUESTION_3_GRANT_DATE_WITHDRAWN)
+    private String question3GrantDateWithdrawn;
+
+    @ColumnInfo(name = EducationQuestionConstants.QUESTION_3_SFG_APPROVED_BUDGET)
+    private String question3SFGApprovedBudget;
+
+    @ColumnInfo(name = EducationQuestionConstants.QUESTION_3_SFG_BUDGET_RELEASED)
+    private String question3SFGBudgetReleased;
+
+    @ColumnInfo(name = EducationQuestionConstants.QUESTION_3_SFG_DATE_RECEIVED)
+    private String question3SFGDateReceived;
+
+    @ColumnInfo(name = EducationQuestionConstants.QUESTION_3_SFG_DATE_WITHDRAWN)
+    private String question3SFGDateWithdrawn;
+
 }
