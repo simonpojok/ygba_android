@@ -17,6 +17,7 @@ import android.widget.Toast;
 
 import org.ygba.youthgobudget.R;
 import org.ygba.youthgobudget.data.agriculture.AgricultureQuestion;
+import org.ygba.youthgobudget.utils.DynamicData;
 
 import java.util.List;
 
@@ -111,13 +112,13 @@ public class AgricultureActivity extends AppCompatActivity implements  AdapterVi
     private void saveAgricultureQuestion(View view) {
         AgricultureQuestion agricultureQuestion = new AgricultureQuestion(
                 selectedFinancialYear,
-                null,
-                null,
-                null,
-                null,
-                null,
-                null,
-                null,
+                DynamicData.getDate(),
+                villageEditText.getText().toString(),
+                parishTextEdit.getText().toString(),
+                parishTextEdit.getText().toString(),
+                agentFullNameEditText.getText().toString(),
+                agentTelephoneEditText.getText().toString(),
+                agentNumberEditText.getText().toString(),
                 null,
                 null,
                 null,
