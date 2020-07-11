@@ -882,6 +882,73 @@
             </GridLayout>
         </HorizontalScrollView>
 
+        <TextView
+            android:layout_marginVertical="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/education_question_3_1_text"
+            android:textSize="15sp"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textSize="15sp"
+            android:textColor="@color/white"
+            android:text="@string/school_notice_board"
+            android:id="@+id/question_3_1_sch_noticeboard_cb"/>
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textSize="15sp"
+            android:textColor="@color/white"
+            android:text="@string/head_teacher_notice"
+            android:id="@+id/question_3_1_head_teacher_notice_cb"/>
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textSize="15sp"
+            android:textColor="@color/white"
+            android:text="@string/staff_room"
+            android:id="@+id/question_3_1_staff_room_cb"/>
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textSize="15sp"
+            android:textColor="@color/white"
+            android:text="@string/displayed"
+            android:id="@+id/question_3_1_displayed_cb"
+            tools:ignore="TooManyViews" />
+
+        <TextView
+            android:layout_marginVertical="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/education_question_3_2_text"
+            android:textSize="15sp"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+
+        <EditText
+            android:gravity="start"
+            android:layout_marginVertical="10dp"
+            android:inputType="phone"
+            android:id="@+id/question_3_2_edit_text"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:textSize="15sp"
+            android:background="@drawable/edit_text_style"
+            android:padding="5dp"
+            android:autofillHints="" />
+
     </LinearLayout>
 
 </ScrollView>

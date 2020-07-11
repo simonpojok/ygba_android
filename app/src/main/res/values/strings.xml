@@ -143,4 +143,15 @@
     <string name="education_question_3_budget_released">Budget released (Actual)</string>
     <string name="education_question_3_date_recieved">Date Recieved</string>
     <string name="education_question_3_date_withdrawn">Date Withdrawn</string>
+    <string name="education_question_3_1_text" >
+        3.1 Does the school display budget information for public viewing in any of the following areas?
+        Please request for institution bank statement as evidence. ( Tick where appropriate )
+    </string>
+    <string name="school_notice_board">School Notice Board</string>
+    <string name="head_teacher_notice">Head Teacher Notice</string>
+    <string name="staff_room">Staff Room</string>
+    <string name="displayed">Displayed</string>
+    <string name="education_question_3_2_text" >
+        3.2 State the period to which the budget information relates? ( e.g FY 2018/ 19 one )
+    </string>
 </resources>
