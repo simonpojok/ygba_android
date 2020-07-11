@@ -160,7 +160,6 @@ public class EducationQuestion {
     @ColumnInfo(name = EducationQuestionConstants.QUESTION_5_TOILET_NO_BLOCKS)
     private boolean question5ToiletNoOfBlocks;
 
-
     @ColumnInfo(name = EducationQuestionConstants.QUESTION_5_TOILET_NO_STANCES)
     private boolean question5ToiletNoOfStances;
 
@@ -184,5 +183,34 @@ public class EducationQuestion {
 
     @ColumnInfo(name = EducationQuestionConstants.QUESTION_5_TOILET_FUNC_NONE)
     private boolean question5ToiletFuncNone;
+
+
+
+    @ColumnInfo(name = EducationQuestionConstants.QUESTION_5_LATRINE_NO_BLOCKS)
+    private boolean question5LatrineNoOfBlocks;
+
+    @ColumnInfo(name = EducationQuestionConstants.QUESTION_5_LATRINE_NO_STANCES)
+    private boolean question5LatrineNoOfStances;
+
+    @ColumnInfo(name = EducationQuestionConstants.QUESTION_5_LATRINE_PUPIL_MALE_STANCES)
+    private boolean question5LatrinePupilMaleStances;
+
+    @ColumnInfo(name = EducationQuestionConstants.QUESTION_5_LATRINE_PUPIL_FEMALE_STANCES)
+    private boolean question5LatrinePupilFemaleStances;
+
+    @ColumnInfo(name = EducationQuestionConstants.QUESTION_5_LATRINE_TEACHER_MALE_STANCES)
+    private boolean question5LatrineTeacherMaleStance;
+
+    @ColumnInfo(name = EducationQuestionConstants.QUESTION_5_LATRINE_TEACHER_FEMALE_STANCES)
+    private boolean question5LatrineTeacherMFemaleStance;
+
+    @ColumnInfo(name = EducationQuestionConstants.QUESTION_5_LATRINE_TEACHER_MIXED_STANCES)
+    private boolean question5LatrineTeacherMixedStance;
+
+    @ColumnInfo(name = EducationQuestionConstants.QUESTION_5_LATRINE_FUNC_FUNC)
+    private boolean question5LatrineFuncFunctional;
+
+    @ColumnInfo(name = EducationQuestionConstants.QUESTION_5_LATRINE_FUNC_NONE)
+    private boolean question5LatrineFuncNone;
 
 }

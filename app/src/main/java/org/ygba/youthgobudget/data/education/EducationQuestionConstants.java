@@ -60,4 +60,13 @@ public class EducationQuestionConstants {
     public static final String QUESTION_5_TOILET__TEACHER_MIXED_STANCES = "q5_t_t_m_S";
     public static final String QUESTION_5_TOILET_FUNC_FUNC = "q5_t_f_f";
     public static final String QUESTION_5_TOILET_FUNC_NONE = "q5_t_none";
+    public static final String QUESTION_5_LATRINE_NO_BLOCKS = "q5_l_n_b";
+    public static final String QUESTION_5_LATRINE_NO_STANCES = "q5_l_n_s";
+    public static final String QUESTION_5_LATRINE_PUPIL_MALE_STANCES = "q5_l_m_s";
+    public static final String QUESTION_5_LATRINE_PUPIL_FEMALE_STANCES = "q5_l_p_m_s";
+    public static final String QUESTION_5_LATRINE_TEACHER_MALE_STANCES = "q5_l_p_f_s";
+    public static final String QUESTION_5_LATRINE_TEACHER_FEMALE_STANCES = "q5_l_t_m_s";
+    public static final String QUESTION_5_LATRINE_TEACHER_MIXED_STANCES = "q5_l_t_m_s";
+    public static final String QUESTION_5_LATRINE_FUNC_FUNC = "q5_l_fun_func";
+    public static final String QUESTION_5_LATRINE_FUNC_NONE = "q5_l_fun_func";
 }
