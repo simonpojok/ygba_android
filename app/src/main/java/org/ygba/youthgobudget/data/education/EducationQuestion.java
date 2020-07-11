@@ -27,4 +27,7 @@ public class EducationQuestion {
 
     @ColumnInfo(name = EducationQuestionConstants.AGENT_FULL_NAME)
     private String fullname;
+
+    @ColumnInfo(name = EducationQuestionConstants.AGENT_TELL)
+    private String tel;
 }

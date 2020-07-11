@@ -9,4 +9,5 @@ public class EducationQuestionConstants {
     public static final String PARISH = "parish";
     public static final String SUB_COUNTY = "sub_county";
     public static final String AGENT_FULL_NAME = "full_name";
+    public static final String AGENT_TELL = "telephone";
 }

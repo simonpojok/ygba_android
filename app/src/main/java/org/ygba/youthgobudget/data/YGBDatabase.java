@@ -12,7 +12,7 @@ import org.ygba.youthgobudget.data.agriculture.AgricultureQuestion;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 
-@Database(entities = {AgricultureQuestion.class}, version = 1)
+@Database(entities = {AgricultureQuestion.class}, version = 1, exportSchema = false)
 public abstract class YGBDatabase extends RoomDatabase {
     private static YGBDatabase INSTANCE;
     public abstract AgricultureDao agricultureDao();
