@@ -103,4 +103,12 @@ public class EducationQuestionConstants {
     public static final String QUESTION_5_2_OTHERS_SPEC = "q5_2_others_Spec";
     public static final String QUESTION_5_3_WATER_POINT = "q5_3_yes_no";
     public static final String QUESTION_5_3_DISTANCE = "q5_3_reason";
+    public static final String QUESTION_6_1_NUMBER = "q6_1_num";
+    public static final String QUESTION_6_2_NUMBER = "q6_2_num";
+    public static final String QUESTION_6_3_NUMBER = "q6_3_ratio";
+    public static final String QUESTION_7_ENROLLED_MALE_TEACHERS = "q7_e_m_t";
+    public static final String QUESTION_7_ENROLLED_FEMALE_TEACHERS = "q7_e_f_t";
+    public static final String QUESTION_7_ENROLLED_MALE_TEACHERS_VISIT_TIME = "q7_e_t_P_a_T_visit";
+    public static final String QUESTION_7_ENROLLED_FEMALE_TEACHERS_VISIT_TIME = "q5_t_p_a_Time";
+    public static final String QUESTION_7_TOTAL_NUM_TEACHERS = "q7_total_number_of1_teachers";
 }

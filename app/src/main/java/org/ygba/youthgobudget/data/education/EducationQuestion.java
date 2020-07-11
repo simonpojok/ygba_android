@@ -318,4 +318,28 @@ public class EducationQuestion {
     @ColumnInfo(name = EducationQuestionConstants.QUESTION_5_3_DISTANCE)
     private String question53Reason;
 
+    @ColumnInfo(name = EducationQuestionConstants.QUESTION_6_1_NUMBER)
+    private String question61Number;
+
+    @ColumnInfo(name = EducationQuestionConstants.QUESTION_6_2_NUMBER)
+    private String question62Number;
+
+    @ColumnInfo(name = EducationQuestionConstants.QUESTION_6_3_NUMBER)
+    private String question63Number;
+
+    @ColumnInfo(name = EducationQuestionConstants.QUESTION_7_ENROLLED_MALE_TEACHERS)
+    private String question7EnrolledMaleTeachers;
+
+    @ColumnInfo(name = EducationQuestionConstants.QUESTION_7_ENROLLED_FEMALE_TEACHERS)
+    private String question7EnrolledFeMaleTeachers;
+
+    @ColumnInfo(name = EducationQuestionConstants.QUESTION_7_ENROLLED_MALE_TEACHERS_VISIT_TIME)
+    private String question7EnrolledMaleTeachersPresentAtVisit;
+
+    @ColumnInfo(name = EducationQuestionConstants.QUESTION_7_ENROLLED_FEMALE_TEACHERS_VISIT_TIME)
+    private String question7EnrolledFeMaleTeachersPresentAtTimeOfVisit;
+
+    @ColumnInfo(name = EducationQuestionConstants.QUESTION_7_TOTAL_NUM_TEACHERS)
+    private String question7TotalNumOfTeachers;
+
 }
