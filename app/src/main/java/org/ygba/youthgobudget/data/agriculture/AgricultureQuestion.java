@@ -63,4 +63,19 @@ public class AgricultureQuestion {
 
     @ColumnInfo(name = AgricultureConstants.QUESTION_2_DEV_DATE_WITHDRAWN)
     private String question2DevelopmentDateWithdrawn;
+
+    @ColumnInfo(name = AgricultureConstants.QUESTION_2_1_NUYMBER_VISITS)
+    private String answerQuestion2_1;
+
+    @ColumnInfo(name = AgricultureConstants.QUESTION_2_2_DEMONSTRATION)
+    private String answerQuestion2_2;
+
+    @ColumnInfo(name = AgricultureConstants.QUESTION_2_3_NUMBER)
+    private String answerQuestion2_3;
+
+    @ColumnInfo(name = AgricultureConstants.QUESTION_2_4_MENTION)
+    private String answerQuestion2_4;
+
+    @ColumnInfo(name = AgricultureConstants.QUESTION_2_5_REASON)
+    private String answerQuestion2_5;
 }

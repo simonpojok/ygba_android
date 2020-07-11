@@ -21,4 +21,9 @@ public class AgricultureConstants {
     public static final String QUESTION_2_DEV_AMOUNT_RECEIVED = "q2devrecieved";
     public static final String QUESTION_2_DEV_DATE_RECEIVED = "q2devdaterecieved";
     public static final String QUESTION_2_DEV_DATE_WITHDRAWN = "q2devdatewithdrawn";
+    public static final String QUESTION_2_1_NUYMBER_VISITS = "q2_1";
+    public static final String QUESTION_2_2_DEMONSTRATION = "q2_2";
+    public static final String QUESTION_2_3_NUMBER = "q2_3";
+    public static final String QUESTION_2_4_MENTION = "q2_4";
+    public static final String QUESTION_2_5_REASON = "q2_5";
 }
