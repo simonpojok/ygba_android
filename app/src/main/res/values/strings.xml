@@ -135,4 +135,12 @@
         2.1  If dropout is registered, please indicate the reasons why children are dropping out of school
     </string>
     <string name="education_question_3_introduction">BUDGET INFORMATION</string>
+    <string name="education_question_3_header">Budget founds, receipts and release dates</string>
+    <string name="education_question_3_grant">Grants</string>
+    <string name="education_question_3_capitation_grant">Capitation grant</string>
+    <string name="education_question_3_SFG">School Facilitation Grant ( SFG )</string>
+    <string name="education_question_3_approved_budget">Approved Budgets</string>
+    <string name="education_question_3_budget_released">Budget released (Actual)</string>
+    <string name="education_question_3_date_recieved">Date Recieved</string>
+    <string name="education_question_3_date_withdrawn">Date Withdrawn</string>
 </resources>

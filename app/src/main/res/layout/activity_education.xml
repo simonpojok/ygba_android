@@ -666,6 +666,221 @@
             android:textColor="@color/white"
             android:textStyle="bold" />
 
+        <HorizontalScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <GridLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:columnCount="5"
+                android:rowCount="4"
+                android:orientation="horizontal">
+
+<!--                Budget founds, receipts and release dates row 0 column 0 columspan all -->
+                <TextView
+                    android:layout_column="0"
+                    android:layout_row="0"
+                    android:layout_columnSpan="4"
+                    android:layout_marginVertical="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/education_question_3_header"
+                    android:textSize="15sp"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+<!--                Grants row 1 column 0 -->
+                <TextView
+                    android:layout_column="0"
+                    android:layout_row="1"
+                    android:layout_marginVertical="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/education_question_3_grant"
+                    android:textSize="15sp"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+<!--                Capitation grant row 2 column 1 -->
+                <TextView
+                    android:layout_column="0"
+                    android:layout_row="2"
+                    android:layout_marginVertical="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/education_question_3_capitation_grant"
+                    android:textSize="15sp"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+<!--                SFG text -->
+                <TextView
+                    android:layout_column="0"
+                    android:layout_row="3"
+                    android:layout_marginVertical="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/education_question_3_SFG"
+                    android:textSize="15sp"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+
+<!--                Approved Budgets row 1 column 1 -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_row="1"
+                    android:layout_column="1"
+                    android:layout_marginVertical="10dp"
+                    android:text="@string/education_question_3_approved_budget"
+                    android:textColor="@color/white"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+<!--                capitation grant approved budget row 2 column 1 -->
+                <EditText
+                    android:layout_column="1"
+                    android:layout_row="2"
+                    android:layout_marginVertical="10dp"
+                    android:inputType="numberDecimal"
+                    android:id="@+id/question_3_capitation_grant_approved_budget"
+                    android:layout_width="200dp"
+                    android:layout_height="40dp"
+                    android:textSize="15sp"
+                    android:background="@drawable/edit_text_style"
+                    android:paddingStart="5dp"
+                    android:paddingEnd="5dp" />
+
+<!--                sfg approved budget row 3 column 1 -->
+                <EditText
+                    android:layout_column="1"
+                    android:layout_row="3"
+                    android:layout_marginVertical="10dp"
+                    android:inputType="numberDecimal"
+                    android:id="@+id/question_3_SFG_grant_approved_budget"
+                    android:layout_width="200dp"
+                    android:layout_height="40dp"
+                    android:textSize="15sp"
+                    android:background="@drawable/edit_text_style"
+                    android:paddingStart="5dp"
+                    android:paddingEnd="5dp" />
+
+<!--                capitation grant budget released row 1 column 2 -->
+                <EditText
+                    android:layout_column="2"
+                    android:layout_row="2"
+                    android:layout_marginVertical="10dp"
+                    android:inputType="numberDecimal"
+                    android:id="@+id/question_3_capitation_grant_budget_released_tv"
+                    android:layout_width="200dp"
+                    android:layout_height="40dp"
+                    android:textSize="15sp"
+                    android:background="@drawable/edit_text_style"
+                    android:paddingStart="5dp"
+                    android:paddingEnd="5dp" />
+
+<!--                SFG grant budget received row 2 column 2 -->
+                <EditText
+                    android:layout_column="2"
+                    android:layout_row="3"
+                    android:layout_marginVertical="10dp"
+                    android:inputType="numberDecimal"
+                    android:id="@+id/question_3_SFG_grant_budget_released_tv"
+                    android:layout_width="200dp"
+                    android:layout_height="40dp"
+                    android:textSize="15sp"
+                    android:background="@drawable/edit_text_style"
+                    android:paddingStart="5dp"
+                    android:paddingEnd="5dp" />
+
+<!--                capitation grant date recieved row 2 column 3 -->
+                <EditText
+                    android:layout_column="3"
+                    android:layout_row="2"
+                    android:layout_marginVertical="10dp"
+                    android:inputType="date"
+                    android:id="@+id/question_3_capitation_date_received_released_tv"
+                    android:layout_width="200dp"
+                    android:layout_height="40dp"
+                    android:textSize="15sp"
+                    android:background="@drawable/edit_text_style"
+                    android:paddingStart="5dp"
+                    android:paddingEnd="5dp" />
+
+<!--                SFG date received row 3 column 3 -->
+                <EditText
+                    android:layout_column="3"
+                    android:layout_row="3"
+                    android:layout_marginVertical="10dp"
+                    android:inputType="date"
+                    android:id="@+id/question_3_SFG_date_received_released_tv"
+                    android:layout_width="200dp"
+                    android:layout_height="40dp"
+                    android:textSize="15sp"
+                    android:background="@drawable/edit_text_style"
+                    android:paddingStart="5dp"
+                    android:paddingEnd="5dp" />
+
+<!--                capitation date withdrawn row 1 column 4-->
+                <EditText
+                    android:layout_column="4"
+                    android:layout_row="2"
+                    android:layout_marginVertical="10dp"
+                    android:inputType="date"
+                    android:id="@+id/question_3_capitation_date_withdrawn_tv"
+                    android:layout_width="200dp"
+                    android:layout_height="40dp"
+                    android:textSize="15sp"
+                    android:background="@drawable/edit_text_style"
+                    android:paddingStart="5dp"
+                    android:paddingEnd="5dp" />
+<!--                SFG date withdrawn row 2 column 4 -->
+                <EditText
+                    android:layout_column="4"
+                    android:layout_row="3"
+                    android:layout_marginVertical="10dp"
+                    android:inputType="date"
+                    android:id="@+id/question_3_SFG_date_withdrawn_tv"
+                    android:layout_width="200dp"
+                    android:layout_height="40dp"
+                    android:textSize="15sp"
+                    android:background="@drawable/edit_text_style"
+                    android:paddingStart="5dp"
+                    android:paddingEnd="5dp" />
+
+                <TextView
+                    android:layout_column="2"
+                    android:layout_row="1"
+                    android:layout_marginVertical="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/education_question_3_budget_released"
+                    android:textSize="15sp"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_column="3"
+                    android:layout_row="1"
+                    android:layout_marginVertical="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/education_question_3_date_recieved"
+                    android:textSize="15sp"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_column="4"
+                    android:layout_row="1"
+                    android:layout_marginVertical="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/education_question_3_date_withdrawn"
+                    android:textSize="15sp"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+
+            </GridLayout>
+        </HorizontalScrollView>
+
     </LinearLayout>
 
 </ScrollView>
