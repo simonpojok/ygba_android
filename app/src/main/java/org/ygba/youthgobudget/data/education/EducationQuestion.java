@@ -351,4 +351,22 @@ public class EducationQuestion {
     @ColumnInfo(name = EducationQuestionConstants.QUESTION_7_3_QUESTION)
     private String question73Question;
 
+    @ColumnInfo(name = EducationQuestionConstants.QUESTION_8_1_INSPECTOR)
+    private String question81Inspector;
+
+    @ColumnInfo(name = EducationQuestionConstants.QUESTION_8_2_INSPECTOR_VISIT)
+    private String question82InspectorVisit;
+
+    @ColumnInfo(name = EducationQuestionConstants.QUESTION_8_3_COMMITTEE)
+    private boolean question83Committee;
+
+    @ColumnInfo(name = EducationQuestionConstants.QUESTION_8_4_MEET)
+    private String question83Meet;
+
+    @ColumnInfo(name = EducationQuestionConstants.QUESTION_8_5_SCHOOL_MGT)
+    private String question84SchoolMGT;
+
+    @ColumnInfo(name = EducationQuestionConstants.QUESTION_8_OTHER_OBSERVATIONS)
+    private String question8OtherObservations;
+
 }

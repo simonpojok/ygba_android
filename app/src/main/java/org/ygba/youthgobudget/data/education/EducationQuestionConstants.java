@@ -114,4 +114,10 @@ public class EducationQuestionConstants {
     public static final String QUESTION7_1_PUPIL_RATIO = "q7_1_p_r";
     public static final String QUESTION_7_2_WOMAN_TEACHER = "q7_2_w_teacher";
     public static final String QUESTION_7_3_QUESTION = "q7_3_q";
+    public static final String QUESTION_8_1_INSPECTOR = "q8_1_inspector";
+    public static final String QUESTION_8_2_INSPECTOR_VISIT = "q8_2_inspector_visits";
+    public static final String QUESTION_8_3_COMMITTEE = "q8_3_com";
+    public static final String QUESTION_8_4_MEET = "q8_4_meet";
+    public static final String QUESTION_8_5_SCHOOL_MGT = "q8_5_sch_mgt";
+    public static final String QUESTION_8_OTHER_OBSERVATIONS = "q8_other_observations";
 }
