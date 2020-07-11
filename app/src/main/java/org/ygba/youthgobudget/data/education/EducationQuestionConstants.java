@@ -96,4 +96,9 @@ public class EducationQuestionConstants {
     public static final String QUESTION_5_UFB_TEACHER_MIXED_STANCES = "q5_UFB_t_mixed_stances";
     public static final String QUESTION_5_UFB_FUNC_FUNC = "q5_UFB_func_functional";
     public static final String QUESTION_5_UFB_FUNC_NONE = "q5_UFB_func_none";
+    public static final String QUESTION_5_1_LATRINE = "q5_1_l";
+    public static final String QUESTION_5_2_RAMPS = "q5_2_ramps";
+    public static final String QUESTION_5_2_PWD = "q5_2_pwd";
+    public static final String QUESTION_5_2_NONE = "q5_2_none";
+    public static final String QUESTION_5_2_OTHERS_SPEC = "q5_2_others_Spec";
 }

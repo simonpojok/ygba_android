@@ -297,4 +297,19 @@ public class EducationQuestion {
     @ColumnInfo(name = EducationQuestionConstants.QUESTION_5_UFB_FUNC_NONE)
     private boolean question5UFBFuncNone;
 
+    @ColumnInfo(name = EducationQuestionConstants.QUESTION_5_1_LATRINE)
+    private boolean question51Latrine;
+
+    @ColumnInfo(name = EducationQuestionConstants.QUESTION_5_2_RAMPS)
+    private String question52Ramps;
+
+    @ColumnInfo(name = EducationQuestionConstants.QUESTION_5_2_PWD)
+    private String question52PWD;
+
+    @ColumnInfo(name = EducationQuestionConstants.QUESTION_5_2_NONE)
+    private String question52None;
+
+    @ColumnInfo(name = EducationQuestionConstants.QUESTION_5_2_OTHERS_SPEC)
+    private String question52OtherSpec;
+
 }
