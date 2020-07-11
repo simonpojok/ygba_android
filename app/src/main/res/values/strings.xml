@@ -171,4 +171,18 @@
     <string name="education_question_5_text">5 SANITATION IN THE SCHOOL
    </string>
     <string name="education_question_5_0_text">Sanitation facility</string>
+    <string name="education_question_5_pupils">Pupils</string>
+    <string name="education_question_5_teachers">Teachers</string>
+    <string name="education_question_5_functionality">Functionality</string>
+    <string name="education_question_5_facility">Facility</string>
+    <string name="education_question_5_number_of_blocks">No. Of Blocks</string>
+    <string name="education_question_5_number_of_stances">No. Of Stances</string>
+    <string name="education_question_5_male_stances">Male Stances</string>
+    <string name="education_question_5_female_stances">Female Stances</string>
+    <string name="education_question_5_teacher_male_stances">Male Stances</string>
+    <string name="education_question_5_teacher_female_stances">Female Stances</string>
+    <string name="education_question_5_teacher_mixed_stances">Mixed Stances</string>
+    <string name="education_question_5_functional">Functional</string>
+    <string name="education_question_5_none">None</string>
+    <string name="education_question_5_toilet">Toilet</string>
 </resources>
