@@ -154,4 +154,9 @@
     <string name="education_question_3_2_text" >
         3.2 State the period to which the budget information relates? ( e.g FY 2018/ 19 one )
     </string>
+    <string name="education_question_4_1_text" >4. P. 7 TERMLY PERFORMANCE </string>
+    <string name="grade_1">Grade 1</string>
+    <string name="grade_2">Grade 2</string>
+    <string name="grade_3">Grade 3</string>
+    <string name="grade_others">Others*</string>
 </resources>
