@@ -2,6 +2,7 @@ package org.ygba.youthgobudget.agriculture;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.cardview.widget.CardView;
+import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProvider;
 import androidx.lifecycle.ViewModelProviders;
 
@@ -10,8 +11,12 @@ import android.view.View;
 import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.Spinner;
+import android.widget.Toast;
 
 import org.ygba.youthgobudget.R;
+import org.ygba.youthgobudget.data.agriculture.AgricultureQuestion;
+
+import java.util.List;
 
 public class AgricultureActivity extends AppCompatActivity {
     Spinner financialYearSpinner;
@@ -85,9 +90,80 @@ public class AgricultureActivity extends AppCompatActivity {
         saveFormData.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
+                saveAgricultureQuestion(view);
             }
         });
+
+        activityViewModel.getAllAgricultureQuestions().observe(this, new Observer<List<AgricultureQuestion>>() {
+            @Override
+            public void onChanged(List<AgricultureQuestion> agricultureQuestions) {
+                if (agricultureQuestions != null ) {
+                    Toast.makeText(AgricultureActivity.this, "Found Questions: " + String.valueOf(agricultureQuestions.size()), Toast.LENGTH_LONG).show();
+                }
+            }
+        });
+    }
+
+    private void saveAgricultureQuestion(View view) {
+        AgricultureQuestion agricultureQuestion = new AgricultureQuestion(
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null
+        );
     }
 
     private void initViews() {

@@ -4,10 +4,14 @@ import android.app.Application;
 
 import androidx.annotation.NonNull;
 import androidx.lifecycle.AndroidViewModel;
+import androidx.lifecycle.LiveData;
 
 import org.ygba.youthgobudget.YGBARepository;
 import org.ygba.youthgobudget.data.YGBDatabase;
 import org.ygba.youthgobudget.data.agriculture.AgricultureQuestion;
+
+import java.util.List;
+import java.util.concurrent.ExecutionException;
 
 public class AgricultureActivityViewModel extends AndroidViewModel {
     YGBARepository ygbaRepository;
@@ -19,5 +23,15 @@ public class AgricultureActivityViewModel extends AndroidViewModel {
 
     public void saveAgricultureQuestion(AgricultureQuestion agricultureQuestion) {
         ygbaRepository.saveAgricultureQuestion(agricultureQuestion);
+    }
+
+    public LiveData<List<AgricultureQuestion>> getAllAgricultureQuestions() {
+        try {
+            LiveData<List<AgricultureQuestion>> listLiveData = ygbaRepository.getAllAgricultureQuestions();
+            return listLiveData;
+        } catch (ExecutionException | InterruptedException e) {
+            e.printStackTrace();
+        }
+        return null;
     }
 }
