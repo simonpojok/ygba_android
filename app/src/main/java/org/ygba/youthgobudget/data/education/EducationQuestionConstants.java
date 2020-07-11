@@ -51,4 +51,13 @@ public class EducationQuestionConstants {
     public static final String QUESTION_4_GRADE_OTHER_FEMALE = "q4_other_f";
     public static final String QUESTION_4_1_PERFORMANCE = "q4_1_performance";
     public static final String QUESTION_4_2_REASON = "q4_2_reason";
+    public static final String QUESTION_5_TOILET_NO_BLOCKS = "q5_t_nb";
+    public static final String QUESTION_5_TOILET_NO_STANCES = "q5_t_ts";
+    public static final String QUESTION_5_TOILET_PUPIL_MALE_STANCES = "q5_t_m_s";
+    public static final String QUESTION_5_TOILET_PUPIL_FEMALE_STANCES = "q5_t_f_s";
+    public static final String QUESTION_5_TOILET__TEACHER_MALE_STANCES = "q5_t_t_m_s";
+    public static final String QUESTION_5_TOILET__TEACHER_FEMALE_STANCES = "q5_t_t_f_s";
+    public static final String QUESTION_5_TOILET__TEACHER_MIXED_STANCES = "q5_t_t_m_S";
+    public static final String QUESTION_5_TOILET_FUNC_FUNC = "q5_t_f_f";
+    public static final String QUESTION_5_TOILET_FUNC_NONE = "q5_t_none";
 }

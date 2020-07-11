@@ -157,4 +157,32 @@ public class EducationQuestion {
     @ColumnInfo(name = EducationQuestionConstants.QUESTION_4_2_REASON)
     private String question42Reason;
 
+    @ColumnInfo(name = EducationQuestionConstants.QUESTION_5_TOILET_NO_BLOCKS)
+    private boolean question5ToiletNoOfBlocks;
+
+
+    @ColumnInfo(name = EducationQuestionConstants.QUESTION_5_TOILET_NO_STANCES)
+    private boolean question5ToiletNoOfStances;
+
+    @ColumnInfo(name = EducationQuestionConstants.QUESTION_5_TOILET_PUPIL_MALE_STANCES)
+    private boolean question5ToiletPupilMaleStances;
+
+    @ColumnInfo(name = EducationQuestionConstants.QUESTION_5_TOILET_PUPIL_FEMALE_STANCES)
+    private boolean question5ToiletPupilFemaleStances;
+
+    @ColumnInfo(name = EducationQuestionConstants.QUESTION_5_TOILET__TEACHER_MALE_STANCES)
+    private boolean question5ToiletTeacherMaleStance;
+
+    @ColumnInfo(name = EducationQuestionConstants.QUESTION_5_TOILET__TEACHER_FEMALE_STANCES)
+    private boolean question5ToiletTeacherMFemaleStance;
+
+    @ColumnInfo(name = EducationQuestionConstants.QUESTION_5_TOILET__TEACHER_MIXED_STANCES)
+    private boolean question5ToiletTeacherMixedStance;
+
+    @ColumnInfo(name = EducationQuestionConstants.QUESTION_5_TOILET_FUNC_FUNC)
+    private boolean question5ToiletFuncFunctional;
+
+    @ColumnInfo(name = EducationQuestionConstants.QUESTION_5_TOILET_FUNC_NONE)
+    private boolean question5ToiletFuncNone;
+
 }
