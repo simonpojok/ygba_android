@@ -188,4 +188,6 @@
     <string name="education_question_5_latrin">Latrine</string>
     <string name="education_question_5_latrine">Latrine</string>
     <string name="education_question_5_VIP_latrine">VIP Latrine</string>
+    <string name="education_question_5_FCR_latrine">Female Changing Rooms</string>
+    <string name="education_question_5_Urinals">Urinals for boys</string>
 </resources>
