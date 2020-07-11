@@ -39,4 +39,6 @@ public class EducationQuestionConstants {
     public static final String QUESTION_3_SFG_BUDGET_RELEASED = "q3_sfg_b_r";
     public static final String QUESTION_3_SFG_DATE_RECEIVED = "q3_sfg_d_r";
     public static final String QUESTION_3_SFG_DATE_WITHDRAWN = "q3_fg_d_w";
+    public static final String QUESTION_3_1_DISPLAY = "q3_1_sd";
+    public static final String QUESTION_3_2_PERIOD = "q3_2_period";
 }

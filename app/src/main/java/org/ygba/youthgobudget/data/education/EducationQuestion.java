@@ -121,4 +121,10 @@ public class EducationQuestion {
     @ColumnInfo(name = EducationQuestionConstants.QUESTION_3_SFG_DATE_WITHDRAWN)
     private String question3SFGDateWithdrawn;
 
+    @ColumnInfo(name = EducationQuestionConstants.QUESTION_3_1_DISPLAY)
+    private String question31Display;
+
+    @ColumnInfo(name = EducationQuestionConstants.QUESTION_3_2_PERIOD)
+    private String question32Period;
+
 }
