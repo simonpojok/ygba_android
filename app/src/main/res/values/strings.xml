@@ -185,4 +185,6 @@
     <string name="education_question_5_functional">Functional</string>
     <string name="education_question_5_none">None</string>
     <string name="education_question_5_toilet">Toilet</string>
+    <string name="education_question_5_latrin">Latrine</string>
+    <string name="education_question_5_latrine">Latrine</string>
 </resources>
