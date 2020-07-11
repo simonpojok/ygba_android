@@ -355,8 +355,22 @@
                     android:layout_column="6"
                     android:textSize="15sp"/>
 
+<!--                column 1 male -->
                 <EditText
+                    android:layout_marginVertical="10dp"
+                    android:inputType="number"
                     android:id="@+id/question_2_teacher_male_edit_text"
+                    android:layout_width="200dp"
+                    android:layout_height="40dp"
+                    android:textSize="15sp"
+                    android:background="@drawable/edit_text_style"
+                    android:paddingStart="5dp"
+                    android:layout_column="1"
+                    android:layout_row="3"
+                    android:paddingEnd="5dp" />
+
+                <EditText
+                    android:id="@+id/question_2_pupil_enrollment_male_edit_text"
                     android:layout_width="200dp"
                     android:layout_height="40dp"
                     android:layout_row="4"
@@ -371,7 +385,7 @@
                 <EditText
                     android:layout_marginVertical="10dp"
                     android:inputType="number"
-                    android:id="@+id/question_2_pupil_enrollment_male_edit_text"
+                    android:id="@+id/question_2_number_p7_male_edit_text"
                     android:layout_width="200dp"
                     android:layout_height="40dp"
                     android:textSize="15sp"
@@ -418,7 +432,7 @@
                     android:background="@drawable/edit_text_style"
                     android:paddingStart="5dp"
                     android:layout_column="2"
-                    android:layout_row="6"
+                    android:layout_row="4"
                     android:paddingEnd="5dp" />
 
                 <EditText
