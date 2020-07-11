@@ -172,7 +172,7 @@ public class AgricultureActivity extends AppCompatActivity implements  AdapterVi
         });
     }
 
-    private void saveAgricultureQuestion(View view) {
+    private void saveAgricultureQuestion() {
         AgricultureQuestion agricultureQuestion = new AgricultureQuestion(
                 selectedFinancialYear,
                 DynamicData.getDate(),
@@ -334,7 +334,7 @@ public class AgricultureActivity extends AppCompatActivity implements  AdapterVi
 
     @Override
     public void onValidationSucceeded() {
-        saveAgricultureQuestion(null);
+        saveAgricultureQuestion();
     }
 
     @Override
