@@ -57,7 +57,7 @@ public class EducationQuestionConstants {
     public static final String QUESTION_5_TOILET_PUPIL_FEMALE_STANCES = "q5_t_f_s";
     public static final String QUESTION_5_TOILET__TEACHER_MALE_STANCES = "q5_t_t_m_s";
     public static final String QUESTION_5_TOILET__TEACHER_FEMALE_STANCES = "q5_t_t_f_s";
-    public static final String QUESTION_5_TOILET__TEACHER_MIXED_STANCES = "q5_t_t_m_S";
+    public static final String QUESTION_5_TOILET__TEACHER_MIXED_STANCES = "q5_t_t_mx_S";
     public static final String QUESTION_5_TOILET_FUNC_FUNC = "q5_t_f_f";
     public static final String QUESTION_5_TOILET_FUNC_NONE = "q5_t_none";
     public static final String QUESTION_5_LATRINE_NO_BLOCKS = "q5_l_n_b";
@@ -65,16 +65,16 @@ public class EducationQuestionConstants {
     public static final String QUESTION_5_LATRINE_PUPIL_MALE_STANCES = "q5_l_m_s";
     public static final String QUESTION_5_LATRINE_PUPIL_FEMALE_STANCES = "q5_l_p_m_s";
     public static final String QUESTION_5_LATRINE_TEACHER_MALE_STANCES = "q5_l_p_f_s";
-    public static final String QUESTION_5_LATRINE_TEACHER_FEMALE_STANCES = "q5_l_t_m_s";
-    public static final String QUESTION_5_LATRINE_TEACHER_MIXED_STANCES = "q5_l_t_m_s";
-    public static final String QUESTION_5_LATRINE_FUNC_FUNC = "q5_l_fun_func";
-    public static final String QUESTION_5_LATRINE_FUNC_NONE = "q5_l_fun_func";
+    public static final String QUESTION_5_LATRINE_TEACHER_FEMALE_STANCES = "q5_l_t_f_m_s";
+    public static final String QUESTION_5_LATRINE_TEACHER_MIXED_STANCES = "q5_l_t_m_m_s";
+    public static final String QUESTION_5_LATRINE_FUNC_FUNC = "q5_l_fun_func_ext";
+    public static final String QUESTION_5_LATRINE_FUNC_NONE = "q5_l_b_fun_func";
     public static final String QUESTION_5_VIP_NO_BLOCKS = "q5_VIP_n_blocks";
     public static final String QUESTION_5_VIP_NO_STANCES = "q5_VIP_n_stances";
     public static final String QUESTION_5_VIP_PUPIL_MALE_STANCES = "q5_VIP_m_stances";
     public static final String QUESTION_5_VIP_PUPIL_FEMALE_STANCES = "q5_VIP_f_stances";
-    public static final String QUESTION_5_VIP_TEACHER_MALE_STANCES = "q5_VIP_t_f_stances";
-    public static final String QUESTION_5_VIP_TEACHER_FEMALE_STANCES = "q5_VIP_t_f_stances";
+    public static final String QUESTION_5_VIP_TEACHER_MALE_STANCES = "q5_VIP_t_f_stances_23";
+    public static final String QUESTION_5_VIP_TEACHER_FEMALE_STANCES = "q5_VIP_t_f_stances_3";
     public static final String QUESTION_5_VIP_TEACHER_MIXED_STANCES = "q5_VIP_t_mixed_stances";
     public static final String QUESTION_5_VIP_FUNC_FUNC = "q5_VIP_func_functional";
     public static final String QUESTION_5_VIP_FUNC_NONE = "q5_VIP_func_none";
@@ -121,4 +121,5 @@ public class EducationQuestionConstants {
     public static final String QUESTION_8_5_SCHOOL_MGT = "q8_5_sch_mgt";
     public static final String QUESTION_8_OTHER_OBSERVATIONS = "q8_other_observations";
     public static final String LOCALLY_STORED = "stored_locally";
+    public static final String QUESTION_2_P7_TOTAL = "q2_p_7_total";
 }

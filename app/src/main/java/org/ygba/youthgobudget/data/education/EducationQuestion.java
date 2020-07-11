@@ -76,7 +76,7 @@ public class EducationQuestion {
     @ColumnInfo(name = EducationQuestionConstants.QUESTION_2_P7_FEMALE_PWDS)
     private String question2P7FemalePWDS;
 
-    @ColumnInfo(name = EducationQuestionConstants.QUESTION_2_PUPIL_TOTAL)
+    @ColumnInfo(name = EducationQuestionConstants.QUESTION_2_P7_TOTAL)
     private String question2P7Total;
 
     @ColumnInfo(name = EducationQuestionConstants.QUESTION_2_DROP_MALE)
