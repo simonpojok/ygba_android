@@ -17,7 +17,7 @@ public class AgricultureQuestion {
     private String date;
 
     @ColumnInfo(name = AgricultureConstants.VILLAGE)
-    private String village;4
+    private String village;
 
     @ColumnInfo(name = AgricultureConstants.PARISH)
     private String parish;
@@ -129,4 +129,20 @@ public class AgricultureQuestion {
 
     @ColumnInfo(name = AgricultureConstants.QUESTION_4_2_VILLAGE_2)
     private String answerQuestion4_2_village_2;
+
+    // row 3
+    @ColumnInfo(name = AgricultureConstants.QUESTION_4_2_INPUT_3)
+    private String answerQuestion4_2_Input_3;
+
+    @ColumnInfo(name = AgricultureConstants.QUESTION_4_2_DATE_3)
+    private String answerQuestion4_2_Date_3;
+
+    @ColumnInfo(name = AgricultureConstants.QUESTION_4_2_MALE_NUMBER_3)
+    private String answerQuestion4_2_Male_Number_3;
+
+    @ColumnInfo(name = AgricultureConstants.QUESTION_4_2_FEMALE_NUMBER_3)
+    private String answerQuestion4_2_Female_Number_3;
+
+    @ColumnInfo(name = AgricultureConstants.QUESTION_4_2_VILLAGE_3)
+    private String answerQuestion4_2_village_3;
 }
