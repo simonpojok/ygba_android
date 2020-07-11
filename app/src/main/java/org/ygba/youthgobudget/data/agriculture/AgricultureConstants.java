@@ -32,4 +32,10 @@ public class AgricultureConstants {
     public static final String QUESTION_3_4_MALE = "q3_4_male";
     public static final String QUESTION_3_4_FEMALE = "q3_4_female";
     public static final String QUESTION_3_5_REASON = "q3_5_reason";
+    public static final String QUESTION_4_1_INPUTS = "q4_1_inputs";
+    public static final String QUESTION_4_2_INPUT_1 = "q4_2_input_1";
+    public static final String QUESTION_4_2_DATE_1 = "q4_2_date_1";
+    public static final String QUESTION_4_2_MALE_NUMBER_1 = "q4_2_male_number_1";
+    public static final String QUESTION_4_2_FEMALE_NUMBER_1 = "q4_2_female_number_1";
+    public static final String QUESTION_4_2_VILLAGE_1 = "q4_2_village_1";
 }
