@@ -127,4 +127,28 @@ public class EducationQuestion {
     @ColumnInfo(name = EducationQuestionConstants.QUESTION_3_2_PERIOD)
     private String question32Period;
 
+    @ColumnInfo(name = EducationQuestionConstants.QUESTION_4_GRADE_1_MALE)
+    private String question4Grade1Male;
+
+    @ColumnInfo(name = EducationQuestionConstants.QUESTION_4_GRADE_1_FEMALE)
+    private String question4Grade1Female;
+
+    @ColumnInfo(name = EducationQuestionConstants.QUESTION_4_GRADE_2_MALE)
+    private String question4Grade2Male;
+
+    @ColumnInfo(name = EducationQuestionConstants.QUESTION_4_GRADE_2_FEMALE)
+    private String question4Grade2Female;
+
+    @ColumnInfo(name = EducationQuestionConstants.QUESTION_4_GRADE_3_MALE)
+    private String question4Grade3Male;
+
+    @ColumnInfo(name = EducationQuestionConstants.QUESTION_4_GRADE_3_FEMALE)
+    private String question4Grade3Female;
+
+    @ColumnInfo(name = EducationQuestionConstants.QUESTION_4_GRADE_OTHER_MALE)
+    private String question4GradeOtherMale;
+
+    @ColumnInfo(name = EducationQuestionConstants.QUESTION_4_GRADE_OTHER_FEMALE)
+    private String question4GradeOtherFemale;
+
 }

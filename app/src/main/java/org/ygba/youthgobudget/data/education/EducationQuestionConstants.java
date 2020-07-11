@@ -41,4 +41,12 @@ public class EducationQuestionConstants {
     public static final String QUESTION_3_SFG_DATE_WITHDRAWN = "q3_fg_d_w";
     public static final String QUESTION_3_1_DISPLAY = "q3_1_sd";
     public static final String QUESTION_3_2_PERIOD = "q3_2_period";
+    public static final String QUESTION_4_GRADE_1_MALE = "q4_g1_m";
+    public static final String QUESTION_4_GRADE_1_FEMALE = "q4_g1_f";
+    public static final String QUESTION_4_GRADE_2_MALE = "q4_g2_m";
+    public static final String QUESTION_4_GRADE_2_FEMALE = "q4_g2_f";
+    public static final String QUESTION_4_GRADE_3_MALE = "q4_g3_m";
+    public static final String QUESTION_4_GRADE_3_FEMALE = "q4_g3_f";
+    public static final String QUESTION_4_GRADE_OTHER_MALE = "q4_other_m";
+    public static final String QUESTION_4_GRADE_OTHER_FEMALE = "q4_other_f";
 }
