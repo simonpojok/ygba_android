@@ -15,13 +15,18 @@ import android.widget.RadioGroup;
 import android.widget.Spinner;
 import android.widget.Toast;
 
+import com.mobsandgeeks.saripaar.ValidationError;
+import com.mobsandgeeks.saripaar.Validator;
+
 import org.ygba.youthgobudget.R;
 import org.ygba.youthgobudget.data.agriculture.AgricultureQuestion;
 import org.ygba.youthgobudget.utils.DynamicData;
 
+
+
 import java.util.List;
 
-public class AgricultureActivity extends AppCompatActivity implements  AdapterView.OnItemSelectedListener{
+public class AgricultureActivity extends AppCompatActivity implements  AdapterView.OnItemSelectedListener, Validator.ValidationListener {
     RadioGroup question1RadioGroup;
     Spinner financialYearSpinner;
     EditText villageEditText;
@@ -254,5 +259,15 @@ public class AgricultureActivity extends AppCompatActivity implements  AdapterVi
     @Override
     public void onNothingSelected(AdapterView<?> adapterView) {
         selectedFinancialYear = "";
+    }
+
+    @Override
+    public void onValidationSucceeded() {
+
+    }
+
+    @Override
+    public void onValidationFailed(List<ValidationError> errors) {
+
     }
 }
