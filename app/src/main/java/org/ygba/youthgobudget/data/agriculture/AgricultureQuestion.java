@@ -145,4 +145,21 @@ public class AgricultureQuestion {
 
     @ColumnInfo(name = AgricultureConstants.QUESTION_4_2_VILLAGE_3)
     private String answerQuestion4_2_village_3;
+
+
+    // row 3
+    @ColumnInfo(name = AgricultureConstants.QUESTION_4_2_INPUT_4)
+    private String answerQuestion4_2_Input_4;
+
+    @ColumnInfo(name = AgricultureConstants.QUESTION_4_2_DATE_4)
+    private String answerQuestion4_2_Date_4;
+
+    @ColumnInfo(name = AgricultureConstants.QUESTION_4_2_MALE_NUMBER_4)
+    private String answerQuestion4_2_Male_Number_4;
+
+    @ColumnInfo(name = AgricultureConstants.QUESTION_4_2_FEMALE_NUMBER_4)
+    private String answerQuestion4_2_Female_Number_4;
+
+    @ColumnInfo(name = AgricultureConstants.QUESTION_4_2_VILLAGE_4)
+    private String answerQuestion4_2_village_4;
 }
