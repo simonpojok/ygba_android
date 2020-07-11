@@ -1,5 +1,4 @@
 package org.ygba.youthgobudget.data.health;
 
-
-public class HealthQuestion {
+public class HealthQuestionConstants {
 }
