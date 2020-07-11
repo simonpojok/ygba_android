@@ -113,4 +113,10 @@
     <string name="expected_or_approved">Expected / Approved</string>
     <string name="grants">Grants</string>
     <string name="extension_services">Extension Service</string>
+    <string name="education_sector_header">Education  Sector</string>
+    <string name="education_question_1_upe" >Name of Universal Primary Education [ UPE ] School</string>
+    <string name="school_name_hint">Kijjabwmi Primary School</string>
+    <string name="education_question_1_note" >
+        Note: This tool is completed with the help of headteacher
+    </string>
 </resources>
