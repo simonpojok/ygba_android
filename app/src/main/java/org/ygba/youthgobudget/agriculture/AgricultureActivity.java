@@ -81,8 +81,6 @@ public class AgricultureActivity extends AppCompatActivity implements  AdapterVi
     EditText question34MaleNumber;
     @NotEmpty
     EditText question35EditText;
-    CheckBox question41NoCheckBox;
-    CheckBox question41YesCheckBox;
     @NotEmpty
     EditText question42Plant1;
     @NotEmpty

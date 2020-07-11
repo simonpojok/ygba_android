@@ -21,7 +21,7 @@
     <string name="parish_label">Parish</string>
     <string name="division_label">Division</string>
     <string name="parish_hint">Parish</string>
-    <string name="division_hint" >Sub county/ Division/ Town Council</string>
+    <string name="division_hint">Sub county/ Division/ Town Council</string>
     <string name="village_hint">Village</string>
     <string name="ygb_agent_label">Monitor/YGB Agent</string>
     <string name="ygb_agent_name_label">Full Name</string>
@@ -31,7 +31,7 @@
     <string name="fullname_hint">Simon Adam</string>
     <string name="agent_number_hint">25554</string>
     <string name="note_text">Note: This tool is completed with the help of sub county production/agriculture/community development officer</string>
-    <string name="question_1_text_objective" >
+    <string name="question_1_text_objective">
         1. Does the sub-county/Division have a substantive agricultural extension worker ?
     </string>
     <string name="question_1_reason_text_edit">Please tell us why the answer is no</string>
@@ -48,60 +48,60 @@
     <string name="date_received_hint">Date Received</string>
     <string name="amount_received">Amount Received</string>
     <string name="amount_expected">Amount Expected</string>
-    <string name="question_2_1_text" >2.1 Number of field visits for farmer support conducted during the quarter</string>
+    <string name="question_2_1_text">2.1 Number of field visits for farmer support conducted during the quarter</string>
     <string name="field_visits_hint">Number Of Field Visits</string>
-    <string name="question_2_2_text" >2.2 Are there any advisory demonstration community/ meetings
+    <string name="question_2_2_text">2.2 Are there any advisory demonstration community/ meetings
     you conducted during the quarter by the extension work? </string>
     <string name="demonstration_meeting_hint">Please explain</string>
     <string name="yes">Yes</string>
     <string name="no">No</string>
     <string name="question_2_3_text">2.3 If yes How many during the qarter</string>
     <string name="number_of_meeting_hint">Number of Meetings</string>
-    <string name="question_2_4_text" >
+    <string name="question_2_4_text">
         2.4 Mention the areas (Cells/ Villages or parishes) where the meetings or workshops were
         held
     </string>
     <string name="demonstration_meeting_place_name">Place Name</string>
-    <string name="question_2_5_text" >
+    <string name="question_2_5_text">
         2.5 If No, what are the reasons for not conducting the community meetings on farming
     </string>
     <string name="reason_hint">Please Type Reason Here</string>
     <string name="question_3_0">3.0 EXTENSION SERVICES</string>
-    <string name="question_3_1" >
+    <string name="question_3_1">
         3.1 Are there any advisory services you have extended to individual farmers during the
         quarter? (Obtain schedule)
     </string>
-    <string name="question_3_2" >
+    <string name="question_3_2">
         3.2 If yes How many were done during the quarter
     </string>
-    <string name="question_3_3" >
+    <string name="question_3_3">
         3.3 Mention the areas (Cells/Villages or parishes) where the visits were made
     </string>
-    <string name="question_3_4" >
+    <string name="question_3_4">
         3.4 Number of farmers visited for advisory services during the partner (get contacts and address of at least
         two farmers visited)
     </string>
     <string name="question_3_4_female">Female</string>
     <string name="question_3_4_male">Male</string>
-    <string name="question_3_5" >
+    <string name="question_3_5">
         3.5 If no, what are the reasons for not conducting the farmer advisory services visit
     </string>
-    <string name="question_4_introduction" >
+    <string name="question_4_introduction">
         4.0 DISTRIBUTION OF INPUTS (OWC)
     </string>
-    <string name="question_4_1" >
+    <string name="question_4_1">
         4.1 Have you given any Agriculture inputs and livestock from Operation Wealth creation and
         or otherwise during the quarter?
     </string>
-    <string name="question_4_3" >
+    <string name="question_4_3">
         4.3 If none, what are the reasons for not providing farmers with agriculture inputs and
         livestock during the quarter
     </string>
-    <string name="question_4_3_observation" >
+    <string name="question_4_3_observation">
         Give any other observations or Challenges
     </string>
     <string name="please_type_here">Please type here</string>
-    <string name="question_4_2" >
+    <string name="question_4_2">
         4.2 If yes what types of inputs and livestock were provided during the quarter ( provide list of
         some of the recipients ) for the different inputs
     </string>
