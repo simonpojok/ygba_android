@@ -634,6 +634,27 @@
             </GridLayout>
         </HorizontalScrollView>
 
+<!--         question 2 1 -->
+        <TextView
+            android:layout_marginVertical="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/education_question_2_1_dropout"
+            android:textSize="15sp"
+            android:textColor="@color/white"
+            android:textStyle="italic" />
+
+<!--        question 2 _ 1 answer -->
+        <EditText
+            android:gravity="start"
+            android:layout_marginVertical="10dp"
+            android:inputType="phone"
+            android:id="@+id/question_2_1_edit_text"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:textSize="15sp"
+            android:background="@drawable/edit_text_style"
+            android:padding="5dp" />
     </LinearLayout>
 
 </ScrollView>

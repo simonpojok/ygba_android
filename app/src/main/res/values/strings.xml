@@ -131,4 +131,7 @@
     <string name="male_pwds">MALE PWDS</string>
     <string name="female_pwds">FEMALE PWDS</string>
     <string name="total">TOTAL</string>
+    <string name="education_question_2_1_dropout" >
+        2.1  If dropout is registered, please indicate the reasons why children are dropping out of school
+    </string>
 </resources>
