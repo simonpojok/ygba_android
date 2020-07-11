@@ -27,8 +27,7 @@ public class AgricultureActivityViewModel extends AndroidViewModel {
 
     public LiveData<List<AgricultureQuestion>> getAllAgricultureQuestions() {
         try {
-            LiveData<List<AgricultureQuestion>> listLiveData = ygbaRepository.getAllAgricultureQuestions();
-            return listLiveData;
+            return ygbaRepository.getAllAgricultureQuestions();
         } catch (ExecutionException | InterruptedException e) {
             e.printStackTrace();
         }
