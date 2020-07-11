@@ -119,4 +119,16 @@
     <string name="education_question_1_note" >
         Note: This tool is completed with the help of headteacher
     </string>
+    <string name="school_name">School Name</string>
+    <string name="school_teachers">Teachers</string>
+    <string name="school_name_school_name">School Name</string>
+    <string name="school_number_p_7_pupils">Number of P7 pupils*</string>
+    <string name="pupil_enrollment">Pupil enrollment</string>
+    <string name="number_of_dropout">No of pupils dropping out of school</string>
+    <string name="category">CATEGORY</string>
+    <string name="male">Male</string>
+    <string name="female">FEMALE</string>
+    <string name="male_pwds">MALE PWDS</string>
+    <string name="female_pwds">FEMALE PWDS</string>
+    <string name="total">TOTAL</string>
 </resources>
