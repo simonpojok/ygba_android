@@ -655,6 +655,17 @@
             android:textSize="15sp"
             android:background="@drawable/edit_text_style"
             android:padding="5dp" />
+
+<!--        question 3 text introduction -->
+        <TextView
+            android:layout_marginVertical="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/education_question_3_introduction"
+            android:textSize="18sp"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+
     </LinearLayout>
 
 </ScrollView>
