@@ -581,7 +581,7 @@
             android:inputType="number"
             android:paddingHorizontal="5dp"
             android:hint="@string/number_of_meeting_hint"
-            android:id="@+id/number_of_meeting_text_edit"
+            android:id="@+id/question_2_3_edit_text"
             android:layout_width="match_parent"
             android:layout_height="40dp"
             android:background="@drawable/edit_text_style"
@@ -609,7 +609,7 @@
         <EditText
             android:textSize="15sp"
             android:layout_marginVertical="10dp"
-            android:id="@+id/demonstration_meeting_place_text_edit"
+            android:id="@+id/question_2_4_text_edit"
             android:layout_width="match_parent"
             android:inputType="text"
             android:paddingHorizontal="5dp"
@@ -640,7 +640,7 @@
         <EditText
             android:gravity="start"
             android:padding="5dp"
-            android:id="@+id/reason_for_not_conduction_meeting_text_view"
+            android:id="@+id/question_2_5_text_view"
             android:layout_width="match_parent"
             android:inputType="textMultiLine"
             android:paddingHorizontal="5dp"
@@ -789,7 +789,7 @@
             android:textColor="@color/white" />
 
         <EditText
-            android:id="@+id/question35Reason"
+            android:id="@+id/question35EditText"
             android:padding="5dp"
             android:gravity="start"
             android:textColor="@color/white"
@@ -825,26 +825,28 @@
             android:textSize="15sp"
             android:text="@string/question_4_1"/>
 
-        <LinearLayout
+        <RadioGroup
+            android:id="@+id/question41RadioGroup"
+            android:orientation="horizontal"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal">
-
-            <CheckBox
-                android:id="@+id/question41YesCheckBox"
+            >
+            <RadioButton android:id="@+id/question41Yes"
+                android:checked="true"
+                android:textSize="15sp"
+                android:layout_marginEnd="10dp"
+                android:textColor="@color/white"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/yes" />
+            <RadioButton
                 android:textSize="15sp"
                 android:textColor="@color/white"
+                android:id="@+id/question41No"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Yes"/>
-
-            <CheckBox
-                android:id="@+id/question41NoCheckBox"
-                android:textColor="@color/white"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="No"/>
-        </LinearLayout>
+                android:text="@string/no" />
+        </RadioGroup>
 
         <TextView
             android:layout_marginBottom="10dp"

@@ -66,11 +66,11 @@ public class AgricultureActivity extends AppCompatActivity implements  AdapterVi
     EditText question21EditText;
     RadioGroup question22RadioGroup;
     @NotEmpty
-    EditText question22NumberEditText;
+    EditText question23EditText;
     @NotEmpty
-    EditText question24NumberEditText;
+    EditText question24EditText;
     @NotEmpty
-    EditText question25ReasonNotMeetingEditEdit;
+    EditText question25EditEdit;
     @NotEmpty
     EditText question32MeetingCapacity;
     @NotEmpty
@@ -80,7 +80,7 @@ public class AgricultureActivity extends AppCompatActivity implements  AdapterVi
     @NotEmpty
     EditText question34MaleNumber;
     @NotEmpty
-    EditText question35Reason;
+    EditText question35EditText;
     CheckBox question41NoCheckBox;
     CheckBox question41YesCheckBox;
     @NotEmpty
@@ -143,6 +143,7 @@ public class AgricultureActivity extends AppCompatActivity implements  AdapterVi
     private final String[] financialYears = {"I", "II", "III", "IV", "V", "VI", "VII"};
     private String selectedFinancialYear;
     private Validator validator;
+    RadioGroup question41RadioGroup;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -193,16 +194,16 @@ public class AgricultureActivity extends AppCompatActivity implements  AdapterVi
                 developmentDateWithdrawn.getText().toString(),
                 question21EditText.getText().toString(),
                 getQuestion22RadioAnswer(),
+                question23EditText.getText().toString(),
+                question24EditText.getText().toString(),
+                question25EditEdit.getText().toString(),
                 null,
-                null,
-                null,
-                null,
-                null,
-                null,
-                null,
-                null,
-                null,
-                null,
+                question32MeetingCapacity.getText().toString(),
+                question24MeetingCell.getText().toString(),
+                question34MaleNumber.getText().toString(),
+                question34FemaleNumber.getText().toString(),
+                question35EditText.getText().toString(),
+                getQuestion41Answer(),
                 null,
                 null,
                 null,
@@ -233,6 +234,13 @@ public class AgricultureActivity extends AppCompatActivity implements  AdapterVi
         );
     }
 
+    private String getQuestion41Answer() {
+        if (question41RadioGroup.getCheckedRadioButtonId() == R.id.question41Yes) {
+            return "Yes";
+        }
+        return "No";
+    }
+
     private String getQuestion1RadioAnswer() {
         if (question1RadioGroup.getCheckedRadioButtonId() == R.id.question1Yes) {
             return "Yes";
@@ -241,7 +249,7 @@ public class AgricultureActivity extends AppCompatActivity implements  AdapterVi
     }
 
     private String getQuestion22RadioAnswer() {
-        if (question1RadioGroup.getCheckedRadioButtonId() == R.id.question22Yes) {
+        if (question22RadioGroup.getCheckedRadioButtonId() == R.id.question22Yes) {
             return "Yes";
         }
         return "No";
@@ -269,17 +277,16 @@ public class AgricultureActivity extends AppCompatActivity implements  AdapterVi
         developmentDateReceived = findViewById(R.id.development_date_received);
         developmentDateWithdrawn = findViewById(R.id.development_date_withdrawn);
         question21EditText = findViewById(R.id.question_2_1_edit_text);
-        question22NumberEditText = findViewById(R.id.number_of_meeting_text_edit);
+        question23EditText = findViewById(R.id.question_2_3_edit_text);
         question22RadioGroup = findViewById(R.id.question22RadioGroup);
-        question24NumberEditText = findViewById(R.id.demonstration_meeting_place_text_edit);
-        question25ReasonNotMeetingEditEdit = findViewById(R.id.reason_for_not_conduction_meeting_text_view);
+        question24EditText = findViewById(R.id.question_2_4_text_edit);
+        question25EditEdit = findViewById(R.id.question_2_5_text_view);
         question32MeetingCapacity = findViewById(R.id.question32MeetingCapacity);
         question24MeetingCell = findViewById(R.id.question24MeetingCell);
         question34FemaleNumber = findViewById(R.id.question34FemaleNumber);
         question34MaleNumber = findViewById(R.id.question34MaleNumber);
-        question35Reason = findViewById(R.id.question35Reason);
-        question41NoCheckBox = findViewById(R.id.question41NoCheckBox);
-        question41YesCheckBox = findViewById(R.id.question41YesCheckBox);
+        question35EditText = findViewById(R.id.question35EditText);
+        question41RadioGroup = findViewById(R.id.question41RadioGroup);
         question42Plant1 = findViewById(R.id.question42Plant1);
         question42Date1 = findViewById(R.id.question42Date1);
         question42Male1 = findViewById(R.id.question42Male1);
