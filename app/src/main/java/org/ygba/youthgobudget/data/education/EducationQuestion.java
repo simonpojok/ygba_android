@@ -241,4 +241,60 @@ public class EducationQuestion {
     @ColumnInfo(name = EducationQuestionConstants.QUESTION_5_VIP_FUNC_NONE)
     private boolean question5VIPFuncNone;
 
+    // female chnaging rooms
+    @ColumnInfo(name = EducationQuestionConstants.QUESTION_5_FCROOM_NO_BLOCKS)
+    private boolean question5FCROOMNoOfBlocks;
+
+    @ColumnInfo(name = EducationQuestionConstants.QUESTION_5_FCROOM_NO_STANCES)
+    private boolean question5FCROOMNoOfStances;
+
+    @ColumnInfo(name = EducationQuestionConstants.QUESTION_5_FCROOM_PUPIL_MALE_STANCES)
+    private boolean question5FCROOMPupilMaleStances;
+
+    @ColumnInfo(name = EducationQuestionConstants.QUESTION_5_FCROOM_PUPIL_FEMALE_STANCES)
+    private boolean question5FCROOMPupilFemaleStances;
+
+    @ColumnInfo(name = EducationQuestionConstants.QUESTION_5_FCROOM_TEACHER_MALE_STANCES)
+    private boolean question5FCROOMTeacherMaleStance;
+
+    @ColumnInfo(name = EducationQuestionConstants.QUESTION_5_FCROOM_TEACHER_FEMALE_STANCES)
+    private boolean question5FCROOMTeacherMFemaleStance;
+
+    @ColumnInfo(name = EducationQuestionConstants.QUESTION_5_FCROOM_TEACHER_MIXED_STANCES)
+    private boolean question5FCROOMTeacherMixedStance;
+
+    @ColumnInfo(name = EducationQuestionConstants.QUESTION_5_FCROOM_FUNC_FUNC)
+    private boolean question5FCROOMFuncFunctional;
+
+    @ColumnInfo(name = EducationQuestionConstants.QUESTION_5_FCROOM_FUNC_NONE)
+    private boolean question5FCROOMFuncNone;
+
+    // boys urinals
+    @ColumnInfo(name = EducationQuestionConstants.QUESTION_5_UFB_NO_BLOCKS)
+    private boolean question5UFBNoOfBlocks;
+
+    @ColumnInfo(name = EducationQuestionConstants.QUESTION_5_UFB_NO_STANCES)
+    private boolean question5UFBNoOfStances;
+
+    @ColumnInfo(name = EducationQuestionConstants.QUESTION_5_UFB_PUPIL_MALE_STANCES)
+    private boolean question5UFBPupilMaleStances;
+
+    @ColumnInfo(name = EducationQuestionConstants.QUESTION_5_UFB_PUPIL_FEMALE_STANCES)
+    private boolean question5UFBPupilFemaleStances;
+
+    @ColumnInfo(name = EducationQuestionConstants.QUESTION_5_UFB_TEACHER_MALE_STANCES)
+    private boolean question5UFBTeacherMaleStance;
+
+    @ColumnInfo(name = EducationQuestionConstants.QUESTION_5_UFB_TEACHER_FEMALE_STANCES)
+    private boolean question5UFBTeacherMFemaleStance;
+
+    @ColumnInfo(name = EducationQuestionConstants.QUESTION_5_UFB_TEACHER_MIXED_STANCES)
+    private boolean question5UFBTeacherMixedStance;
+
+    @ColumnInfo(name = EducationQuestionConstants.QUESTION_5_UFB_FUNC_FUNC)
+    private boolean question5UFBFuncFunctional;
+
+    @ColumnInfo(name = EducationQuestionConstants.QUESTION_5_UFB_FUNC_NONE)
+    private boolean question5UFBFuncNone;
+
 }

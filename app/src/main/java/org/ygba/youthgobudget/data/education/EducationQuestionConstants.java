@@ -78,4 +78,22 @@ public class EducationQuestionConstants {
     public static final String QUESTION_5_VIP_TEACHER_MIXED_STANCES = "q5_VIP_t_mixed_stances";
     public static final String QUESTION_5_VIP_FUNC_FUNC = "q5_VIP_func_functional";
     public static final String QUESTION_5_VIP_FUNC_NONE = "q5_VIP_func_none";
+    public static final String QUESTION_5_FCROOM_NO_BLOCKS = "q5_FCROOM_n_blocks";
+    public static final String QUESTION_5_FCROOM_NO_STANCES = "q5_FCROOM_n_stances";
+    public static final String QUESTION_5_FCROOM_PUPIL_MALE_STANCES = "q5_FCROOM_n_male_stances";
+    public static final String QUESTION_5_FCROOM_PUPIL_FEMALE_STANCES = "q5_FCROOM_n_female_stances";
+    public static final String QUESTION_5_FCROOM_TEACHER_MALE_STANCES = "q5_FCROOM_n_t_male_stances";
+    public static final String QUESTION_5_FCROOM_TEACHER_FEMALE_STANCES = "q5_FCROOM_n_t_f_stances";
+    public static final String QUESTION_5_FCROOM_TEACHER_MIXED_STANCES = "q5_FCROOM_n_t_mixed_stances";
+    public static final String QUESTION_5_FCROOM_FUNC_FUNC = "q5_FCROOM_func_functional";
+    public static final String QUESTION_5_FCROOM_FUNC_NONE = "q5_FCROOM_func_none";
+    public static final String QUESTION_5_UFB_NO_BLOCKS = "q5_UFB_n_blocks";
+    public static final String QUESTION_5_UFB_NO_STANCES = "q5_UFB_n_stances";
+    public static final String QUESTION_5_UFB_PUPIL_MALE_STANCES = "q5_UFB_m_stances";
+    public static final String QUESTION_5_UFB_PUPIL_FEMALE_STANCES = "q5_UFB_f_stances";
+    public static final String QUESTION_5_UFB_TEACHER_MALE_STANCES = "q5_UFB_t_m_stances";
+    public static final String QUESTION_5_UFB_TEACHER_FEMALE_STANCES = "q5_UFB_t_f_stances";
+    public static final String QUESTION_5_UFB_TEACHER_MIXED_STANCES = "q5_UFB_t_mixed_stances";
+    public static final String QUESTION_5_UFB_FUNC_FUNC = "q5_UFB_func_functional";
+    public static final String QUESTION_5_UFB_FUNC_NONE = "q5_UFB_func_none";
 }
