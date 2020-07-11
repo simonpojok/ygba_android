@@ -69,4 +69,13 @@ public class EducationQuestionConstants {
     public static final String QUESTION_5_LATRINE_TEACHER_MIXED_STANCES = "q5_l_t_m_s";
     public static final String QUESTION_5_LATRINE_FUNC_FUNC = "q5_l_fun_func";
     public static final String QUESTION_5_LATRINE_FUNC_NONE = "q5_l_fun_func";
+    public static final String QUESTION_5_VIP_NO_BLOCKS = "q5_VIP_n_blocks";
+    public static final String QUESTION_5_VIP_NO_STANCES = "q5_VIP_n_stances";
+    public static final String QUESTION_5_VIP_PUPIL_MALE_STANCES = "q5_VIP_m_stances";
+    public static final String QUESTION_5_VIP_PUPIL_FEMALE_STANCES = "q5_VIP_f_stances";
+    public static final String QUESTION_5_VIP_TEACHER_MALE_STANCES = "q5_VIP_t_f_stances";
+    public static final String QUESTION_5_VIP_TEACHER_FEMALE_STANCES = "q5_VIP_t_f_stances";
+    public static final String QUESTION_5_VIP_TEACHER_MIXED_STANCES = "q5_VIP_t_mixed_stances";
+    public static final String QUESTION_5_VIP_FUNC_FUNC = "q5_VIP_func_functional";
+    public static final String QUESTION_5_VIP_FUNC_NONE = "q5_VIP_func_none";
 }

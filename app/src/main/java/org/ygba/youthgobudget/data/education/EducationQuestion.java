@@ -213,4 +213,32 @@ public class EducationQuestion {
     @ColumnInfo(name = EducationQuestionConstants.QUESTION_5_LATRINE_FUNC_NONE)
     private boolean question5LatrineFuncNone;
 
+    // vip
+    @ColumnInfo(name = EducationQuestionConstants.QUESTION_5_VIP_NO_BLOCKS)
+    private boolean question5VIPNoOfBlocks;
+
+    @ColumnInfo(name = EducationQuestionConstants.QUESTION_5_VIP_NO_STANCES)
+    private boolean question5VIPNoOfStances;
+
+    @ColumnInfo(name = EducationQuestionConstants.QUESTION_5_VIP_PUPIL_MALE_STANCES)
+    private boolean question5VIPPupilMaleStances;
+
+    @ColumnInfo(name = EducationQuestionConstants.QUESTION_5_VIP_PUPIL_FEMALE_STANCES)
+    private boolean question5VIPePupilFemaleStances;
+
+    @ColumnInfo(name = EducationQuestionConstants.QUESTION_5_VIP_TEACHER_MALE_STANCES)
+    private boolean question5VIPTeacherMaleStance;
+
+    @ColumnInfo(name = EducationQuestionConstants.QUESTION_5_VIP_TEACHER_FEMALE_STANCES)
+    private boolean question5VIPTeacherMFemaleStance;
+
+    @ColumnInfo(name = EducationQuestionConstants.QUESTION_5_VIP_TEACHER_MIXED_STANCES)
+    private boolean question5VIPTeacherMixedStance;
+
+    @ColumnInfo(name = EducationQuestionConstants.QUESTION_5_VIP_FUNC_FUNC)
+    private boolean question5VIPFuncFunctional;
+
+    @ColumnInfo(name = EducationQuestionConstants.QUESTION_5_VIP_FUNC_NONE)
+    private boolean question5VIPFuncNone;
+
 }
