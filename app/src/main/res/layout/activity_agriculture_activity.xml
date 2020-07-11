@@ -66,21 +66,14 @@
         tools:ignore="RtlSymmetry" />
 
     <TextView
-        android:layout_marginVertical="10dp"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/district_label"
-        android:textSize="15sp"
-        android:textColor="@color/white"
-        android:textStyle="bold" />
+        android:layout_marginTop="10dp"
 
-    <TextView
-        android:labelFor="@id/village_text_edit"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:labelFor="@id/village_text_edit"
         android:text="@string/village_label"
-        android:textSize="15sp"
         android:textColor="@color/white"
+        android:textSize="15sp"
         android:textStyle="bold" />
 
     <EditText
@@ -131,7 +124,7 @@
         android:textStyle="bold" />
 
     <EditText
-        android:layout_marginBottom="10dp"
+        android:layout_marginBottom="5dp"
         android:hint="@string/division_hint"
         android:id="@+id/division_text_edit"
         android:layout_width="match_parent"
@@ -146,31 +139,21 @@
         tools:ignore="LabelFor" />
 
     <TextView
-        android:layout_marginVertical="10dp"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/ygb_agent_label"
-        android:textSize="18sp"
-        android:textColor="@color/white"
-        android:textStyle="bold" />
-
-    <TextView
         android:layout_marginTop="10dp"
         android:layout_width="wrap_content"
         android:text="@string/ygb_agent_name_label"
         android:textSize="15sp"
-        android:layout_height="40dp"
         android:textColor="@color/white"
-        android:textStyle="bold" />
+        android:textStyle="bold"
+        android:layout_height="wrap_content" />
 
     <EditText
-        android:layout_marginVertical="10dp"
         android:hint="@string/fullname_hint"
         android:inputType="text"
         android:textSize="15sp"
         android:id="@+id/ygb_agent_name_edit_view"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="40dp"
         android:background="@drawable/edit_text_style"
         android:paddingStart="5dp"
         android:paddingEnd="5dp"
