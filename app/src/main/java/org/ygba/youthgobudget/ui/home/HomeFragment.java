@@ -19,9 +19,13 @@ import org.ygba.youthgobudget.MainActivity;
 import org.ygba.youthgobudget.R;
 import org.ygba.youthgobudget.agriculture.AgricultureActivity;
 
+import java.util.concurrent.Callable;
+
 public class HomeFragment extends Fragment {
     private CardView cv_agriculture;
+    private CardView cv_education;
     private OnAgricultureIconClickListener agricultureIconClickListener;
+    private OnEducationIconClickListener onEducationIconClickListener;
 
     private HomeViewModel homeViewModel;
 
@@ -29,6 +33,7 @@ public class HomeFragment extends Fragment {
     public void onAttach(@NonNull Context context) {
         super.onAttach(context);
         agricultureIconClickListener = (OnAgricultureIconClickListener) context;
+        onEducationIconClickListener = (OnEducationIconClickListener) context;
     }
 
     public View onCreateView(@NonNull LayoutInflater inflater,
@@ -37,6 +42,8 @@ public class HomeFragment extends Fragment {
                 ViewModelProviders.of(this).get(HomeViewModel.class);
         View root = inflater.inflate(R.layout.fragment_home, container, false);
         cv_agriculture = root.findViewById(R.id.cv_agriculture);
+        cv_education = root.findViewById(R.id.cv_education);
+
 
         cv_agriculture.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -46,10 +53,24 @@ public class HomeFragment extends Fragment {
                 }
             }
         });
+
+        cv_education.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                if (onEducationIconClickListener != null ) {
+                    onEducationIconClickListener.onEducationIconClick();
+                }
+            }
+        });
+
         return root;
     }
 
     public static interface OnAgricultureIconClickListener {
         public void onAgricultureIconClick();
+    }
+
+    public static interface OnEducationIconClickListener {
+        public void onEducationIconClick();
     }
 }

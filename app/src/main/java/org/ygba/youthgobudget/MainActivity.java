@@ -19,9 +19,11 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 
 import org.ygba.youthgobudget.agriculture.AgricultureActivity;
+import org.ygba.youthgobudget.education.EducationActivity;
 import org.ygba.youthgobudget.ui.home.HomeFragment;
 
-public class MainActivity extends AppCompatActivity implements HomeFragment.OnAgricultureIconClickListener {
+public class MainActivity extends AppCompatActivity implements HomeFragment.OnAgricultureIconClickListener,
+HomeFragment.OnEducationIconClickListener {
 
 
     private AppBarConfiguration mAppBarConfiguration;
@@ -66,5 +68,10 @@ public class MainActivity extends AppCompatActivity implements HomeFragment.OnAg
     @Override
     public void onAgricultureIconClick() {
         startActivity(new Intent(this, AgricultureActivity.class));
+    }
+
+    @Override
+    public void onEducationIconClick() {
+        startActivity(new Intent(this, EducationActivity.class));
     }
 }

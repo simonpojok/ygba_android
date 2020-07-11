@@ -273,7 +273,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:textColor="#ffffff"
-                        android:text="Hospital" />
+                        android:text="Health" />
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
 
@@ -307,6 +307,7 @@
                 android:layout_gravity="end"
                 android:layout_width="90dp"
                 app:cardCornerRadius="10dp"
+                android:id="@+id/cv_education"
                 app:cardBackgroundColor="@color/colorPrimary"
                 android:layout_height="90dp">
 
@@ -324,7 +325,7 @@
                         android:textColor="#ffffff"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="User" />
+                        android:text="Education" />
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
         </LinearLayout>
