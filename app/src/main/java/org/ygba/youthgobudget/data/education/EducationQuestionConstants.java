@@ -49,4 +49,6 @@ public class EducationQuestionConstants {
     public static final String QUESTION_4_GRADE_3_FEMALE = "q4_g3_f";
     public static final String QUESTION_4_GRADE_OTHER_MALE = "q4_other_m";
     public static final String QUESTION_4_GRADE_OTHER_FEMALE = "q4_other_f";
+    public static final String QUESTION_4_1_PERFORMANCE = "q4_1_performance";
+    public static final String QUESTION_4_2_REASON = "q4_2_reason";
 }

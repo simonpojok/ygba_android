@@ -151,4 +151,10 @@ public class EducationQuestion {
     @ColumnInfo(name = EducationQuestionConstants.QUESTION_4_GRADE_OTHER_FEMALE)
     private String question4GradeOtherFemale;
 
+    @ColumnInfo(name = EducationQuestionConstants.QUESTION_4_1_PERFORMANCE)
+    private String question41Performance;
+
+    @ColumnInfo(name = EducationQuestionConstants.QUESTION_4_2_REASON)
+    private String question42Reason;
+
 }
