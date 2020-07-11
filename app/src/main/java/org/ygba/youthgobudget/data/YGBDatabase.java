@@ -8,14 +8,20 @@ import androidx.room.RoomDatabase;
 
 import org.ygba.youthgobudget.data.agriculture.AgricultureDao;
 import org.ygba.youthgobudget.data.agriculture.AgricultureQuestion;
+import org.ygba.youthgobudget.data.education.EducationQuestion;
+import org.ygba.youthgobudget.data.education.EducationQuestionDao;
 
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 
-@Database(entities = {AgricultureQuestion.class}, version = 1, exportSchema = false)
+@Database(entities = {
+        AgricultureQuestion.class,
+        EducationQuestion.class
+}, version = 1, exportSchema = false)
 public abstract class YGBDatabase extends RoomDatabase {
     private static YGBDatabase INSTANCE;
     public abstract AgricultureDao agricultureDao();
+    public abstract EducationQuestionDao educationQuestionDao();
     public static final int NUMBER_OF_THREADS = 5;
     public static final ExecutorService db_executor = Executors.newFixedThreadPool(NUMBER_OF_THREADS);
 
