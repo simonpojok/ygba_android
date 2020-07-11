@@ -168,4 +168,7 @@
     <string name="education_question_4_2_text" >
         4.2 What reason is attribute to the answer ( in 5 above )
     </string>
+    <string name="education_question_5_text">5 SANITATION IN THE SCHOOL
+   </string>
+    <string name="education_question_5_0_text">Sanitation facility</string>
 </resources>
