@@ -142,18 +142,22 @@ public class AgricultureActivity extends AppCompatActivity implements  AdapterVi
     AgricultureActivityViewModel activityViewModel;
     private final String[] financialYears = {"I", "II", "III", "IV", "V", "VI", "VII"};
     private String selectedFinancialYear;
+    private Validator validator;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_agriculture_activity);
          activityViewModel = new ViewModelProvider(this).get(AgricultureActivityViewModel.class);
+         validator = new Validator(this);
+         validator.setValidationListener(this);
+
         initViews();
 
         saveFormData.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                saveAgricultureQuestion(view);
+                validator.validate();
             }
         });
 
@@ -318,11 +322,17 @@ public class AgricultureActivity extends AppCompatActivity implements  AdapterVi
 
     @Override
     public void onValidationSucceeded() {
-
+        saveAgricultureQuestion(null);
     }
 
     @Override
     public void onValidationFailed(List<ValidationError> errors) {
-
+        for (ValidationError error: errors) {
+            View view = error.getView();
+            String message = error.getCollatedErrorMessage(this);
+            if (view instanceof EditText) {
+               ( (EditText) view).setError(message);
+            }
+        }
     }
 }
