@@ -82,6 +82,7 @@ public class AgricultureActivity extends AppCompatActivity implements  AdapterVi
     CardView saveFormData;
     AgricultureActivityViewModel activityViewModel;
     private final String[] financialYears = {"I", "II", "III", "IV", "V", "VI", "VII"};
+    private String selectedFinancialYear;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -235,12 +236,12 @@ public class AgricultureActivity extends AppCompatActivity implements  AdapterVi
     }
 
     @Override
-    public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l) {
-
+    public void onItemSelected(AdapterView<?> adapterView, View view, int position, long id) {
+        selectedFinancialYear = financialYears[position];
     }
 
     @Override
     public void onNothingSelected(AdapterView<?> adapterView) {
-
+        selectedFinancialYear = "";
     }
 }
