@@ -219,8 +219,8 @@
                 android:orientation="horizontal">
 
                 <TextView
-                    android:layout_marginHorizontal="10dp"
-                    android:layout_marginBottom="10dp"
+                    android:layout_marginHorizontal="5dp"
+                    android:layout_marginBottom="5dp"
                     android:text="@string/school_name"
                     android:textColor="@color/white"
                     android:textStyle="bold"
@@ -230,10 +230,10 @@
 
                 <EditText
                     android:gravity="start"
-                    android:layout_marginHorizontal="10dp"
+                    android:layout_marginHorizontal="5dp"
                     android:layout_row="1"
                     android:layout_column="0"
-                    android:layout_marginVertical="10dp"
+                    android:layout_marginVertical="5dp"
                     android:inputType="text"
                     android:hint="@string/school_name_school_name"
                     android:id="@+id/question_2_school_name_edit_text"
@@ -246,9 +246,8 @@
                     android:paddingEnd="5dp" />
 
                 <TextView
-                    android:layout_marginHorizontal="10dp"
-                    android:layout_marginVertical="10dp"
-                    android:layout_marginBottom="10dp"
+                    android:layout_marginHorizontal="5dp"
+                    android:layout_marginVertical="5dp"
                     android:text="@string/school_teachers"
                     android:textColor="@color/white"
                     android:textStyle="bold"
@@ -257,9 +256,8 @@
                     android:textSize="15sp"/>
 
                 <TextView
-                    android:layout_marginHorizontal="10dp"
-                    android:layout_marginVertical="10dp"
-                    android:layout_marginBottom="10dp"
+                    android:layout_marginHorizontal="5dp"
+                    android:layout_marginVertical="5dp"
                     android:text="@string/pupil_enrollment"
                     android:textColor="@color/white"
                     android:textStyle="bold"
@@ -268,9 +266,8 @@
                     android:textSize="15sp"/>
 
                 <TextView
-                    android:layout_marginHorizontal="10dp"
-                    android:layout_marginVertical="10dp"
-                    android:layout_marginBottom="10dp"
+                    android:layout_marginHorizontal="5dp"
+                    android:layout_marginVertical="5dp"
                     android:text="@string/school_number_p_7_pupils"
                     android:textColor="@color/white"
                     android:textStyle="bold"
@@ -281,8 +278,8 @@
 <!--                number of drop out column 0 row 6 -->
                 <TextView
                     android:layout_gravity="center_horizontal"
-                    android:layout_marginHorizontal="10dp"
-                    android:layout_marginVertical="10dp"
+                    android:layout_marginHorizontal="5dp"
+                    android:layout_marginVertical="5dp"
                     android:text="@string/number_of_dropout"
                     android:textColor="@color/white"
                     android:textStyle="bold"
@@ -297,7 +294,7 @@
                     android:layout_height="wrap_content"
                     android:layout_row="1"
                     android:layout_column="1"
-                    android:layout_marginHorizontal="10dp"
+                    android:layout_marginHorizontal="5dp"
                     android:text="@string/category"
                     android:textColor="@color/white"
                     android:textSize="15sp"
@@ -305,7 +302,7 @@
 
 <!--                 row 2 column 1 male -->
                 <TextView
-                    android:layout_marginHorizontal="10dp"
+                    android:layout_marginHorizontal="5dp"
                     android:text="@string/male"
                     android:textColor="@color/white"
                     android:textStyle="bold"
@@ -317,7 +314,9 @@
 
 <!--                female row 3 cplunm 2 -->
                 <TextView
-                    android:layout_marginHorizontal="10dp"
+                    android:layout_marginVertical="5dp"
+                    android:layout_marginHorizontal="5dp"
+                    android:gravity="center"
                     android:text="@string/female"
                     android:textColor="@color/white"
                     android:textStyle="bold"
@@ -329,7 +328,9 @@
 
 <!--                male pwd row 2 column 3-->
                 <TextView
-                    android:layout_marginHorizontal="10dp"
+                    android:layout_marginVertical="5dp"
+                    android:layout_marginHorizontal="5dp"
+                    android:gravity="center"
                     android:text="@string/male_pwds"
                     android:textColor="@color/white"
                     android:textStyle="bold"
@@ -341,7 +342,9 @@
 
 <!--                female pwds row 3 column 4 -->
                 <TextView
-                    android:layout_marginHorizontal="10dp"
+                    android:layout_marginVertical="5dp"
+                    android:layout_marginHorizontal="5dp"
+                    android:gravity="center"
                     android:text="@string/female_pwds"
                     android:textColor="@color/white"
                     android:textStyle="bold"
@@ -353,7 +356,9 @@
 
 <!--                total label column 5 row 3 -->
                 <TextView
-                    android:layout_marginHorizontal="10dp"
+                    android:layout_marginVertical="5dp"
+                    android:layout_marginHorizontal="5dp"
+                    android:gravity="center"
                     android:text="@string/total"
                     android:textColor="@color/white"
                     android:textStyle="bold"
@@ -365,7 +370,9 @@
 
 <!--                column 1 male -->
                 <EditText
-                    android:layout_marginVertical="10dp"
+                    android:layout_marginVertical="5dp"
+                    android:layout_marginHorizontal="5dp"
+                    android:gravity="center"
                     android:inputType="number"
                     android:id="@+id/question_2_teacher_male_edit_text"
                     android:layout_width="200dp"
@@ -383,7 +390,9 @@
                     android:layout_height="40dp"
                     android:layout_row="4"
                     android:layout_column="1"
-                    android:layout_marginVertical="10dp"
+                    android:layout_marginVertical="5dp"
+                    android:layout_marginHorizontal="5dp"
+                    android:gravity="center"
                     android:background="@drawable/edit_text_style"
                     android:inputType="number"
                     android:paddingStart="5dp"
@@ -391,7 +400,9 @@
                     android:textSize="15sp" />
 
                 <EditText
-                    android:layout_marginVertical="10dp"
+                    android:layout_marginVertical="5dp"
+                    android:layout_marginHorizontal="5dp"
+                    android:gravity="center"
                     android:inputType="number"
                     android:id="@+id/question_2_number_p7_male_edit_text"
                     android:layout_width="200dp"
@@ -404,7 +415,9 @@
                     android:paddingEnd="5dp" />
 
                 <EditText
-                    android:layout_marginVertical="10dp"
+                    android:layout_marginVertical="5dp"
+                    android:layout_marginHorizontal="5dp"
+                    android:gravity="center"
                     android:inputType="number"
                     android:id="@+id/question_2_number_of_p7_male_edit_text"
                     android:layout_width="200dp"
@@ -418,7 +431,9 @@
 
 <!--                column  2 female -->
                 <EditText
-                    android:layout_marginVertical="10dp"
+                    android:layout_marginVertical="5dp"
+                    android:layout_marginHorizontal="5dp"
+                    android:gravity="center"
                     android:inputType="number"
                     android:id="@+id/question_2_teachers_female_edit_text"
                     android:layout_width="200dp"
@@ -431,7 +446,9 @@
                     android:paddingEnd="5dp" />
 
                 <EditText
-                    android:layout_marginVertical="10dp"
+                    android:layout_marginVertical="5dp"
+                    android:layout_marginHorizontal="5dp"
+                    android:gravity="center"
                     android:inputType="number"
                     android:id="@+id/question_2_number_of_dropout_female_edit_text"
                     android:layout_width="200dp"
@@ -444,7 +461,9 @@
                     android:paddingEnd="5dp" />
 
                 <EditText
-                    android:layout_marginVertical="10dp"
+                    android:layout_marginVertical="5dp"
+                    android:layout_marginHorizontal="5dp"
+                    android:gravity="center"
                     android:inputType="number"
                     android:id="@+id/question_2_number_p7_enrollment_female_edit_text"
                     android:layout_width="200dp"
@@ -457,7 +476,9 @@
                     android:paddingEnd="5dp" />
 
                 <EditText
-                    android:layout_marginVertical="10dp"
+                    android:layout_marginVertical="5dp"
+                    android:layout_marginHorizontal="5dp"
+                    android:gravity="center"
                     android:inputType="number"
                     android:id="@+id/question_2_number_of_dropout_enrollment_female_edit_text"
                     android:layout_width="200dp"
@@ -472,7 +493,9 @@
 <!--                male pwds column 3-->
 
                 <EditText
-                    android:layout_marginVertical="10dp"
+                    android:layout_marginVertical="5dp"
+                    android:layout_marginHorizontal="5dp"
+                    android:gravity="center"
                     android:inputType="number"
                     android:id="@+id/question_2_number_p7_enrollment_male_edit_text"
                     android:layout_width="200dp"
@@ -485,7 +508,9 @@
                     android:paddingEnd="5dp" />
 
                 <EditText
-                    android:layout_marginVertical="10dp"
+                    android:layout_marginVertical="5dp"
+                    android:layout_marginHorizontal="5dp"
+                    android:gravity="center"
                     android:inputType="number"
                     android:id="@+id/question_2_number_of_dropout_enrollment_male_edit_text"
                     android:layout_width="200dp"
@@ -498,7 +523,9 @@
                     android:paddingEnd="5dp" />
 
                 <EditText
-                    android:layout_marginVertical="10dp"
+                    android:layout_marginVertical="5dp"
+                    android:layout_marginHorizontal="5dp"
+                    android:gravity="center"
                     android:inputType="number"
                     android:id="@+id/question_2_teacher_female_pwd_edit_text"
                     android:layout_width="200dp"
@@ -511,7 +538,9 @@
                     android:paddingEnd="5dp" />
 
                 <EditText
-                    android:layout_marginVertical="10dp"
+                    android:layout_marginVertical="5dp"
+                    android:layout_marginHorizontal="5dp"
+                    android:gravity="center"
                     android:inputType="number"
                     android:id="@+id/question_2_pupil_enrollment_female_pwd_edit_text"
                     android:layout_width="200dp"
@@ -525,7 +554,9 @@
 
 <!--                column 4 female pwds-->
                 <EditText
-                    android:layout_marginVertical="10dp"
+                    android:layout_marginVertical="5dp"
+                    android:layout_marginHorizontal="5dp"
+                    android:gravity="center"
                     android:inputType="number"
                     android:id="@+id/question_2_teacher_female_pwds_edit_text"
                     android:layout_width="200dp"
@@ -539,7 +570,9 @@
                     android:autofillHints="" />
 
                 <EditText
-                    android:layout_marginVertical="10dp"
+                    android:layout_marginVertical="5dp"
+                    android:layout_marginHorizontal="5dp"
+                    android:gravity="center"
                     android:inputType="number"
                     android:id="@+id/question_2_pupil_enrollment_female_pwds_edit_text"
                     android:layout_width="200dp"
@@ -553,7 +586,9 @@
                     android:autofillHints="" />
 
                 <EditText
-                    android:layout_marginVertical="10dp"
+                    android:layout_marginVertical="5dp"
+                    android:layout_marginHorizontal="5dp"
+                    android:gravity="center"
                     android:inputType="number"
                     android:id="@+id/question_2_number_p7_female_pwds_edit_text"
                     android:layout_width="200dp"
@@ -566,7 +601,9 @@
                     android:paddingEnd="5dp" />
 
                 <EditText
-                    android:layout_marginVertical="10dp"
+                    android:layout_marginVertical="5dp"
+                    android:layout_marginHorizontal="5dp"
+                    android:gravity="center"
                     android:inputType="number"
                     android:id="@+id/question_2_number_of_dropout_enrollment_female_pwds_edit_text"
                     android:layout_width="200dp"
@@ -580,7 +617,9 @@
 
 <!--                 column 5 total -->
                 <EditText
-                    android:layout_marginVertical="10dp"
+                    android:layout_marginVertical="5dp"
+                    android:layout_marginHorizontal="5dp"
+                    android:gravity="center"
                     android:inputType="number"
                     android:id="@+id/question_2_teacher_total_edit_text"
                     android:layout_width="200dp"
@@ -594,7 +633,9 @@
                     android:autofillHints="" />
 
                 <EditText
-                    android:layout_marginVertical="10dp"
+                    android:layout_marginVertical="5dp"
+                    android:layout_marginHorizontal="5dp"
+                    android:gravity="center"
                     android:inputType="number"
                     android:id="@+id/question_2_pupil_enrollment_total_edit_text"
                     android:layout_width="200dp"
@@ -608,7 +649,9 @@
                     android:autofillHints="" />
 
                 <EditText
-                    android:layout_marginVertical="10dp"
+                    android:layout_marginVertical="5dp"
+                    android:layout_marginHorizontal="5dp"
+                    android:gravity="center"
                     android:inputType="number"
                     android:id="@+id/question_2_number_p7_enrollment_total_edit_text"
                     android:layout_width="200dp"
@@ -621,7 +664,9 @@
                     android:paddingEnd="5dp" />
 
                 <EditText
-                    android:layout_marginVertical="10dp"
+                    android:layout_marginVertical="5dp"
+                    android:layout_marginHorizontal="5dp"
+                    android:gravity="center"
                     android:inputType="number"
                     android:id="@+id/question_2_number_of_dropout_enrollment_total_edit_text"
                     android:layout_width="200dp"
@@ -682,7 +727,7 @@
                     android:layout_column="0"
                     android:layout_row="0"
                     android:layout_columnSpan="4"
-                    android:layout_marginVertical="10dp"
+                    android:layout_marginVertical="5dp"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/education_question_3_header"
@@ -693,7 +738,7 @@
                 <TextView
                     android:layout_column="0"
                     android:layout_row="1"
-                    android:layout_marginVertical="10dp"
+                    android:layout_marginVertical="5dp"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/education_question_3_grant"
@@ -704,7 +749,7 @@
                 <TextView
                     android:layout_column="0"
                     android:layout_row="2"
-                    android:layout_marginVertical="10dp"
+                    android:layout_marginVertical="5dp"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/education_question_3_capitation_grant"
@@ -715,7 +760,8 @@
                 <TextView
                     android:layout_column="0"
                     android:layout_row="3"
-                    android:layout_marginVertical="10dp"
+                    android:layout_marginHorizontal="5dp"
+                    android:layout_marginVertical="5dp"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/education_question_3_SFG"
@@ -729,7 +775,8 @@
                     android:layout_height="wrap_content"
                     android:layout_row="1"
                     android:layout_column="1"
-                    android:layout_marginVertical="10dp"
+                    android:layout_marginHorizontal="5dp"
+                    android:layout_marginVertical="5dp"
                     android:text="@string/education_question_3_approved_budget"
                     android:textColor="@color/white"
                     android:textSize="15sp"
@@ -739,7 +786,9 @@
                 <EditText
                     android:layout_column="1"
                     android:layout_row="2"
-                    android:layout_marginVertical="10dp"
+                    android:layout_marginVertical="5dp"
+                    android:layout_marginHorizontal="5dp"
+                    android:gravity="center"
                     android:inputType="numberDecimal"
                     android:id="@+id/question_3_capitation_grant_approved_budget"
                     android:layout_width="200dp"
@@ -767,7 +816,9 @@
                 <EditText
                     android:layout_column="2"
                     android:layout_row="2"
-                    android:layout_marginVertical="10dp"
+                    android:layout_marginVertical="5dp"
+                    android:layout_marginHorizontal="5dp"
+                    android:gravity="center"
                     android:inputType="numberDecimal"
                     android:id="@+id/question_3_capitation_grant_budget_released_tv"
                     android:layout_width="200dp"
@@ -781,7 +832,9 @@
                 <EditText
                     android:layout_column="2"
                     android:layout_row="3"
-                    android:layout_marginVertical="10dp"
+                    android:layout_marginVertical="5dp"
+                    android:layout_marginHorizontal="5dp"
+                    android:gravity="center"
                     android:inputType="numberDecimal"
                     android:id="@+id/question_3_SFG_grant_budget_released_tv"
                     android:layout_width="200dp"
@@ -795,7 +848,9 @@
                 <EditText
                     android:layout_column="3"
                     android:layout_row="2"
-                    android:layout_marginVertical="10dp"
+                    android:layout_marginVertical="5dp"
+                    android:layout_marginHorizontal="5dp"
+                    android:gravity="center"
                     android:inputType="date"
                     android:id="@+id/question_3_capitation_date_received_released_tv"
                     android:layout_width="200dp"
@@ -809,7 +864,9 @@
                 <EditText
                     android:layout_column="3"
                     android:layout_row="3"
-                    android:layout_marginVertical="10dp"
+                    android:layout_marginVertical="5dp"
+                    android:layout_marginHorizontal="5dp"
+                    android:gravity="center"
                     android:inputType="date"
                     android:id="@+id/question_3_SFG_date_received_released_tv"
                     android:layout_width="200dp"
@@ -823,7 +880,9 @@
                 <EditText
                     android:layout_column="4"
                     android:layout_row="2"
-                    android:layout_marginVertical="10dp"
+                    android:layout_marginVertical="5dp"
+                    android:layout_marginHorizontal="5dp"
+                    android:gravity="center"
                     android:inputType="date"
                     android:id="@+id/question_3_capitation_date_withdrawn_tv"
                     android:layout_width="200dp"
@@ -836,7 +895,9 @@
                 <EditText
                     android:layout_column="4"
                     android:layout_row="3"
-                    android:layout_marginVertical="10dp"
+                    android:layout_marginVertical="5dp"
+                    android:layout_marginHorizontal="5dp"
+                    android:gravity="center"
                     android:inputType="date"
                     android:id="@+id/question_3_SFG_date_withdrawn_tv"
                     android:layout_width="200dp"
@@ -849,7 +910,9 @@
                 <TextView
                     android:layout_column="2"
                     android:layout_row="1"
-                    android:layout_marginVertical="10dp"
+                    android:layout_marginVertical="5dp"
+                    android:layout_marginHorizontal="5dp"
+                    android:gravity="center"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/education_question_3_budget_released"
@@ -860,7 +923,9 @@
                 <TextView
                     android:layout_column="3"
                     android:layout_row="1"
-                    android:layout_marginVertical="10dp"
+                    android:layout_marginVertical="5dp"
+                    android:layout_marginHorizontal="5dp"
+                    android:gravity="center"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/education_question_3_date_recieved"
@@ -871,7 +936,7 @@
                 <TextView
                     android:layout_column="4"
                     android:layout_row="1"
-                    android:layout_marginVertical="10dp"
+                    android:layout_marginVertical="5dp"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/education_question_3_date_withdrawn"
