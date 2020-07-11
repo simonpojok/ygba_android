@@ -9,10 +9,10 @@ import org.ygba.youthgobudget.YGBARepository;
 import org.ygba.youthgobudget.data.YGBDatabase;
 import org.ygba.youthgobudget.data.agriculture.AgricultureQuestion;
 
-public class AgricultureActivityRepository extends AndroidViewModel {
+public class AgricultureActivityViewModel extends AndroidViewModel {
     YGBARepository ygbaRepository;
 
-    public AgricultureActivityRepository(@NonNull Application application) {
+    public AgricultureActivityViewModel(@NonNull Application application) {
         super(application);
         ygbaRepository = YGBARepository.getInstance(YGBDatabase.getInstance(application));
     }
