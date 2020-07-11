@@ -12,4 +12,19 @@ public class EducationQuestion {
 
     @ColumnInfo(name = EducationQuestionConstants.FINANCIAL_YEAR)
     private String financialYear;
+
+    @ColumnInfo(name = EducationQuestionConstants.DATE)
+    private String date;
+
+    @ColumnInfo(name = EducationQuestionConstants.DISTRICT)
+    private String district;
+
+    @ColumnInfo(name = EducationQuestionConstants.PARISH)
+    private String parish;
+
+    @ColumnInfo(name = EducationQuestionConstants.SUB_COUNTY)
+    private String sub_county;
+
+    @ColumnInfo(name = EducationQuestionConstants.AGENT_FULL_NAME)
+    private String fullname;
 }
