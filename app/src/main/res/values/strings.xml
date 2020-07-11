@@ -165,4 +165,7 @@
     <string name="good">Good</string>
     <string name="bad">Bad</string>
     <string name="same">Same</string>
+    <string name="education_question_4_2_text" >
+        4.2 What reason is attribute to the answer ( in 5 above )
+    </string>
 </resources>
