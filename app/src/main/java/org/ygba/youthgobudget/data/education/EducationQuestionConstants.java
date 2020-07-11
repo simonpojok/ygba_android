@@ -101,4 +101,6 @@ public class EducationQuestionConstants {
     public static final String QUESTION_5_2_PWD = "q5_2_pwd";
     public static final String QUESTION_5_2_NONE = "q5_2_none";
     public static final String QUESTION_5_2_OTHERS_SPEC = "q5_2_others_Spec";
+    public static final String QUESTION_5_3_WATER_POINT = "q5_3_yes_no";
+    public static final String QUESTION_5_3_DISTANCE = "q5_3_reason";
 }

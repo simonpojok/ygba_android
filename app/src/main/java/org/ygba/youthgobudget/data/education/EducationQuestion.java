@@ -312,4 +312,10 @@ public class EducationQuestion {
     @ColumnInfo(name = EducationQuestionConstants.QUESTION_5_2_OTHERS_SPEC)
     private String question52OtherSpec;
 
+    @ColumnInfo(name = EducationQuestionConstants.QUESTION_5_3_WATER_POINT)
+    private boolean question53YesNo;
+
+    @ColumnInfo(name = EducationQuestionConstants.QUESTION_5_3_DISTANCE)
+    private String question53Reason;
+
 }
