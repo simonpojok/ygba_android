@@ -342,4 +342,13 @@ public class EducationQuestion {
     @ColumnInfo(name = EducationQuestionConstants.QUESTION_7_TOTAL_NUM_TEACHERS)
     private String question7TotalNumOfTeachers;
 
+    @ColumnInfo(name = EducationQuestionConstants.QUESTION7_1_PUPIL_RATIO)
+    private String question71PupilRatio;
+
+    @ColumnInfo(name = EducationQuestionConstants.QUESTION_7_2_WOMAN_TEACHER)
+    private boolean question72WomanTeacher;
+
+    @ColumnInfo(name = EducationQuestionConstants.QUESTION_7_3_QUESTION)
+    private String question73Question;
+
 }
