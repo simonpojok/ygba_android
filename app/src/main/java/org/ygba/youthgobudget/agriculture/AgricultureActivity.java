@@ -8,6 +8,8 @@ import androidx.lifecycle.ViewModelProviders;
 
 import android.os.Bundle;
 import android.view.View;
+import android.widget.AdapterView;
+import android.widget.ArrayAdapter;
 import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.Spinner;
@@ -18,7 +20,7 @@ import org.ygba.youthgobudget.data.agriculture.AgricultureQuestion;
 
 import java.util.List;
 
-public class AgricultureActivity extends AppCompatActivity {
+public class AgricultureActivity extends AppCompatActivity implements  AdapterView.OnItemSelectedListener{
     Spinner financialYearSpinner;
     EditText villageEditText;
     EditText parishTextEdit;
@@ -79,6 +81,7 @@ public class AgricultureActivity extends AppCompatActivity {
     EditText question43AnyReason;
     CardView saveFormData;
     AgricultureActivityViewModel activityViewModel;
+    private final String[] financialYears = {"I", "II", "III", "IV", "V", "VI", "VII"};
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -168,6 +171,9 @@ public class AgricultureActivity extends AppCompatActivity {
 
     private void initViews() {
         financialYearSpinner = findViewById(R.id.financial_year_spinner);
+        ArrayAdapter<String> aa=new ArrayAdapter<String>(this, android.R.layout.simple_spinner_item, financialYears);
+        aa.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        financialYearSpinner.setAdapter(aa);
         villageEditText = findViewById(R.id.village_text_edit);
         parishTextEdit = findViewById(R.id.parish_text_edit);
         divisionEditText = findViewById(R.id.division_text_edit);
@@ -226,5 +232,15 @@ public class AgricultureActivity extends AppCompatActivity {
         question43Reason = findViewById(R.id.question43Reason);
         question43AnyReason =  findViewById(R.id.question43AnyReason);
         saveFormData = findViewById(R.id.saved_form_data);
+    }
+
+    @Override
+    public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l) {
+
+    }
+
+    @Override
+    public void onNothingSelected(AdapterView<?> adapterView) {
+
     }
 }
