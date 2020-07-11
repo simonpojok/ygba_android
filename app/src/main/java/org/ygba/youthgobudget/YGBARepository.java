@@ -1,6 +1,7 @@
 package org.ygba.youthgobudget;
 
 import org.ygba.youthgobudget.data.YGBDatabase;
+import org.ygba.youthgobudget.data.agriculture.AgricultureQuestion;
 
 public class YGBARepository {
     private static YGBARepository INSTANCE;
@@ -19,5 +20,14 @@ public class YGBARepository {
             }
         }
         return INSTANCE;
+    }
+
+    public void saveAgricultureQuestion(final AgricultureQuestion agricultureQuestion) {
+        YGBDatabase.db_executor.execute(new Runnable() {
+            @Override
+            public void run() {
+                ygbDatabase.agricultureDao().saveAgricultureQuestion(agricultureQuestion);
+            }
+        });
     }
 }
