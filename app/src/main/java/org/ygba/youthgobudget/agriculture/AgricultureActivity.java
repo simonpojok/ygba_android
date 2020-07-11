@@ -2,6 +2,8 @@ package org.ygba.youthgobudget.agriculture;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.cardview.widget.CardView;
+import androidx.lifecycle.ViewModelProvider;
+import androidx.lifecycle.ViewModelProviders;
 
 import android.os.Bundle;
 import android.view.View;
@@ -71,12 +73,24 @@ public class AgricultureActivity extends AppCompatActivity {
     EditText question43Reason;
     EditText question43AnyReason;
     CardView saveFormData;
+    AgricultureActivityViewModel activityViewModel;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_agriculture_activity);
+         activityViewModel = new ViewModelProvider(this).get(AgricultureActivityViewModel.class);
+        initViews();
 
+        saveFormData.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+            }
+        });
+    }
+
+    private void initViews() {
         financialYearSpinner = findViewById(R.id.financial_year_spinner);
         villageEditText = findViewById(R.id.village_text_edit);
         parishTextEdit = findViewById(R.id.parish_text_edit);
@@ -136,12 +150,5 @@ public class AgricultureActivity extends AppCompatActivity {
         question43Reason = findViewById(R.id.question43Reason);
         question43AnyReason =  findViewById(R.id.question43AnyReason);
         saveFormData = findViewById(R.id.saved_form_data);
-
-        saveFormData.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-
-            }
-        });
     }
 }
