@@ -120,4 +120,5 @@ public class EducationQuestionConstants {
     public static final String QUESTION_8_4_MEET = "q8_4_meet";
     public static final String QUESTION_8_5_SCHOOL_MGT = "q8_5_sch_mgt";
     public static final String QUESTION_8_OTHER_OBSERVATIONS = "q8_other_observations";
+    public static final String LOCALLY_STORED = "stored_locally";
 }

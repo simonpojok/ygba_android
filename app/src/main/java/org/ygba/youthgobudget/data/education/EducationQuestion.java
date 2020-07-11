@@ -369,4 +369,9 @@ public class EducationQuestion {
     @ColumnInfo(name = EducationQuestionConstants.QUESTION_8_OTHER_OBSERVATIONS)
     private String question8OtherObservations;
 
+    @ColumnInfo(name = EducationQuestionConstants.LOCALLY_STORED)
+    private boolean locallyStored;
+
+
+
 }
