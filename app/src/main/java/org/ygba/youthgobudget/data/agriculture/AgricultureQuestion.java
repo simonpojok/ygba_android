@@ -114,4 +114,19 @@ public class AgricultureQuestion {
 
     @ColumnInfo(name = AgricultureConstants.QUESTION_4_2_VILLAGE_1)
     private String answerQuestion4_2_village_1;
+
+    @ColumnInfo(name = AgricultureConstants.QUESTION_4_2_INPUT_2)
+    private String answerQuestion4_2_Input_2;
+
+    @ColumnInfo(name = AgricultureConstants.QUESTION_4_2_DATE_2)
+    private String answerQuestion4_2_Date_2;
+
+    @ColumnInfo(name = AgricultureConstants.QUESTION_4_2_MALE_NUMBER_2)
+    private String answerQuestion4_2_Male_Number_2;
+
+    @ColumnInfo(name = AgricultureConstants.QUESTION_4_2_FEMALE_NUMBER_2)
+    private String answerQuestion4_2_Female_Number_2;
+
+    @ColumnInfo(name = AgricultureConstants.QUESTION_4_2_VILLAGE_2)
+    private String answerQuestion4_2_village_2;
 }
