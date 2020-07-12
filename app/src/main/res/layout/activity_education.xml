@@ -2407,7 +2407,6 @@
         <HorizontalScrollView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content">
-
             <GridLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -2447,6 +2446,7 @@
                     android:orientation="vertical">
 
                     <TextView
+                        android:layout_marginHorizontal="5dp"
                         android:layout_marginVertical="5dp"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -2469,6 +2469,7 @@
 
 <!--                    female -->
                     <TextView
+                        android:layout_marginHorizontal="5dp"
                         android:layout_marginVertical="5dp"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -2498,6 +2499,7 @@
                     android:orientation="vertical">
 
                     <TextView
+                        android:layout_marginHorizontal="5dp"
                         android:layout_marginVertical="5dp"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -2512,7 +2514,7 @@
                         android:layout_marginHorizontal="5dp"
                         android:inputType="text"
                         android:id="@+id/eduction_question_7_0_enrolled_male_teachers_present_text_view"
-                        android:layout_width="200dp"
+                        android:layout_width="match_parent"
                         android:layout_height="40dp"
                         android:textSize="15sp"
                         android:background="@drawable/edit_text_style"
@@ -2520,6 +2522,7 @@
 
                     <!--                    female -->
                     <TextView
+                        android:layout_marginHorizontal="5dp"
                         android:layout_marginVertical="5dp"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -2534,14 +2537,48 @@
                         android:layout_marginHorizontal="5dp"
                         android:inputType="text"
                         android:id="@+id/eduction_question_7_0_enrolled_female_teachers_present_text_view"
-                        android:layout_width="200dp"
+                        android:layout_width="match_parent"
                         android:layout_height="40dp"
                         android:textSize="15sp"
                         android:background="@drawable/edit_text_style"
                         android:padding="5dp" />
                 </LinearLayout>
+                <TextView
+                    android:layout_column="0"
+                    android:layout_row="2"
+                    android:layout_marginVertical="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/education_question_7_0_total_text"
+                    android:textSize="15sp"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:layout_row="2"
+                    android:layout_column="1"
+                    android:gravity="center"
+                    android:layout_marginVertical="5dp"
+                    android:layout_marginHorizontal="5dp"
+                    android:inputType="text"
+                    android:id="@+id/eduction_question_7_0_teachers_on_payroll_text_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:textSize="15sp"
+                    android:background="@drawable/edit_text_style"
+                    android:padding="5dp" />
             </GridLayout>
         </HorizontalScrollView>
+        <TextView
+            android:layout_marginVertical="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/education_question_7_note_text"
+            android:textSize="15sp"
+            android:textColor="@color/white"
+            android:textStyle="italic" />
+
+<!--       question 7 1  -->
 
     </LinearLayout>
 
