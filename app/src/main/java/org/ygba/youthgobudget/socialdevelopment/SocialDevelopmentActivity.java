@@ -2,6 +2,7 @@ package org.ygba.youthgobudget.socialdevelopment;
 
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.cardview.widget.CardView;
 import androidx.lifecycle.ViewModelProvider;
 
 import android.content.Intent;
@@ -116,6 +117,7 @@ public class SocialDevelopmentActivity extends AppCompatActivity {
     private EditText sQuestion5NumberFemaleTrained;
     private EditText sQuestion6NumberCommunityGroupsTrained;
     private EditText sQuestion7ChallengerObservations;
+    private CardView saveFormData;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -154,6 +156,13 @@ public class SocialDevelopmentActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 startActivityForResult(new Intent(SocialDevelopmentActivity.this, DatePickerActivity.class), COMMUNITY_DATE_WITHDRAWN_REQUEST_CODE);
+            }
+        });
+
+        saveFormData.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
             }
         });
     }
@@ -258,6 +267,8 @@ public class SocialDevelopmentActivity extends AppCompatActivity {
         sQuestion5NumberFemaleTrained = findViewById(R.id.social_q_5_female_number_trained);
         sQuestion6NumberCommunityGroupsTrained = findViewById(R.id.social_q_5_community_groups_trained);
         sQuestion7ChallengerObservations = findViewById(R.id.social_q_7_other_challengers_observations);
+
+        saveFormData = findViewById(R.id.saved_form_data);
 
     }
 
