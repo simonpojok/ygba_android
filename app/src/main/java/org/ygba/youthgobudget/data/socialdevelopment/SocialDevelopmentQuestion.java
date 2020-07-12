@@ -280,4 +280,17 @@ public class SocialDevelopmentQuestion {
 
     @ColumnInfo(name = SocialDevelopmentConstants.Q4_YOUTH_GROUP_7_AMOUNT_RECEIVED)
     private String q4YouthGroup7AmountReceived;
+
+
+    @ColumnInfo(name = SocialDevelopmentConstants.Q5_NUMBER_MALE_TRAINED)
+    private String q5NumberMaleTrained;
+
+    @ColumnInfo(name = SocialDevelopmentConstants.Q5_NUMBER_FEMALE_TRAINED)
+    private String q5NumberFemaleTrained;
+
+    @ColumnInfo(name = SocialDevelopmentConstants.Q6_COMMUNITY_GROUP_FORMED)
+    private String q6CommunityGroupFormed;
+
+    @ColumnInfo(name = SocialDevelopmentConstants.Q7_OTHER_OBSERVATION_AND_CHALLENGES)
+    private String q7OtherChallengesObservations;
 }

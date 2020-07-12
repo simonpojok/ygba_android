@@ -97,4 +97,8 @@ public class SocialDevelopmentConstants {
     public static final String Q4_YOUTH_GROUP_7_MALE_NUMBER = "q4_Y_g_7_m_numbers";
     public static final String Q4_YOUTH_GROUP_7_FEMALE_NUMBER = "q4_Y_g_7_f_numbers";
     public static final String Q4_YOUTH_GROUP_7_AMOUNT_RECEIVED = "q4_Y_g_7_a_received";
+    public static final String Q5_NUMBER_MALE_TRAINED = "q5_number_m_trained";
+    public static final String Q5_NUMBER_FEMALE_TRAINED = "q5_number_f_trained";
+    public static final String Q6_COMMUNITY_GROUP_FORMED = "q6_com_g_formed";
+    public static final String Q7_OTHER_OBSERVATION_AND_CHALLENGES = "q7_others_challenges";
 }
