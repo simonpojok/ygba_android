@@ -24,6 +24,7 @@ import java.util.concurrent.Callable;
 public class HomeFragment extends Fragment {
     private CardView cv_agriculture;
     private CardView cv_education;
+    private CardView cv_social_development;
     private OnAgricultureIconClickListener agricultureIconClickListener;
     private OnEducationIconClickListener onEducationIconClickListener;
     private OnSocialDevelopmentIconClickListener socialDevelopmentIconClickListener;
@@ -45,6 +46,7 @@ public class HomeFragment extends Fragment {
         View root = inflater.inflate(R.layout.fragment_home, container, false);
         cv_agriculture = root.findViewById(R.id.cv_agriculture);
         cv_education = root.findViewById(R.id.cv_education);
+        cv_social_development = root.findViewById(R.id.cv_social_development_icon);
 
 
         cv_agriculture.setOnClickListener(new View.OnClickListener() {
@@ -61,6 +63,15 @@ public class HomeFragment extends Fragment {
             public void onClick(View view) {
                 if (onEducationIconClickListener != null ) {
                     onEducationIconClickListener.onEducationIconClick();
+                }
+            }
+        });
+
+        cv_social_development.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                if (socialDevelopmentIconClickListener != null ) {
+                    socialDevelopmentIconClickListener.onSocialDevelopmentIconClick();
                 }
             }
         });
