@@ -14,10 +14,18 @@
             android:label="Pick Date"
             android:theme="@android:style/Theme.DeviceDefault.Light.Dialog"
             />
-        <activity android:name=".socialdevelopment.SocialDevelopmentActivity" />
-        <activity android:name=".education.EducationActivity" />
-        <activity android:name=".health.HealthActivity" />
-        <activity android:name=".agriculture.AgricultureActivity" />
+        <activity
+            android:name=".socialdevelopment.SocialDevelopmentActivity"
+            android:parentActivityName=".MainActivity"/>
+        <activity
+            android:name=".education.EducationActivity"
+            android:parentActivityName=".MainActivity"/>
+        <activity
+            android:name=".health.HealthActivity"
+            android:parentActivityName=".MainActivity"/>
+        <activity
+            android:name=".agriculture.AgricultureActivity"
+            android:parentActivityName=".MainActivity"/>
         <activity
             android:name=".MainActivity"
             android:label="@string/app_name"
