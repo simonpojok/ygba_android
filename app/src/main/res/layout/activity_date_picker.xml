@@ -2,15 +2,17 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/date_picker_activity_date_picker"
-    android:layout_width="wrap_content"
+    android:layout_width="match_parent"
     android:layout_height="wrap_content"
+    android:background="@color/colorActivityBackground"
     android:padding="8dp"
     android:orientation="vertical"
     android:gravity="center"
     tools:context=".dialogs.DatePickerActivity">
 
     <DatePicker
+        android:calendarTextColor="@color/white"
+        android:id="@+id/date_picker_activity_date_picker"
         android:layout_width="wrap_content"
         android:datePickerMode="spinner"
         android:calendarViewShown="false"
@@ -21,12 +23,18 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal">
         <Button
+            android:textSize="15sp"
+            android:textColor="@color/white"
+            android:background="@color/colorPrimary"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/button_cancel"
             android:layout_marginEnd="10dp"
             android:text="CANCEL"/>
         <Button
+            android:textSize="15sp"
+            android:textColor="@color/white"
+            android:background="@color/colorPrimary"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="OK"
