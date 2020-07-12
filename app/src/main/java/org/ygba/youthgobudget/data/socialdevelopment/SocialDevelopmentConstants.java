@@ -101,4 +101,5 @@ public class SocialDevelopmentConstants {
     public static final String Q5_NUMBER_FEMALE_TRAINED = "q5_number_f_trained";
     public static final String Q6_COMMUNITY_GROUP_FORMED = "q6_com_g_formed";
     public static final String Q7_OTHER_OBSERVATION_AND_CHALLENGES = "q7_others_challenges";
+    public static final String LOCALLY_STORED = "locally_stored";
 }

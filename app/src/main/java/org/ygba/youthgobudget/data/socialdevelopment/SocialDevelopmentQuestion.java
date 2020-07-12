@@ -293,4 +293,975 @@ public class SocialDevelopmentQuestion {
 
     @ColumnInfo(name = SocialDevelopmentConstants.Q7_OTHER_OBSERVATION_AND_CHALLENGES)
     private String q7OtherChallengesObservations;
+
+    @ColumnInfo(name = SocialDevelopmentConstants.LOCALLY_STORED)
+    private boolean locallyStored;
+
+    public SocialDevelopmentQuestion(String financialYear, String date, String district, String village, String parish, String division, String ygbaAgentFullName, String ygbaTel, String q2CommunityExpected, String q2CommunityAmountReceived, String q2CommunityDateReceived, String q2CommunityDateWithdrawn, String q2OtherExpectedAmount, String q2OtherAmountedReceived, String q2OthersDateReceived, String q2OthersDateWithdrawn, String q3WomenEmpowermentObjective, String q3WomenEmpowermentObjectiveReason, String q3WomanGroup1Name, String q3WomenGroup1Village, String q3WomenGroup1MaleNumber, String q3WomenGroup1FemaleNumber, String q3WomenGroup1AmountReceived, String q3WomanGroup2Name, String q3WomenGroup2Village, String q3WomenGroup2MaleNumber, String q3WomenGroup2FemaleNumber, String q3WomenGroup2AmountReceived, String q3WomanGroup3Name, String q3WomenGroup3Village, String q3WomenGroup3MaleNumber, String q3WomenGroup3FemaleNumber, String q3WomenGroup3AmountReceived, String q3WomanGroup4Name, String q3WomenGroup4Village, String q3WomenGroup4MaleNumber, String q3WomenGroup4FemaleNumber, String q3WomenGroup4AmountReceived, String q3WomanGroup5Name, String q3WomenGroup5Village, String q3WomenGroup5MaleNumber, String q3WomenGroup5FemaleNumber, String q3WomenGroup5AmountReceived, String q3WomanGroup6Name, String q3WomenGroup6Village, String q3WomenGroup6MaleNumber, String q3WomenGroup6FemaleNumber, String q3WomenGroup6AmountReceived, String q3WomanGroup7Name, String q3WomenGroup7Village, String q3WomenGroup7MaleNumber, String q3WomenGroup7FemaleNumber, String q3WomenGroup7AmountReceived, String q4LivelihoodObjective, String q4LivelihoodObjectiveReason, String q4YouthGroup1Name, String q4YouthGroup1Village, String q4YouthGroup1MaleNumber, String q4YouthGroup1FemaleNumber, String q4YouthGroup1AmountReceived, String q4YouthGroup2Name, String q4YouthGroup2Village, String q4YouthGroup2MaleNumber, String q4YouthGroup2FemaleNumber, String q4YouthGroup2AmountReceived, String q4YouthGroup3Name, String q4YouthGroup3Village, String q4YouthGroup3MaleNumber, String q4YouthGroup3FemaleNumber, String q4YouthGroup3AmountReceived, String q4YouthGroup4Name, String q4YouthGroup4Village, String q4YouthGroup4MaleNumber, String q4YouthGroup4FemaleNumber, String q4YouthGroup4AmountReceived, String q4YouthGroup5Name, String q4YouthGroup5Village, String q4YouthGroup5MaleNumber, String q4YouthGroup5FemaleNumber, String q4YouthGroup5AmountReceived, String q4YouthGroup6Name, String q4YouthGroup6Village, String q4YouthGroup6MaleNumber, String q4YouthGroup6FemaleNumber, String q4YouthGroup6AmountReceived, String q4YouthGroup7Name, String q4YouthGroup7Village, String q4YouthGroup7MaleNumber, String q4YouthGroup7FemaleNumber, String q4YouthGroup7AmountReceived, String q5NumberMaleTrained, String q5NumberFemaleTrained, String q6CommunityGroupFormed, String q7OtherChallengesObservations) {
+        this.financialYear = financialYear;
+        this.date = date;
+        this.district = district;
+        this.village = village;
+        this.parish = parish;
+        this.division = division;
+        this.ygbaAgentFullName = ygbaAgentFullName;
+        this.ygbaTel = ygbaTel;
+        this.q2CommunityExpected = q2CommunityExpected;
+        this.q2CommunityAmountReceived = q2CommunityAmountReceived;
+        this.q2CommunityDateReceived = q2CommunityDateReceived;
+        this.q2CommunityDateWithdrawn = q2CommunityDateWithdrawn;
+        this.q2OtherExpectedAmount = q2OtherExpectedAmount;
+        this.q2OtherAmountedReceived = q2OtherAmountedReceived;
+        this.q2OthersDateReceived = q2OthersDateReceived;
+        this.q2OthersDateWithdrawn = q2OthersDateWithdrawn;
+        this.q3WomenEmpowermentObjective = q3WomenEmpowermentObjective;
+        this.q3WomenEmpowermentObjectiveReason = q3WomenEmpowermentObjectiveReason;
+        this.q3WomanGroup1Name = q3WomanGroup1Name;
+        this.q3WomenGroup1Village = q3WomenGroup1Village;
+        this.q3WomenGroup1MaleNumber = q3WomenGroup1MaleNumber;
+        this.q3WomenGroup1FemaleNumber = q3WomenGroup1FemaleNumber;
+        this.q3WomenGroup1AmountReceived = q3WomenGroup1AmountReceived;
+        this.q3WomanGroup2Name = q3WomanGroup2Name;
+        this.q3WomenGroup2Village = q3WomenGroup2Village;
+        this.q3WomenGroup2MaleNumber = q3WomenGroup2MaleNumber;
+        this.q3WomenGroup2FemaleNumber = q3WomenGroup2FemaleNumber;
+        this.q3WomenGroup2AmountReceived = q3WomenGroup2AmountReceived;
+        this.q3WomanGroup3Name = q3WomanGroup3Name;
+        this.q3WomenGroup3Village = q3WomenGroup3Village;
+        this.q3WomenGroup3MaleNumber = q3WomenGroup3MaleNumber;
+        this.q3WomenGroup3FemaleNumber = q3WomenGroup3FemaleNumber;
+        this.q3WomenGroup3AmountReceived = q3WomenGroup3AmountReceived;
+        this.q3WomanGroup4Name = q3WomanGroup4Name;
+        this.q3WomenGroup4Village = q3WomenGroup4Village;
+        this.q3WomenGroup4MaleNumber = q3WomenGroup4MaleNumber;
+        this.q3WomenGroup4FemaleNumber = q3WomenGroup4FemaleNumber;
+        this.q3WomenGroup4AmountReceived = q3WomenGroup4AmountReceived;
+        this.q3WomanGroup5Name = q3WomanGroup5Name;
+        this.q3WomenGroup5Village = q3WomenGroup5Village;
+        this.q3WomenGroup5MaleNumber = q3WomenGroup5MaleNumber;
+        this.q3WomenGroup5FemaleNumber = q3WomenGroup5FemaleNumber;
+        this.q3WomenGroup5AmountReceived = q3WomenGroup5AmountReceived;
+        this.q3WomanGroup6Name = q3WomanGroup6Name;
+        this.q3WomenGroup6Village = q3WomenGroup6Village;
+        this.q3WomenGroup6MaleNumber = q3WomenGroup6MaleNumber;
+        this.q3WomenGroup6FemaleNumber = q3WomenGroup6FemaleNumber;
+        this.q3WomenGroup6AmountReceived = q3WomenGroup6AmountReceived;
+        this.q3WomanGroup7Name = q3WomanGroup7Name;
+        this.q3WomenGroup7Village = q3WomenGroup7Village;
+        this.q3WomenGroup7MaleNumber = q3WomenGroup7MaleNumber;
+        this.q3WomenGroup7FemaleNumber = q3WomenGroup7FemaleNumber;
+        this.q3WomenGroup7AmountReceived = q3WomenGroup7AmountReceived;
+        this.q4LivelihoodObjective = q4LivelihoodObjective;
+        this.q4LivelihoodObjectiveReason = q4LivelihoodObjectiveReason;
+        this.q4YouthGroup1Name = q4YouthGroup1Name;
+        this.q4YouthGroup1Village = q4YouthGroup1Village;
+        this.q4YouthGroup1MaleNumber = q4YouthGroup1MaleNumber;
+        this.q4YouthGroup1FemaleNumber = q4YouthGroup1FemaleNumber;
+        this.q4YouthGroup1AmountReceived = q4YouthGroup1AmountReceived;
+        this.q4YouthGroup2Name = q4YouthGroup2Name;
+        this.q4YouthGroup2Village = q4YouthGroup2Village;
+        this.q4YouthGroup2MaleNumber = q4YouthGroup2MaleNumber;
+        this.q4YouthGroup2FemaleNumber = q4YouthGroup2FemaleNumber;
+        this.q4YouthGroup2AmountReceived = q4YouthGroup2AmountReceived;
+        this.q4YouthGroup3Name = q4YouthGroup3Name;
+        this.q4YouthGroup3Village = q4YouthGroup3Village;
+        this.q4YouthGroup3MaleNumber = q4YouthGroup3MaleNumber;
+        this.q4YouthGroup3FemaleNumber = q4YouthGroup3FemaleNumber;
+        this.q4YouthGroup3AmountReceived = q4YouthGroup3AmountReceived;
+        this.q4YouthGroup4Name = q4YouthGroup4Name;
+        this.q4YouthGroup4Village = q4YouthGroup4Village;
+        this.q4YouthGroup4MaleNumber = q4YouthGroup4MaleNumber;
+        this.q4YouthGroup4FemaleNumber = q4YouthGroup4FemaleNumber;
+        this.q4YouthGroup4AmountReceived = q4YouthGroup4AmountReceived;
+        this.q4YouthGroup5Name = q4YouthGroup5Name;
+        this.q4YouthGroup5Village = q4YouthGroup5Village;
+        this.q4YouthGroup5MaleNumber = q4YouthGroup5MaleNumber;
+        this.q4YouthGroup5FemaleNumber = q4YouthGroup5FemaleNumber;
+        this.q4YouthGroup5AmountReceived = q4YouthGroup5AmountReceived;
+        this.q4YouthGroup6Name = q4YouthGroup6Name;
+        this.q4YouthGroup6Village = q4YouthGroup6Village;
+        this.q4YouthGroup6MaleNumber = q4YouthGroup6MaleNumber;
+        this.q4YouthGroup6FemaleNumber = q4YouthGroup6FemaleNumber;
+        this.q4YouthGroup6AmountReceived = q4YouthGroup6AmountReceived;
+        this.q4YouthGroup7Name = q4YouthGroup7Name;
+        this.q4YouthGroup7Village = q4YouthGroup7Village;
+        this.q4YouthGroup7MaleNumber = q4YouthGroup7MaleNumber;
+        this.q4YouthGroup7FemaleNumber = q4YouthGroup7FemaleNumber;
+        this.q4YouthGroup7AmountReceived = q4YouthGroup7AmountReceived;
+        this.q5NumberMaleTrained = q5NumberMaleTrained;
+        this.q5NumberFemaleTrained = q5NumberFemaleTrained;
+        this.q6CommunityGroupFormed = q6CommunityGroupFormed;
+        this.q7OtherChallengesObservations = q7OtherChallengesObservations;
+        this.locallyStored = true;
+    }
+
+    public int getPrimaryKey() {
+        return primaryKey;
+    }
+
+    public void setPrimaryKey(int primaryKey) {
+        this.primaryKey = primaryKey;
+    }
+
+    public String getFinancialYear() {
+        return financialYear;
+    }
+
+    public void setFinancialYear(String financialYear) {
+        this.financialYear = financialYear;
+    }
+
+    public String getDate() {
+        return date;
+    }
+
+    public void setDate(String date) {
+        this.date = date;
+    }
+
+    public String getDistrict() {
+        return district;
+    }
+
+    public void setDistrict(String district) {
+        this.district = district;
+    }
+
+    public String getVillage() {
+        return village;
+    }
+
+    public void setVillage(String village) {
+        this.village = village;
+    }
+
+    public String getParish() {
+        return parish;
+    }
+
+    public void setParish(String parish) {
+        this.parish = parish;
+    }
+
+    public String getDivision() {
+        return division;
+    }
+
+    public void setDivision(String division) {
+        this.division = division;
+    }
+
+    public String getYgbaAgentFullName() {
+        return ygbaAgentFullName;
+    }
+
+    public void setYgbaAgentFullName(String ygbaAgentFullName) {
+        this.ygbaAgentFullName = ygbaAgentFullName;
+    }
+
+    public String getYgbaTel() {
+        return ygbaTel;
+    }
+
+    public void setYgbaTel(String ygbaTel) {
+        this.ygbaTel = ygbaTel;
+    }
+
+    public String getQ2CommunityExpected() {
+        return q2CommunityExpected;
+    }
+
+    public void setQ2CommunityExpected(String q2CommunityExpected) {
+        this.q2CommunityExpected = q2CommunityExpected;
+    }
+
+    public String getQ2CommunityAmountReceived() {
+        return q2CommunityAmountReceived;
+    }
+
+    public void setQ2CommunityAmountReceived(String q2CommunityAmountReceived) {
+        this.q2CommunityAmountReceived = q2CommunityAmountReceived;
+    }
+
+    public String getQ2CommunityDateReceived() {
+        return q2CommunityDateReceived;
+    }
+
+    public void setQ2CommunityDateReceived(String q2CommunityDateReceived) {
+        this.q2CommunityDateReceived = q2CommunityDateReceived;
+    }
+
+    public String getQ2CommunityDateWithdrawn() {
+        return q2CommunityDateWithdrawn;
+    }
+
+    public void setQ2CommunityDateWithdrawn(String q2CommunityDateWithdrawn) {
+        this.q2CommunityDateWithdrawn = q2CommunityDateWithdrawn;
+    }
+
+    public String getQ2OtherExpectedAmount() {
+        return q2OtherExpectedAmount;
+    }
+
+    public void setQ2OtherExpectedAmount(String q2OtherExpectedAmount) {
+        this.q2OtherExpectedAmount = q2OtherExpectedAmount;
+    }
+
+    public String getQ2OtherAmountedReceived() {
+        return q2OtherAmountedReceived;
+    }
+
+    public void setQ2OtherAmountedReceived(String q2OtherAmountedReceived) {
+        this.q2OtherAmountedReceived = q2OtherAmountedReceived;
+    }
+
+    public String getQ2OthersDateReceived() {
+        return q2OthersDateReceived;
+    }
+
+    public void setQ2OthersDateReceived(String q2OthersDateReceived) {
+        this.q2OthersDateReceived = q2OthersDateReceived;
+    }
+
+    public String getQ2OthersDateWithdrawn() {
+        return q2OthersDateWithdrawn;
+    }
+
+    public void setQ2OthersDateWithdrawn(String q2OthersDateWithdrawn) {
+        this.q2OthersDateWithdrawn = q2OthersDateWithdrawn;
+    }
+
+    public String getQ3WomenEmpowermentObjective() {
+        return q3WomenEmpowermentObjective;
+    }
+
+    public void setQ3WomenEmpowermentObjective(String q3WomenEmpowermentObjective) {
+        this.q3WomenEmpowermentObjective = q3WomenEmpowermentObjective;
+    }
+
+    public String getQ3WomenEmpowermentObjectiveReason() {
+        return q3WomenEmpowermentObjectiveReason;
+    }
+
+    public void setQ3WomenEmpowermentObjectiveReason(String q3WomenEmpowermentObjectiveReason) {
+        this.q3WomenEmpowermentObjectiveReason = q3WomenEmpowermentObjectiveReason;
+    }
+
+    public String getQ3WomanGroup1Name() {
+        return q3WomanGroup1Name;
+    }
+
+    public void setQ3WomanGroup1Name(String q3WomanGroup1Name) {
+        this.q3WomanGroup1Name = q3WomanGroup1Name;
+    }
+
+    public String getQ3WomenGroup1Village() {
+        return q3WomenGroup1Village;
+    }
+
+    public void setQ3WomenGroup1Village(String q3WomenGroup1Village) {
+        this.q3WomenGroup1Village = q3WomenGroup1Village;
+    }
+
+    public String getQ3WomenGroup1MaleNumber() {
+        return q3WomenGroup1MaleNumber;
+    }
+
+    public void setQ3WomenGroup1MaleNumber(String q3WomenGroup1MaleNumber) {
+        this.q3WomenGroup1MaleNumber = q3WomenGroup1MaleNumber;
+    }
+
+    public String getQ3WomenGroup1FemaleNumber() {
+        return q3WomenGroup1FemaleNumber;
+    }
+
+    public void setQ3WomenGroup1FemaleNumber(String q3WomenGroup1FemaleNumber) {
+        this.q3WomenGroup1FemaleNumber = q3WomenGroup1FemaleNumber;
+    }
+
+    public String getQ3WomenGroup1AmountReceived() {
+        return q3WomenGroup1AmountReceived;
+    }
+
+    public void setQ3WomenGroup1AmountReceived(String q3WomenGroup1AmountReceived) {
+        this.q3WomenGroup1AmountReceived = q3WomenGroup1AmountReceived;
+    }
+
+    public String getQ3WomanGroup2Name() {
+        return q3WomanGroup2Name;
+    }
+
+    public void setQ3WomanGroup2Name(String q3WomanGroup2Name) {
+        this.q3WomanGroup2Name = q3WomanGroup2Name;
+    }
+
+    public String getQ3WomenGroup2Village() {
+        return q3WomenGroup2Village;
+    }
+
+    public void setQ3WomenGroup2Village(String q3WomenGroup2Village) {
+        this.q3WomenGroup2Village = q3WomenGroup2Village;
+    }
+
+    public String getQ3WomenGroup2MaleNumber() {
+        return q3WomenGroup2MaleNumber;
+    }
+
+    public void setQ3WomenGroup2MaleNumber(String q3WomenGroup2MaleNumber) {
+        this.q3WomenGroup2MaleNumber = q3WomenGroup2MaleNumber;
+    }
+
+    public String getQ3WomenGroup2FemaleNumber() {
+        return q3WomenGroup2FemaleNumber;
+    }
+
+    public void setQ3WomenGroup2FemaleNumber(String q3WomenGroup2FemaleNumber) {
+        this.q3WomenGroup2FemaleNumber = q3WomenGroup2FemaleNumber;
+    }
+
+    public String getQ3WomenGroup2AmountReceived() {
+        return q3WomenGroup2AmountReceived;
+    }
+
+    public void setQ3WomenGroup2AmountReceived(String q3WomenGroup2AmountReceived) {
+        this.q3WomenGroup2AmountReceived = q3WomenGroup2AmountReceived;
+    }
+
+    public String getQ3WomanGroup3Name() {
+        return q3WomanGroup3Name;
+    }
+
+    public void setQ3WomanGroup3Name(String q3WomanGroup3Name) {
+        this.q3WomanGroup3Name = q3WomanGroup3Name;
+    }
+
+    public String getQ3WomenGroup3Village() {
+        return q3WomenGroup3Village;
+    }
+
+    public void setQ3WomenGroup3Village(String q3WomenGroup3Village) {
+        this.q3WomenGroup3Village = q3WomenGroup3Village;
+    }
+
+    public String getQ3WomenGroup3MaleNumber() {
+        return q3WomenGroup3MaleNumber;
+    }
+
+    public void setQ3WomenGroup3MaleNumber(String q3WomenGroup3MaleNumber) {
+        this.q3WomenGroup3MaleNumber = q3WomenGroup3MaleNumber;
+    }
+
+    public String getQ3WomenGroup3FemaleNumber() {
+        return q3WomenGroup3FemaleNumber;
+    }
+
+    public void setQ3WomenGroup3FemaleNumber(String q3WomenGroup3FemaleNumber) {
+        this.q3WomenGroup3FemaleNumber = q3WomenGroup3FemaleNumber;
+    }
+
+    public String getQ3WomenGroup3AmountReceived() {
+        return q3WomenGroup3AmountReceived;
+    }
+
+    public void setQ3WomenGroup3AmountReceived(String q3WomenGroup3AmountReceived) {
+        this.q3WomenGroup3AmountReceived = q3WomenGroup3AmountReceived;
+    }
+
+    public String getQ3WomanGroup4Name() {
+        return q3WomanGroup4Name;
+    }
+
+    public void setQ3WomanGroup4Name(String q3WomanGroup4Name) {
+        this.q3WomanGroup4Name = q3WomanGroup4Name;
+    }
+
+    public String getQ3WomenGroup4Village() {
+        return q3WomenGroup4Village;
+    }
+
+    public void setQ3WomenGroup4Village(String q3WomenGroup4Village) {
+        this.q3WomenGroup4Village = q3WomenGroup4Village;
+    }
+
+    public String getQ3WomenGroup4MaleNumber() {
+        return q3WomenGroup4MaleNumber;
+    }
+
+    public void setQ3WomenGroup4MaleNumber(String q3WomenGroup4MaleNumber) {
+        this.q3WomenGroup4MaleNumber = q3WomenGroup4MaleNumber;
+    }
+
+    public String getQ3WomenGroup4FemaleNumber() {
+        return q3WomenGroup4FemaleNumber;
+    }
+
+    public void setQ3WomenGroup4FemaleNumber(String q3WomenGroup4FemaleNumber) {
+        this.q3WomenGroup4FemaleNumber = q3WomenGroup4FemaleNumber;
+    }
+
+    public String getQ3WomenGroup4AmountReceived() {
+        return q3WomenGroup4AmountReceived;
+    }
+
+    public void setQ3WomenGroup4AmountReceived(String q3WomenGroup4AmountReceived) {
+        this.q3WomenGroup4AmountReceived = q3WomenGroup4AmountReceived;
+    }
+
+    public String getQ3WomanGroup5Name() {
+        return q3WomanGroup5Name;
+    }
+
+    public void setQ3WomanGroup5Name(String q3WomanGroup5Name) {
+        this.q3WomanGroup5Name = q3WomanGroup5Name;
+    }
+
+    public String getQ3WomenGroup5Village() {
+        return q3WomenGroup5Village;
+    }
+
+    public void setQ3WomenGroup5Village(String q3WomenGroup5Village) {
+        this.q3WomenGroup5Village = q3WomenGroup5Village;
+    }
+
+    public String getQ3WomenGroup5MaleNumber() {
+        return q3WomenGroup5MaleNumber;
+    }
+
+    public void setQ3WomenGroup5MaleNumber(String q3WomenGroup5MaleNumber) {
+        this.q3WomenGroup5MaleNumber = q3WomenGroup5MaleNumber;
+    }
+
+    public String getQ3WomenGroup5FemaleNumber() {
+        return q3WomenGroup5FemaleNumber;
+    }
+
+    public void setQ3WomenGroup5FemaleNumber(String q3WomenGroup5FemaleNumber) {
+        this.q3WomenGroup5FemaleNumber = q3WomenGroup5FemaleNumber;
+    }
+
+    public String getQ3WomenGroup5AmountReceived() {
+        return q3WomenGroup5AmountReceived;
+    }
+
+    public void setQ3WomenGroup5AmountReceived(String q3WomenGroup5AmountReceived) {
+        this.q3WomenGroup5AmountReceived = q3WomenGroup5AmountReceived;
+    }
+
+    public String getQ3WomanGroup6Name() {
+        return q3WomanGroup6Name;
+    }
+
+    public void setQ3WomanGroup6Name(String q3WomanGroup6Name) {
+        this.q3WomanGroup6Name = q3WomanGroup6Name;
+    }
+
+    public String getQ3WomenGroup6Village() {
+        return q3WomenGroup6Village;
+    }
+
+    public void setQ3WomenGroup6Village(String q3WomenGroup6Village) {
+        this.q3WomenGroup6Village = q3WomenGroup6Village;
+    }
+
+    public String getQ3WomenGroup6MaleNumber() {
+        return q3WomenGroup6MaleNumber;
+    }
+
+    public void setQ3WomenGroup6MaleNumber(String q3WomenGroup6MaleNumber) {
+        this.q3WomenGroup6MaleNumber = q3WomenGroup6MaleNumber;
+    }
+
+    public String getQ3WomenGroup6FemaleNumber() {
+        return q3WomenGroup6FemaleNumber;
+    }
+
+    public void setQ3WomenGroup6FemaleNumber(String q3WomenGroup6FemaleNumber) {
+        this.q3WomenGroup6FemaleNumber = q3WomenGroup6FemaleNumber;
+    }
+
+    public String getQ3WomenGroup6AmountReceived() {
+        return q3WomenGroup6AmountReceived;
+    }
+
+    public void setQ3WomenGroup6AmountReceived(String q3WomenGroup6AmountReceived) {
+        this.q3WomenGroup6AmountReceived = q3WomenGroup6AmountReceived;
+    }
+
+    public String getQ3WomanGroup7Name() {
+        return q3WomanGroup7Name;
+    }
+
+    public void setQ3WomanGroup7Name(String q3WomanGroup7Name) {
+        this.q3WomanGroup7Name = q3WomanGroup7Name;
+    }
+
+    public String getQ3WomenGroup7Village() {
+        return q3WomenGroup7Village;
+    }
+
+    public void setQ3WomenGroup7Village(String q3WomenGroup7Village) {
+        this.q3WomenGroup7Village = q3WomenGroup7Village;
+    }
+
+    public String getQ3WomenGroup7MaleNumber() {
+        return q3WomenGroup7MaleNumber;
+    }
+
+    public void setQ3WomenGroup7MaleNumber(String q3WomenGroup7MaleNumber) {
+        this.q3WomenGroup7MaleNumber = q3WomenGroup7MaleNumber;
+    }
+
+    public String getQ3WomenGroup7FemaleNumber() {
+        return q3WomenGroup7FemaleNumber;
+    }
+
+    public void setQ3WomenGroup7FemaleNumber(String q3WomenGroup7FemaleNumber) {
+        this.q3WomenGroup7FemaleNumber = q3WomenGroup7FemaleNumber;
+    }
+
+    public String getQ3WomenGroup7AmountReceived() {
+        return q3WomenGroup7AmountReceived;
+    }
+
+    public void setQ3WomenGroup7AmountReceived(String q3WomenGroup7AmountReceived) {
+        this.q3WomenGroup7AmountReceived = q3WomenGroup7AmountReceived;
+    }
+
+    public String getQ4LivelihoodObjective() {
+        return q4LivelihoodObjective;
+    }
+
+    public void setQ4LivelihoodObjective(String q4LivelihoodObjective) {
+        this.q4LivelihoodObjective = q4LivelihoodObjective;
+    }
+
+    public String getQ4LivelihoodObjectiveReason() {
+        return q4LivelihoodObjectiveReason;
+    }
+
+    public void setQ4LivelihoodObjectiveReason(String q4LivelihoodObjectiveReason) {
+        this.q4LivelihoodObjectiveReason = q4LivelihoodObjectiveReason;
+    }
+
+    public String getQ4YouthGroup1Name() {
+        return q4YouthGroup1Name;
+    }
+
+    public void setQ4YouthGroup1Name(String q4YouthGroup1Name) {
+        this.q4YouthGroup1Name = q4YouthGroup1Name;
+    }
+
+    public String getQ4YouthGroup1Village() {
+        return q4YouthGroup1Village;
+    }
+
+    public void setQ4YouthGroup1Village(String q4YouthGroup1Village) {
+        this.q4YouthGroup1Village = q4YouthGroup1Village;
+    }
+
+    public String getQ4YouthGroup1MaleNumber() {
+        return q4YouthGroup1MaleNumber;
+    }
+
+    public void setQ4YouthGroup1MaleNumber(String q4YouthGroup1MaleNumber) {
+        this.q4YouthGroup1MaleNumber = q4YouthGroup1MaleNumber;
+    }
+
+    public String getQ4YouthGroup1FemaleNumber() {
+        return q4YouthGroup1FemaleNumber;
+    }
+
+    public void setQ4YouthGroup1FemaleNumber(String q4YouthGroup1FemaleNumber) {
+        this.q4YouthGroup1FemaleNumber = q4YouthGroup1FemaleNumber;
+    }
+
+    public String getQ4YouthGroup1AmountReceived() {
+        return q4YouthGroup1AmountReceived;
+    }
+
+    public void setQ4YouthGroup1AmountReceived(String q4YouthGroup1AmountReceived) {
+        this.q4YouthGroup1AmountReceived = q4YouthGroup1AmountReceived;
+    }
+
+    public String getQ4YouthGroup2Name() {
+        return q4YouthGroup2Name;
+    }
+
+    public void setQ4YouthGroup2Name(String q4YouthGroup2Name) {
+        this.q4YouthGroup2Name = q4YouthGroup2Name;
+    }
+
+    public String getQ4YouthGroup2Village() {
+        return q4YouthGroup2Village;
+    }
+
+    public void setQ4YouthGroup2Village(String q4YouthGroup2Village) {
+        this.q4YouthGroup2Village = q4YouthGroup2Village;
+    }
+
+    public String getQ4YouthGroup2MaleNumber() {
+        return q4YouthGroup2MaleNumber;
+    }
+
+    public void setQ4YouthGroup2MaleNumber(String q4YouthGroup2MaleNumber) {
+        this.q4YouthGroup2MaleNumber = q4YouthGroup2MaleNumber;
+    }
+
+    public String getQ4YouthGroup2FemaleNumber() {
+        return q4YouthGroup2FemaleNumber;
+    }
+
+    public void setQ4YouthGroup2FemaleNumber(String q4YouthGroup2FemaleNumber) {
+        this.q4YouthGroup2FemaleNumber = q4YouthGroup2FemaleNumber;
+    }
+
+    public String getQ4YouthGroup2AmountReceived() {
+        return q4YouthGroup2AmountReceived;
+    }
+
+    public void setQ4YouthGroup2AmountReceived(String q4YouthGroup2AmountReceived) {
+        this.q4YouthGroup2AmountReceived = q4YouthGroup2AmountReceived;
+    }
+
+    public String getQ4YouthGroup3Name() {
+        return q4YouthGroup3Name;
+    }
+
+    public void setQ4YouthGroup3Name(String q4YouthGroup3Name) {
+        this.q4YouthGroup3Name = q4YouthGroup3Name;
+    }
+
+    public String getQ4YouthGroup3Village() {
+        return q4YouthGroup3Village;
+    }
+
+    public void setQ4YouthGroup3Village(String q4YouthGroup3Village) {
+        this.q4YouthGroup3Village = q4YouthGroup3Village;
+    }
+
+    public String getQ4YouthGroup3MaleNumber() {
+        return q4YouthGroup3MaleNumber;
+    }
+
+    public void setQ4YouthGroup3MaleNumber(String q4YouthGroup3MaleNumber) {
+        this.q4YouthGroup3MaleNumber = q4YouthGroup3MaleNumber;
+    }
+
+    public String getQ4YouthGroup3FemaleNumber() {
+        return q4YouthGroup3FemaleNumber;
+    }
+
+    public void setQ4YouthGroup3FemaleNumber(String q4YouthGroup3FemaleNumber) {
+        this.q4YouthGroup3FemaleNumber = q4YouthGroup3FemaleNumber;
+    }
+
+    public String getQ4YouthGroup3AmountReceived() {
+        return q4YouthGroup3AmountReceived;
+    }
+
+    public void setQ4YouthGroup3AmountReceived(String q4YouthGroup3AmountReceived) {
+        this.q4YouthGroup3AmountReceived = q4YouthGroup3AmountReceived;
+    }
+
+    public String getQ4YouthGroup4Name() {
+        return q4YouthGroup4Name;
+    }
+
+    public void setQ4YouthGroup4Name(String q4YouthGroup4Name) {
+        this.q4YouthGroup4Name = q4YouthGroup4Name;
+    }
+
+    public String getQ4YouthGroup4Village() {
+        return q4YouthGroup4Village;
+    }
+
+    public void setQ4YouthGroup4Village(String q4YouthGroup4Village) {
+        this.q4YouthGroup4Village = q4YouthGroup4Village;
+    }
+
+    public String getQ4YouthGroup4MaleNumber() {
+        return q4YouthGroup4MaleNumber;
+    }
+
+    public void setQ4YouthGroup4MaleNumber(String q4YouthGroup4MaleNumber) {
+        this.q4YouthGroup4MaleNumber = q4YouthGroup4MaleNumber;
+    }
+
+    public String getQ4YouthGroup4FemaleNumber() {
+        return q4YouthGroup4FemaleNumber;
+    }
+
+    public void setQ4YouthGroup4FemaleNumber(String q4YouthGroup4FemaleNumber) {
+        this.q4YouthGroup4FemaleNumber = q4YouthGroup4FemaleNumber;
+    }
+
+    public String getQ4YouthGroup4AmountReceived() {
+        return q4YouthGroup4AmountReceived;
+    }
+
+    public void setQ4YouthGroup4AmountReceived(String q4YouthGroup4AmountReceived) {
+        this.q4YouthGroup4AmountReceived = q4YouthGroup4AmountReceived;
+    }
+
+    public String getQ4YouthGroup5Name() {
+        return q4YouthGroup5Name;
+    }
+
+    public void setQ4YouthGroup5Name(String q4YouthGroup5Name) {
+        this.q4YouthGroup5Name = q4YouthGroup5Name;
+    }
+
+    public String getQ4YouthGroup5Village() {
+        return q4YouthGroup5Village;
+    }
+
+    public void setQ4YouthGroup5Village(String q4YouthGroup5Village) {
+        this.q4YouthGroup5Village = q4YouthGroup5Village;
+    }
+
+    public String getQ4YouthGroup5MaleNumber() {
+        return q4YouthGroup5MaleNumber;
+    }
+
+    public void setQ4YouthGroup5MaleNumber(String q4YouthGroup5MaleNumber) {
+        this.q4YouthGroup5MaleNumber = q4YouthGroup5MaleNumber;
+    }
+
+    public String getQ4YouthGroup5FemaleNumber() {
+        return q4YouthGroup5FemaleNumber;
+    }
+
+    public void setQ4YouthGroup5FemaleNumber(String q4YouthGroup5FemaleNumber) {
+        this.q4YouthGroup5FemaleNumber = q4YouthGroup5FemaleNumber;
+    }
+
+    public String getQ4YouthGroup5AmountReceived() {
+        return q4YouthGroup5AmountReceived;
+    }
+
+    public void setQ4YouthGroup5AmountReceived(String q4YouthGroup5AmountReceived) {
+        this.q4YouthGroup5AmountReceived = q4YouthGroup5AmountReceived;
+    }
+
+    public String getQ4YouthGroup6Name() {
+        return q4YouthGroup6Name;
+    }
+
+    public void setQ4YouthGroup6Name(String q4YouthGroup6Name) {
+        this.q4YouthGroup6Name = q4YouthGroup6Name;
+    }
+
+    public String getQ4YouthGroup6Village() {
+        return q4YouthGroup6Village;
+    }
+
+    public void setQ4YouthGroup6Village(String q4YouthGroup6Village) {
+        this.q4YouthGroup6Village = q4YouthGroup6Village;
+    }
+
+    public String getQ4YouthGroup6MaleNumber() {
+        return q4YouthGroup6MaleNumber;
+    }
+
+    public void setQ4YouthGroup6MaleNumber(String q4YouthGroup6MaleNumber) {
+        this.q4YouthGroup6MaleNumber = q4YouthGroup6MaleNumber;
+    }
+
+    public String getQ4YouthGroup6FemaleNumber() {
+        return q4YouthGroup6FemaleNumber;
+    }
+
+    public void setQ4YouthGroup6FemaleNumber(String q4YouthGroup6FemaleNumber) {
+        this.q4YouthGroup6FemaleNumber = q4YouthGroup6FemaleNumber;
+    }
+
+    public String getQ4YouthGroup6AmountReceived() {
+        return q4YouthGroup6AmountReceived;
+    }
+
+    public void setQ4YouthGroup6AmountReceived(String q4YouthGroup6AmountReceived) {
+        this.q4YouthGroup6AmountReceived = q4YouthGroup6AmountReceived;
+    }
+
+    public String getQ4YouthGroup7Name() {
+        return q4YouthGroup7Name;
+    }
+
+    public void setQ4YouthGroup7Name(String q4YouthGroup7Name) {
+        this.q4YouthGroup7Name = q4YouthGroup7Name;
+    }
+
+    public String getQ4YouthGroup7Village() {
+        return q4YouthGroup7Village;
+    }
+
+    public void setQ4YouthGroup7Village(String q4YouthGroup7Village) {
+        this.q4YouthGroup7Village = q4YouthGroup7Village;
+    }
+
+    public String getQ4YouthGroup7MaleNumber() {
+        return q4YouthGroup7MaleNumber;
+    }
+
+    public void setQ4YouthGroup7MaleNumber(String q4YouthGroup7MaleNumber) {
+        this.q4YouthGroup7MaleNumber = q4YouthGroup7MaleNumber;
+    }
+
+    public String getQ4YouthGroup7FemaleNumber() {
+        return q4YouthGroup7FemaleNumber;
+    }
+
+    public void setQ4YouthGroup7FemaleNumber(String q4YouthGroup7FemaleNumber) {
+        this.q4YouthGroup7FemaleNumber = q4YouthGroup7FemaleNumber;
+    }
+
+    public String getQ4YouthGroup7AmountReceived() {
+        return q4YouthGroup7AmountReceived;
+    }
+
+    public void setQ4YouthGroup7AmountReceived(String q4YouthGroup7AmountReceived) {
+        this.q4YouthGroup7AmountReceived = q4YouthGroup7AmountReceived;
+    }
+
+    public String getQ5NumberMaleTrained() {
+        return q5NumberMaleTrained;
+    }
+
+    public void setQ5NumberMaleTrained(String q5NumberMaleTrained) {
+        this.q5NumberMaleTrained = q5NumberMaleTrained;
+    }
+
+    public String getQ5NumberFemaleTrained() {
+        return q5NumberFemaleTrained;
+    }
+
+    public void setQ5NumberFemaleTrained(String q5NumberFemaleTrained) {
+        this.q5NumberFemaleTrained = q5NumberFemaleTrained;
+    }
+
+    public String getQ6CommunityGroupFormed() {
+        return q6CommunityGroupFormed;
+    }
+
+    public void setQ6CommunityGroupFormed(String q6CommunityGroupFormed) {
+        this.q6CommunityGroupFormed = q6CommunityGroupFormed;
+    }
+
+    public String getQ7OtherChallengesObservations() {
+        return q7OtherChallengesObservations;
+    }
+
+    public void setQ7OtherChallengesObservations(String q7OtherChallengesObservations) {
+        this.q7OtherChallengesObservations = q7OtherChallengesObservations;
+    }
+
+    public boolean isLocallyStored() {
+        return locallyStored;
+    }
+
+    public void setLocallyStored(boolean locallyStored) {
+        this.locallyStored = locallyStored;
+    }
+
+    @Override
+    public String toString() {
+        return "SocialDevelopmentQuestion{" +
+                "primaryKey=" + primaryKey +
+                ", financialYear='" + financialYear + '\'' +
+                ", date='" + date + '\'' +
+                ", district='" + district + '\'' +
+                ", village='" + village + '\'' +
+                ", parish='" + parish + '\'' +
+                ", division='" + division + '\'' +
+                ", ygbaAgentFullName='" + ygbaAgentFullName + '\'' +
+                ", ygbaTel='" + ygbaTel + '\'' +
+                ", q2CommunityExpected='" + q2CommunityExpected + '\'' +
+                ", q2CommunityAmountReceived='" + q2CommunityAmountReceived + '\'' +
+                ", q2CommunityDateReceived='" + q2CommunityDateReceived + '\'' +
+                ", q2CommunityDateWithdrawn='" + q2CommunityDateWithdrawn + '\'' +
+                ", q2OtherExpectedAmount='" + q2OtherExpectedAmount + '\'' +
+                ", q2OtherAmountedReceived='" + q2OtherAmountedReceived + '\'' +
+                ", q2OthersDateReceived='" + q2OthersDateReceived + '\'' +
+                ", q2OthersDateWithdrawn='" + q2OthersDateWithdrawn + '\'' +
+                ", q3WomenEmpowermentObjective='" + q3WomenEmpowermentObjective + '\'' +
+                ", q3WomenEmpowermentObjectiveReason='" + q3WomenEmpowermentObjectiveReason + '\'' +
+                ", q3WomanGroup1Name='" + q3WomanGroup1Name + '\'' +
+                ", q3WomenGroup1Village='" + q3WomenGroup1Village + '\'' +
+                ", q3WomenGroup1MaleNumber='" + q3WomenGroup1MaleNumber + '\'' +
+                ", q3WomenGroup1FemaleNumber='" + q3WomenGroup1FemaleNumber + '\'' +
+                ", q3WomenGroup1AmountReceived='" + q3WomenGroup1AmountReceived + '\'' +
+                ", q3WomanGroup2Name='" + q3WomanGroup2Name + '\'' +
+                ", q3WomenGroup2Village='" + q3WomenGroup2Village + '\'' +
+                ", q3WomenGroup2MaleNumber='" + q3WomenGroup2MaleNumber + '\'' +
+                ", q3WomenGroup2FemaleNumber='" + q3WomenGroup2FemaleNumber + '\'' +
+                ", q3WomenGroup2AmountReceived='" + q3WomenGroup2AmountReceived + '\'' +
+                ", q3WomanGroup3Name='" + q3WomanGroup3Name + '\'' +
+                ", q3WomenGroup3Village='" + q3WomenGroup3Village + '\'' +
+                ", q3WomenGroup3MaleNumber='" + q3WomenGroup3MaleNumber + '\'' +
+                ", q3WomenGroup3FemaleNumber='" + q3WomenGroup3FemaleNumber + '\'' +
+                ", q3WomenGroup3AmountReceived='" + q3WomenGroup3AmountReceived + '\'' +
+                ", q3WomanGroup4Name='" + q3WomanGroup4Name + '\'' +
+                ", q3WomenGroup4Village='" + q3WomenGroup4Village + '\'' +
+                ", q3WomenGroup4MaleNumber='" + q3WomenGroup4MaleNumber + '\'' +
+                ", q3WomenGroup4FemaleNumber='" + q3WomenGroup4FemaleNumber + '\'' +
+                ", q3WomenGroup4AmountReceived='" + q3WomenGroup4AmountReceived + '\'' +
+                ", q3WomanGroup5Name='" + q3WomanGroup5Name + '\'' +
+                ", q3WomenGroup5Village='" + q3WomenGroup5Village + '\'' +
+                ", q3WomenGroup5MaleNumber='" + q3WomenGroup5MaleNumber + '\'' +
+                ", q3WomenGroup5FemaleNumber='" + q3WomenGroup5FemaleNumber + '\'' +
+                ", q3WomenGroup5AmountReceived='" + q3WomenGroup5AmountReceived + '\'' +
+                ", q3WomanGroup6Name='" + q3WomanGroup6Name + '\'' +
+                ", q3WomenGroup6Village='" + q3WomenGroup6Village + '\'' +
+                ", q3WomenGroup6MaleNumber='" + q3WomenGroup6MaleNumber + '\'' +
+                ", q3WomenGroup6FemaleNumber='" + q3WomenGroup6FemaleNumber + '\'' +
+                ", q3WomenGroup6AmountReceived='" + q3WomenGroup6AmountReceived + '\'' +
+                ", q3WomanGroup7Name='" + q3WomanGroup7Name + '\'' +
+                ", q3WomenGroup7Village='" + q3WomenGroup7Village + '\'' +
+                ", q3WomenGroup7MaleNumber='" + q3WomenGroup7MaleNumber + '\'' +
+                ", q3WomenGroup7FemaleNumber='" + q3WomenGroup7FemaleNumber + '\'' +
+                ", q3WomenGroup7AmountReceived='" + q3WomenGroup7AmountReceived + '\'' +
+                ", q4LivelihoodObjective='" + q4LivelihoodObjective + '\'' +
+                ", q4LivelihoodObjectiveReason='" + q4LivelihoodObjectiveReason + '\'' +
+                ", q4YouthGroup1Name='" + q4YouthGroup1Name + '\'' +
+                ", q4YouthGroup1Village='" + q4YouthGroup1Village + '\'' +
+                ", q4YouthGroup1MaleNumber='" + q4YouthGroup1MaleNumber + '\'' +
+                ", q4YouthGroup1FemaleNumber='" + q4YouthGroup1FemaleNumber + '\'' +
+                ", q4YouthGroup1AmountReceived='" + q4YouthGroup1AmountReceived + '\'' +
+                ", q4YouthGroup2Name='" + q4YouthGroup2Name + '\'' +
+                ", q4YouthGroup2Village='" + q4YouthGroup2Village + '\'' +
+                ", q4YouthGroup2MaleNumber='" + q4YouthGroup2MaleNumber + '\'' +
+                ", q4YouthGroup2FemaleNumber='" + q4YouthGroup2FemaleNumber + '\'' +
+                ", q4YouthGroup2AmountReceived='" + q4YouthGroup2AmountReceived + '\'' +
+                ", q4YouthGroup3Name='" + q4YouthGroup3Name + '\'' +
+                ", q4YouthGroup3Village='" + q4YouthGroup3Village + '\'' +
+                ", q4YouthGroup3MaleNumber='" + q4YouthGroup3MaleNumber + '\'' +
+                ", q4YouthGroup3FemaleNumber='" + q4YouthGroup3FemaleNumber + '\'' +
+                ", q4YouthGroup3AmountReceived='" + q4YouthGroup3AmountReceived + '\'' +
+                ", q4YouthGroup4Name='" + q4YouthGroup4Name + '\'' +
+                ", q4YouthGroup4Village='" + q4YouthGroup4Village + '\'' +
+                ", q4YouthGroup4MaleNumber='" + q4YouthGroup4MaleNumber + '\'' +
+                ", q4YouthGroup4FemaleNumber='" + q4YouthGroup4FemaleNumber + '\'' +
+                ", q4YouthGroup4AmountReceived='" + q4YouthGroup4AmountReceived + '\'' +
+                ", q4YouthGroup5Name='" + q4YouthGroup5Name + '\'' +
+                ", q4YouthGroup5Village='" + q4YouthGroup5Village + '\'' +
+                ", q4YouthGroup5MaleNumber='" + q4YouthGroup5MaleNumber + '\'' +
+                ", q4YouthGroup5FemaleNumber='" + q4YouthGroup5FemaleNumber + '\'' +
+                ", q4YouthGroup5AmountReceived='" + q4YouthGroup5AmountReceived + '\'' +
+                ", q4YouthGroup6Name='" + q4YouthGroup6Name + '\'' +
+                ", q4YouthGroup6Village='" + q4YouthGroup6Village + '\'' +
+                ", q4YouthGroup6MaleNumber='" + q4YouthGroup6MaleNumber + '\'' +
+                ", q4YouthGroup6FemaleNumber='" + q4YouthGroup6FemaleNumber + '\'' +
+                ", q4YouthGroup6AmountReceived='" + q4YouthGroup6AmountReceived + '\'' +
+                ", q4YouthGroup7Name='" + q4YouthGroup7Name + '\'' +
+                ", q4YouthGroup7Village='" + q4YouthGroup7Village + '\'' +
+                ", q4YouthGroup7MaleNumber='" + q4YouthGroup7MaleNumber + '\'' +
+                ", q4YouthGroup7FemaleNumber='" + q4YouthGroup7FemaleNumber + '\'' +
+                ", q4YouthGroup7AmountReceived='" + q4YouthGroup7AmountReceived + '\'' +
+                ", q5NumberMaleTrained='" + q5NumberMaleTrained + '\'' +
+                ", q5NumberFemaleTrained='" + q5NumberFemaleTrained + '\'' +
+                ", q6CommunityGroupFormed='" + q6CommunityGroupFormed + '\'' +
+                ", q7OtherChallengesObservations='" + q7OtherChallengesObservations + '\'' +
+                ", locallyStored=" + locallyStored +
+                '}';
+    }
 }
