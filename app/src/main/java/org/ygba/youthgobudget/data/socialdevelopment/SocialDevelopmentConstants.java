@@ -28,5 +28,10 @@ public class SocialDevelopmentConstants {
     public static final String Q3_WOMEN_GROUP_1_VILLAGE = "q3_w_g_1_village";
     public static final String Q3_WOMEN_GROUP_1_MALE_NUMBER = "q3_w_g_1_m_numbers";
     public static final String Q3_WOMEN_GROUP_1_FEMALE_NUMBER = "q3_w_g_1_f_numbers";
-    public static final String Q3_WOMEN_GROUP_1_AMOUNT_RECEIVED = "q3_w_g_1_a_recieived";
+    public static final String Q3_WOMEN_GROUP_1_AMOUNT_RECEIVED = "q3_w_g_1_a_received";
+    public static final String Q3_WOMEN_GROUP_2_NAME = "q3_w_g_2_name";
+    public static final String Q3_WOMEN_GROUP_2_VILLAGE = "q3_w_g_2_village";
+    public static final String Q3_WOMEN_GROUP_2_MALE_NUMBER = "q3_w_g_2_m_numbers";
+    public static final String Q3_WOMEN_GROUP_2_FEMALE_NUMBER = "q3_w_g_2_f_numbers";
+    public static final String Q3_WOMEN_GROUP_2_AMOUNT_RECEIVED = "q3_w_g_2_a_received";
 }
