@@ -193,4 +193,13 @@
     <string name="education_question_5_1_text" >
         5.1  Are the school toilet/latrine facilities accessible to pupils with disabilities ?
     </string>
+    <string name="education_question_5_2_text" >
+        5.2  If yes, how accessible are the facilities accessible to pupils with disabilities ?
+    </string>
+    <string name="revamps">Ramps</string>
+    <string name="pwd">Specialized PWD toilets/latrines</string>
+    <string name="question_5_2_ramps">Ramps</string>
+    <string name="question_5_2_pwd">Specialized PWD toilet / latrine</string>
+    <string name="question_5_2_none">None</string>
+    <string name="question_5_2_others">Others ( specify )</string>
 </resources>

@@ -2216,6 +2216,63 @@
                 android:layout_height="wrap_content"
                 android:text="@string/no" />
         </RadioGroup>
+
+        <TextView
+            android:layout_marginVertical="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/education_question_5_2_text"
+            android:textSize="15sp"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textSize="15sp"
+            android:textColor="@color/white"
+            android:text="@string/question_5_2_ramps"
+            android:id="@+id/question_5_ramps_cb"/>
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textSize="15sp"
+            android:textColor="@color/white"
+            android:text="@string/question_5_2_pwd"
+            android:id="@+id/question_5_pwd_cb"/>
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textSize="15sp"
+            android:textColor="@color/white"
+            android:text="@string/question_5_2_none"
+            android:id="@+id/question_5_none_cb"/>
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textSize="15sp"
+            android:textColor="@color/white"
+            android:text="@string/question_5_2_others"
+            android:id="@+id/question_5_others_cb"/>
+
+        <EditText
+            android:gravity="start"
+            android:layout_marginVertical="5dp"
+            android:inputType="number"
+            android:id="@+id/eduction_question_5_2_others_text_view"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:textSize="15sp"
+            android:background="@drawable/edit_text_style"
+            android:padding="5dp" />
+
     </LinearLayout>
 
 </ScrollView>
