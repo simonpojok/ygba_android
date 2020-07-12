@@ -3,6 +3,7 @@ package org.ygba.youthgobudget.socialdevelopment;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.cardview.widget.CardView;
+import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProvider;
 
 import android.content.Intent;
@@ -14,6 +15,7 @@ import android.widget.EditText;
 import android.widget.RadioGroup;
 import android.widget.Spinner;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.mobsandgeeks.saripaar.ValidationError;
 import com.mobsandgeeks.saripaar.Validator;
@@ -144,6 +146,12 @@ public class SocialDevelopmentActivity extends AppCompatActivity implements Vali
         initViews();
 
         setOnClickListeners();
+        activityViewModel.getAllSocialDevelopmentQuestions().observe(this, new Observer<List<SocialDevelopmentQuestion>>() {
+            @Override
+            public void onChanged(List<SocialDevelopmentQuestion> socialDevelopmentQuestions) {
+                Toast.makeText(SocialDevelopmentActivity.this, "Size is " + String.valueOf(socialDevelopmentQuestions.size()), Toast.LENGTH_SHORT).show();
+            }
+        });
     }
 
     private void setOnClickListeners() {
