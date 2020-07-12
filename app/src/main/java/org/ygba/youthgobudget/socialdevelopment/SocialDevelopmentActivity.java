@@ -214,6 +214,42 @@ public class SocialDevelopmentActivity extends AppCompatActivity {
         socialQn4RadioGroup = findViewById(R.id.social_qn_4_radio_group);
         sQ4YouthList = findViewById(R.id.social_q_4_youth_list);
 
+        // youth groups
+        sQuestion4GroupVillage1 = findViewById(R.id.social_q_3_youth_group_village_1);
+        sQuestion4GroupNumberFemales1 = findViewById(R.id.social_q_3_youth_group_number_females_1);
+        sQuestion4GroupNumberMales1 = findViewById(R.id.social_q_3_youth_group_number_males_1);
+        sQuestion4GroupAmountReceived1 = findViewById(R.id.social_q_3_youth_group_amount_received_1);
+        sQuestion4GroupName2 = findViewById(R.id.social_q_3_youth_group_name_2);
+        sQuestion4GroupVillage2 = findViewById(R.id.social_q_3_youth_group_village_2);
+        sQuestion4GroupNumberFemales2 = findViewById(R.id.social_q_3_youth_group_number_females_2);
+        sQuestion4GroupNumberMales2 = findViewById(R.id.social_q_3_youth_group_number_males_2);
+        sQuestion4GroupAmountReceived2 = findViewById(R.id.social_q_3_youth_group_amount_received_2);
+        sQuestion4GroupName3 = findViewById(R.id.social_q_3_youth_group_name_3);
+        sQuestion4GroupVillage3 = findViewById(R.id.social_q_3_youth_group_village_3);
+        sQuestion4GroupNumberFemales3 = findViewById(R.id.social_q_3_youth_group_number_females_3);
+        sQuestion4GroupNumberMales3 = findViewById(R.id.social_q_3_youth_group_number_males_3);
+        sQuestion4GroupAmountReceived3 = findViewById(R.id.social_q_3_youth_group_amount_received_3);
+        sQuestion4GroupName4 = findViewById(R.id.social_q_3_youth_group_name_4);
+        sQuestion4GroupVillage4 = findViewById(R.id.social_q_3_youth_group_village_4);
+        sQuestion4GroupNumberFemales4 = findViewById(R.id.social_q_3_youth_group_number_females_4);
+        sQuestion4GroupNumberMales4 = findViewById(R.id.social_q_3_youth_group_number_males_4);
+        sQuestion4GroupAmountReceived4 = findViewById(R.id.social_q_3_youth_group_amount_received_4);
+        sQuestion4GroupName5 = findViewById(R.id.social_q_3_youth_group_name_5);
+        sQuestion4GroupVillage5 = findViewById(R.id.social_q_3_youth_group_village_5);
+        sQuestion4GroupNumberFemales5 = findViewById(R.id.social_q_3_youth_group_number_females_5);
+        sQuestion4GroupNumberMales5 = findViewById(R.id.social_q_3_youth_group_number_males_5);
+        sQuestion4GroupAmountReceived5 = findViewById(R.id.social_q_3_youth_group_amount_received_5);
+        sQuestion4GroupName6 = findViewById(R.id.social_q_3_youth_group_name_6);
+        sQuestion4GroupVillage6 = findViewById(R.id.social_q_3_youth_group_village_6);
+        sQuestion4GroupNumberFemales6 = findViewById(R.id.social_q_3_youth_group_number_females_6);
+        sQuestion4GroupNumberMales6 = findViewById(R.id.social_q_3_youth_group_number_males_6);
+        sQuestion4GroupAmountReceived6 = findViewById(R.id.social_q_3_youth_group_amount_received_6);
+        sQuestion4GroupName7 = findViewById(R.id.social_q_3_youth_group_name_7);
+        sQuestion4GroupVillage7 = findViewById(R.id.social_q_3_youth_group_village_7);
+        sQuestion4GroupNumberFemales7 = findViewById(R.id.social_q_3_youth_group_number_females_7);
+        sQuestion4GroupNumberMales7 = findViewById(R.id.social_q_3_youth_group_number_males_7);
+        sQuestion4GroupAmountReceived7 = findViewById(R.id.social_q_3_youth_group_amount_received_7);
+
     }
 
     @Override
