@@ -231,4 +231,6 @@
     <string name="education_question_8_5_text">8.5 Is the school managemnet committe trained ?</string>
     <string name="not_sure">Not Sure</string>
     <string name="education_question_8_5_others_text">List any other obervations or Challenges</string>
+    <string name="education_sector_social_development">SOCIAL DEVELOPMENT SECTOR</string>
+    <string name="social_form_description">Community Budget Performance And Service Delivery Tracking Tool</string>
 </resources>
