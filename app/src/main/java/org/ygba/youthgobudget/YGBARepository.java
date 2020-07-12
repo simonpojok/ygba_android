@@ -49,7 +49,12 @@ public class YGBARepository {
         return YGBDatabase.db_executor.submit(dataCallable).get();
     }
 
-    public void saveSocialDevelopmentQuestion(SocialDevelopmentQuestion socialDevelopmentQuestion) {
-
+    public void saveSocialDevelopmentQuestion(final SocialDevelopmentQuestion socialDevelopmentQuestion) {
+        YGBDatabase.db_executor.execute(new Runnable() {
+            @Override
+            public void run() {
+                ygbDatabase.socialDevelopmentDao().saveSocialDevelopmentQuestion(socialDevelopmentQuestion);
+            }
+        });
     }
 }
