@@ -76,6 +76,43 @@ public class SocialDevelopmentActivity extends AppCompatActivity {
     private RadioGroup socialQn4RadioGroup;
     private EditText sQ4YouthList;
 
+    // youth groups
+    private EditText sQuestion4GroupName1;
+    private EditText sQuestion4GroupVillage1;
+    private EditText sQuestion4GroupNumberFemales1;
+    private EditText sQuestion4GroupNumberMales1;
+    private EditText sQuestion4GroupAmountReceived1;
+    private EditText sQuestion4GroupName2;
+    private EditText sQuestion4GroupVillage2;
+    private EditText sQuestion4GroupNumberFemales2;
+    private EditText sQuestion4GroupNumberMales2;
+    private EditText sQuestion4GroupAmountReceived2;
+    private EditText sQuestion4GroupName3;
+    private EditText sQuestion4GroupVillage3;
+    private EditText sQuestion4GroupNumberFemales3;
+    private EditText sQuestion4GroupNumberMales3;
+    private EditText sQuestion4GroupAmountReceived3;
+    private EditText sQuestion4GroupName4;
+    private EditText sQuestion4GroupVillage4;
+    private EditText sQuestion4GroupNumberFemales4;
+    private EditText sQuestion4GroupNumberMales4;
+    private EditText sQuestion4GroupAmountReceived4;
+    private EditText sQuestion4GroupName5;
+    private EditText sQuestion4GroupVillage5;
+    private EditText sQuestion4GroupNumberFemales5;
+    private EditText sQuestion4GroupNumberMales5;
+    private EditText sQuestion4GroupAmountReceived5;
+    private EditText sQuestion4GroupName6;
+    private EditText sQuestion4GroupVillage6;
+    private EditText sQuestion4GroupNumberFemales6;
+    private EditText sQuestion4GroupNumberMales6;
+    private EditText sQuestion4GroupAmountReceived6;
+    private EditText sQuestion4GroupName7;
+    private EditText sQuestion4GroupVillage7;
+    private EditText sQuestion4GroupNumberFemales7;
+    private EditText sQuestion4GroupNumberMales7;
+    private EditText sQuestion4GroupAmountReceived7;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
