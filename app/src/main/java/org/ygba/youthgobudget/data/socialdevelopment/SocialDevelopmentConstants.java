@@ -3,7 +3,6 @@ package org.ygba.youthgobudget.data.socialdevelopment;
 import androidx.room.Entity;
 
 public class SocialDevelopmentConstants {
-
     public static final String TABLE_NAME = "social_dev";
     public static final String PRIMARY_KEY = "id";
     public static final String FINANCIAL_YEAR = "financial_year";
@@ -44,4 +43,9 @@ public class SocialDevelopmentConstants {
     public static final String Q3_WOMEN_GROUP_4_MALE_NUMBER = "q3_w_g_4_m_numbers";
     public static final String Q3_WOMEN_GROUP_4_FEMALE_NUMBER = "q3_w_g_4_f_numbers";
     public static final String Q3_WOMEN_GROUP_4_AMOUNT_RECEIVED = "q3_w_g_4_a_received";
+    public static final String Q3_WOMEN_GROUP_5_NAME = "q3_w_g_5_name";
+    public static final String Q3_WOMEN_GROUP_5_VILLAGE = "q3_w_g_5_village";
+    public static final String Q3_WOMEN_GROUP_5_MALE_NUMBER = "q3_w_g_5_m_numbers";
+    public static final String Q3_WOMEN_GROUP_5_FEMALE_NUMBER = "q3_w_g_5_f_numbers";
+    public static final String Q3_WOMEN_GROUP_5_AMOUNT_RECEIVED = "q3_w_g_5_a_received";
 }
