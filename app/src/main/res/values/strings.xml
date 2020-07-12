@@ -218,4 +218,5 @@
     <string name="education_question_7_0_total_text">No of Teachers accessing payroll</string>
     <string name="education_question_7_note_text">Please validate information with Human Resource staff register or personnel files resident at the school.</string>
     <string name="education_question_7_1_text">7.1 What is the teacher pupil ratio ?</string>
+    <string name="education_question_7_2_text">"7.2 Does the school have a senior woman teacher ? "</string>
 </resources>

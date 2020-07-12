@@ -2581,12 +2581,45 @@
             android:gravity="start"
             android:layout_marginVertical="5dp"
             android:inputType="number"
-            android:id="@+id/eduction_question_6_2_edit_text"
+            android:id="@+id/eduction_question_7_1_edit_text"
             android:layout_width="match_parent"
             android:layout_height="40dp"
             android:textSize="15sp"
             android:background="@drawable/edit_text_style"
             android:padding="5dp" />
+
+        <TextView
+            android:layout_marginVertical="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/education_question_7_2_text"
+            android:textSize="15sp"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+
+        <RadioGroup
+            android:id="@+id/question72RadioGroup"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <RadioButton
+                android:id="@+id/education_question_7_2_yes"
+                android:checked="true"
+                android:textSize="15sp"
+                android:layout_marginEnd="10dp"
+                android:textColor="@color/white"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/yes" />
+            <RadioButton
+                android:layout_marginHorizontal="10dp"
+                android:textSize="15sp"
+                android:textColor="@color/white"
+                android:id="@+id/education_question_7_2_no"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/no" />
+        </RadioGroup>
 
     </LinearLayout>
 
