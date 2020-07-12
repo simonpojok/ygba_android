@@ -1210,6 +1210,690 @@
             android:background="@drawable/edit_text_style"
             android:paddingStart="5dp"
             android:paddingEnd="5dp" />
+
+<!--        question 4 -->
+        <HorizontalScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <GridLayout
+                android:columnCount="5"
+                android:rowCount="9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_column="0"
+                    android:layout_row="0"
+                    android:layout_rowSpan="2"
+                    android:layout_marginTop="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/social_qn_4_youth_group_name"
+                    android:textSize="15sp"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_column="1"
+                    android:layout_row="0"
+                    android:layout_rowSpan="2"
+                    android:layout_marginTop="5dp"
+                    android:labelFor="@id/division_text_edit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/social_qn_4_youth_group_village"
+                    android:textSize="15sp"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_column="2"
+                    android:layout_row="0"
+                    android:layout_columnSpan="2"
+                    android:layout_marginTop="5dp"
+                    android:labelFor="@id/division_text_edit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/social_qn_3_women_group_number_text"
+                    android:textSize="15sp"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_column="3"
+                    android:layout_row="1"
+                    android:layout_marginTop="5dp"
+                    android:labelFor="@id/division_text_edit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/social_qn_3_females_text"
+                    android:textSize="15sp"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_column="2"
+                    android:layout_row="1"
+                    android:layout_marginTop="5dp"
+                    android:labelFor="@id/division_text_edit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/social_qn_3_males_number_text"
+                    android:textSize="15sp"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_column="4"
+                    android:layout_row="0"
+                    android:layout_rowSpan="2"
+                    android:layout_marginTop="5dp"
+                    android:labelFor="@id/division_text_edit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/social_qn_3_amount_received_text"
+                    android:textSize="15sp"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+
+                <!--                row 2 g 1-->
+                <EditText
+                    android:layout_column="0"
+                    android:layout_row="2"
+                    android:paddingStart="5dp"
+                    android:paddingEnd="5dp"
+                    android:id="@+id/social_q_3_youth_group_name_1"
+                    android:layout_width="200dp"
+                    android:layout_marginVertical="5dp"
+                    android:layout_marginStart="5dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/edit_text_style"
+                    android:autofillHints=""
+                    android:inputType="text"
+                    android:textSize="15sp"
+                    tools:ignore="LabelFor" />
+
+                <EditText
+                    android:layout_column="1"
+                    android:layout_row="2"
+                    android:paddingStart="5dp"
+                    android:paddingEnd="5dp"
+                    android:id="@+id/social_q_3_youth_group_village_1"
+                    android:layout_width="200dp"
+                    android:layout_marginVertical="5dp"
+                    android:layout_marginHorizontal="5dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/edit_text_style"
+                    android:autofillHints=""
+                    android:inputType="text"
+                    android:textSize="15sp"
+                    tools:ignore="LabelFor" />
+
+                <EditText
+                    android:gravity="center"
+                    android:layout_column="2"
+                    android:layout_row="2"
+                    android:paddingStart="5dp"
+                    android:paddingEnd="5dp"
+                    android:id="@+id/social_q_3_youth_group_number_males_1"
+                    android:layout_width="200dp"
+                    android:layout_marginVertical="5dp"
+                    android:layout_marginHorizontal="5dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/edit_text_style"
+                    android:autofillHints=""
+                    android:inputType="number"
+                    android:textSize="15sp"
+                    tools:ignore="LabelFor" />
+
+                <EditText
+                    android:gravity="center"
+                    android:layout_column="3"
+                    android:layout_row="2"
+                    android:paddingStart="5dp"
+                    android:paddingEnd="5dp"
+                    android:id="@+id/social_q_3_youth_group_number_females_1"
+                    android:layout_width="200dp"
+                    android:layout_marginVertical="5dp"
+                    android:layout_marginHorizontal="5dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/edit_text_style"
+                    android:autofillHints=""
+                    android:inputType="number"
+                    android:textSize="15sp"
+                    tools:ignore="LabelFor" />
+
+                <EditText
+                    android:gravity="center"
+                    android:layout_column="4"
+                    android:layout_row="2"
+                    android:paddingStart="5dp"
+                    android:paddingEnd="5dp"
+                    android:id="@+id/social_q_3_youth_group_amount_received_1"
+                    android:layout_width="200dp"
+                    android:layout_marginVertical="5dp"
+                    android:layout_marginStart="5dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/edit_text_style"
+                    android:autofillHints=""
+                    android:inputType="number"
+                    android:textSize="15sp"
+                    tools:ignore="LabelFor" />
+
+                <!--                row 3 g 2 -->
+
+                <EditText
+                    android:layout_column="0"
+                    android:layout_row="3"
+                    android:paddingStart="5dp"
+                    android:paddingEnd="5dp"
+                    android:id="@+id/social_q_3_youth_group_name_2"
+                    android:layout_width="200dp"
+                    android:layout_marginVertical="5dp"
+                    android:layout_marginEnd="5dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/edit_text_style"
+                    android:autofillHints=""
+                    android:inputType="text"
+                    android:textSize="15sp"
+                    tools:ignore="LabelFor" />
+
+                <EditText
+                    android:layout_column="1"
+                    android:layout_row="3"
+                    android:paddingStart="5dp"
+                    android:paddingEnd="5dp"
+                    android:id="@+id/social_q_3_youth_group_village_2"
+                    android:layout_width="200dp"
+                    android:layout_marginVertical="10dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/edit_text_style"
+                    android:autofillHints=""
+                    android:inputType="text"
+                    android:textSize="15sp"
+                    tools:ignore="LabelFor" />
+
+                <EditText
+                    android:gravity="center"
+                    android:layout_column="2"
+                    android:layout_row="3"
+                    android:paddingStart="5dp"
+                    android:paddingEnd="5dp"
+                    android:id="@+id/social_q_3_youth_group_number_males_2"
+                    android:layout_width="200dp"
+                    android:layout_marginVertical="5dp"
+                    android:layout_marginHorizontal="5dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/edit_text_style"
+                    android:autofillHints=""
+                    android:inputType="number"
+                    android:textSize="15sp"
+                    tools:ignore="LabelFor" />
+
+                <EditText
+                    android:gravity="center"
+                    android:layout_column="3"
+                    android:layout_row="3"
+                    android:paddingStart="5dp"
+                    android:paddingEnd="5dp"
+                    android:id="@+id/social_q_3_youth_group_number_females_2"
+                    android:layout_width="200dp"
+                    android:layout_marginVertical="5dp"
+                    android:layout_marginHorizontal="5dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/edit_text_style"
+                    android:autofillHints=""
+                    android:inputType="number"
+                    android:textSize="15sp"
+                    tools:ignore="LabelFor" />
+
+                <EditText
+                    android:gravity="center"
+                    android:layout_column="4"
+                    android:layout_row="3"
+                    android:paddingStart="5dp"
+                    android:paddingEnd="5dp"
+                    android:id="@+id/social_q_3_youth_group_amount_received_2"
+                    android:layout_width="200dp"
+                    android:layout_marginVertical="5dp"
+                    android:layout_marginStart="5dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/edit_text_style"
+                    android:autofillHints=""
+                    android:inputType="number"
+                    android:textSize="15sp"
+                    tools:ignore="LabelFor" />
+
+                <!--                row 4 g 3 -->
+
+                <EditText
+                    android:layout_column="0"
+                    android:layout_row="4"
+                    android:paddingStart="5dp"
+                    android:paddingEnd="5dp"
+                    android:id="@+id/social_q_3_youth_group_name_3"
+                    android:layout_width="200dp"
+                    android:layout_marginVertical="5dp"
+                    android:layout_marginEnd="5dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/edit_text_style"
+                    android:autofillHints=""
+                    android:inputType="text"
+                    android:textSize="15sp"
+                    tools:ignore="LabelFor" />
+
+                <EditText
+                    android:layout_column="1"
+                    android:layout_row="4"
+                    android:paddingStart="5dp"
+                    android:paddingEnd="5dp"
+                    android:id="@+id/social_q_3_youth_group_village_3"
+                    android:layout_width="200dp"
+                    android:layout_marginVertical="5dp"
+                    android:layout_marginHorizontal="5dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/edit_text_style"
+                    android:autofillHints=""
+                    android:inputType="text"
+                    android:textSize="15sp"
+                    tools:ignore="LabelFor" />
+
+                <EditText
+                    android:gravity="center"
+                    android:layout_column="2"
+                    android:layout_row="4"
+                    android:paddingStart="5dp"
+                    android:paddingEnd="5dp"
+                    android:id="@+id/social_q_3_youth_group_number_males_3"
+                    android:layout_width="200dp"
+                    android:layout_marginVertical="5dp"
+                    android:layout_marginHorizontal="5dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/edit_text_style"
+                    android:autofillHints=""
+                    android:inputType="number"
+                    android:textSize="15sp"
+                    tools:ignore="LabelFor" />
+
+                <EditText
+                    android:gravity="center"
+                    android:layout_column="3"
+                    android:layout_row="4"
+                    android:paddingStart="5dp"
+                    android:paddingEnd="5dp"
+                    android:id="@+id/social_q_3_youth_group_number_females_3"
+                    android:layout_width="200dp"
+                    android:layout_marginVertical="5dp"
+                    android:layout_marginHorizontal="5dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/edit_text_style"
+                    android:autofillHints=""
+                    android:inputType="number"
+                    android:textSize="15sp"
+                    tools:ignore="LabelFor" />
+
+                <EditText
+                    android:gravity="center"
+                    android:layout_column="4"
+                    android:layout_row="4"
+                    android:paddingStart="5dp"
+                    android:paddingEnd="5dp"
+                    android:id="@+id/social_q_3_youth_group_amount_received_3"
+                    android:layout_width="200dp"
+                    android:layout_marginVertical="5dp"
+                    android:layout_marginStart="5dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/edit_text_style"
+                    android:autofillHints=""
+                    android:inputType="number"
+                    android:textSize="15sp"
+                    tools:ignore="LabelFor" />
+
+                <!--                row 5 g 4-->
+
+                <EditText
+                    android:layout_column="0"
+                    android:layout_row="5"
+                    android:paddingStart="5dp"
+                    android:paddingEnd="5dp"
+                    android:id="@+id/social_q_3_youth_group_name_4"
+                    android:layout_width="200dp"
+                    android:layout_marginVertical="5dp"
+                    android:layout_marginEnd="5dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/edit_text_style"
+                    android:autofillHints=""
+                    android:inputType="text"
+                    android:textSize="15sp"
+                    tools:ignore="LabelFor" />
+
+                <EditText
+                    android:layout_column="1"
+                    android:layout_row="5"
+                    android:paddingStart="5dp"
+                    android:paddingEnd="5dp"
+                    android:id="@+id/social_q_3_youth_group_village_4"
+                    android:layout_width="200dp"
+                    android:layout_marginVertical="5dp"
+                    android:layout_marginHorizontal="5dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/edit_text_style"
+                    android:autofillHints=""
+                    android:inputType="text"
+                    android:textSize="15sp"
+                    tools:ignore="LabelFor" />
+
+                <EditText
+                    android:gravity="center"
+                    android:layout_column="2"
+                    android:layout_row="5"
+                    android:paddingStart="5dp"
+                    android:paddingEnd="5dp"
+                    android:id="@+id/social_q_3_youth_group_number_males_4"
+                    android:layout_width="200dp"
+                    android:layout_marginVertical="5dp"
+                    android:layout_marginHorizontal="5dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/edit_text_style"
+                    android:autofillHints=""
+                    android:inputType="number"
+                    android:textSize="15sp"
+                    tools:ignore="LabelFor" />
+
+                <EditText
+                    android:gravity="center"
+                    android:layout_column="3"
+                    android:layout_row="5"
+                    android:paddingStart="5dp"
+                    android:paddingEnd="5dp"
+                    android:id="@+id/social_q_3_youth_group_number_females_4"
+                    android:layout_width="200dp"
+                    android:layout_marginVertical="5dp"
+                    android:layout_marginHorizontal="5dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/edit_text_style"
+                    android:autofillHints=""
+                    android:inputType="number"
+                    android:textSize="15sp"
+                    tools:ignore="LabelFor" />
+
+                <EditText
+                    android:gravity="center"
+                    android:layout_column="4"
+                    android:layout_row="5"
+                    android:paddingStart="5dp"
+                    android:paddingEnd="5dp"
+                    android:id="@+id/social_q_3_youth_group_amount_received_4"
+                    android:layout_width="200dp"
+                    android:layout_marginVertical="5dp"
+                    android:layout_marginStart="5dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/edit_text_style"
+                    android:autofillHints=""
+                    android:inputType="number"
+                    android:textSize="15sp"
+                    tools:ignore="LabelFor" />
+
+                <!--                row 6 g 5 -->
+
+                <EditText
+                    android:layout_column="0"
+                    android:layout_row="6"
+                    android:paddingStart="5dp"
+                    android:paddingEnd="5dp"
+                    android:id="@+id/social_q_3_youth_group_name_5"
+                    android:layout_width="200dp"
+                    android:layout_marginVertical="5dp"
+                    android:layout_marginEnd="5dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/edit_text_style"
+                    android:autofillHints=""
+                    android:inputType="text"
+                    android:textSize="15sp"
+                    tools:ignore="LabelFor" />
+
+                <EditText
+                    android:layout_column="1"
+                    android:layout_row="6"
+                    android:paddingStart="5dp"
+                    android:paddingEnd="5dp"
+                    android:id="@+id/social_q_3_youth_group_village_5"
+                    android:layout_width="200dp"
+                    android:layout_marginVertical="5dp"
+                    android:layout_marginHorizontal="5dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/edit_text_style"
+                    android:autofillHints=""
+                    android:inputType="text"
+                    android:textSize="15sp"
+                    tools:ignore="LabelFor" />
+
+                <EditText
+                    android:gravity="center"
+                    android:layout_column="2"
+                    android:layout_row="6"
+                    android:paddingStart="5dp"
+                    android:paddingEnd="5dp"
+                    android:id="@+id/social_q_3_youth_group_number_males_5"
+                    android:layout_width="200dp"
+                    android:layout_marginVertical="5dp"
+                    android:layout_marginHorizontal="5dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/edit_text_style"
+                    android:autofillHints=""
+                    android:inputType="number"
+                    android:textSize="15sp"
+                    tools:ignore="LabelFor" />
+
+                <EditText
+                    android:gravity="center"
+                    android:layout_column="3"
+                    android:layout_row="6"
+                    android:paddingStart="5dp"
+                    android:paddingEnd="5dp"
+                    android:id="@+id/social_q_3_youth_group_number_females_5"
+                    android:layout_width="200dp"
+                    android:layout_marginVertical="5dp"
+                    android:layout_marginHorizontal="5dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/edit_text_style"
+                    android:autofillHints=""
+                    android:inputType="number"
+                    android:textSize="15sp"
+                    tools:ignore="LabelFor" />
+
+                <EditText
+                    android:gravity="center"
+                    android:layout_column="4"
+                    android:layout_row="6"
+                    android:paddingStart="5dp"
+                    android:paddingEnd="5dp"
+                    android:id="@+id/social_q_3_youth_group_amount_received_5"
+                    android:layout_width="200dp"
+                    android:layout_marginVertical="5dp"
+                    android:layout_marginStart="5dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/edit_text_style"
+                    android:autofillHints=""
+                    android:inputType="number"
+                    android:textSize="15sp"
+                    tools:ignore="LabelFor" />
+
+                <!--                row 7 g 6 -->
+
+                <EditText
+                    android:layout_column="0"
+                    android:layout_row="7"
+                    android:paddingStart="5dp"
+                    android:paddingEnd="5dp"
+                    android:id="@+id/social_q_3_youth_group_name_6"
+                    android:layout_width="200dp"
+                    android:layout_marginVertical="5dp"
+                    android:layout_marginEnd="5dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/edit_text_style"
+                    android:autofillHints=""
+                    android:inputType="text"
+                    android:textSize="15sp"
+                    tools:ignore="LabelFor" />
+
+                <EditText
+                    android:layout_column="1"
+                    android:layout_row="7"
+                    android:paddingStart="5dp"
+                    android:paddingEnd="5dp"
+                    android:id="@+id/social_q_3_youth_group_village_6"
+                    android:layout_width="200dp"
+                    android:layout_marginVertical="5dp"
+                    android:layout_marginHorizontal="5dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/edit_text_style"
+                    android:autofillHints=""
+                    android:inputType="text"
+                    android:textSize="15sp"
+                    tools:ignore="LabelFor" />
+
+                <EditText
+                    android:gravity="center"
+                    android:layout_column="2"
+                    android:layout_row="7"
+                    android:paddingStart="5dp"
+                    android:paddingEnd="5dp"
+                    android:id="@+id/social_q_3_youth_group_number_males_6"
+                    android:layout_width="200dp"
+                    android:layout_marginVertical="5dp"
+                    android:layout_marginHorizontal="5dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/edit_text_style"
+                    android:autofillHints=""
+                    android:inputType="number"
+                    android:textSize="15sp"
+                    tools:ignore="LabelFor" />
+
+                <EditText
+                    android:gravity="center"
+                    android:layout_column="3"
+                    android:layout_row="7"
+                    android:paddingStart="5dp"
+                    android:paddingEnd="5dp"
+                    android:id="@+id/social_q_3_youth_group_number_females_6"
+                    android:layout_width="200dp"
+                    android:layout_marginVertical="5dp"
+                    android:layout_marginHorizontal="5dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/edit_text_style"
+                    android:autofillHints=""
+                    android:inputType="number"
+                    android:textSize="15sp"
+                    tools:ignore="LabelFor" />
+
+                <EditText
+                    android:gravity="center"
+                    android:layout_column="4"
+                    android:layout_row="7"
+                    android:paddingStart="5dp"
+                    android:paddingEnd="5dp"
+                    android:id="@+id/social_q_3_youth_group_amount_received_6"
+                    android:layout_width="200dp"
+                    android:layout_marginVertical="5dp"
+                    android:layout_marginStart="5dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/edit_text_style"
+                    android:autofillHints=""
+                    android:inputType="number"
+                    android:textSize="15sp"
+                    tools:ignore="LabelFor" />
+
+                <!--                row 8 g 7 -->
+
+                <EditText
+                    android:layout_column="0"
+                    android:layout_row="8"
+                    android:paddingStart="5dp"
+                    android:paddingEnd="5dp"
+                    android:id="@+id/social_q_3_youth_group_name_7"
+                    android:layout_width="200dp"
+                    android:layout_marginVertical="5dp"
+                    android:layout_marginEnd="5dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/edit_text_style"
+                    android:autofillHints=""
+                    android:inputType="text"
+                    android:textSize="15sp"
+                    tools:ignore="LabelFor" />
+
+                <EditText
+                    android:layout_column="1"
+                    android:layout_row="8"
+                    android:paddingStart="5dp"
+                    android:paddingEnd="5dp"
+                    android:id="@+id/social_q_3_youth_group_village_7"
+                    android:layout_width="200dp"
+                    android:layout_marginVertical="5dp"
+                    android:layout_marginHorizontal="5dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/edit_text_style"
+                    android:autofillHints=""
+                    android:inputType="text"
+                    android:textSize="15sp"
+                    tools:ignore="LabelFor" />
+
+                <EditText
+                    android:gravity="center"
+                    android:layout_column="2"
+                    android:layout_row="8"
+                    android:paddingStart="5dp"
+                    android:paddingEnd="5dp"
+                    android:id="@+id/social_q_3_youth_group_number_males_7"
+                    android:layout_width="200dp"
+                    android:layout_marginVertical="5dp"
+                    android:layout_marginHorizontal="5dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/edit_text_style"
+                    android:autofillHints=""
+                    android:inputType="number"
+                    android:textSize="15sp"
+                    tools:ignore="LabelFor" />
+
+                <EditText
+                    android:gravity="center"
+                    android:layout_column="3"
+                    android:layout_row="8"
+                    android:paddingStart="5dp"
+                    android:paddingEnd="5dp"
+                    android:id="@+id/social_q_3_youth_group_number_females_7"
+                    android:layout_width="200dp"
+                    android:layout_marginVertical="5dp"
+                    android:layout_marginHorizontal="5dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/edit_text_style"
+                    android:autofillHints=""
+                    android:inputType="number"
+                    android:textSize="15sp"
+                    tools:ignore="LabelFor" />
+
+                <EditText
+                    android:gravity="center"
+                    android:layout_column="4"
+                    android:layout_row="8"
+                    android:paddingStart="5dp"
+                    android:paddingEnd="5dp"
+                    android:id="@+id/social_q_3_youth_group_amount_received_7"
+                    android:layout_width="200dp"
+                    android:layout_marginVertical="5dp"
+                    android:layout_marginStart="5dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/edit_text_style"
+                    android:autofillHints=""
+                    android:inputType="numberDecimal"
+                    android:textSize="15sp"
+                    tools:ignore="LabelFor" />
+
+
+            </GridLayout>
+        </HorizontalScrollView>
     </LinearLayout>
 
 

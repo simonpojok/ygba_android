@@ -252,4 +252,6 @@
     <string name="social_qn_3_amount_received_text">Amount Received</string>
     <string name="social_qn_4_text">4. Is the youth livelihood program running ?</string>
     <string name="social_qn_4_text_if_yes">If yes how many youths have been supported ( obtain list of youth groups )</string>
+    <string name="social_qn_4_youth_group_name">Name of youth Group</string>
+    <string name="social_qn_4_youth_group_village">Village / subcounty</string>
 </resources>
