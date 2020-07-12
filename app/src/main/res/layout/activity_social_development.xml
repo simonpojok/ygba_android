@@ -179,6 +179,14 @@
             android:background="@drawable/edit_text_style"
             android:paddingStart="5dp"
             android:paddingEnd="5dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/social_question_2_text"
+            android:textSize="15sp"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
     </LinearLayout>
 
 </ScrollView>

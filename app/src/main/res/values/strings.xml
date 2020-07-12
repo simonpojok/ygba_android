@@ -233,4 +233,5 @@
     <string name="education_question_8_5_others_text">List any other obervations or Challenges</string>
     <string name="education_sector_social_development">SOCIAL DEVELOPMENT SECTOR</string>
     <string name="social_form_description">Community Budget Performance And Service Delivery Tracking Tool</string>
+    <string name="social_question_2_text">2 Budget receipt date: ( attach copy of the bank statement )</string>
 </resources>
