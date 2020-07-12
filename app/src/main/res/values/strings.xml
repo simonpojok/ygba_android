@@ -220,4 +220,8 @@
     <string name="education_question_7_1_text">7.1 What is the teacher pupil ratio ?</string>
     <string name="education_question_7_2_text">"7.2 Does the school have a senior woman teacher ? "</string>
     <string name="education_question_7_3_text">7.3 How often does the senior woamn teacher offer support to girls in the school in regard to counselling and health services in regard to their participation in school ?</string>
+    <string name="education_question_8_introduction_text">8 OVERSIGHT AND SCHOOL MONITORING</string>
+    <string name="education_question_8_1_text">8.1 How often does School Inspector and or Health Inspector visit the school ?</string>
+    <string name="education_question_8_2_text">8.2 When was the last time the School Inspector and or Health Inspector visited the school ( date )</string>
+    <string name="education_question_8_3_text">8.3 Does the school have a Management Committe ?</string>
 </resources>
