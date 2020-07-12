@@ -114,9 +114,9 @@
     <string name="grants">Grants</string>
     <string name="extension_services">Extension Service</string>
     <string name="education_sector_header">Education  Sector</string>
-    <string name="education_question_1_upe" >Name of Universal Primary Education [ UPE ] School</string>
+    <string name="education_question_1_upe">Name of Universal Primary Education [ UPE ] School</string>
     <string name="school_name_hint">Kijjabwmi Primary School</string>
-    <string name="education_question_1_note" >
+    <string name="education_question_1_note">
         Note: This tool is completed with the help of headteacher
     </string>
     <string name="school_name">School Name</string>
@@ -131,7 +131,7 @@
     <string name="male_pwds">MALE PWDS</string>
     <string name="female_pwds">FEMALE PWDS</string>
     <string name="total">TOTAL</string>
-    <string name="education_question_2_1_dropout" >
+    <string name="education_question_2_1_dropout">
         2.1  If dropout is registered, please indicate the reasons why children are dropping out of school
     </string>
     <string name="education_question_3_introduction">BUDGET INFORMATION</string>
@@ -143,7 +143,7 @@
     <string name="education_question_3_budget_released">Budget released (Actual)</string>
     <string name="education_question_3_date_recieved">Date Recieved</string>
     <string name="education_question_3_date_withdrawn">Date Withdrawn</string>
-    <string name="education_question_3_1_text" >
+    <string name="education_question_3_1_text">
         3.1 Does the school display budget information for public viewing in any of the following areas?
         Please request for institution bank statement as evidence. ( Tick where appropriate )
     </string>
@@ -151,21 +151,21 @@
     <string name="head_teacher_notice">Head Teacher Notice</string>
     <string name="staff_room">Staff Room</string>
     <string name="displayed">Displayed</string>
-    <string name="education_question_3_2_text" >
+    <string name="education_question_3_2_text">
         3.2 State the period to which the budget information relates? ( e.g FY 2018/ 19 one )
     </string>
-    <string name="education_question_4_1_text" >4. P. 7 TERMLY PERFORMANCE </string>
+    <string name="education_question_4_1_text">4. P. 7 TERMLY PERFORMANCE </string>
     <string name="grade_1">Grade 1</string>
     <string name="grade_2">Grade 2</string>
     <string name="grade_3">Grade 3</string>
     <string name="grade_others">Others*</string>
-    <string name="education_question_4_1_1_text" >
+    <string name="education_question_4_1_1_text">
         4.1 How is the current terms performance when compared to last terms ?
     </string>
     <string name="good">Good</string>
     <string name="bad">Bad</string>
     <string name="same">Same</string>
-    <string name="education_question_4_2_text" >
+    <string name="education_question_4_2_text">
         4.2 What reason is attribute to the answer ( in 5 above )
     </string>
     <string name="education_question_5_text">5 SANITATION IN THE SCHOOL
@@ -190,10 +190,10 @@
     <string name="education_question_5_VIP_latrine">VIP Latrine</string>
     <string name="education_question_5_FCR_latrine">Female Changing Rooms</string>
     <string name="education_question_5_Urinals">Urinals for boys</string>
-    <string name="education_question_5_1_text" >
+    <string name="education_question_5_1_text">
         5.1  Are the school toilet/latrine facilities accessible to pupils with disabilities ?
     </string>
-    <string name="education_question_5_2_text" >
+    <string name="education_question_5_2_text">
         5.2  If yes, how accessible are the facilities accessible to pupils with disabilities ?
     </string>
     <string name="revamps">Ramps</string>
