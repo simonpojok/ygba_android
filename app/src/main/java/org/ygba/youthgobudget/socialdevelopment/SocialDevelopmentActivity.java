@@ -37,6 +37,7 @@ public class SocialDevelopmentActivity extends AppCompatActivity {
     private EditText otherDateReceivedEditText;
     private EditText otherDateWithdrawnEditText;
     private RadioGroup socialQn3RadioGroup;
+    private EditText socialQuestion3EditText;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -100,6 +101,7 @@ public class SocialDevelopmentActivity extends AppCompatActivity {
         otherDateWithdrawnEditText =  findViewById(R.id.other_date_withdrawn_edit_text);
         otherDateWithdrawnEditText.setInputType(View.AUTOFILL_TYPE_NONE);
         socialQn3RadioGroup = findViewById(R.id.social_qn_3_radio_group);
+        socialQuestion3EditText = findViewById(R.id.social_q_3_women_list);
 
     }
 

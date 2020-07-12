@@ -241,4 +241,7 @@
     <string name="social_com_mobilization">Community Mobilization</string>
     <string name="social_other">Other eg FAL/YLP/UWEP</string>
     <string name="social_qn_3_text">3.  Are the women empowerment programs functional ?</string>
+    <string name="social_qn_3_text_if_yes" >
+        If yes how many women have been supported ( obtain list )
+    </string>
 </resources>
