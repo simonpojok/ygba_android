@@ -38,6 +38,9 @@ public class SocialDevelopmentActivity extends AppCompatActivity {
     private EditText otherDateWithdrawnEditText;
     private RadioGroup socialQn3RadioGroup;
     private EditText socialQuestion3EditText;
+    private EditText sQuestion3GroupName1;
+    private EditText sQuestion3GroupVillage1;
+    private EditText sQuestion3GroupNumberFemales1;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -102,6 +105,9 @@ public class SocialDevelopmentActivity extends AppCompatActivity {
         otherDateWithdrawnEditText.setInputType(View.AUTOFILL_TYPE_NONE);
         socialQn3RadioGroup = findViewById(R.id.social_qn_3_radio_group);
         socialQuestion3EditText = findViewById(R.id.social_q_3_women_list);
+        sQuestion3GroupName1 = findViewById(R.id.social_q_3_women_group_name_1);
+        sQuestion3GroupVillage1 = findViewById(R.id.social_q_3_women_group_village_1);
+        sQuestion3GroupNumberFemales1 = findViewById(R.id.social_q_3_women_group_number_females_1);
 
     }
 
