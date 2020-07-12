@@ -224,4 +224,11 @@
     <string name="education_question_8_1_text">8.1 How often does School Inspector and or Health Inspector visit the school ?</string>
     <string name="education_question_8_2_text">8.2 When was the last time the School Inspector and or Health Inspector visited the school ( date )</string>
     <string name="education_question_8_3_text">8.3 Does the school have a Management Committe ?</string>
+    <string name="education_question_8_4_text">8.4 If Yes, how often do they meet ? ( Attach minutes )</string>
+    <string name="monthly">Monthly</string>
+    <string name="termly">Termly</string>
+    <string name="others">Others</string>
+    <string name="education_question_8_5_text">8.5 Is the school managemnet committe trained ?</string>
+    <string name="not_sure">Not Sure</string>
+    <string name="education_question_8_5_others_text">List any other obervations or Challenges</string>
 </resources>

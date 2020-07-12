@@ -2699,6 +2699,149 @@
             android:textColor="@color/white"
             android:textStyle="bold" />
 
+        <RadioGroup
+            android:id="@+id/question82RadioGroup"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <RadioButton
+                android:id="@+id/education_question_8_3_yes"
+                android:checked="true"
+                android:textSize="15sp"
+                android:layout_marginEnd="10dp"
+                android:textColor="@color/white"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/yes" />
+            <RadioButton
+                android:layout_marginHorizontal="10dp"
+                android:textSize="15sp"
+                android:textColor="@color/white"
+                android:id="@+id/education_question_8_3_no"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/no" />
+        </RadioGroup>
+
+        <TextView
+            android:layout_marginVertical="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/education_question_8_4_text"
+            android:textSize="15sp"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+
+        <RadioGroup
+            android:id="@+id/question84RadioGroup"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <RadioButton
+                android:id="@+id/education_question_8_4_monthly"
+                android:checked="true"
+                android:textSize="15sp"
+                android:layout_marginEnd="10dp"
+                android:textColor="@color/white"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/monthly" />
+            <RadioButton
+                android:id="@+id/education_question_8_4_termly"
+                android:checked="true"
+                android:textSize="15sp"
+                android:layout_marginEnd="10dp"
+                android:textColor="@color/white"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/termly" />
+
+            <RadioButton
+                android:id="@+id/education_question_8_4_others"
+                android:checked="true"
+                android:textSize="15sp"
+                android:layout_marginEnd="10dp"
+                android:textColor="@color/white"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/others" />
+        </RadioGroup>
+
+        <EditText
+            android:gravity="center"
+            android:layout_marginVertical="5dp"
+            android:inputType="textMultiLine"
+            android:id="@+id/eduction_question_8_4_edit_text"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:textSize="15sp"
+            android:background="@drawable/edit_text_style"
+            android:padding="5dp" />
+
+        <TextView
+            android:layout_marginVertical="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/education_question_8_5_text"
+            android:textSize="15sp"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+
+        <RadioGroup
+            android:id="@+id/question85RadioGroup"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <RadioButton
+                android:id="@+id/education_question_8_5_yes"
+                android:checked="true"
+                android:textSize="15sp"
+                android:layout_marginEnd="10dp"
+                android:textColor="@color/white"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/yes" />
+            <RadioButton
+                android:id="@+id/education_question_8_5_no"
+                android:checked="true"
+                android:textSize="15sp"
+                android:layout_marginEnd="10dp"
+                android:textColor="@color/white"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/no" />
+
+            <RadioButton
+                android:id="@+id/education_question_8_5_not_sure"
+                android:checked="true"
+                android:textSize="15sp"
+                android:layout_marginEnd="10dp"
+                android:textColor="@color/white"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/not_sure" />
+        </RadioGroup>
+
+        <TextView
+            android:layout_marginVertical="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/education_question_8_5_others_text"
+            android:textSize="15sp"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+
+        <EditText
+            android:gravity="center"
+            android:layout_marginVertical="5dp"
+            android:inputType="textMultiLine"
+            android:id="@+id/eduction_question_8_5_others_edit_text"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:textSize="15sp"
+            android:background="@drawable/edit_text_style"
+            android:padding="5dp" />
+
     </LinearLayout>
 
 </ScrollView>
