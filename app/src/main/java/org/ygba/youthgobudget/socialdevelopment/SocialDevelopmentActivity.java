@@ -15,7 +15,10 @@ import org.ygba.youthgobudget.R;
 import org.ygba.youthgobudget.dialogs.DatePickerActivity;
 
 public class SocialDevelopmentActivity extends AppCompatActivity {
-    private final int COMMUNITY_DATE_WITHDRAWN_REQUEST_CODE = 1;
+    private final int OTHER_DATE_WITHDRAWN_REQUEST_CODE = 1;
+    private final int OTHER_DATE_RECEIVED_REQUEST_CODE = 2;
+    private final int COMMUNITY_DATE_RECEIVED_REQUEST_CODE = 4;
+    private final int COMMUNITY_DATE_WITHDRAWN_REQUEST_CODE = 5;
     private SocialDevelopmentActivityViewModel activityViewModel;
     private TextView socialDateTextView;
     private Spinner financialYearSpinner;
@@ -48,6 +51,27 @@ public class SocialDevelopmentActivity extends AppCompatActivity {
         otherDateWithdrawnEditText.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                startActivityForResult(new Intent(SocialDevelopmentActivity.this, DatePickerActivity.class), OTHER_DATE_WITHDRAWN_REQUEST_CODE);
+            }
+        });
+
+        otherDateReceivedEditText.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivityForResult(new Intent(SocialDevelopmentActivity.this, DatePickerActivity.class), OTHER_DATE_RECEIVED_REQUEST_CODE);
+            }
+        });
+
+        communityDateReceivedEditText.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivityForResult(new Intent(SocialDevelopmentActivity.this, DatePickerActivity.class), COMMUNITY_DATE_RECEIVED_REQUEST_CODE);
+            }
+        });
+
+        comDateWithdrawnEditText.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
                 startActivityForResult(new Intent(SocialDevelopmentActivity.this, DatePickerActivity.class), COMMUNITY_DATE_WITHDRAWN_REQUEST_CODE);
             }
         });
@@ -77,8 +101,19 @@ public class SocialDevelopmentActivity extends AppCompatActivity {
         super.onActivityResult(requestCode, resultCode, data);
         if ((data != null) && (resultCode == RESULT_OK)) {
             switch (requestCode) {
-                case COMMUNITY_DATE_WITHDRAWN_REQUEST_CODE:
+                case OTHER_DATE_WITHDRAWN_REQUEST_CODE:
                     otherDateWithdrawnEditText.setText(data.getStringExtra(DatePickerActivity.SELECTED_DATE));
+
+                case OTHER_DATE_RECEIVED_REQUEST_CODE:
+                    otherDateReceivedEditText.setText(data.getStringExtra(DatePickerActivity.SELECTED_DATE));
+
+                case COMMUNITY_DATE_RECEIVED_REQUEST_CODE:
+                    communityDateReceivedEditText.setText(data.getStringExtra(DatePickerActivity.SELECTED_DATE));
+
+                case COMMUNITY_DATE_WITHDRAWN_REQUEST_CODE:
+                    comDateWithdrawnEditText.setText(data.getStringExtra(DatePickerActivity.SELECTED_DATE));
+
+                default:
             }
         }
     }
