@@ -13,10 +13,15 @@ import android.widget.RadioGroup;
 import android.widget.Spinner;
 import android.widget.TextView;
 
+import com.mobsandgeeks.saripaar.ValidationError;
+import com.mobsandgeeks.saripaar.Validator;
+
 import org.ygba.youthgobudget.R;
 import org.ygba.youthgobudget.dialogs.DatePickerActivity;
 
-public class SocialDevelopmentActivity extends AppCompatActivity {
+import java.util.List;
+
+public class SocialDevelopmentActivity extends AppCompatActivity implements Validator.ValidationListener {
     private final int OTHER_DATE_WITHDRAWN_REQUEST_CODE = 1;
     private final int OTHER_DATE_RECEIVED_REQUEST_CODE = 2;
     private final int COMMUNITY_DATE_RECEIVED_REQUEST_CODE = 4;
@@ -118,12 +123,16 @@ public class SocialDevelopmentActivity extends AppCompatActivity {
     private EditText sQuestion6NumberCommunityGroupsTrained;
     private EditText sQuestion7ChallengerObservations;
     private CardView saveFormData;
+    private Validator validator;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_social_development);
         activityViewModel = new ViewModelProvider(this).get(SocialDevelopmentActivityViewModel.class);
+
+        validator = new Validator(this);
+        validator.setValidationListener(this);
 
         initViews();
 
@@ -162,7 +171,7 @@ public class SocialDevelopmentActivity extends AppCompatActivity {
         saveFormData.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
+                validator.validate();
             }
         });
     }
@@ -310,5 +319,25 @@ public class SocialDevelopmentActivity extends AppCompatActivity {
             return "Yes";
         }
         return "No";
+    }
+
+    @Override
+    public void onValidationSucceeded() {
+        saveSocialDevelopmentData();
+    }
+
+    private void saveSocialDevelopmentData() {
+
+    }
+
+    @Override
+    public void onValidationFailed(List<ValidationError> errors) {
+        for (ValidationError error: errors) {
+            View view = error.getView();
+            String message = error.getCollatedErrorMessage(this);
+            if (view instanceof EditText) {
+                ( (EditText) view).setError(message);
+            }
+        }
     }
 }
