@@ -461,7 +461,6 @@
             android:gravity="center"
             android:layout_marginVertical="10dp"
             android:inputType="number"
-            android:hint="@string/telephone_hint"
             android:id="@+id/social_q_3_women_list"
             android:layout_width="match_parent"
             android:layout_height="40dp"
@@ -469,6 +468,46 @@
             android:background="@drawable/edit_text_style"
             android:paddingStart="5dp"
             android:paddingEnd="5dp" />
+
+        <HorizontalScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <GridLayout
+                android:columnCount="5"
+                android:rowCount="6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_column="0"
+                    android:layout_row="0"
+                    android:layout_rowSpan="2"
+                    android:layout_marginTop="10dp"
+                    android:labelFor="@id/division_text_edit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/social_qn_3_women_group_name"
+                    android:textSize="15sp"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_column="1"
+                    android:layout_row="0"
+                    android:layout_rowSpan="2"
+                    android:layout_marginTop="10dp"
+                    android:labelFor="@id/division_text_edit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/social_qn_3_women_group_village"
+                    android:textSize="15sp"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+
+            </GridLayout>
+        </HorizontalScrollView>
     </LinearLayout>
 
 </ScrollView>

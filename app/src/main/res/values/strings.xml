@@ -244,4 +244,6 @@
     <string name="social_qn_3_text_if_yes" >
         If yes how many women have been supported ( obtain list )
     </string>
+    <string name="social_qn_3_women_group_name">Name of the Women Group</string>
+    <string name="social_qn_3_women_group_village">Village / subcounty</string>
 </resources>
