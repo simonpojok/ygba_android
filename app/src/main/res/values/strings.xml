@@ -246,4 +246,8 @@
     </string>
     <string name="social_qn_3_women_group_name">Name of the Women Group</string>
     <string name="social_qn_3_women_group_village">Village / subcounty</string>
+    <string name="social_qn_3_women_group_number_text">Number of Group members</string>
+    <string name="social_qn_3_females_text">Females</string>
+    <string name="social_qn_3_males_number_text">Males</string>
+    <string name="social_qn_3_amount_received_text">Amount Received</string>
 </resources>
