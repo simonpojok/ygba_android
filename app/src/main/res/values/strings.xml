@@ -235,4 +235,9 @@
     <string name="social_form_description">Community Budget Performance And Service Delivery Tracking Tool</string>
     <string name="social_question_2_text">2 Budget receipt date: ( attach copy of the bank statement )</string>
     <string name="social_amount_expected_label">Expected / Approved</string>
+    <string name="social_amount_received">Amount Received</string>
+    <string name="social_date_received">Date Received</string>
+    <string name="social_date_withdrawn">Date withdrawn</string>
+    <string name="social_com_mobilization">Community Mobilization</string>
+    <string name="social_other">Other eg FAL/YLP/UWEP</string>
 </resources>

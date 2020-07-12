@@ -19,6 +19,7 @@ public class SocialDevelopmentActivity extends AppCompatActivity {
     private EditText divisionTextEdit;
     private EditText fullNameTextEdit;
     private EditText agentTelEditText;
+    private EditText communityExpectedAmountEditText;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -37,5 +38,7 @@ public class SocialDevelopmentActivity extends AppCompatActivity {
         divisionTextEdit = findViewById(R.id.division_text_edit);
         fullNameTextEdit = findViewById(R.id.ygb_agent_name_edit_view);
         agentTelEditText = findViewById(R.id.ygb_agent_tel_edit_view);
+        communityExpectedAmountEditText = findViewById(R.id.community_expected_amount_edit_text);
+
     }
 }
