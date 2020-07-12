@@ -228,7 +228,7 @@
     <string name="monthly">Monthly</string>
     <string name="termly">Termly</string>
     <string name="others">Others</string>
-    <string name="education_question_8_5_text">8.5 Is the school managemnet committe trained ?</string>
+    <string name="education_question_8_5_text">8.5 Is the school management committe trained ?</string>
     <string name="not_sure">Not Sure</string>
     <string name="education_question_8_5_others_text">List any other obervations or Challenges</string>
     <string name="education_sector_social_development">SOCIAL DEVELOPMENT SECTOR</string>
@@ -240,4 +240,5 @@
     <string name="social_date_withdrawn">Date withdrawn</string>
     <string name="social_com_mobilization">Community Mobilization</string>
     <string name="social_other">Other eg FAL/YLP/UWEP</string>
+    <string name="social_qn_3_text">3.  Are the women empowerment programs functional ?</string>
 </resources>
