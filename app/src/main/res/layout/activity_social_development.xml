@@ -302,6 +302,7 @@
                     android:textSize="15sp"
                     tools:ignore="LabelFor" />
                 <EditText
+                    android:editable="false"
                     android:layout_marginHorizontal="10dp"
                     android:layout_row="1"
                     android:layout_column="3"
@@ -317,6 +318,7 @@
                     android:textSize="15sp"
                     tools:ignore="LabelFor" />
                 <EditText
+                    android:editable="false"
                     android:layout_marginHorizontal="10dp"
                     android:layout_row="1"
                     android:layout_column="4"
@@ -374,6 +376,7 @@
                     android:textSize="15sp"
                     tools:ignore="LabelFor" />
                 <EditText
+                    android:editable="false"
                     android:layout_marginHorizontal="10dp"
                     android:layout_row="2"
                     android:layout_column="3"
@@ -389,7 +392,7 @@
                     android:textSize="15sp"
                     tools:ignore="LabelFor" />
                 <EditText
-                    android:enabled="false"
+                    android:editable="false"
                     android:layout_marginHorizontal="10dp"
                     android:layout_row="2"
                     android:layout_column="4"
