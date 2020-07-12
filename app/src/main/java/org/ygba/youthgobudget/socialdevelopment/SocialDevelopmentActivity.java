@@ -8,6 +8,7 @@ import androidx.lifecycle.ViewModelProvider;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.AdapterView;
 import android.widget.EditText;
 import android.widget.RadioGroup;
 import android.widget.Spinner;
@@ -21,7 +22,8 @@ import org.ygba.youthgobudget.dialogs.DatePickerActivity;
 
 import java.util.List;
 
-public class SocialDevelopmentActivity extends AppCompatActivity implements Validator.ValidationListener {
+public class SocialDevelopmentActivity extends AppCompatActivity implements Validator.ValidationListener,
+        AdapterView.OnItemSelectedListener {
     private final int OTHER_DATE_WITHDRAWN_REQUEST_CODE = 1;
     private final int OTHER_DATE_RECEIVED_REQUEST_CODE = 2;
     private final int COMMUNITY_DATE_RECEIVED_REQUEST_CODE = 4;
@@ -124,6 +126,9 @@ public class SocialDevelopmentActivity extends AppCompatActivity implements Vali
     private EditText sQuestion7ChallengerObservations;
     private CardView saveFormData;
     private Validator validator;
+
+    private final String[] financialYears = {"I", "II", "III", "IV", "V", "VI", "VII"};
+    private String selectedFinancialYear;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -339,5 +344,15 @@ public class SocialDevelopmentActivity extends AppCompatActivity implements Vali
                 ( (EditText) view).setError(message);
             }
         }
+    }
+
+    @Override
+    public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l) {
+
+    }
+
+    @Override
+    public void onNothingSelected(AdapterView<?> adapterView) {
+
     }
 }
