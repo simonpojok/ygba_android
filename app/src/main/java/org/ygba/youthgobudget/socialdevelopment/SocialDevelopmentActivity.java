@@ -48,6 +48,11 @@ public class SocialDevelopmentActivity extends AppCompatActivity {
     private EditText sQuestion3GroupNumberFemales2;
     private EditText sQuestion3GroupNumberMales2;
     private EditText sQuestion3GroupAmountReceived2;
+    private EditText sQuestion3GroupName3;
+    private EditText sQuestion3GroupVillage3;
+    private EditText sQuestion3GroupNumberFemales3;
+    private EditText sQuestion3GroupNumberMales3;
+    private EditText sQuestion3GroupAmountReceived3;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -117,11 +122,16 @@ public class SocialDevelopmentActivity extends AppCompatActivity {
         sQuestion3GroupNumberFemales1 = findViewById(R.id.social_q_3_women_group_number_females_1);
         sQuestion3GroupNumberMales1 = findViewById(R.id.social_q_3_women_group_number_males_1);
         sQuestion3GroupAmountReceived1 = findViewById(R.id.social_q_3_women_group_amount_received_1);
-        sQuestion3GroupName1 = findViewById(R.id.social_q_3_women_group_name_2);
-        sQuestion3GroupVillage1 = findViewById(R.id.social_q_3_women_group_village_2);
-        sQuestion3GroupNumberFemales1 = findViewById(R.id.social_q_3_women_group_number_females_2);
-        sQuestion3GroupNumberMales1 = findViewById(R.id.social_q_3_women_group_number_males_2);
-        sQuestion3GroupAmountReceived1 = findViewById(R.id.social_q_3_women_group_amount_received_2);
+        sQuestion3GroupName2 = findViewById(R.id.social_q_3_women_group_name_2);
+        sQuestion3GroupVillage2 = findViewById(R.id.social_q_3_women_group_village_2);
+        sQuestion3GroupNumberFemales2 = findViewById(R.id.social_q_3_women_group_number_females_2);
+        sQuestion3GroupNumberMales2 = findViewById(R.id.social_q_3_women_group_number_males_2);
+        sQuestion3GroupAmountReceived2 = findViewById(R.id.social_q_3_women_group_amount_received_2);
+        sQuestion3GroupName3 = findViewById(R.id.social_q_3_women_group_name_3);
+        sQuestion3GroupVillage3 = findViewById(R.id.social_q_3_women_group_village_3);
+        sQuestion3GroupNumberFemales3 = findViewById(R.id.social_q_3_women_group_number_females_3);
+        sQuestion3GroupNumberMales3 = findViewById(R.id.social_q_3_women_group_number_males_3);
+        sQuestion3GroupAmountReceived3 = findViewById(R.id.social_q_3_women_group_amount_received_3);
 
     }
 
