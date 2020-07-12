@@ -475,7 +475,7 @@
 
             <GridLayout
                 android:columnCount="5"
-                android:rowCount="6"
+                android:rowCount="9"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal">
@@ -927,6 +927,82 @@
                     android:layout_marginVertical="5dp"
                     android:inputType="number"
                     android:id="@+id/social_q_3_women_group_number_amount_received_5"
+                    android:layout_width="200dp"
+                    android:layout_height="40dp"
+                    android:textSize="15sp"
+                    android:background="@drawable/edit_text_style"
+                    android:paddingStart="5dp"
+                    android:paddingEnd="5dp" />
+
+<!--                g 6 row 7-->
+
+                <EditText
+                    android:layout_column="0"
+                    android:layout_row="7"
+                    android:gravity="start"
+                    android:layout_marginVertical="5dp"
+                    android:inputType="text"
+                    android:id="@+id/social_q_3_women_group_name_6"
+                    android:layout_width="200dp"
+                    android:layout_height="40dp"
+                    android:textSize="15sp"
+                    android:background="@drawable/edit_text_style"
+                    android:paddingStart="5dp"
+                    android:paddingEnd="5dp" />
+
+                <EditText
+                    android:layout_column="1"
+                    android:layout_row="7"
+                    android:gravity="start"
+                    android:layout_marginHorizontal="5dp"
+                    android:layout_marginVertical="5dp"
+                    android:inputType="text"
+                    android:id="@+id/social_q_3_women_group_village_6"
+                    android:layout_width="200dp"
+                    android:layout_height="40dp"
+                    android:textSize="15sp"
+                    android:background="@drawable/edit_text_style"
+                    android:paddingStart="5dp"
+                    android:paddingEnd="5dp" />
+
+                <EditText
+                    android:layout_column="3"
+                    android:layout_row="7"
+                    android:gravity="center"
+                    android:layout_marginHorizontal="5dp"
+                    android:layout_marginVertical="5dp"
+                    android:inputType="number"
+                    android:id="@+id/social_q_3_women_group_number_males_6"
+                    android:layout_width="200dp"
+                    android:layout_height="40dp"
+                    android:textSize="15sp"
+                    android:background="@drawable/edit_text_style"
+                    android:paddingStart="5dp"
+                    android:paddingEnd="5dp" />
+
+                <EditText
+                    android:layout_column="2"
+                    android:layout_row="7"
+                    android:gravity="center"
+                    android:layout_marginHorizontal="5dp"
+                    android:layout_marginVertical="5dp"
+                    android:inputType="number"
+                    android:id="@+id/social_q_3_women_group_number_females_6"
+                    android:layout_width="200dp"
+                    android:layout_height="40dp"
+                    android:textSize="15sp"
+                    android:background="@drawable/edit_text_style"
+                    android:paddingStart="5dp"
+                    android:paddingEnd="5dp" />
+
+                <EditText
+                    android:layout_column="4"
+                    android:layout_row="7"
+                    android:gravity="center"
+                    android:layout_marginHorizontal="5dp"
+                    android:layout_marginVertical="5dp"
+                    android:inputType="number"
+                    android:id="@+id/social_q_3_women_group_number_amount_received_6"
                     android:layout_width="200dp"
                     android:layout_height="40dp"
                     android:textSize="15sp"
