@@ -26,6 +26,7 @@ public class HomeFragment extends Fragment {
     private CardView cv_education;
     private OnAgricultureIconClickListener agricultureIconClickListener;
     private OnEducationIconClickListener onEducationIconClickListener;
+    private OnSocialDevelopmentIconClickListener socialDevelopmentIconClickListener;
 
     private HomeViewModel homeViewModel;
 
@@ -34,6 +35,7 @@ public class HomeFragment extends Fragment {
         super.onAttach(context);
         agricultureIconClickListener = (OnAgricultureIconClickListener) context;
         onEducationIconClickListener = (OnEducationIconClickListener) context;
+        socialDevelopmentIconClickListener = (OnSocialDevelopmentIconClickListener) context;
     }
 
     public View onCreateView(@NonNull LayoutInflater inflater,
@@ -72,5 +74,9 @@ public class HomeFragment extends Fragment {
 
     public static interface OnEducationIconClickListener {
         public void onEducationIconClick();
+    }
+
+    public static interface OnSocialDevelopmentIconClickListener {
+        public void onSocialDevelopmentIconClick();
     }
 }
