@@ -250,7 +250,7 @@
 
                 <TextView
                     android:layout_row="0"
-                    android:layout_column="3"
+                    android:layout_column="4"
                     android:padding="10dp"
                     android:layout_marginTop="10dp"
                     android:layout_width="wrap_content"
@@ -286,6 +286,51 @@
                     android:inputType="number"
                     android:textSize="15sp"
                     tools:ignore="LabelFor" />
+                <EditText
+                    android:layout_marginHorizontal="10dp"
+                    android:layout_row="1"
+                    android:layout_column="2"
+                    android:paddingStart="5dp"
+                    android:paddingEnd="5dp"
+                    android:id="@+id/community_received_amount_edit_text"
+                    android:layout_width="200dp"
+                    android:layout_marginVertical="5dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/edit_text_style"
+                    android:autofillHints=""
+                    android:inputType="number"
+                    android:textSize="15sp"
+                    tools:ignore="LabelFor" />
+                <EditText
+                    android:layout_marginHorizontal="10dp"
+                    android:layout_row="1"
+                    android:layout_column="3"
+                    android:paddingStart="5dp"
+                    android:paddingEnd="5dp"
+                    android:id="@+id/community_date_received_edit_text"
+                    android:layout_width="200dp"
+                    android:layout_marginVertical="5dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/edit_text_style"
+                    android:autofillHints=""
+                    android:inputType="date"
+                    android:textSize="15sp"
+                    tools:ignore="LabelFor" />
+                <EditText
+                    android:layout_marginHorizontal="10dp"
+                    android:layout_row="1"
+                    android:layout_column="4"
+                    android:paddingStart="5dp"
+                    android:paddingEnd="5dp"
+                    android:id="@+id/community_date_withdrawn_edit_text"
+                    android:layout_width="200dp"
+                    android:layout_marginVertical="5dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/edit_text_style"
+                    android:autofillHints=""
+                    android:inputType="date"
+                    android:textSize="15sp"
+                    tools:ignore="LabelFor" />
 
 <!--                row 2 -->
                 <TextView
@@ -298,6 +343,66 @@
                     android:textColor="@color/white"
                     android:textSize="15sp"
                     android:textStyle="bold" />
+                <EditText
+                    android:layout_marginHorizontal="10dp"
+                    android:layout_row="2"
+                    android:layout_column="1"
+                    android:paddingStart="5dp"
+                    android:paddingEnd="5dp"
+                    android:id="@+id/other_expected_amount_edit_text"
+                    android:layout_width="200dp"
+                    android:layout_marginVertical="5dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/edit_text_style"
+                    android:autofillHints=""
+                    android:inputType="number"
+                    android:textSize="15sp"
+                    tools:ignore="LabelFor" />
+                <EditText
+                    android:layout_marginHorizontal="10dp"
+                    android:layout_row="2"
+                    android:layout_column="2"
+                    android:paddingStart="5dp"
+                    android:paddingEnd="5dp"
+                    android:id="@+id/other_received_amount_edit_text"
+                    android:layout_width="200dp"
+                    android:layout_marginVertical="5dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/edit_text_style"
+                    android:autofillHints=""
+                    android:inputType="number"
+                    android:textSize="15sp"
+                    tools:ignore="LabelFor" />
+                <EditText
+                    android:layout_marginHorizontal="10dp"
+                    android:layout_row="2"
+                    android:layout_column="3"
+                    android:paddingStart="5dp"
+                    android:paddingEnd="5dp"
+                    android:id="@+id/other_date_received_edit_text"
+                    android:layout_width="200dp"
+                    android:layout_marginVertical="5dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/edit_text_style"
+                    android:autofillHints=""
+                    android:inputType="date"
+                    android:textSize="15sp"
+                    tools:ignore="LabelFor" />
+                <EditText
+                    android:layout_marginHorizontal="10dp"
+                    android:layout_row="2"
+                    android:layout_column="4"
+                    android:paddingStart="5dp"
+                    android:paddingEnd="5dp"
+                    android:id="@+id/other_date_withdrawn_edit_text"
+                    android:layout_width="200dp"
+                    android:layout_marginVertical="5dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/edit_text_style"
+                    android:autofillHints=""
+                    android:inputType="date"
+                    android:textSize="15sp"
+                    tools:ignore="LabelFor" />
 
             </GridLayout>
         </HorizontalScrollView>

@@ -20,6 +20,13 @@ public class SocialDevelopmentActivity extends AppCompatActivity {
     private EditText fullNameTextEdit;
     private EditText agentTelEditText;
     private EditText communityExpectedAmountEditText;
+    private EditText communityReceivedAmountEditText;
+    private EditText communityDateReceivedEditText;
+    private EditText comDateWithdrawnEditText;
+    private EditText otherExpectedAmountEditText;
+    private EditText otherReceivedAmountEditText;
+    private EditText otherDateReceivedEditText;
+    private EditText otherDateWithdrawnEditText;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -39,6 +46,13 @@ public class SocialDevelopmentActivity extends AppCompatActivity {
         fullNameTextEdit = findViewById(R.id.ygb_agent_name_edit_view);
         agentTelEditText = findViewById(R.id.ygb_agent_tel_edit_view);
         communityExpectedAmountEditText = findViewById(R.id.community_expected_amount_edit_text);
+        communityReceivedAmountEditText = findViewById(R.id.community_received_amount_edit_text);
+        communityDateReceivedEditText = findViewById(R.id.community_date_received_edit_text);
+        comDateWithdrawnEditText = findViewById(R.id.community_date_withdrawn_edit_text);
+        otherExpectedAmountEditText = findViewById(R.id.other_expected_amount_edit_text);
+        otherReceivedAmountEditText = findViewById(R.id.other_received_amount_edit_text);
+        otherDateReceivedEditText = findViewById(R.id.other_date_received_edit_text);
+        otherDateWithdrawnEditText =  findViewById(R.id.other_date_withdrawn_edit_text);
 
     }
 }
