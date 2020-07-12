@@ -57,4 +57,15 @@ public class YGBARepository {
             }
         });
     }
+
+    public LiveData<List<SocialDevelopmentQuestion>> getAllSocialDevelopmentQuestions() throws ExecutionException, InterruptedException {
+        Callable<LiveData<List<SocialDevelopmentQuestion>>> liveDataCallable = new Callable<LiveData<List<SocialDevelopmentQuestion>>>() {
+            @Override
+            public LiveData<List<SocialDevelopmentQuestion>> call() throws Exception {
+                return ygbDatabase.socialDevelopmentDao().getAllSocialDevelopmentQuestions();
+            }
+        };
+
+        return YGBDatabase.db_executor.submit(liveDataCallable).get();
+    }
 }
