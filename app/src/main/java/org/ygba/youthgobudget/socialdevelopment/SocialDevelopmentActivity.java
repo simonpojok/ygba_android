@@ -68,6 +68,11 @@ public class SocialDevelopmentActivity extends AppCompatActivity {
     private EditText sQuestion3GroupNumberFemales6;
     private EditText sQuestion3GroupNumberMales6;
     private EditText sQuestion3GroupAmountReceived6;
+    private EditText sQuestion3GroupName7;
+    private EditText sQuestion3GroupVillage7;
+    private EditText sQuestion3GroupNumberFemales7;
+    private EditText sQuestion3GroupNumberMales7;
+    private EditText sQuestion3GroupAmountReceived7;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -162,6 +167,11 @@ public class SocialDevelopmentActivity extends AppCompatActivity {
         sQuestion3GroupNumberFemales6 = findViewById(R.id.social_q_3_women_group_number_females_6);
         sQuestion3GroupNumberMales6 = findViewById(R.id.social_q_3_women_group_number_males_6);
         sQuestion3GroupAmountReceived6 = findViewById(R.id.social_q_3_women_group_amount_received_6);
+        sQuestion3GroupName7 = findViewById(R.id.social_q_3_women_group_name_7);
+        sQuestion3GroupVillage7 = findViewById(R.id.social_q_3_women_group_village_7);
+        sQuestion3GroupNumberFemales7 = findViewById(R.id.social_q_3_women_group_number_females_7);
+        sQuestion3GroupNumberMales7 = findViewById(R.id.social_q_3_women_group_number_males_7);
+        sQuestion3GroupAmountReceived7 = findViewById(R.id.social_q_3_women_group_amount_received_7);
 
     }
 
