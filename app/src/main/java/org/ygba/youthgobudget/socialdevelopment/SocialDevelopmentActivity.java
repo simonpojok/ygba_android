@@ -41,6 +41,7 @@ public class SocialDevelopmentActivity extends AppCompatActivity {
     private EditText sQuestion3GroupName1;
     private EditText sQuestion3GroupVillage1;
     private EditText sQuestion3GroupNumberFemales1;
+    private EditText sQuestion3GroupNumberMales1;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -108,6 +109,7 @@ public class SocialDevelopmentActivity extends AppCompatActivity {
         sQuestion3GroupName1 = findViewById(R.id.social_q_3_women_group_name_1);
         sQuestion3GroupVillage1 = findViewById(R.id.social_q_3_women_group_village_1);
         sQuestion3GroupNumberFemales1 = findViewById(R.id.social_q_3_women_group_number_females_1);
+        sQuestion3GroupNumberMales1 = findViewById(R.id.social_q_3_women_group_number_males_1);
 
     }
 
