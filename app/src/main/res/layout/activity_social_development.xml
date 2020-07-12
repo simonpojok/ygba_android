@@ -1152,64 +1152,65 @@
 
             </GridLayout>
         </HorizontalScrollView>
+
+        <!--        question 4 1 -->
+        <TextView
+            android:layout_marginTop="10dp"
+            android:labelFor="@id/division_text_edit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/social_qn_4_text"
+            android:textSize="15sp"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+
+        <RadioGroup
+            android:layout_marginVertical="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:id="@+id/social_qn_4_radio_group">
+
+            <RadioButton
+                android:layout_marginEnd="10dp"
+                android:checked="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/social_qn_4_radio_button_yes"
+                android:textSize="15sp"
+                android:textColor="@color/white"
+                android:text="@string/yes"/>
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/social_qn_4_radio_button_no"
+                android:textSize="15sp"
+                android:textColor="@color/white"
+                android:text="@string/no"/>
+        </RadioGroup>
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/social_qn_4_text_if_yes"
+            android:textSize="15sp"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+
+        <EditText
+            android:gravity="center"
+            android:layout_marginVertical="10dp"
+            android:inputType="number"
+            android:id="@+id/social_q_4_youth_list"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:textSize="15sp"
+            android:background="@drawable/edit_text_style"
+            android:paddingStart="5dp"
+            android:paddingEnd="5dp" />
     </LinearLayout>
 
-    <!--        question 4 1 -->
-    <TextView
-        android:layout_marginTop="10dp"
-        android:labelFor="@id/division_text_edit"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/social_qn_4_text"
-        android:textSize="15sp"
-        android:textColor="@color/white"
-        android:textStyle="bold" />
-
-    <RadioGroup
-        android:layout_marginVertical="5dp"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:id="@+id/social_qn_4_radio_group">
-
-        <RadioButton
-            android:layout_marginEnd="10dp"
-            android:checked="true"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/social_qn_4_radio_button_yes"
-            android:textSize="15sp"
-            android:textColor="@color/white"
-            android:text="@string/yes"/>
-
-        <RadioButton
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/social_qn_4_radio_button_no"
-            android:textSize="15sp"
-            android:textColor="@color/white"
-            android:text="@string/no"/>
-    </RadioGroup>
-
-    <TextView
-        android:layout_marginTop="10dp"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/social_qn_4_text_if_yes"
-        android:textSize="15sp"
-        android:textColor="@color/white"
-        android:textStyle="bold" />
-
-    <EditText
-        android:gravity="center"
-        android:layout_marginVertical="10dp"
-        android:inputType="number"
-        android:id="@+id/social_q_4_youth_list"
-        android:layout_width="match_parent"
-        android:layout_height="40dp"
-        android:textSize="15sp"
-        android:background="@drawable/edit_text_style"
-        android:paddingStart="5dp"
-        android:paddingEnd="5dp" />
 
 </ScrollView>

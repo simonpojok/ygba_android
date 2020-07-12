@@ -73,6 +73,8 @@ public class SocialDevelopmentActivity extends AppCompatActivity {
     private EditText sQuestion3GroupNumberFemales7;
     private EditText sQuestion3GroupNumberMales7;
     private EditText sQuestion3GroupAmountReceived7;
+    private RadioGroup socialQn4RadioGroup;
+    private EditText sQ4YouthList;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -172,6 +174,8 @@ public class SocialDevelopmentActivity extends AppCompatActivity {
         sQuestion3GroupNumberFemales7 = findViewById(R.id.social_q_3_women_group_number_females_7);
         sQuestion3GroupNumberMales7 = findViewById(R.id.social_q_3_women_group_number_males_7);
         sQuestion3GroupAmountReceived7 = findViewById(R.id.social_q_3_women_group_amount_received_7);
+        socialQn4RadioGroup = findViewById(R.id.social_qn_4_radio_group);
+        sQ4YouthList = findViewById(R.id.social_q_4_youth_list);
 
     }
 
@@ -203,6 +207,13 @@ public class SocialDevelopmentActivity extends AppCompatActivity {
 
     private String getQ3ObjectiveAnswer() {
         if (socialQn3RadioGroup.getCheckedRadioButtonId() == R.id.social_qn_3_radio_button_yes) {
+            return "Yes";
+        }
+        return "No";
+    }
+
+    private String getQ4ObjectiveAnswer() {
+        if (socialQn4RadioGroup.getCheckedRadioButtonId() == R.id.social_qn_4_radio_button_yes) {
             return "Yes";
         }
         return "No";
