@@ -8,6 +8,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
+import android.widget.RadioGroup;
 import android.widget.Spinner;
 import android.widget.TextView;
 
@@ -35,6 +36,7 @@ public class SocialDevelopmentActivity extends AppCompatActivity {
     private EditText otherReceivedAmountEditText;
     private EditText otherDateReceivedEditText;
     private EditText otherDateWithdrawnEditText;
+    private RadioGroup socialQn3RadioGroup;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -97,6 +99,7 @@ public class SocialDevelopmentActivity extends AppCompatActivity {
         otherDateReceivedEditText.setInputType(View.AUTOFILL_TYPE_NONE);
         otherDateWithdrawnEditText =  findViewById(R.id.other_date_withdrawn_edit_text);
         otherDateWithdrawnEditText.setInputType(View.AUTOFILL_TYPE_NONE);
+        socialQn3RadioGroup = findViewById(R.id.social_qn_3_radio_group);
 
     }
 
@@ -124,5 +127,12 @@ public class SocialDevelopmentActivity extends AppCompatActivity {
                 default:
             }
         }
+    }
+
+    private String getQ3ObjectiveAnswer() {
+        if (socialQn3RadioGroup.getCheckedRadioButtonId() == R.id.social_qn_3_radio_button_yes) {
+            return "Yes";
+        }
+        return "No";
     }
 }
