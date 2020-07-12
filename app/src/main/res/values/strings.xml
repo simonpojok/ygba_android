@@ -208,4 +208,11 @@
     <string name="education_question_6_1_text">6.1  How many permanent classroom blocks are at the school?</string>
     <string name="education_question_6_2_text">6.2  How many desks are in the school at the time of the visit ?</string>
     <string name="education_question_6_3_text">6.3   What is the pupil desk ratio ?</string>
+    <string name="education_question_7_introduction_text">7.0 STAFFING OF THE SCHOOL:</string>
+    <string name="education_question_7_0_present_teachers_text">Total No of Teachers Enrolled</string>
+    <string name="education_question_7_0_present_at_visit_teachers_text">No Of Teachers Present at time of visit</string>
+    <string name="education_question_7_0_enrolled_teachers_male_text">Male</string>
+    <string name="education_question_7_0_enrolled_teachers_female_text">Female</string>
+    <string name="education_question_7_0_enrolled_teachers_male_present_text">Male</string>
+    <string name="education_question_7_0_enrolled_teachers_female_present_text">Female</string>
 </resources>
