@@ -202,4 +202,10 @@
     <string name="question_5_2_pwd">Specialized PWD toilet / latrine</string>
     <string name="question_5_2_none">None</string>
     <string name="question_5_2_others">Others ( specify )</string>
+    <string name="education_question_5_3_text">5.3  Is there a functional water point within or nearby the school ?</string>
+    <string name="education_question_5_3_estimate_text">" ( estimate distance )"</string>
+    <string name="education_question_6_0_introduction_text">6.0  OTHER SCHOOL INFRUSTRUCTURE</string>
+    <string name="education_question_6_1_text">6.1  How many permanent classroom blocks are at the school?</string>
+    <string name="education_question_6_2_text">6.2  How many desks are in the school at the time of the visit ?</string>
+    <string name="education_question_6_3_text">6.3   What is the pupil desk ratio ?</string>
 </resources>
