@@ -4,6 +4,7 @@ import androidx.lifecycle.LiveData;
 
 import org.ygba.youthgobudget.data.YGBDatabase;
 import org.ygba.youthgobudget.data.agriculture.AgricultureQuestion;
+import org.ygba.youthgobudget.data.socialdevelopment.SocialDevelopmentQuestion;
 
 import java.util.List;
 import java.util.concurrent.Callable;
@@ -46,5 +47,9 @@ public class YGBARepository {
         };
 
         return YGBDatabase.db_executor.submit(dataCallable).get();
+    }
+
+    public void saveSocialDevelopmentQuestion(SocialDevelopmentQuestion socialDevelopmentQuestion) {
+
     }
 }

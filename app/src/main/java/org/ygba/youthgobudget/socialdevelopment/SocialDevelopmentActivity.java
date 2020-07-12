@@ -19,6 +19,7 @@ import com.mobsandgeeks.saripaar.ValidationError;
 import com.mobsandgeeks.saripaar.Validator;
 
 import org.ygba.youthgobudget.R;
+import org.ygba.youthgobudget.data.socialdevelopment.SocialDevelopmentQuestion;
 import org.ygba.youthgobudget.dialogs.DatePickerActivity;
 
 import java.util.List;
@@ -332,11 +333,8 @@ public class SocialDevelopmentActivity extends AppCompatActivity implements Vali
 
     @Override
     public void onValidationSucceeded() {
-        saveSocialDevelopmentData();
-    }
-
-    private void saveSocialDevelopmentData() {
-
+        SocialDevelopmentQuestion socialDevelopmentQuestion = null;
+        activityViewModel.saveSocialDevelopmentQuestion(socialDevelopmentQuestion);
     }
 
     @Override
