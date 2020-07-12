@@ -88,11 +88,15 @@ public class SocialDevelopmentActivity extends AppCompatActivity {
         communityExpectedAmountEditText = findViewById(R.id.community_expected_amount_edit_text);
         communityReceivedAmountEditText = findViewById(R.id.community_received_amount_edit_text);
         communityDateReceivedEditText = findViewById(R.id.community_date_received_edit_text);
+        communityDateReceivedEditText.setInputType(View.AUTOFILL_TYPE_NONE);
         comDateWithdrawnEditText = findViewById(R.id.community_date_withdrawn_edit_text);
+        comDateWithdrawnEditText.setInputType(View.AUTOFILL_TYPE_NONE);
         otherExpectedAmountEditText = findViewById(R.id.other_expected_amount_edit_text);
         otherReceivedAmountEditText = findViewById(R.id.other_received_amount_edit_text);
         otherDateReceivedEditText = findViewById(R.id.other_date_received_edit_text);
+        otherDateReceivedEditText.setInputType(View.AUTOFILL_TYPE_NONE);
         otherDateWithdrawnEditText =  findViewById(R.id.other_date_withdrawn_edit_text);
+        otherDateWithdrawnEditText.setInputType(View.AUTOFILL_TYPE_NONE);
 
     }
 
@@ -103,15 +107,19 @@ public class SocialDevelopmentActivity extends AppCompatActivity {
             switch (requestCode) {
                 case OTHER_DATE_WITHDRAWN_REQUEST_CODE:
                     otherDateWithdrawnEditText.setText(data.getStringExtra(DatePickerActivity.SELECTED_DATE));
+                    return;
 
                 case OTHER_DATE_RECEIVED_REQUEST_CODE:
                     otherDateReceivedEditText.setText(data.getStringExtra(DatePickerActivity.SELECTED_DATE));
+                    return;
 
                 case COMMUNITY_DATE_RECEIVED_REQUEST_CODE:
                     communityDateReceivedEditText.setText(data.getStringExtra(DatePickerActivity.SELECTED_DATE));
+                    return;
 
                 case COMMUNITY_DATE_WITHDRAWN_REQUEST_CODE:
                     comDateWithdrawnEditText.setText(data.getStringExtra(DatePickerActivity.SELECTED_DATE));
+                    return;
 
                 default:
             }

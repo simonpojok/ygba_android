@@ -26,7 +26,7 @@ public class DatePickerActivity extends Activity {
         okButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                String date_string = datePicker.getDayOfMonth() + "/" + datePicker.getMonth() + datePicker.getYear();
+                String date_string = datePicker.getDayOfMonth() + "/" + datePicker.getMonth() + "/" + datePicker.getYear();
                 Intent intent = new Intent();
                 intent.putExtra(SELECTED_DATE, date_string);
                 setResult(RESULT_OK, intent);
