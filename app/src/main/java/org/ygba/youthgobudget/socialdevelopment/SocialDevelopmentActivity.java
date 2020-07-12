@@ -9,6 +9,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
+import android.widget.ArrayAdapter;
 import android.widget.EditText;
 import android.widget.RadioGroup;
 import android.widget.Spinner;
@@ -184,6 +185,9 @@ public class SocialDevelopmentActivity extends AppCompatActivity implements Vali
     private void initViews() {
         socialDateTextView = findViewById(R.id.social_date_text_view);
         financialYearSpinner = findViewById(R.id.financial_year_spinner);
+        ArrayAdapter<String> aa=new ArrayAdapter<String>(this, android.R.layout.simple_spinner_item, financialYears);
+        aa.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        financialYearSpinner.setAdapter(aa);
         villageTextEdit = findViewById(R.id.village_text_edit);
         parishTextEdit = findViewById(R.id.parish_text_edit);
         divisionTextEdit = findViewById(R.id.division_text_edit);
@@ -348,11 +352,11 @@ public class SocialDevelopmentActivity extends AppCompatActivity implements Vali
 
     @Override
     public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l) {
-
+        selectedFinancialYear = financialYears[i];
     }
 
     @Override
     public void onNothingSelected(AdapterView<?> adapterView) {
-
+        selectedFinancialYear = "";
     }
 }
