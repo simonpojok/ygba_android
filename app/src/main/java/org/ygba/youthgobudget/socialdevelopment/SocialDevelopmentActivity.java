@@ -31,7 +31,7 @@ public class SocialDevelopmentActivity extends AppCompatActivity {
     private EditText otherExpectedAmountEditText;
     private EditText otherReceivedAmountEditText;
     private EditText otherDateReceivedEditText;
-    private EditText otherDateWithdrawnEditText;
+    private TextView otherDateWithdrawnEditText;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -74,7 +74,8 @@ public class SocialDevelopmentActivity extends AppCompatActivity {
 
     @Override
     protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
-        if ((data != null) && (resultCode == RESULT_OK )) {
+        super.onActivityResult(requestCode, resultCode, data);
+        if ((data != null) && (resultCode == RESULT_OK)) {
             switch (requestCode) {
                 case COMMUNITY_DATE_WITHDRAWN_REQUEST_CODE:
                     otherDateWithdrawnEditText.setText(data.getStringExtra(DatePickerActivity.SELECTED_DATE));
