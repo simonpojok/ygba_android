@@ -560,9 +560,9 @@
                 <EditText
                     android:layout_column="0"
                     android:layout_row="2"
-                    android:gravity="center"
+                    android:gravity="start"
                     android:layout_marginVertical="5dp"
-                    android:inputType="textMultiLine"
+                    android:inputType="text"
                     android:id="@+id/social_q_3_women_group_name_1"
                     android:layout_width="200dp"
                     android:layout_height="40dp"
@@ -574,10 +574,10 @@
                 <EditText
                     android:layout_column="1"
                     android:layout_row="2"
-                    android:gravity="center"
+                    android:gravity="start"
                     android:layout_marginHorizontal="5dp"
                     android:layout_marginVertical="5dp"
-                    android:inputType="textMultiLine"
+                    android:inputType="text"
                     android:id="@+id/social_q_3_women_group_village_1"
                     android:layout_width="200dp"
                     android:layout_height="40dp"
@@ -624,6 +624,82 @@
                     android:layout_marginVertical="5dp"
                     android:inputType="number"
                     android:id="@+id/social_q_3_women_group_number_amount_received_1"
+                    android:layout_width="200dp"
+                    android:layout_height="40dp"
+                    android:textSize="15sp"
+                    android:background="@drawable/edit_text_style"
+                    android:paddingStart="5dp"
+                    android:paddingEnd="5dp" />
+
+<!--                row 3 -->
+
+                <EditText
+                    android:layout_column="0"
+                    android:layout_row="3"
+                    android:gravity="start"
+                    android:layout_marginVertical="5dp"
+                    android:inputType="text"
+                    android:id="@+id/social_q_3_women_group_name_2"
+                    android:layout_width="200dp"
+                    android:layout_height="40dp"
+                    android:textSize="15sp"
+                    android:background="@drawable/edit_text_style"
+                    android:paddingStart="5dp"
+                    android:paddingEnd="5dp" />
+
+                <EditText
+                    android:layout_column="1"
+                    android:layout_row="2"
+                    android:gravity="start"
+                    android:layout_marginHorizontal="5dp"
+                    android:layout_marginVertical="5dp"
+                    android:inputType="text"
+                    android:id="@+id/social_q_3_women_group_village_2"
+                    android:layout_width="200dp"
+                    android:layout_height="40dp"
+                    android:textSize="15sp"
+                    android:background="@drawable/edit_text_style"
+                    android:paddingStart="5dp"
+                    android:paddingEnd="5dp" />
+
+                <EditText
+                    android:layout_column="3"
+                    android:layout_row="3"
+                    android:gravity="center"
+                    android:layout_marginHorizontal="5dp"
+                    android:layout_marginVertical="5dp"
+                    android:inputType="number"
+                    android:id="@+id/social_q_3_women_group_number_males_2"
+                    android:layout_width="200dp"
+                    android:layout_height="40dp"
+                    android:textSize="15sp"
+                    android:background="@drawable/edit_text_style"
+                    android:paddingStart="5dp"
+                    android:paddingEnd="5dp" />
+
+                <EditText
+                    android:layout_column="2"
+                    android:layout_row="3"
+                    android:gravity="center"
+                    android:layout_marginHorizontal="5dp"
+                    android:layout_marginVertical="5dp"
+                    android:inputType="number"
+                    android:id="@+id/social_q_3_women_group_number_females_2"
+                    android:layout_width="200dp"
+                    android:layout_height="40dp"
+                    android:textSize="15sp"
+                    android:background="@drawable/edit_text_style"
+                    android:paddingStart="5dp"
+                    android:paddingEnd="5dp" />
+
+                <EditText
+                    android:layout_column="4"
+                    android:layout_row="3"
+                    android:gravity="center"
+                    android:layout_marginHorizontal="5dp"
+                    android:layout_marginVertical="5dp"
+                    android:inputType="number"
+                    android:id="@+id/social_q_3_women_group_number_amount_received_2"
                     android:layout_width="200dp"
                     android:layout_height="40dp"
                     android:textSize="15sp"
