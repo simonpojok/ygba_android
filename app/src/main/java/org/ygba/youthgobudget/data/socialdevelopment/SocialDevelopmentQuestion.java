@@ -175,4 +175,109 @@ public class SocialDevelopmentQuestion {
 
     @ColumnInfo(name = SocialDevelopmentConstants.Q4_LIVELIHOOD_OBJECTIVE_REASON)
     private String q4LivelihoodObjectiveReason;
+
+    @ColumnInfo(name = SocialDevelopmentConstants.Q4_YOUTH_GROUP_1_NAME)
+    private String q4YouthGroup1Name;
+
+    @ColumnInfo(name = SocialDevelopmentConstants.Q4_YOUTH_GROUP_1_VILLAGE)
+    private String q4YouthGroup1Village;
+
+    @ColumnInfo(name = SocialDevelopmentConstants.Q4_YOUTH_GROUP_1_MALE_NUMBER)
+    private String q4YouthGroup1MaleNumber;
+
+    @ColumnInfo(name = SocialDevelopmentConstants.Q4_YOUTH_GROUP_1_FEMALE_NUMBER)
+    private String q4YouthGroup1FemaleNumber;
+
+    @ColumnInfo(name = SocialDevelopmentConstants.Q4_YOUTH_GROUP_1_AMOUNT_RECEIVED)
+    private String q4YouthGroup1AmountReceived;
+
+    @ColumnInfo(name = SocialDevelopmentConstants.Q4_YOUTH_GROUP_2_NAME)
+    private String q4YouthGroup2Name;
+
+    @ColumnInfo(name = SocialDevelopmentConstants.Q4_YOUTH_GROUP_2_VILLAGE)
+    private String q4YouthGroup2Village;
+
+    @ColumnInfo(name = SocialDevelopmentConstants.Q4_YOUTH_GROUP_2_MALE_NUMBER)
+    private String q4YouthGroup2MaleNumber;
+
+    @ColumnInfo(name = SocialDevelopmentConstants.Q4_YOUTH_GROUP_2_FEMALE_NUMBER)
+    private String q4YouthGroup2FemaleNumber;
+
+    @ColumnInfo(name = SocialDevelopmentConstants.Q4_YOUTH_GROUP_2_AMOUNT_RECEIVED)
+    private String q4YouthGroup2AmountReceived;
+
+    @ColumnInfo(name = SocialDevelopmentConstants.Q4_YOUTH_GROUP_3_NAME)
+    private String q4YouthGroup3Name;
+
+    @ColumnInfo(name = SocialDevelopmentConstants.Q4_YOUTH_GROUP_3_VILLAGE)
+    private String q4YouthGroup3Village;
+
+    @ColumnInfo(name = SocialDevelopmentConstants.Q4_YOUTH_GROUP_3_MALE_NUMBER)
+    private String q4YouthGroup3MaleNumber;
+
+    @ColumnInfo(name = SocialDevelopmentConstants.Q4_YOUTH_GROUP_3_FEMALE_NUMBER)
+    private String q4YouthGroup3FemaleNumber;
+
+    @ColumnInfo(name = SocialDevelopmentConstants.Q4_YOUTH_GROUP_3_AMOUNT_RECEIVED)
+    private String q4YouthGroup3AmountReceived;
+
+    @ColumnInfo(name = SocialDevelopmentConstants.Q4_YOUTH_GROUP_4_NAME)
+    private String q4YouthGroup4Name;
+
+    @ColumnInfo(name = SocialDevelopmentConstants.Q4_YOUTH_GROUP_4_VILLAGE)
+    private String q4YouthGroup4Village;
+
+    @ColumnInfo(name = SocialDevelopmentConstants.Q4_YOUTH_GROUP_4_MALE_NUMBER)
+    private String q4YouthGroup4MaleNumber;
+
+    @ColumnInfo(name = SocialDevelopmentConstants.Q4_YOUTH_GROUP_4_FEMALE_NUMBER)
+    private String q4YouthGroup4FemaleNumber;
+
+    @ColumnInfo(name = SocialDevelopmentConstants.Q4_YOUTH_GROUP_4_AMOUNT_RECEIVED)
+    private String q4YouthGroup4AmountReceived;
+
+    @ColumnInfo(name = SocialDevelopmentConstants.Q4_YOUTH_GROUP_5_NAME)
+    private String q4YouthGroup5Name;
+
+    @ColumnInfo(name = SocialDevelopmentConstants.Q4_YOUTH_GROUP_5_VILLAGE)
+    private String q4YouthGroup5Village;
+
+    @ColumnInfo(name = SocialDevelopmentConstants.Q4_YOUTH_GROUP_5_MALE_NUMBER)
+    private String q4YouthGroup5MaleNumber;
+
+    @ColumnInfo(name = SocialDevelopmentConstants.Q4_YOUTH_GROUP_5_FEMALE_NUMBER)
+    private String q4YouthGroup5FemaleNumber;
+
+    @ColumnInfo(name = SocialDevelopmentConstants.Q4_YOUTH_GROUP_5_AMOUNT_RECEIVED)
+    private String q4YouthGroup5AmountReceived;
+
+    @ColumnInfo(name = SocialDevelopmentConstants.Q4_YOUTH_GROUP_6_NAME)
+    private String q4YouthGroup6Name;
+
+    @ColumnInfo(name = SocialDevelopmentConstants.Q4_YOUTH_GROUP_6_VILLAGE)
+    private String q4YouthGroup6Village;
+
+    @ColumnInfo(name = SocialDevelopmentConstants.Q4_YOUTH_GROUP_6_MALE_NUMBER)
+    private String q4YouthGroup6MaleNumber;
+
+    @ColumnInfo(name = SocialDevelopmentConstants.Q4_YOUTH_GROUP_6_FEMALE_NUMBER)
+    private String q4YouthGroup6FemaleNumber;
+
+    @ColumnInfo(name = SocialDevelopmentConstants.Q4_YOUTH_GROUP_6_AMOUNT_RECEIVED)
+    private String q4YouthGroup6AmountReceived;
+
+    @ColumnInfo(name = SocialDevelopmentConstants.Q4_YOUTH_GROUP_7_NAME)
+    private String q4YouthGroup7Name;
+
+    @ColumnInfo(name = SocialDevelopmentConstants.Q4_YOUTH_GROUP_7_VILLAGE)
+    private String q4YouthGroup7Village;
+
+    @ColumnInfo(name = SocialDevelopmentConstants.Q4_YOUTH_GROUP_7_MALE_NUMBER)
+    private String q4YouthGroup7MaleNumber;
+
+    @ColumnInfo(name = SocialDevelopmentConstants.Q4_YOUTH_GROUP_7_FEMALE_NUMBER)
+    private String q4YouthGroup7FemaleNumber;
+
+    @ColumnInfo(name = SocialDevelopmentConstants.Q4_YOUTH_GROUP_7_AMOUNT_RECEIVED)
+    private String q4YouthGroup7AmountReceived;
 }
