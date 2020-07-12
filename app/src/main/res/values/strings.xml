@@ -253,9 +253,13 @@
     <string name="social_qn_4_text">4. Is the youth livelihood program running ?</string>
     <string name="social_qn_4_text_if_yes">If yes how many youths have been supported ( obtain list of youth groups )</string>
     <string name="social_qn_4_youth_group_name">Name of youth Group</string>
-    <string name="social_qn_4_youth_group_village">Village / subcounty</string>
+    <string name="social_qn_4_youth_group_village">Village / sub county</string>
     <string name="social_qn_5_text" >
         5. How many Adult literacy training sessions have been conducted in this quarter? ( Obtain
         schedule and contact ), indicate number of people below trained
+    </string>
+    <string name="social_question_6_text">6. Are there any community groups formed and trained ( obtain list ) ?</string>
+    <string name="social_question_7_text" >
+        7. Mention any other challenges or observations affecting social development sector ?
     </string>
 </resources>
