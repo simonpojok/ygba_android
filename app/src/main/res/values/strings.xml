@@ -190,4 +190,7 @@
     <string name="education_question_5_VIP_latrine">VIP Latrine</string>
     <string name="education_question_5_FCR_latrine">Female Changing Rooms</string>
     <string name="education_question_5_Urinals">Urinals for boys</string>
+    <string name="education_question_5_1_text" >
+        5.1  Are the school toilet/latrine facilities accessible to pupils with disabilities ?
+    </string>
 </resources>
