@@ -139,4 +139,19 @@ public class SocialDevelopmentQuestion {
 
     @ColumnInfo(name = SocialDevelopmentConstants.Q3_WOMEN_GROUP_5_AMOUNT_RECEIVED)
     private String q3WomenGroup5AmountReceived;
+
+    @ColumnInfo(name = SocialDevelopmentConstants.Q3_WOMEN_GROUP_6_NAME)
+    private String q3WomanGroup6Name;
+
+    @ColumnInfo(name = SocialDevelopmentConstants.Q3_WOMEN_GROUP_6_VILLAGE)
+    private String q3WomenGroup6Village;
+
+    @ColumnInfo(name = SocialDevelopmentConstants.Q3_WOMEN_GROUP_6_MALE_NUMBER)
+    private String q3WomenGroup6MaleNumber;
+
+    @ColumnInfo(name = SocialDevelopmentConstants.Q3_WOMEN_GROUP_6_FEMALE_NUMBER)
+    private String q3WomenGroup6FemaleNumber;
+
+    @ColumnInfo(name = SocialDevelopmentConstants.Q3_WOMEN_GROUP_6_AMOUNT_RECEIVED)
+    private String q3WomenGroup6AmountReceived;
 }
