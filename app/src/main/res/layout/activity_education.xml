@@ -2680,7 +2680,7 @@
             android:textStyle="bold" />
 
         <EditText
-            android:gravity="center"
+            android:gravity="start"
             android:layout_marginVertical="5dp"
             android:inputType="date"
             android:id="@+id/eduction_question_8_2_edit_text"
@@ -2768,7 +2768,7 @@
         </RadioGroup>
 
         <EditText
-            android:gravity="center"
+            android:gravity="start"
             android:layout_marginVertical="5dp"
             android:inputType="textMultiLine"
             android:id="@+id/eduction_question_8_4_edit_text"
@@ -2832,7 +2832,7 @@
             android:textStyle="bold" />
 
         <EditText
-            android:gravity="center"
+            android:gravity="start"
             android:layout_marginVertical="5dp"
             android:inputType="textMultiLine"
             android:id="@+id/eduction_question_8_5_others_edit_text"
