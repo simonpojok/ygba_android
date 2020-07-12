@@ -9,7 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".socialdevelopment.SocialDevelopmentActivity"></activity>
+        <activity android:name=".dialogs.DatePickerActivity"></activity>
+        <activity android:name=".socialdevelopment.SocialDevelopmentActivity" />
         <activity android:name=".education.EducationActivity" />
         <activity android:name=".health.HealthActivity" />
         <activity android:name=".agriculture.AgricultureActivity" />
