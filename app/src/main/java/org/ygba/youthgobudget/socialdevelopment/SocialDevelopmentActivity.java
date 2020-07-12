@@ -107,11 +107,11 @@ public class SocialDevelopmentActivity extends AppCompatActivity {
         otherDateWithdrawnEditText.setInputType(View.AUTOFILL_TYPE_NONE);
         socialQn3RadioGroup = findViewById(R.id.social_qn_3_radio_group);
         socialQuestion3EditText = findViewById(R.id.social_q_3_women_list);
-//        sQuestion3GroupName1 = findViewById(R.id.social_q_3_women_group_name_1);
-//        sQuestion3GroupVillage1 = findViewById(R.id.social_q_3_women_group_village_1);
-//        sQuestion3GroupNumberFemales1 = findViewById(R.id.social_q_3_women_group_number_females_1);
-//        sQuestion3GroupNumberMales1 = findViewById(R.id.social_q_3_women_group_number_males_1);
-//        sQuestion3GroupAmountReceived1 = findViewById(R.id.social_q_3_women_group_number_amount_received_1);
+        sQuestion3GroupName1 = findViewById(R.id.social_q_3_women_group_name_1);
+        sQuestion3GroupVillage1 = findViewById(R.id.social_q_3_women_group_village_1);
+        sQuestion3GroupNumberFemales1 = findViewById(R.id.social_q_3_women_group_number_females_1);
+        sQuestion3GroupNumberMales1 = findViewById(R.id.social_q_3_women_group_number_males_1);
+        sQuestion3GroupAmountReceived1 = findViewById(R.id.social_q_3_women_group_amount_received_1);
 
     }
 
