@@ -31,7 +31,7 @@ public class SocialDevelopmentActivity extends AppCompatActivity {
     private EditText otherExpectedAmountEditText;
     private EditText otherReceivedAmountEditText;
     private EditText otherDateReceivedEditText;
-    private TextView otherDateWithdrawnEditText;
+    private EditText otherDateWithdrawnEditText;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
