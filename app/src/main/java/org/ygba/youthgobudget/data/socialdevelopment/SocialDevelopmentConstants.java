@@ -59,4 +59,42 @@ public class SocialDevelopmentConstants {
     public static final String Q3_WOMEN_GROUP_7_FEMALE_NUMBER = "q3_w_g_7_f_numbers";
     public static final String Q3_WOMEN_GROUP_7_AMOUNT_RECEIVED = "q3_w_g_7_a_received";
 
+    public static final String Q4_LIVELIHOOD_OBJECTIVE = "q5_li_obj";
+    public static final String Q4_LIVELIHOOD_OBJECTIVE_REASON = "q5_li_obj_reason";
+
+    public static final String Q4_YOUTH_GROUP_1_NAME = "q4_y_g_1_name";
+    public static final String Q4_YOUTH_GROUP_1_VILLAGE = "q4_Y_g_1_village";
+    public static final String Q4_YOUTH_GROUP_1_MALE_NUMBER = "q4_Y_g_1_m_numbers";
+    public static final String Q4_YOUTH_GROUP_1_FEMALE_NUMBER = "q4_Y_g_1_f_numbers";
+    public static final String Q4_YOUTH_GROUP_1_AMOUNT_RECEIVED = "q4_Y_g_1_a_received";
+    public static final String Q4_YOUTH_GROUP_2_NAME = "q4_Y_g_2_name";
+    public static final String Q4_YOUTH_GROUP_2_VILLAGE = "q4_Y_g_2_village";
+    public static final String Q4_YOUTH_GROUP_2_MALE_NUMBER = "q4_Y_g_2_m_numbers";
+    public static final String Q4_YOUTH_GROUP_2_FEMALE_NUMBER = "q4_Y_g_2_f_numbers";
+    public static final String Q4_YOUTH_GROUP_2_AMOUNT_RECEIVED = "q4_Y_g_2_a_received";
+    public static final String Q4_YOUTH_GROUP_3_NAME = "q4_Y_g_3_name";
+    public static final String Q4_YOUTH_GROUP_3_VILLAGE = "q4_Y_g_3_village";
+    public static final String Q4_YOUTH_GROUP_3_MALE_NUMBER = "q4_Y_g_3_m_numbers";
+    public static final String Q4_YOUTH_GROUP_3_FEMALE_NUMBER = "q4_4_g_3_f_numbers";
+    public static final String Q4_YOUTH_GROUP_3_AMOUNT_RECEIVED = "q4_Y_g_3_a_received";
+    public static final String Q4_YOUTH_GROUP_4_NAME = "q4_Y_g_4_name";
+    public static final String Q4_YOUTH_GROUP_4_VILLAGE = "q4_Y_g_4_village";
+    public static final String Q4_YOUTH_GROUP_4_MALE_NUMBER = "q4_Y_g_4_m_numbers";
+    public static final String Q4_YOUTH_GROUP_4_FEMALE_NUMBER = "q4_Y_g_4_f_numbers";
+    public static final String Q4_YOUTH_GROUP_4_AMOUNT_RECEIVED = "q4_Y_g_4_a_received";
+    public static final String Q4_YOUTH_GROUP_5_NAME = "q4_Y_g_5_name";
+    public static final String Q4_YOUTH_GROUP_5_VILLAGE = "q4_Y_g_5_village";
+    public static final String Q4_YOUTH_GROUP_5_MALE_NUMBER = "q4_Y_g_5_m_numbers";
+    public static final String Q4_YOUTH_GROUP_5_FEMALE_NUMBER = "q4_Y_g_5_f_numbers";
+    public static final String Q4_YOUTH_GROUP_5_AMOUNT_RECEIVED = "q4_Y_g_5_a_received";
+    public static final String Q4_YOUTH_GROUP_6_NAME = "q4_6_g_6_name";
+    public static final String Q4_YOUTH_GROUP_6_VILLAGE = "q5_Y_g_6_village";
+    public static final String Q4_YOUTH_GROUP_6_MALE_NUMBER = "q4_Y_g_6_m_numbers";
+    public static final String Q4_YOUTH_GROUP_6_FEMALE_NUMBER = "Q4_Y_g_6_f_numbers";
+    public static final String Q4_YOUTH_GROUP_6_AMOUNT_RECEIVED = "q4_Y_g_6_a_received";
+    public static final String Q4_YOUTH_GROUP_7_NAME = "q4_Y_g_7_name";
+    public static final String Q4_YOUTH_GROUP_7_VILLAGE = "q4_Y_g_7_village";
+    public static final String Q4_YOUTH_GROUP_7_MALE_NUMBER = "q4_Y_g_7_m_numbers";
+    public static final String Q4_YOUTH_GROUP_7_FEMALE_NUMBER = "q4_Y_g_7_f_numbers";
+    public static final String Q4_YOUTH_GROUP_7_AMOUNT_RECEIVED = "q4_Y_g_7_a_received";
 }

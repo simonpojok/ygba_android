@@ -169,4 +169,10 @@ public class SocialDevelopmentQuestion {
 
     @ColumnInfo(name = SocialDevelopmentConstants.Q3_WOMEN_GROUP_7_AMOUNT_RECEIVED)
     private String q3WomenGroup7AmountReceived;
+
+    @ColumnInfo(name = SocialDevelopmentConstants.Q4_LIVELIHOOD_OBJECTIVE)
+    private String q4LivelihoodObjective;
+
+    @ColumnInfo(name = SocialDevelopmentConstants.Q4_LIVELIHOOD_OBJECTIVE_REASON)
+    private String q4LivelihoodObjectiveReason;
 }
