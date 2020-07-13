@@ -274,4 +274,6 @@
     <string name="health_q_1_recurrent">Recurrent</string>
     <string name="health_q_1_development">Development</string>
     <string name="h_question_1_1_objective">"1.1 Does the health facility display budget information for public viewing in any of the following areas ? "</string>
+    <string name="h_question_1_2_text">1.2 State the period to which the budget information ralates ( e. g FY 2018 / 19 Quarter One )</string>
+    <string name="h_question_2_text">2. AVAILABILITY OF MERTERNITY SERVICES, STAFF AND FACILITIES</string>
 </resources>
