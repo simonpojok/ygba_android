@@ -569,7 +569,7 @@
             android:layout_height="wrap_content">
 
             <GridLayout
-                android:layout_width="match_parent"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
                 android:columnCount="2"
@@ -1045,7 +1045,7 @@
             android:layout_height="wrap_content">
 
             <GridLayout
-                android:columnCount="2"
+                android:columnCount="3"
                 android:rowCount="3"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -1095,7 +1095,7 @@
                     android:textSize="15sp"
                     android:id="@+id/health_live_number_deliveries"
                     android:layout_width="200dp"
-                    android:layout_height="100dp"
+                    android:layout_height="40dp"
                     android:background="@drawable/edit_text_style"
                     android:padding="5dp"
                     android:autofillHints=""
@@ -1105,7 +1105,7 @@
 
                 <TextView
                     android:layout_marginEnd="5dp"
-                    android:layout_row="1"
+                    android:layout_row="2"
                     android:layout_column="0"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -1115,7 +1115,7 @@
                     android:textStyle="bold" />
 
                 <EditText
-                    android:layout_row="1"
+                    android:layout_row="2"
                     android:layout_column="1"
                     android:gravity="center"
                     android:layout_marginVertical="5dp"
@@ -1123,7 +1123,7 @@
                     android:textSize="15sp"
                     android:id="@+id/health_still_number_deliveries"
                     android:layout_width="200dp"
-                    android:layout_height="100dp"
+                    android:layout_height="40dp"
                     android:background="@drawable/edit_text_style"
                     android:padding="5dp"
                     android:autofillHints=""
@@ -1142,7 +1142,7 @@
             android:textStyle="bold" />
 
         <EditText
-            android:gravity="center"
+            android:gravity="start"
             android:layout_marginVertical="5dp"
             android:inputType="number"
             android:textSize="15sp"
@@ -1352,6 +1352,155 @@
 <!--                row 2 -->
 
                 <TextView
+                    android:layout_row="3"
+                    android:layout_column="0"
+                    android:layout_marginVertical="5dp"
+                    android:layout_marginEnd="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/health_question_3_latrine"
+                    android:textSize="15sp"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:layout_column="1"
+                    android:layout_row="3"
+                    android:layout_marginHorizontal="5dp"
+                    android:gravity="center"
+                    android:layout_marginVertical="5dp"
+                    android:inputType="number"
+                    android:textSize="15sp"
+                    android:id="@+id/health_3_latrine_blocks"
+                    android:layout_width="200dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/edit_text_style"
+                    android:padding="5dp"
+                    android:autofillHints="" />
+
+                <EditText
+                    android:layout_column="2"
+                    android:layout_row="3"
+                    android:layout_marginHorizontal="5dp"
+                    android:gravity="center"
+                    android:layout_marginVertical="5dp"
+                    android:inputType="number"
+                    android:textSize="15sp"
+                    android:id="@+id/health_3_latrine_stances"
+                    android:layout_width="200dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/edit_text_style"
+                    android:padding="5dp"
+                    android:autofillHints="" />
+
+                <EditText
+                    android:layout_column="3"
+                    android:layout_row="3"
+                    android:layout_marginHorizontal="5dp"
+                    android:gravity="center"
+                    android:layout_marginVertical="5dp"
+                    android:inputType="number"
+                    android:textSize="15sp"
+                    android:id="@+id/health_3_latrine_patients_male_stances"
+                    android:layout_width="200dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/edit_text_style"
+                    android:padding="5dp"
+                    android:autofillHints="" />
+
+                <EditText
+                    android:layout_column="4"
+                    android:layout_row="3"
+                    android:layout_marginHorizontal="5dp"
+                    android:gravity="center"
+                    android:layout_marginVertical="5dp"
+                    android:inputType="number"
+                    android:textSize="15sp"
+                    android:id="@+id/health_3_latrine_patients_female_stances"
+                    android:layout_width="200dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/edit_text_style"
+                    android:padding="5dp"
+                    android:autofillHints="" />
+
+                <EditText
+                    android:layout_column="5"
+                    android:layout_row="3"
+                    android:layout_marginHorizontal="5dp"
+                    android:gravity="center"
+                    android:layout_marginVertical="5dp"
+                    android:inputType="number"
+                    android:textSize="15sp"
+                    android:id="@+id/health_3_latrine_staff_male_stances"
+                    android:layout_width="200dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/edit_text_style"
+                    android:padding="5dp"
+                    android:autofillHints="" />
+
+                <EditText
+                    android:layout_column="6"
+                    android:layout_row="3"
+                    android:layout_marginHorizontal="5dp"
+                    android:gravity="center"
+                    android:layout_marginVertical="5dp"
+                    android:inputType="number"
+                    android:textSize="15sp"
+                    android:id="@+id/health_3_latrine_staff_female_stances"
+                    android:layout_width="200dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/edit_text_style"
+                    android:padding="5dp"
+                    android:autofillHints="" />
+
+                <EditText
+                    android:layout_column="7"
+                    android:layout_row="3"
+                    android:layout_marginHorizontal="5dp"
+                    android:gravity="center"
+                    android:layout_marginVertical="5dp"
+                    android:inputType="number"
+                    android:textSize="15sp"
+                    android:id="@+id/health_3_latrine_staff_mixed_stances"
+                    android:layout_width="200dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/edit_text_style"
+                    android:padding="5dp"
+                    android:autofillHints="" />
+
+                <EditText
+                    android:layout_column="8"
+                    android:layout_row="3"
+                    android:layout_marginHorizontal="5dp"
+                    android:gravity="center"
+                    android:layout_marginVertical="5dp"
+                    android:inputType="number"
+                    android:textSize="15sp"
+                    android:id="@+id/health_3_latrine_functional"
+                    android:layout_width="200dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/edit_text_style"
+                    android:padding="5dp"
+                    android:autofillHints="" />
+
+                <EditText
+                    android:layout_column="9"
+                    android:layout_row="3"
+                    android:layout_marginHorizontal="5dp"
+                    android:gravity="center"
+                    android:layout_marginVertical="5dp"
+                    android:inputType="number"
+                    android:textSize="15sp"
+                    android:id="@+id/health_3_latrine_none"
+                    android:layout_width="200dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/edit_text_style"
+                    android:padding="5dp"
+                    android:autofillHints="" />
+
+<!--                row 3 -->
+
+                <TextView
                     android:layout_row="2"
                     android:layout_column="0"
                     android:layout_marginVertical="5dp"
@@ -1497,8 +1646,6 @@
                     android:background="@drawable/edit_text_style"
                     android:padding="5dp"
                     android:autofillHints="" />
-
-<!--                row 3 -->
 
             </GridLayout>
         </HorizontalScrollView>
