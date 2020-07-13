@@ -80,6 +80,9 @@ public class HealthActivity extends AppCompatActivity {
     EditText hQ4WaterTankNumberEditText;
     EditText hQ4WaterTankNumberFunctionalEditText;
     EditText hQ4WaterTankNumberNoneFunctional;
+    EditText hQ4NoneTankNumberEditText;
+    EditText hQ4NoneTankNumberFunctionalEditText;
+    EditText hQ4NoneTankNumberNoneFunctional;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -184,6 +187,9 @@ public class HealthActivity extends AppCompatActivity {
         hQ4WaterTankNumberEditText = findViewById(R.id.health_4_water_tank_number);
         hQ4WaterTankNumberFunctionalEditText = findViewById(R.id.health_4_water_tank_number_functional);
         hQ4WaterTankNumberNoneFunctional = findViewById(R.id.health_4_water_tank_number_none);
+        hQ4NoneTankNumberEditText = findViewById(R.id.health_4_none_number);
+        hQ4NoneTankNumberFunctionalEditText = findViewById(R.id.health_4_water_none_functional);
+        hQ4NoneTankNumberNoneFunctional = findViewById(R.id.health_4_none_number_none);
     }
 
 
