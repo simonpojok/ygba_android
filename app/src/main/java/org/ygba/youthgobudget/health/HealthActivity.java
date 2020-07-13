@@ -63,6 +63,13 @@ public class HealthActivity extends AppCompatActivity {
     EditText hQ3StaffLatrineMixedStances;
     EditText hQ3StaffLatrineFunctional;
     EditText hQ3StaffLatrineNone;
+    EditText hQ3FFCNumberBlocks;
+    EditText hQ3FFCNumberStances;
+    EditText hQ3PatientFFCFemaleStances;
+    EditText hQ3StaffFFCFemaleStances;
+    EditText hQ3StaffFFCMixedStances;
+    EditText hQ3StaffFFCFunctional;
+    EditText hQ3StaffFFCNone;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -134,7 +141,7 @@ public class HealthActivity extends AppCompatActivity {
         hQ2_2_VaccineEditText = findViewById(R.id.health_2_2_vaccine);
         hQ3ToiletNumberBlocks = findViewById(R.id.health_3_toilet_blocks);
         hQ3ToiletNumberStances = findViewById(R.id.health_3_toilet_stances);
-        hQ3PatientToiletMaleStances = findViewById(R.id.health_3_patients_male_stances);
+        hQ3PatientToiletMaleStances = findViewById(R.id.health_3_toilet_patients_male_stances);
         hQ3PatientToiletFemaleStances = findViewById(R.id.health_3_toilet_patients_female_stances);
         hQ3StaffToiletMaleStances = findViewById(R.id.health_3_toilet_staff_male_stances);
         hQ3StaffToiletFemaleStances = findViewById(R.id.health_3_toilet_staff_female_stances);
@@ -150,6 +157,13 @@ public class HealthActivity extends AppCompatActivity {
         hQ3StaffLatrineMixedStances = findViewById(R.id.health_3_latrine_staff_mixed_stances);
         hQ3StaffLatrineFunctional =  findViewById(R.id.health_3_latrine_functional);
         hQ3StaffLatrineNone = findViewById(R.id.health_3_latrine_none);
+        hQ3FFCNumberBlocks = findViewById(R.id.health_3_ffc_blocks);
+        hQ3FFCNumberStances = findViewById(R.id.health_3_ffc_stances);
+        hQ3PatientFFCFemaleStances = findViewById(R.id.health_3_ffc_patients_female_stances);
+        hQ3StaffFFCFemaleStances = findViewById(R.id.health_3_ffc_female_stances);
+        hQ3StaffFFCMixedStances = findViewById(R.id.health_3_ffc_staff_mixed_stances);
+        hQ3StaffFFCFunctional =  findViewById(R.id.health_3_ffc_functional);
+        hQ3StaffFFCNone = findViewById(R.id.health_3_ffc_none);
     }
 
 
