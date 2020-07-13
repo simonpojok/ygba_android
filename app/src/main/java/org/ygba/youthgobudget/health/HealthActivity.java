@@ -10,6 +10,8 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.CheckBox;
 import android.widget.EditText;
+import android.widget.RadioButton;
+import android.widget.RadioGroup;
 import android.widget.Spinner;
 import android.widget.TextView;
 
@@ -135,5 +137,11 @@ public class HealthActivity extends AppCompatActivity {
 
     private boolean getBudgetDisplayedFacilityAdamOffice() {
         return ((CheckBox) findViewById(R.id.h_q_1_1_facility_admin_notice_board)).isChecked();
+    }
+
+    private boolean getQuestion2MaternityObjective() {
+        RadioGroup radioGroup = findViewById(R.id.question_2_maternity_radio_group);
+        if (radioGroup.getCheckedRadioButtonId() == R.id.question_2_maternity_yes) return true;
+        return false;
     }
 }
