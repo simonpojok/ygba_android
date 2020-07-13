@@ -309,4 +309,5 @@
     <string name="health_question_3_toilet">Toilet</string>
     <string name="health_question_3_latrine">Latrine</string>
     <string name="health_question_3_ffc">Female Change Rooms</string>
+    <string name="health_question_3_1_label">3.1 Are the health facility /  latrine facilities accessible to patients with disabilities</string>
 </resources>
