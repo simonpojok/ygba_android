@@ -308,4 +308,5 @@
     <string name="health_question_3_none">None</string>
     <string name="health_question_3_toilet">Toilet</string>
     <string name="health_question_3_latrine">Latrine</string>
+    <string name="health_question_3_ffc">Female Change Rooms</string>
 </resources>

@@ -1349,7 +1349,156 @@
                     android:textColor="@color/white"
                     android:textStyle="bold" />
 
-<!--                row 2 -->
+<!--                row 2 toilet -->
+
+                <TextView
+                    android:layout_row="2"
+                    android:layout_column="0"
+                    android:layout_marginVertical="5dp"
+                    android:layout_marginEnd="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/health_question_3_toilet"
+                    android:textSize="15sp"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:layout_column="1"
+                    android:layout_row="2"
+                    android:layout_marginHorizontal="5dp"
+                    android:gravity="center"
+                    android:layout_marginVertical="5dp"
+                    android:inputType="number"
+                    android:textSize="15sp"
+                    android:id="@+id/health_3_toilet_blocks"
+                    android:layout_width="200dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/edit_text_style"
+                    android:padding="5dp"
+                    android:autofillHints="" />
+
+                <EditText
+                    android:layout_column="2"
+                    android:layout_row="2"
+                    android:layout_marginHorizontal="5dp"
+                    android:gravity="center"
+                    android:layout_marginVertical="5dp"
+                    android:inputType="number"
+                    android:textSize="15sp"
+                    android:id="@+id/health_3_toilet_stances"
+                    android:layout_width="200dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/edit_text_style"
+                    android:padding="5dp"
+                    android:autofillHints="" />
+
+                <EditText
+                    android:layout_column="3"
+                    android:layout_row="2"
+                    android:layout_marginHorizontal="5dp"
+                    android:gravity="center"
+                    android:layout_marginVertical="5dp"
+                    android:inputType="number"
+                    android:textSize="15sp"
+                    android:id="@+id/health_3_toilet_patients_male_stances"
+                    android:layout_width="200dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/edit_text_style"
+                    android:padding="5dp"
+                    android:autofillHints="" />
+
+                <EditText
+                    android:layout_column="4"
+                    android:layout_row="2"
+                    android:layout_marginHorizontal="5dp"
+                    android:gravity="center"
+                    android:layout_marginVertical="5dp"
+                    android:inputType="number"
+                    android:textSize="15sp"
+                    android:id="@+id/health_3_toilet_patients_female_stances"
+                    android:layout_width="200dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/edit_text_style"
+                    android:padding="5dp"
+                    android:autofillHints="" />
+
+                <EditText
+                    android:layout_column="5"
+                    android:layout_row="2"
+                    android:layout_marginHorizontal="5dp"
+                    android:gravity="center"
+                    android:layout_marginVertical="5dp"
+                    android:inputType="number"
+                    android:textSize="15sp"
+                    android:id="@+id/health_3_toilet_staff_male_stances"
+                    android:layout_width="200dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/edit_text_style"
+                    android:padding="5dp"
+                    android:autofillHints="" />
+
+                <EditText
+                    android:layout_column="6"
+                    android:layout_row="2"
+                    android:layout_marginHorizontal="5dp"
+                    android:gravity="center"
+                    android:layout_marginVertical="5dp"
+                    android:inputType="number"
+                    android:textSize="15sp"
+                    android:id="@+id/health_3_toilet_staff_female_stances"
+                    android:layout_width="200dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/edit_text_style"
+                    android:padding="5dp"
+                    android:autofillHints="" />
+
+                <EditText
+                    android:layout_column="7"
+                    android:layout_row="2"
+                    android:layout_marginHorizontal="5dp"
+                    android:gravity="center"
+                    android:layout_marginVertical="5dp"
+                    android:inputType="number"
+                    android:textSize="15sp"
+                    android:id="@+id/health_3_toilet_staff_mixed_stances"
+                    android:layout_width="200dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/edit_text_style"
+                    android:padding="5dp"
+                    android:autofillHints="" />
+
+                <EditText
+                    android:layout_column="8"
+                    android:layout_row="2"
+                    android:layout_marginHorizontal="5dp"
+                    android:gravity="center"
+                    android:layout_marginVertical="5dp"
+                    android:inputType="number"
+                    android:textSize="15sp"
+                    android:id="@+id/health_3_toilet_functional"
+                    android:layout_width="200dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/edit_text_style"
+                    android:padding="5dp"
+                    android:autofillHints="" />
+
+                <EditText
+                    android:layout_column="9"
+                    android:layout_row="2"
+                    android:layout_marginHorizontal="5dp"
+                    android:gravity="center"
+                    android:layout_marginVertical="5dp"
+                    android:inputType="number"
+                    android:textSize="15sp"
+                    android:id="@+id/health_3_toilet_none"
+                    android:layout_width="200dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/edit_text_style"
+                    android:padding="5dp"
+                    android:autofillHints="" />
+
+<!--                row 3 -->
 
                 <TextView
                     android:layout_row="3"
@@ -1498,29 +1647,29 @@
                     android:padding="5dp"
                     android:autofillHints="" />
 
-<!--                row 3 -->
+<!--                row 4 and last -->
 
                 <TextView
-                    android:layout_row="2"
+                    android:layout_row="4"
                     android:layout_column="0"
                     android:layout_marginVertical="5dp"
                     android:layout_marginEnd="5dp"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/health_question_3_toilet"
+                    android:text="@string/health_question_3_ffc"
                     android:textSize="15sp"
                     android:textColor="@color/white"
                     android:textStyle="bold" />
 
                 <EditText
                     android:layout_column="1"
-                    android:layout_row="2"
+                    android:layout_row="4"
                     android:layout_marginHorizontal="5dp"
                     android:gravity="center"
                     android:layout_marginVertical="5dp"
                     android:inputType="number"
                     android:textSize="15sp"
-                    android:id="@+id/health_3_toilet_blocks"
+                    android:id="@+id/health_3_ffc_blocks"
                     android:layout_width="200dp"
                     android:layout_height="40dp"
                     android:background="@drawable/edit_text_style"
@@ -1529,28 +1678,13 @@
 
                 <EditText
                     android:layout_column="2"
-                    android:layout_row="2"
+                    android:layout_row="4"
                     android:layout_marginHorizontal="5dp"
                     android:gravity="center"
                     android:layout_marginVertical="5dp"
                     android:inputType="number"
                     android:textSize="15sp"
-                    android:id="@+id/health_3_toilet_stances"
-                    android:layout_width="200dp"
-                    android:layout_height="40dp"
-                    android:background="@drawable/edit_text_style"
-                    android:padding="5dp"
-                    android:autofillHints="" />
-
-                <EditText
-                    android:layout_column="3"
-                    android:layout_row="2"
-                    android:layout_marginHorizontal="5dp"
-                    android:gravity="center"
-                    android:layout_marginVertical="5dp"
-                    android:inputType="number"
-                    android:textSize="15sp"
-                    android:id="@+id/health_3_patients_male_stances"
+                    android:id="@+id/health_3_ffc_stances"
                     android:layout_width="200dp"
                     android:layout_height="40dp"
                     android:background="@drawable/edit_text_style"
@@ -1565,22 +1699,7 @@
                     android:layout_marginVertical="5dp"
                     android:inputType="number"
                     android:textSize="15sp"
-                    android:id="@+id/health_3_toilet_patients_female_stances"
-                    android:layout_width="200dp"
-                    android:layout_height="40dp"
-                    android:background="@drawable/edit_text_style"
-                    android:padding="5dp"
-                    android:autofillHints="" />
-
-                <EditText
-                    android:layout_column="5"
-                    android:layout_row="2"
-                    android:layout_marginHorizontal="5dp"
-                    android:gravity="center"
-                    android:layout_marginVertical="5dp"
-                    android:inputType="number"
-                    android:textSize="15sp"
-                    android:id="@+id/health_3_toilet_staff_male_stances"
+                    android:id="@+id/health_3_ffc_patients_female_stances"
                     android:layout_width="200dp"
                     android:layout_height="40dp"
                     android:background="@drawable/edit_text_style"
@@ -1589,13 +1708,13 @@
 
                 <EditText
                     android:layout_column="6"
-                    android:layout_row="2"
+                    android:layout_row="4"
                     android:layout_marginHorizontal="5dp"
                     android:gravity="center"
                     android:layout_marginVertical="5dp"
                     android:inputType="number"
                     android:textSize="15sp"
-                    android:id="@+id/health_3_toilet_staff_female_stances"
+                    android:id="@+id/health_3_toilet_ffc_female_stances"
                     android:layout_width="200dp"
                     android:layout_height="40dp"
                     android:background="@drawable/edit_text_style"
@@ -1604,13 +1723,13 @@
 
                 <EditText
                     android:layout_column="7"
-                    android:layout_row="2"
+                    android:layout_row="4"
                     android:layout_marginHorizontal="5dp"
                     android:gravity="center"
                     android:layout_marginVertical="5dp"
                     android:inputType="number"
                     android:textSize="15sp"
-                    android:id="@+id/health_3_toilet_staff_mixed_stances"
+                    android:id="@+id/health_3_ffc_staff_mixed_stances"
                     android:layout_width="200dp"
                     android:layout_height="40dp"
                     android:background="@drawable/edit_text_style"
@@ -1619,13 +1738,13 @@
 
                 <EditText
                     android:layout_column="8"
-                    android:layout_row="2"
+                    android:layout_row="4"
                     android:layout_marginHorizontal="5dp"
                     android:gravity="center"
                     android:layout_marginVertical="5dp"
                     android:inputType="number"
                     android:textSize="15sp"
-                    android:id="@+id/health_3_toilet_functional"
+                    android:id="@+id/health_3_ffc_functional"
                     android:layout_width="200dp"
                     android:layout_height="40dp"
                     android:background="@drawable/edit_text_style"
@@ -1640,7 +1759,7 @@
                     android:layout_marginVertical="5dp"
                     android:inputType="number"
                     android:textSize="15sp"
-                    android:id="@+id/health_3_toilet_none"
+                    android:id="@+id/health_3_ffc_none"
                     android:layout_width="200dp"
                     android:layout_height="40dp"
                     android:background="@drawable/edit_text_style"
