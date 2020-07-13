@@ -273,4 +273,5 @@
     <string name="health_budget_released">Budget Released ( actual )</string>
     <string name="health_q_1_recurrent">Recurrent</string>
     <string name="health_q_1_development">Development</string>
+    <string name="h_question_1_1_objective">"1.1 Does the health facility display budget information for public viewing in any of the following areas ? "</string>
 </resources>

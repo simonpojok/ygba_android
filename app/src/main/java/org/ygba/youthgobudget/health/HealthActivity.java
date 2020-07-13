@@ -8,6 +8,7 @@ import android.content.Intent;
 import android.os.Build;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.Spinner;
 import android.widget.TextView;
@@ -120,5 +121,17 @@ public class HealthActivity extends AppCompatActivity {
                 hQ1RecurrentDateWithdrawnEditText.setText(data.getStringExtra(DatePickerActivity.SELECTED_DATE));
             }
         }
+    }
+
+    private boolean getBudgetNotDisplayOnNoticeBoard() {
+        return ((CheckBox) findViewById(R.id.h_q_1_health_not_displayed)).isChecked();
+    }
+
+    private boolean getBudgetDisplayedFacilityNoticeBoard() {
+        return ((CheckBox) findViewById(R.id.h_q_1_health_facility_notice_board)).isChecked();
+    }
+
+    private boolean getBudgetDisplayedFacilityAdamOffice() {
+        return ((CheckBox) findViewById(R.id.h_q_1_1_facility_admin_notice_board)).isChecked();
     }
 }
