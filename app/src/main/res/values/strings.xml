@@ -280,4 +280,6 @@
     <string name="general_ward">General ward</string>
     <string name="devilivery_ward">Delivery beds</string>
     <string name="delivery_beds">Delivery Beds</string>
+    <string name="family_planning_Services">Familay Planning Services</string>
+    <string name="hiv_counselling_testing">HIV Counselling, Test and Treatment</string>
 </resources>

@@ -156,4 +156,14 @@ public class HealthActivity extends AppCompatActivity {
         if (radioGroup.getCheckedRadioButtonId() == R.id.question_2_delivery_beds_yes) return true;
         return false;
     }
+    private boolean getQuestion2FamilyPlanningServicesObjective() {
+        RadioGroup radioGroup = findViewById(R.id.question_2_family_planning_Services_radio_group);
+        if (radioGroup.getCheckedRadioButtonId() == R.id.question_2_family_planning_Services_yes) return true;
+        return false;
+    }
+    private boolean getQuestion2HIVCounsellingTestingObjective() {
+        RadioGroup radioGroup = findViewById(R.id.question_2_hiv_counselling_testing_radio_group);
+        if (radioGroup.getCheckedRadioButtonId() == R.id.question_2_hiv_counselling_testing_yes) return true;
+        return false;
+    }
 }
