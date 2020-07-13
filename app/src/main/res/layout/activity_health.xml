@@ -545,7 +545,7 @@
         <EditText
             android:gravity="start"
             android:layout_marginVertical="5dp"
-            android:inputType="text"
+            android:inputType="textMultiLine"
             android:textSize="15sp"
             android:id="@+id/h_question_1_2_budget_information"
             android:layout_width="match_parent"
@@ -563,467 +563,574 @@
             android:textColor="@color/white"
             android:textStyle="bold" />
 
-        <GridLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:columnCount="2"
-            android:rowCount="10">
+        <HorizontalScrollView
+            android:layout_marginVertical="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
 
-            <TextView
-                android:layout_gravity="start"
-                android:layout_row="0"
-                android:layout_column="0"
-                android:layout_marginTop="5dp"
-                android:layout_marginEnd="100dp"
-                android:layout_width="wrap_content"
+            <GridLayout
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/category"
-                android:textSize="15sp"
-                android:textColor="@color/white"
-                android:textStyle="bold" />
-
-            <LinearLayout
-                android:layout_gravity="end"
-                android:layout_column="1"
-                android:layout_row="0"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal">
+                android:orientation="horizontal"
+                android:columnCount="2"
+                android:rowCount="10">
 
                 <TextView
-                    android:layout_marginVertical="5dp"
-                    android:layout_marginEnd="50dp"
+                    android:layout_gravity="start"
+                    android:layout_row="0"
+                    android:layout_column="0"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="100dp"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/yes"
+                    android:text="@string/category"
                     android:textSize="15sp"
                     android:textColor="@color/white"
                     android:textStyle="bold" />
 
-                <TextView
-                    android:layout_marginStart="10dp"
-                    android:layout_marginVertical="5dp"
+                <LinearLayout
+                    android:layout_gravity="end"
+                    android:layout_column="1"
+                    android:layout_row="0"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/no"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_marginVertical="5dp"
+                        android:layout_marginEnd="50dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/yes"
+                        android:textSize="15sp"
+                        android:textColor="@color/white"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_marginStart="10dp"
+                        android:layout_marginVertical="5dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/no"
+                        android:textSize="15sp"
+                        android:textColor="@color/white"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <!--                 row 1 -->
+                <TextView
+                    android:layout_gravity="start"
+                    android:layout_row="1"
+                    android:layout_column="0"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/maternity_ward"
                     android:textSize="15sp"
                     android:textColor="@color/white"
                     android:textStyle="bold" />
-            </LinearLayout>
 
-            <!--                 row 1 -->
-            <TextView
-                android:layout_gravity="start"
-                android:layout_row="1"
-                android:layout_column="0"
-                android:layout_marginTop="5dp"
-                android:layout_marginEnd="100dp"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/maternity_ward"
-                android:textSize="15sp"
-                android:textColor="@color/white"
-                android:textStyle="bold" />
-
-            <RadioGroup
-                android:layout_gravity="end"
-                android:layout_column="1"
-                android:layout_row="1"
-                android:id="@+id/question_2_maternity_radio_group"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal">
-
-                <RadioButton
-                    android:checked="true"
-                    android:id="@+id/question_2_maternity_yes"
-                    android:layout_marginHorizontal="5dp"
+                <RadioGroup
+                    android:layout_gravity="end"
+                    android:layout_column="1"
+                    android:layout_row="1"
+                    android:id="@+id/question_2_maternity_radio_group"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/yes"
-                    android:textStyle="bold"
-                    android:textSize="15sp"
-                    android:textColor="@color/white" />
+                    android:orientation="horizontal">
 
-                <RadioButton
-                    android:id="@+id/question_2_maternity_no"
-                    android:layout_marginHorizontal="5dp"
+                    <RadioButton
+                        android:checked="true"
+                        android:id="@+id/question_2_maternity_yes"
+                        android:layout_marginHorizontal="5dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/yes"
+                        android:textStyle="bold"
+                        android:textSize="15sp"
+                        android:textColor="@color/white" />
+
+                    <RadioButton
+                        android:id="@+id/question_2_maternity_no"
+                        android:layout_marginHorizontal="5dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/no"
+                        android:textStyle="bold"
+                        android:textSize="15sp"
+                        android:textColor="@color/white" />
+                </RadioGroup>
+
+                <!--            row 2 -->
+
+                <TextView
+                    android:layout_gravity="start"
+                    android:layout_row="2"
+                    android:layout_column="0"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="10dp"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/no"
-                    android:textStyle="bold"
+                    android:text="@string/general_ward"
                     android:textSize="15sp"
-                    android:textColor="@color/white" />
-            </RadioGroup>
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
 
-<!--            row 2 -->
+                <RadioGroup
+                    android:layout_gravity="end"
+                    android:layout_column="1"
+                    android:layout_row="2"
+                    android:id="@+id/question_2_general_ward_radio_group"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
 
-            <TextView
-            android:layout_gravity="start"
-            android:layout_row="2"
-            android:layout_column="0"
-            android:layout_marginTop="5dp"
-            android:layout_marginEnd="100dp"
+                    <RadioButton
+                        android:checked="true"
+                        android:id="@+id/question_2_general_ward_yes"
+                        android:layout_marginHorizontal="5dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/yes"
+                        android:textStyle="bold"
+                        android:textSize="15sp"
+                        android:textColor="@color/white" />
+
+                    <RadioButton
+                        android:id="@+id/question_2_general_ward_no"
+                        android:layout_marginHorizontal="5dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/no"
+                        android:textStyle="bold"
+                        android:textSize="15sp"
+                        android:textColor="@color/white" />
+                </RadioGroup>
+
+                <!--            row 3 -->
+                <TextView
+                    android:layout_gravity="start"
+                    android:layout_row="3"
+                    android:layout_column="0"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/delivery_beds"
+                    android:textSize="15sp"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+
+                <RadioGroup
+                    android:layout_gravity="end"
+                    android:layout_column="1"
+                    android:layout_row="3"
+                    android:id="@+id/question_2_delivery_beds_radio_group"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:checked="true"
+                        android:id="@+id/question_2_delivery_beds_yes"
+                        android:layout_marginHorizontal="5dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/yes"
+                        android:textStyle="bold"
+                        android:textSize="15sp"
+                        android:textColor="@color/white" />
+
+                    <RadioButton
+                        android:id="@+id/question_2_delivery_beds_no"
+                        android:layout_marginHorizontal="5dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/no"
+                        android:textStyle="bold"
+                        android:textSize="15sp"
+                        android:textColor="@color/white" />
+                </RadioGroup>
+
+                <!--            row 4 -->
+
+                <TextView
+                    android:layout_gravity="start"
+                    android:layout_row="4"
+                    android:layout_column="0"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/family_planning_Services"
+                    android:textSize="15sp"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+
+                <RadioGroup
+                    android:layout_gravity="end"
+                    android:layout_column="1"
+                    android:layout_row="4"
+                    android:id="@+id/question_2_family_planning_Services_radio_group"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:checked="true"
+                        android:id="@+id/question_2_family_planning_Services_yes"
+                        android:layout_marginHorizontal="5dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/yes"
+                        android:textStyle="bold"
+                        android:textSize="15sp"
+                        android:textColor="@color/white" />
+
+                    <RadioButton
+                        android:id="@+id/question_2_family_planning_Services_no"
+                        android:layout_marginHorizontal="5dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/no"
+                        android:textStyle="bold"
+                        android:textSize="15sp"
+                        android:textColor="@color/white" />
+                </RadioGroup>
+
+                <!--            row 5 -->
+
+                <TextView
+                    android:layout_gravity="start"
+                    android:layout_row="5"
+                    android:layout_column="0"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/hiv_counselling_testing"
+                    android:textSize="15sp"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+
+                <RadioGroup
+                    android:layout_gravity="end"
+                    android:layout_column="1"
+                    android:layout_row="5"
+                    android:id="@+id/question_2_hiv_counselling_testing_radio_group"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:checked="true"
+                        android:id="@+id/question_2_hiv_counselling_testing_yes"
+                        android:layout_marginHorizontal="5dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/yes"
+                        android:textStyle="bold"
+                        android:textSize="15sp"
+                        android:textColor="@color/white" />
+
+                    <RadioButton
+                        android:id="@+id/question_2_hiv_counselling_testing_no"
+                        android:layout_marginHorizontal="5dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/no"
+                        android:textStyle="bold"
+                        android:textSize="15sp"
+                        android:textColor="@color/white" />
+                </RadioGroup>
+
+                <!--            row 6 -->
+
+                <TextView
+                    android:layout_gravity="start"
+                    android:layout_row="6"
+                    android:layout_column="0"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/pmtct"
+                    android:textSize="15sp"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+
+                <RadioGroup
+                    android:layout_gravity="end"
+                    android:layout_column="1"
+                    android:layout_row="6"
+                    android:id="@+id/question_2_pmtct_radio_group"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:checked="true"
+                        android:id="@+id/question_2_pmtct_yes"
+                        android:layout_marginHorizontal="5dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/yes"
+                        android:textStyle="bold"
+                        android:textSize="15sp"
+                        android:textColor="@color/white" />
+
+                    <RadioButton
+                        android:id="@+id/question_2_pmtct_no"
+                        android:layout_marginHorizontal="5dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/no"
+                        android:textStyle="bold"
+                        android:textSize="15sp"
+                        android:textColor="@color/white" />
+                </RadioGroup>
+
+                <!--            7 -->
+
+                <TextView
+                    android:layout_gravity="start"
+                    android:layout_row="7"
+                    android:layout_column="0"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/immunization"
+                    android:textSize="15sp"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+
+                <RadioGroup
+                    android:layout_gravity="end"
+                    android:layout_column="1"
+                    android:layout_row="7"
+                    android:id="@+id/question_2_immunization_radio_group"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:checked="true"
+                        android:id="@+id/question_2_immunization_yes"
+                        android:layout_marginHorizontal="5dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/yes"
+                        android:textStyle="bold"
+                        android:textSize="15sp"
+                        android:textColor="@color/white" />
+
+                    <RadioButton
+                        android:id="@+id/question_2_immunization_no"
+                        android:layout_marginHorizontal="5dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/no"
+                        android:textStyle="bold"
+                        android:textSize="15sp"
+                        android:textColor="@color/white" />
+                </RadioGroup>
+
+                <!--            8 -->
+
+                <TextView
+                    android:layout_gravity="start"
+                    android:layout_row="8"
+                    android:layout_column="0"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/youth_friendly_corners"
+                    android:textSize="15sp"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+
+                <RadioGroup
+                    android:layout_gravity="end"
+                    android:layout_column="1"
+                    android:layout_row="8"
+                    android:id="@+id/question_2_youth_friendly_corners_radio_group"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:checked="true"
+                        android:id="@+id/question_2_youth_friendly_corners_yes"
+                        android:layout_marginHorizontal="5dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/yes"
+                        android:textStyle="bold"
+                        android:textSize="15sp"
+                        android:textColor="@color/white" />
+
+                    <RadioButton
+                        android:id="@+id/question_2_youth_friendly_corners_no"
+                        android:layout_marginHorizontal="5dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/no"
+                        android:textStyle="bold"
+                        android:textSize="15sp"
+                        android:textColor="@color/white" />
+                </RadioGroup>
+
+                <!--            9 -->
+
+                <TextView
+                    android:layout_gravity="start"
+                    android:layout_row="9"
+                    android:layout_column="0"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/vaccination_for_hep_b"
+                    android:textSize="15sp"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+
+                <RadioGroup
+                    android:layout_gravity="end"
+                    android:layout_column="1"
+                    android:layout_row="9"
+                    android:id="@+id/question_2_vaccination_for_hep_b_radio_group"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:checked="true"
+                        android:id="@+id/question_2_vaccination_for_hep_b_yes"
+                        android:layout_marginHorizontal="5dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/yes"
+                        android:textStyle="bold"
+                        android:textSize="15sp"
+                        android:textColor="@color/white" />
+
+                    <RadioButton
+                        android:id="@+id/question_2_vaccination_for_hep_b_no"
+                        android:layout_marginHorizontal="5dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/no"
+                        android:textStyle="bold"
+                        android:textSize="15sp"
+                        android:textColor="@color/white" />
+                </RadioGroup>
+            </GridLayout>
+        </HorizontalScrollView>
+
+        <TextView
+            android:layout_marginVertical="10dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/general_ward"
+            android:text="@string/health_question_2_1_label"
             android:textSize="15sp"
             android:textColor="@color/white"
             android:textStyle="bold" />
 
-            <RadioGroup
-                android:layout_gravity="end"
-                android:layout_column="1"
-                android:layout_row="2"
-                android:id="@+id/question_2_general_ward_radio_group"
+        <HorizontalScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <GridLayout
+                android:columnCount="2"
+                android:rowCount="3"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal">
 
-                <RadioButton
-                    android:checked="true"
-                    android:id="@+id/question_2_general_ward_yes"
-                    android:layout_marginHorizontal="5dp"
+                <TextView
+                    android:layout_marginVertical="5dp"
+                    android:layout_marginEnd="5dp"
+                    android:layout_row="0"
+                    android:layout_column="0"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/yes"
-                    android:textStyle="bold"
+                    android:text="@string/category"
                     android:textSize="15sp"
-                    android:textColor="@color/white" />
-
-                <RadioButton
-                    android:id="@+id/question_2_general_ward_no"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+                <TextView
+                    android:layout_marginVertical="5dp"
                     android:layout_marginHorizontal="5dp"
+                    android:layout_row="0"
+                    android:layout_column="1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/no"
-                    android:textStyle="bold"
+                    android:text="@string/number_deliveries"
                     android:textSize="15sp"
-                    android:textColor="@color/white" />
-            </RadioGroup>
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
 
-<!--            row 3 -->
-            <TextView
-                android:layout_gravity="start"
-                android:layout_row="3"
-                android:layout_column="0"
-                android:layout_marginTop="5dp"
-                android:layout_marginEnd="100dp"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/delivery_beds"
-                android:textSize="15sp"
-                android:textColor="@color/white"
-                android:textStyle="bold" />
-
-            <RadioGroup
-                android:layout_gravity="end"
-                android:layout_column="1"
-                android:layout_row="3"
-                android:id="@+id/question_2_delivery_beds_radio_group"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal">
-
-                <RadioButton
-                    android:checked="true"
-                    android:id="@+id/question_2_delivery_beds_yes"
-                    android:layout_marginHorizontal="5dp"
+<!--                row 1 -->
+                <TextView
+                    android:layout_marginEnd="5dp"
+                    android:layout_row="1"
+                    android:layout_column="0"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/yes"
-                    android:textStyle="bold"
+                    android:text="@string/live"
                     android:textSize="15sp"
-                    android:textColor="@color/white" />
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
 
-                <RadioButton
-                    android:id="@+id/question_2_delivery_beds_no"
-                    android:layout_marginHorizontal="5dp"
+                <EditText
+                    android:layout_row="1"
+                    android:layout_column="1"
+                    android:gravity="center"
+                    android:layout_marginVertical="5dp"
+                    android:inputType="number"
+                    android:textSize="15sp"
+                    android:id="@+id/health_live_number_deliveries"
+                    android:layout_width="200dp"
+                    android:layout_height="100dp"
+                    android:background="@drawable/edit_text_style"
+                    android:padding="5dp"
+                    android:autofillHints=""
+                    tools:ignore="LabelFor" />
+
+<!--                row 2 -->
+
+                <TextView
+                    android:layout_marginEnd="5dp"
+                    android:layout_row="1"
+                    android:layout_column="0"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/no"
-                    android:textStyle="bold"
+                    android:text="@string/still"
                     android:textSize="15sp"
-                    android:textColor="@color/white" />
-            </RadioGroup>
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
 
-<!--            row 4 -->
-
-            <TextView
-                android:layout_gravity="start"
-                android:layout_row="4"
-                android:layout_column="0"
-                android:layout_marginTop="5dp"
-                android:layout_marginEnd="100dp"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/family_planning_Services"
-                android:textSize="15sp"
-                android:textColor="@color/white"
-                android:textStyle="bold" />
-
-            <RadioGroup
-                android:layout_gravity="end"
-                android:layout_column="1"
-                android:layout_row="4"
-                android:id="@+id/question_2_family_planning_Services_radio_group"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal">
-
-                <RadioButton
-                    android:checked="true"
-                    android:id="@+id/question_2_family_planning_Services_yes"
-                    android:layout_marginHorizontal="5dp"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/yes"
-                    android:textStyle="bold"
+                <EditText
+                    android:layout_row="1"
+                    android:layout_column="1"
+                    android:gravity="center"
+                    android:layout_marginVertical="5dp"
+                    android:inputType="number"
                     android:textSize="15sp"
-                    android:textColor="@color/white" />
+                    android:id="@+id/health_still_number_deliveries"
+                    android:layout_width="200dp"
+                    android:layout_height="100dp"
+                    android:background="@drawable/edit_text_style"
+                    android:padding="5dp"
+                    android:autofillHints=""
+                    tools:ignore="LabelFor" />
 
-                <RadioButton
-                    android:id="@+id/question_2_family_planning_Services_no"
-                    android:layout_marginHorizontal="5dp"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/no"
-                    android:textStyle="bold"
-                    android:textSize="15sp"
-                    android:textColor="@color/white" />
-            </RadioGroup>
-
-<!--            row 5 -->
-
-            <TextView
-                android:layout_gravity="start"
-                android:layout_row="5"
-                android:layout_column="0"
-                android:layout_marginTop="5dp"
-                android:layout_marginEnd="100dp"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/hiv_counselling_testing"
-                android:textSize="15sp"
-                android:textColor="@color/white"
-                android:textStyle="bold" />
-
-            <RadioGroup
-                android:layout_gravity="end"
-                android:layout_column="1"
-                android:layout_row="5"
-                android:id="@+id/question_2_hiv_counselling_testing_radio_group"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal">
-
-                <RadioButton
-                    android:checked="true"
-                    android:id="@+id/question_2_hiv_counselling_testing_yes"
-                    android:layout_marginHorizontal="5dp"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/yes"
-                    android:textStyle="bold"
-                    android:textSize="15sp"
-                    android:textColor="@color/white" />
-
-                <RadioButton
-                    android:id="@+id/question_2_hiv_counselling_testing_no"
-                    android:layout_marginHorizontal="5dp"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/no"
-                    android:textStyle="bold"
-                    android:textSize="15sp"
-                    android:textColor="@color/white" />
-            </RadioGroup>
-
-<!--            row 6 -->
-
-            <TextView
-                android:layout_gravity="start"
-                android:layout_row="6"
-                android:layout_column="0"
-                android:layout_marginTop="5dp"
-                android:layout_marginEnd="100dp"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/pmtct"
-                android:textSize="15sp"
-                android:textColor="@color/white"
-                android:textStyle="bold" />
-
-            <RadioGroup
-                android:layout_gravity="end"
-                android:layout_column="1"
-                android:layout_row="6"
-                android:id="@+id/question_2_pmtct_radio_group"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal">
-
-                <RadioButton
-                    android:checked="true"
-                    android:id="@+id/question_2_pmtct_yes"
-                    android:layout_marginHorizontal="5dp"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/yes"
-                    android:textStyle="bold"
-                    android:textSize="15sp"
-                    android:textColor="@color/white" />
-
-                <RadioButton
-                    android:id="@+id/question_2_pmtct_no"
-                    android:layout_marginHorizontal="5dp"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/no"
-                    android:textStyle="bold"
-                    android:textSize="15sp"
-                    android:textColor="@color/white" />
-            </RadioGroup>
-
-<!--            7 -->
-
-            <TextView
-                android:layout_gravity="start"
-                android:layout_row="7"
-                android:layout_column="0"
-                android:layout_marginTop="5dp"
-                android:layout_marginEnd="100dp"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/immunization"
-                android:textSize="15sp"
-                android:textColor="@color/white"
-                android:textStyle="bold" />
-
-            <RadioGroup
-                android:layout_gravity="end"
-                android:layout_column="1"
-                android:layout_row="7"
-                android:id="@+id/question_2_immunization_radio_group"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal">
-
-                <RadioButton
-                    android:checked="true"
-                    android:id="@+id/question_2_immunization_yes"
-                    android:layout_marginHorizontal="5dp"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/yes"
-                    android:textStyle="bold"
-                    android:textSize="15sp"
-                    android:textColor="@color/white" />
-
-                <RadioButton
-                    android:id="@+id/question_2_immunization_no"
-                    android:layout_marginHorizontal="5dp"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/no"
-                    android:textStyle="bold"
-                    android:textSize="15sp"
-                    android:textColor="@color/white" />
-            </RadioGroup>
-
-<!--            8 -->
-
-            <TextView
-                android:layout_gravity="start"
-                android:layout_row="8"
-                android:layout_column="0"
-                android:layout_marginTop="5dp"
-                android:layout_marginEnd="100dp"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/youth_friendly_corners"
-                android:textSize="15sp"
-                android:textColor="@color/white"
-                android:textStyle="bold" />
-
-            <RadioGroup
-                android:layout_gravity="end"
-                android:layout_column="1"
-                android:layout_row="8"
-                android:id="@+id/question_2_youth_friendly_corners_radio_group"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal">
-
-                <RadioButton
-                    android:checked="true"
-                    android:id="@+id/question_2_youth_friendly_corners_yes"
-                    android:layout_marginHorizontal="5dp"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/yes"
-                    android:textStyle="bold"
-                    android:textSize="15sp"
-                    android:textColor="@color/white" />
-
-                <RadioButton
-                    android:id="@+id/question_2_youth_friendly_corners_no"
-                    android:layout_marginHorizontal="5dp"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/no"
-                    android:textStyle="bold"
-                    android:textSize="15sp"
-                    android:textColor="@color/white" />
-            </RadioGroup>
-
-<!--            9 -->
-
-            <TextView
-                android:layout_gravity="start"
-                android:layout_row="8"
-                android:layout_column="0"
-                android:layout_marginTop="5dp"
-                android:layout_marginEnd="100dp"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/vaccination_for_hep_b"
-                android:textSize="15sp"
-                android:textColor="@color/white"
-                android:textStyle="bold" />
-
-            <RadioGroup
-                android:layout_gravity="end"
-                android:layout_column="1"
-                android:layout_row="9"
-                android:id="@+id/question_2_vaccination_for_hep_b_radio_group"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal">
-
-                <RadioButton
-                    android:checked="true"
-                    android:id="@+id/question_2_vaccination_for_hep_b_yes"
-                    android:layout_marginHorizontal="5dp"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/yes"
-                    android:textStyle="bold"
-                    android:textSize="15sp"
-                    android:textColor="@color/white" />
-
-                <RadioButton
-                    android:id="@+id/question_2_vaccination_for_hep_b_no"
-                    android:layout_marginHorizontal="5dp"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/no"
-                    android:textStyle="bold"
-                    android:textSize="15sp"
-                    android:textColor="@color/white" />
-            </RadioGroup>
-        </GridLayout>
+            </GridLayout>
+        </HorizontalScrollView>
 
     </LinearLayout>
 

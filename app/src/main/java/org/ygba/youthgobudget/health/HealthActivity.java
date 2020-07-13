@@ -42,6 +42,8 @@ public class HealthActivity extends AppCompatActivity {
     EditText hQ1DevelopmentDateReceivedEditText;
     EditText hQ1DevelopmentDateWithdrawnEditText;
     EditText hQ1_2BudgetInformationEditText;
+    EditText hQ2_1_LiveNumberDeliveriesTextEdit;
+    EditText hQ2_1_StillNumberDeliveriesTextEdit;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -108,6 +110,8 @@ public class HealthActivity extends AppCompatActivity {
         hQ1DevelopmentDateWithdrawnEditText = findViewById(R.id.h_question_1_development_date_withdrawn_edit_text);
         hQ1DevelopmentDateWithdrawnEditText.setInputType(View.AUTOFILL_TYPE_NONE);
         hQ1_2BudgetInformationEditText = findViewById(R.id.h_question_1_2_budget_information);
+        hQ2_1_LiveNumberDeliveriesTextEdit = findViewById(R.id.health_live_number_deliveries);
+        hQ2_1_StillNumberDeliveriesTextEdit = findViewById(R.id.health_still_number_deliveries);
     }
 
 

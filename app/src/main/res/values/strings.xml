@@ -286,4 +286,8 @@
     <string name="immunization">Immunization</string>
     <string name="youth_friendly_corners">Youth Friendly Corners</string>
     <string name="vaccination_for_hep_b">Vaccination for HEP B</string>
+    <string name="health_question_2_1_label">2.1 How many deliveries occured in previous quarter ?</string>
+    <string name="number_deliveries">No of deliveries</string>
+    <string name="live">Live</string>
+    <string name="still">Still</string>
 </resources>
