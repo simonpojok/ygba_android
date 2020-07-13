@@ -19,6 +19,7 @@ import android.widget.Toast;
 
 import com.mobsandgeeks.saripaar.ValidationError;
 import com.mobsandgeeks.saripaar.Validator;
+import com.mobsandgeeks.saripaar.annotation.NotEmpty;
 
 import org.ygba.youthgobudget.R;
 import org.ygba.youthgobudget.data.socialdevelopment.SocialDevelopmentQuestion;
@@ -36,11 +37,23 @@ public class SocialDevelopmentActivity extends AppCompatActivity implements Vali
     private SocialDevelopmentActivityViewModel activityViewModel;
     private TextView socialDateTextView;
     private Spinner financialYearSpinner;
+
+    @NotEmpty
     private EditText villageTextEdit;
+
+    @NotEmpty
     private EditText parishTextEdit;
+
+    @NotEmpty
     private EditText districtTextEdit;
+
+    @NotEmpty
     private EditText divisionTextEdit;
+
+    @NotEmpty
     private EditText fullNameTextEdit;
+
+    @NotEmpty
     private EditText agentTelEditText;
     private EditText communityExpectedAmountEditText;
     private EditText communityReceivedAmountEditText;
