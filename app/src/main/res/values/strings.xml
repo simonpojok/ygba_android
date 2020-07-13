@@ -312,4 +312,7 @@
     <string name="health_question_3_1_label">3.1 Are the health facility /  latrine facilities accessible to patients with disabilities</string>
     <string name="health_question_3_2_label">3.2 If yes, which of these PWD friendly facilities does the health center / hospital have ? ( Tick where appropriate )</string>
     <string name="health_question_4_label">4.0 WATER AT THE HEALTH FACILITY</string>
+    <string name="health_question_4_water_point_label">Water Point</string>
+    <string name="health_question_4_water_point_number_label">Number</string>
+    <string name="health_question_4_water_point_functionality_label">Functionality</string>
 </resources>
