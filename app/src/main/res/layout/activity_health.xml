@@ -766,7 +766,7 @@
             <RadioGroup
                 android:layout_gravity="end"
                 android:layout_column="1"
-                android:layout_row="3"
+                android:layout_row="4"
                 android:id="@+id/question_2_family_planning_Services_radio_group"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -798,7 +798,7 @@
 
             <TextView
                 android:layout_gravity="start"
-                android:layout_row="4"
+                android:layout_row="5"
                 android:layout_column="0"
                 android:layout_marginTop="5dp"
                 android:layout_marginEnd="100dp"
@@ -812,7 +812,7 @@
             <RadioGroup
                 android:layout_gravity="end"
                 android:layout_column="1"
-                android:layout_row="3"
+                android:layout_row="5"
                 android:id="@+id/question_2_hiv_counselling_testing_radio_group"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -831,6 +831,98 @@
 
                 <RadioButton
                     android:id="@+id/question_2_hiv_counselling_testing_no"
+                    android:layout_marginHorizontal="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/no"
+                    android:textStyle="bold"
+                    android:textSize="15sp"
+                    android:textColor="@color/white" />
+            </RadioGroup>
+
+<!--            row 6 -->
+
+            <TextView
+                android:layout_gravity="start"
+                android:layout_row="6"
+                android:layout_column="0"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="100dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/pmtct"
+                android:textSize="15sp"
+                android:textColor="@color/white"
+                android:textStyle="bold" />
+
+            <RadioGroup
+                android:layout_gravity="end"
+                android:layout_column="1"
+                android:layout_row="6"
+                android:id="@+id/question_2_pmtct_radio_group"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:checked="true"
+                    android:id="@+id/question_2_pmtct_yes"
+                    android:layout_marginHorizontal="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/yes"
+                    android:textStyle="bold"
+                    android:textSize="15sp"
+                    android:textColor="@color/white" />
+
+                <RadioButton
+                    android:id="@+id/question_2_pmtct_no"
+                    android:layout_marginHorizontal="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/no"
+                    android:textStyle="bold"
+                    android:textSize="15sp"
+                    android:textColor="@color/white" />
+            </RadioGroup>
+
+<!--            7 -->
+
+            <TextView
+                android:layout_gravity="start"
+                android:layout_row="7"
+                android:layout_column="0"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="100dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/immunization"
+                android:textSize="15sp"
+                android:textColor="@color/white"
+                android:textStyle="bold" />
+
+            <RadioGroup
+                android:layout_gravity="end"
+                android:layout_column="1"
+                android:layout_row="6"
+                android:id="@+id/question_2_immunization_radio_group"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:checked="true"
+                    android:id="@+id/question_2_immunization_yes"
+                    android:layout_marginHorizontal="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/yes"
+                    android:textStyle="bold"
+                    android:textSize="15sp"
+                    android:textColor="@color/white" />
+
+                <RadioButton
+                    android:id="@+id/question_2_immunization_no"
                     android:layout_marginHorizontal="5dp"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"

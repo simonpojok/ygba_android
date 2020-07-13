@@ -282,4 +282,6 @@
     <string name="delivery_beds">Delivery Beds</string>
     <string name="family_planning_Services">Familay Planning Services</string>
     <string name="hiv_counselling_testing">HIV Counselling, Test and Treatment</string>
+    <string name="pmtct">PMTCT</string>
+    <string name="immunization">Immunization</string>
 </resources>

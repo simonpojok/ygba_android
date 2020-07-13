@@ -166,4 +166,14 @@ public class HealthActivity extends AppCompatActivity {
         if (radioGroup.getCheckedRadioButtonId() == R.id.question_2_hiv_counselling_testing_yes) return true;
         return false;
     }
+    private boolean getQuestion2PMTCTObjective() {
+        RadioGroup radioGroup = findViewById(R.id.question_2_pmtct_radio_group);
+        if (radioGroup.getCheckedRadioButtonId() == R.id.question_2_pmtct_yes) return true;
+        return false;
+    }
+    private boolean getQuestion2ImmunizationObjective() {
+        RadioGroup radioGroup = findViewById(R.id.question_2_immunization_radio_group);
+        if (radioGroup.getCheckedRadioButtonId() == R.id.question_2_immunization_yes) return true;
+        return false;
+    }
 }
