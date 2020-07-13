@@ -271,4 +271,5 @@
     <string name="h_question_1_introduction">1. BUDGET INFORMATION AND TRANSPARENCY</string>
     <string name="health_budget_approved">Approved budgets</string>
     <string name="health_budget_released">Budget Released ( actual )</string>
+    <string name="health_q_1_recurrent">Recurrent</string>
 </resources>
