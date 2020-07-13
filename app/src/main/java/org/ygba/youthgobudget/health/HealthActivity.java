@@ -233,4 +233,8 @@ public class HealthActivity extends AppCompatActivity {
         RadioGroup radioGroup = findViewById(R.id.question_2_vaccination_for_hep_b_radio_group);
         return radioGroup.getCheckedRadioButtonId() == R.id.question_2_vaccination_for_hep_b_yes;
     }
+    private boolean getQuestion31ToiletObjective() {
+        RadioGroup radioGroup = findViewById(R.id.question_3_1_radio_group);
+        return radioGroup.getCheckedRadioButtonId() == R.id.question_3_1_yes;
+    }
 }
