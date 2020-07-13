@@ -38,6 +38,7 @@ public class SocialDevelopmentActivity extends AppCompatActivity implements Vali
     private Spinner financialYearSpinner;
     private EditText villageTextEdit;
     private EditText parishTextEdit;
+    private EditText districtTextEdit;
     private EditText divisionTextEdit;
     private EditText fullNameTextEdit;
     private EditText agentTelEditText;
@@ -193,6 +194,7 @@ public class SocialDevelopmentActivity extends AppCompatActivity implements Vali
     }
 
     private void initViews() {
+        districtTextEdit = findViewById(R.id.district_text_edit);
         socialDateTextView = findViewById(R.id.social_date_text_view);
         financialYearSpinner = findViewById(R.id.financial_year_spinner);
         ArrayAdapter<String> aa=new ArrayAdapter<String>(this, android.R.layout.simple_spinner_item, financialYears);
@@ -345,7 +347,7 @@ public class SocialDevelopmentActivity extends AppCompatActivity implements Vali
         SocialDevelopmentQuestion socialDevelopmentQuestion = new SocialDevelopmentQuestion(
                 selectedFinancialYear,
                 DynamicData.getDate(),
-                null,
+                districtTextEdit.getText().toString(),
                 villageTextEdit.getText().toString(),
                 parishTextEdit.getText().toString(),
                 divisionTextEdit.getText().toString(),
