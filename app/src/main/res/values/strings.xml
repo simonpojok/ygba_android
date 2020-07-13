@@ -318,4 +318,5 @@
     <string name="health_question_4_water_point_functional_label">Functional</string>
     <string name="health_question_4_water_point_none_label">None</string>
     <string name="health_question_4_water_point_bore_hole_label">Borehole</string>
+    <string name="health_question_4_water_point_tap_label">Tap</string>
 </resources>
