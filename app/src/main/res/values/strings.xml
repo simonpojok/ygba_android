@@ -320,4 +320,5 @@
     <string name="health_question_4_water_point_bore_hole_label">Borehole</string>
     <string name="health_question_4_water_point_tap_label">Tap</string>
     <string name="health_question_4_water_point_water_tank_label">Water Tank</string>
+    <string name="health_question_4_water_point_others_label">Others ( Spacify )</string>
 </resources>
