@@ -262,4 +262,6 @@
     <string name="social_question_7_text">
         7. Mention any other challenges or observations affecting social development sector ?
     </string>
+    <string name="health_sector_header">HEALTH SECTOR</string>
+    <string name="health_form_description">COMMUNITY BUDGET PERFORMANCE AND SERVICE DELIVERY TRACKING TOOL</string>
 </resources>
