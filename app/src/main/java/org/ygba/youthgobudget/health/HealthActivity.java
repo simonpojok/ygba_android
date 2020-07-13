@@ -54,6 +54,15 @@ public class HealthActivity extends AppCompatActivity {
     EditText hQ3StaffToiletMixedStances;
     EditText hQ3StaffToiletFunctional;
     EditText hQ3StaffToiletNone;
+    EditText hQ3LatrineNumberBlocks;
+    EditText hQ3LatrineNumberStances;
+    EditText hQ3PatientLatrineMaleStances;
+    EditText hQ3PatientLatrineFemaleStances;
+    EditText hQ3StaffLatrineMaleStances;
+    EditText hQ3StaffLatrineFemaleStances;
+    EditText hQ3StaffLatrineMixedStances;
+    EditText hQ3StaffLatrineFunctional;
+    EditText hQ3StaffLatrineNone;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -132,6 +141,15 @@ public class HealthActivity extends AppCompatActivity {
         hQ3StaffToiletMixedStances = findViewById(R.id.health_3_toilet_staff_mixed_stances);
         hQ3StaffToiletFunctional =  findViewById(R.id.health_3_toilet_functional);
         hQ3StaffToiletNone = findViewById(R.id.health_3_toilet_none);
+        hQ3LatrineNumberBlocks = findViewById(R.id.health_3_latrine_blocks);
+        hQ3LatrineNumberStances = findViewById(R.id.health_3_latrine_stances);
+        hQ3PatientLatrineMaleStances = findViewById(R.id.health_3_latrine_patients_male_stances);
+        hQ3PatientLatrineFemaleStances = findViewById(R.id.health_3_latrine_patients_female_stances);
+        hQ3StaffLatrineMaleStances = findViewById(R.id.health_3_latrine_staff_male_stances);
+        hQ3StaffLatrineFemaleStances = findViewById(R.id.health_3_latrine_staff_female_stances);
+        hQ3StaffLatrineMixedStances = findViewById(R.id.health_3_latrine_staff_mixed_stances);
+        hQ3StaffLatrineFunctional =  findViewById(R.id.health_3_latrine_functional);
+        hQ3StaffLatrineNone = findViewById(R.id.health_3_latrine_none);
     }
 
 
