@@ -277,4 +277,5 @@
     <string name="h_question_1_2_text">1.2 State the period to which the budget information ralates ( e. g FY 2018 / 19 Quarter One )</string>
     <string name="h_question_2_text">2. AVAILABILITY OF MERTERNITY SERVICES, STAFF AND FACILITIES</string>
     <string name="maternity_ward">Maternity ward</string>
+    <string name="general_ward">General ward</string>
 </resources>

@@ -139,9 +139,15 @@ public class HealthActivity extends AppCompatActivity {
         return ((CheckBox) findViewById(R.id.h_q_1_1_facility_admin_notice_board)).isChecked();
     }
 
-    private boolean getQuestion2MaternityObjective() {
+    private boolean getQuestion2MaternityWardObjective() {
         RadioGroup radioGroup = findViewById(R.id.question_2_maternity_radio_group);
         if (radioGroup.getCheckedRadioButtonId() == R.id.question_2_maternity_yes) return true;
+        return false;
+    }
+
+    private boolean getQuestion2GeneralWardObjective() {
+        RadioGroup radioGroup = findViewById(R.id.question_2_general_ward_radio_group);
+        if (radioGroup.getCheckedRadioButtonId() == R.id.question_2_general_ward_yes) return true;
         return false;
     }
 }
