@@ -296,4 +296,14 @@
     <string name="health_q_3_patients">Patients</string>
     <string name="health_q_3_functionalities">Functionality</string>
     <string name="health_q_3_health_facility_staff">Health facility staff</string>
+    <string name="health_question_3_2_sanitation_facility">Sanitation Facility</string>
+    <string name="health_question_3_number_of_blocks">Number of Blocks</string>
+    <string name="health_question_3_number_of_stances">Number of Stances</string>
+    <string name="health_question_3_male_stances">Male Stances</string>
+    <string name="health_question_3_female_stances">Female Stances</string>
+    <string name="health_question_3_male_stuff">Male Staff</string>
+    <string name="health_question_3_female_stuff">Female Stuff</string>
+    <string name="health_question_3_mixed_stuff">Mixed</string>
+    <string name="health_question_3_functional">Functional</string>
+    <string name="health_question_3_none">None</string>
 </resources>
