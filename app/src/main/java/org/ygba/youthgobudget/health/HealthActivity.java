@@ -50,6 +50,7 @@ public class HealthActivity extends AppCompatActivity {
     EditText hQ3PatientToiletFemaleStances;
     EditText hQ3StaffToiletMaleStances;
     EditText hQ3StaffToiletFemaleStances;
+    EditText hQ3StaffToiletMixedStances;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -124,6 +125,7 @@ public class HealthActivity extends AppCompatActivity {
         hQ3PatientToiletFemaleStances = findViewById(R.id.health_3_toilet_patients_female_stances);
         hQ3StaffToiletMaleStances = findViewById(R.id.health_3_toilet_staff_male_stances);
         hQ3StaffToiletFemaleStances = findViewById(R.id.health_3_toilet_staff_female_stances);
+        hQ3StaffToiletMixedStances = findViewById(R.id.health_3_toilet_staff_mixed_stances);
     }
 
 
