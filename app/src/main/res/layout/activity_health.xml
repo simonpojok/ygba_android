@@ -1453,6 +1453,36 @@
                     android:padding="5dp"
                     android:autofillHints="" />
 
+                <EditText
+                    android:layout_column="8"
+                    android:layout_row="2"
+                    android:layout_marginHorizontal="5dp"
+                    android:gravity="center"
+                    android:layout_marginVertical="5dp"
+                    android:inputType="number"
+                    android:textSize="15sp"
+                    android:id="@+id/health_3_toilet_functional"
+                    android:layout_width="200dp"
+                    android:layout_height="100dp"
+                    android:background="@drawable/edit_text_style"
+                    android:padding="5dp"
+                    android:autofillHints="" />
+
+                <EditText
+                    android:layout_column="9"
+                    android:layout_row="2"
+                    android:layout_marginHorizontal="5dp"
+                    android:gravity="center"
+                    android:layout_marginVertical="5dp"
+                    android:inputType="number"
+                    android:textSize="15sp"
+                    android:id="@+id/health_3_toilet_none"
+                    android:layout_width="200dp"
+                    android:layout_height="100dp"
+                    android:background="@drawable/edit_text_style"
+                    android:padding="5dp"
+                    android:autofillHints="" />
+
             </GridLayout>
         </HorizontalScrollView>
 
