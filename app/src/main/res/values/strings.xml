@@ -291,4 +291,5 @@
     <string name="live">Live</string>
     <string name="still">Still</string>
     <string name="health_question_2_2_label">2.2 How many children were immunized with the pentavalent Vaccine in the previous quarter ?</string>
+    <string name="health_question_3_introduction">3.0 SANITATION AT THE HEALTH FACILITY</string>
 </resources>

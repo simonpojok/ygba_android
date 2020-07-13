@@ -1153,6 +1153,15 @@
             android:padding="5dp"
             android:autofillHints="" />
 
+        <TextView
+            android:layout_marginVertical="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/health_question_3_introduction"
+            android:textSize="18sp"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+
     </LinearLayout>
 
 </ScrollView>
