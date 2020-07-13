@@ -306,4 +306,5 @@
     <string name="health_question_3_mixed_stuff">Mixed</string>
     <string name="health_question_3_functional">Functional</string>
     <string name="health_question_3_none">None</string>
+    <string name="health_question_3_toilet">Toilet</string>
 </resources>
