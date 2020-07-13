@@ -344,11 +344,12 @@
                     android:textStyle="bold" />
 
                 <EditText
+                    android:layout_marginVertical="5dp"
                     android:layout_marginEnd="5dp"
                     android:gravity="center"
                     android:layout_column="1"
                     android:layout_row="1"
-                    android:inputType="number"
+                    android:inputType="numberDecimal"
                     android:textSize="15sp"
                     android:id="@+id/h_question_1_recurrent_approved"
                     android:layout_width="200dp"
@@ -363,7 +364,7 @@
                     android:gravity="center"
                     android:layout_column="2"
                     android:layout_row="1"
-                    android:inputType="number"
+                    android:inputType="numberDecimal"
                     android:textSize="15sp"
                     android:id="@+id/h_question_1_recurrent_budget_released_edit_text"
                     android:layout_width="200dp"
@@ -374,6 +375,7 @@
                     android:autofillHints="" />
 
                 <EditText
+                    android:editable="false"
                     android:layout_marginHorizontal="5dp"
                     android:gravity="center"
                     android:layout_column="3"
@@ -390,6 +392,7 @@
                     tools:ignore="TextFields" />
 
                 <EditText
+                    android:editable="false"
                     android:layout_marginHorizontal="5dp"
                     android:gravity="center"
                     android:layout_column="4"
@@ -408,6 +411,7 @@
 <!--                row 2 developmenet -->
 
                 <TextView
+                    android:layout_marginVertical="5dp"
                     android:layout_row="2"
                     android:layout_column="0"
                     android:layout_marginEnd="5dp"
@@ -420,11 +424,12 @@
                     android:textStyle="bold" />
 
                 <EditText
+                    android:layout_marginVertical="5dp"
                     android:layout_marginEnd="5dp"
                     android:gravity="center"
                     android:layout_column="1"
                     android:layout_row="2"
-                    android:inputType="number"
+                    android:inputType="numberDecimal"
                     android:textSize="15sp"
                     android:id="@+id/h_question_1_development_approved"
                     android:layout_width="200dp"
@@ -435,11 +440,12 @@
                     android:autofillHints="" />
 
                 <EditText
+                    android:layout_marginVertical="5dp"
                     android:layout_marginHorizontal="5dp"
                     android:gravity="center"
                     android:layout_column="2"
                     android:layout_row="2"
-                    android:inputType="number"
+                    android:inputType="numberDecimal"
                     android:textSize="15sp"
                     android:id="@+id/h_question_1_development_budget_released_edit_text"
                     android:layout_width="200dp"
@@ -450,6 +456,8 @@
                     android:autofillHints="" />
 
                 <EditText
+                    android:editable="false"
+                    android:layout_marginVertical="5dp"
                     android:layout_marginHorizontal="5dp"
                     android:gravity="center"
                     android:layout_column="3"
@@ -466,6 +474,8 @@
                     tools:ignore="TextFields" />
 
                 <EditText
+                    android:editable="false"
+                    android:layout_marginVertical="5dp"
                     android:layout_marginHorizontal="5dp"
                     android:gravity="center"
                     android:layout_column="4"
