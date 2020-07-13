@@ -150,4 +150,10 @@ public class HealthActivity extends AppCompatActivity {
         if (radioGroup.getCheckedRadioButtonId() == R.id.question_2_general_ward_yes) return true;
         return false;
     }
+
+    private boolean getQuestion2DeliveryBedsObjective() {
+        RadioGroup radioGroup = findViewById(R.id.question_2_delivery_beds_radio_group);
+        if (radioGroup.getCheckedRadioButtonId() == R.id.question_2_delivery_beds_yes) return true;
+        return false;
+    }
 }
