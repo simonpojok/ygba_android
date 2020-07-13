@@ -71,6 +71,9 @@ public class HealthActivity extends AppCompatActivity {
     EditText hQ3StaffFFCFunctional;
     EditText hQ3StaffFFCNone;
     EditText hQ32OtherSpecifyTextEdit;
+    EditText hQ4BoreholeNumberEditText;
+    EditText hQ4BoreholeNumberFunctionalEditText;
+    EditText hQ4BoreholeNumberNoneFunctional;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -166,6 +169,9 @@ public class HealthActivity extends AppCompatActivity {
         hQ3StaffFFCFunctional =  findViewById(R.id.health_3_ffc_functional);
         hQ3StaffFFCNone = findViewById(R.id.health_3_ffc_none);
         hQ32OtherSpecifyTextEdit = findViewById(R.id.health_3_2_other_specify);
+        hQ4BoreholeNumberEditText = findViewById(R.id.health_4_borehole_number);
+        hQ4BoreholeNumberFunctionalEditText = findViewById(R.id.health_4_borehole_number_functional);
+        hQ4BoreholeNumberNoneFunctional = findViewById(R.id.health_4_borehole_number_none);
     }
 
 
