@@ -18,7 +18,7 @@ import org.ygba.youthgobudget.dialogs.DatePickerActivity;
 public class HealthActivity extends AppCompatActivity {
     private final int Q_1_RECURRENT_DATE_RECEIVED_REQUEST_CODE = 1;
     private final int Q_1_RECURRENT_DATE_WITHDRAWN_REQUEST_CODE = 2;
-    private final int Q_1_RECURRENT_DATE_DEVELOPMENT_REQUEST_CODE = 3;
+    private final int Q_1_RECURRENT_DATE_DEVELOPMENT_RECEIVED_REQUEST_CODE = 3;
     private final int Q_1_RECURRENT_DATE_DEVELOPMENT_WITHDRAWN_REQUEST_CODE = 4;
     TextView hDateTextView;
     Spinner hFinancialSpinner;
@@ -62,6 +62,21 @@ public class HealthActivity extends AppCompatActivity {
                 startActivityForResult(new Intent(HealthActivity.this, DatePickerActivity.class), Q_1_RECURRENT_DATE_WITHDRAWN_REQUEST_CODE);
             }
         });
+
+        hQ1DevelopmentDateWithdrawnEditText.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivityForResult(new Intent(HealthActivity.this, DatePickerActivity.class), Q_1_RECURRENT_DATE_DEVELOPMENT_WITHDRAWN_REQUEST_CODE);
+            }
+        });
+
+        hQ1DevelopmentDateReceivedEditText.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivityForResult(new Intent(HealthActivity.this, DatePickerActivity.class), Q_1_RECURRENT_DATE_DEVELOPMENT_RECEIVED_REQUEST_CODE);
+            }
+        });
+
     }
 
 
@@ -95,6 +110,12 @@ public class HealthActivity extends AppCompatActivity {
         if ((resultCode == RESULT_OK) && (data != null) ) {
             if (requestCode == Q_1_RECURRENT_DATE_RECEIVED_REQUEST_CODE) {
                 hQ1RecurrentDateReceivedEditText.setText(data.getStringExtra(DatePickerActivity.SELECTED_DATE));
+            } else if (requestCode == Q_1_RECURRENT_DATE_DEVELOPMENT_WITHDRAWN_REQUEST_CODE) {
+                hQ1DevelopmentDateWithdrawnEditText.setText(data.getStringExtra(DatePickerActivity.SELECTED_DATE));
+            } else if (requestCode == Q_1_RECURRENT_DATE_DEVELOPMENT_RECEIVED_REQUEST_CODE) {
+                hQ1DevelopmentDateReceivedEditText.setText(data.getStringExtra(DatePickerActivity.SELECTED_DATE));
+            } else if (requestCode == Q_1_RECURRENT_DATE_WITHDRAWN_REQUEST_CODE ) {
+                hQ1RecurrentDateWithdrawnEditText.setText(data.getStringExtra(DatePickerActivity.SELECTED_DATE));
             }
         }
     }
