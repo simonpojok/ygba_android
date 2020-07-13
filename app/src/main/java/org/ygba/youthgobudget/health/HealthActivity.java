@@ -70,6 +70,7 @@ public class HealthActivity extends AppCompatActivity {
     EditText hQ3StaffFFCMixedStances;
     EditText hQ3StaffFFCFunctional;
     EditText hQ3StaffFFCNone;
+    EditText hQ32OtherSpecifyTextEdit;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -164,6 +165,7 @@ public class HealthActivity extends AppCompatActivity {
         hQ3StaffFFCMixedStances = findViewById(R.id.health_3_ffc_staff_mixed_stances);
         hQ3StaffFFCFunctional =  findViewById(R.id.health_3_ffc_functional);
         hQ3StaffFFCNone = findViewById(R.id.health_3_ffc_none);
+        hQ32OtherSpecifyTextEdit = findViewById(R.id.health_3_2_other_specify);
     }
 
 
@@ -236,5 +238,17 @@ public class HealthActivity extends AppCompatActivity {
     private boolean getQuestion31ToiletObjective() {
         RadioGroup radioGroup = findViewById(R.id.question_3_1_radio_group);
         return radioGroup.getCheckedRadioButtonId() == R.id.question_3_1_yes;
+    }
+
+    private boolean getQuestion31RampAnswer() {
+        return ((CheckBox) findViewById(R.id.health_question_3_2_ramp)).isChecked();
+    }
+
+    private boolean getQuestion31SpecializedToiletAnswer() {
+        return ((CheckBox) findViewById(R.id.health_question_3_2_specialized_toilet)).isChecked();
+    }
+
+    private boolean getQuestion31Others() {
+        return ((CheckBox) findViewById(R.id.health_question_3_others)).isChecked();
     }
 }

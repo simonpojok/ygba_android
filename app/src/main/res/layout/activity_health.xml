@@ -1850,7 +1850,7 @@
             android:layout_marginVertical="5dp"
             android:inputType="number"
             android:textSize="15sp"
-            android:id="@+id/health_3_other_specify"
+            android:id="@+id/health_3_2_other_specify"
             android:layout_width="match_parent"
             android:layout_height="100dp"
             android:background="@drawable/edit_text_style"
