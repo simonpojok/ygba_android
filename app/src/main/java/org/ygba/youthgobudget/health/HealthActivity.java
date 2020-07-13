@@ -46,6 +46,7 @@ public class HealthActivity extends AppCompatActivity {
     EditText hQ2_1_StillNumberDeliveriesTextEdit;
     EditText hQ2_2_VaccineEditText;
     EditText hQ3ToiletNumberBlocks;
+    EditText hQ3ToiletNumberStances;
     EditText hQ3PatientToiletMaleStances;
     EditText hQ3PatientToiletFemaleStances;
     EditText hQ3StaffToiletMaleStances;
@@ -123,6 +124,7 @@ public class HealthActivity extends AppCompatActivity {
         hQ2_1_StillNumberDeliveriesTextEdit = findViewById(R.id.health_still_number_deliveries);
         hQ2_2_VaccineEditText = findViewById(R.id.health_2_2_vaccine);
         hQ3ToiletNumberBlocks = findViewById(R.id.health_3_toilet_blocks);
+        hQ3ToiletNumberStances = findViewById(R.id.health_3_toilet_stances);
         hQ3PatientToiletMaleStances = findViewById(R.id.health_3_patients_male_stances);
         hQ3PatientToiletFemaleStances = findViewById(R.id.health_3_toilet_patients_female_stances);
         hQ3StaffToiletMaleStances = findViewById(R.id.health_3_toilet_staff_male_stances);
