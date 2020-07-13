@@ -17,6 +17,7 @@ import org.ygba.youthgobudget.dialogs.DatePickerActivity;
 
 public class HealthActivity extends AppCompatActivity {
     private final int Q_1_RECURRENT_DATE_RECEIVED_REQUEST_CODE = 1;
+    private final int Q_1_RECURRENT_DATE_WITHDRAWN_REQUEST_CODE = 2;
     TextView hDateTextView;
     Spinner hFinancialSpinner;
     EditText villageEditText;
@@ -30,6 +31,7 @@ public class HealthActivity extends AppCompatActivity {
     EditText hQ1RecurrentApprovedEditText;
     EditText hQ1RecurrentBudgetReleaseTextEdit;
     EditText hQ1RecurrentDateReceivedEditText;
+    EditText hQ1RecurrentDateWithdrawnEditText;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -47,9 +49,16 @@ public class HealthActivity extends AppCompatActivity {
                 startActivityForResult(new Intent(HealthActivity.this, DatePickerActivity.class), Q_1_RECURRENT_DATE_RECEIVED_REQUEST_CODE);
             }
         });
+
+        hQ1RecurrentDateWithdrawnEditText.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivityForResult(new Intent(HealthActivity.this, DatePickerActivity.class), Q_1_RECURRENT_DATE_WITHDRAWN_REQUEST_CODE);
+            }
+        });
     }
 
-    @RequiresApi(api = Build.VERSION_CODES.O)
+
     private void initViews() {
         hDateTextView = findViewById(R.id.date_text_view);
         hFinancialSpinner = findViewById(R.id.financial_year_spinner);
@@ -65,6 +74,7 @@ public class HealthActivity extends AppCompatActivity {
         hQ1RecurrentBudgetReleaseTextEdit = findViewById(R.id.h_question_1_recurrent_budget_released_edit_text);
         hQ1RecurrentDateReceivedEditText = findViewById(R.id.h_question_1_recurrent_date_received_edit_text);
         hQ1RecurrentDateReceivedEditText.setInputType(View.AUTOFILL_TYPE_NONE);
+        hQ1RecurrentDateWithdrawnEditText = findViewById(R.id.h_question_1_recurrent_date_withdrawn_edit_text);
     }
 
 
