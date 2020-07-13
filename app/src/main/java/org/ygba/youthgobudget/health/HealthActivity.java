@@ -17,6 +17,9 @@ public class HealthActivity extends AppCompatActivity {
     EditText divisionEditText;
     EditText agentFulNameEditText;
     EditText agentTelEditText;
+    EditText qQANameAndGradeHealthCenterEditText;
+    EditText hQBAttendanceEditText;
+    EditText hQCInpatientNumberEditText;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -34,5 +37,8 @@ public class HealthActivity extends AppCompatActivity {
         divisionEditText = findViewById(R.id.division_text_edit);
         agentFulNameEditText = findViewById(R.id.ygb_agent_name_edit_view);
         agentTelEditText = findViewById(R.id.ygb_agent_tel_edit_view);
+        qQANameAndGradeHealthCenterEditText = findViewById(R.id.h_name_and_grade_health_center);
+        hQBAttendanceEditText = findViewById(R.id.h_question_d_attendance_edit_text);
+        hQCInpatientNumberEditText = findViewById(R.id.h_question_c_inpatient_number);
     }
 }

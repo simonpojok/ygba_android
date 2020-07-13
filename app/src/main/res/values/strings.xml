@@ -264,4 +264,8 @@
     </string>
     <string name="health_sector_header">HEALTH SECTOR</string>
     <string name="health_form_description">COMMUNITY BUDGET PERFORMANCE AND SERVICE DELIVERY TRACKING TOOL</string>
+    <string name="health_note">Note: This tool is completed with the help of health officer in charge</string>
+    <string name="h_question_a">a) Name and Grade of Health Center</string>
+    <string name="h_question_b">b ) Number of Outpatient OPD attendance during the Quarter</string>
+    <string name="h_question_c">c ) Number of inpatient attendance during the quarter</string>
 </resources>
