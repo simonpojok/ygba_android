@@ -1,8 +1,10 @@
 package org.ygba.youthgobudget.health;
 
+import androidx.annotation.Nullable;
 import androidx.annotation.RequiresApi;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Build;
 import android.os.Bundle;
 import android.view.View;
@@ -11,8 +13,10 @@ import android.widget.Spinner;
 import android.widget.TextView;
 
 import org.ygba.youthgobudget.R;
+import org.ygba.youthgobudget.dialogs.DatePickerActivity;
 
 public class HealthActivity extends AppCompatActivity {
+    private final int Q_1_RECURRENT_DATE_RECEIVED_REQUEST_CODE = 1;
     TextView hDateTextView;
     Spinner hFinancialSpinner;
     EditText villageEditText;
@@ -40,7 +44,7 @@ public class HealthActivity extends AppCompatActivity {
         hQ1RecurrentDateReceivedEditText.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
+                startActivityForResult(new Intent(HealthActivity.this, DatePickerActivity.class), Q_1_RECURRENT_DATE_RECEIVED_REQUEST_CODE);
             }
         });
     }
@@ -64,4 +68,13 @@ public class HealthActivity extends AppCompatActivity {
     }
 
 
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
+        if ((resultCode == RESULT_OK) && (data != null) ) {
+            if (requestCode == Q_1_RECURRENT_DATE_RECEIVED_REQUEST_CODE) {
+                hQ1RecurrentDateReceivedEditText.setText(data.getStringExtra(DatePickerActivity.SELECTED_DATE));
+            }
+        }
+    }
 }
