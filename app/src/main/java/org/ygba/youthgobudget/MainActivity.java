@@ -20,11 +20,13 @@ import androidx.appcompat.widget.Toolbar;
 
 import org.ygba.youthgobudget.agriculture.AgricultureActivity;
 import org.ygba.youthgobudget.education.EducationActivity;
+import org.ygba.youthgobudget.health.HealthActivity;
 import org.ygba.youthgobudget.socialdevelopment.SocialDevelopmentActivity;
 import org.ygba.youthgobudget.ui.home.HomeFragment;
 
 public class MainActivity extends AppCompatActivity implements HomeFragment.OnAgricultureIconClickListener,
-HomeFragment.OnEducationIconClickListener, HomeFragment.OnSocialDevelopmentIconClickListener {
+HomeFragment.OnEducationIconClickListener, HomeFragment.OnSocialDevelopmentIconClickListener,
+HomeFragment.OnHealthIconClickListener {
 
 
     private AppBarConfiguration mAppBarConfiguration;
@@ -79,5 +81,10 @@ HomeFragment.OnEducationIconClickListener, HomeFragment.OnSocialDevelopmentIconC
     @Override
     public void onSocialDevelopmentIconClick() {
         startActivity(new Intent(this, SocialDevelopmentActivity.class));
+    }
+
+    @Override
+    public void onHealthIconClick() {
+        startActivity(new Intent(this, HealthActivity.class));
     }
 }

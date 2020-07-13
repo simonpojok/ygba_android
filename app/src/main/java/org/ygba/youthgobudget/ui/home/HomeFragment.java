@@ -25,9 +25,11 @@ public class HomeFragment extends Fragment {
     private CardView cv_agriculture;
     private CardView cv_education;
     private CardView cv_social_development;
+    private CardView cv_health;
     private OnAgricultureIconClickListener agricultureIconClickListener;
     private OnEducationIconClickListener onEducationIconClickListener;
     private OnSocialDevelopmentIconClickListener socialDevelopmentIconClickListener;
+    private OnHealthIconClickListener onHealthIconClickListener;
 
     private HomeViewModel homeViewModel;
 
@@ -37,6 +39,7 @@ public class HomeFragment extends Fragment {
         agricultureIconClickListener = (OnAgricultureIconClickListener) context;
         onEducationIconClickListener = (OnEducationIconClickListener) context;
         socialDevelopmentIconClickListener = (OnSocialDevelopmentIconClickListener) context;
+        onHealthIconClickListener = (OnHealthIconClickListener) context;
     }
 
     public View onCreateView(@NonNull LayoutInflater inflater,
@@ -47,6 +50,7 @@ public class HomeFragment extends Fragment {
         cv_agriculture = root.findViewById(R.id.cv_agriculture);
         cv_education = root.findViewById(R.id.cv_education);
         cv_social_development = root.findViewById(R.id.cv_social_development_icon);
+        cv_health = root.findViewById(R.id.cv_health_icon);
 
 
         cv_agriculture.setOnClickListener(new View.OnClickListener() {
@@ -76,6 +80,15 @@ public class HomeFragment extends Fragment {
             }
         });
 
+        cv_health.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                if (onHealthIconClickListener != null ) {
+                    onHealthIconClickListener.onHealthIconClick();
+                }
+            }
+        });
+
         return root;
     }
 
@@ -89,5 +102,9 @@ public class HomeFragment extends Fragment {
 
     public static interface OnSocialDevelopmentIconClickListener {
         public void onSocialDevelopmentIconClick();
+    }
+
+    public static  interface OnHealthIconClickListener {
+        public void onHealthIconClick();
     }
 }
