@@ -310,4 +310,5 @@
     <string name="health_question_3_latrine">Latrine</string>
     <string name="health_question_3_ffc">Female Change Rooms</string>
     <string name="health_question_3_1_label">3.1 Are the health facility /  latrine facilities accessible to patients with disabilities</string>
+    <string name="health_question_3_2_label">3.2 If yes, which of these PWD friendly facilities does the health center / hospital have ? ( Tick where appropriate )</string>
 </resources>
