@@ -272,4 +272,5 @@
     <string name="health_budget_approved">Approved budgets</string>
     <string name="health_budget_released">Budget Released ( actual )</string>
     <string name="health_q_1_recurrent">Recurrent</string>
+    <string name="health_q_1_development">Development</string>
 </resources>
