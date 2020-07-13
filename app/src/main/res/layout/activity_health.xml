@@ -931,6 +931,52 @@
                     android:textSize="15sp"
                     android:textColor="@color/white" />
             </RadioGroup>
+
+<!--            8 -->
+
+            <TextView
+                android:layout_gravity="start"
+                android:layout_row="7"
+                android:layout_column="0"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="100dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/youth_friendly_corners"
+                android:textSize="15sp"
+                android:textColor="@color/white"
+                android:textStyle="bold" />
+
+            <RadioGroup
+                android:layout_gravity="end"
+                android:layout_column="1"
+                android:layout_row="6"
+                android:id="@+id/question_2_youth_friendly_corners_radio_group"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:checked="true"
+                    android:id="@+id/question_2_youth_friendly_corners_yes"
+                    android:layout_marginHorizontal="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/yes"
+                    android:textStyle="bold"
+                    android:textSize="15sp"
+                    android:textColor="@color/white" />
+
+                <RadioButton
+                    android:id="@+id/question_2_youth_friendly_corners_no"
+                    android:layout_marginHorizontal="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/no"
+                    android:textStyle="bold"
+                    android:textSize="15sp"
+                    android:textColor="@color/white" />
+            </RadioGroup>
         </GridLayout>
 
     </LinearLayout>

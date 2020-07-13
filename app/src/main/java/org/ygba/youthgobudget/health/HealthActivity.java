@@ -141,39 +141,36 @@ public class HealthActivity extends AppCompatActivity {
 
     private boolean getQuestion2MaternityWardObjective() {
         RadioGroup radioGroup = findViewById(R.id.question_2_maternity_radio_group);
-        if (radioGroup.getCheckedRadioButtonId() == R.id.question_2_maternity_yes) return true;
-        return false;
+        return radioGroup.getCheckedRadioButtonId() == R.id.question_2_maternity_yes;
     }
 
     private boolean getQuestion2GeneralWardObjective() {
         RadioGroup radioGroup = findViewById(R.id.question_2_general_ward_radio_group);
-        if (radioGroup.getCheckedRadioButtonId() == R.id.question_2_general_ward_yes) return true;
-        return false;
+        return radioGroup.getCheckedRadioButtonId() == R.id.question_2_general_ward_yes;
     }
 
     private boolean getQuestion2DeliveryBedsObjective() {
         RadioGroup radioGroup = findViewById(R.id.question_2_delivery_beds_radio_group);
-        if (radioGroup.getCheckedRadioButtonId() == R.id.question_2_delivery_beds_yes) return true;
-        return false;
+        return radioGroup.getCheckedRadioButtonId() == R.id.question_2_delivery_beds_yes;
     }
     private boolean getQuestion2FamilyPlanningServicesObjective() {
         RadioGroup radioGroup = findViewById(R.id.question_2_family_planning_Services_radio_group);
-        if (radioGroup.getCheckedRadioButtonId() == R.id.question_2_family_planning_Services_yes) return true;
-        return false;
+        return radioGroup.getCheckedRadioButtonId() == R.id.question_2_family_planning_Services_yes;
     }
     private boolean getQuestion2HIVCounsellingTestingObjective() {
         RadioGroup radioGroup = findViewById(R.id.question_2_hiv_counselling_testing_radio_group);
-        if (radioGroup.getCheckedRadioButtonId() == R.id.question_2_hiv_counselling_testing_yes) return true;
-        return false;
+        return radioGroup.getCheckedRadioButtonId() == R.id.question_2_hiv_counselling_testing_yes;
     }
     private boolean getQuestion2PMTCTObjective() {
         RadioGroup radioGroup = findViewById(R.id.question_2_pmtct_radio_group);
-        if (radioGroup.getCheckedRadioButtonId() == R.id.question_2_pmtct_yes) return true;
-        return false;
+        return radioGroup.getCheckedRadioButtonId() == R.id.question_2_pmtct_yes;
     }
     private boolean getQuestion2ImmunizationObjective() {
         RadioGroup radioGroup = findViewById(R.id.question_2_immunization_radio_group);
-        if (radioGroup.getCheckedRadioButtonId() == R.id.question_2_immunization_yes) return true;
-        return false;
+        return radioGroup.getCheckedRadioButtonId() == R.id.question_2_immunization_yes;
+    }
+    private boolean getQuestion2YouthFriendlyCornersObjective() {
+        RadioGroup radioGroup = findViewById(R.id.question_2_youth_friendly_corners_radio_group);
+        return radioGroup.getCheckedRadioButtonId() == R.id.question_2_youth_friendly_corners_yes;
     }
 }
