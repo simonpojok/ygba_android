@@ -268,4 +268,5 @@
     <string name="h_question_a">a) Name and Grade of Health Center</string>
     <string name="h_question_b">b ) Number of Outpatient OPD attendance during the Quarter</string>
     <string name="h_question_c">c ) Number of inpatient attendance during the quarter</string>
+    <string name="h_question_1_introduction">1. BUDGET INFORMATION AND TRANSPARENCY</string>
 </resources>
