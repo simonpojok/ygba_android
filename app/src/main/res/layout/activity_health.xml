@@ -2772,6 +2772,52 @@
             android:padding="5dp"
             android:autofillHints=""
             tools:ignore="TextFields" />
+
+        <TextView
+            android:layout_marginVertical="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/health_question_7_introduction_label"
+            android:textSize="18sp"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_marginVertical="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/health_question_7_1_label"
+            android:textSize="18sp"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+
+        <RadioGroup
+            android:id="@+id/question_7_1_radio_group"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:checked="true"
+                android:id="@+id/question_7_1_yes"
+                android:layout_marginHorizontal="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/yes"
+                android:textStyle="bold"
+                android:textSize="15sp"
+                android:textColor="@color/white" />
+
+            <RadioButton
+                android:id="@+id/question_7_1_no"
+                android:layout_marginHorizontal="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/no"
+                android:textStyle="bold"
+                android:textSize="15sp"
+                android:textColor="@color/white" />
+        </RadioGroup>
     </LinearLayout>
 
 </ScrollView>

@@ -341,4 +341,6 @@
     <string name="health_question_6_2_label">6.2 Reasons for the staff absent staff</string>
     <string name="health_question_6_3_label">6.3 Last date of medical staff performnace appraisal</string>
     <string name="health_question_6_4_label">6.4 Number of Staff appraised</string>
+    <string name="health_question_7_introduction_label">7.0 MEDICAL SUPPLIES</string>
+    <string name="health_question_7_1_label">7.1 Did the HC receive a medical supplies Consignment from National Medical Stores in this quarter ?</string>
 </resources>

@@ -359,4 +359,8 @@ public class HealthActivity extends AppCompatActivity {
         }
         return "Others";
     }
+    private boolean getQuestion61Objective() {
+        RadioGroup radioGroup = findViewById(R.id.question_7_1_radio_group);
+        return radioGroup.getCheckedRadioButtonId() == R.id.question_7_1_yes;
+    }
 }
