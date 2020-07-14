@@ -336,4 +336,5 @@
     <string name="health_question_6_total_staff_no_label">Total No of Staff</string>
     <string name="health_question_6_total_staff_no_present_label">No of Staff present</string>
     <string name="health_question_6_medical_staff_label">Medical staff</string>
+    <string name="health_question_6_none_medical_staff_label">Non-Medical</string>
 </resources>
