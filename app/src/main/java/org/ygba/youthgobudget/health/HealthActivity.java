@@ -3,6 +3,7 @@ package org.ygba.youthgobudget.health;
 import androidx.annotation.Nullable;
 import androidx.annotation.RequiresApi;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.cardview.widget.CardView;
 
 import android.content.Intent;
 import android.os.Build;
@@ -120,6 +121,8 @@ public class HealthActivity extends AppCompatActivity {
     EditText hQ72Drug6NameEditText;
     EditText hQ72Drug6RequiredStockEditText;
     EditText h74NumberOfMedicalEquipmentBought;
+    EditText h76ReferralHandling;
+    EditText h8OtherObservationEditText;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -290,6 +293,15 @@ public class HealthActivity extends AppCompatActivity {
         hQ72Drug6NameEditText = findViewById(R.id.health_7_2_drug_name_6);
         hQ72Drug6RequiredStockEditText = findViewById(R.id.health_7_2_drug_name_6_required_stock);
         h74NumberOfMedicalEquipmentBought = findViewById(R.id.health_7_4_number_of_medical_equipments);
+        h76ReferralHandling = findViewById(R.id.health_7_6_referral_handle);
+        h8OtherObservationEditText = findViewById(R.id.health_8_other_Challenges);
+
+        ((CardView) findViewById(R.id.saved_form_data)).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                // save form data
+            }
+        });
     }
 
 

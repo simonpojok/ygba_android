@@ -3244,6 +3244,76 @@
                 android:textColor="@color/white" />
         </RadioGroup>
 
+        <TextView
+            android:layout_marginVertical="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/health_question_7_6_label"
+            android:textSize="15sp"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+
+        <EditText
+            android:gravity="start"
+            android:layout_marginVertical="5dp"
+            android:inputType="textMultiLine"
+            android:textSize="15sp"
+            android:id="@+id/health_7_6_referral_handle"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:background="@drawable/edit_text_style"
+            android:padding="5dp"
+            android:autofillHints=""
+            tools:ignore="TextFields" />
+
+        <TextView
+            android:layout_marginVertical="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/health_question_8_label"
+            android:textSize="15sp"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+
+        <EditText
+            android:gravity="start"
+            android:layout_marginVertical="5dp"
+            android:inputType="textMultiLine"
+            android:textSize="15sp"
+            android:id="@+id/health_8_other_Challenges"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:background="@drawable/edit_text_style"
+            android:padding="5dp"
+            android:autofillHints=""
+            tools:ignore="TextFields" />
+
+        <androidx.cardview.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:id="@+id/saved_form_data"
+            card_view:cardCornerRadius="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="70dp"
+            android:layout_marginStart="70dp"
+            android:layout_marginRight="70dp"
+            android:layout_marginEnd="70dp"
+            android:layout_marginBottom="27dp"
+            card_view:cardBackgroundColor="@color/white">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="0dp"
+                android:text="Save"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:fontFamily="sans-serif-condensed"
+                android:textColor="#000"/>
+
+        </androidx.cardview.widget.CardView>
+
     </LinearLayout>
 
 </ScrollView>

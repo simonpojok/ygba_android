@@ -350,4 +350,6 @@
     <string name="health_question_7_3_label">7.3 When did the Health Center last drugs consignment get finished ?</string>
     <string name="health_question_7_4_label">7.4 Number of medical equipment bought</string>
     <string name="health_question_7_5_label">"7.5 Does have an ambulance ? "</string>
+    <string name="health_question_7_6_label">If no, how are referrals handled ?</string>
+    <string name="health_question_8_label">8.0 Challenges / other observations of Health care provision in this facility</string>
 </resources>
