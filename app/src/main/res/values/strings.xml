@@ -348,4 +348,6 @@
     <string name="health_question_7_2_name_essential_drug">Name of the essential drug out of stcok</string>
     <string name="health_question_7_2_stock_required">Stock required</string>
     <string name="health_question_7_3_label">7.3 When did the Health Center last drugs consignment get finished ?</string>
+    <string name="health_question_7_4_label">7.4 Number of medical equipment bought</string>
+    <string name="health_question_7_5_label">"7.5 Does have an ambulance ? "</string>
 </resources>

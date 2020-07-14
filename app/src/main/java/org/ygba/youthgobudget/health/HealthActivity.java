@@ -119,6 +119,7 @@ public class HealthActivity extends AppCompatActivity {
     EditText hQ72Drug5RequiredStockEditText;
     EditText hQ72Drug6NameEditText;
     EditText hQ72Drug6RequiredStockEditText;
+    EditText h74NumberOfMedicalEquipmentBought;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -288,6 +289,7 @@ public class HealthActivity extends AppCompatActivity {
         hQ72Drug5RequiredStockEditText = findViewById(R.id.health_7_2_drug_name_5_required_stock);
         hQ72Drug6NameEditText = findViewById(R.id.health_7_2_drug_name_6);
         hQ72Drug6RequiredStockEditText = findViewById(R.id.health_7_2_drug_name_6_required_stock);
+        h74NumberOfMedicalEquipmentBought = findViewById(R.id.health_7_4_number_of_medical_equipments);
     }
 
 
@@ -411,5 +413,9 @@ public class HealthActivity extends AppCompatActivity {
     private boolean getQuestion61Objective() {
         RadioGroup radioGroup = findViewById(R.id.question_7_1_radio_group);
         return radioGroup.getCheckedRadioButtonId() == R.id.question_7_1_yes;
+    }
+    private boolean getQuestion75Objective() {
+        RadioGroup radioGroup = findViewById(R.id.question_7_5_amubance_radio_group);
+        return radioGroup.getCheckedRadioButtonId() == R.id.question_7_5_ambulance_yes;
     }
 }
