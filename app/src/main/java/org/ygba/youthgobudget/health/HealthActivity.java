@@ -297,4 +297,8 @@ public class HealthActivity extends AppCompatActivity {
         RadioGroup radioGroup = findViewById(R.id.question_4_3_water_point_nearby_radio_group);
         return radioGroup.getCheckedRadioButtonId() == R.id.question_4_3_yes;
     }
+    private boolean getQuestion44HandWashingObjective() {
+        RadioGroup radioGroup = findViewById(R.id.question_4_4_handwashing_radio_group);
+        return radioGroup.getCheckedRadioButtonId() == R.id.question_4_4_yes;
+    }
 }

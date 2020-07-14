@@ -324,4 +324,5 @@
     <string name="health_question_4_1_label">4.1 Is there water point accessible to PWDS ?</string>
     <string name="health_question_4_3_label">4.3 Does the facility have a functional water point within or nearby ?</string>
     <string name="no_4_3">No ( estimate distance ) to the source</string>
+    <string name="health_question_4_4_label">4.4 Handwashing facility installed at the health facility</string>
 </resources>
