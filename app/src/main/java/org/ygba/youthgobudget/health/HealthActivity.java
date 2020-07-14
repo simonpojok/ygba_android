@@ -105,6 +105,8 @@ public class HealthActivity extends AppCompatActivity {
     EditText hQ63LastDateAppraisalEditText;
     EditText h64NumberOfStaffAppraisedEditText;
     EditText h71DeliveryDateEditText;
+    EditText hQ72Drug1NameEditText;
+    EditText hQ72Drug1RequiredStockEditText;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -253,6 +255,8 @@ public class HealthActivity extends AppCompatActivity {
         hQ6NoneMedicalTotalNumberStaffPresentEditText = findViewById(R.id.health_6_none_medical_total_number_staff_present);
         hQ6ReasonsEditText = findViewById(R.id.health_6_2_absence_reason_edit_Text);
         h64NumberOfStaffAppraisedEditText = findViewById(R.id.health_6_4_number_of_staff_appraised);
+        hQ72Drug1NameEditText = findViewById(R.id.health_7_2_drug_name_1);
+        hQ72Drug1RequiredStockEditText = findViewById(R.id.health_7_2_drug_name_1_required_stock);
     }
 
 

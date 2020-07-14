@@ -2861,6 +2861,7 @@
                 android:columnCount="3"
                 android:rowCount="7">
 
+<!--                row 0 -->
                 <TextView
                     android:layout_column="1"
                     android:layout_row="0"
@@ -2884,6 +2885,48 @@
                     android:textSize="15sp"
                     android:textColor="@color/white"
                     android:textStyle="bold" />
+<!--                row 1 -->
+                <TextView
+                    android:layout_column="0"
+                    android:layout_row="1"
+                    android:layout_marginVertical="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="10dp"
+                    android:text="1"
+                    android:textSize="15sp"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:layout_row="1"
+                    android:layout_column="1"
+                    android:gravity="start"
+                    android:layout_marginVertical="5dp"
+                    android:inputType="text"
+                    android:textSize="15sp"
+                    android:id="@+id/health_7_2_drug_name_1"
+                    android:layout_width="200dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/edit_text_style"
+                    android:padding="5dp"
+                    android:autofillHints=""
+                    tools:ignore="TextFields" />
+
+                <EditText
+                    android:layout_row="1"
+                    android:layout_column="2"
+                    android:gravity="center"
+                    android:layout_marginVertical="5dp"
+                    android:inputType="number"
+                    android:textSize="15sp"
+                    android:id="@+id/health_7_2_drug_name_1_required_stock"
+                    android:layout_width="200dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/edit_text_style"
+                    android:padding="5dp"
+                    android:autofillHints=""
+                    tools:ignore="TextFields" />
             </GridLayout>
         </HorizontalScrollView>
     </LinearLayout>
