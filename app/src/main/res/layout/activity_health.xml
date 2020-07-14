@@ -2866,7 +2866,7 @@
                     android:layout_column="1"
                     android:layout_row="0"
                     android:layout_marginVertical="5dp"
-                    android:layout_width="wrap_content"
+                    android:layout_width="150dp"
                     android:layout_height="wrap_content"
                     android:layout_marginEnd="5dp"
                     android:text="@string/health_question_7_2_name_essential_drug"
@@ -2902,6 +2902,7 @@
                     android:layout_row="1"
                     android:layout_column="1"
                     android:gravity="start"
+                    android:layout_marginHorizontal="5dp"
                     android:layout_marginVertical="5dp"
                     android:inputType="text"
                     android:textSize="15sp"
@@ -2914,6 +2915,7 @@
                     tools:ignore="TextFields" />
 
                 <EditText
+                    android:layout_marginHorizontal="5dp"
                     android:layout_row="1"
                     android:layout_column="2"
                     android:gravity="center"
@@ -2921,6 +2923,236 @@
                     android:inputType="number"
                     android:textSize="15sp"
                     android:id="@+id/health_7_2_drug_name_1_required_stock"
+                    android:layout_width="200dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/edit_text_style"
+                    android:padding="5dp"
+                    android:autofillHints=""
+                    tools:ignore="TextFields" />
+
+<!--                row 2 -->
+
+                <TextView
+                    android:layout_column="0"
+                    android:layout_row="2"
+                    android:layout_marginVertical="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="10dp"
+                    android:text="2"
+                    android:textSize="15sp"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:layout_row="2"
+                    android:layout_column="1"
+                    android:gravity="start"
+                    android:layout_marginHorizontal="5dp"
+                    android:layout_marginVertical="5dp"
+                    android:inputType="text"
+                    android:textSize="15sp"
+                    android:id="@+id/health_7_2_drug_name_2"
+                    android:layout_width="200dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/edit_text_style"
+                    android:padding="5dp"
+                    android:autofillHints=""
+                    tools:ignore="TextFields" />
+
+                <EditText
+                    android:layout_marginHorizontal="5dp"
+                    android:layout_row="2"
+                    android:layout_column="2"
+                    android:gravity="center"
+                    android:layout_marginVertical="5dp"
+                    android:inputType="number"
+                    android:textSize="15sp"
+                    android:id="@+id/health_7_2_drug_name_2_required_stock"
+                    android:layout_width="200dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/edit_text_style"
+                    android:padding="5dp"
+                    android:autofillHints=""
+                    tools:ignore="TextFields" />
+
+<!--                row 3 -->
+
+                <TextView
+                    android:layout_column="0"
+                    android:layout_row="3"
+                    android:layout_marginVertical="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="10dp"
+                    android:text="3"
+                    android:textSize="15sp"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:layout_row="3"
+                    android:layout_column="1"
+                    android:gravity="start"
+                    android:layout_marginHorizontal="5dp"
+                    android:layout_marginVertical="5dp"
+                    android:inputType="text"
+                    android:textSize="15sp"
+                    android:id="@+id/health_7_2_drug_name_3"
+                    android:layout_width="200dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/edit_text_style"
+                    android:padding="5dp"
+                    android:autofillHints=""
+                    tools:ignore="TextFields" />
+
+                <EditText
+                    android:layout_marginHorizontal="5dp"
+                    android:layout_row="3"
+                    android:layout_column="2"
+                    android:gravity="center"
+                    android:layout_marginVertical="5dp"
+                    android:inputType="number"
+                    android:textSize="15sp"
+                    android:id="@+id/health_7_2_drug_name_3_required_stock"
+                    android:layout_width="200dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/edit_text_style"
+                    android:padding="5dp"
+                    android:autofillHints=""
+                    tools:ignore="TextFields" />
+
+<!--                row 4 -->
+
+                <TextView
+                    android:layout_column="0"
+                    android:layout_row="4"
+                    android:layout_marginVertical="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="10dp"
+                    android:text="4"
+                    android:textSize="15sp"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:layout_row="4"
+                    android:layout_column="1"
+                    android:gravity="start"
+                    android:layout_marginHorizontal="5dp"
+                    android:layout_marginVertical="5dp"
+                    android:inputType="text"
+                    android:textSize="15sp"
+                    android:id="@+id/health_7_2_drug_name_4"
+                    android:layout_width="200dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/edit_text_style"
+                    android:padding="5dp"
+                    android:autofillHints=""
+                    tools:ignore="TextFields" />
+
+                <EditText
+                    android:layout_marginHorizontal="5dp"
+                    android:layout_row="4"
+                    android:layout_column="2"
+                    android:gravity="center"
+                    android:layout_marginVertical="5dp"
+                    android:inputType="number"
+                    android:textSize="15sp"
+                    android:id="@+id/health_7_2_drug_name_4_required_stock"
+                    android:layout_width="200dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/edit_text_style"
+                    android:padding="5dp"
+                    android:autofillHints=""
+                    tools:ignore="TextFields" />
+
+<!--                row 5 -->
+
+                <TextView
+                    android:layout_column="0"
+                    android:layout_row="5"
+                    android:layout_marginVertical="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="10dp"
+                    android:text="5"
+                    android:textSize="15sp"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:layout_row="5"
+                    android:layout_column="1"
+                    android:gravity="start"
+                    android:layout_marginHorizontal="5dp"
+                    android:layout_marginVertical="5dp"
+                    android:inputType="text"
+                    android:textSize="15sp"
+                    android:id="@+id/health_7_2_drug_name_5"
+                    android:layout_width="200dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/edit_text_style"
+                    android:padding="5dp"
+                    android:autofillHints=""
+                    tools:ignore="TextFields" />
+
+                <EditText
+                    android:layout_marginHorizontal="5dp"
+                    android:layout_row="5"
+                    android:layout_column="2"
+                    android:gravity="center"
+                    android:layout_marginVertical="5dp"
+                    android:inputType="number"
+                    android:textSize="15sp"
+                    android:id="@+id/health_7_2_drug_name_5_required_stock"
+                    android:layout_width="200dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/edit_text_style"
+                    android:padding="5dp"
+                    android:autofillHints=""
+                    tools:ignore="TextFields" />
+
+<!--                row 6 -->
+
+                <TextView
+                    android:layout_column="0"
+                    android:layout_row="6"
+                    android:layout_marginVertical="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="10dp"
+                    android:text="6"
+                    android:textSize="15sp"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:layout_row="6"
+                    android:layout_column="1"
+                    android:gravity="start"
+                    android:layout_marginHorizontal="5dp"
+                    android:layout_marginVertical="5dp"
+                    android:inputType="text"
+                    android:textSize="15sp"
+                    android:id="@+id/health_7_2_drug_name_6"
+                    android:layout_width="200dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/edit_text_style"
+                    android:padding="5dp"
+                    android:autofillHints=""
+                    tools:ignore="TextFields" />
+
+                <EditText
+                    android:layout_marginHorizontal="5dp"
+                    android:layout_row="6"
+                    android:layout_column="2"
+                    android:gravity="center"
+                    android:layout_marginVertical="5dp"
+                    android:inputType="number"
+                    android:textSize="15sp"
+                    android:id="@+id/health_7_2_drug_name_6_required_stock"
                     android:layout_width="200dp"
                     android:layout_height="40dp"
                     android:background="@drawable/edit_text_style"
