@@ -321,4 +321,5 @@
     <string name="health_question_4_water_point_tap_label">Tap</string>
     <string name="health_question_4_water_point_water_tank_label">Water Tank</string>
     <string name="health_question_4_water_point_others_label">Others ( Spacify )</string>
+    <string name="health_question_4_1_label">4.1 Is there water point accessible to PWDS ?</string>
 </resources>
