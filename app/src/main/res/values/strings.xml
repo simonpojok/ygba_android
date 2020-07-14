@@ -344,4 +344,7 @@
     <string name="health_question_7_introduction_label">7.0 MEDICAL SUPPLIES</string>
     <string name="health_question_7_1_label">7.1 Did the HC receive a medical supplies Consignment from National Medical Stores in this quarter ?</string>
     <string name="health_question_7_1_reason_label">If yes, please provide date as per delivery note</string>
+    <string name="health_question_7_2_reason_label">7.2 List the essential drugs that are out of stock</string>
+    <string name="health_question_7_2_name_essential_drug">Name of the essential drug out of stcok</string>
+    <string name="health_question_7_2_stock_required">Stock required</string>
 </resources>
