@@ -88,6 +88,7 @@ public class HealthActivity extends AppCompatActivity {
     EditText hQ4OtherNameNumberEditText;
     EditText hQ4OtherNameNumberFunctionalEditText;
     EditText hQ4OtherNameNumberNoneFunctional;
+    EditText h43NoEstimateEditText;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -200,6 +201,7 @@ public class HealthActivity extends AppCompatActivity {
         hQ4OtherNameNumberEditText = findViewById(R.id.health_4_others_number);
         hQ4OtherNameNumberFunctionalEditText = findViewById(R.id.health_4_water_others_functional);
         hQ4OtherNameNumberNoneFunctional = findViewById(R.id.health_4_others_number_none);
+        h43NoEstimateEditText = findViewById(R.id.health_4_2_other_specify);
     }
 
 
@@ -289,5 +291,10 @@ public class HealthActivity extends AppCompatActivity {
     private boolean getQuestion41WaterPointObjective() {
         RadioGroup radioGroup = findViewById(R.id.question_4_1_water_point_accessible_radio_group);
         return radioGroup.getCheckedRadioButtonId() == R.id.question_4_1_yes;
+    }
+
+    private boolean getQuestion43WaterPointObjective() {
+        RadioGroup radioGroup = findViewById(R.id.question_4_3_water_point_nearby_radio_group);
+        return radioGroup.getCheckedRadioButtonId() == R.id.question_4_3_yes;
     }
 }

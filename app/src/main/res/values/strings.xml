@@ -322,4 +322,6 @@
     <string name="health_question_4_water_point_water_tank_label">Water Tank</string>
     <string name="health_question_4_water_point_others_label">Others ( Spacify )</string>
     <string name="health_question_4_1_label">4.1 Is there water point accessible to PWDS ?</string>
+    <string name="health_question_4_3_label">4.3 Does the facility have a functional water point within or nearby ?</string>
+    <string name="no_4_3">No ( estimate distance ) to the source</string>
 </resources>
