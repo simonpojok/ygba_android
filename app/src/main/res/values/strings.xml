@@ -330,4 +330,9 @@
     <string name="health_question_5_2_label">5.2 If yes, how often do they meet ? ( Attach latest approved minutes )</string>
     <string name="quartly">Quartly</string>
     <string name="health_question_5_3_label">5.3 When was the last time the Support Supervision Team and or Health Inspector visited the HC ? ( please check visitors book and copy of support supervision report ( Date )</string>
+    <string name="health_question_6_label">6.0 STAFFING</string>
+    <string name="health_question_6_1_label">6.1 Staffing of Health Center ( Break down staff available )</string>
+    <string name="health_question_6_staff_ceiling_label">Staff Ceiling</string>
+    <string name="health_question_6_total_staff_no_label">Total No of Staff</string>
+    <string name="health_question_6_total_staff_no_present_label">No of Staff present</string>
 </resources>
