@@ -347,4 +347,5 @@
     <string name="health_question_7_2_reason_label">7.2 List the essential drugs that are out of stock</string>
     <string name="health_question_7_2_name_essential_drug">Name of the essential drug out of stcok</string>
     <string name="health_question_7_2_stock_required">Stock required</string>
+    <string name="health_question_7_3_label">7.3 When did the Health Center last drugs consignment get finished ?</string>
 </resources>

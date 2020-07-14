@@ -26,6 +26,7 @@ public class HealthActivity extends AppCompatActivity {
     private final int Q_1_RECURRENT_DATE_DEVELOPMENT_WITHDRAWN_REQUEST_CODE = 4;
     private final int Q_6_3_LAST_DATE_MEDICAL_STAFF_APPRAISAL = 6;
     private final int Q_7_1_DELIVERY_DATE_REQUEST_CODE = 7;
+    private final int Q_7_3_LAST_DRUG_CONSIGNMENT_REQUEST_CODE = 8;
     TextView hDateTextView;
     Spinner hFinancialSpinner;
     EditText villageEditText;
@@ -105,8 +106,19 @@ public class HealthActivity extends AppCompatActivity {
     EditText hQ63LastDateAppraisalEditText;
     EditText h64NumberOfStaffAppraisedEditText;
     EditText h71DeliveryDateEditText;
+    EditText h73DrugLastDateEditText;
     EditText hQ72Drug1NameEditText;
     EditText hQ72Drug1RequiredStockEditText;
+    EditText hQ72Drug2NameEditText;
+    EditText hQ72Drug2RequiredStockEditText;
+    EditText hQ72Drug3NameEditText;
+    EditText hQ72Drug3RequiredStockEditText;
+    EditText hQ72Drug4NameEditText;
+    EditText hQ72Drug4RequiredStockEditText;
+    EditText hQ72Drug5NameEditText;
+    EditText hQ72Drug5RequiredStockEditText;
+    EditText hQ72Drug6NameEditText;
+    EditText hQ72Drug6RequiredStockEditText;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -166,6 +178,13 @@ public class HealthActivity extends AppCompatActivity {
             }
         });
 
+        h73DrugLastDateEditText.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivityForResult(new Intent(HealthActivity.this, DatePickerActivity.class), Q_7_3_LAST_DRUG_CONSIGNMENT_REQUEST_CODE);
+            }
+        });
+
     }
 
 
@@ -196,6 +215,8 @@ public class HealthActivity extends AppCompatActivity {
         h53LastVisitDate.setInputType(View.AUTOFILL_TYPE_NONE);
         h71DeliveryDateEditText = findViewById(R.id.health_7_1_delivery_date);
         h71DeliveryDateEditText.setInputType(View.AUTOFILL_TYPE_NONE);
+        h73DrugLastDateEditText = findViewById(R.id.health_7_3_last_date_drug_Edit_text);
+        h73DrugLastDateEditText.setInputType(View.AUTOFILL_TYPE_NONE);
         hQ63LastDateAppraisalEditText = findViewById(R.id.health_6_3_date_last);
         hQ63LastDateAppraisalEditText.setInputType(View.AUTOFILL_TYPE_NONE);;
         hQ1_2BudgetInformationEditText = findViewById(R.id.h_question_1_2_budget_information);
@@ -257,6 +278,16 @@ public class HealthActivity extends AppCompatActivity {
         h64NumberOfStaffAppraisedEditText = findViewById(R.id.health_6_4_number_of_staff_appraised);
         hQ72Drug1NameEditText = findViewById(R.id.health_7_2_drug_name_1);
         hQ72Drug1RequiredStockEditText = findViewById(R.id.health_7_2_drug_name_1_required_stock);
+        hQ72Drug2NameEditText = findViewById(R.id.health_7_2_drug_name_2);
+        hQ72Drug2RequiredStockEditText = findViewById(R.id.health_7_2_drug_name_2_required_stock);
+        hQ72Drug3NameEditText = findViewById(R.id.health_7_2_drug_name_3);
+        hQ72Drug3RequiredStockEditText = findViewById(R.id.health_7_2_drug_name_3_required_stock);
+        hQ72Drug4NameEditText = findViewById(R.id.health_7_2_drug_name_4);
+        hQ72Drug4RequiredStockEditText = findViewById(R.id.health_7_2_drug_name_4_required_stock);
+        hQ72Drug5NameEditText = findViewById(R.id.health_7_2_drug_name_5);
+        hQ72Drug5RequiredStockEditText = findViewById(R.id.health_7_2_drug_name_5_required_stock);
+        hQ72Drug6NameEditText = findViewById(R.id.health_7_2_drug_name_6);
+        hQ72Drug6RequiredStockEditText = findViewById(R.id.health_7_2_drug_name_6_required_stock);
     }
 
 
@@ -278,6 +309,8 @@ public class HealthActivity extends AppCompatActivity {
                 hQ63LastDateAppraisalEditText.setText(data.getStringExtra(DatePickerActivity.SELECTED_DATE));
             } else if (requestCode == Q_7_1_DELIVERY_DATE_REQUEST_CODE) {
                 h71DeliveryDateEditText.setText(data.getStringExtra(DatePickerActivity.SELECTED_DATE));
+            } else if (requestCode == Q_7_3_LAST_DRUG_CONSIGNMENT_REQUEST_CODE ) {
+                h73DrugLastDateEditText.setText(data.getStringExtra(DatePickerActivity.SELECTED_DATE));
             }
         }
     }
