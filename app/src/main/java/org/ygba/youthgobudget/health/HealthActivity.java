@@ -19,6 +19,7 @@ import org.ygba.youthgobudget.R;
 import org.ygba.youthgobudget.dialogs.DatePickerActivity;
 
 public class HealthActivity extends AppCompatActivity {
+    private final int Q_5_LAST_DAY_VISIT_REQUEST_CODE = 6;
     private final int Q_1_RECURRENT_DATE_RECEIVED_REQUEST_CODE = 1;
     private final int Q_1_RECURRENT_DATE_WITHDRAWN_REQUEST_CODE = 2;
     private final int Q_1_RECURRENT_DATE_DEVELOPMENT_RECEIVED_REQUEST_CODE = 3;
@@ -41,6 +42,7 @@ public class HealthActivity extends AppCompatActivity {
     EditText hQ1DevelopmentBudgetReleaseTextEdit;
     EditText hQ1DevelopmentDateReceivedEditText;
     EditText hQ1DevelopmentDateWithdrawnEditText;
+    EditText h53LastVisitDate;
     EditText hQ1_2BudgetInformationEditText;
     EditText hQ2_1_LiveNumberDeliveriesTextEdit;
     EditText hQ2_1_StillNumberDeliveriesTextEdit;
@@ -122,6 +124,13 @@ public class HealthActivity extends AppCompatActivity {
             }
         });
 
+        h53LastVisitDate.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivityForResult(new Intent(HealthActivity.this, DatePickerActivity.class), Q_5_LAST_DAY_VISIT_REQUEST_CODE);
+            }
+        });
+
         hQ1DevelopmentDateReceivedEditText.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -155,6 +164,8 @@ public class HealthActivity extends AppCompatActivity {
         hQ1DevelopmentDateReceivedEditText.setInputType(View.AUTOFILL_TYPE_NONE);
         hQ1DevelopmentDateWithdrawnEditText = findViewById(R.id.h_question_1_development_date_withdrawn_edit_text);
         hQ1DevelopmentDateWithdrawnEditText.setInputType(View.AUTOFILL_TYPE_NONE);
+        h53LastVisitDate = findViewById(R.id.health_5_3_date_last);
+        h53LastVisitDate.setInputType(View.AUTOFILL_TYPE_NONE);
         hQ1_2BudgetInformationEditText = findViewById(R.id.h_question_1_2_budget_information);
         hQ2_1_LiveNumberDeliveriesTextEdit = findViewById(R.id.health_live_number_deliveries);
         hQ2_1_StillNumberDeliveriesTextEdit = findViewById(R.id.health_still_number_deliveries);
@@ -219,6 +230,8 @@ public class HealthActivity extends AppCompatActivity {
                 hQ1DevelopmentDateReceivedEditText.setText(data.getStringExtra(DatePickerActivity.SELECTED_DATE));
             } else if (requestCode == Q_1_RECURRENT_DATE_WITHDRAWN_REQUEST_CODE ) {
                 hQ1RecurrentDateWithdrawnEditText.setText(data.getStringExtra(DatePickerActivity.SELECTED_DATE));
+            } else if (requestCode == Q_5_LAST_DAY_VISIT_REQUEST_CODE ) {
+                h53LastVisitDate.setText(data.getStringExtra(DatePickerActivity.SELECTED_DATE));
             }
         }
     }

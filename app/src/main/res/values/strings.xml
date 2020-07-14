@@ -329,4 +329,5 @@
     <string name="health_question_5_1_label">5.1 Does the health Unit Management Committe ( HUMC ) exists ?</string>
     <string name="health_question_5_2_label">5.2 If yes, how often do they meet ? ( Attach latest approved minutes )</string>
     <string name="quartly">Quartly</string>
+    <string name="health_question_5_3_label">5.3 When was the last time the Support Supervision Team and or Health Inspector visited the HC ? ( please check visitors book and copy of support supervision report ( Date )</string>
 </resources>
