@@ -325,4 +325,6 @@
     <string name="health_question_4_3_label">4.3 Does the facility have a functional water point within or nearby ?</string>
     <string name="no_4_3">No ( estimate distance ) to the source</string>
     <string name="health_question_4_4_label">4.4 Handwashing facility installed at the health facility</string>
+    <string name="health_question_5_label">5. OVERSIGHT ROLE ( HC Management Committe )</string>
+    <string name="health_question_5_1_label">5.1 Does the health Unit Management Committe ( HUMC ) exists ?</string>
 </resources>
