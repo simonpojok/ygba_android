@@ -2507,7 +2507,7 @@
             android:textSize="15sp"
             android:id="@+id/health_5_3_date_last"
             android:layout_width="match_parent"
-            android:layout_height="50dp"
+            android:layout_height="40dp"
             android:background="@drawable/edit_text_style"
             android:padding="5dp"
             android:autofillHints=""
@@ -2697,6 +2697,59 @@
 
             </GridLayout>
         </HorizontalScrollView>
+        <TextView
+            android:layout_marginVertical="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/health_question_6_note_label"
+            android:textSize="15sp"
+            android:textColor="@color/white"
+            android:textStyle="italic" />
+
+        <TextView
+            android:layout_marginVertical="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/health_question_6_2_label"
+            android:textSize="15sp"
+            android:textColor="@color/white"
+            android:textStyle="italic" />
+
+        <EditText
+            android:gravity="start"
+            android:layout_marginVertical="5dp"
+            android:inputType="textMultiLine"
+            android:textSize="15sp"
+            android:id="@+id/health_6_2_absence_reason_edit_Text"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/edit_text_style"
+            android:padding="5dp"
+            android:autofillHints=""
+            tools:ignore="TextFields" />
+
+        <TextView
+            android:layout_marginVertical="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/health_question_6_3_label"
+            android:textSize="15sp"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+
+        <EditText
+            android:editable="false"
+            android:gravity="center"
+            android:layout_marginVertical="5dp"
+            android:inputType="none"
+            android:textSize="15sp"
+            android:id="@+id/health_6_3_date_last"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/edit_text_style"
+            android:padding="5dp"
+            android:autofillHints=""
+            tools:ignore="TextFields" />
     </LinearLayout>
 
 </ScrollView>

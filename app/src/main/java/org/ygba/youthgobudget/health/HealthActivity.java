@@ -24,6 +24,7 @@ public class HealthActivity extends AppCompatActivity {
     private final int Q_1_RECURRENT_DATE_WITHDRAWN_REQUEST_CODE = 2;
     private final int Q_1_RECURRENT_DATE_DEVELOPMENT_RECEIVED_REQUEST_CODE = 3;
     private final int Q_1_RECURRENT_DATE_DEVELOPMENT_WITHDRAWN_REQUEST_CODE = 4;
+    private final int Q_6_3_LAST_DATE_MEDICAL_STAFF_APPRAISAL = 7;
     TextView hDateTextView;
     Spinner hFinancialSpinner;
     EditText villageEditText;
@@ -99,6 +100,8 @@ public class HealthActivity extends AppCompatActivity {
     EditText hQ6NoneMedicalStaffCeilingEditText;
     EditText hQ6NoneMedicalTotalNumberStaffEditText;
     EditText hQ6NoneMedicalTotalNumberStaffPresentEditText;
+    EditText hQ6ReasonsEditText;
+    EditText hQ63LastDateAppraisalEditText;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -145,6 +148,13 @@ public class HealthActivity extends AppCompatActivity {
             }
         });
 
+        hQ63LastDateAppraisalEditText.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivityForResult(new Intent(HealthActivity.this, DatePickerActivity.class), Q_6_3_LAST_DATE_MEDICAL_STAFF_APPRAISAL);
+            }
+        });
+
     }
 
 
@@ -173,6 +183,8 @@ public class HealthActivity extends AppCompatActivity {
         hQ1DevelopmentDateWithdrawnEditText.setInputType(View.AUTOFILL_TYPE_NONE);
         h53LastVisitDate = findViewById(R.id.health_5_3_date_last);
         h53LastVisitDate.setInputType(View.AUTOFILL_TYPE_NONE);
+        hQ63LastDateAppraisalEditText = findViewById(R.id.health_6_3_date_last);
+        hQ63LastDateAppraisalEditText.setInputType(View.AUTOFILL_TYPE_NONE);;
         hQ1_2BudgetInformationEditText = findViewById(R.id.h_question_1_2_budget_information);
         hQ2_1_LiveNumberDeliveriesTextEdit = findViewById(R.id.health_live_number_deliveries);
         hQ2_1_StillNumberDeliveriesTextEdit = findViewById(R.id.health_still_number_deliveries);
@@ -228,6 +240,7 @@ public class HealthActivity extends AppCompatActivity {
         hQ6NoneMedicalStaffCeilingEditText = findViewById(R.id.health_6_none_medical_staff_ceiling);
         hQ6NoneMedicalTotalNumberStaffEditText = findViewById(R.id.health_6_none_medical_total_number_staff_ceiling);
         hQ6NoneMedicalTotalNumberStaffPresentEditText = findViewById(R.id.health_6_none_medical_total_number_staff_present);
+        hQ6ReasonsEditText = findViewById(R.id.health_6_2_absence_reason_edit_Text);
     }
 
 
@@ -245,6 +258,8 @@ public class HealthActivity extends AppCompatActivity {
                 hQ1RecurrentDateWithdrawnEditText.setText(data.getStringExtra(DatePickerActivity.SELECTED_DATE));
             } else if (requestCode == Q_5_LAST_DAY_VISIT_REQUEST_CODE ) {
                 h53LastVisitDate.setText(data.getStringExtra(DatePickerActivity.SELECTED_DATE));
+            } else if (requestCode == Q_6_3_LAST_DATE_MEDICAL_STAFF_APPRAISAL ) {
+                hQ63LastDateAppraisalEditText.setText(data.getStringExtra(DatePickerActivity.SELECTED_DATE));
             }
         }
     }
