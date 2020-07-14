@@ -197,7 +197,7 @@ public class HealthActivity extends AppCompatActivity {
         hQ4NoneTankNumberFunctionalEditText = findViewById(R.id.health_4_water_none_functional);
         hQ4NoneTankNumberNoneFunctional = findViewById(R.id.health_4_none_number_none);
 
-        hQ4OtherNameNumberEditText = findViewById(R.id.health_4_others_name);
+        hQ4OtherNameEditText = findViewById(R.id.health_4_others_name);
         hQ4OtherNameNumberEditText = findViewById(R.id.health_4_others_number);
         hQ4OtherNameNumberFunctionalEditText = findViewById(R.id.health_4_water_others_functional);
         hQ4OtherNameNumberNoneFunctional = findViewById(R.id.health_4_others_number_none);
