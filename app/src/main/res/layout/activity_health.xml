@@ -2430,6 +2430,53 @@
                 android:textColor="@color/white" />
 
         </RadioGroup>
+
+        <TextView
+            android:layout_marginVertical="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/health_question_5_2_label"
+            android:textSize="15sp"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+
+        <RadioGroup
+            android:id="@+id/question_5_2_meet_radio_group"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:checked="true"
+                android:id="@+id/question_5_2_monthly"
+                android:layout_marginHorizontal="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/monthly"
+                android:textStyle="bold"
+                android:textSize="15sp"
+                android:textColor="@color/white" />
+
+            <RadioButton
+                android:id="@+id/question_5_2_quartly"
+                android:layout_marginHorizontal="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/quartly"
+                android:textStyle="bold"
+                android:textSize="15sp"
+                android:textColor="@color/white" />
+
+            <RadioButton
+                android:id="@+id/question_5_2_others"
+                android:layout_marginHorizontal="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/others"
+                android:textStyle="bold"
+                android:textSize="15sp"
+                android:textColor="@color/white" />
+        </RadioGroup>
     </LinearLayout>
 
 </ScrollView>

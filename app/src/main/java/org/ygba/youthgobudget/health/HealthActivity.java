@@ -305,4 +305,13 @@ public class HealthActivity extends AppCompatActivity {
         RadioGroup radioGroup = findViewById(R.id.question_5_1_HUMC_radio_group);
         return radioGroup.getCheckedRadioButtonId() == R.id.question_5_1_HUMC_yes;
     }
+
+    private String getQuestion52MeetingObjective() {
+        if (((RadioGroup)findViewById(R.id.question_5_2_meet_radio_group)).getCheckedRadioButtonId() == R.id.question_5_2_monthly) {
+            return "Monthly";
+        } else if (((RadioGroup)findViewById(R.id.question_5_2_meet_radio_group)).getCheckedRadioButtonId() == R.id.question_5_2_quartly) {
+            return "Quarterly";
+        }
+        return "Others";
+    }
 }

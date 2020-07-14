@@ -327,4 +327,6 @@
     <string name="health_question_4_4_label">4.4 Handwashing facility installed at the health facility</string>
     <string name="health_question_5_label">5. OVERSIGHT ROLE ( HC Management Committe )</string>
     <string name="health_question_5_1_label">5.1 Does the health Unit Management Committe ( HUMC ) exists ?</string>
+    <string name="health_question_5_2_label">5.2 If yes, how often do they meet ? ( Attach latest approved minutes )</string>
+    <string name="quartly">Quartly</string>
 </resources>
