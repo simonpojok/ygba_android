@@ -340,4 +340,5 @@
     <string name="health_question_6_note_label">Please validate information with Human Resource staff register or personnel files resident at the HC</string>
     <string name="health_question_6_2_label">6.2 Reasons for the staff absent staff</string>
     <string name="health_question_6_3_label">6.3 Last date of medical staff performnace appraisal</string>
+    <string name="health_question_6_4_label">6.4 Number of Staff appraised</string>
 </resources>
