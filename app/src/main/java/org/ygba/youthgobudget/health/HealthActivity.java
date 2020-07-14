@@ -285,4 +285,9 @@ public class HealthActivity extends AppCompatActivity {
     private boolean getQuestion31Others() {
         return ((CheckBox) findViewById(R.id.health_question_3_others)).isChecked();
     }
+
+    private boolean getQuestion41WaterPointObjective() {
+        RadioGroup radioGroup = findViewById(R.id.question_4_1_water_point_accessible_radio_group);
+        return radioGroup.getCheckedRadioButtonId() == R.id.question_4_1_yes;
+    }
 }
