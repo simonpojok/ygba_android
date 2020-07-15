@@ -14,6 +14,8 @@ import android.widget.TextView;
 
 import com.mobsandgeeks.saripaar.ValidationError;
 import com.mobsandgeeks.saripaar.Validator;
+import com.mobsandgeeks.saripaar.annotation.Length;
+import com.mobsandgeeks.saripaar.annotation.NotEmpty;
 
 import org.ygba.youthgobudget.R;
 import org.ygba.youthgobudget.data.water_and_environment.WaterEnvironmentQuestion;
@@ -24,11 +26,23 @@ import java.util.List;
 public class WaterEnvironmentActivity extends AppCompatActivity implements  AdapterView.OnItemSelectedListener, Validator.ValidationListener {
     private TextView waterDateTextView;
     private Spinner waterFinancialYearSpinner;
+
+    @NotEmpty
     private EditText waterDistrictEditText;
+
+    @NotEmpty
     private EditText waterVillageEditText;
+
+    @NotEmpty
     private EditText wParishEditText;
+
+    @NotEmpty
     private EditText wDivisionET;
+
+    @NotEmpty
     private EditText wAgentFullName;
+
+    @NotEmpty
     private EditText wAgentTelNumber;
     private EditText wAgentNumberET;
     private EditText wQ1ObjectiveReasonET;
