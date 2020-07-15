@@ -131,4 +131,7 @@ public class WaterEnvironmentActivity extends AppCompatActivity {
     private boolean getQuestionQ3ObjectiveAnswer(){
         return ((RadioGroup) findViewById(R.id.water_question_3_radio_group)).getCheckedRadioButtonId() == R.id.water_question_3_yes;
     }
+    private boolean getQuestionQ5ObjectiveAnswer(){
+        return ((RadioGroup) findViewById(R.id.water_question_5_radio_group)).getCheckedRadioButtonId() == R.id.water_question_5_yes;
+    }
 }
