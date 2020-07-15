@@ -5,6 +5,7 @@ import androidx.lifecycle.LiveData;
 import org.ygba.youthgobudget.data.YGBDatabase;
 import org.ygba.youthgobudget.data.agriculture.AgricultureQuestion;
 import org.ygba.youthgobudget.data.socialdevelopment.SocialDevelopmentQuestion;
+import org.ygba.youthgobudget.data.water_and_environment.WaterEnvironmentQuestion;
 
 import java.util.List;
 import java.util.concurrent.Callable;
@@ -67,5 +68,14 @@ public class YGBARepository {
         };
 
         return YGBDatabase.db_executor.submit(liveDataCallable).get();
+    }
+
+    public void saveWaterEnvironmentQuestion(final WaterEnvironmentQuestion question) {
+        YGBDatabase.db_executor.execute(new Runnable() {
+            @Override
+            public void run() {
+                ygbDatabase.waterEnvironmentQuestionDao().saveWaterEnvironmentQuestion(question);
+            }
+        });
     }
 }
