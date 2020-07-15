@@ -125,13 +125,13 @@ public class WaterEnvironmentActivity extends AppCompatActivity implements  Adap
         viewModel.getAllWaterEnvironmentQuestions().observe(this, new Observer<List<WaterEnvironmentQuestion>>() {
             @Override
             public void onChanged(List<WaterEnvironmentQuestion> waterEnvironmentQuestions) {
-                if (waterEnvironmentQuestions != null ) {
-                    if (waterEnvironmentQuestions.size() > 0 ) {
-                        TextView textView = findViewById(R.id.display_data);
-                        textView.setVisibility(View.VISIBLE);
-                        textView.setText(waterEnvironmentQuestions.get(0).toString());
-                    }
-                }
+//                if (waterEnvironmentQuestions != null ) {
+//                    if (waterEnvironmentQuestions.size() > 0 ) {
+//                        TextView textView = findViewById(R.id.display_data);
+//                        textView.setVisibility(View.VISIBLE);
+//                        textView.setText(waterEnvironmentQuestions.get(0).toString());
+//                    }
+//                }
             }
         });
     }
