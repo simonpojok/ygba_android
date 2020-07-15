@@ -64,6 +64,24 @@ public class WaterEnvironmentActivity extends AppCompatActivity {
     private EditText wQ61Village1EditText;
     private EditText wQ61Wetland1EditText;
 
+    private EditText wQ61Village2EditText;
+    private EditText wQ61Wetland2EditText;
+
+    private EditText wQ61Village3EditText;
+    private EditText wQ61Wetland3EditText;
+
+    private EditText wQ61Village4EditText;
+    private EditText wQ61Wetland4EditText;
+
+    private EditText wQ61Village5EditText;
+    private EditText wQ61Wetland5EditText;
+
+    private EditText wQ61Village6EditText;
+    private EditText wQ61Wetland6EditText;
+
+
+    private EditText wQ62EditText;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -126,6 +144,23 @@ public class WaterEnvironmentActivity extends AppCompatActivity {
 
         wQ61Village1EditText = findViewById(R.id.water_question_6_1_edit_text);
         wQ61Wetland1EditText = findViewById(R.id.water_question_6_wetland_1_edit_text);
+
+        wQ61Village2EditText = findViewById(R.id.water_question_6_2_edit_text);
+        wQ61Wetland2EditText = findViewById(R.id.water_question_6_wetland_2_edit_text);
+
+        wQ61Village3EditText = findViewById(R.id.water_question_6_3_edit_text);
+        wQ61Wetland3EditText = findViewById(R.id.water_question_6_wetland_3_edit_text);
+
+        wQ61Village4EditText = findViewById(R.id.water_question_6_4_edit_text);
+        wQ61Wetland4EditText = findViewById(R.id.water_question_6_wetland_4_edit_text);
+
+        wQ61Village5EditText = findViewById(R.id.water_question_6_5_edit_text);
+        wQ61Wetland5EditText = findViewById(R.id.water_question_6_wetland_5_edit_text);
+
+        wQ61Village6EditText = findViewById(R.id.water_question_6_6_edit_text);
+        wQ61Wetland6EditText = findViewById(R.id.water_question_6_wetland_6_edit_text);
+
+        wQ62EditText = findViewById(R.id.water_question_6__edit_text);
     }
 
     private void populateViews() {

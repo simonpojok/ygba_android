@@ -373,4 +373,5 @@
     <string name="water_question_6_1_text">6.1 Name area with wetland degradation</string>
     <string name="water_question_7_village_label">Name of the subcounty / village</string>
     <string name="water_question_7_wetland_label">Wetland under destruction</string>
+    <string name="water_question_6_2_text">6.2 What are the tree planting programs known in the area ?</string>
 </resources>
