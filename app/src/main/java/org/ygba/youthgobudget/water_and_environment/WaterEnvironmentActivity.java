@@ -3,6 +3,7 @@ package org.ygba.youthgobudget.water_and_environment;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.view.View;
 import android.widget.EditText;
 import android.widget.RadioGroup;
 import android.widget.Spinner;
@@ -161,6 +162,13 @@ public class WaterEnvironmentActivity extends AppCompatActivity {
         wQ61Wetland6EditText = findViewById(R.id.water_question_6_wetland_6_edit_text);
 
         wQ62EditText = findViewById(R.id.water_question_6__edit_text);
+
+        findViewById(R.id.saved_form_data).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                // save the form data
+            }
+        });
     }
 
     private void populateViews() {
