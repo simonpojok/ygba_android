@@ -180,4 +180,7 @@ public class WaterEnvironmentQuestion {
 
     @ColumnInfo(name = WaterEnvironmentConstants.QUESTION_6_1_WETLAND_UNDER_DESTRUCTION_6)
     private int question61WetlandUnderDestruction6;
+
+    @ColumnInfo(name = WaterEnvironmentConstants.QUESTION_6_2_TREE_PLANTING_PROJECT)
+    private String question62TreePlanting;
 }
