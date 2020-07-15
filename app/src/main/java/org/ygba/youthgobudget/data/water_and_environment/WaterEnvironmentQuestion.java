@@ -454,6 +454,51 @@ public class WaterEnvironmentQuestion {
             INSTANCE.setQuestion5NoneFunctional6(integerValue);
             return this;
         }
+
+        public Builder setQuestion5Objective(boolean questionQ5ObjectiveAnswer) {
+            INSTANCE.setQuestion5Objective(questionQ5ObjectiveAnswer);
+            return this;
+        }
+
+        public Builder setQuestion5ObjectiveReason(String stringValue) {
+            INSTANCE.setQuestion5ObjectiveReason(stringValue);
+            return this;
+        }
+
+        public Builder setQuestion6WetlandDemarcated(String stringValue) {
+
+            return this;
+        }
+
+        public Builder setQuestion5NoWaterSourceAvailable(int integerValue) {
+            INSTANCE.setQuestion5WaterSourceAvailable1(integerValue);
+            return this;
+        }
+
+        public Builder setQuestion5NoWaterSourceAvailable2(int integerValue) {
+            INSTANCE.setQuestion5WaterSourceAvailable2(integerValue);
+            return this;
+        }
+
+        public Builder setQuestion5NoWaterSourceAvailable3(int integerValue) {
+            INSTANCE.setQuestion5WaterSourceAvailable3(integerValue);
+            return this;
+        }
+
+        public Builder setQuestion5NoWaterSourceAvailable4(int integerValue) {
+            INSTANCE.setQuestion5WaterSourceAvailable4(integerValue);
+            return this;
+        }
+
+        public Builder setQuestion5NoWaterSourceAvailable5(int integerValue) {
+            INSTANCE.setQuestion5WaterSourceAvailable5(integerValue);
+            return this;
+        }
+
+        public Builder setQuestion5NoWaterSourceAvailable6(int integerValue) {
+            INSTANCE.setQuestion5WaterSourceAvailable6(integerValue);
+            return this;
+        }
     }
 
     @Ignore

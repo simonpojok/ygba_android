@@ -257,31 +257,41 @@ public class WaterEnvironmentActivity extends AppCompatActivity implements  Adap
                 .setQuestion5WaterSource1(getStringValue(wQ5WaterSource1EditText))
                 .setQuestion5Functional1(getIntegerValue(wQ5Functional1EditText))
                 .setNonFunctional1(getIntegerValue(wQ5Functional1EditText))
+                .setQuestion5NoWaterSourceAvailable(getIntegerValue(wQ5NoWaterSource1EditText))
 
                 .setQuestion5Area2(getStringValue(wQ5Area2EditText))
                 .setQuestion5WaterSource2(getStringValue(wQ5WaterSource2EditText))
                 .setQuestion5Functional2(getIntegerValue(wQ5Functional2EditText))
                 .setNonFunctional2(getIntegerValue(wQ5Functional2EditText))
+                .setQuestion5NoWaterSourceAvailable2(getIntegerValue(wQ5NoWaterSource2EditText))
 
                 .setQuestion5Area3(getStringValue(wQ5Area3EditText))
                 .setQuestion5WaterSource3(getStringValue(wQ5WaterSource3EditText))
                 .setQuestion5Functional3(getIntegerValue(wQ5Functional3EditText))
                 .setNonFunctional3(getIntegerValue(wQ5Functional3EditText))
+                .setQuestion5NoWaterSourceAvailable3(getIntegerValue(wQ5NoWaterSource3EditText))
 
                 .setQuestion5Area4(getStringValue(wQ5Area4EditText))
                 .setQuestion5WaterSource4(getStringValue(wQ5WaterSource4EditText))
                 .setQuestion5Functional4(getIntegerValue(wQ5Functional4EditText))
                 .setNonFunctional4(getIntegerValue(wQ5Functional4EditText))
+                .setQuestion5NoWaterSourceAvailable4(getIntegerValue(wQ5NoWaterSource4EditText))
 
                 .setQuestion5Area5(getStringValue(wQ5Area5EditText))
                 .setQuestion5WaterSource5(getStringValue(wQ5WaterSource5EditText))
                 .setQuestion5Functional5(getIntegerValue(wQ5Functional5EditText))
                 .setNonFunctional5(getIntegerValue(wQ5Functional5EditText))
+                .setQuestion5NoWaterSourceAvailable5(getIntegerValue(wQ5NoWaterSource5EditText))
 
                 .setQuestion5Area6(getStringValue(wQ5Area6EditText))
                 .setQuestion5WaterSource6(getStringValue(wQ5WaterSource6EditText))
                 .setQuestion5Functional6(getIntegerValue(wQ5Functional6EditText))
                 .setNonFunctional6(getIntegerValue(wQ5Functional6EditText))
+                .setQuestion5NoWaterSourceAvailable6(getIntegerValue(wQ5NoWaterSource6EditText))
+
+                .setQuestion5Objective(getQuestionQ5ObjectiveAnswer())
+                .setQuestion5ObjectiveReason(getStringValue(wQ5TextEdit))
+                .setQuestion6WetlandDemarcated(getStringValue(wQ6EditText))
 
                 .build();
     }
