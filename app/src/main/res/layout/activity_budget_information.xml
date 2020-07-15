@@ -56,6 +56,34 @@
                     android:text="@string/department_label_normal"
                     android:textSize="15sp"
                     android:textColor="@color/white" />
+
+                <LinearLayout
+                    android:layout_row="0"
+                    android:layout_column="1"
+                    android:layout_columnSpan="2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:padding="10dp"
+                        android:text="@string/financial_year_label"
+                        android:textSize="15sp"
+                        android:textColor="@color/white" />
+
+                    <Spinner
+                        android:id="@+id/financial_year_spinner"
+                        android:layout_width="200dp"
+                        android:layout_height="40dp"
+                        android:textSize="15sp"
+                        android:background="@drawable/edit_text_style"
+                        tools:ignore="RtlSymmetry" />
+
+                </LinearLayout>
+
             </GridLayout>
         </HorizontalScrollView>
     </LinearLayout>
