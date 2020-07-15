@@ -377,4 +377,6 @@
     <string name="budget_information_sector_header">District Budget Information</string>
     <string name="department_label">District department</string>
     <string name="department_label_normal">Department</string>
+    <string name="expected_approved_budget">Approved budget</string>
+    <string name="expected_approved_budget_percentage">%ge share</string>
 </resources>

@@ -84,6 +84,29 @@
 
                 </LinearLayout>
 
+                <TextView
+                    android:layout_row="1"
+                    android:layout_column="1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:padding="10dp"
+                    android:text="@string/expected_approved_budget"
+                    android:textSize="15sp"
+                    android:textColor="@color/white" />
+
+                <TextView
+                    android:layout_gravity="end"
+                    android:layout_row="1"
+                    android:layout_column="2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:padding="10dp"
+                    android:text="@string/expected_approved_budget_percentage"
+                    android:textSize="15sp"
+                    android:textColor="@color/white" />
+
             </GridLayout>
         </HorizontalScrollView>
     </LinearLayout>
