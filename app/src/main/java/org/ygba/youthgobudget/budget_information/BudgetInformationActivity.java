@@ -36,6 +36,13 @@ public class BudgetInformationActivity extends AppCompatActivity {
     private EditText recurrentApprovedBudgetET;
     private EditText wagesPercentageET;
     private EditText wagesApprovedBudget;
+    private EditText totalPercentage;
+    private EditText totalApprovedBudget;
+    private EditText tradePercentageET;
+    private EditText tradeApprovedBudgetET;
+    private EditText percentageInternalAuditET;
+    private EditText internalAuditApprovedBudgetET;
+    private EditText planningPercentageET;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -73,5 +80,12 @@ public class BudgetInformationActivity extends AppCompatActivity {
         recurrentApprovedBudgetET = findViewById(R.id.approved_budget_recurrent);
         wagesPercentageET = findViewById(R.id.percentage_wage);
         wagesApprovedBudget = findViewById(R.id.approved_budget_wage);
+        totalPercentage = findViewById(R.id.percentage_total);
+        totalApprovedBudget = findViewById(R.id.approved_budget_total);
+        tradePercentageET = findViewById(R.id.percentage_trade);
+        tradeApprovedBudgetET = findViewById(R.id.approved_budget_trade);
+        percentageInternalAuditET = findViewById(R.id.percentage_internal_audit);
+        internalAuditApprovedBudgetET = findViewById(R.id.approved_budget_internal_audit);
+        planningPercentageET = findViewById(R.id.percentage_planning);
     }
 }
