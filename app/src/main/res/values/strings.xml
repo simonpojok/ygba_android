@@ -352,4 +352,6 @@
     <string name="health_question_7_5_label">"7.5 Does have an ambulance ? "</string>
     <string name="health_question_7_6_label">If no, how are referrals handled ?</string>
     <string name="health_question_8_label">8.0 Challenges / other observations of Health care provision in this facility</string>
+    <string name="water_env_sector_header">WATER AND ENVIRONMENT SECTOR</string>
+    <string name="water_env_form_description">COMMUNITY BUDGET PERFORMANCE AND SERVICE DELIVERY TRACKING TOOL</string>
 </resources>
