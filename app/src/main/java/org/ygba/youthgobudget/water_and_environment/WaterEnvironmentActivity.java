@@ -61,6 +61,9 @@ public class WaterEnvironmentActivity extends AppCompatActivity {
     private EditText wQ5TextEdit;
     private EditText wQ6EditText;
 
+    private EditText wQ61Village1EditText;
+    private EditText wQ61Wetland1EditText;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -120,6 +123,9 @@ public class WaterEnvironmentActivity extends AppCompatActivity {
 
         wQ5TextEdit = findViewById(R.id.water_question_5_edit_text);
         wQ6EditText = findViewById(R.id.water_question_6_edit_text);
+
+        wQ61Village1EditText = findViewById(R.id.water_question_6_1_edit_text);
+        wQ61Wetland1EditText = findViewById(R.id.water_question_6_wetland_1_edit_text);
     }
 
     private void populateViews() {
