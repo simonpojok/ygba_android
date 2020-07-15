@@ -11,6 +11,7 @@ import org.ygba.youthgobudget.R;
 public class BudgetInformationActivity extends AppCompatActivity {
     private Spinner financialYearSpinner;
     private EditText administrationApprovedBudgetED;
+    private EditText administrationPercentageED;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,5 +24,6 @@ public class BudgetInformationActivity extends AppCompatActivity {
     private void initViews() {
         financialYearSpinner = findViewById(R.id.financial_year_spinner);
         administrationApprovedBudgetED = findViewById(R.id.approved_budget_administration);
+        administrationPercentageED = findViewById(R.id.percentage_administration);
     }
 }
