@@ -57,4 +57,7 @@ public class WaterEnvironmentActivity extends AppCompatActivity {
     private boolean getQuestionQ1ObjectiveAnswer(){
         return ((RadioGroup) findViewById(R.id.water_question_1_radio_group)).getCheckedRadioButtonId() == R.id.water_question_1_yes;
     }
+    private boolean getQuestionQ3ObjectiveAnswer(){
+        return ((RadioGroup) findViewById(R.id.water_question_3_radio_group)).getCheckedRadioButtonId() == R.id.water_question_3_yes;
+    }
 }

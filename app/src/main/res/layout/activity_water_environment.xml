@@ -300,7 +300,42 @@
             android:textSize="15sp"
             android:inputType="textMultiLine"
             android:padding="5dp"
-            android:autofillHints="" />
+            android:autofillHints=""
+            tools:ignore="LabelFor" />
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/water_question_3_text"
+            android:textSize="15sp"
+            android:textColor="@color/white" />
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:id="@+id/water_question_3_radio_group">
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="normal"
+                android:textSize="15sp"
+                android:textColor="@color/white"
+                android:text="@string/yes"
+                android:id="@+id/water_question_3_yes"/>
+
+            <RadioButton
+                android:layout_marginHorizontal="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="normal"
+                android:textSize="15sp"
+                android:textColor="@color/white"
+                android:text="@string/no"
+                android:id="@+id/water_question_3_no"/>
+        </RadioGroup>
     </LinearLayout>
 
 </ScrollView>
