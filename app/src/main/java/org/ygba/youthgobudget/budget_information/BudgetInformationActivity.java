@@ -18,6 +18,10 @@ public class BudgetInformationActivity extends AppCompatActivity {
     private EditText statutoryBodiesPercentageET;
     private EditText productionApprovedBudgetET;
     private EditText productionPercentageET;
+    private EditText healthApprovedBudget;
+    private EditText healthPercentageET;
+    private EditText educationApprovedBudget;
+    private EditText educationPercentage;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -37,5 +41,9 @@ public class BudgetInformationActivity extends AppCompatActivity {
         statutoryBodiesPercentageET = findViewById(R.id.percentage_statutory_bodies);
         productionApprovedBudgetET = findViewById(R.id.approved_budget_production);
         productionPercentageET = findViewById(R.id.percentage_production);
+        healthApprovedBudget = findViewById(R.id.approved_budget_health);
+        healthPercentageET = findViewById(R.id.percentage_health);
+        educationApprovedBudget = findViewById(R.id.approved_budget_education);
+        educationPercentage = findViewById(R.id.percentage_education);
     }
 }

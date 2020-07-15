@@ -383,4 +383,6 @@
     <string name="financial_label">Finance</string>
     <string name="statutory_bodies_label">Statutory Bodies</string>
     <string name="production_label">Production and Marketing</string>
+    <string name="health_label">Health</string>
+    <string name="health_education">Education</string>
 </resources>
