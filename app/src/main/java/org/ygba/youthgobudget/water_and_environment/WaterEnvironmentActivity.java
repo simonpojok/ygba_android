@@ -52,7 +52,6 @@ public class WaterEnvironmentActivity extends AppCompatActivity implements  Adap
     private EditText wQ5Area1EditText;
     private EditText wQ5WaterSource1EditText;
     private EditText wQ5Functional1EditText;
-    @NotEmpty
     private EditText wQ5NoneFunctional1EditText;
     private EditText wQ5NoWaterSource1EditText;
     private EditText wQ5Area2EditText;
@@ -126,10 +125,12 @@ public class WaterEnvironmentActivity extends AppCompatActivity implements  Adap
         viewModel.getAllWaterEnvironmentQuestions().observe(this, new Observer<List<WaterEnvironmentQuestion>>() {
             @Override
             public void onChanged(List<WaterEnvironmentQuestion> waterEnvironmentQuestions) {
-                if (waterEnvironmentQuestions != null && waterEnvironmentQuestions.get(0) != null) {
-                    TextView textView = findViewById(R.id.display_data);
-                    textView.setVisibility(View.VISIBLE);
-                    textView.setText(waterEnvironmentQuestions.get(0).toString());
+                if (waterEnvironmentQuestions != null ) {
+                    if (waterEnvironmentQuestions.size() > 0 ) {
+                        TextView textView = findViewById(R.id.display_data);
+                        textView.setVisibility(View.VISIBLE);
+                        textView.setText(waterEnvironmentQuestions.get(0).toString());
+                    }
                 }
             }
         });
