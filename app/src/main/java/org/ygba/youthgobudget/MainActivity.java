@@ -19,10 +19,11 @@ import org.ygba.youthgobudget.education.EducationActivity;
 import org.ygba.youthgobudget.health.HealthActivity;
 import org.ygba.youthgobudget.social_development.SocialDevelopmentActivity;
 import org.ygba.youthgobudget.ui.home.HomeFragment;
+import org.ygba.youthgobudget.water_and_environment.WaterEnvironmentActivity;
 
 public class MainActivity extends AppCompatActivity implements HomeFragment.OnAgricultureIconClickListener,
 HomeFragment.OnEducationIconClickListener, HomeFragment.OnSocialDevelopmentIconClickListener,
-HomeFragment.OnHealthIconClickListener {
+HomeFragment.OnHealthIconClickListener, HomeFragment.OnWaterEnvironmentListener  {
 
 
     private AppBarConfiguration mAppBarConfiguration;
@@ -82,5 +83,10 @@ HomeFragment.OnHealthIconClickListener {
     @Override
     public void onHealthIconClick() {
         startActivity(new Intent(this, HealthActivity.class));
+    }
+
+    @Override
+    public void onWaterEnvironmentClick() {
+        startActivity(new Intent(this, WaterEnvironmentActivity.class));
     }
 }

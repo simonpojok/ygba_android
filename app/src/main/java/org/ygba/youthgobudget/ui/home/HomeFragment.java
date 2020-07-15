@@ -18,7 +18,9 @@ import androidx.lifecycle.ViewModelProviders;
 import org.ygba.youthgobudget.MainActivity;
 import org.ygba.youthgobudget.R;
 import org.ygba.youthgobudget.agriculture.AgricultureActivity;
+import org.ygba.youthgobudget.water_and_environment.WaterEnvironmentActivity;
 
+import java.util.Objects;
 import java.util.concurrent.Callable;
 
 public class HomeFragment extends Fragment {
@@ -26,10 +28,12 @@ public class HomeFragment extends Fragment {
     private CardView cv_education;
     private CardView cv_social_development;
     private CardView cv_health;
+    private CardView cv_water_environment;
     private OnAgricultureIconClickListener agricultureIconClickListener;
     private OnEducationIconClickListener onEducationIconClickListener;
     private OnSocialDevelopmentIconClickListener socialDevelopmentIconClickListener;
     private OnHealthIconClickListener onHealthIconClickListener;
+    private OnWaterEnvironmentListener onWaterEnvironmentListener;
 
     private HomeViewModel homeViewModel;
 
@@ -40,6 +44,7 @@ public class HomeFragment extends Fragment {
         onEducationIconClickListener = (OnEducationIconClickListener) context;
         socialDevelopmentIconClickListener = (OnSocialDevelopmentIconClickListener) context;
         onHealthIconClickListener = (OnHealthIconClickListener) context;
+        onWaterEnvironmentListener = (OnWaterEnvironmentListener) context;
     }
 
     public View onCreateView(@NonNull LayoutInflater inflater,
@@ -51,6 +56,7 @@ public class HomeFragment extends Fragment {
         cv_education = root.findViewById(R.id.cv_education);
         cv_social_development = root.findViewById(R.id.cv_social_development_icon);
         cv_health = root.findViewById(R.id.cv_health_icon);
+        cv_water_environment = root.findViewById(R.id.water_environment_icon);
 
 
         cv_agriculture.setOnClickListener(new View.OnClickListener() {
@@ -89,6 +95,15 @@ public class HomeFragment extends Fragment {
             }
         });
 
+        cv_water_environment.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                if (onWaterEnvironmentListener != null) {
+                    onWaterEnvironmentListener.onWaterEnvironmentClick();
+                }
+            }
+        });
+
         return root;
     }
 
@@ -106,5 +121,9 @@ public class HomeFragment extends Fragment {
 
     public static  interface OnHealthIconClickListener {
         public void onHealthIconClick();
+    }
+
+    public static  interface OnWaterEnvironmentListener {
+        public void onWaterEnvironmentClick();
     }
 }

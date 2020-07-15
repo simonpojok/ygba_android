@@ -9,16 +9,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity
-            android:name=".water_and_environment.WaterEnvironmentActivity"
-            android:exported="true">
-<!--            TODO: This must be removed during production  it's just for test the app -->
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
+        <activity android:name=".water_and_environment.WaterEnvironmentActivity"/>
         <activity android:name=".social_development.SocialDevelopmentListActivity" />
         <activity
             android:name=".dialogs.DatePickerActivity"
