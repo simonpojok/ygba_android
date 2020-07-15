@@ -293,6 +293,24 @@ public class WaterEnvironmentActivity extends AppCompatActivity implements  Adap
                 .setQuestion5ObjectiveReason(getStringValue(wQ5TextEdit))
                 .setQuestion6WetlandDemarcated(getStringValue(wQ6EditText))
 
+                .setQuestion6SubCounty1(getStringValue(wQ61Village1EditText))
+                .setQuestion6WetlandUnderDestruction1(getIntegerValue(wQ61Wetland1EditText))
+
+                .setQuestion6SubCounty2(getStringValue(wQ61Village2EditText))
+                .setQuestion6WetlandUnderDestruction2(getIntegerValue(wQ61Wetland2EditText))
+
+                .setQuestion6SubCounty3(getStringValue(wQ61Village3EditText))
+                .setQuestion6WetlandUnderDestruction3(getIntegerValue(wQ61Wetland3EditText))
+
+                .setQuestion6SubCounty4(getStringValue(wQ61Village4EditText))
+                .setQuestion6WetlandUnderDestruction4(getIntegerValue(wQ61Wetland4EditText))
+
+                .setQuestion6SubCounty5(getStringValue(wQ61Village5EditText))
+                .setQuestion6WetlandUnderDestruction5(getIntegerValue(wQ61Wetland5EditText))
+
+                .setQuestion6SubCounty6(getStringValue(wQ61Village6EditText))
+                .setQuestion6WetlandUnderDestruction6(getIntegerValue(wQ61Wetland6EditText))
+
                 .build();
     }
 

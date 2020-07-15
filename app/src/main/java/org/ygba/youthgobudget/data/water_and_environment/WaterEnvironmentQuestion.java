@@ -511,6 +511,69 @@ public class WaterEnvironmentQuestion {
             INSTANCE.setQuestion5WaterSourceAvailable6(integerValue);
             return this;
         }
+
+        public Builder setQuestion6SubCounty1(String stringValue) {
+            INSTANCE.setQuestion6VillageName1(stringValue);
+            return this;
+        }
+
+        public Builder setQuestion6WetlandUnderDestruction1(int intValue) {
+            INSTANCE.setQuestion61WetlandUnderDestruction1(intValue);
+            return this;
+        }
+
+        public Builder setQuestion6SubCounty2(String stringValue) {
+            INSTANCE.setQuestion6VillageName2(stringValue);
+            return this;
+        }
+
+        public Builder setQuestion6WetlandUnderDestruction2(int intValue) {
+            INSTANCE.setQuestion61WetlandUnderDestruction2(intValue);
+            return this;
+        }
+
+        public Builder setQuestion6SubCounty3(String stringValue) {
+            INSTANCE.setQuestion6VillageName3(stringValue);
+            return this;
+        }
+
+        public Builder setQuestion6WetlandUnderDestruction3(int intValue) {
+            INSTANCE.setQuestion61WetlandUnderDestruction3(intValue);
+            return this;
+        }
+
+        public Builder setQuestion6SubCounty4(String stringValue) {
+            INSTANCE.setQuestion6VillageName4(stringValue);
+            return this;
+        }
+
+        public Builder setQuestion6WetlandUnderDestruction4(int intValue) {
+            INSTANCE.setQuestion61WetlandUnderDestruction4(intValue);
+            return this;
+        }
+
+
+        public Builder setQuestion6SubCounty5(String stringValue) {
+            INSTANCE.setQuestion6VillageName5(stringValue);
+            return this;
+        }
+
+        public Builder setQuestion6WetlandUnderDestruction5(int intValue) {
+            INSTANCE.setQuestion61WetlandUnderDestruction5(intValue);
+            return this;
+        }
+
+        public Builder setQuestion6SubCounty6(String stringValue) {
+            INSTANCE.setQuestion6VillageName6(stringValue);
+            return this;
+        }
+
+        public Builder setQuestion6WetlandUnderDestruction6(int intValue) {
+            INSTANCE.setQuestion61WetlandUnderDestruction6(intValue);
+            return this;
+        }
+
+
     }
 
     @Ignore
