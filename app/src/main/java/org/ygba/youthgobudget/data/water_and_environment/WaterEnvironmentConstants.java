@@ -45,6 +45,26 @@ public class WaterEnvironmentConstants {
     public static final String QUESTION_5_WATER_SOURCE_6 = "q_5_ws_6";
     public static final String QUESTION_5_FUNCTIONAL_6 = "q_5_functional_6";
     public static final String QUESTION_5_NONE_FUNCTIONAL_6 = "q_5_none_functional_6";
-    lic static final String QUESTION_5_NO_WATER_SOURCE_AVAILABLE_6 = "q_5_no_ws_available_6";
+    public static final String QUESTION_5_NO_WATER_SOURCE_AVAILABLE_6 = "q_5_no_ws_available_6";
 
+    public static final String QUESTION_5_OBJECTIVE = "q_5_objective";
+    public static final String QUESTION_OBJECTIVE_REASON = "q_5_objective_reason";
+
+    public static final String QUESTION_6_VILLAGE_1 = "q_6_village_name_1";
+    public static final String QUESTION_6_1_WETLAND_UNDER_DESTRUCTION_1 = "q_6_1_wetland_1";
+
+    public static final String QUESTION_6_VILLAGE_2 = "q_6_village_name_2";
+    public static final String QUESTION_6_1_WETLAND_UNDER_DESTRUCTION_2 = "q_6_1_wetland_2";
+
+    public static final String QUESTION_6_VILLAGE_3 = "q_6_village_name_3";
+    public static final String QUESTION_6_1_WETLAND_UNDER_DESTRUCTION_3 = "q_6_1_wetland_3";
+
+    public static final String QUESTION_6_VILLAGE_4 = "q_6_village_name_4";
+    public static final String QUESTION_6_1_WETLAND_UNDER_DESTRUCTION_4 = "q_6_1_wetland_4";
+
+    public static final String QUESTION_6_VILLAGE_5 = "q_6_village_name_5";
+    public static final String QUESTION_6_1_WETLAND_UNDER_DESTRUCTION_5 = "q_6_1_wetland_5";
+
+    public static final String QUESTION_6_VILLAGE_6 = "q_6_village_name_6";
+    public static final String QUESTION_6_1_WETLAND_UNDER_DESTRUCTION_6 = "q_6_1_wetland_6";
 }

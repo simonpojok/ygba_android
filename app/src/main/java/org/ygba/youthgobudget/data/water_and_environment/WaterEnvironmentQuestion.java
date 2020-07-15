@@ -138,4 +138,46 @@ public class WaterEnvironmentQuestion {
 
     @ColumnInfo(name = WaterEnvironmentConstants.QUESTION_5_NO_WATER_SOURCE_AVAILABLE_6)
     private int question5WaterSourceAvailable6;
+
+    @ColumnInfo(name = WaterEnvironmentConstants.QUESTION_5_OBJECTIVE)
+    private boolean question5Objective;
+
+    @ColumnInfo(name = WaterEnvironmentConstants.QUESTION_OBJECTIVE_REASON)
+    private String question5ObjectiveReason;
+
+    @ColumnInfo(name = WaterEnvironmentConstants.QUESTION_6_VILLAGE_1)
+    private String question6VillageName1;
+
+    @ColumnInfo(name = WaterEnvironmentConstants.QUESTION_6_1_WETLAND_UNDER_DESTRUCTION_1)
+    private int question61WetlandUnderDestruction1;
+
+    @ColumnInfo(name = WaterEnvironmentConstants.QUESTION_6_VILLAGE_2)
+    private String question6VillageName2;
+
+    @ColumnInfo(name = WaterEnvironmentConstants.QUESTION_6_1_WETLAND_UNDER_DESTRUCTION_2)
+    private int question61WetlandUnderDestruction2;
+
+    @ColumnInfo(name = WaterEnvironmentConstants.QUESTION_6_VILLAGE_3)
+    private String question6VillageName3;
+
+    @ColumnInfo(name = WaterEnvironmentConstants.QUESTION_6_1_WETLAND_UNDER_DESTRUCTION_3)
+    private int question61WetlandUnderDestruction3;
+
+    @ColumnInfo(name = WaterEnvironmentConstants.QUESTION_6_VILLAGE_4)
+    private String question6VillageName4;
+
+    @ColumnInfo(name = WaterEnvironmentConstants.QUESTION_6_1_WETLAND_UNDER_DESTRUCTION_4)
+    private int question61WetlandUnderDestruction4;
+
+    @ColumnInfo(name = WaterEnvironmentConstants.QUESTION_6_VILLAGE_5)
+    private String question6VillageName5;
+
+    @ColumnInfo(name = WaterEnvironmentConstants.QUESTION_6_1_WETLAND_UNDER_DESTRUCTION_5)
+    private int question61WetlandUnderDestruction5;
+
+    @ColumnInfo(name = WaterEnvironmentConstants.QUESTION_6_VILLAGE_6)
+    private String question6VillageName6;
+
+    @ColumnInfo(name = WaterEnvironmentConstants.QUESTION_6_1_WETLAND_UNDER_DESTRUCTION_6)
+    private int question61WetlandUnderDestruction6;
 }
