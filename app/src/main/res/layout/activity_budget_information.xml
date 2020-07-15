@@ -1022,6 +1022,60 @@
                         tools:ignore="RtlSymmetry" />
 
                 </LinearLayout>
+                <LinearLayout
+                    android:layout_column="3"
+                    android:layout_row="0"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_marginVertical="5dp"
+                        android:layout_marginHorizontal="5dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/service"
+                        android:textSize="15sp"
+                        android:textColor="@color/white" />
+
+                    <Spinner
+                        android:layout_marginHorizontal="5dp"
+                        android:layout_gravity="end"
+                        android:id="@+id/sector_sector_spinner"
+                        android:layout_width="200dp"
+                        android:layout_height="40dp"
+                        android:textSize="15sp"
+                        android:background="@drawable/edit_text_style"
+                        tools:ignore="RtlSymmetry" />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_column="4"
+                    android:layout_row="0"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_marginVertical="5dp"
+                        android:layout_marginHorizontal="5dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/community_needs"
+                        android:textSize="15sp"
+                        android:textColor="@color/white" />
+
+                    <Spinner
+                        android:layout_marginHorizontal="5dp"
+                        android:layout_gravity="end"
+                        android:id="@+id/community_needs_sector_spinner"
+                        android:layout_width="200dp"
+                        android:layout_height="40dp"
+                        android:textSize="15sp"
+                        android:background="@drawable/edit_text_style"
+                        tools:ignore="RtlSymmetry" />
+
+                </LinearLayout>
             </GridLayout>
         </HorizontalScrollView>
 

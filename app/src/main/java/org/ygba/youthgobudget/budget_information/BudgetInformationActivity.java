@@ -49,6 +49,8 @@ public class BudgetInformationActivity extends AppCompatActivity {
 
     private Spinner districtSectorSpinner;
     private Spinner financialYearSectorSpinner;
+    private Spinner serviceSectorSpinner;
+    private Spinner communityNeedsSpinner;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -98,5 +100,7 @@ public class BudgetInformationActivity extends AppCompatActivity {
         communityPercentageET = findViewById(R.id.percentage_community_based);
         districtSectorSpinner = findViewById(R.id.district_sector_spinner);
         financialYearSectorSpinner = findViewById(R.id.financial_sector_spinner);
+        serviceSectorSpinner = findViewById(R.id.sector_sector_spinner);
+        communityNeedsSpinner = findViewById(R.id.community_needs_sector_spinner);
     }
 }

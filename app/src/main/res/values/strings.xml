@@ -398,4 +398,6 @@
     <string name="domestic_label">Domestic Devt</string>
     <string name="ext_label">Ext. Financing</string>
     <string name="community_budget_wish_list">Community Budget Wish-list</string>
+    <string name="service">Service</string>
+    <string name="community_needs">Community needs / wished</string>
 </resources>
