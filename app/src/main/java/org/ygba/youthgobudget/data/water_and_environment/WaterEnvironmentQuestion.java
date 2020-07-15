@@ -1,7 +1,10 @@
 package org.ygba.youthgobudget.data.water_and_environment;
 
+import android.widget.EditText;
+
 import androidx.room.ColumnInfo;
 import androidx.room.Entity;
+import androidx.room.Ignore;
 import androidx.room.PrimaryKey;
 
 @Entity(tableName = WaterEnvironmentConstants.TABLE_NAME)
@@ -42,6 +45,9 @@ public class WaterEnvironmentQuestion {
 
     @ColumnInfo(name = WaterEnvironmentConstants.QUESTION_2_SANITATION)
     private String question2Water;
+
+    @ColumnInfo(name = WaterEnvironmentConstants.QUESTION_4)
+    private String question4Answer;
 
     @ColumnInfo(name = WaterEnvironmentConstants.QUESTION_3_OBJECTIVE)
     private boolean question3Objective;
@@ -187,7 +193,7 @@ public class WaterEnvironmentQuestion {
     @ColumnInfo(name = WaterEnvironmentConstants.LOCALLY_STORED)
     private boolean locallyStored;
 
-    public WaterEnvironmentQuestion(String financialYear, String date, String district, String village, String parish, String sub_county, String agentName, String agentTel, boolean question1Objective, String question1ObjectiveReason, String question2Water, boolean question3Objective, String question5Text, String subCounty1, String waterSource1, int question5Functional1, int question5NoneFunctional1, int question5WaterSourceAvailable1, String subCounty2, String waterSource2, int question5Functional2, int question5NoneFunctional2, int question5WaterSourceAvailable2, String subCounty3, String waterSource3, int question5Functional3, int question5NoneFunctional3, int question5WaterSourceAvailable3, String subCounty4, String waterSource4, int question5Functional4, int question5NoneFunctional4, int question5WaterSourceAvailable4, String subCounty5, String waterSource5, int question5Functional5, int question5NoneFunctional5, int question5WaterSourceAvailable5, String subCounty6, String waterSource6, int question5Functional6, int question5NoneFunctional6, int question5WaterSourceAvailable6, boolean question5Objective, String question5ObjectiveReason, String question6VillageName1, int question61WetlandUnderDestruction1, String question6VillageName2, int question61WetlandUnderDestruction2, String question6VillageName3, int question61WetlandUnderDestruction3, String question6VillageName4, int question61WetlandUnderDestruction4, String question6VillageName5, int question61WetlandUnderDestruction5, String question6VillageName6, int question61WetlandUnderDestruction6, String question62TreePlanting) {
+    public WaterEnvironmentQuestion(String financialYear, String date, String district, String village, String parish, String sub_county, String agentName, String agentTel, boolean question1Objective, String question1ObjectiveReason, String question2Water, String question4Answer, boolean question3Objective, String question5Text, String subCounty1, String waterSource1, int question5Functional1, int question5NoneFunctional1, int question5WaterSourceAvailable1, String subCounty2, String waterSource2, int question5Functional2, int question5NoneFunctional2, int question5WaterSourceAvailable2, String subCounty3, String waterSource3, int question5Functional3, int question5NoneFunctional3, int question5WaterSourceAvailable3, String subCounty4, String waterSource4, int question5Functional4, int question5NoneFunctional4, int question5WaterSourceAvailable4, String subCounty5, String waterSource5, int question5Functional5, int question5NoneFunctional5, int question5WaterSourceAvailable5, String subCounty6, String waterSource6, int question5Functional6, int question5NoneFunctional6, int question5WaterSourceAvailable6, boolean question5Objective, String question5ObjectiveReason, String question6VillageName1, int question61WetlandUnderDestruction1, String question6VillageName2, int question61WetlandUnderDestruction2, String question6VillageName3, int question61WetlandUnderDestruction3, String question6VillageName4, int question61WetlandUnderDestruction4, String question6VillageName5, int question61WetlandUnderDestruction5, String question6VillageName6, int question61WetlandUnderDestruction6, String question62TreePlanting) {
         this.financialYear = financialYear;
         this.date = date;
         this.district = district;
@@ -199,6 +205,7 @@ public class WaterEnvironmentQuestion {
         this.question1Objective = question1Objective;
         this.question1ObjectiveReason = question1ObjectiveReason;
         this.question2Water = question2Water;
+        this.question4Answer = question4Answer;
         this.question3Objective = question3Objective;
         this.question5Text = question5Text;
         this.subCounty1 = subCounty1;
@@ -248,6 +255,89 @@ public class WaterEnvironmentQuestion {
         this.question62TreePlanting = question62TreePlanting;
         this.locallyStored = true;
     }
+
+    public static class  Builder  {
+        private final WaterEnvironmentQuestion INSTANCE;
+        public Builder() {
+            INSTANCE = new WaterEnvironmentQuestion();
+        }
+
+        public WaterEnvironmentQuestion.Builder setFinancialYear(String financialYear) {
+            INSTANCE.financialYear = financialYear;
+            return this;
+        }
+
+        public WaterEnvironmentQuestion build() {
+            return INSTANCE;
+        }
+
+        public Builder setDate(String date) {
+            INSTANCE.setDate(date);
+            return this;
+        }
+
+        public Builder setDistrict(String stringValue) {
+            INSTANCE.setDistrict(stringValue);
+            return this;
+        }
+
+        public Builder setVillage(String stringValue) {
+            INSTANCE.setVillage(stringValue);
+            return this;
+        }
+
+        public Builder setParish(String stringValue) {
+            INSTANCE.setParish(stringValue);
+            return this;
+        }
+
+        public Builder setDivision(String stringValue) {
+            INSTANCE.setSub_county(stringValue);
+            return this;
+        }
+
+        public Builder setAgentFullName(String wAgentFullName) {
+            INSTANCE.setAgentName(wAgentFullName);
+            return this;
+        }
+
+        public Builder setAgentTel(String stringValue) {
+            INSTANCE.setAgentTel(stringValue);
+            return this;
+        }
+
+        public Builder setQuestion1Objective(boolean questionQ1ObjectiveAnswer) {
+            INSTANCE.setQuestion1Objective(questionQ1ObjectiveAnswer);
+            return this;
+        }
+
+        public Builder setQuestion1Reason(String stringValue) {
+            INSTANCE.setQuestion1ObjectiveReason(stringValue);
+            return this;
+        }
+
+        public Builder setQuestion2LongAnswer(String stringValue) {
+            INSTANCE.setQuestion2Water(stringValue);
+            return this;
+        }
+
+        public Builder setQuestion3ObjectiveAnswer(boolean questionQ3ObjectiveAnswer) {
+            INSTANCE.setQuestion3Objective(questionQ3ObjectiveAnswer);
+            return this;
+        }
+
+        public Builder setQuestion4LongAnswer(String question4answer) {
+            INSTANCE.setQuestion4Answer(question4answer);
+            return this;
+        }
+
+        public Builder setQuestion5LongText(String some_text) {
+            return this;
+        }
+    }
+
+    @Ignore
+    private WaterEnvironmentQuestion() {}
 
     public int getPrimaryKey() {
         return primaryKey;
@@ -727,6 +817,18 @@ public class WaterEnvironmentQuestion {
 
     public void setLocallyStored(boolean locallyStored) {
         this.locallyStored = locallyStored;
+    }
+
+    public String getQuestion4Answer() {
+        return question4Answer;
+    }
+
+    public void setQuestion4Answer(String question4Answer) {
+        this.question4Answer = question4Answer;
+    }
+
+    public boolean isQuestion3Objective() {
+        return question3Objective;
     }
 
     @Override

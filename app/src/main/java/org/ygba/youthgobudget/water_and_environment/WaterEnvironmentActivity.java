@@ -236,7 +236,22 @@ public class WaterEnvironmentActivity extends AppCompatActivity implements  Adap
 
     @Override
     public void onValidationSucceeded() {
-
+        WaterEnvironmentQuestion waterEnvironmentQuestion = new WaterEnvironmentQuestion.Builder()
+                .setFinancialYear(selectedFinancialYear)
+                .setDate(DynamicData.getDate())
+                .setDistrict(getStringValue(waterDistrictEditText))
+                .setVillage(getStringValue(waterVillageEditText))
+                .setParish(getStringValue(wParishEditText))
+                .setDivision(getStringValue(wDivisionET))
+                .setAgentFullName(getStringValue(wAgentFullName))
+                .setAgentTel(getStringValue(wAgentTelNumber))
+                .setQuestion1Objective(getQuestionQ1ObjectiveAnswer())
+                .setQuestion1Reason(getStringValue(wQ1ObjectiveReasonET))
+                .setQuestion2LongAnswer(getStringValue(wQ2EditText))
+                .setQuestion3ObjectiveAnswer(getQuestionQ3ObjectiveAnswer())
+                .setQuestion4LongAnswer(getStringValue(wQ4EditText))
+                .setQuestion5LongText("some text")
+                .build();
     }
 
     @Override
@@ -256,5 +271,13 @@ public class WaterEnvironmentActivity extends AppCompatActivity implements  Adap
         } catch (Exception e) {
             return 0;
         }
+    }
+
+    private String getStringValue(EditText editText) {
+        return  editText.getText().toString();
+    }
+
+    private String getStringValue(TextView textView) {
+        return  textView.getText().toString();
     }
 }
