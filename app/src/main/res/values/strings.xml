@@ -379,4 +379,5 @@
     <string name="department_label_normal">Department</string>
     <string name="expected_approved_budget">Approved budget</string>
     <string name="expected_approved_budget_percentage">%ge share</string>
+    <string name="administration_label">Administration</string>
 </resources>
