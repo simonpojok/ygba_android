@@ -16,4 +16,8 @@ public class DynamicData {
     public static String getAgentNumber() {
         return "364526";
     }
+
+    public static String getTelNumber() {
+        return "0772241709";
+    }
 }

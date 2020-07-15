@@ -159,6 +159,7 @@
             android:inputType="text"
             tools:ignore="LabelFor" />
 
+<!--        agent Name -->
         <TextView
             android:layout_marginTop="10dp"
             android:layout_width="wrap_content"
@@ -178,6 +179,8 @@
             android:paddingStart="5dp"
             android:paddingEnd="5dp"
             android:autofillHints="" />
+
+<!--        agent tel number -->
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -197,6 +200,7 @@
             android:paddingStart="5dp"
             android:paddingEnd="5dp" />
 
+<!--        agent number -->
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"

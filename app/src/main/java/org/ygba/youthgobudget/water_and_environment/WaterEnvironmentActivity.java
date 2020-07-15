@@ -17,6 +17,9 @@ public class WaterEnvironmentActivity extends AppCompatActivity {
     private EditText waterVillageEditText;
     private EditText wParishEditText;
     private EditText wDivisionET;
+    private EditText wAgentFullName;
+    private EditText wAgentTelNumber;
+    private EditText wAgentNumberET;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -33,10 +36,16 @@ public class WaterEnvironmentActivity extends AppCompatActivity {
         waterDistrictEditText = findViewById(R.id.water_district_text_edit);
         wParishEditText = findViewById(R.id.water_parish_text_edit);
         wDivisionET = findViewById(R.id.water_division_text_edit);
+        wAgentFullName = findViewById(R.id.ygb_agent_name_edit_view);
+        wAgentTelNumber = findViewById(R.id.ygb_agent_tel_edit_view);
+        wAgentNumberET = findViewById(R.id.ygb_agent_no_edit_view);
     }
 
     private void populateViews() {
         waterDateTextView.setText(DynamicData.getDate());
         // init spinner
+        wAgentFullName.setText(DynamicData.getAgentName());
+        wAgentTelNumber.setText(DynamicData.getTelNumber());
+        wAgentNumberET.setText(DynamicData.getAgentName());
     }
 }
