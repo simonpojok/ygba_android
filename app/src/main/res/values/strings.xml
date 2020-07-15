@@ -381,4 +381,5 @@
     <string name="expected_approved_budget_percentage">%ge share</string>
     <string name="administration_label">Administration</string>
     <string name="financial_label">Finance</string>
+    <string name="statutory_bodies_label">Statutory Bodies</string>
 </resources>
