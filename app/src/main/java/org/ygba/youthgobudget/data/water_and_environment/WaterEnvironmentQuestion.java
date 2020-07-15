@@ -61,8 +61,8 @@ public class WaterEnvironmentQuestion {
     @ColumnInfo(name = WaterEnvironmentConstants.QUESTION_5_NONE_FUNCTIONAL_1)
     private int question5NoneFunctional1;
 
-    @ColumnInfo(name = WaterEnvironmentConstants.QUESTION_5_NO_WATER_SOURCE_AVAILABLE_2)
-    private int question5WaterSourceAvailable2;
+    @ColumnInfo(name = WaterEnvironmentConstants.QUESTION_5_NO_WATER_SOURCE_AVAILABLE_1)
+    private int question5WaterSourceAvailable1;
 
     @ColumnInfo(name = WaterEnvironmentConstants.SUB_COUNTY_2)
     private String subCounty2;
@@ -78,4 +78,19 @@ public class WaterEnvironmentQuestion {
 
     @ColumnInfo(name = WaterEnvironmentConstants.QUESTION_5_NO_WATER_SOURCE_AVAILABLE_2)
     private int question5WaterSourceAvailable2;
+
+    @ColumnInfo(name = WaterEnvironmentConstants.SUB_COUNTY_3)
+    private String subCounty3;
+
+    @ColumnInfo(name = WaterEnvironmentConstants.QUESTION_5_WATER_SOURCE_3)
+    private String waterSource3;
+
+    @ColumnInfo(name = WaterEnvironmentConstants.QUESTION_5_FUNCTIONAL_3)
+    private int question5Functional3;
+
+    @ColumnInfo(name = WaterEnvironmentConstants.QUESTION_5_NONE_FUNCTIONAL_3)
+    private int question5NoneFunctional3;
+
+    @ColumnInfo(name = WaterEnvironmentConstants.QUESTION_5_NO_WATER_SOURCE_AVAILABLE_3)
+    private int question5WaterSourceAvailable3;
 }
