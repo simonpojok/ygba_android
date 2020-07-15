@@ -12,6 +12,8 @@ import org.ygba.youthgobudget.data.education.EducationQuestion;
 import org.ygba.youthgobudget.data.education.EducationQuestionDao;
 import org.ygba.youthgobudget.data.socialdevelopment.SocialDevelopmentDao;
 import org.ygba.youthgobudget.data.socialdevelopment.SocialDevelopmentQuestion;
+import org.ygba.youthgobudget.data.water_and_environment.WaterEnvironmentQuestion;
+import org.ygba.youthgobudget.data.water_and_environment.WaterEnvironmentQuestionDao;
 
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
@@ -19,13 +21,15 @@ import java.util.concurrent.Executors;
 @Database(entities = {
         AgricultureQuestion.class,
         EducationQuestion.class,
-        SocialDevelopmentQuestion.class
+        SocialDevelopmentQuestion.class,
+        WaterEnvironmentQuestion.class
 }, version = 1, exportSchema = false)
 public abstract class YGBDatabase extends RoomDatabase {
     private static YGBDatabase INSTANCE;
     public abstract AgricultureDao agricultureDao();
     public abstract SocialDevelopmentDao socialDevelopmentDao();
     public abstract EducationQuestionDao educationQuestionDao();
+    public abstract WaterEnvironmentQuestionDao waterEnvironmentQuestionDao();
 
 
     public static final int NUMBER_OF_THREADS = 5;
