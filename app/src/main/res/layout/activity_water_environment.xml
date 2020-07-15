@@ -368,6 +368,30 @@
             android:text="@string/water_question_5_text"
             android:textSize="18sp"
             android:textColor="@color/white" />
+
+        <HorizontalScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <GridLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:columnCount="6"
+                android:rowCount="8">
+
+                <TextView
+                    android:layout_row="0"
+                    android:layout_column="0"
+                    android:layout_marginTop="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/water_question_4_area"
+                    android:textSize="15sp"
+                    android:textColor="@color/white" />
+
+            </GridLayout>
+        </HorizontalScrollView>
     </LinearLayout>
 
 </ScrollView>

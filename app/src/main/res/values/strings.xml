@@ -361,4 +361,5 @@
     <string name="water_question_3_text">"3. Are there rural safe water point sources constructed ( Shallow Wells, boreholes ) "</string>
     <string name="water_question_4_text">4. Clean and safe water accessibility</string>
     <string name="water_question_5_text">5. YGB is Youth Budget Group</string>
+    <string name="water_question_4_area">Area in the subcounty</string>
 </resources>
