@@ -70,4 +70,5 @@ public class WaterEnvironmentConstants {
     public static final String QUESTION_6_2_TREE_PLANTING_PROJECT = "q_6_2_tree_planting";
     public static final String LOCALLY_STORED = "locally_stored";
     public static final String QUESTION_4 = "q_4_answer";
+    public static final String QUESTION_6_WETLAND_DEMARCATED = "q_6_wetland_demarcated";
 }

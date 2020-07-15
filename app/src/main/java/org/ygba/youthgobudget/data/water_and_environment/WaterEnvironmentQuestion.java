@@ -151,6 +151,9 @@ public class WaterEnvironmentQuestion {
     @ColumnInfo(name = WaterEnvironmentConstants.QUESTION_OBJECTIVE_REASON)
     private String question5ObjectiveReason;
 
+    @ColumnInfo(name = WaterEnvironmentConstants.QUESTION_6_WETLAND_DEMARCATED)
+    private String question6WetLandDemarcated;
+
     @ColumnInfo(name = WaterEnvironmentConstants.QUESTION_6_VILLAGE_1)
     private String question6VillageName1;
 
@@ -193,7 +196,15 @@ public class WaterEnvironmentQuestion {
     @ColumnInfo(name = WaterEnvironmentConstants.LOCALLY_STORED)
     private boolean locallyStored;
 
-    public WaterEnvironmentQuestion(String financialYear, String date, String district, String village, String parish, String sub_county, String agentName, String agentTel, boolean question1Objective, String question1ObjectiveReason, String question2Water, String question4Answer, boolean question3Objective, String question5Text, String subCounty1, String waterSource1, int question5Functional1, int question5NoneFunctional1, int question5WaterSourceAvailable1, String subCounty2, String waterSource2, int question5Functional2, int question5NoneFunctional2, int question5WaterSourceAvailable2, String subCounty3, String waterSource3, int question5Functional3, int question5NoneFunctional3, int question5WaterSourceAvailable3, String subCounty4, String waterSource4, int question5Functional4, int question5NoneFunctional4, int question5WaterSourceAvailable4, String subCounty5, String waterSource5, int question5Functional5, int question5NoneFunctional5, int question5WaterSourceAvailable5, String subCounty6, String waterSource6, int question5Functional6, int question5NoneFunctional6, int question5WaterSourceAvailable6, boolean question5Objective, String question5ObjectiveReason, String question6VillageName1, int question61WetlandUnderDestruction1, String question6VillageName2, int question61WetlandUnderDestruction2, String question6VillageName3, int question61WetlandUnderDestruction3, String question6VillageName4, int question61WetlandUnderDestruction4, String question6VillageName5, int question61WetlandUnderDestruction5, String question6VillageName6, int question61WetlandUnderDestruction6, String question62TreePlanting) {
+    public String getQuestion6WetLandDemarcated() {
+        return question6WetLandDemarcated;
+    }
+
+    public void setQuestion6WetLandDemarcated(String question6WetLandDemarcated) {
+        this.question6WetLandDemarcated = question6WetLandDemarcated;
+    }
+
+    public WaterEnvironmentQuestion(String financialYear, String date, String district, String village, String parish, String sub_county, String agentName, String agentTel, boolean question1Objective, String question1ObjectiveReason, String question2Water, String question4Answer, boolean question3Objective, String question5Text, String subCounty1, String waterSource1, int question5Functional1, int question5NoneFunctional1, int question5WaterSourceAvailable1, String subCounty2, String waterSource2, int question5Functional2, int question5NoneFunctional2, int question5WaterSourceAvailable2, String subCounty3, String waterSource3, int question5Functional3, int question5NoneFunctional3, int question5WaterSourceAvailable3, String subCounty4, String waterSource4, int question5Functional4, int question5NoneFunctional4, int question5WaterSourceAvailable4, String subCounty5, String waterSource5, int question5Functional5, int question5NoneFunctional5, int question5WaterSourceAvailable5, String subCounty6, String waterSource6, int question5Functional6, int question5NoneFunctional6, int question5WaterSourceAvailable6, boolean question5Objective, String question5ObjectiveReason, String question6WetLandDemarcated, String question6VillageName1, int question61WetlandUnderDestruction1, String question6VillageName2, int question61WetlandUnderDestruction2, String question6VillageName3, int question61WetlandUnderDestruction3, String question6VillageName4, int question61WetlandUnderDestruction4, String question6VillageName5, int question61WetlandUnderDestruction5, String question6VillageName6, int question61WetlandUnderDestruction6, String question62TreePlanting) {
         this.financialYear = financialYear;
         this.date = date;
         this.district = district;
@@ -240,6 +251,7 @@ public class WaterEnvironmentQuestion {
         this.question5WaterSourceAvailable6 = question5WaterSourceAvailable6;
         this.question5Objective = question5Objective;
         this.question5ObjectiveReason = question5ObjectiveReason;
+        this.question6WetLandDemarcated = question6WetLandDemarcated;
         this.question6VillageName1 = question6VillageName1;
         this.question61WetlandUnderDestruction1 = question61WetlandUnderDestruction1;
         this.question6VillageName2 = question6VillageName2;
@@ -466,7 +478,7 @@ public class WaterEnvironmentQuestion {
         }
 
         public Builder setQuestion6WetlandDemarcated(String stringValue) {
-
+            INSTANCE.setQuestion6WetLandDemarcated(stringValue);
             return this;
         }
 
