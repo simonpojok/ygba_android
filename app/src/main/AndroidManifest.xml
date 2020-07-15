@@ -9,7 +9,16 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".water_and_environment.WaterEnvironmentActivity"/>
+        <activity android:name=".budget_information.BudgetInformationActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".water_and_environment.WaterEnvironmentActivity"
+            android:parentActivityName=".MainActivity" />
         <activity android:name=".social_development.SocialDevelopmentListActivity" />
         <activity
             android:name=".dialogs.DatePickerActivity"
