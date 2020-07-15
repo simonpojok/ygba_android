@@ -41,4 +41,10 @@ public class WaterEnvironmentConstants {
     public static final String QUESTION_5_FUNCTIONAL_5 = "q_5_functional_5";
     public static final String QUESTION_5_NONE_FUNCTIONAL_5 = "q_5_none_functional_5";
     public static final String QUESTION_5_NO_WATER_SOURCE_AVAILABLE_5 = "q_5_no_ws_available_5";
+    public static final String SUB_COUNTY_6 = "q_5_sub_6";
+    public static final String QUESTION_5_WATER_SOURCE_6 = "q_5_ws_6";
+    public static final String QUESTION_5_FUNCTIONAL_6 = "q_5_functional_6";
+    public static final String QUESTION_5_NONE_FUNCTIONAL_6 = "q_5_none_functional_6";
+    lic static final String QUESTION_5_NO_WATER_SOURCE_AVAILABLE_6 = "q_5_no_ws_available_6";
+
 }
