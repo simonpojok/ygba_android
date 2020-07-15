@@ -368,4 +368,6 @@
     <string name="water_question_5_functional">Functional</string>
     <string name="water_question_5_none_functional">None Functional</string>
     <string name="water_question_5_objective_text">5. Do the rural water point sources have user committees ?</string>
+    <string name="water_question_5_objective_if_text">If yes are they trained ?</string>
+    <string name="water_question_6_text">6. Are there any wetlands demarcated or protected ?</string>
 </resources>

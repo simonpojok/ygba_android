@@ -58,6 +58,8 @@ public class WaterEnvironmentActivity extends AppCompatActivity {
     private EditText wQ5Functional6EditText;
     private EditText wQ5NoneFunctional6EditText;
     private EditText wQ5NoWaterSource6EditText;
+    private EditText wQ5TextEdit;
+    private EditText wQ6EditText;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -115,6 +117,9 @@ public class WaterEnvironmentActivity extends AppCompatActivity {
         wQ5Functional6EditText = findViewById(R.id.water_question_5_1_functional_6_edit_text);
         wQ5NoneFunctional6EditText = findViewById(R.id.water_question_5_1_none_functional_6_edit_text);
         wQ5NoWaterSource6EditText = findViewById(R.id.water_question_5_1_no_water_source_6_edit_text);
+
+        wQ5TextEdit = findViewById(R.id.water_question_5_edit_text);
+        wQ6EditText = findViewById(R.id.water_question_6_edit_text);
     }
 
     private void populateViews() {
