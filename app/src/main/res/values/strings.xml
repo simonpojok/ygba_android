@@ -359,4 +359,5 @@
     <string name="water_question_1_if_text">If no, why ?</string>
     <string name="water_question_2_text">2. What are the water, sanitation and environment protection activities taking in the sub-county / division ? ( obtain list and locals )</string>
     <string name="water_question_3_text">"3. Are there rural safe water point sources constructed ( Shallow Wells, boreholes ) "</string>
+    <string name="water_question_4_text">4. Clean and safe water accessibility</string>
 </resources>
