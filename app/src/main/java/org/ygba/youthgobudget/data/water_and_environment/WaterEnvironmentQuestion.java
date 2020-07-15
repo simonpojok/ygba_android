@@ -574,6 +574,10 @@ public class WaterEnvironmentQuestion {
         }
 
 
+        public Builder setQuestion62TreePlanting(String stringValue) {
+            INSTANCE.setQuestion62TreePlanting(stringValue);
+            return this;
+        }
     }
 
     @Ignore

@@ -311,6 +311,8 @@ public class WaterEnvironmentActivity extends AppCompatActivity implements  Adap
                 .setQuestion6SubCounty6(getStringValue(wQ61Village6EditText))
                 .setQuestion6WetlandUnderDestruction6(getIntegerValue(wQ61Wetland6EditText))
 
+                .setQuestion62TreePlanting(getStringValue(wQ62EditText))
+
                 .build();
     }
 
