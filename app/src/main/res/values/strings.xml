@@ -390,4 +390,8 @@
     <string name="natural_label">Natural Resources</string>
     <string name="community_based_label">Community Based Services</string>
     <string name="planning_label">Planning</string>
+    <string name="internal_audit_label">Internal Audit</string>
+    <string name="trade_label">Trade, Industry and Local Development</string>
+    <string name="total_label">Total</string>
+    <string name="wage_label">Wage</string>
 </resources>
