@@ -5,15 +5,21 @@ import androidx.lifecycle.ViewModelProvider;
 
 import android.os.Bundle;
 import android.view.View;
+import android.widget.AdapterView;
 import android.widget.EditText;
 import android.widget.RadioGroup;
 import android.widget.Spinner;
 import android.widget.TextView;
 
+import com.mobsandgeeks.saripaar.ValidationError;
+import com.mobsandgeeks.saripaar.Validator;
+
 import org.ygba.youthgobudget.R;
 import org.ygba.youthgobudget.utils.DynamicData;
 
-public class WaterEnvironmentActivity extends AppCompatActivity {
+import java.util.List;
+
+public class WaterEnvironmentActivity extends AppCompatActivity implements  AdapterView.OnItemSelectedListener, Validator.ValidationListener {
     private TextView waterDateTextView;
     private Spinner waterFinancialYearSpinner;
     private EditText waterDistrictEditText;
@@ -85,11 +91,17 @@ public class WaterEnvironmentActivity extends AppCompatActivity {
     private EditText wQ62EditText;
     private WaterEnvironmentViewModel viewModel;
 
+    private final String[] financialYears = {"I", "II", "III", "IV", "V", "VI", "VII"};
+    private String selectedFinancialYear;
+    private Validator validator;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_water_environment);
         viewModel = new ViewModelProvider(this).get(WaterEnvironmentViewModel.class);
+        validator = new Validator(this);
+        validator.setValidationListener(this);
         initViews();
         populateViews();
     }
@@ -190,5 +202,25 @@ public class WaterEnvironmentActivity extends AppCompatActivity {
     }
     private boolean getQuestionQ5ObjectiveAnswer(){
         return ((RadioGroup) findViewById(R.id.water_question_5_radio_group)).getCheckedRadioButtonId() == R.id.water_question_5_yes;
+    }
+
+    @Override
+    public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l) {
+
+    }
+
+    @Override
+    public void onNothingSelected(AdapterView<?> adapterView) {
+
+    }
+
+    @Override
+    public void onValidationSucceeded() {
+
+    }
+
+    @Override
+    public void onValidationFailed(List<ValidationError> errors) {
+
     }
 }
