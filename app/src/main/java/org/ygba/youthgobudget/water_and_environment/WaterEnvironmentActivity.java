@@ -1,6 +1,7 @@
 package org.ygba.youthgobudget.water_and_environment;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProvider;
 
 import android.os.Bundle;
@@ -121,6 +122,17 @@ public class WaterEnvironmentActivity extends AppCompatActivity implements  Adap
         validator.setValidationListener(this);
         initViews();
         populateViews();
+
+        viewModel.getAllWaterEnvironmentQuestions().observe(this, new Observer<List<WaterEnvironmentQuestion>>() {
+            @Override
+            public void onChanged(List<WaterEnvironmentQuestion> waterEnvironmentQuestions) {
+                if (waterEnvironmentQuestions != null && waterEnvironmentQuestions.get(0) != null) {
+                    TextView textView = findViewById(R.id.display_data);
+                    textView.setVisibility(View.VISIBLE);
+                    textView.setText(waterEnvironmentQuestions.get(0).toString());
+                }
+            }
+        });
     }
 
     private void initViews() {
