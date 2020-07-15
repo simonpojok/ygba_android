@@ -388,4 +388,6 @@
     <string name="health_road_engineering">Roads and Engineering</string>
     <string name="water_approved_budget">Water</string>
     <string name="natural_label">Natural Resources</string>
+    <string name="community_based_label">Community Based Services</string>
+    <string name="planning_label">Planning</string>
 </resources>
