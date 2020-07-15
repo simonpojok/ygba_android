@@ -359,6 +359,15 @@
             android:padding="5dp"
             android:autofillHints=""
             tools:ignore="LabelFor" />
+
+        <TextView
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/water_question_5_text"
+            android:textSize="18sp"
+            android:textColor="@color/white" />
     </LinearLayout>
 
 </ScrollView>
