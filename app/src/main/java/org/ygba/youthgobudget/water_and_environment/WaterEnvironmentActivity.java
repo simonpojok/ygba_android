@@ -314,6 +314,8 @@ public class WaterEnvironmentActivity extends AppCompatActivity implements  Adap
                 .setQuestion62TreePlanting(getStringValue(wQ62EditText))
 
                 .build();
+
+        viewModel.saveWaterEnvironmentQuestion(waterEnvironmentQuestion);
     }
 
     @Override
