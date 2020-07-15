@@ -263,6 +263,11 @@ public class WaterEnvironmentActivity extends AppCompatActivity implements  Adap
                 .setQuestion5Functional2(getIntegerValue(wQ5Functional2EditText))
                 .setNonFunctional2(getIntegerValue(wQ5Functional2EditText))
 
+                .setQuestion5Area3(getStringValue(wQ5Area3EditText))
+                .setQuestion5WaterSource3(getStringValue(wQ5WaterSource3EditText))
+                .setQuestion5Functional3(getIntegerValue(wQ5Functional3EditText))
+                .setNonFunctional3(getIntegerValue(wQ5Functional3EditText))
+
                 .build();
     }
 

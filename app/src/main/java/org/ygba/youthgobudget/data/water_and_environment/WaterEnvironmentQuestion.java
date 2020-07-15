@@ -374,6 +374,26 @@ public class WaterEnvironmentQuestion {
             INSTANCE.setQuestion5NoneFunctional2(integerValue);
             return this;
         }
+
+        public Builder setQuestion5Area3(String stringValue) {
+            INSTANCE.setSubCounty3(stringValue);
+            return this;
+        }
+
+        public Builder setQuestion5WaterSource3(String stringValue) {
+            INSTANCE.setWaterSource3(stringValue);
+            return this;
+        }
+
+        public Builder setQuestion5Functional3(int integerValue) {
+            INSTANCE.setQuestion5Functional3(integerValue);
+            return this;
+        }
+
+        public Builder setNonFunctional3(int integerValue) {
+            INSTANCE.setQuestion5NoneFunctional3(integerValue);
+            return this;
+        }
     }
 
     @Ignore
