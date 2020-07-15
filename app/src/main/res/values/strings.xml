@@ -362,4 +362,7 @@
     <string name="water_question_4_text">4. Clean and safe water accessibility</string>
     <string name="water_question_5_text">5. YGB is Youth Budget Group</string>
     <string name="water_question_4_area">Area in the subcounty</string>
+    <string name="water_question_4_water_source">Water source</string>
+    <string name="water_question_4_functionality">Fuctionality</string>
+    <string name="water_question_4_no_water_source">No Water Source Available</string>
 </resources>
