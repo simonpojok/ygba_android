@@ -6,6 +6,7 @@ import androidx.lifecycle.ViewModelProvider;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
+import android.widget.ArrayAdapter;
 import android.widget.EditText;
 import android.widget.RadioGroup;
 import android.widget.Spinner;
@@ -15,6 +16,7 @@ import com.mobsandgeeks.saripaar.ValidationError;
 import com.mobsandgeeks.saripaar.Validator;
 
 import org.ygba.youthgobudget.R;
+import org.ygba.youthgobudget.data.water_and_environment.WaterEnvironmentQuestion;
 import org.ygba.youthgobudget.utils.DynamicData;
 
 import java.util.List;
@@ -109,6 +111,9 @@ public class WaterEnvironmentActivity extends AppCompatActivity implements  Adap
     private void initViews() {
         waterDateTextView = findViewById(R.id.water_date_text_view);
         waterFinancialYearSpinner = findViewById(R.id.water_financial_year_spinner);
+        ArrayAdapter<String> aa = new ArrayAdapter<String>(this, android.R.layout.simple_spinner_item, financialYears);
+        aa.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        waterFinancialYearSpinner.setAdapter(aa);
         waterVillageEditText = findViewById(R.id.water_village_text_edit);
         waterDistrictEditText = findViewById(R.id.water_district_text_edit);
         wParishEditText = findViewById(R.id.water_parish_text_edit);
@@ -181,7 +186,7 @@ public class WaterEnvironmentActivity extends AppCompatActivity implements  Adap
         findViewById(R.id.saved_form_data).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                // save the form data
+                validator.validate();
             }
         });
     }
@@ -206,21 +211,86 @@ public class WaterEnvironmentActivity extends AppCompatActivity implements  Adap
 
     @Override
     public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l) {
-
+        selectedFinancialYear = financialYears[i];
     }
 
     @Override
     public void onNothingSelected(AdapterView<?> adapterView) {
-
+        selectedFinancialYear = "";
     }
 
     @Override
     public void onValidationSucceeded() {
-
+        viewModel.saveWaterEnvironmentQuestion(new WaterEnvironmentQuestion(
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null
+        ));
     }
 
     @Override
     public void onValidationFailed(List<ValidationError> errors) {
-
+        for (ValidationError error: errors) {
+            View view = error.getView();
+            String message = error.getCollatedErrorMessage(this);
+            if (view instanceof EditText) {
+                ( (EditText) view).setError(message);
+            }
+        }
     }
 }
