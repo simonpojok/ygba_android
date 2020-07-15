@@ -536,7 +536,6 @@
                     android:layout_column="5"
                     android:gravity="start"
                     android:layout_marginHorizontal="5dp"
-                    android:layout_marginVertical="5dp"
                     android:id="@+id/water_question_5_1_no_water_source_edit_text"
                     android:layout_width="200dp"
                     android:layout_height="40dp"
