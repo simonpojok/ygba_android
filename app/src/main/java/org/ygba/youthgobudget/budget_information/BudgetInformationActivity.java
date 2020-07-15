@@ -43,6 +43,9 @@ public class BudgetInformationActivity extends AppCompatActivity {
     private EditText percentageInternalAuditET;
     private EditText internalAuditApprovedBudgetET;
     private EditText planningPercentageET;
+    private EditText planningApprovedBudgetET;
+    private EditText communityApprovedBudgetET;
+    private EditText communityPercentageET;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -87,5 +90,8 @@ public class BudgetInformationActivity extends AppCompatActivity {
         percentageInternalAuditET = findViewById(R.id.percentage_internal_audit);
         internalAuditApprovedBudgetET = findViewById(R.id.approved_budget_internal_audit);
         planningPercentageET = findViewById(R.id.percentage_planning);
+        planningApprovedBudgetET = findViewById(R.id.approved_budget_planning);
+        communityApprovedBudgetET = findViewById(R.id.approved_budget_community_based);
+        communityPercentageET = findViewById(R.id.percentage_community_based);
     }
 }
