@@ -357,4 +357,5 @@
     <string name="water_tool_note">This tool can be completed with the help of the water, sanitation and environment office / department.</string>
     <string name="water_question_1_text">1. Does your office / sub-county / Divistion have water, sanitation, and environment related services priority areas for the current financial year ?</string>
     <string name="water_question_1_if_text">If no, why ?</string>
+    <string name="water_question_2_text">2. What are the water, sanitation and environment protection activities taking in the sub-county / division ? ( obtain list and locals )</string>
 </resources>
