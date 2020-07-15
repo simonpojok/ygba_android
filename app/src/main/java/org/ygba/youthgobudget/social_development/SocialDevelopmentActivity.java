@@ -1,4 +1,4 @@
-package org.ygba.youthgobudget.socialdevelopment;
+package org.ygba.youthgobudget.social_development;
 
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;

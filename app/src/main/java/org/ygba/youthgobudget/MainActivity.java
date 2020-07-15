@@ -2,14 +2,10 @@ package org.ygba.youthgobudget;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.view.View;
 import android.view.Menu;
 
-import com.google.android.material.floatingactionbutton.FloatingActionButton;
-import com.google.android.material.snackbar.Snackbar;
 import com.google.android.material.navigation.NavigationView;
 
-import androidx.cardview.widget.CardView;
 import androidx.navigation.NavController;
 import androidx.navigation.Navigation;
 import androidx.navigation.ui.AppBarConfiguration;
@@ -21,7 +17,7 @@ import androidx.appcompat.widget.Toolbar;
 import org.ygba.youthgobudget.agriculture.AgricultureActivity;
 import org.ygba.youthgobudget.education.EducationActivity;
 import org.ygba.youthgobudget.health.HealthActivity;
-import org.ygba.youthgobudget.socialdevelopment.SocialDevelopmentActivity;
+import org.ygba.youthgobudget.social_development.SocialDevelopmentActivity;
 import org.ygba.youthgobudget.ui.home.HomeFragment;
 
 public class MainActivity extends AppCompatActivity implements HomeFragment.OnAgricultureIconClickListener,

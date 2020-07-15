@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:paddingHorizontal="8dp"
-    tools:context=".socialdevelopment.SocialDevelopmentActivity">
+    tools:context=".social_development.SocialDevelopmentActivity">
 
     <LinearLayout
         android:layout_width="match_parent"
