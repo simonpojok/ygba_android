@@ -334,6 +334,46 @@ public class WaterEnvironmentQuestion {
         public Builder setQuestion5LongText(String some_text) {
             return this;
         }
+
+        public Builder setQuestion5Area1(String stringValue) {
+            INSTANCE.setSubCounty1(stringValue);
+            return this;
+        }
+
+        public Builder setQuestion5WaterSource1(String stringValue) {
+            INSTANCE.setWaterSource1(stringValue);
+            return this;
+        }
+
+        public Builder setQuestion5Functional1(int integerValue) {
+            INSTANCE.setQuestion5Functional1(integerValue);
+            return this;
+        }
+
+        public Builder setNonFunctional1(int integerValue) {
+            INSTANCE.setQuestion5NoneFunctional1(integerValue);
+            return this;
+        }
+
+        public Builder setQuestion5Area2(String stringValue) {
+            INSTANCE.setSubCounty2(stringValue);
+            return this;
+        }
+
+        public Builder setQuestion5WaterSource2(String stringValue) {
+            INSTANCE.setWaterSource2(stringValue);
+            return this;
+        }
+
+        public Builder setQuestion5Functional2(int integerValue) {
+            INSTANCE.setQuestion5Functional2(integerValue);
+            return this;
+        }
+
+        public Builder setNonFunctional2(int integerValue) {
+            INSTANCE.setQuestion5NoneFunctional2(integerValue);
+            return this;
+        }
     }
 
     @Ignore
