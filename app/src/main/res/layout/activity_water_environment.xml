@@ -73,7 +73,7 @@
             android:textSize="15sp" />
 
         <EditText
-            android:layout_marginBottom="10dp"
+            android:layout_marginVertical="10dp"
             android:paddingStart="5dp"
             android:paddingEnd="5dp"
             android:hint="@string/village_hint"
@@ -98,7 +98,7 @@
             android:textSize="15sp" />
 
         <EditText
-            android:layout_marginBottom="10dp"
+            android:layout_marginVertical="10dp"
             android:paddingStart="5dp"
             android:paddingEnd="5dp"
             android:hint="@string/village_hint"
@@ -121,13 +121,12 @@
             android:textColor="@color/white" />
 
         <EditText
-            android:layout_marginBottom="10dp"
+            android:layout_marginVertical="10dp"
             android:paddingStart="5dp"
             android:paddingEnd="5dp"
             android:hint="@string/parish_hint"
             android:id="@+id/water_parish_text_edit"
             android:layout_width="match_parent"
-            android:layout_marginVertical="10dp"
             android:layout_height="40dp"
             android:background="@drawable/edit_text_style"
             android:autofillHints=""
@@ -145,7 +144,7 @@
             android:textColor="@color/white" />
 
         <EditText
-            android:layout_marginBottom="5dp"
+            android:layout_marginVertical="10dp"
             android:hint="@string/division_hint"
             android:id="@+id/water_division_text_edit"
             android:layout_width="match_parent"
@@ -178,6 +177,7 @@
             android:background="@drawable/edit_text_style"
             android:paddingStart="5dp"
             android:paddingEnd="5dp"
+            android:layout_marginVertical="10dp"
             android:autofillHints="" />
 
 <!--        agent tel number -->
@@ -218,6 +218,23 @@
             android:paddingStart="5dp"
             android:textSize="15sp"
             android:paddingEnd="5dp" />
+
+        <TextView
+            android:layout_marginVertical="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/water_tool_note"
+            android:textSize="15sp"
+            android:textStyle="italic"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:layout_marginVertical="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/water_question_1_text"
+            android:textSize="15sp"
+            android:textColor="@color/white" />
     </LinearLayout>
 
 </ScrollView>

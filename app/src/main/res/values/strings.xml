@@ -354,4 +354,6 @@
     <string name="health_question_8_label">8.0 Challenges / other observations of Health care provision in this facility</string>
     <string name="water_env_sector_header">WATER AND ENVIRONMENT SECTOR</string>
     <string name="water_env_form_description">COMMUNITY BUDGET PERFORMANCE AND SERVICE DELIVERY TRACKING TOOL</string>
+    <string name="water_tool_note">This tool can be completed with the help of the water, sanitation and environment office / department.</string>
+    <string name="water_question_1_text">1. Does your office / sub-county / Divistion have water, sanitation, and environment related services priority areas for the current financial year ?</string>
 </resources>
