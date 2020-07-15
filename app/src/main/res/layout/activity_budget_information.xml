@@ -933,6 +933,98 @@
 
             </GridLayout>
         </HorizontalScrollView>
+
+        <TextView
+            android:layout_gravity="start"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="10dp"
+            android:text="@string/community_budget_wish_list"
+            android:textSize="18sp"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+
+        <HorizontalScrollView
+            android:layout_marginVertical="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <GridLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:columnCount="5"
+                android:rowCount="8"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_row="0"
+                    android:layout_column="0"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginVertical="5dp"
+                        android:layout_marginEnd="5dp"
+                        android:text="@string/department_label"
+                        android:textSize="15sp"
+                        android:textColor="@color/white" />
+
+                    <Spinner
+                        android:layout_marginHorizontal="5dp"
+                        android:layout_gravity="end"
+                        android:id="@+id/district_sector_spinner"
+                        android:layout_width="200dp"
+                        android:layout_height="40dp"
+                        android:textSize="15sp"
+                        android:background="@drawable/edit_text_style"
+                        tools:ignore="RtlSymmetry" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_row="0"
+                    android:layout_column="1"
+                    android:layout_marginVertical="5dp"
+                    android:layout_marginHorizontal="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/sub_county_label"
+                    android:textSize="15sp"
+                    android:textColor="@color/white" />
+
+                <LinearLayout
+                    android:layout_column="2"
+                    android:layout_row="0"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_marginVertical="5dp"
+                        android:layout_marginHorizontal="5dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/financial_year_label"
+                        android:textSize="15sp"
+                        android:textColor="@color/white" />
+
+                    <Spinner
+                        android:layout_marginHorizontal="5dp"
+                        android:layout_gravity="end"
+                        android:id="@+id/financial_sector_spinner"
+                        android:layout_width="200dp"
+                        android:layout_height="40dp"
+                        android:textSize="15sp"
+                        android:background="@drawable/edit_text_style"
+                        tools:ignore="RtlSymmetry" />
+
+                </LinearLayout>
+            </GridLayout>
+        </HorizontalScrollView>
+
     </LinearLayout>
 
 </ScrollView>

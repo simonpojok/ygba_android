@@ -397,4 +397,5 @@
     <string name="recurrent_label">Non-Wage Recurrent</string>
     <string name="domestic_label">Domestic Devt</string>
     <string name="ext_label">Ext. Financing</string>
+    <string name="community_budget_wish_list">Community Budget Wish-list</string>
 </resources>
