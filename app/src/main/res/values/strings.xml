@@ -371,4 +371,6 @@
     <string name="water_question_5_objective_if_text">If yes are they trained ?</string>
     <string name="water_question_6_text">6. Are there any wetlands demarcated or protected ?</string>
     <string name="water_question_6_1_text">6.1 Name area with wetland degradation</string>
+    <string name="water_question_7_village_label">Name of the subcounty / village</string>
+    <string name="water_question_7_wetland_label">Wetland under destruction</string>
 </resources>
