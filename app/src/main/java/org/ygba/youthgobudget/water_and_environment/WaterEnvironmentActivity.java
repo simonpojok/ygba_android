@@ -51,6 +51,7 @@ public class WaterEnvironmentActivity extends AppCompatActivity implements  Adap
     private EditText wQ5Area1EditText;
     private EditText wQ5WaterSource1EditText;
     private EditText wQ5Functional1EditText;
+    @NotEmpty
     private EditText wQ5NoneFunctional1EditText;
     private EditText wQ5NoWaterSource1EditText;
     private EditText wQ5Area2EditText;
@@ -235,66 +236,7 @@ public class WaterEnvironmentActivity extends AppCompatActivity implements  Adap
 
     @Override
     public void onValidationSucceeded() {
-        viewModel.saveWaterEnvironmentQuestion(new WaterEnvironmentQuestion(
-                null,
-                null,
-                null,
-                null,
-                null,
-                null,
-                null,
-                null,
-                null,
-                null,
-                null,
-                null,
-                null,
-                null,
-                null,
-                null,
-                null,
-                null,
-                null,
-                null,
-                null,
-                null,
-                null,
-                null,
-                null,
-                null,
-                null,
-                null,
-                null,
-                null,
-                null,
-                null,
-                null,
-                null,
-                null,
-                null,
-                null,
-                null,
-                null,
-                null,
-                null,
-                null,
-                null,
-                null,
-                null,
-                null,
-                null,
-                null,
-                null,
-                null,
-                null,
-                null,
-                null,
-                null,
-                null,
-                null,
-                null,
-                null
-        ));
+
     }
 
     @Override
@@ -305,6 +247,14 @@ public class WaterEnvironmentActivity extends AppCompatActivity implements  Adap
             if (view instanceof EditText) {
                 ( (EditText) view).setError(message);
             }
+        }
+    }
+
+    private int getIntegerValue(EditText editText) {
+        try {
+            return Integer.getInteger(editText.getText().toString());
+        } catch (Exception e) {
+            return 0;
         }
     }
 }

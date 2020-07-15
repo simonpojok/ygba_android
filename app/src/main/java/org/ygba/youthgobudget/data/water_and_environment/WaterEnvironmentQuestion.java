@@ -44,7 +44,7 @@ public class WaterEnvironmentQuestion {
     private String question2Water;
 
     @ColumnInfo(name = WaterEnvironmentConstants.QUESTION_3_OBJECTIVE)
-    private String question3Objective;
+    private boolean question3Objective;
 
     @ColumnInfo(name = WaterEnvironmentConstants.QUESTION_5_LONG_TEXT)
     private String question5Text;
@@ -187,7 +187,7 @@ public class WaterEnvironmentQuestion {
     @ColumnInfo(name = WaterEnvironmentConstants.LOCALLY_STORED)
     private boolean locallyStored;
 
-    public WaterEnvironmentQuestion(String financialYear, String date, String district, String village, String parish, String sub_county, String agentName, String agentTel, boolean question1Objective, String question1ObjectiveReason, String question2Water, String question3Objective, String question5Text, String subCounty1, String waterSource1, int question5Functional1, int question5NoneFunctional1, int question5WaterSourceAvailable1, String subCounty2, String waterSource2, int question5Functional2, int question5NoneFunctional2, int question5WaterSourceAvailable2, String subCounty3, String waterSource3, int question5Functional3, int question5NoneFunctional3, int question5WaterSourceAvailable3, String subCounty4, String waterSource4, int question5Functional4, int question5NoneFunctional4, int question5WaterSourceAvailable4, String subCounty5, String waterSource5, int question5Functional5, int question5NoneFunctional5, int question5WaterSourceAvailable5, String subCounty6, String waterSource6, int question5Functional6, int question5NoneFunctional6, int question5WaterSourceAvailable6, boolean question5Objective, String question5ObjectiveReason, String question6VillageName1, int question61WetlandUnderDestruction1, String question6VillageName2, int question61WetlandUnderDestruction2, String question6VillageName3, int question61WetlandUnderDestruction3, String question6VillageName4, int question61WetlandUnderDestruction4, String question6VillageName5, int question61WetlandUnderDestruction5, String question6VillageName6, int question61WetlandUnderDestruction6, String question62TreePlanting) {
+    public WaterEnvironmentQuestion(String financialYear, String date, String district, String village, String parish, String sub_county, String agentName, String agentTel, boolean question1Objective, String question1ObjectiveReason, String question2Water, boolean question3Objective, String question5Text, String subCounty1, String waterSource1, int question5Functional1, int question5NoneFunctional1, int question5WaterSourceAvailable1, String subCounty2, String waterSource2, int question5Functional2, int question5NoneFunctional2, int question5WaterSourceAvailable2, String subCounty3, String waterSource3, int question5Functional3, int question5NoneFunctional3, int question5WaterSourceAvailable3, String subCounty4, String waterSource4, int question5Functional4, int question5NoneFunctional4, int question5WaterSourceAvailable4, String subCounty5, String waterSource5, int question5Functional5, int question5NoneFunctional5, int question5WaterSourceAvailable5, String subCounty6, String waterSource6, int question5Functional6, int question5NoneFunctional6, int question5WaterSourceAvailable6, boolean question5Objective, String question5ObjectiveReason, String question6VillageName1, int question61WetlandUnderDestruction1, String question6VillageName2, int question61WetlandUnderDestruction2, String question6VillageName3, int question61WetlandUnderDestruction3, String question6VillageName4, int question61WetlandUnderDestruction4, String question6VillageName5, int question61WetlandUnderDestruction5, String question6VillageName6, int question61WetlandUnderDestruction6, String question62TreePlanting) {
         this.financialYear = financialYear;
         this.date = date;
         this.district = district;
@@ -345,11 +345,11 @@ public class WaterEnvironmentQuestion {
         this.question2Water = question2Water;
     }
 
-    public String getQuestion3Objective() {
+    public boolean getQuestion3Objective() {
         return question3Objective;
     }
 
-    public void setQuestion3Objective(String question3Objective) {
+    public void setQuestion3Objective(boolean question3Objective) {
         this.question3Objective = question3Objective;
     }
 
