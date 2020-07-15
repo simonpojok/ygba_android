@@ -21,6 +21,7 @@ public class WaterEnvironmentActivity extends AppCompatActivity {
     private EditText wAgentFullName;
     private EditText wAgentTelNumber;
     private EditText wAgentNumberET;
+    private EditText wQ1ObjectiveReasonET;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -40,6 +41,7 @@ public class WaterEnvironmentActivity extends AppCompatActivity {
         wAgentFullName = findViewById(R.id.ygb_agent_name_edit_view);
         wAgentTelNumber = findViewById(R.id.ygb_agent_tel_edit_view);
         wAgentNumberET = findViewById(R.id.ygb_agent_no_edit_view);
+        wQ1ObjectiveReasonET = findViewById(R.id.water_question_1_if_no);
     }
 
     private void populateViews() {
