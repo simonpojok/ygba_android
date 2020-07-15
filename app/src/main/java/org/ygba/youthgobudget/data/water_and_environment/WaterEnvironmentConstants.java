@@ -21,4 +21,9 @@ public class WaterEnvironmentConstants {
     public static final String QUESTION_5_FUNCTIONAL_1 = "q_5_functional_1";
     public static final String QUESTION_5_NONE_FUNCTIONAL_1 = "q_5_none_functional_1";
     public static final String QUESTION_5_NO_WATER_SOURCE_AVAILABLE_1 = "q_5_no_ws_available_1";
+    public static final String SUB_COUNTY_2 = "q_5_sub_2";
+    public static final String QUESTION_5_WATER_SOURCE_2 = "q_5_ws_2";
+    public static final String QUESTION_5_FUNCTIONAL_2 = "q_5_functional_2";
+    public static final String QUESTION_5_NONE_FUNCTIONAL_2 = "q_5_none_functional_2";
+    public static final String QUESTION_5_NO_WATER_SOURCE_AVAILABLE_2 = "q_5_no_ws_available_2";
 }
