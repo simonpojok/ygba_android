@@ -1071,6 +1071,7 @@ public class WaterEnvironmentQuestion {
         this.question4Answer = question4Answer;
     }
 
+    @Ignore
     public boolean isQuestion3Objective() {
         return question3Objective;
     }

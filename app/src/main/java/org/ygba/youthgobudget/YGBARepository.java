@@ -78,4 +78,14 @@ public class YGBARepository {
             }
         });
     }
+
+    public LiveData<List<WaterEnvironmentQuestion>> getAllWaterEnvironmentQuestions() throws ExecutionException, InterruptedException {
+        Callable<LiveData<List<WaterEnvironmentQuestion>>> callable = new Callable<LiveData<List<WaterEnvironmentQuestion>>>() {
+            @Override
+            public LiveData<List<WaterEnvironmentQuestion>> call() throws Exception {
+                return ygbDatabase.waterEnvironmentQuestionDao().getAllWaterEnvironmentQuestions();
+            }
+        };
+        return YGBDatabase.db_executor.submit(callable).get();
+    }
 }
