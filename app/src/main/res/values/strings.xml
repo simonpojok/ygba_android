@@ -374,4 +374,7 @@
     <string name="water_question_7_village_label">Name of the subcounty / village</string>
     <string name="water_question_7_wetland_label">Wetland under destruction</string>
     <string name="water_question_6_2_text">6.2 What are the tree planting programs known in the area ?</string>
+    <string name="budget_information_sector_header">District Budget Information</string>
+    <string name="department_label">District department</string>
+    <string name="department_label_normal">Department</string>
 </resources>
