@@ -28,6 +28,14 @@ public class BudgetInformationActivity extends AppCompatActivity {
     private EditText percentageWaterET;
     private EditText approvedBudgetNaturalResourcesET;
     private EditText percentageNaturalResourcesET;
+    private EditText extFinancingPercentageET;
+    private EditText extApprovedBudgetET;
+    private EditText domesticApprovedBudgetET;
+    private EditText domesticPercentageET;
+    private EditText recurrentPercentageET;
+    private EditText recurrentApprovedBudgetET;
+    private EditText wagesPercentageET;
+    private EditText wagesApprovedBudget;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -57,5 +65,13 @@ public class BudgetInformationActivity extends AppCompatActivity {
         percentageWaterET = findViewById(R.id.percentage_water);
         approvedBudgetNaturalResourcesET = findViewById(R.id.approved_budget_natural_resources);
         percentageNaturalResourcesET = findViewById(R.id.percentage_natural_resources);
+        extFinancingPercentageET = findViewById(R.id.percentage_ext);
+        extApprovedBudgetET = findViewById(R.id.approved_budget_ext);
+        domesticApprovedBudgetET = findViewById(R.id.approved_budget_domestic);
+        domesticPercentageET = findViewById(R.id.percentage_domestic);
+        recurrentPercentageET = findViewById(R.id.percentage_recurrent);
+        recurrentApprovedBudgetET = findViewById(R.id.approved_budget_recurrent);
+        wagesPercentageET = findViewById(R.id.percentage_wage);
+        wagesApprovedBudget = findViewById(R.id.approved_budget_wage);
     }
 }
