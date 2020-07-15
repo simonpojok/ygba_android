@@ -9,25 +9,26 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name="org.ygba.youthgobudget.social_development.SocialDevelopmentListActivity" />
+        <activity android:name=".water_and_environment.WaterEnvironmentActivity"></activity>
+        <activity android:name=".social_development.SocialDevelopmentListActivity" />
         <activity
-            android:name="org.ygba.youthgobudget.dialogs.DatePickerActivity"
+            android:name=".dialogs.DatePickerActivity"
             android:label="Pick Date"
             android:theme="@android:style/Theme.DeviceDefault.Light.Dialog" />
         <activity
-            android:name="org.ygba.youthgobudget.social_development.SocialDevelopmentActivity"
+            android:name=".social_development.SocialDevelopmentActivity"
             android:parentActivityName=".MainActivity" />
         <activity
             android:name=".education.EducationActivity"
             android:parentActivityName=".MainActivity" />
         <activity
-            android:name="org.ygba.youthgobudget.health.HealthActivity"
+            android:name=".health.HealthActivity"
             android:parentActivityName=".MainActivity" />
         <activity
-            android:name="org.ygba.youthgobudget.agriculture.AgricultureActivity"
+            android:name=".agriculture.AgricultureActivity"
             android:parentActivityName=".MainActivity" />
         <activity
-            android:name="org.ygba.youthgobudget.MainActivity"
+            android:name=".MainActivity"
             android:label="@string/app_name"
             android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
