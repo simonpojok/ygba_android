@@ -365,4 +365,6 @@
     <string name="water_question_4_water_source">Water source</string>
     <string name="water_question_4_functionality">Fuctionality</string>
     <string name="water_question_4_no_water_source">No Water Source Available</string>
+    <string name="water_question_5_functional">Functional</string>
+    <string name="water_question_5_none_functional">None Functional</string>
 </resources>
