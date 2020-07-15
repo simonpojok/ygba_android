@@ -93,4 +93,19 @@ public class WaterEnvironmentQuestion {
 
     @ColumnInfo(name = WaterEnvironmentConstants.QUESTION_5_NO_WATER_SOURCE_AVAILABLE_3)
     private int question5WaterSourceAvailable3;
+
+    @ColumnInfo(name = WaterEnvironmentConstants.SUB_COUNTY_4)
+    private String subCounty4;
+
+    @ColumnInfo(name = WaterEnvironmentConstants.QUESTION_5_WATER_SOURCE_4)
+    private String waterSource4;
+
+    @ColumnInfo(name = WaterEnvironmentConstants.QUESTION_5_FUNCTIONAL_4)
+    private int question5Functional4;
+
+    @ColumnInfo(name = WaterEnvironmentConstants.QUESTION_5_NONE_FUNCTIONAL_4)
+    private int question5NoneFunctional4;
+
+    @ColumnInfo(name = WaterEnvironmentConstants.QUESTION_5_NO_WATER_SOURCE_AVAILABLE_4)
+    private int question5WaterSourceAvailable4;
 }
