@@ -370,4 +370,5 @@
     <string name="water_question_5_objective_text">5. Do the rural water point sources have user committees ?</string>
     <string name="water_question_5_objective_if_text">If yes are they trained ?</string>
     <string name="water_question_6_text">6. Are there any wetlands demarcated or protected ?</string>
+    <string name="water_question_6_1_text">6.1 Name area with wetland degradation</string>
 </resources>

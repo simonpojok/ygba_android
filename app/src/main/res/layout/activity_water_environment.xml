@@ -1091,6 +1091,14 @@
             android:autofillHints=""
             tools:ignore="LabelFor" />
 
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/water_question_6_1_text"
+            android:textSize="15sp"
+            android:textColor="@color/white" />
+
 
     </LinearLayout>
 
