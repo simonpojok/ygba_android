@@ -794,7 +794,142 @@
                     android:inputType="numberDecimal"
                     tools:ignore="LabelFor" />
 
-<!--                -->
+<!--                row 17 -->
+
+                <TextView
+                    android:layout_column="0"
+                    android:layout_row="17"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="@string/recurrent_label"
+                    android:textSize="15sp"
+                    android:textColor="@color/white" />
+
+                <EditText
+                    android:layout_marginVertical="5dp"
+                    android:layout_marginHorizontal="5dp"
+                    android:layout_row="17"
+                    android:layout_column="1"
+                    android:layout_marginBottom="10dp"
+                    android:paddingStart="5dp"
+                    android:paddingEnd="5dp"
+                    android:id="@+id/approved_budget_recurrent"
+                    android:layout_width="200dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/edit_text_style"
+                    android:autofillHints=""
+                    android:textSize="15sp"
+                    android:inputType="numberDecimal"
+                    tools:ignore="LabelFor" />
+
+                <EditText
+                    android:layout_marginVertical="5dp"
+                    android:layout_marginHorizontal="5dp"
+                    android:layout_row="17"
+                    android:layout_column="2"
+                    android:layout_marginBottom="10dp"
+                    android:paddingStart="5dp"
+                    android:paddingEnd="5dp"
+                    android:id="@+id/percentage_recurrent"
+                    android:layout_width="200dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/edit_text_style"
+                    android:autofillHints=""
+                    android:textSize="15sp"
+                    android:inputType="numberDecimal"
+                    tools:ignore="LabelFor" />
+
+<!--                row 18 -->
+                <TextView
+                    android:layout_column="0"
+                    android:layout_row="18"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="@string/domestic_label"
+                    android:textSize="15sp"
+                    android:textColor="@color/white" />
+
+                <EditText
+                    android:layout_marginVertical="5dp"
+                    android:layout_marginHorizontal="5dp"
+                    android:layout_row="18"
+                    android:layout_column="1"
+                    android:layout_marginBottom="10dp"
+                    android:paddingStart="5dp"
+                    android:paddingEnd="5dp"
+                    android:id="@+id/approved_budget_domestic"
+                    android:layout_width="200dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/edit_text_style"
+                    android:autofillHints=""
+                    android:textSize="15sp"
+                    android:inputType="numberDecimal"
+                    tools:ignore="LabelFor" />
+
+                <EditText
+                    android:layout_marginVertical="5dp"
+                    android:layout_marginHorizontal="5dp"
+                    android:layout_row="18"
+                    android:layout_column="2"
+                    android:layout_marginBottom="10dp"
+                    android:paddingStart="5dp"
+                    android:paddingEnd="5dp"
+                    android:id="@+id/percentage_domestic"
+                    android:layout_width="200dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/edit_text_style"
+                    android:autofillHints=""
+                    android:textSize="15sp"
+                    android:inputType="numberDecimal"
+                    tools:ignore="LabelFor" />
+
+<!--                row 19 -->
+
+                <TextView
+                    android:layout_column="0"
+                    android:layout_row="19"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="@string/ext_label"
+                    android:textSize="15sp"
+                    android:textColor="@color/white" />
+
+                <EditText
+                    android:layout_marginVertical="5dp"
+                    android:layout_marginHorizontal="5dp"
+                    android:layout_row="19"
+                    android:layout_column="1"
+                    android:layout_marginBottom="10dp"
+                    android:paddingStart="5dp"
+                    android:paddingEnd="5dp"
+                    android:id="@+id/approved_budget_ext"
+                    android:layout_width="200dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/edit_text_style"
+                    android:autofillHints=""
+                    android:textSize="15sp"
+                    android:inputType="numberDecimal"
+                    tools:ignore="LabelFor" />
+
+                <EditText
+                    android:layout_marginVertical="5dp"
+                    android:layout_marginHorizontal="5dp"
+                    android:layout_row="19"
+                    android:layout_column="2"
+                    android:layout_marginBottom="10dp"
+                    android:paddingStart="5dp"
+                    android:paddingEnd="5dp"
+                    android:id="@+id/percentage_ext"
+                    android:layout_width="200dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/edit_text_style"
+                    android:autofillHints=""
+                    android:textSize="15sp"
+                    android:inputType="numberDecimal"
+                    tools:ignore="LabelFor" />
 
             </GridLayout>
         </HorizontalScrollView>

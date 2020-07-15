@@ -394,4 +394,7 @@
     <string name="trade_label">Trade, Industry and Local Development</string>
     <string name="total_label">Total</string>
     <string name="wage_label">Wage</string>
+    <string name="recurrent_label">Non-Wage Recurrent</string>
+    <string name="domestic_label">Domestic Devt</string>
+    <string name="ext_label">Ext. Financing</string>
 </resources>
