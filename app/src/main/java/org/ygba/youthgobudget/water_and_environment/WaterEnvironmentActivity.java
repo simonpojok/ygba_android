@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 import android.widget.EditText;
+import android.widget.RadioGroup;
 import android.widget.Spinner;
 import android.widget.TextView;
 
@@ -47,5 +48,9 @@ public class WaterEnvironmentActivity extends AppCompatActivity {
         wAgentFullName.setText(DynamicData.getAgentName());
         wAgentTelNumber.setText(DynamicData.getTelNumber());
         wAgentNumberET.setText(DynamicData.getAgentName());
+    }
+
+    private boolean getQuestionQ1ObjectiveAnswer(){
+        return ((RadioGroup) findViewById(R.id.water_question_1_radio_group)).getCheckedRadioButtonId() == R.id.water_question_1_yes;
     }
 }
