@@ -22,4 +22,14 @@ public class BudgetInformationFormConstants {
     public static final String WATER_PERCENTAGE = "water_approved";
     public static final String NATUREAL_RESOURCES_APPROVED_BUDGET = "natural_approved";
     public static final String NATUREAL_RESOURCES_PERCENTAGE = "natural_percentage";
+    public static final String COMMUNITY_APPROVED_BUDGET = "com_approved";
+    public static final String COMMUNITY_PERCENTAGE = "com_percentage";
+    public static final String PLANNING_APPROVED_BUDGET = "planning_approved";
+    public static final String PLANNING_PERCENTAGE = "planning_percentage";
+    public static final String INTERNAL_AUDIT_APPROVED_BUDGET = "internal_audit";
+    public static final String INTERNAL_AUDIT_PERCENTAGE = "internal_percentage";
+    public static final String TRADE_APPROVED_BUDGET = "trade_approved";
+    public static final String TRADE_AUDIT_PERCENTAGE = "trade_percentage";
+    public static final String TOTAL_APPROVED_BUDGET = "total_approved";
+    public static final String TOTAL_AUDIT_PERCENTAGE = "total_percentage";
 }

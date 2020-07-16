@@ -66,4 +66,34 @@ public class BudgetInformationForm {
 
     @ColumnInfo(name = BudgetInformationFormConstants.NATUREAL_RESOURCES_PERCENTAGE)
     private int naturalPercentage;
+
+    @ColumnInfo(name = BudgetInformationFormConstants.COMMUNITY_APPROVED_BUDGET)
+    private int communityApprovedBudget;
+
+    @ColumnInfo(name = BudgetInformationFormConstants.COMMUNITY_PERCENTAGE)
+    private int communityPercentage;
+
+    @ColumnInfo(name = BudgetInformationFormConstants.PLANNING_APPROVED_BUDGET)
+    private int planningApprovedBudget;
+
+    @ColumnInfo(name = BudgetInformationFormConstants.PLANNING_PERCENTAGE)
+    private int planningPercentage;
+
+    @ColumnInfo(name = BudgetInformationFormConstants.INTERNAL_AUDIT_APPROVED_BUDGET)
+    private int internalApprovedBudget;
+
+    @ColumnInfo(name = BudgetInformationFormConstants.INTERNAL_AUDIT_PERCENTAGE)
+    private int internalPercentage;
+
+    @ColumnInfo(name = BudgetInformationFormConstants.TRADE_APPROVED_BUDGET)
+    private int tradeApprovedBudget;
+
+    @ColumnInfo(name = BudgetInformationFormConstants.TRADE_AUDIT_PERCENTAGE)
+    private int tradePercentage;
+
+    @ColumnInfo(name = BudgetInformationFormConstants.TOTAL_APPROVED_BUDGET)
+    private int totalApprovedBudget;
+
+    @ColumnInfo(name = BudgetInformationFormConstants.TOTAL_AUDIT_PERCENTAGE)
+    private int totalPercentage;
 }
