@@ -19,7 +19,7 @@ public class BudgetInformationFormConstants {
     public static final String ROADS_ENGINEERING_APPROVED_BUDGET = "road_approved";
     public static final String ROADS_ENGINEERING_PERCENTAGE = "road_percentagae";
     public static final String WATER_APPROVED_BUDGET = "water_approved";
-    public static final String WATER_PERCENTAGE = "water_approved";
+    public static final String WATER_PERCENTAGE = "water_percentage";
     public static final String NATUREAL_RESOURCES_APPROVED_BUDGET = "natural_approved";
     public static final String NATUREAL_RESOURCES_PERCENTAGE = "natural_percentage";
     public static final String COMMUNITY_APPROVED_BUDGET = "com_approved";
@@ -32,9 +32,9 @@ public class BudgetInformationFormConstants {
     public static final String TRADE_AUDIT_PERCENTAGE = "trade_percentage";
     public static final String TOTAL_APPROVED_BUDGET = "total_approved";
     public static final String TOTAL_AUDIT_PERCENTAGE = "total_percentage";
-    public static final String WAGE_APPROVED_BUDGET = "wage_approved";
-    public static final String WAGE_AUDIT_PERCENTAGE = "wage_approved";
-    public static final String NONE_WAGE_APPROVED_BUDGET = "none_wage_approved";
+    public static final String WAGE_APPROVED_BUDGET = "wage_approved_b";
+    public static final String WAGE_AUDIT_PERCENTAGE = "wage_approved_a";
+    public static final String NONE_WAGE_APPROVED_BUDGET = "none_wage_approved_d";
     public static final String NONE_WAGE_AUDIT_PERCENTAGE = "none_wage_perce";
     public static final String DOMESTIC_APPROVED_BUDGET = "domestic_approved";
     public static final String DOMESTIC_PERCENTAGE = "domestic_percentage";

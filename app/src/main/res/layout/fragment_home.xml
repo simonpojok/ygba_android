@@ -278,6 +278,7 @@
             android:orientation="horizontal">
 
             <androidx.cardview.widget.CardView
+                android:id="@+id/budget_info_icon"
                 android:layout_gravity="center"
                 android:layout_width="90dp"
                 app:cardCornerRadius="10dp"
@@ -292,13 +293,13 @@
                     <ImageView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:src="@drawable/ic_baseline_import_contacts_24"/>
+                        android:src="@drawable/ic_baseline_info_24"/>
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:textColor="#ffffff"
-                        android:text="Contacts" />
+                        android:text="Budget In.." />
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
 
