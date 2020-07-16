@@ -262,6 +262,9 @@ public class BudgetInformationActivity extends AppCompatActivity implements Adap
         budgetInformationForm.setTotalApprovedBudget(getIntegerValue(totalApprovedBudget));
         budgetInformationForm.setTotalPercentage(getIntegerValue(totalPercentage));
 
+//        / form 2
+//        budgetInformationForm.setDistrict1Sector(getStringValue(district1));
+
 
 
         activityViewModel.saveBudgetInformationForm(budgetInformationForm);
