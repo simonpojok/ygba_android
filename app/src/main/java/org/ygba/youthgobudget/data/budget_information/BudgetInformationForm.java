@@ -2,6 +2,7 @@ package org.ygba.youthgobudget.data.budget_information;
 
 import androidx.room.ColumnInfo;
 import androidx.room.Entity;
+import androidx.room.Ignore;
 import androidx.room.PrimaryKey;
 
 import java.util.Objects;
@@ -1106,4 +1107,7 @@ public class BudgetInformationForm {
     public int hashCode() {
         return Objects.hash(getPrimaryKey(), getFinancialYear(), getAdminApprovedBudget(), getAdminPercentage(), getFinanceApprovedBudget(), getFinancePercentage(), getStatutoryBodiesApprovedBudget(), getStatutoryBodiesPercentage(), getProductionApprovedBudget(), getProductionPercentage(), getHealthApprovedBudget(), getHealthPercentage(), getEducationApprovedBudget(), getEducationPercentage(), getRoadEngineeringApprovedBudget(), getRoadEngineeringPercentage(), getWaterApprovedBudget(), getWaterPercentage(), getNaturalApprovedBudget(), getNaturalPercentage(), getCommunityApprovedBudget(), getCommunityPercentage(), getPlanningApprovedBudget(), getPlanningPercentage(), getInternalApprovedBudget(), getInternalPercentage(), getTradeApprovedBudget(), getTradePercentage(), getTotalApprovedBudget(), getTotalPercentage(), getWageApprovedBudget(), getWagePercentage(), getNoneWageApprovedBudget(), getNoneWagePercentage(), getDomesticApprovedBudget(), getDomesticPercentage(), getExtApprovedBudget(), getExtPercentage(), getDistrictName(), getServiceName(), getCommunityWishName(), getDistrict1Sector(), getSubCounty1Sector(), getFinancialYear1Sector(), getService1Sector(), getCommunityWishes1Sector(), getDistrict2Sector(), getSubCounty2Sector(), getFinancialYear2Sector(), getService2Sector(), getCommunityWishes2Sector(), getDistrict3Sector(), getSubCounty3Sector(), getFinancialYear3Sector(), getService3Sector(), getCommunityWishes3Sector(), getDistrict4Sector(), getSubCounty4Sector(), getFinancialYear4Sector(), getService4Sector(), getCommunityWishes4Sector(), getDistrict5Sector(), getSubCounty5Sector(), getFinancialYear5Sector(), getService5Sector(), getCommunityWishes5Sector(), getDistrict6Sector(), getSubCounty6Sector(), getFinancialYear6Sector(), getService6Sector(), getCommunityWishes6Sector(), getDistrict7Sector(), getSubCounty7Sector(), getFinancialYear7Sector(), getService7Sector(), getCommunityWishes7Sector(), isStoredLocally());
     }
+
+    @Ignore
+    public BudgetInformationForm(){}
 }

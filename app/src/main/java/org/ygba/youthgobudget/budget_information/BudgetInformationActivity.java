@@ -14,6 +14,7 @@ import com.mobsandgeeks.saripaar.Validator;
 import com.mobsandgeeks.saripaar.annotation.NotEmpty;
 
 import org.ygba.youthgobudget.R;
+import org.ygba.youthgobudget.data.budget_information.BudgetInformationForm;
 
 import java.util.List;
 
@@ -208,7 +209,7 @@ public class BudgetInformationActivity extends AppCompatActivity implements Adap
         findViewById(R.id.saved_form_data).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                // save the form
+                validator.validate();
             }
         });
     }
@@ -225,7 +226,8 @@ public class BudgetInformationActivity extends AppCompatActivity implements Adap
 
     @Override
     public void onValidationSucceeded() {
-
+        BudgetInformationForm budgetInformationForm = new BudgetInformationForm();
+        activityViewModel.saveBudgetInformationForm(budgetInformationForm);
     }
 
     @Override
