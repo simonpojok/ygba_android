@@ -204,4 +204,36 @@ public class BudgetInformationForm {
 
     @ColumnInfo(name = BudgetInformationFormConstants.COMMUNITY_WISHES_5_SECTOR)
     private String communityWishes5Sector;
+
+    @ColumnInfo(name = BudgetInformationFormConstants.DISTRICT_6_SECTOR)
+    private int district6Sector;
+
+    @ColumnInfo(name = BudgetInformationFormConstants.SUB_COUNTY_6_SECTOR)
+    private int subCounty6Sector;
+
+    @ColumnInfo(name = BudgetInformationFormConstants.FINANCIAL_YEAR_6_SECTOR)
+    private String financialYear6Sector;
+
+    @ColumnInfo(name = BudgetInformationFormConstants.SERVICE_6_SECTOR)
+    private String service6Sector;
+
+    @ColumnInfo(name = BudgetInformationFormConstants.COMMUNITY_WISHES_6_SECTOR)
+    private String communityWishes6Sector;
+
+    @ColumnInfo(name = BudgetInformationFormConstants.DISTRICT_7_SECTOR)
+    private int district7Sector;
+
+    @ColumnInfo(name = BudgetInformationFormConstants.SUB_COUNTY_7_SECTOR)
+    private int subCounty7Sector;
+
+    @ColumnInfo(name = BudgetInformationFormConstants.FINANCIAL_YEAR_7_SECTOR)
+    private String financialYear7Sector;
+
+    @ColumnInfo(name = BudgetInformationFormConstants.SERVICE_7_SECTOR)
+    private String service7Sector;
+
+    @ColumnInfo(name = BudgetInformationFormConstants.COMMUNITY_WISHES_7_SECTOR)
+    private String communityWishes7Sector;
+
+
 }
