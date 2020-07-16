@@ -52,6 +52,12 @@ public class BudgetInformationActivity extends AppCompatActivity {
     private Spinner serviceSectorSpinner;
     private Spinner communityNeedsSpinner;
 
+    private EditText district1;
+    private EditText subcounty1;
+    private EditText financialYear1;
+    private EditText service1;
+    private EditText communityNeed1;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -102,5 +108,10 @@ public class BudgetInformationActivity extends AppCompatActivity {
         financialYearSectorSpinner = findViewById(R.id.financial_sector_spinner);
         serviceSectorSpinner = findViewById(R.id.sector_sector_spinner);
         communityNeedsSpinner = findViewById(R.id.community_needs_sector_spinner);
+        district1 = findViewById(R.id.district_1);
+        subcounty1 = findViewById(R.id.subcounty_1);
+        financialYear1 = findViewById(R.id.financial_year_1);
+        service1 = findViewById(R.id.service_1);
+        communityNeed1 = findViewById(R.id.community_need_1);
     }
 }
