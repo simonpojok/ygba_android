@@ -64,6 +64,12 @@ public class BudgetInformationActivity extends AppCompatActivity {
     private EditText service2;
     private EditText communityNeed2;
 
+    private EditText district3;
+    private EditText subcounty3;
+    private EditText financialYear3;
+    private EditText service3;
+    private EditText communityNeed3;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -126,5 +132,11 @@ public class BudgetInformationActivity extends AppCompatActivity {
         financialYear2 = findViewById(R.id.financial_year_2);
         service2 = findViewById(R.id.service_2);
         communityNeed2 = findViewById(R.id.community_need_2);
+
+        district3 = findViewById(R.id.district_3);
+        subcounty3 = findViewById(R.id.subcounty_3);
+        financialYear3 = findViewById(R.id.financial_year_3);
+        service3 = findViewById(R.id.service_3);
+        communityNeed3 = findViewById(R.id.community_need_3);
     }
 }
