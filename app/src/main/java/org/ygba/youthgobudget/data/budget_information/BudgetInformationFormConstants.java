@@ -32,4 +32,8 @@ public class BudgetInformationFormConstants {
     public static final String TRADE_AUDIT_PERCENTAGE = "trade_percentage";
     public static final String TOTAL_APPROVED_BUDGET = "total_approved";
     public static final String TOTAL_AUDIT_PERCENTAGE = "total_percentage";
+    public static final String WAGE_APPROVED_BUDGET = "wage_approved";
+    public static final String WAGE_AUDIT_PERCENTAGE = "wage_approved";
+    public static final String NONE_WAGE_APPROVED_BUDGET = "none_wage_approved";
+    public static final String NONE_WAGE_AUDIT_PERCENTAGE = "none_wage_perce";
 }

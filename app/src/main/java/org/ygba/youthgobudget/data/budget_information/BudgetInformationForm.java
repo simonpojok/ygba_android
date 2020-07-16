@@ -96,4 +96,16 @@ public class BudgetInformationForm {
 
     @ColumnInfo(name = BudgetInformationFormConstants.TOTAL_AUDIT_PERCENTAGE)
     private int totalPercentage;
+
+    @ColumnInfo(name = BudgetInformationFormConstants.WAGE_APPROVED_BUDGET)
+    private int wageApprovedBudget;
+
+    @ColumnInfo(name = BudgetInformationFormConstants.WAGE_AUDIT_PERCENTAGE)
+    private int wagePercentage;
+
+    @ColumnInfo(name = BudgetInformationFormConstants.NONE_WAGE_APPROVED_BUDGET)
+    private int noneWageApprovedBudget;
+
+    @ColumnInfo(name = BudgetInformationFormConstants.NONE_WAGE_AUDIT_PERCENTAGE)
+    private int noneWagePercentage;
 }
