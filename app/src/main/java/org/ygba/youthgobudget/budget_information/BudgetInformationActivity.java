@@ -1,16 +1,25 @@
 package org.ygba.youthgobudget.budget_information;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.lifecycle.ViewModelProvider;
 
 import android.os.Bundle;
 import android.view.View;
+import android.widget.AdapterView;
 import android.widget.EditText;
 import android.widget.Spinner;
 
+import com.mobsandgeeks.saripaar.ValidationError;
+import com.mobsandgeeks.saripaar.Validator;
+import com.mobsandgeeks.saripaar.annotation.NotEmpty;
+
 import org.ygba.youthgobudget.R;
 
-public class BudgetInformationActivity extends AppCompatActivity {
+import java.util.List;
+
+public class BudgetInformationActivity extends AppCompatActivity implements AdapterView.OnItemSelectedListener, Validator.ValidationListener {
     private Spinner financialYearSpinner;
+    @NotEmpty
     private EditText administrationApprovedBudgetED;
     private EditText administrationPercentageED;
     private EditText financeApprovedBudgetED;
@@ -95,10 +104,18 @@ public class BudgetInformationActivity extends AppCompatActivity {
     private EditText service7;
     private EditText communityNeed7;
 
+    private BudgetInformationActivityViewModel activityViewModel;
+    private final String[] financialYears = {"I", "II", "III", "IV", "V", "VI", "VII"};
+    private String selectedFinancialYear;
+    private Validator validator;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_budget_information);
+        activityViewModel = new ViewModelProvider(this).get(BudgetInformationActivityViewModel.class);
+        validator = new Validator(this);
+        validator.setValidationListener(this);
 
         initViews();
     }
@@ -194,5 +211,25 @@ public class BudgetInformationActivity extends AppCompatActivity {
                 // save the form
             }
         });
+    }
+
+    @Override
+    public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l) {
+
+    }
+
+    @Override
+    public void onNothingSelected(AdapterView<?> adapterView) {
+
+    }
+
+    @Override
+    public void onValidationSucceeded() {
+
+    }
+
+    @Override
+    public void onValidationFailed(List<ValidationError> errors) {
+
     }
 }
