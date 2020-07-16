@@ -8,6 +8,8 @@ import androidx.room.RoomDatabase;
 
 import org.ygba.youthgobudget.data.agriculture.AgricultureDao;
 import org.ygba.youthgobudget.data.agriculture.AgricultureQuestion;
+import org.ygba.youthgobudget.data.budget_information.BudgetInformationForm;
+import org.ygba.youthgobudget.data.budget_information.BudgetInformationFormDao;
 import org.ygba.youthgobudget.data.education.EducationQuestion;
 import org.ygba.youthgobudget.data.education.EducationQuestionDao;
 import org.ygba.youthgobudget.data.socialdevelopment.SocialDevelopmentDao;
@@ -22,7 +24,8 @@ import java.util.concurrent.Executors;
         AgricultureQuestion.class,
         EducationQuestion.class,
         SocialDevelopmentQuestion.class,
-        WaterEnvironmentQuestion.class
+        WaterEnvironmentQuestion.class,
+        BudgetInformationForm.class
 }, version = 1, exportSchema = false)
 public abstract class YGBDatabase extends RoomDatabase {
     private static YGBDatabase INSTANCE;
@@ -30,6 +33,7 @@ public abstract class YGBDatabase extends RoomDatabase {
     public abstract SocialDevelopmentDao socialDevelopmentDao();
     public abstract EducationQuestionDao educationQuestionDao();
     public abstract WaterEnvironmentQuestionDao waterEnvironmentQuestionDao();
+    public abstract BudgetInformationFormDao budgetInformationFormDao();
 
 
     public static final int NUMBER_OF_THREADS = 5;
