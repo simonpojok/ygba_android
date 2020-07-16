@@ -230,7 +230,37 @@ public class BudgetInformationActivity extends AppCompatActivity implements Adap
         BudgetInformationForm budgetInformationForm = new BudgetInformationForm();
 
         budgetInformationForm.setFinancialYear("23434");
-        budgetInformationForm.setAdminApprovedBudget();
+
+        budgetInformationForm.setAdminApprovedBudget(getIntegerValue(administrationApprovedBudgetED));
+        budgetInformationForm.setAdminPercentage(getIntegerValue(administrationPercentageED));
+
+        budgetInformationForm.setFinanceApprovedBudget(getIntegerValue(financeApprovedBudgetED));
+        budgetInformationForm.setFinancePercentage(getIntegerValue(financePercentage));
+
+        budgetInformationForm.setStatutoryBodiesApprovedBudget(getIntegerValue(statutoryBodiesApprovedBudgetED));
+        budgetInformationForm.setFinancePercentage(getIntegerValue(statutoryBodiesPercentageET));
+        budgetInformationForm.setProductionApprovedBudget(getIntegerValue(productionApprovedBudgetET));
+        budgetInformationForm.setProductionPercentage(getIntegerValue(productionPercentageET));
+        budgetInformationForm.setHealthApprovedBudget(getIntegerValue(healthApprovedBudget));
+        budgetInformationForm.setHealthPercentage(getIntegerValue(healthPercentageET));
+        budgetInformationForm.setEducationApprovedBudget(getIntegerValue(educationApprovedBudget));
+        budgetInformationForm.setEducationPercentage(getIntegerValue(educationPercentage));
+        budgetInformationForm.setRoadEngineeringApprovedBudget(getIntegerValue(roadEngineeringApprovedBudgetET));
+        budgetInformationForm.setRoadEngineeringPercentage(getIntegerValue(roadEngineeringPercentageET));
+        budgetInformationForm.setWaterApprovedBudget(getIntegerValue(waterApprovedBudgetET));
+        budgetInformationForm.setWaterPercentage(getIntegerValue(percentageWaterET));
+        budgetInformationForm.setNaturalApprovedBudget(getIntegerValue(percentageNaturalResourcesET));
+        budgetInformationForm.setNaturalPercentage(getIntegerValue(percentageNaturalResourcesET));
+        budgetInformationForm.setCommunityApprovedBudget(getIntegerValue(communityApprovedBudgetET));
+        budgetInformationForm.setCommunityPercentage(getIntegerValue(communityPercentageET));
+        budgetInformationForm.setProductionPercentage(getIntegerValue(planningPercentageET));
+        budgetInformationForm.setProductionApprovedBudget(getIntegerValue(planningApprovedBudgetET));
+        budgetInformationForm.setInternalApprovedBudget(getIntegerValue(internalAuditApprovedBudgetET));
+        budgetInformationForm.setInternalPercentage(getIntegerValue(percentageInternalAuditET));
+        budgetInformationForm.setTotalApprovedBudget(getIntegerValue(totalApprovedBudget));
+        budgetInformationForm.setTotalPercentage(getIntegerValue(tradePercentageET));
+        budgetInformationForm.setTotalApprovedBudget(getIntegerValue(totalApprovedBudget));
+        budgetInformationForm.setTotalPercentage(getIntegerValue(totalPercentage));
 
 
 
