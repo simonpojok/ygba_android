@@ -8,6 +8,7 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.EditText;
 import android.widget.Spinner;
+import android.widget.TextView;
 
 import com.mobsandgeeks.saripaar.ValidationError;
 import com.mobsandgeeks.saripaar.Validator;
@@ -227,11 +228,39 @@ public class BudgetInformationActivity extends AppCompatActivity implements Adap
     @Override
     public void onValidationSucceeded() {
         BudgetInformationForm budgetInformationForm = new BudgetInformationForm();
+
+        budgetInformationForm.setFinancialYear("23434");
+        budgetInformationForm.setAdminApprovedBudget();
+
+
+
         activityViewModel.saveBudgetInformationForm(budgetInformationForm);
     }
 
     @Override
     public void onValidationFailed(List<ValidationError> errors) {
+        for (ValidationError error: errors) {
+            View view = error.getView();
+            String message = error.getCollatedErrorMessage(this);
+            if (view instanceof EditText) {
+                ( (EditText) view).setError(message);
+            }
+        }
+    }
 
+    private int getIntegerValue(EditText editText) {
+        try {
+            return Integer.getInteger(editText.getText().toString());
+        } catch (Exception e) {
+            return 0;
+        }
+    }
+
+    private String getStringValue(EditText editText) {
+        return  editText.getText().toString();
+    }
+
+    private String getStringValue(TextView textView) {
+        return  textView.getText().toString();
     }
 }
