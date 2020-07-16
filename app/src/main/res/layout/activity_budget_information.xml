@@ -973,7 +973,7 @@
                         android:textColor="@color/white" />
 
                     <Spinner
-                        android:layout_marginHorizontal="5dp"
+                        android:layout_marginEnd="5dp"
                         android:layout_gravity="end"
                         android:id="@+id/district_sector_spinner"
                         android:layout_width="200dp"
@@ -991,7 +991,7 @@
                     android:layout_marginHorizontal="5dp"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/sub_county_label"
+                    android:text="@string/sub_county_label_sub"
                     android:textSize="15sp"
                     android:textColor="@color/white" />
 
