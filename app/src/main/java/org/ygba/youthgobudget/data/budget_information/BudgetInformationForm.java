@@ -144,4 +144,19 @@ public class BudgetInformationForm {
 
     @ColumnInfo(name = BudgetInformationFormConstants.COMMUNITY_WISHES_1_SECTOR)
     private String communityWishes1Sector;
+
+    @ColumnInfo(name = BudgetInformationFormConstants.DISTRICT_2_SECTOR)
+    private int district2Sector;
+
+    @ColumnInfo(name = BudgetInformationFormConstants.SUB_COUNTY_2_SECTOR)
+    private int subCounty2Sector;
+
+    @ColumnInfo(name = BudgetInformationFormConstants.FINANCIAL_YEAR_2_SECTOR)
+    private String financialYear2Sector;
+
+    @ColumnInfo(name = BudgetInformationFormConstants.SERVICE_2_SECTOR)
+    private String service2Sector;
+
+    @ColumnInfo(name = BudgetInformationFormConstants.COMMUNITY_WISHES_2_SECTOR)
+    private String communityWishes2Sector;
 }
