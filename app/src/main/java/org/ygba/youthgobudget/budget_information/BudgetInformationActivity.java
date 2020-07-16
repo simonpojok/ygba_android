@@ -3,6 +3,7 @@ package org.ygba.youthgobudget.budget_information;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.view.View;
 import android.widget.EditText;
 import android.widget.Spinner;
 
@@ -186,5 +187,12 @@ public class BudgetInformationActivity extends AppCompatActivity {
         financialYear7 = findViewById(R.id.financial_year_7);
         service7 = findViewById(R.id.service_7);
         communityNeed7 = findViewById(R.id.community_need_7);
+
+        findViewById(R.id.saved_form_data).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                // save the form
+            }
+        });
     }
 }
