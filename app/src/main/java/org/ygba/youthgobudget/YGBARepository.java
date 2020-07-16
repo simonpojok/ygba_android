@@ -4,6 +4,7 @@ import androidx.lifecycle.LiveData;
 
 import org.ygba.youthgobudget.data.YGBDatabase;
 import org.ygba.youthgobudget.data.agriculture.AgricultureQuestion;
+import org.ygba.youthgobudget.data.budget_information.BudgetInformationForm;
 import org.ygba.youthgobudget.data.socialdevelopment.SocialDevelopmentQuestion;
 import org.ygba.youthgobudget.data.water_and_environment.WaterEnvironmentQuestion;
 
@@ -87,5 +88,14 @@ public class YGBARepository {
             }
         };
         return YGBDatabase.db_executor.submit(callable).get();
+    }
+
+    public void saveBudgetInformationForm(final BudgetInformationForm informationForm) {
+        YGBDatabase.db_executor.execute(new Runnable() {
+            @Override
+            public void run() {
+                ygbDatabase.budgetInformationFormDao().saveBudgetInformationForm(informationForm);
+            }
+        });
     }
 }
