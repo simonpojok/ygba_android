@@ -98,4 +98,15 @@ public class YGBARepository {
             }
         });
     }
+
+    public LiveData<List<BudgetInformationForm>> getAllBudgetInformationForms() throws ExecutionException, InterruptedException {
+        Callable<LiveData<List<BudgetInformationForm>>> callable = new Callable<LiveData<List<BudgetInformationForm>>>() {
+            @Override
+            public LiveData<List<BudgetInformationForm>> call() throws Exception {
+                return ygbDatabase.budgetInformationFormDao().getAllBudgetInformation();
+            }
+        };
+
+        return YGBDatabase.db_executor.submit(callable).get();
+    }
 }
