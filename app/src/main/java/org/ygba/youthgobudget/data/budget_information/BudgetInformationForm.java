@@ -120,4 +120,28 @@ public class BudgetInformationForm {
 
     @ColumnInfo(name = BudgetInformationFormConstants.EXT_PERCENTAGE)
     private int extPercentage;
+
+    @ColumnInfo(name = BudgetInformationFormConstants.DISTRICT_NAME)
+    private String districtName;
+
+    @ColumnInfo(name = BudgetInformationFormConstants.SERVICE_NAME)
+    private String serviceName;
+
+    @ColumnInfo(name = BudgetInformationFormConstants.COMMUNITY_WISH_NAME)
+    private String communityWishName;
+
+    @ColumnInfo(name = BudgetInformationFormConstants.DISTRICT_1_SECTOR)
+    private int district1Sector;
+
+    @ColumnInfo(name = BudgetInformationFormConstants.SUB_COUNTY_1_SECTOR)
+    private int subCounty1Sector;
+
+    @ColumnInfo(name = BudgetInformationFormConstants.FINANCIAL_YEAR_1_SECTOR)
+    private String financialYear1Sector;
+
+    @ColumnInfo(name = BudgetInformationFormConstants.SERVICE_1_SECTOR)
+    private String service1Sector;
+
+    @ColumnInfo(name = BudgetInformationFormConstants.COMMUNITY_WISHES_1_SECTOR)
+    private String communityWishes1Sector;
 }

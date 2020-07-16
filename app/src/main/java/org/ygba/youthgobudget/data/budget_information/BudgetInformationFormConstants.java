@@ -40,4 +40,17 @@ public class BudgetInformationFormConstants {
     public static final String DOMESTIC_PERCENTAGE = "domestic_percentage";
     public static final String EXT_APPROVED_BUDGET = "ext_approved";
     public static final String EXT_PERCENTAGE = "ext_percentage";
+    public static final String DISTRICT_1_SECTOR = "dis_1_sector";
+    public static final String SUB_COUNTY_1_SECTOR = "sub_1_sect";
+    public static final String FINANCIAL_YEAR_1_SECTOR = "fin_1_sec";
+    public static final String SERVICE_1_SECTOR = "service_1_sector";
+    public static final String COMMUNITY_WISHES_1_SECTOR = "community_wishes_1";
+    public static final String DISTRICT_NAME = "dis_name";
+    public static final String SERVICE_NAME = "service_name";
+    public static final String COMMUNITY_WISH_NAME = "com_wish_name";
+    public static final String DISTRICT_2_SECTOR = "dis_2_sector";
+    public static final String SUB_COUNTY_2_SECTOR = "sub_2_sect";
+    public static final String FINANCIAL_YEAR_2_SECTOR = "fin_2_sec";
+    public static final String SERVICE_2_SECTOR = "service_2_sector";
+    public static final String COMMUNITY_WISHES_2_SECTOR = "community_wishes_2";
 }
