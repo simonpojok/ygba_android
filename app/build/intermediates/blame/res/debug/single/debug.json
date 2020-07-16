@@ -1,0 +1,230 @@
+[
+    {
+        "merged": "/home/mckeyo/AndroidStudioProjects/ygba_android/app/build/intermediates/res/merged/debug/mipmap-xhdpi_ic_launcher_round.png.flat",
+        "source": "/home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/res/mipmap-xhdpi/ic_launcher_round.png"
+    },
+    {
+        "merged": "/home/mckeyo/AndroidStudioProjects/ygba_android/app/build/intermediates/res/merged/debug/mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "/home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml"
+    },
+    {
+        "merged": "/home/mckeyo/AndroidStudioProjects/ygba_android/app/build/intermediates/res/merged/debug/layout_fragment_gallery.xml.flat",
+        "source": "/home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/res/layout/fragment_gallery.xml"
+    },
+    {
+        "merged": "/home/mckeyo/AndroidStudioProjects/ygba_android/app/build/intermediates/res/merged/debug/mipmap-mdpi_ic_launcher_round.png.flat",
+        "source": "/home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/res/mipmap-mdpi/ic_launcher_round.png"
+    },
+    {
+        "merged": "/home/mckeyo/AndroidStudioProjects/ygba_android/app/build/intermediates/res/merged/debug/drawable_ic_agriculture_white_24dp.xml.flat",
+        "source": "/home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/res/drawable/ic_agriculture_white_24dp.xml"
+    },
+    {
+        "merged": "/home/mckeyo/AndroidStudioProjects/ygba_android/app/build/intermediates/res/merged/debug/drawable_ic_baseline_nature_people_24.xml.flat",
+        "source": "/home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/res/drawable/ic_baseline_nature_people_24.xml"
+    },
+    {
+        "merged": "/home/mckeyo/AndroidStudioProjects/ygba_android/app/build/intermediates/res/merged/debug/navigation_mobile_navigation.xml.flat",
+        "source": "/home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/res/navigation/mobile_navigation.xml"
+    },
+    {
+        "merged": "/home/mckeyo/AndroidStudioProjects/ygba_android/app/build/intermediates/res/merged/debug/layout_activity_main.xml.flat",
+        "source": "/home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/res/layout/activity_main.xml"
+    },
+    {
+        "merged": "/home/mckeyo/AndroidStudioProjects/ygba_android/app/build/intermediates/res/merged/debug/mipmap-xxhdpi_ic_launcher_round.png.flat",
+        "source": "/home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/res/mipmap-xxhdpi/ic_launcher_round.png"
+    },
+    {
+        "merged": "/home/mckeyo/AndroidStudioProjects/ygba_android/app/build/intermediates/res/merged/debug/drawable_ic_menu_slideshow.xml.flat",
+        "source": "/home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/res/drawable/ic_menu_slideshow.xml"
+    },
+    {
+        "merged": "/home/mckeyo/AndroidStudioProjects/ygba_android/app/build/intermediates/res/merged/debug/drawable_ic_baseline_autorenew_24.xml.flat",
+        "source": "/home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/res/drawable/ic_baseline_autorenew_24.xml"
+    },
+    {
+        "merged": "/home/mckeyo/AndroidStudioProjects/ygba_android/app/build/intermediates/res/merged/debug/drawable_ic_baseline_account_box_24.xml.flat",
+        "source": "/home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/res/drawable/ic_baseline_account_box_24.xml"
+    },
+    {
+        "merged": "/home/mckeyo/AndroidStudioProjects/ygba_android/app/build/intermediates/res/merged/debug/mipmap-hdpi_ic_launcher_round.png.flat",
+        "source": "/home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/res/mipmap-hdpi/ic_launcher_round.png"
+    },
+    {
+        "merged": "/home/mckeyo/AndroidStudioProjects/ygba_android/app/build/intermediates/res/merged/debug/layout_activity_date_picker.xml.flat",
+        "source": "/home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/res/layout/activity_date_picker.xml"
+    },
+    {
+        "merged": "/home/mckeyo/AndroidStudioProjects/ygba_android/app/build/intermediates/res/merged/debug/drawable_ic_baseline_help_outline_24.xml.flat",
+        "source": "/home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/res/drawable/ic_baseline_help_outline_24.xml"
+    },
+    {
+        "merged": "/home/mckeyo/AndroidStudioProjects/ygba_android/app/build/intermediates/res/merged/debug/drawable_ic_baseline_history_24.xml.flat",
+        "source": "/home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/res/drawable/ic_baseline_history_24.xml"
+    },
+    {
+        "merged": "/home/mckeyo/AndroidStudioProjects/ygba_android/app/build/intermediates/res/merged/debug/layout_activity_social_development_list.xml.flat",
+        "source": "/home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/res/layout/activity_social_development_list.xml"
+    },
+    {
+        "merged": "/home/mckeyo/AndroidStudioProjects/ygba_android/app/build/intermediates/res/merged/debug/mipmap-mdpi_ic_launcher.png.flat",
+        "source": "/home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/res/mipmap-mdpi/ic_launcher.png"
+    },
+    {
+        "merged": "/home/mckeyo/AndroidStudioProjects/ygba_android/app/build/intermediates/res/merged/debug/menu_main.xml.flat",
+        "source": "/home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/res/menu/main.xml"
+    },
+    {
+        "merged": "/home/mckeyo/AndroidStudioProjects/ygba_android/app/build/intermediates/res/merged/debug/drawable_ic_baseline_how_to_vote_24.xml.flat",
+        "source": "/home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/res/drawable/ic_baseline_how_to_vote_24.xml"
+    },
+    {
+        "merged": "/home/mckeyo/AndroidStudioProjects/ygba_android/app/build/intermediates/res/merged/debug/drawable_ic_menu_gallery.xml.flat",
+        "source": "/home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/res/drawable/ic_menu_gallery.xml"
+    },
+    {
+        "merged": "/home/mckeyo/AndroidStudioProjects/ygba_android/app/build/intermediates/res/merged/debug/drawable_ic_baseline_info_24.xml.flat",
+        "source": "/home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/res/drawable/ic_baseline_info_24.xml"
+    },
+    {
+        "merged": "/home/mckeyo/AndroidStudioProjects/ygba_android/app/build/intermediates/res/merged/debug/drawable_ic_baseline_import_contacts_24.xml.flat",
+        "source": "/home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/res/drawable/ic_baseline_import_contacts_24.xml"
+    },
+    {
+        "merged": "/home/mckeyo/AndroidStudioProjects/ygba_android/app/build/intermediates/res/merged/debug/layout_app_bar_main.xml.flat",
+        "source": "/home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/res/layout/app_bar_main.xml"
+    },
+    {
+        "merged": "/home/mckeyo/AndroidStudioProjects/ygba_android/app/build/intermediates/res/merged/debug/drawable_ic_baseline_local_drink_24.xml.flat",
+        "source": "/home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/res/drawable/ic_baseline_local_drink_24.xml"
+    },
+    {
+        "merged": "/home/mckeyo/AndroidStudioProjects/ygba_android/app/build/intermediates/res/merged/debug/drawable_white_background_rectangle.xml.flat",
+        "source": "/home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/res/drawable/white_background_rectangle.xml"
+    },
+    {
+        "merged": "/home/mckeyo/AndroidStudioProjects/ygba_android/app/build/intermediates/res/merged/debug/drawable_ic_baseline_cloud_download_24.xml.flat",
+        "source": "/home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/res/drawable/ic_baseline_cloud_download_24.xml"
+    },
+    {
+        "merged": "/home/mckeyo/AndroidStudioProjects/ygba_android/app/build/intermediates/res/merged/debug/layout_activity_health.xml.flat",
+        "source": "/home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/res/layout/activity_health.xml"
+    },
+    {
+        "merged": "/home/mckeyo/AndroidStudioProjects/ygba_android/app/build/intermediates/res/merged/debug/drawable_side_nav_bar.xml.flat",
+        "source": "/home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/res/drawable/side_nav_bar.xml"
+    },
+    {
+        "merged": "/home/mckeyo/AndroidStudioProjects/ygba_android/app/build/intermediates/res/merged/debug/drawable_ic_baseline_chat_bubble_24.xml.flat",
+        "source": "/home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/res/drawable/ic_baseline_chat_bubble_24.xml"
+    },
+    {
+        "merged": "/home/mckeyo/AndroidStudioProjects/ygba_android/app/build/intermediates/res/merged/debug/drawable_edit_text_style.xml.flat",
+        "source": "/home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/res/drawable/edit_text_style.xml"
+    },
+    {
+        "merged": "/home/mckeyo/AndroidStudioProjects/ygba_android/app/build/intermediates/res/merged/debug/mipmap-xxhdpi_ic_launcher.png.flat",
+        "source": "/home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/res/mipmap-xxhdpi/ic_launcher.png"
+    },
+    {
+        "merged": "/home/mckeyo/AndroidStudioProjects/ygba_android/app/build/intermediates/res/merged/debug/drawable_ic_agriculture_white_50dp.xml.flat",
+        "source": "/home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/res/drawable/ic_agriculture_white_50dp.xml"
+    },
+    {
+        "merged": "/home/mckeyo/AndroidStudioProjects/ygba_android/app/build/intermediates/res/merged/debug/mipmap-xxxhdpi_ic_launcher_round.png.flat",
+        "source": "/home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.png"
+    },
+    {
+        "merged": "/home/mckeyo/AndroidStudioProjects/ygba_android/app/build/intermediates/res/merged/debug/mipmap-xxxhdpi_ic_launcher.png.flat",
+        "source": "/home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png"
+    },
+    {
+        "merged": "/home/mckeyo/AndroidStudioProjects/ygba_android/app/build/intermediates/res/merged/debug/drawable_ic_baseline_local_hospital_24.xml.flat",
+        "source": "/home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/res/drawable/ic_baseline_local_hospital_24.xml"
+    },
+    {
+        "merged": "/home/mckeyo/AndroidStudioProjects/ygba_android/app/build/intermediates/res/merged/debug/layout_activity_education.xml.flat",
+        "source": "/home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/res/layout/activity_education.xml"
+    },
+    {
+        "merged": "/home/mckeyo/AndroidStudioProjects/ygba_android/app/build/intermediates/res/merged/debug/layout_activity_social_development.xml.flat",
+        "source": "/home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/res/layout/activity_social_development.xml"
+    },
+    {
+        "merged": "/home/mckeyo/AndroidStudioProjects/ygba_android/app/build/intermediates/res/merged/debug/layout_fragment_slideshow.xml.flat",
+        "source": "/home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/res/layout/fragment_slideshow.xml"
+    },
+    {
+        "merged": "/home/mckeyo/AndroidStudioProjects/ygba_android/app/build/intermediates/res/merged/debug/drawable_ic_baseline_account_balance_24.xml.flat",
+        "source": "/home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/res/drawable/ic_baseline_account_balance_24.xml"
+    },
+    {
+        "merged": "/home/mckeyo/AndroidStudioProjects/ygba_android/app/build/intermediates/res/merged/debug/layout_nav_header_main.xml.flat",
+        "source": "/home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/res/layout/nav_header_main.xml"
+    },
+    {
+        "merged": "/home/mckeyo/AndroidStudioProjects/ygba_android/app/build/intermediates/res/merged/debug/drawable-v24_ic_launcher_foreground.xml.flat",
+        "source": "/home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/res/drawable-v24/ic_launcher_foreground.xml"
+    },
+    {
+        "merged": "/home/mckeyo/AndroidStudioProjects/ygba_android/app/build/intermediates/res/merged/debug/mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "/home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml"
+    },
+    {
+        "merged": "/home/mckeyo/AndroidStudioProjects/ygba_android/app/build/intermediates/res/merged/debug/menu_activity_main_drawer.xml.flat",
+        "source": "/home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/res/menu/activity_main_drawer.xml"
+    },
+    {
+        "merged": "/home/mckeyo/AndroidStudioProjects/ygba_android/app/build/intermediates/res/merged/debug/layout_activity_budget_information.xml.flat",
+        "source": "/home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/res/layout/activity_budget_information.xml"
+    },
+    {
+        "merged": "/home/mckeyo/AndroidStudioProjects/ygba_android/app/build/intermediates/res/merged/debug/drawable_ic_baseline_home_24.xml.flat",
+        "source": "/home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/res/drawable/ic_baseline_home_24.xml"
+    },
+    {
+        "merged": "/home/mckeyo/AndroidStudioProjects/ygba_android/app/build/intermediates/res/merged/debug/layout_content_main.xml.flat",
+        "source": "/home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/res/layout/content_main.xml"
+    },
+    {
+        "merged": "/home/mckeyo/AndroidStudioProjects/ygba_android/app/build/intermediates/res/merged/debug/layout_activity_water_environment.xml.flat",
+        "source": "/home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/res/layout/activity_water_environment.xml"
+    },
+    {
+        "merged": "/home/mckeyo/AndroidStudioProjects/ygba_android/app/build/intermediates/res/merged/debug/drawable_ic_menu_camera.xml.flat",
+        "source": "/home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/res/drawable/ic_menu_camera.xml"
+    },
+    {
+        "merged": "/home/mckeyo/AndroidStudioProjects/ygba_android/app/build/intermediates/res/merged/debug/drawable_ic_launcher_background.xml.flat",
+        "source": "/home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/res/drawable/ic_launcher_background.xml"
+    },
+    {
+        "merged": "/home/mckeyo/AndroidStudioProjects/ygba_android/app/build/intermediates/res/merged/debug/mipmap-hdpi_ic_launcher.png.flat",
+        "source": "/home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/res/mipmap-hdpi/ic_launcher.png"
+    },
+    {
+        "merged": "/home/mckeyo/AndroidStudioProjects/ygba_android/app/build/intermediates/res/merged/debug/drawable_ic_baseline_account_circle_24.xml.flat",
+        "source": "/home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/res/drawable/ic_baseline_account_circle_24.xml"
+    },
+    {
+        "merged": "/home/mckeyo/AndroidStudioProjects/ygba_android/app/build/intermediates/res/merged/debug/layout_fragment_home.xml.flat",
+        "source": "/home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/res/layout/fragment_home.xml"
+    },
+    {
+        "merged": "/home/mckeyo/AndroidStudioProjects/ygba_android/app/build/intermediates/res/merged/debug/drawable_ic_batch_prediction_white_50dp.xml.flat",
+        "source": "/home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/res/drawable/ic_batch_prediction_white_50dp.xml"
+    },
+    {
+        "merged": "/home/mckeyo/AndroidStudioProjects/ygba_android/app/build/intermediates/res/merged/debug/mipmap-xhdpi_ic_launcher.png.flat",
+        "source": "/home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/res/mipmap-xhdpi/ic_launcher.png"
+    },
+    {
+        "merged": "/home/mckeyo/AndroidStudioProjects/ygba_android/app/build/intermediates/res/merged/debug/drawable_ic_baseline_cloud_upload_24.xml.flat",
+        "source": "/home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/res/drawable/ic_baseline_cloud_upload_24.xml"
+    },
+    {
+        "merged": "/home/mckeyo/AndroidStudioProjects/ygba_android/app/build/intermediates/res/merged/debug/layout_activity_agriculture_activity.xml.flat",
+        "source": "/home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/res/layout/activity_agriculture_activity.xml"
+    }
+]
