@@ -108,4 +108,10 @@ public class BudgetInformationForm {
 
     @ColumnInfo(name = BudgetInformationFormConstants.NONE_WAGE_AUDIT_PERCENTAGE)
     private int noneWagePercentage;
+
+    @ColumnInfo(name = BudgetInformationFormConstants.DOMESTIC_APPROVED_BUDGET)
+    private int domesticApprovedBudget;
+
+    @ColumnInfo(name = BudgetInformationFormConstants.DOMESTIC_PERCENTAGE)
+    private int domesticPercentage;
 }
