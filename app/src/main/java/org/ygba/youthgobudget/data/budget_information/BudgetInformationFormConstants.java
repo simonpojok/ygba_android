@@ -78,4 +78,5 @@ public class BudgetInformationFormConstants {
     public static final String FINANCIAL_YEAR_7_SECTOR = "fin_7_sec";
     public static final String SERVICE_7_SECTOR = "service_7_sector";
     public static final String COMMUNITY_WISHES_7_SECTOR = "community_wishes_7";
+    public static final String STORED_LOCALLY = "stored_locally";
 }
