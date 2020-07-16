@@ -29,11 +29,13 @@ public class HomeFragment extends Fragment {
     private CardView cv_social_development;
     private CardView cv_health;
     private CardView cv_water_environment;
+    private CardView cv_budget_info;
     private OnAgricultureIconClickListener agricultureIconClickListener;
     private OnEducationIconClickListener onEducationIconClickListener;
     private OnSocialDevelopmentIconClickListener socialDevelopmentIconClickListener;
     private OnHealthIconClickListener onHealthIconClickListener;
     private OnWaterEnvironmentListener onWaterEnvironmentListener;
+    private OnBudgetInformationClickListener onBudgetInformationClickListener;
 
     private HomeViewModel homeViewModel;
 
@@ -45,6 +47,7 @@ public class HomeFragment extends Fragment {
         socialDevelopmentIconClickListener = (OnSocialDevelopmentIconClickListener) context;
         onHealthIconClickListener = (OnHealthIconClickListener) context;
         onWaterEnvironmentListener = (OnWaterEnvironmentListener) context;
+        onBudgetInformationClickListener = (OnBudgetInformationClickListener) context;
     }
 
     public View onCreateView(@NonNull LayoutInflater inflater,
@@ -57,6 +60,7 @@ public class HomeFragment extends Fragment {
         cv_social_development = root.findViewById(R.id.cv_social_development_icon);
         cv_health = root.findViewById(R.id.cv_health_icon);
         cv_water_environment = root.findViewById(R.id.water_environment_icon);
+        cv_budget_info = root.findViewById(R.id.budget_info_icon);
 
 
         cv_agriculture.setOnClickListener(new View.OnClickListener() {
@@ -104,6 +108,15 @@ public class HomeFragment extends Fragment {
             }
         });
 
+        cv_budget_info.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                if (onBudgetInformationClickListener != null ) {
+                    onBudgetInformationClickListener.onBudgetInformationClick();
+                }
+            }
+        });
+
         return root;
     }
 
@@ -125,5 +138,9 @@ public class HomeFragment extends Fragment {
 
     public static  interface OnWaterEnvironmentListener {
         public void onWaterEnvironmentClick();
+    }
+
+    public static interface OnBudgetInformationClickListener {
+        public void onBudgetInformationClick();
     }
 }

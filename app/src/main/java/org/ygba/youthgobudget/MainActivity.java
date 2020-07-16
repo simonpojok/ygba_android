@@ -15,6 +15,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 
 import org.ygba.youthgobudget.agriculture.AgricultureActivity;
+import org.ygba.youthgobudget.budget_information.BudgetInformationActivity;
 import org.ygba.youthgobudget.education.EducationActivity;
 import org.ygba.youthgobudget.health.HealthActivity;
 import org.ygba.youthgobudget.social_development.SocialDevelopmentActivity;
@@ -23,7 +24,7 @@ import org.ygba.youthgobudget.water_and_environment.WaterEnvironmentActivity;
 
 public class MainActivity extends AppCompatActivity implements HomeFragment.OnAgricultureIconClickListener,
 HomeFragment.OnEducationIconClickListener, HomeFragment.OnSocialDevelopmentIconClickListener,
-HomeFragment.OnHealthIconClickListener, HomeFragment.OnWaterEnvironmentListener  {
+HomeFragment.OnHealthIconClickListener, HomeFragment.OnWaterEnvironmentListener, HomeFragment.OnBudgetInformationClickListener  {
 
 
     private AppBarConfiguration mAppBarConfiguration;
@@ -88,5 +89,10 @@ HomeFragment.OnHealthIconClickListener, HomeFragment.OnWaterEnvironmentListener 
     @Override
     public void onWaterEnvironmentClick() {
         startActivity(new Intent(this, WaterEnvironmentActivity.class));
+    }
+
+    @Override
+    public void onBudgetInformationClick() {
+        startActivity(new Intent(this, BudgetInformationActivity.class));
     }
 }
