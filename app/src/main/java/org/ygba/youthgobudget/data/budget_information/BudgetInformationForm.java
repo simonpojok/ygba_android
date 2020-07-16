@@ -114,4 +114,10 @@ public class BudgetInformationForm {
 
     @ColumnInfo(name = BudgetInformationFormConstants.DOMESTIC_PERCENTAGE)
     private int domesticPercentage;
+
+    @ColumnInfo(name = BudgetInformationFormConstants.EXT_APPROVED_BUDGET)
+    private int extApprovedBudget;
+
+    @ColumnInfo(name = BudgetInformationFormConstants.EXT_PERCENTAGE)
+    private int extPercentage;
 }

@@ -38,4 +38,6 @@ public class BudgetInformationFormConstants {
     public static final String NONE_WAGE_AUDIT_PERCENTAGE = "none_wage_perce";
     public static final String DOMESTIC_APPROVED_BUDGET = "domestic_approved";
     public static final String DOMESTIC_PERCENTAGE = "domestic_percentage";
+    public static final String EXT_APPROVED_BUDGET = "ext_approved";
+    public static final String EXT_PERCENTAGE = "ext_percentage";
 }
