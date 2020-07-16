@@ -58,4 +58,9 @@ public class BudgetInformationFormConstants {
     public static final String FINANCIAL_YEAR_3_SECTOR = "fin_3_sec";
     public static final String SERVICE_3_SECTOR = "service_3_sector";
     public static final String COMMUNITY_WISHES_3_SECTOR = "community_wishes_3";
+    public static final String DISTRICT_4_SECTOR = "dis_4_sector";
+    public static final String SUB_COUNTY_4_SECTOR = "sub_4_sect";
+    public static final String FINANCIAL_YEAR_4_SECTOR = "fin_4_sec";
+    public static final String SERVICE_4_SECTOR = "service_4_sector";
+    public static final String COMMUNITY_WISHES_4_SECTOR = "community_wishes_4";
 }
