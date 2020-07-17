@@ -2847,8 +2847,7 @@
             android:layout_height="wrap_content"
             android:text="@string/education_question_8_5_others_text"
             android:textSize="15sp"
-            android:textColor="@color/white"
-            android:textStyle="bold" />
+            android:textColor="@color/white"/>
 
         <EditText
             android:gravity="start"
