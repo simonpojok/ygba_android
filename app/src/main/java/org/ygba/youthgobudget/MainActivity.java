@@ -16,6 +16,7 @@ import org.ygba.youthgobudget.budget_information.BudgetInformationActivity;
 import org.ygba.youthgobudget.education.EducationActivity;
 import org.ygba.youthgobudget.health.HealthActivity;
 import org.ygba.youthgobudget.help.HelpActivity;
+import org.ygba.youthgobudget.history.HistoryActivity;
 import org.ygba.youthgobudget.local_government.LocalGovernmentActivity;
 import org.ygba.youthgobudget.polls.PollActivity;
 import org.ygba.youthgobudget.social_development.SocialDevelopmentActivity;
@@ -104,6 +105,13 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 startActivity(new Intent(MainActivity.this, HelpActivity.class));
+            }
+        });
+
+        findViewById(R.id.cv_histroy_icon).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(MainActivity.this, HistoryActivity.class));
             }
         });
 
