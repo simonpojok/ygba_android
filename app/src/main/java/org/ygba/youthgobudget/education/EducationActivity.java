@@ -47,6 +47,8 @@ public class EducationActivity extends AppCompatActivity {
     private EditText eQ2NumberDropOutFemalePWD;
     private EditText eQ2NumberDropOutTotal;
 
+    private EditText eQ2DropOutReasonIfDropOut;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -90,6 +92,8 @@ public class EducationActivity extends AppCompatActivity {
         eQ2NumberDropOutMalePWD = findViewById(R.id.question_2_number_of_dropout_male_pwd);
         eQ2NumberDropOutFemalePWD = findViewById(R.id.question_2_number_of_dropout_female_pwd);
         eQ2NumberDropOutTotal = findViewById(R.id.question_2_number_of_dropout_total);
+
+        eQ2DropOutReasonIfDropOut = findViewById(R.id.question_2_dropout_reason);
 
 
         findViewById(R.id.saved_form_data).setOnClickListener(new View.OnClickListener() {
@@ -135,6 +139,8 @@ public class EducationActivity extends AppCompatActivity {
                 .setQuestion2NumberDropOutMalePWD(getIntegerValue(eQ2NumberDropOutMalePWD ))
                 .setQuestion2NumberDropOutFemalePWD(getIntegerValue(eQ2NumberDropOutFemalePWD))
                 .setQuestion2NumberDropOutTotal(getIntegerValue(eQ2NumberDropOutTotal))
+
+                .setQuestion2DropOutReasonIfAny(getTextValue(eQ2DropOutReasonIfDropOut))
                 .build();
     }
 

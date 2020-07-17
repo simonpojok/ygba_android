@@ -103,6 +103,9 @@ public class EducationQuestion {
     @ColumnInfo(name = EducationQuestionConstants.QUESTION_2_NUMBER_DROPOUT_TOTAL)
     private int question2NumberDropOutTotal;
 
+    @ColumnInfo(name = EducationQuestionConstants.QUESTION_2_DROPOUT_REASONS_IF_ANY)
+    private String question2DropOutReasonIfAny;
+
 
 
     public static class Builder {
@@ -260,6 +263,11 @@ public class EducationQuestion {
 
         public Builder setQuestion2NumberDropOutTotal(int integerValue) {
             INSTANCE.setQuestion2NumberDropOutTotal(integerValue);
+            return this;
+        }
+
+        public Builder setQuestion2DropOutReasonIfAny(String textValue) {
+            INSTANCE.setQuestion2DropOutReasonIfAny(textValue);
             return this;
         }
     }
@@ -514,5 +522,13 @@ public class EducationQuestion {
 
     public void setQuestion2NumberDropOutTotal(int question2NumberDropOutTotal) {
         this.question2NumberDropOutTotal = question2NumberDropOutTotal;
+    }
+
+    public String getQuestion2DropOutReasonIfAny() {
+        return question2DropOutReasonIfAny;
+    }
+
+    public void setQuestion2DropOutReasonIfAny(String question2DropOutReasonIfAny) {
+        this.question2DropOutReasonIfAny = question2DropOutReasonIfAny;
     }
 }
