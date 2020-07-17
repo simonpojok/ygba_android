@@ -53,6 +53,9 @@ public class EducationQuestion {
     @ColumnInfo(name = EducationQuestionConstants.QUESTION_FEMALE_PWDS_TEACHERS)
     private int question2FemalePWDTeachers;
 
+    @ColumnInfo(name = EducationQuestionConstants.QUESTION_2_TEACHERS_TOTAL)
+    private int question2TeachersTotal;
+
 
 
     public static class Builder {
@@ -130,6 +133,11 @@ public class EducationQuestion {
         }
 
         public Builder setQ2FemalePWDSTeachers(int integerValue) {
+            return this;
+        }
+
+        public Builder setQ2TeachersTotal(int integerValue) {
+            INSTANCE.setQuestion2TeachersTotal(integerValue);
             return this;
         }
     }
@@ -256,5 +264,13 @@ public class EducationQuestion {
 
     public void setQuestion2FemalePWDTeachers(int question2FemalePWDTeachers) {
         this.question2FemalePWDTeachers = question2FemalePWDTeachers;
+    }
+
+    public int getQuestion2TeachersTotal() {
+        return question2TeachersTotal;
+    }
+
+    public void setQuestion2TeachersTotal(int question2TeachersTotal) {
+        this.question2TeachersTotal = question2TeachersTotal;
     }
 }
