@@ -9,7 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".polls.PollActivity"></activity>
+        <activity android:name=".help.HelpActivity"></activity>
+        <activity android:name=".polls.PollActivity" />
         <activity android:name=".budget_cycle.BudgetCycleActivity" />
         <activity android:name=".local_government.LocalGovernmentActivity" />
         <activity

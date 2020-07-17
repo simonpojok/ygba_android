@@ -12,7 +12,10 @@ import android.view.View;
 
 import org.ygba.youthgobudget.agriculture.AgricultureActivity;
 import org.ygba.youthgobudget.budget_cycle.BudgetCycleActivity;
+import org.ygba.youthgobudget.budget_information.BudgetInformationActivity;
+import org.ygba.youthgobudget.education.EducationActivity;
 import org.ygba.youthgobudget.health.HealthActivity;
+import org.ygba.youthgobudget.help.HelpActivity;
 import org.ygba.youthgobudget.local_government.LocalGovernmentActivity;
 import org.ygba.youthgobudget.polls.PollActivity;
 import org.ygba.youthgobudget.social_development.SocialDevelopmentActivity;
@@ -80,6 +83,27 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 startActivity(new Intent(MainActivity.this, PollActivity.class));
+            }
+        });
+
+        findViewById(R.id.cv_education).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(MainActivity.this, EducationActivity.class));
+            }
+        });
+
+        findViewById(R.id.budget_info_icon).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(MainActivity.this, BudgetInformationActivity.class));
+            }
+        });
+
+        findViewById(R.id.cv_help_icon).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(MainActivity.this, HelpActivity.class));
             }
         });
 
