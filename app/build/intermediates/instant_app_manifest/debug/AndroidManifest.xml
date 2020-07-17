@@ -24,14 +24,23 @@
         android:supportsRtl="true"
         android:testOnly="true"
         android:theme="@style/AppTheme" >
+
+        <!-- <activity android:name=".MainActivity"> -->
+        <!-- <intent-filter> -->
+        <!-- <action android:name="android.intent.action.MAIN" /> -->
+
+
+        <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+        <!-- </intent-filter> -->
+        <!-- </activity> -->
         <activity android:name="org.ygba.youthgobudget.local_government.LocalGovernmentActivity" />
         <activity
             android:name="org.ygba.youthgobudget.budget_information.BudgetInformationActivity"
             android:label="Budget Information"
-            android:parentActivityName="org.ygba.youthgobudget.MainActivity" />
+            android:parentActivityName="org.ygba.youthgobudget.MainActivity34" />
         <activity
             android:name="org.ygba.youthgobudget.water_and_environment.WaterEnvironmentActivity"
-            android:parentActivityName="org.ygba.youthgobudget.MainActivity" />
+            android:parentActivityName="org.ygba.youthgobudget.MainActivity34" />
         <activity android:name="org.ygba.youthgobudget.social_development.SocialDevelopmentListActivity" />
         <activity
             android:name="org.ygba.youthgobudget.dialogs.DatePickerActivity"
@@ -39,16 +48,16 @@
             android:theme="@android:style/Theme.DeviceDefault.Light.Dialog" />
         <activity
             android:name="org.ygba.youthgobudget.social_development.SocialDevelopmentActivity"
-            android:parentActivityName="org.ygba.youthgobudget.MainActivity" />
+            android:parentActivityName="org.ygba.youthgobudget.MainActivity34" />
         <activity
             android:name="org.ygba.youthgobudget.education.EducationActivity"
-            android:parentActivityName="org.ygba.youthgobudget.MainActivity" />
+            android:parentActivityName="org.ygba.youthgobudget.MainActivity34" />
         <activity
             android:name="org.ygba.youthgobudget.health.HealthActivity"
-            android:parentActivityName="org.ygba.youthgobudget.MainActivity" />
+            android:parentActivityName="org.ygba.youthgobudget.MainActivity34" />
         <activity
             android:name="org.ygba.youthgobudget.agriculture.AgricultureActivity"
-            android:parentActivityName="org.ygba.youthgobudget.MainActivity" />
+            android:parentActivityName="org.ygba.youthgobudget.MainActivity34" />
         <activity
             android:name="org.ygba.youthgobudget.MainActivity"
             android:label="@string/app_name"

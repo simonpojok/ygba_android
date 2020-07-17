@@ -20,6 +20,10 @@
         "source": "/home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/res/drawable/ic_agriculture_white_24dp.xml"
     },
     {
+        "merged": "/home/mckeyo/AndroidStudioProjects/ygba_android/app/build/intermediates/res/merged/debug/layout_activity_main34.xml.flat",
+        "source": "/home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/res/layout/activity_main34.xml"
+    },
+    {
         "merged": "/home/mckeyo/AndroidStudioProjects/ygba_android/app/build/intermediates/res/merged/debug/drawable_ic_baseline_nature_people_24.xml.flat",
         "source": "/home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/res/drawable/ic_baseline_nature_people_24.xml"
     },
