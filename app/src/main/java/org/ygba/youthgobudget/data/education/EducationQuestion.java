@@ -56,6 +56,21 @@ public class EducationQuestion {
     @ColumnInfo(name = EducationQuestionConstants.QUESTION_2_TEACHERS_TOTAL)
     private int question2TeachersTotal;
 
+    @ColumnInfo(name = EducationQuestionConstants.QUESTION_2_PupilEnrollment_MALE)
+    private int question2MalePupilEnrollment;
+
+    @ColumnInfo(name = EducationQuestionConstants.QUESTION_2_FEMALE_PupilEnrollment)
+    private int question2FeMalePupilEnrollment;
+
+    @ColumnInfo(name = EducationQuestionConstants.QUESTION_MALE_PWDS_TEACHERSTEACHERS)
+    private int question2MalePWDPupilEnrollment;
+
+    @ColumnInfo(name = EducationQuestionConstants.QUESTION_FEMALE_PWDS_PupilEnrollment)
+    private int question2FemalePWDPupilEnrollment;
+
+    @ColumnInfo(name = EducationQuestionConstants.QUESTION_2_PupilEnrollment_TOTAL)
+    private int question2PupilEnrollmentTotal;
+
 
 
     public static class Builder {
@@ -272,5 +287,45 @@ public class EducationQuestion {
 
     public void setQuestion2TeachersTotal(int question2TeachersTotal) {
         this.question2TeachersTotal = question2TeachersTotal;
+    }
+
+    public int getQuestion2MalePupilEnrollment() {
+        return question2MalePupilEnrollment;
+    }
+
+    public void setQuestion2MalePupilEnrollment(int question2MalePupilEnrollment) {
+        this.question2MalePupilEnrollment = question2MalePupilEnrollment;
+    }
+
+    public int getQuestion2FeMalePupilEnrollment() {
+        return question2FeMalePupilEnrollment;
+    }
+
+    public void setQuestion2FeMalePupilEnrollment(int question2FeMalePupilEnrollment) {
+        this.question2FeMalePupilEnrollment = question2FeMalePupilEnrollment;
+    }
+
+    public int getQuestion2MalePWDPupilEnrollment() {
+        return question2MalePWDPupilEnrollment;
+    }
+
+    public void setQuestion2MalePWDPupilEnrollment(int question2MalePWDPupilEnrollment) {
+        this.question2MalePWDPupilEnrollment = question2MalePWDPupilEnrollment;
+    }
+
+    public int getQuestion2FemalePWDPupilEnrollment() {
+        return question2FemalePWDPupilEnrollment;
+    }
+
+    public void setQuestion2FemalePWDPupilEnrollment(int question2FemalePWDPupilEnrollment) {
+        this.question2FemalePWDPupilEnrollment = question2FemalePWDPupilEnrollment;
+    }
+
+    public int getQuestion2PupilEnrollmentTotal() {
+        return question2PupilEnrollmentTotal;
+    }
+
+    public void setQuestion2PupilEnrollmentTotal(int question2PupilEnrollmentTotal) {
+        this.question2PupilEnrollmentTotal = question2PupilEnrollmentTotal;
     }
 }
