@@ -55,6 +55,7 @@ public class EducationActivity extends AppCompatActivity {
         EducationQuestion educationQuestion = new EducationQuestion.Builder()
                 .setFinancialYear("Fina")
                 .setDate(getTextValue(eDateTextView))
+                .setDistrict(getTextValue(eDistrictEditText))
                 .build();
     }
 

@@ -17,6 +17,9 @@ public class EducationQuestion {
     @ColumnInfo(name = EducationQuestionConstants.DATE)
     private String date;
 
+    @ColumnInfo(name = EducationQuestionConstants.DISTRICT)
+    private String district;
+
 
 
     public static class Builder {
@@ -36,6 +39,11 @@ public class EducationQuestion {
 
         public Builder setDate(String textValue) {
             INSTANCE.setDate(textValue);
+            return this;
+        }
+
+        public Builder setDistrict(String textValue) {
+            INSTANCE.setDistrict(textValue);
             return this;
         }
     }
@@ -66,5 +74,13 @@ public class EducationQuestion {
 
     public void setDate(String date) {
         this.date = date;
+    }
+
+    public String getDistrict() {
+        return district;
+    }
+
+    public void setDistrict(String district) {
+        this.district = district;
     }
 }
