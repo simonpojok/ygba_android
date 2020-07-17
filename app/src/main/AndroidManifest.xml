@@ -9,12 +9,24 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".allocation.AllocationActivity"></activity>
-        <activity android:name=".history.HistoryActivity" />
-        <activity android:name=".help.HelpActivity" />
-        <activity android:name=".polls.PollActivity" />
-        <activity android:name=".budget_cycle.BudgetCycleActivity" />
-        <activity android:name=".local_government.LocalGovernmentActivity" />
+        <activity
+            android:name=".allocation.AllocationActivity"
+            android:parentActivityName=".MainActivity"/>
+        <activity
+            android:name=".history.HistoryActivity"
+            android:parentActivityName=".MainActivity"/>
+        <activity
+            android:name=".help.HelpActivity"
+            android:parentActivityName=".MainActivity"/>
+        <activity
+            android:name=".polls.PollActivity"
+            android:parentActivityName=".MainActivity"/>
+        <activity
+            android:name=".budget_cycle.BudgetCycleActivity"
+            android:parentActivityName=".MainActivity"/>
+        <activity
+            android:name=".local_government.LocalGovernmentActivity"
+            android:parentActivityName=".MainActivity"/>
         <activity
             android:name=".budget_information.BudgetInformationActivity"
             android:label="Budget Information"
@@ -32,6 +44,7 @@
             android:parentActivityName=".MainActivity" />
         <activity
             android:name=".education.EducationActivity"
+            android:exported="true"
             android:parentActivityName=".MainActivity" />
         <activity
             android:name=".health.HealthActivity"

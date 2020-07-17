@@ -22,7 +22,7 @@ import java.util.concurrent.Executors;
 
 @Database(entities = {
         AgricultureQuestion.class,
-        EducationQuestion.class,
+//        EducationQuestion.class,
         SocialDevelopmentQuestion.class,
         WaterEnvironmentQuestion.class,
         BudgetInformationForm.class
@@ -31,7 +31,7 @@ public abstract class YGBDatabase extends RoomDatabase {
     private static YGBDatabase INSTANCE;
     public abstract AgricultureDao agricultureDao();
     public abstract SocialDevelopmentDao socialDevelopmentDao();
-    public abstract EducationQuestionDao educationQuestionDao();
+//    public abstract EducationQuestionDao educationQuestionDao();
     public abstract WaterEnvironmentQuestionDao waterEnvironmentQuestionDao();
     public abstract BudgetInformationFormDao budgetInformationFormDao();
 
