@@ -22,18 +22,6 @@ public class EducationActivity extends AppCompatActivity {
     private EditText eAgentEditText;
     private EditText eAgentTellEditText;
     private EditText eQuestion1EditText;
-    private EditText eQuestionSchoolNameEditText;
-
-    private EditText eQuestionMaleTeachersEditText;
-    private EditText eQuestion2MaleEnrolledPupilsEditText;
-    private EditText eQuestion2NumberP7PupilEditText;
-    private EditText eQuestion2MaleDropoutPupilEditText;
-
-
-
-
-
-    private EditText eQuestion8OtherObservationsEditText;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -54,23 +42,11 @@ public class EducationActivity extends AppCompatActivity {
         eAgentEditText = findViewById(R.id.ygb_agent_name_edit_view);
         eAgentTellEditText = findViewById(R.id.ygb_agent_tel_edit_view);
         eQuestion1EditText = findViewById(R.id.question_1_edit_text);
-//        eQuestionSchoolNameEditText = findViewById(R.id.question_2_school_name_edit_text);
-//        eQuestionMaleTeachersEditText = findViewById(R.id.question_2_teacher_male_edit_text);
-//        eQuestion2MaleEnrolledPupilsEditText = findViewById(R.id.question_2_pupil_enrollment_male_edit_text);
-//        eQuestion2NumberP7PupilEditText = findViewById(R.id.question_2_number_p7_male_edit_text);
-//        eQuestion2MaleDropoutPupilEditText = findViewById(R.id.question_2_number_of_p7_male_edit_text);
-
-
-        eQuestion8OtherObservationsEditText = findViewById(R.id.eduction_question_8_5_others_edit_text);
         findViewById(R.id.saved_form_data).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 // save data
             }
         });
-    }
-
-    private boolean getQuestion85ObjectiveAnswer() {
-        return ((RadioGroup) findViewById(R.id.question85RadioGroup)).getCheckedRadioButtonId() == R.id.education_question_8_5_yes;
     }
 }
