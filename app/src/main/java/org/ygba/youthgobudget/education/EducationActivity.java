@@ -17,6 +17,9 @@ public class EducationActivity extends AppCompatActivity {
     private EditText eParishEditText;
     private EditText eDivisionEditText;
     private EditText eDistrictEditText;
+    private EditText eAgentEditText;
+    private EditText eAgentTellEditText;
+    private EditText eQuestion1EditText;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -34,5 +37,8 @@ public class EducationActivity extends AppCompatActivity {
         eVillageEditText = findViewById(R.id.village_text_edit);
         eParishEditText = findViewById(R.id.parish_text_edit);
         eDivisionEditText = findViewById(R.id.division_text_edit);
+        eAgentEditText = findViewById(R.id.ygb_agent_name_edit_view);
+        eAgentTellEditText = findViewById(R.id.ygb_agent_tel_edit_view);
+        eQuestion1EditText = findViewById(R.id.question_1_edit_text);
     }
 }
