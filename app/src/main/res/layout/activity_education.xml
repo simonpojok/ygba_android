@@ -203,7 +203,7 @@
             android:text="@string/education_question_1_note"
             android:textSize="15sp"
             android:textColor="@color/white"
-            android:textStyle="bold" />
+            android:textStyle="italic" />
 
         <TextView
             android:layout_marginVertical="10dp"
@@ -211,8 +211,7 @@
             android:layout_height="wrap_content"
             android:text="@string/education_question_1_upe"
             android:textSize="15sp"
-            android:textColor="@color/white"
-            android:textStyle="bold" />
+            android:textColor="@color/white"/>
 
         <EditText
             android:layout_marginVertical="10dp"
@@ -225,6 +224,15 @@
             android:background="@drawable/edit_text_style"
             android:paddingStart="5dp"
             android:paddingEnd="5dp" />
+
+        <TextView
+            android:layout_marginVertical="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/question_education_introduction"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="@color/white"/>
 
         <androidx.cardview.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
             android:layout_width="match_parent"
