@@ -63,4 +63,8 @@ public class EducationActivity extends AppCompatActivity {
     private String getTextValue(TextView editText) {
         return  editText.getText().toString();
     }
+
+    private int getIntegerValue(EditText editText) {
+        return 0;
+    }
 }
