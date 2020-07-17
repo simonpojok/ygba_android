@@ -41,6 +41,12 @@ public class EducationActivity extends AppCompatActivity {
     private EditText eQ2NumberP7FeMalePWD;
     private EditText eQ2NumberP7Total;
 
+    private EditText eQ2NumberDropOutMale;
+    private EditText eQ2NumberDropOutFemale;
+    private EditText eQ2NumberDropOutMalePWD;
+    private EditText eQ2NumberDropOutFemalePWD;
+    private EditText eQ2NumberDropOutTotal;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -78,6 +84,12 @@ public class EducationActivity extends AppCompatActivity {
         eQ2NumberP7MalePWD = findViewById(R.id.question_2_number_p_7_pupils_male_pwd);
         eQ2NumberP7FeMalePWD = findViewById(R.id.question_2_number_p_7_pupils_female_pwd);
         eQ2NumberP7Total = findViewById(R.id.question_2_number_p_7_pupils_total);
+
+        eQ2NumberDropOutMale = findViewById(R.id.question_2_number_of_dropout_male);
+        eQ2NumberDropOutFemale = findViewById(R.id.question_2_number_of_dropout_female);
+        eQ2NumberDropOutMalePWD = findViewById(R.id.question_2_number_of_dropout_male_pwd);
+        eQ2NumberDropOutFemalePWD = findViewById(R.id.question_2_number_of_dropout_female_pwd);
+        eQ2NumberDropOutTotal = findViewById(R.id.question_2_number_of_dropout_total);
 
 
         findViewById(R.id.saved_form_data).setOnClickListener(new View.OnClickListener() {
@@ -117,6 +129,12 @@ public class EducationActivity extends AppCompatActivity {
                 .setQuestion2NumberP7MalePWD(getIntegerValue(eQ2NumberP7MalePWD))
                 .setQuestion2NumberP7FemalePWD(getIntegerValue(eQ2NumberP7FeMalePWD))
                 .setQuestion2NumberP7Total(getIntegerValue(eQ2NumberP7Total))
+
+                .setQuestion2NumberDropOutMale(getIntegerValue(eQ2NumberDropOutMale))
+                .setQuestion2NumberDropOutFemale(getIntegerValue( eQ2NumberDropOutFemale))
+                .setQuestion2NumberDropOutMalePWD(getIntegerValue(eQ2NumberDropOutMalePWD ))
+                .setQuestion2NumberDropOutFemalePWD(getIntegerValue(eQ2NumberDropOutFemalePWD))
+                .setQuestion2NumberDropOutTotal(getIntegerValue(eQ2NumberDropOutTotal))
                 .build();
     }
 

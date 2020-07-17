@@ -29,4 +29,9 @@ public class EducationQuestionConstants {
     public static final String QUESTION_2_NUMBER_P7_MALE_PWD = "q_2_n_m_pwd";
     public static final String QUESTION_2_NUMBER_P7_FEMALE_PWD = "q_2_f_p_7_pwd";
     public static final String QUESTION_2_NUMBER_TOTAL = "question_2_total_p7";
+    public static final String QUESTION_2_NUMBER_DROPOUT_MALE = "q2_n_d_o_male";
+    public static final String QUESTION_2_NUMBER_DROPOUT_FEMALE = "q_2_n_drop_female";
+    public static final String QUESTION_2_NUMBER_DROPOUT_MALE_PWD = "pwd_2_male_drop_out";
+    public static final String QUESTION_2_NUMBER_DROPOUT_FEMALE_PWD = "pwd_2_female_dropout_2";
+    public static final String QUESTION_2_NUMBER_DROPOUT_TOTAL = "total_dropout_q2";
 }

@@ -1,5 +1,7 @@
 package org.ygba.youthgobudget.data.education;
 
+import android.widget.EditText;
+
 import androidx.room.ColumnInfo;
 import androidx.room.Entity;
 import androidx.room.Ignore;
@@ -85,6 +87,21 @@ public class EducationQuestion {
 
     @ColumnInfo(name = EducationQuestionConstants.QUESTION_2_NUMBER_TOTAL)
     private int question2NumberP7Total;
+
+    @ColumnInfo(name = EducationQuestionConstants.QUESTION_2_NUMBER_DROPOUT_MALE)
+    private int question2NumberDropoutMale;
+
+    @ColumnInfo(name = EducationQuestionConstants.QUESTION_2_NUMBER_DROPOUT_FEMALE)
+    private int question2NumberDropOutFemale;
+
+    @ColumnInfo(name = EducationQuestionConstants.QUESTION_2_NUMBER_DROPOUT_MALE_PWD)
+    private int question2NumberDropoutMalePWD;
+
+    @ColumnInfo(name = EducationQuestionConstants.QUESTION_2_NUMBER_DROPOUT_FEMALE_PWD)
+    private int question2NumberDropOutFemalePWD;
+
+    @ColumnInfo(name = EducationQuestionConstants.QUESTION_2_NUMBER_DROPOUT_TOTAL)
+    private int question2NumberDropOutTotal;
 
 
 
@@ -218,6 +235,31 @@ public class EducationQuestion {
 
         public Builder setQuestion2NumberP7Total(int integerValue) {
             INSTANCE.setQuestion2NumberP7Total(integerValue);
+            return this;
+        }
+
+        public Builder setQuestion2NumberDropOutMale(int integerValue) {
+            INSTANCE.setQuestion2NumberDropoutMale(integerValue);
+            return this;
+        }
+
+        public Builder setQuestion2NumberDropOutFemale(int integerValue) {
+            INSTANCE.setQuestion2NumberDropOutFemale(integerValue);
+            return this;
+        }
+
+        public Builder setQuestion2NumberDropOutMalePWD(int integerValue) {
+            INSTANCE.setQuestion2NumberDropoutMalePWD(integerValue);
+            return this;
+        }
+
+        public Builder setQuestion2NumberDropOutFemalePWD(int integerValue) {
+            INSTANCE.setQuestion2NumberDropOutFemalePWD(integerValue);
+            return this;
+        }
+
+        public Builder setQuestion2NumberDropOutTotal(int integerValue) {
+            INSTANCE.setQuestion2NumberDropOutTotal(integerValue);
             return this;
         }
     }
@@ -432,5 +474,45 @@ public class EducationQuestion {
 
     public void setQuestion2NumberP7Total(int question2NumberP7Total) {
         this.question2NumberP7Total = question2NumberP7Total;
+    }
+
+    public int getQuestion2NumberDropoutMale() {
+        return question2NumberDropoutMale;
+    }
+
+    public void setQuestion2NumberDropoutMale(int question2NumberDropoutMale) {
+        this.question2NumberDropoutMale = question2NumberDropoutMale;
+    }
+
+    public int getQuestion2NumberDropOutFemale() {
+        return question2NumberDropOutFemale;
+    }
+
+    public void setQuestion2NumberDropOutFemale(int question2NumberDropOutFemale) {
+        this.question2NumberDropOutFemale = question2NumberDropOutFemale;
+    }
+
+    public int getQuestion2NumberDropoutMalePWD() {
+        return question2NumberDropoutMalePWD;
+    }
+
+    public void setQuestion2NumberDropoutMalePWD(int question2NumberDropoutMalePWD) {
+        this.question2NumberDropoutMalePWD = question2NumberDropoutMalePWD;
+    }
+
+    public int getQuestion2NumberDropOutFemalePWD() {
+        return question2NumberDropOutFemalePWD;
+    }
+
+    public void setQuestion2NumberDropOutFemalePWD(int question2NumberDropOutFemalePWD) {
+        this.question2NumberDropOutFemalePWD = question2NumberDropOutFemalePWD;
+    }
+
+    public int getQuestion2NumberDropOutTotal() {
+        return question2NumberDropOutTotal;
+    }
+
+    public void setQuestion2NumberDropOutTotal(int question2NumberDropOutTotal) {
+        this.question2NumberDropOutTotal = question2NumberDropOutTotal;
     }
 }
