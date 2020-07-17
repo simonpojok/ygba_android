@@ -35,6 +35,12 @@ public class EducationActivity extends AppCompatActivity {
     private EditText eQ2FemalePWDSPupilEnrollmentEditText;
     private EditText eQ2PupilEnrollmentTotal;
 
+    private EditText eQ2NumberP7Male;
+    private EditText eQ2NumberP7FeMale;
+    private EditText eQ2NumberP7MalePWD;
+    private EditText eQ2NumberP7FeMalePWD;
+    private EditText eQ2NumberP7Total;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -66,6 +72,12 @@ public class EducationActivity extends AppCompatActivity {
         eQ2MalePWDSPupilEnrollmentEditText = findViewById(R.id.question_2_pupil_enrollment_male_pwd);
         eQ2FemalePWDSPupilEnrollmentEditText = findViewById(R.id.question_2_pupil_enrollment_female_pwd);
         eQ2PupilEnrollmentTotal = findViewById(R.id.question_2_pupil_enrollment_total);
+
+        eQ2NumberP7Male = findViewById(R.id.question_2_number_p_7_pupils_male);
+        eQ2NumberP7FeMale = findViewById(R.id.question_2_number_p_7_pupils_female);
+        eQ2NumberP7MalePWD = findViewById(R.id.question_2_number_p_7_pupils_male_pwd);
+        eQ2NumberP7FeMalePWD = findViewById(R.id.question_2_number_p_7_pupils_female_pwd);
+        eQ2NumberP7Total = findViewById(R.id.question_2_number_p_7_pupils_total);
 
 
         findViewById(R.id.saved_form_data).setOnClickListener(new View.OnClickListener() {
@@ -99,6 +111,12 @@ public class EducationActivity extends AppCompatActivity {
                 .setQ2MalePWDPupilEnrollment(getIntegerValue(eQ2MalePWDSTeachersEditText))
                 .setQ2FemalePWDSPupilEnrollment(getIntegerValue(eQ2FemalePWDSTeachersEditText))
                 .setQ2PupilEnrollmentTotal(getIntegerValue(eQ2TeachersTotal))
+
+                .setNumberP7Male(getIntegerValue(eQ2NumberP7Male))
+                .setQuestionNumberP7FeMale(getIntegerValue(eQ2NumberP7FeMale))
+                .setQuestion2NumberP7MalePWD(getIntegerValue(eQ2NumberP7MalePWD))
+                .setQuestion2NumberP7FemalePWD(getIntegerValue(eQ2NumberP7FeMalePWD))
+                .setQuestion2NumberP7Total(getIntegerValue(eQ2NumberP7Total))
                 .build();
     }
 

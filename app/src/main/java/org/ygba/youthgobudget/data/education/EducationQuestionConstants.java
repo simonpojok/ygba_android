@@ -24,4 +24,9 @@ public class EducationQuestionConstants {
     public static final String QUESTION_MALE_PWDS_TEACHERSTEACHERS = "male_pwds_PupilEnrollment_q2";
     public static final String QUESTION_FEMALE_PWDS_PupilEnrollment = "female_pwd_PupilEnrollment_q2";
     public static final String QUESTION_2_PupilEnrollment_TOTAL = "PupilEnrollment_toatl";
+    public static final String QUESTION_2_NUMBER_P7_MALE = "num_p7_male_q2";
+    public static final String QUESTION_2_NUMBER_P7_FEMALE = "q2_n_7_female";
+    public static final String QUESTION_2_NUMBER_P7_MALE_PWD = "q_2_n_m_pwd";
+    public static final String QUESTION_2_NUMBER_P7_FEMALE_PWD = "q_2_f_p_7_pwd";
+    public static final String QUESTION_2_NUMBER_TOTAL = "question_2_total_p7";
 }

@@ -71,6 +71,21 @@ public class EducationQuestion {
     @ColumnInfo(name = EducationQuestionConstants.QUESTION_2_PupilEnrollment_TOTAL)
     private int question2PupilEnrollmentTotal;
 
+    @ColumnInfo(name = EducationQuestionConstants.QUESTION_2_NUMBER_P7_MALE)
+    private int question2NumberP7Male;
+
+    @ColumnInfo(name = EducationQuestionConstants.QUESTION_2_NUMBER_P7_FEMALE)
+    private int question2NumberP7FeMale;
+
+    @ColumnInfo(name = EducationQuestionConstants.QUESTION_2_NUMBER_P7_MALE_PWD)
+    private int question2NumberP7MalePWD;
+
+    @ColumnInfo(name = EducationQuestionConstants.QUESTION_2_NUMBER_P7_FEMALE_PWD)
+    private int question2NumberP7FeMalePWD;
+
+    @ColumnInfo(name = EducationQuestionConstants.QUESTION_2_NUMBER_TOTAL)
+    private int question2NumberP7Total;
+
 
 
     public static class Builder {
@@ -178,6 +193,31 @@ public class EducationQuestion {
 
         public Builder setQ2PupilEnrollmentTotal(int integerValue) {
             INSTANCE.setQuestion2PupilEnrollmentTotal(integerValue);
+            return this;
+        }
+
+        public Builder setNumberP7Male(int integerValue) {
+            INSTANCE.setQuestion2NumberP7Male(integerValue);
+            return this;
+        }
+
+        public Builder setQuestionNumberP7FeMale(int integerValue) {
+            INSTANCE.setQuestion2NumberP7FeMale(integerValue);
+            return this;
+        }
+
+        public Builder setQuestion2NumberP7MalePWD(int integerValue) {
+            INSTANCE.setQuestion2NumberP7MalePWD(integerValue);
+            return this;
+        }
+
+        public Builder setQuestion2NumberP7FemalePWD(int textValue) {
+            INSTANCE.setQuestion2NumberP7FeMalePWD(textValue);
+            return this;
+        }
+
+        public Builder setQuestion2NumberP7Total(int integerValue) {
+            INSTANCE.setQuestion2NumberP7Total(integerValue);
             return this;
         }
     }
@@ -352,5 +392,45 @@ public class EducationQuestion {
 
     public void setQuestion2PupilEnrollmentTotal(int question2PupilEnrollmentTotal) {
         this.question2PupilEnrollmentTotal = question2PupilEnrollmentTotal;
+    }
+
+    public int getQuestion2NumberP7Male() {
+        return question2NumberP7Male;
+    }
+
+    public void setQuestion2NumberP7Male(int question2NumberP7Male) {
+        this.question2NumberP7Male = question2NumberP7Male;
+    }
+
+    public int getQuestion2NumberP7FeMale() {
+        return question2NumberP7FeMale;
+    }
+
+    public void setQuestion2NumberP7FeMale(int question2NumberP7FeMale) {
+        this.question2NumberP7FeMale = question2NumberP7FeMale;
+    }
+
+    public int getQuestion2NumberP7MalePWD() {
+        return question2NumberP7MalePWD;
+    }
+
+    public void setQuestion2NumberP7MalePWD(int question2NumberP7MalePWD) {
+        this.question2NumberP7MalePWD = question2NumberP7MalePWD;
+    }
+
+    public int getQuestion2NumberP7FeMalePWD() {
+        return question2NumberP7FeMalePWD;
+    }
+
+    public void setQuestion2NumberP7FeMalePWD(int question2NumberP7FeMalePWD) {
+        this.question2NumberP7FeMalePWD = question2NumberP7FeMalePWD;
+    }
+
+    public int getQuestion2NumberP7Total() {
+        return question2NumberP7Total;
+    }
+
+    public void setQuestion2NumberP7Total(int question2NumberP7Total) {
+        this.question2NumberP7Total = question2NumberP7Total;
     }
 }
