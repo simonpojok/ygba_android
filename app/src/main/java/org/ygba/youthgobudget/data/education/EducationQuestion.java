@@ -155,6 +155,31 @@ public class EducationQuestion {
             INSTANCE.setQuestion2TeachersTotal(integerValue);
             return this;
         }
+
+        public Builder setQ2PupilEnrollmentTeachers(int integerValue) {
+            INSTANCE.setQuestion2MalePupilEnrollment(integerValue);
+            return this;
+        }
+
+        public Builder setQ2FeMalePupilEnrollment(int integerValue) {
+            INSTANCE.setQuestion2FeMalePupilEnrollment(integerValue);
+            return this;
+        }
+
+        public Builder setQ2MalePWDPupilEnrollment(int integerValue) {
+            INSTANCE.setQuestion2MalePWDPupilEnrollment(integerValue);
+            return this;
+        }
+
+        public Builder setQ2FemalePWDSPupilEnrollment(int integerValue) {
+            INSTANCE.setQuestion2FemalePWDPupilEnrollment(integerValue);
+            return this;
+        }
+
+        public Builder setQ2PupilEnrollmentTotal(int integerValue) {
+            INSTANCE.setQuestion2PupilEnrollmentTotal(integerValue);
+            return this;
+        }
     }
 
     @Ignore
