@@ -15,4 +15,6 @@ public class EducationQuestionConstants {
     public static final String QUESTION_2_SCHOOL_NAME = "question_2_school_name";
     public static final String QUESTION_2_MALE_TEACHERS = "question_2_male_teachers";
     public static final String QUESTION_2_FEMALE_TEACHERS = "question_2_fe_male";
+    public static final String QUESTION_MALE_PWDS_TEACHERS = "male_pwds_teachers_q2";
+    public static final String QUESTION_FEMALE_PWDS_TEACHERS = "female_pwd_teachers_q2";
 }

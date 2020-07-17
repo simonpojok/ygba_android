@@ -26,6 +26,8 @@ public class EducationActivity extends AppCompatActivity {
     private EditText eQuestionSchoolNameEditText;
     private EditText eQ2MaleTeachersEditText;
     private EditText eQ2FeMaleTeachersEditText;
+    private EditText eQ2MalePWDSTeachersEditText;
+    private EditText eQ2FemalePWDSTeachersEditText;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -49,6 +51,8 @@ public class EducationActivity extends AppCompatActivity {
         eQuestionSchoolNameEditText = findViewById(R.id.question_2_school_name);
         eQ2MaleTeachersEditText = findViewById(R.id.question_2_teachers_male);
         eQ2FeMaleTeachersEditText = findViewById(R.id.question_2_teachers_female);
+        eQ2MalePWDSTeachersEditText = findViewById(R.id.question_2_teachers_male_pwd);
+        eQ2FemalePWDSTeachersEditText = findViewById(R.id.question_2_teachers_female_pwd);
 
 
         findViewById(R.id.saved_form_data).setOnClickListener(new View.OnClickListener() {
@@ -73,6 +77,8 @@ public class EducationActivity extends AppCompatActivity {
                 .setQuestion2SchoolName(getTextValue(eQuestionSchoolNameEditText))
                 .setQ2MaleTeachers(getIntegerValue(eQ2MaleTeachersEditText))
                 .setQ2FeMaleTeachers(getIntegerValue(eQ2FeMaleTeachersEditText))
+                .setQ2MalePWDTeachers(getIntegerValue(eQ2MalePWDSTeachersEditText))
+                .setQ2FemalePWDSTeachers(getIntegerValue(eQ2FemalePWDSTeachersEditText))
                 .build();
     }
 

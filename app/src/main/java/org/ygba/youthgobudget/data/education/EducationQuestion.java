@@ -47,6 +47,12 @@ public class EducationQuestion {
     @ColumnInfo(name = EducationQuestionConstants.QUESTION_2_FEMALE_TEACHERS)
     private int question2FeMaleTeachers;
 
+    @ColumnInfo(name = EducationQuestionConstants.QUESTION_MALE_PWDS_TEACHERS)
+    private int question2MalePWDTeachers;
+
+    @ColumnInfo(name = EducationQuestionConstants.QUESTION_FEMALE_PWDS_TEACHERS)
+    private int question2FemalePWDTeachers;
+
 
 
     public static class Builder {
@@ -115,6 +121,15 @@ public class EducationQuestion {
         }
         public Builder setQ2FeMaleTeachers(int integerValue) {
             INSTANCE.setQuestion2FeMaleTeachers(integerValue);
+            return this;
+        }
+
+        public Builder setQ2MalePWDTeachers(int integerValue) {
+            INSTANCE.setQuestion2MalePWDTeachers(integerValue);
+            return this;
+        }
+
+        public Builder setQ2FemalePWDSTeachers(int integerValue) {
             return this;
         }
     }
@@ -225,5 +240,21 @@ public class EducationQuestion {
 
     public void setQuestion2FeMaleTeachers(int question2FeMaleTeachers) {
         this.question2FeMaleTeachers = question2FeMaleTeachers;
+    }
+
+    public int getQuestion2MalePWDTeachers() {
+        return question2MalePWDTeachers;
+    }
+
+    public void setQuestion2MalePWDTeachers(int question2MalePWDTeachers) {
+        this.question2MalePWDTeachers = question2MalePWDTeachers;
+    }
+
+    public int getQuestion2FemalePWDTeachers() {
+        return question2FemalePWDTeachers;
+    }
+
+    public void setQuestion2FemalePWDTeachers(int question2FemalePWDTeachers) {
+        this.question2FemalePWDTeachers = question2FemalePWDTeachers;
     }
 }
