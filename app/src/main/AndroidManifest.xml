@@ -13,10 +13,10 @@
         <activity
             android:name=".budget_information.BudgetInformationActivity"
             android:label="Budget Information"
-            android:parentActivityName=".MainActivity" />
+            android:parentActivityName=".MainActivity34" />
         <activity
             android:name=".water_and_environment.WaterEnvironmentActivity"
-            android:parentActivityName=".MainActivity" />
+            android:parentActivityName=".MainActivity34" />
         <activity android:name=".social_development.SocialDevelopmentListActivity" />
         <activity
             android:name=".dialogs.DatePickerActivity"
@@ -24,18 +24,18 @@
             android:theme="@android:style/Theme.DeviceDefault.Light.Dialog" />
         <activity
             android:name=".social_development.SocialDevelopmentActivity"
-            android:parentActivityName=".MainActivity" />
+            android:parentActivityName=".MainActivity34" />
         <activity
             android:name=".education.EducationActivity"
-            android:parentActivityName=".MainActivity" />
+            android:parentActivityName=".MainActivity34" />
         <activity
             android:name=".health.HealthActivity"
-            android:parentActivityName=".MainActivity" />
+            android:parentActivityName=".MainActivity34" />
         <activity
             android:name=".agriculture.AgricultureActivity"
-            android:parentActivityName=".MainActivity" />
+            android:parentActivityName=".MainActivity34" />
         <activity
-            android:name=".MainActivity"
+            android:name=".MainActivity34"
             android:label="@string/app_name"
             android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>

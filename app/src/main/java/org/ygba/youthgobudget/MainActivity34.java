@@ -22,7 +22,7 @@ import org.ygba.youthgobudget.social_development.SocialDevelopmentActivity;
 import org.ygba.youthgobudget.ui.home.HomeFragment;
 import org.ygba.youthgobudget.water_and_environment.WaterEnvironmentActivity;
 
-public class MainActivity extends AppCompatActivity implements HomeFragment.OnAgricultureIconClickListener,
+public class MainActivity34 extends AppCompatActivity implements HomeFragment.OnAgricultureIconClickListener,
 HomeFragment.OnEducationIconClickListener, HomeFragment.OnSocialDevelopmentIconClickListener,
 HomeFragment.OnHealthIconClickListener, HomeFragment.OnWaterEnvironmentListener, HomeFragment.OnBudgetInformationClickListener  {
 
@@ -32,7 +32,7 @@ HomeFragment.OnHealthIconClickListener, HomeFragment.OnWaterEnvironmentListener,
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_main34);
         Toolbar toolbar = findViewById(R.id.toolbar);
 
 

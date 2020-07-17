@@ -1872,7 +1872,6 @@ id nav_home
 id nav_host_fragment
 id nav_host_fragment_container
 id nav_slideshow
-id nav_view
 id navigation_header_container
 id never
 id noScroll
@@ -2414,6 +2413,7 @@ layout activity_budget_information
 layout activity_date_picker
 layout activity_education
 layout activity_health
+layout activity_local_government
 layout activity_main
 layout activity_social_development
 layout activity_social_development_list
