@@ -20,6 +20,24 @@ public class EducationQuestion {
     @ColumnInfo(name = EducationQuestionConstants.DISTRICT)
     private String district;
 
+    @ColumnInfo(name = EducationQuestionConstants.VILLAGE)
+    private String village;
+
+    @ColumnInfo(name = EducationQuestionConstants.PARISH)
+    private String parish;
+
+    @ColumnInfo(name = EducationQuestionConstants.DIVISION)
+    private String division;
+
+    @ColumnInfo(name = EducationQuestionConstants.FULL_NAME)
+    private String fullNames;
+
+    @ColumnInfo(name = EducationQuestionConstants.TEL)
+    private String tel;
+
+    @ColumnInfo(name = EducationQuestionConstants.QUESTION_1_ANSWER)
+    private String question1Answer;
+
 
 
     public static class Builder {
@@ -44,6 +62,36 @@ public class EducationQuestion {
 
         public Builder setDistrict(String textValue) {
             INSTANCE.setDistrict(textValue);
+            return this;
+        }
+
+        public Builder setVillage(String textValue) {
+            INSTANCE.setVillage(textValue);
+            return this;
+        }
+
+        public Builder setParish(String textValue) {
+            INSTANCE.setParish(textValue);
+            return this;
+        }
+
+        public Builder setDivision(String textValue) {
+            INSTANCE.setDivision(textValue);
+            return this;
+        }
+
+        public Builder setAgentNames(String textValue) {
+            INSTANCE.setFullNames(textValue);
+            return this;
+        }
+
+        public Builder setTelephone(String textValue) {
+            INSTANCE.setTel(textValue);
+            return this;
+        }
+
+        public Builder setQuestion1Answer(String textValue) {
+            INSTANCE.setQuestion1Answer(textValue);
             return this;
         }
     }
@@ -82,5 +130,53 @@ public class EducationQuestion {
 
     public void setDistrict(String district) {
         this.district = district;
+    }
+
+    public String getVillage() {
+        return village;
+    }
+
+    public void setVillage(String village) {
+        this.village = village;
+    }
+
+    public String getParish() {
+        return parish;
+    }
+
+    public void setParish(String parish) {
+        this.parish = parish;
+    }
+
+    public String getDivision() {
+        return division;
+    }
+
+    public void setDivision(String division) {
+        this.division = division;
+    }
+
+    public String getFullNames() {
+        return fullNames;
+    }
+
+    public void setFullNames(String fullNames) {
+        this.fullNames = fullNames;
+    }
+
+    public String getTel() {
+        return tel;
+    }
+
+    public void setTel(String tel) {
+        this.tel = tel;
+    }
+
+    public String getQuestion1Answer() {
+        return question1Answer;
+    }
+
+    public void setQuestion1Answer(String question1Answer) {
+        this.question1Answer = question1Answer;
     }
 }

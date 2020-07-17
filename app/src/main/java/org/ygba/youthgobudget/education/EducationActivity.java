@@ -56,6 +56,12 @@ public class EducationActivity extends AppCompatActivity {
                 .setFinancialYear("Fina")
                 .setDate(getTextValue(eDateTextView))
                 .setDistrict(getTextValue(eDistrictEditText))
+                .setVillage(getTextValue(eVillageEditText))
+                .setParish(getTextValue(eParishEditText))
+                .setDivision(getTextValue(eDivisionEditText))
+                .setAgentNames(getTextValue(eAgentEditText))
+                .setTelephone(getTextValue(eAgentTellEditText))
+                .setQuestion1Answer(getTextValue(eQuestion1EditText))
                 .build();
     }
 
