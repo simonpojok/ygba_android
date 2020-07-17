@@ -14,6 +14,9 @@ public class EducationQuestion {
     @ColumnInfo(name = EducationQuestionConstants.FINANCIAL_YEAR)
     private String financialYear;
 
+    @ColumnInfo(name = EducationQuestionConstants.DATE)
+    private String date;
+
 
 
     public static class Builder {
@@ -28,6 +31,11 @@ public class EducationQuestion {
 
         public Builder setFinancialYear(String financialYear) {
             INSTANCE.setFinancialYear(financialYear);
+            return this;
+        }
+
+        public Builder setDate(String textValue) {
+            INSTANCE.setDate(textValue);
             return this;
         }
     }
@@ -50,5 +58,13 @@ public class EducationQuestion {
 
     public void setFinancialYear(String financialYear) {
         this.financialYear = financialYear;
+    }
+
+    public String getDate() {
+        return date;
+    }
+
+    public void setDate(String date) {
+        this.date = date;
     }
 }
