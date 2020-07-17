@@ -683,13 +683,35 @@
         <EditText
             android:gravity="start"
             android:inputType="textMultiLine"
-            android:hint="@string/school_name_hint"
             android:id="@+id/question_2_dropout_reason"
             android:layout_width="match_parent"
             android:layout_height="100dp"
             android:textSize="15sp"
             android:background="@drawable/edit_text_style"
             android:padding="5dp"/>
+
+        <TextView
+            android:layout_marginHorizontal="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/education_question_3_introduction"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="@color/white"/>
+
+        <HorizontalScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <GridLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:rowCount="4"
+                android:columnCount="5" >
+
+
+            </GridLayout>
+        </HorizontalScrollView>
 
 
 

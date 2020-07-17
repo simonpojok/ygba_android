@@ -134,7 +134,7 @@
     <string name="education_question_2_1_dropout">
         2.1  If dropout is registered, please indicate the reasons why children are dropping out of school
     </string>
-    <string name="education_question_3_introduction">BUDGET INFORMATION</string>
+    <string name="education_question_3_introduction">3. BUDGET INFORMATION</string>
     <string name="education_question_3_header">Budget founds, receipts and release dates</string>
     <string name="education_question_3_grant">Grants</string>
     <string name="education_question_3_capitation_grant">Capitation grant</string>
