@@ -4,6 +4,8 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 
+import org.ygba.youthgobudget.R;
+
 public class BudgetCycleActivity extends AppCompatActivity {
 
     @Override

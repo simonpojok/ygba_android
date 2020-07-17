@@ -24,6 +24,11 @@
         android:supportsRtl="true"
         android:testOnly="true"
         android:theme="@style/AppTheme" >
+        <activity android:name="org.ygba.youthgobudget.allocation.AllocationActivity" />
+        <activity android:name="org.ygba.youthgobudget.history.HistoryActivity" />
+        <activity android:name="org.ygba.youthgobudget.help.HelpActivity" />
+        <activity android:name="org.ygba.youthgobudget.polls.PollActivity" />
+        <activity android:name="org.ygba.youthgobudget.budget_cycle.BudgetCycleActivity" />
         <activity android:name="org.ygba.youthgobudget.local_government.LocalGovernmentActivity" />
         <activity
             android:name="org.ygba.youthgobudget.budget_information.BudgetInformationActivity"

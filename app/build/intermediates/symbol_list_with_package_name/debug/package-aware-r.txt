@@ -1594,7 +1594,6 @@ id cv_education
 id cv_health_icon
 id cv_help_icon
 id cv_history
-id cv_histroy_icon
 id cv_local_government_icon
 id cv_polls_icon
 id cv_social_development_icon
@@ -2411,12 +2410,17 @@ layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
 layout activity_agriculture_activity
+layout activity_allocation
+layout activity_budget_cycle
 layout activity_budget_information
 layout activity_date_picker
 layout activity_education
 layout activity_health
+layout activity_help
+layout activity_history
 layout activity_local_government
 layout activity_main
+layout activity_poll
 layout activity_social_development
 layout activity_social_development_list
 layout activity_water_environment
