@@ -403,4 +403,6 @@
     <string name="sub_county_label_sub">Subcounty</string>
     <string name="education_question_2_introduction">2. SCHOOL DETAILS</string>
     <string name="question_education_introduction">2. SCHOOL DETAILS</string>
+    <string name="school_name_education_question_2">School Name</string>
+    <string name="male_caps">MALE</string>
 </resources>

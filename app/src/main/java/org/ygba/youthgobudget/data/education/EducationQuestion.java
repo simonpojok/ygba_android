@@ -38,6 +38,9 @@ public class EducationQuestion {
     @ColumnInfo(name = EducationQuestionConstants.QUESTION_1_ANSWER)
     private String question1Answer;
 
+    @ColumnInfo(name = EducationQuestionConstants.QUESTION_2_SCHOOL_NAME)
+    private String question2SchoolName;
+
 
 
     public static class Builder {
@@ -92,6 +95,11 @@ public class EducationQuestion {
 
         public Builder setQuestion1Answer(String textValue) {
             INSTANCE.setQuestion1Answer(textValue);
+            return this;
+        }
+
+        public Builder setQuestion2SchoolName(String textValue) {
+            INSTANCE.setQuestion2SchoolName(textValue);
             return this;
         }
     }
@@ -178,5 +186,13 @@ public class EducationQuestion {
 
     public void setQuestion1Answer(String question1Answer) {
         this.question1Answer = question1Answer;
+    }
+
+    public String getQuestion2SchoolName() {
+        return question2SchoolName;
+    }
+
+    public void setQuestion2SchoolName(String question2SchoolName) {
+        this.question2SchoolName = question2SchoolName;
     }
 }
