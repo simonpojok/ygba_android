@@ -93,6 +93,12 @@ public class EducationActivity extends AppCompatActivity {
                 .setQ2MalePWDTeachers(getIntegerValue(eQ2MalePWDSTeachersEditText))
                 .setQ2FemalePWDSTeachers(getIntegerValue(eQ2FemalePWDSTeachersEditText))
                 .setQ2TeachersTotal(getIntegerValue(eQ2TeachersTotal))
+
+                .setQ2PupilEnrollmentTeachers(getIntegerValue(eQ2MaleTeachersEditText))
+                .setQ2FeMalePupilEnrollment(getIntegerValue(eQ2FeMaleTeachersEditText))
+                .setQ2MalePWDPupilEnrollment(getIntegerValue(eQ2MalePWDSTeachersEditText))
+                .setQ2FemalePWDSPupilEnrollment(getIntegerValue(eQ2FemalePWDSTeachersEditText))
+                .setQ2PupilEnrollmentTotal(getIntegerValue(eQ2TeachersTotal))
                 .build();
     }
 
