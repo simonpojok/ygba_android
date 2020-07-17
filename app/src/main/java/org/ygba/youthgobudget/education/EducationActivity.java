@@ -29,6 +29,11 @@ public class EducationActivity extends AppCompatActivity {
     private EditText eQ2MalePWDSTeachersEditText;
     private EditText eQ2FemalePWDSTeachersEditText;
     private EditText eQ2TeachersTotal;
+    private EditText eQ2MalePupilEnrollmentEditText;
+    private EditText eQ2FeMalePupilEnrollmentEditText;
+    private EditText eQ2MalePWDSPupilEnrollmentEditText;
+    private EditText eQ2FemalePWDSPupilEnrollmentEditText;
+    private EditText eQ2PupilEnrollmentTotal;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -55,6 +60,12 @@ public class EducationActivity extends AppCompatActivity {
         eQ2MalePWDSTeachersEditText = findViewById(R.id.question_2_teachers_male_pwd);
         eQ2FemalePWDSTeachersEditText = findViewById(R.id.question_2_teachers_female_pwd);
         eQ2TeachersTotal = findViewById(R.id.question_2_teachers_total);
+
+        eQ2MalePupilEnrollmentEditText = findViewById(R.id.question_2_pupil_enrollment_male);
+        eQ2FeMalePupilEnrollmentEditText = findViewById(R.id.question_2_pupil_enrollment_female);
+        eQ2MalePWDSPupilEnrollmentEditText = findViewById(R.id.question_2_pupil_enrollment_male_pwd);
+        eQ2FemalePWDSPupilEnrollmentEditText = findViewById(R.id.question_2_pupil_enrollment_female_pwd);
+        eQ2PupilEnrollmentTotal = findViewById(R.id.question_2_pupil_enrollment_total);
 
 
         findViewById(R.id.saved_form_data).setOnClickListener(new View.OnClickListener() {

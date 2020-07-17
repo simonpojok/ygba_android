@@ -1924,6 +1924,12 @@ id question_2_maternity_yes
 id question_2_pmtct_no
 id question_2_pmtct_radio_group
 id question_2_pmtct_yes
+id question_2_school_name
+id question_2_teachers_female
+id question_2_teachers_female_pwd
+id question_2_teachers_male
+id question_2_teachers_male_pwd
+id question_2_teachers_total
 id question_2_vaccination_for_hep_b_no
 id question_2_vaccination_for_hep_b_radio_group
 id question_2_vaccination_for_hep_b_yes
@@ -2626,6 +2632,7 @@ string inputs_or_planting_materials
 string internal_audit_label
 string live
 string male
+string male_caps
 string male_pwds
 string male_that_received_input
 string maternity_ward
@@ -2723,11 +2730,13 @@ string question_5_2_none
 string question_5_2_others
 string question_5_2_pwd
 string question_5_2_ramps
+string question_education_introduction
 string reason_hint
 string recurrent_label
 string revamps
 string same
 string school_name
+string school_name_education_question_2
 string school_name_hint
 string school_name_school_name
 string school_notice_board
