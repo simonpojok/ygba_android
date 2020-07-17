@@ -10,6 +10,7 @@ import android.widget.Spinner;
 import android.widget.TextView;
 
 import org.ygba.youthgobudget.R;
+import org.ygba.youthgobudget.data.education.EducationQuestion;
 import org.ygba.youthgobudget.utils.DynamicData;
 
 public class EducationActivity extends AppCompatActivity {
@@ -48,5 +49,10 @@ public class EducationActivity extends AppCompatActivity {
                 // save data
             }
         });
+    }
+
+    private void saveData() {
+        EducationQuestion educationQuestion = new EducationQuestion.Builder()
+                .build();
     }
 }
