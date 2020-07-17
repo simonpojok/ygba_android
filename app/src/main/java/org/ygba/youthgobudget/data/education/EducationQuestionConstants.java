@@ -13,4 +13,5 @@ public class EducationQuestionConstants {
     public static final String TEL = "tel";
     public static final String QUESTION_1_ANSWER = "question_1_answer";
     public static final String QUESTION_2_SCHOOL_NAME = "question_2_school_name";
+    public static final String QUESTION_2_MALE_TEACHERS = "question_2_male_teachers";
 }

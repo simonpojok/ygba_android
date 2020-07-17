@@ -41,6 +41,9 @@ public class EducationQuestion {
     @ColumnInfo(name = EducationQuestionConstants.QUESTION_2_SCHOOL_NAME)
     private String question2SchoolName;
 
+    @ColumnInfo(name = EducationQuestionConstants.QUESTION_2_MALE_TEACHERS)
+    private int question2MaleTeachers;
+
 
 
     public static class Builder {
@@ -100,6 +103,11 @@ public class EducationQuestion {
 
         public Builder setQuestion2SchoolName(String textValue) {
             INSTANCE.setQuestion2SchoolName(textValue);
+            return this;
+        }
+
+        public Builder setQ2MaleTeachers(int integerValue) {
+            INSTANCE.setQuestion2MaleTeachers(integerValue);
             return this;
         }
     }
@@ -194,5 +202,13 @@ public class EducationQuestion {
 
     public void setQuestion2SchoolName(String question2SchoolName) {
         this.question2SchoolName = question2SchoolName;
+    }
+
+    public int getQuestion2MaleTeachers() {
+        return question2MaleTeachers;
+    }
+
+    public void setQuestion2MaleTeachers(int question2MaleTeachers) {
+        this.question2MaleTeachers = question2MaleTeachers;
     }
 }

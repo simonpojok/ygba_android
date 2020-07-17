@@ -24,6 +24,7 @@ public class EducationActivity extends AppCompatActivity {
     private EditText eAgentTellEditText;
     private EditText eQuestion1EditText;
     private EditText eQuestionSchoolNameEditText;
+    private EditText eQ2MaleTeachersEditText;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -45,6 +46,7 @@ public class EducationActivity extends AppCompatActivity {
         eAgentTellEditText = findViewById(R.id.ygb_agent_tel_edit_view);
         eQuestion1EditText = findViewById(R.id.question_1_edit_text);
         eQuestionSchoolNameEditText = findViewById(R.id.question_2_school_name);
+        eQ2MaleTeachersEditText = findViewById(R.id.question_2_teachers_male);
         findViewById(R.id.saved_form_data).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -65,6 +67,7 @@ public class EducationActivity extends AppCompatActivity {
                 .setTelephone(getTextValue(eAgentTellEditText))
                 .setQuestion1Answer(getTextValue(eQuestion1EditText))
                 .setQuestion2SchoolName(getTextValue(eQuestionSchoolNameEditText))
+                .setQ2MaleTeachers(getIntegerValue(eQ2MaleTeachersEditText))
                 .build();
     }
 
