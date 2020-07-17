@@ -1627,6 +1627,7 @@ id district_text_edit
 id division_text_edit
 id dropdown_menu
 id edit_query
+id education_date_text_view
 id education_question_4_1_Good
 id education_question_4_1_bad
 id education_question_4_1_same
@@ -2576,6 +2577,7 @@ string domestic_label
 string education_question_1_note
 string education_question_1_upe
 string education_question_2_1_dropout
+string education_question_2_introduction
 string education_question_3_1_text
 string education_question_3_2_text
 string education_question_3_SFG

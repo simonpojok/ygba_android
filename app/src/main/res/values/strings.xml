@@ -401,4 +401,5 @@
     <string name="service">Service</string>
     <string name="community_needs">Community needs / wished</string>
     <string name="sub_county_label_sub">Subcounty</string>
+    <string name="education_question_2_introduction">2. SCHOOL DETAILS</string>
 </resources>

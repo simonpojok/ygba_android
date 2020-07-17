@@ -32,501 +32,501 @@ public final class EducationQuestionDao_Impl implements EducationQuestionDao {
 
       @Override
       public void bind(SupportSQLiteStatement stmt, EducationQuestion value) {
-        stmt.bindLong(1, value.getId());
-        if (value.getFinancialYear() == null) {
+        stmt.bindLong(1, value.id);
+        if (value.financialYear == null) {
           stmt.bindNull(2);
         } else {
-          stmt.bindString(2, value.getFinancialYear());
+          stmt.bindString(2, value.financialYear);
         }
-        if (value.getDate() == null) {
+        if (value.date == null) {
           stmt.bindNull(3);
         } else {
-          stmt.bindString(3, value.getDate());
+          stmt.bindString(3, value.date);
         }
-        if (value.getDistrict() == null) {
+        if (value.district == null) {
           stmt.bindNull(4);
         } else {
-          stmt.bindString(4, value.getDistrict());
+          stmt.bindString(4, value.district);
         }
-        if (value.getParish() == null) {
+        if (value.parish == null) {
           stmt.bindNull(5);
         } else {
-          stmt.bindString(5, value.getParish());
+          stmt.bindString(5, value.parish);
         }
-        if (value.getSub_county() == null) {
+        if (value.sub_county == null) {
           stmt.bindNull(6);
         } else {
-          stmt.bindString(6, value.getSub_county());
+          stmt.bindString(6, value.sub_county);
         }
-        if (value.getFullname() == null) {
+        if (value.fullname == null) {
           stmt.bindNull(7);
         } else {
-          stmt.bindString(7, value.getFullname());
+          stmt.bindString(7, value.fullname);
         }
-        if (value.getTel() == null) {
+        if (value.tel == null) {
           stmt.bindNull(8);
         } else {
-          stmt.bindString(8, value.getTel());
+          stmt.bindString(8, value.tel);
         }
-        if (value.getQuestion1() == null) {
+        if (value.question1SchoolName == null) {
           stmt.bindNull(9);
         } else {
-          stmt.bindString(9, value.getQuestion1());
+          stmt.bindString(9, value.question1SchoolName);
         }
-        if (value.getQuestion2TeacherMale() == null) {
+        if (value.question2TeacherMale == null) {
           stmt.bindNull(10);
         } else {
-          stmt.bindString(10, value.getQuestion2TeacherMale());
+          stmt.bindString(10, value.question2TeacherMale);
         }
-        if (value.getQuestion2TeacherFemale() == null) {
+        if (value.question2TeacherFemale == null) {
           stmt.bindNull(11);
         } else {
-          stmt.bindString(11, value.getQuestion2TeacherFemale());
+          stmt.bindString(11, value.question2TeacherFemale);
         }
-        if (value.getQuestion2TeacherMalePWDS() == null) {
+        if (value.question2TeacherMalePWDS == null) {
           stmt.bindNull(12);
         } else {
-          stmt.bindString(12, value.getQuestion2TeacherMalePWDS());
+          stmt.bindString(12, value.question2TeacherMalePWDS);
         }
-        if (value.getQuestion2TeacherFemalePWDS() == null) {
+        if (value.question2TeacherFemalePWDS == null) {
           stmt.bindNull(13);
         } else {
-          stmt.bindString(13, value.getQuestion2TeacherFemalePWDS());
+          stmt.bindString(13, value.question2TeacherFemalePWDS);
         }
-        if (value.getQuestion2TeacherTotal() == null) {
+        if (value.question2TeacherTotal == null) {
           stmt.bindNull(14);
         } else {
-          stmt.bindString(14, value.getQuestion2TeacherTotal());
+          stmt.bindString(14, value.question2TeacherTotal);
         }
-        if (value.getQuestion2PupilMale() == null) {
+        if (value.question2PupilMale == null) {
           stmt.bindNull(15);
         } else {
-          stmt.bindString(15, value.getQuestion2PupilMale());
+          stmt.bindString(15, value.question2PupilMale);
         }
-        if (value.getQuestion2PupilFemale() == null) {
+        if (value.question2PupilFemale == null) {
           stmt.bindNull(16);
         } else {
-          stmt.bindString(16, value.getQuestion2PupilFemale());
+          stmt.bindString(16, value.question2PupilFemale);
         }
-        if (value.getQuestion2PupilMalePWDS() == null) {
+        if (value.question2PupilMalePWDS == null) {
           stmt.bindNull(17);
         } else {
-          stmt.bindString(17, value.getQuestion2PupilMalePWDS());
+          stmt.bindString(17, value.question2PupilMalePWDS);
         }
-        if (value.getQuestion2PupilFemalePWDS() == null) {
+        if (value.question2PupilFemalePWDS == null) {
           stmt.bindNull(18);
         } else {
-          stmt.bindString(18, value.getQuestion2PupilFemalePWDS());
+          stmt.bindString(18, value.question2PupilFemalePWDS);
         }
-        if (value.getQuestion2PupilTotal() == null) {
+        if (value.question2PupilTotal == null) {
           stmt.bindNull(19);
         } else {
-          stmt.bindString(19, value.getQuestion2PupilTotal());
+          stmt.bindString(19, value.question2PupilTotal);
         }
-        if (value.getQuestion2P7Male() == null) {
+        if (value.question2P7Male == null) {
           stmt.bindNull(20);
         } else {
-          stmt.bindString(20, value.getQuestion2P7Male());
+          stmt.bindString(20, value.question2P7Male);
         }
-        if (value.getQuestion2P7Female() == null) {
+        if (value.question2P7Female == null) {
           stmt.bindNull(21);
         } else {
-          stmt.bindString(21, value.getQuestion2P7Female());
+          stmt.bindString(21, value.question2P7Female);
         }
-        if (value.getQuestion2P7MalePWDS() == null) {
+        if (value.question2P7MalePWDS == null) {
           stmt.bindNull(22);
         } else {
-          stmt.bindString(22, value.getQuestion2P7MalePWDS());
+          stmt.bindString(22, value.question2P7MalePWDS);
         }
-        if (value.getQuestion2P7FemalePWDS() == null) {
+        if (value.question2P7FemalePWDS == null) {
           stmt.bindNull(23);
         } else {
-          stmt.bindString(23, value.getQuestion2P7FemalePWDS());
+          stmt.bindString(23, value.question2P7FemalePWDS);
         }
-        if (value.getQuestion2P7Total() == null) {
+        if (value.question2P7Total == null) {
           stmt.bindNull(24);
         } else {
-          stmt.bindString(24, value.getQuestion2P7Total());
+          stmt.bindString(24, value.question2P7Total);
         }
-        if (value.getQuestion2DropMale() == null) {
+        if (value.question2DropMale == null) {
           stmt.bindNull(25);
         } else {
-          stmt.bindString(25, value.getQuestion2DropMale());
+          stmt.bindString(25, value.question2DropMale);
         }
-        if (value.getQuestion2DropFemale() == null) {
+        if (value.question2DropFemale == null) {
           stmt.bindNull(26);
         } else {
-          stmt.bindString(26, value.getQuestion2DropFemale());
+          stmt.bindString(26, value.question2DropFemale);
         }
-        if (value.getQuestion2DropMalePWDS() == null) {
+        if (value.question2DropMalePWDS == null) {
           stmt.bindNull(27);
         } else {
-          stmt.bindString(27, value.getQuestion2DropMalePWDS());
+          stmt.bindString(27, value.question2DropMalePWDS);
         }
-        if (value.getQuestion2DropFemalePWDS() == null) {
+        if (value.question2DropFemalePWDS == null) {
           stmt.bindNull(28);
         } else {
-          stmt.bindString(28, value.getQuestion2DropFemalePWDS());
+          stmt.bindString(28, value.question2DropFemalePWDS);
         }
-        if (value.getQuestion2DropTotal() == null) {
+        if (value.question2DropTotal == null) {
           stmt.bindNull(29);
         } else {
-          stmt.bindString(29, value.getQuestion2DropTotal());
+          stmt.bindString(29, value.question2DropTotal);
         }
-        if (value.getQuestion21Reason() == null) {
+        if (value.question21Reason == null) {
           stmt.bindNull(30);
         } else {
-          stmt.bindString(30, value.getQuestion21Reason());
+          stmt.bindString(30, value.question21Reason);
         }
-        if (value.getQuestion3GrantApprovedBudget() == null) {
+        if (value.question3GrantApprovedBudget == null) {
           stmt.bindNull(31);
         } else {
-          stmt.bindString(31, value.getQuestion3GrantApprovedBudget());
+          stmt.bindString(31, value.question3GrantApprovedBudget);
         }
-        if (value.getQuestion3GrantBudgetReleased() == null) {
+        if (value.question3GrantBudgetReleased == null) {
           stmt.bindNull(32);
         } else {
-          stmt.bindString(32, value.getQuestion3GrantBudgetReleased());
+          stmt.bindString(32, value.question3GrantBudgetReleased);
         }
-        if (value.getQuestion3GrantDateReceived() == null) {
+        if (value.question3GrantDateReceived == null) {
           stmt.bindNull(33);
         } else {
-          stmt.bindString(33, value.getQuestion3GrantDateReceived());
+          stmt.bindString(33, value.question3GrantDateReceived);
         }
-        if (value.getQuestion3GrantDateWithdrawn() == null) {
+        if (value.question3GrantDateWithdrawn == null) {
           stmt.bindNull(34);
         } else {
-          stmt.bindString(34, value.getQuestion3GrantDateWithdrawn());
+          stmt.bindString(34, value.question3GrantDateWithdrawn);
         }
-        if (value.getQuestion3SFGApprovedBudget() == null) {
+        if (value.question3SFGApprovedBudget == null) {
           stmt.bindNull(35);
         } else {
-          stmt.bindString(35, value.getQuestion3SFGApprovedBudget());
+          stmt.bindString(35, value.question3SFGApprovedBudget);
         }
-        if (value.getQuestion3SFGBudgetReleased() == null) {
+        if (value.question3SFGBudgetReleased == null) {
           stmt.bindNull(36);
         } else {
-          stmt.bindString(36, value.getQuestion3SFGBudgetReleased());
+          stmt.bindString(36, value.question3SFGBudgetReleased);
         }
-        if (value.getQuestion3SFGDateReceived() == null) {
+        if (value.question3SFGDateReceived == null) {
           stmt.bindNull(37);
         } else {
-          stmt.bindString(37, value.getQuestion3SFGDateReceived());
+          stmt.bindString(37, value.question3SFGDateReceived);
         }
-        if (value.getQuestion3SFGDateWithdrawn() == null) {
+        if (value.question3SFGDateWithdrawn == null) {
           stmt.bindNull(38);
         } else {
-          stmt.bindString(38, value.getQuestion3SFGDateWithdrawn());
+          stmt.bindString(38, value.question3SFGDateWithdrawn);
         }
-        if (value.getQuestion31Display() == null) {
+        if (value.question31Display == null) {
           stmt.bindNull(39);
         } else {
-          stmt.bindString(39, value.getQuestion31Display());
+          stmt.bindString(39, value.question31Display);
         }
-        if (value.getQuestion32Period() == null) {
+        if (value.question32Period == null) {
           stmt.bindNull(40);
         } else {
-          stmt.bindString(40, value.getQuestion32Period());
+          stmt.bindString(40, value.question32Period);
         }
-        if (value.getQuestion4Grade1Male() == null) {
+        if (value.question4Grade1Male == null) {
           stmt.bindNull(41);
         } else {
-          stmt.bindString(41, value.getQuestion4Grade1Male());
+          stmt.bindString(41, value.question4Grade1Male);
         }
-        if (value.getQuestion4Grade1Female() == null) {
+        if (value.question4Grade1Female == null) {
           stmt.bindNull(42);
         } else {
-          stmt.bindString(42, value.getQuestion4Grade1Female());
+          stmt.bindString(42, value.question4Grade1Female);
         }
-        if (value.getQuestion4Grade2Male() == null) {
+        if (value.question4Grade2Male == null) {
           stmt.bindNull(43);
         } else {
-          stmt.bindString(43, value.getQuestion4Grade2Male());
+          stmt.bindString(43, value.question4Grade2Male);
         }
-        if (value.getQuestion4Grade2Female() == null) {
+        if (value.question4Grade2Female == null) {
           stmt.bindNull(44);
         } else {
-          stmt.bindString(44, value.getQuestion4Grade2Female());
+          stmt.bindString(44, value.question4Grade2Female);
         }
-        if (value.getQuestion4Grade3Male() == null) {
+        if (value.question4Grade3Male == null) {
           stmt.bindNull(45);
         } else {
-          stmt.bindString(45, value.getQuestion4Grade3Male());
+          stmt.bindString(45, value.question4Grade3Male);
         }
-        if (value.getQuestion4Grade3Female() == null) {
+        if (value.question4Grade3Female == null) {
           stmt.bindNull(46);
         } else {
-          stmt.bindString(46, value.getQuestion4Grade3Female());
+          stmt.bindString(46, value.question4Grade3Female);
         }
-        if (value.getQuestion4GradeOtherMale() == null) {
+        if (value.question4GradeOtherMale == null) {
           stmt.bindNull(47);
         } else {
-          stmt.bindString(47, value.getQuestion4GradeOtherMale());
+          stmt.bindString(47, value.question4GradeOtherMale);
         }
-        if (value.getQuestion4GradeOtherFemale() == null) {
+        if (value.question4GradeOtherFemale == null) {
           stmt.bindNull(48);
         } else {
-          stmt.bindString(48, value.getQuestion4GradeOtherFemale());
+          stmt.bindString(48, value.question4GradeOtherFemale);
         }
-        if (value.getQuestion41Performance() == null) {
+        if (value.question41Performance == null) {
           stmt.bindNull(49);
         } else {
-          stmt.bindString(49, value.getQuestion41Performance());
+          stmt.bindString(49, value.question41Performance);
         }
-        if (value.getQuestion42Reason() == null) {
+        if (value.question42Reason == null) {
           stmt.bindNull(50);
         } else {
-          stmt.bindString(50, value.getQuestion42Reason());
+          stmt.bindString(50, value.question42Reason);
         }
         final int _tmp;
-        _tmp = value.isQuestion5ToiletNoOfBlocks() ? 1 : 0;
+        _tmp = value.question5ToiletNoOfBlocks ? 1 : 0;
         stmt.bindLong(51, _tmp);
         final int _tmp_1;
-        _tmp_1 = value.isQuestion5ToiletNoOfStances() ? 1 : 0;
+        _tmp_1 = value.question5ToiletNoOfStances ? 1 : 0;
         stmt.bindLong(52, _tmp_1);
         final int _tmp_2;
-        _tmp_2 = value.isQuestion5ToiletPupilMaleStances() ? 1 : 0;
+        _tmp_2 = value.question5ToiletPupilMaleStances ? 1 : 0;
         stmt.bindLong(53, _tmp_2);
         final int _tmp_3;
-        _tmp_3 = value.isQuestion5ToiletPupilFemaleStances() ? 1 : 0;
+        _tmp_3 = value.question5ToiletPupilFemaleStances ? 1 : 0;
         stmt.bindLong(54, _tmp_3);
         final int _tmp_4;
-        _tmp_4 = value.isQuestion5ToiletTeacherMaleStance() ? 1 : 0;
+        _tmp_4 = value.question5ToiletTeacherMaleStance ? 1 : 0;
         stmt.bindLong(55, _tmp_4);
         final int _tmp_5;
-        _tmp_5 = value.isQuestion5ToiletTeacherMFemaleStance() ? 1 : 0;
+        _tmp_5 = value.question5ToiletTeacherMFemaleStance ? 1 : 0;
         stmt.bindLong(56, _tmp_5);
         final int _tmp_6;
-        _tmp_6 = value.isQuestion5ToiletTeacherMixedStance() ? 1 : 0;
+        _tmp_6 = value.question5ToiletTeacherMixedStance ? 1 : 0;
         stmt.bindLong(57, _tmp_6);
         final int _tmp_7;
-        _tmp_7 = value.isQuestion5ToiletFuncFunctional() ? 1 : 0;
+        _tmp_7 = value.question5ToiletFuncFunctional ? 1 : 0;
         stmt.bindLong(58, _tmp_7);
         final int _tmp_8;
-        _tmp_8 = value.isQuestion5ToiletFuncNone() ? 1 : 0;
+        _tmp_8 = value.question5ToiletFuncNone ? 1 : 0;
         stmt.bindLong(59, _tmp_8);
         final int _tmp_9;
-        _tmp_9 = value.isQuestion5LatrineNoOfBlocks() ? 1 : 0;
+        _tmp_9 = value.question5LatrineNoOfBlocks ? 1 : 0;
         stmt.bindLong(60, _tmp_9);
         final int _tmp_10;
-        _tmp_10 = value.isQuestion5LatrineNoOfStances() ? 1 : 0;
+        _tmp_10 = value.question5LatrineNoOfStances ? 1 : 0;
         stmt.bindLong(61, _tmp_10);
         final int _tmp_11;
-        _tmp_11 = value.isQuestion5LatrinePupilMaleStances() ? 1 : 0;
+        _tmp_11 = value.question5LatrinePupilMaleStances ? 1 : 0;
         stmt.bindLong(62, _tmp_11);
         final int _tmp_12;
-        _tmp_12 = value.isQuestion5LatrinePupilFemaleStances() ? 1 : 0;
+        _tmp_12 = value.question5LatrinePupilFemaleStances ? 1 : 0;
         stmt.bindLong(63, _tmp_12);
         final int _tmp_13;
-        _tmp_13 = value.isQuestion5LatrineTeacherMaleStance() ? 1 : 0;
+        _tmp_13 = value.question5LatrineTeacherMaleStance ? 1 : 0;
         stmt.bindLong(64, _tmp_13);
         final int _tmp_14;
-        _tmp_14 = value.isQuestion5LatrineTeacherMFemaleStance() ? 1 : 0;
+        _tmp_14 = value.question5LatrineTeacherMFemaleStance ? 1 : 0;
         stmt.bindLong(65, _tmp_14);
         final int _tmp_15;
-        _tmp_15 = value.isQuestion5LatrineTeacherMixedStance() ? 1 : 0;
+        _tmp_15 = value.question5LatrineTeacherMixedStance ? 1 : 0;
         stmt.bindLong(66, _tmp_15);
         final int _tmp_16;
-        _tmp_16 = value.isQuestion5LatrineFuncFunctional() ? 1 : 0;
+        _tmp_16 = value.question5LatrineFuncFunctional ? 1 : 0;
         stmt.bindLong(67, _tmp_16);
         final int _tmp_17;
-        _tmp_17 = value.isQuestion5LatrineFuncNone() ? 1 : 0;
+        _tmp_17 = value.question5LatrineFuncNone ? 1 : 0;
         stmt.bindLong(68, _tmp_17);
         final int _tmp_18;
-        _tmp_18 = value.isQuestion5VIPNoOfBlocks() ? 1 : 0;
+        _tmp_18 = value.question5VIPNoOfBlocks ? 1 : 0;
         stmt.bindLong(69, _tmp_18);
         final int _tmp_19;
-        _tmp_19 = value.isQuestion5VIPNoOfStances() ? 1 : 0;
+        _tmp_19 = value.question5VIPNoOfStances ? 1 : 0;
         stmt.bindLong(70, _tmp_19);
         final int _tmp_20;
-        _tmp_20 = value.isQuestion5VIPPupilMaleStances() ? 1 : 0;
+        _tmp_20 = value.question5VIPPupilMaleStances ? 1 : 0;
         stmt.bindLong(71, _tmp_20);
         final int _tmp_21;
-        _tmp_21 = value.isQuestion5VIPePupilFemaleStances() ? 1 : 0;
+        _tmp_21 = value.question5VIPePupilFemaleStances ? 1 : 0;
         stmt.bindLong(72, _tmp_21);
         final int _tmp_22;
-        _tmp_22 = value.isQuestion5VIPTeacherMaleStance() ? 1 : 0;
+        _tmp_22 = value.question5VIPTeacherMaleStance ? 1 : 0;
         stmt.bindLong(73, _tmp_22);
         final int _tmp_23;
-        _tmp_23 = value.isQuestion5VIPTeacherMFemaleStance() ? 1 : 0;
+        _tmp_23 = value.question5VIPTeacherMFemaleStance ? 1 : 0;
         stmt.bindLong(74, _tmp_23);
         final int _tmp_24;
-        _tmp_24 = value.isQuestion5VIPTeacherMixedStance() ? 1 : 0;
+        _tmp_24 = value.question5VIPTeacherMixedStance ? 1 : 0;
         stmt.bindLong(75, _tmp_24);
         final int _tmp_25;
-        _tmp_25 = value.isQuestion5VIPFuncFunctional() ? 1 : 0;
+        _tmp_25 = value.question5VIPFuncFunctional ? 1 : 0;
         stmt.bindLong(76, _tmp_25);
         final int _tmp_26;
-        _tmp_26 = value.isQuestion5VIPFuncNone() ? 1 : 0;
+        _tmp_26 = value.question5VIPFuncNone ? 1 : 0;
         stmt.bindLong(77, _tmp_26);
         final int _tmp_27;
-        _tmp_27 = value.isQuestion5FCROOMNoOfBlocks() ? 1 : 0;
+        _tmp_27 = value.question5FCROOMNoOfBlocks ? 1 : 0;
         stmt.bindLong(78, _tmp_27);
         final int _tmp_28;
-        _tmp_28 = value.isQuestion5FCROOMNoOfStances() ? 1 : 0;
+        _tmp_28 = value.question5FCROOMNoOfStances ? 1 : 0;
         stmt.bindLong(79, _tmp_28);
         final int _tmp_29;
-        _tmp_29 = value.isQuestion5FCROOMPupilMaleStances() ? 1 : 0;
+        _tmp_29 = value.question5FCROOMPupilMaleStances ? 1 : 0;
         stmt.bindLong(80, _tmp_29);
         final int _tmp_30;
-        _tmp_30 = value.isQuestion5FCROOMPupilFemaleStances() ? 1 : 0;
+        _tmp_30 = value.question5FCROOMPupilFemaleStances ? 1 : 0;
         stmt.bindLong(81, _tmp_30);
         final int _tmp_31;
-        _tmp_31 = value.isQuestion5FCROOMTeacherMaleStance() ? 1 : 0;
+        _tmp_31 = value.question5FCROOMTeacherMaleStance ? 1 : 0;
         stmt.bindLong(82, _tmp_31);
         final int _tmp_32;
-        _tmp_32 = value.isQuestion5FCROOMTeacherMFemaleStance() ? 1 : 0;
+        _tmp_32 = value.question5FCROOMTeacherMFemaleStance ? 1 : 0;
         stmt.bindLong(83, _tmp_32);
         final int _tmp_33;
-        _tmp_33 = value.isQuestion5FCROOMTeacherMixedStance() ? 1 : 0;
+        _tmp_33 = value.question5FCROOMTeacherMixedStance ? 1 : 0;
         stmt.bindLong(84, _tmp_33);
         final int _tmp_34;
-        _tmp_34 = value.isQuestion5FCROOMFuncFunctional() ? 1 : 0;
+        _tmp_34 = value.question5FCROOMFuncFunctional ? 1 : 0;
         stmt.bindLong(85, _tmp_34);
         final int _tmp_35;
-        _tmp_35 = value.isQuestion5FCROOMFuncNone() ? 1 : 0;
+        _tmp_35 = value.question5FCROOMFuncNone ? 1 : 0;
         stmt.bindLong(86, _tmp_35);
         final int _tmp_36;
-        _tmp_36 = value.isQuestion5UFBNoOfBlocks() ? 1 : 0;
+        _tmp_36 = value.question5UFBNoOfBlocks ? 1 : 0;
         stmt.bindLong(87, _tmp_36);
         final int _tmp_37;
-        _tmp_37 = value.isQuestion5UFBNoOfStances() ? 1 : 0;
+        _tmp_37 = value.question5UFBNoOfStances ? 1 : 0;
         stmt.bindLong(88, _tmp_37);
         final int _tmp_38;
-        _tmp_38 = value.isQuestion5UFBPupilMaleStances() ? 1 : 0;
+        _tmp_38 = value.question5UFBPupilMaleStances ? 1 : 0;
         stmt.bindLong(89, _tmp_38);
         final int _tmp_39;
-        _tmp_39 = value.isQuestion5UFBPupilFemaleStances() ? 1 : 0;
+        _tmp_39 = value.question5UFBPupilFemaleStances ? 1 : 0;
         stmt.bindLong(90, _tmp_39);
         final int _tmp_40;
-        _tmp_40 = value.isQuestion5UFBTeacherMaleStance() ? 1 : 0;
+        _tmp_40 = value.question5UFBTeacherMaleStance ? 1 : 0;
         stmt.bindLong(91, _tmp_40);
         final int _tmp_41;
-        _tmp_41 = value.isQuestion5UFBTeacherMFemaleStance() ? 1 : 0;
+        _tmp_41 = value.question5UFBTeacherMFemaleStance ? 1 : 0;
         stmt.bindLong(92, _tmp_41);
         final int _tmp_42;
-        _tmp_42 = value.isQuestion5UFBTeacherMixedStance() ? 1 : 0;
+        _tmp_42 = value.question5UFBTeacherMixedStance ? 1 : 0;
         stmt.bindLong(93, _tmp_42);
         final int _tmp_43;
-        _tmp_43 = value.isQuestion5UFBFuncFunctional() ? 1 : 0;
+        _tmp_43 = value.question5UFBFuncFunctional ? 1 : 0;
         stmt.bindLong(94, _tmp_43);
         final int _tmp_44;
-        _tmp_44 = value.isQuestion5UFBFuncNone() ? 1 : 0;
+        _tmp_44 = value.question5UFBFuncNone ? 1 : 0;
         stmt.bindLong(95, _tmp_44);
         final int _tmp_45;
-        _tmp_45 = value.isQuestion51Latrine() ? 1 : 0;
+        _tmp_45 = value.question51Latrine ? 1 : 0;
         stmt.bindLong(96, _tmp_45);
-        if (value.getQuestion52Ramps() == null) {
+        if (value.question52Ramps == null) {
           stmt.bindNull(97);
         } else {
-          stmt.bindString(97, value.getQuestion52Ramps());
+          stmt.bindString(97, value.question52Ramps);
         }
-        if (value.getQuestion52PWD() == null) {
+        if (value.question52PWD == null) {
           stmt.bindNull(98);
         } else {
-          stmt.bindString(98, value.getQuestion52PWD());
+          stmt.bindString(98, value.question52PWD);
         }
-        if (value.getQuestion52None() == null) {
+        if (value.question52None == null) {
           stmt.bindNull(99);
         } else {
-          stmt.bindString(99, value.getQuestion52None());
+          stmt.bindString(99, value.question52None);
         }
-        if (value.getQuestion52OtherSpec() == null) {
+        if (value.question52OtherSpec == null) {
           stmt.bindNull(100);
         } else {
-          stmt.bindString(100, value.getQuestion52OtherSpec());
+          stmt.bindString(100, value.question52OtherSpec);
         }
         final int _tmp_46;
-        _tmp_46 = value.isQuestion53YesNo() ? 1 : 0;
+        _tmp_46 = value.question53YesNo ? 1 : 0;
         stmt.bindLong(101, _tmp_46);
-        if (value.getQuestion53Reason() == null) {
+        if (value.question53Reason == null) {
           stmt.bindNull(102);
         } else {
-          stmt.bindString(102, value.getQuestion53Reason());
+          stmt.bindString(102, value.question53Reason);
         }
-        if (value.getQuestion61Number() == null) {
+        if (value.question61Number == null) {
           stmt.bindNull(103);
         } else {
-          stmt.bindString(103, value.getQuestion61Number());
+          stmt.bindString(103, value.question61Number);
         }
-        if (value.getQuestion62Number() == null) {
+        if (value.question62Number == null) {
           stmt.bindNull(104);
         } else {
-          stmt.bindString(104, value.getQuestion62Number());
+          stmt.bindString(104, value.question62Number);
         }
-        if (value.getQuestion63Number() == null) {
+        if (value.question63Number == null) {
           stmt.bindNull(105);
         } else {
-          stmt.bindString(105, value.getQuestion63Number());
+          stmt.bindString(105, value.question63Number);
         }
-        if (value.getQuestion7EnrolledMaleTeachers() == null) {
+        if (value.question7EnrolledMaleTeachers == null) {
           stmt.bindNull(106);
         } else {
-          stmt.bindString(106, value.getQuestion7EnrolledMaleTeachers());
+          stmt.bindString(106, value.question7EnrolledMaleTeachers);
         }
-        if (value.getQuestion7EnrolledFeMaleTeachers() == null) {
+        if (value.question7EnrolledFeMaleTeachers == null) {
           stmt.bindNull(107);
         } else {
-          stmt.bindString(107, value.getQuestion7EnrolledFeMaleTeachers());
+          stmt.bindString(107, value.question7EnrolledFeMaleTeachers);
         }
-        if (value.getQuestion7EnrolledMaleTeachersPresentAtVisit() == null) {
+        if (value.question7EnrolledMaleTeachersPresentAtVisit == null) {
           stmt.bindNull(108);
         } else {
-          stmt.bindString(108, value.getQuestion7EnrolledMaleTeachersPresentAtVisit());
+          stmt.bindString(108, value.question7EnrolledMaleTeachersPresentAtVisit);
         }
-        if (value.getQuestion7EnrolledFeMaleTeachersPresentAtTimeOfVisit() == null) {
+        if (value.question7EnrolledFeMaleTeachersPresentAtTimeOfVisit == null) {
           stmt.bindNull(109);
         } else {
-          stmt.bindString(109, value.getQuestion7EnrolledFeMaleTeachersPresentAtTimeOfVisit());
+          stmt.bindString(109, value.question7EnrolledFeMaleTeachersPresentAtTimeOfVisit);
         }
-        if (value.getQuestion7TotalNumOfTeachers() == null) {
+        if (value.question7TotalNumOfTeachers == null) {
           stmt.bindNull(110);
         } else {
-          stmt.bindString(110, value.getQuestion7TotalNumOfTeachers());
+          stmt.bindString(110, value.question7TotalNumOfTeachers);
         }
-        if (value.getQuestion71PupilRatio() == null) {
+        if (value.question71PupilRatio == null) {
           stmt.bindNull(111);
         } else {
-          stmt.bindString(111, value.getQuestion71PupilRatio());
+          stmt.bindString(111, value.question71PupilRatio);
         }
         final int _tmp_47;
-        _tmp_47 = value.isQuestion72WomanTeacher() ? 1 : 0;
+        _tmp_47 = value.question72WomanTeacher ? 1 : 0;
         stmt.bindLong(112, _tmp_47);
-        if (value.getQuestion73Question() == null) {
+        if (value.question73Question == null) {
           stmt.bindNull(113);
         } else {
-          stmt.bindString(113, value.getQuestion73Question());
+          stmt.bindString(113, value.question73Question);
         }
-        if (value.getQuestion81Inspector() == null) {
+        if (value.question81Inspector == null) {
           stmt.bindNull(114);
         } else {
-          stmt.bindString(114, value.getQuestion81Inspector());
+          stmt.bindString(114, value.question81Inspector);
         }
-        if (value.getQuestion82InspectorVisit() == null) {
+        if (value.question82InspectorVisit == null) {
           stmt.bindNull(115);
         } else {
-          stmt.bindString(115, value.getQuestion82InspectorVisit());
+          stmt.bindString(115, value.question82InspectorVisit);
         }
         final int _tmp_48;
-        _tmp_48 = value.isQuestion83Committee() ? 1 : 0;
+        _tmp_48 = value.question83Committee ? 1 : 0;
         stmt.bindLong(116, _tmp_48);
-        if (value.getQuestion83Meet() == null) {
+        if (value.question83Meet == null) {
           stmt.bindNull(117);
         } else {
-          stmt.bindString(117, value.getQuestion83Meet());
+          stmt.bindString(117, value.question83Meet);
         }
-        if (value.getQuestion84SchoolMGT() == null) {
+        if (value.question84SchoolMGT == null) {
           stmt.bindNull(118);
         } else {
-          stmt.bindString(118, value.getQuestion84SchoolMGT());
+          stmt.bindString(118, value.question84SchoolMGT);
         }
-        if (value.getQuestion8OtherObservations() == null) {
+        if (value.question8OtherObservations == null) {
           stmt.bindNull(119);
         } else {
-          stmt.bindString(119, value.getQuestion8OtherObservations());
+          stmt.bindString(119, value.question8OtherObservations);
         }
         final int _tmp_49;
-        _tmp_49 = value.isLocallyStored() ? 1 : 0;
+        _tmp_49 = value.locallyStored ? 1 : 0;
         stmt.bindLong(120, _tmp_49);
       }
     };
@@ -561,7 +561,7 @@ public final class EducationQuestionDao_Impl implements EducationQuestionDao {
           final int _cursorIndexOfSubCounty = CursorUtil.getColumnIndexOrThrow(_cursor, "sub_county");
           final int _cursorIndexOfFullname = CursorUtil.getColumnIndexOrThrow(_cursor, "full_name");
           final int _cursorIndexOfTel = CursorUtil.getColumnIndexOrThrow(_cursor, "telephone");
-          final int _cursorIndexOfQuestion1 = CursorUtil.getColumnIndexOrThrow(_cursor, "q1");
+          final int _cursorIndexOfQuestion1SchoolName = CursorUtil.getColumnIndexOrThrow(_cursor, "q1");
           final int _cursorIndexOfQuestion2TeacherMale = CursorUtil.getColumnIndexOrThrow(_cursor, "q2_t_m");
           final int _cursorIndexOfQuestion2TeacherFemale = CursorUtil.getColumnIndexOrThrow(_cursor, "q2_t_f");
           final int _cursorIndexOfQuestion2TeacherMalePWDS = CursorUtil.getColumnIndexOrThrow(_cursor, "q2_t_m_pwd");
@@ -676,349 +676,227 @@ public final class EducationQuestionDao_Impl implements EducationQuestionDao {
           final List<EducationQuestion> _result = new ArrayList<EducationQuestion>(_cursor.getCount());
           while(_cursor.moveToNext()) {
             final EducationQuestion _item;
-            final String _tmpFinancialYear;
-            _tmpFinancialYear = _cursor.getString(_cursorIndexOfFinancialYear);
-            final String _tmpDate;
-            _tmpDate = _cursor.getString(_cursorIndexOfDate);
-            final String _tmpDistrict;
-            _tmpDistrict = _cursor.getString(_cursorIndexOfDistrict);
-            final String _tmpParish;
-            _tmpParish = _cursor.getString(_cursorIndexOfParish);
-            final String _tmpSub_county;
-            _tmpSub_county = _cursor.getString(_cursorIndexOfSubCounty);
-            final String _tmpFullname;
-            _tmpFullname = _cursor.getString(_cursorIndexOfFullname);
-            final String _tmpTel;
-            _tmpTel = _cursor.getString(_cursorIndexOfTel);
-            final String _tmpQuestion1;
-            _tmpQuestion1 = _cursor.getString(_cursorIndexOfQuestion1);
-            final String _tmpQuestion2TeacherMale;
-            _tmpQuestion2TeacherMale = _cursor.getString(_cursorIndexOfQuestion2TeacherMale);
-            final String _tmpQuestion2TeacherFemale;
-            _tmpQuestion2TeacherFemale = _cursor.getString(_cursorIndexOfQuestion2TeacherFemale);
-            final String _tmpQuestion2TeacherMalePWDS;
-            _tmpQuestion2TeacherMalePWDS = _cursor.getString(_cursorIndexOfQuestion2TeacherMalePWDS);
-            final String _tmpQuestion2TeacherFemalePWDS;
-            _tmpQuestion2TeacherFemalePWDS = _cursor.getString(_cursorIndexOfQuestion2TeacherFemalePWDS);
-            final String _tmpQuestion2TeacherTotal;
-            _tmpQuestion2TeacherTotal = _cursor.getString(_cursorIndexOfQuestion2TeacherTotal);
-            final String _tmpQuestion2PupilMale;
-            _tmpQuestion2PupilMale = _cursor.getString(_cursorIndexOfQuestion2PupilMale);
-            final String _tmpQuestion2PupilFemale;
-            _tmpQuestion2PupilFemale = _cursor.getString(_cursorIndexOfQuestion2PupilFemale);
-            final String _tmpQuestion2PupilMalePWDS;
-            _tmpQuestion2PupilMalePWDS = _cursor.getString(_cursorIndexOfQuestion2PupilMalePWDS);
-            final String _tmpQuestion2PupilFemalePWDS;
-            _tmpQuestion2PupilFemalePWDS = _cursor.getString(_cursorIndexOfQuestion2PupilFemalePWDS);
-            final String _tmpQuestion2PupilTotal;
-            _tmpQuestion2PupilTotal = _cursor.getString(_cursorIndexOfQuestion2PupilTotal);
-            final String _tmpQuestion2P7Male;
-            _tmpQuestion2P7Male = _cursor.getString(_cursorIndexOfQuestion2P7Male);
-            final String _tmpQuestion2P7Female;
-            _tmpQuestion2P7Female = _cursor.getString(_cursorIndexOfQuestion2P7Female);
-            final String _tmpQuestion2P7MalePWDS;
-            _tmpQuestion2P7MalePWDS = _cursor.getString(_cursorIndexOfQuestion2P7MalePWDS);
-            final String _tmpQuestion2P7FemalePWDS;
-            _tmpQuestion2P7FemalePWDS = _cursor.getString(_cursorIndexOfQuestion2P7FemalePWDS);
-            final String _tmpQuestion2P7Total;
-            _tmpQuestion2P7Total = _cursor.getString(_cursorIndexOfQuestion2P7Total);
-            final String _tmpQuestion2DropMale;
-            _tmpQuestion2DropMale = _cursor.getString(_cursorIndexOfQuestion2DropMale);
-            final String _tmpQuestion2DropFemale;
-            _tmpQuestion2DropFemale = _cursor.getString(_cursorIndexOfQuestion2DropFemale);
-            final String _tmpQuestion2DropMalePWDS;
-            _tmpQuestion2DropMalePWDS = _cursor.getString(_cursorIndexOfQuestion2DropMalePWDS);
-            final String _tmpQuestion2DropFemalePWDS;
-            _tmpQuestion2DropFemalePWDS = _cursor.getString(_cursorIndexOfQuestion2DropFemalePWDS);
-            final String _tmpQuestion2DropTotal;
-            _tmpQuestion2DropTotal = _cursor.getString(_cursorIndexOfQuestion2DropTotal);
-            final String _tmpQuestion21Reason;
-            _tmpQuestion21Reason = _cursor.getString(_cursorIndexOfQuestion21Reason);
-            final String _tmpQuestion3GrantApprovedBudget;
-            _tmpQuestion3GrantApprovedBudget = _cursor.getString(_cursorIndexOfQuestion3GrantApprovedBudget);
-            final String _tmpQuestion3GrantBudgetReleased;
-            _tmpQuestion3GrantBudgetReleased = _cursor.getString(_cursorIndexOfQuestion3GrantBudgetReleased);
-            final String _tmpQuestion3GrantDateReceived;
-            _tmpQuestion3GrantDateReceived = _cursor.getString(_cursorIndexOfQuestion3GrantDateReceived);
-            final String _tmpQuestion3GrantDateWithdrawn;
-            _tmpQuestion3GrantDateWithdrawn = _cursor.getString(_cursorIndexOfQuestion3GrantDateWithdrawn);
-            final String _tmpQuestion3SFGApprovedBudget;
-            _tmpQuestion3SFGApprovedBudget = _cursor.getString(_cursorIndexOfQuestion3SFGApprovedBudget);
-            final String _tmpQuestion3SFGBudgetReleased;
-            _tmpQuestion3SFGBudgetReleased = _cursor.getString(_cursorIndexOfQuestion3SFGBudgetReleased);
-            final String _tmpQuestion3SFGDateReceived;
-            _tmpQuestion3SFGDateReceived = _cursor.getString(_cursorIndexOfQuestion3SFGDateReceived);
-            final String _tmpQuestion3SFGDateWithdrawn;
-            _tmpQuestion3SFGDateWithdrawn = _cursor.getString(_cursorIndexOfQuestion3SFGDateWithdrawn);
-            final String _tmpQuestion31Display;
-            _tmpQuestion31Display = _cursor.getString(_cursorIndexOfQuestion31Display);
-            final String _tmpQuestion32Period;
-            _tmpQuestion32Period = _cursor.getString(_cursorIndexOfQuestion32Period);
-            final String _tmpQuestion4Grade1Male;
-            _tmpQuestion4Grade1Male = _cursor.getString(_cursorIndexOfQuestion4Grade1Male);
-            final String _tmpQuestion4Grade1Female;
-            _tmpQuestion4Grade1Female = _cursor.getString(_cursorIndexOfQuestion4Grade1Female);
-            final String _tmpQuestion4Grade2Male;
-            _tmpQuestion4Grade2Male = _cursor.getString(_cursorIndexOfQuestion4Grade2Male);
-            final String _tmpQuestion4Grade2Female;
-            _tmpQuestion4Grade2Female = _cursor.getString(_cursorIndexOfQuestion4Grade2Female);
-            final String _tmpQuestion4Grade3Male;
-            _tmpQuestion4Grade3Male = _cursor.getString(_cursorIndexOfQuestion4Grade3Male);
-            final String _tmpQuestion4Grade3Female;
-            _tmpQuestion4Grade3Female = _cursor.getString(_cursorIndexOfQuestion4Grade3Female);
-            final String _tmpQuestion4GradeOtherMale;
-            _tmpQuestion4GradeOtherMale = _cursor.getString(_cursorIndexOfQuestion4GradeOtherMale);
-            final String _tmpQuestion4GradeOtherFemale;
-            _tmpQuestion4GradeOtherFemale = _cursor.getString(_cursorIndexOfQuestion4GradeOtherFemale);
-            final String _tmpQuestion41Performance;
-            _tmpQuestion41Performance = _cursor.getString(_cursorIndexOfQuestion41Performance);
-            final String _tmpQuestion42Reason;
-            _tmpQuestion42Reason = _cursor.getString(_cursorIndexOfQuestion42Reason);
-            final boolean _tmpQuestion5ToiletNoOfBlocks;
+            _item = new EducationQuestion();
+            _item.id = _cursor.getInt(_cursorIndexOfId);
+            _item.financialYear = _cursor.getString(_cursorIndexOfFinancialYear);
+            _item.date = _cursor.getString(_cursorIndexOfDate);
+            _item.district = _cursor.getString(_cursorIndexOfDistrict);
+            _item.parish = _cursor.getString(_cursorIndexOfParish);
+            _item.sub_county = _cursor.getString(_cursorIndexOfSubCounty);
+            _item.fullname = _cursor.getString(_cursorIndexOfFullname);
+            _item.tel = _cursor.getString(_cursorIndexOfTel);
+            _item.question1SchoolName = _cursor.getString(_cursorIndexOfQuestion1SchoolName);
+            _item.question2TeacherMale = _cursor.getString(_cursorIndexOfQuestion2TeacherMale);
+            _item.question2TeacherFemale = _cursor.getString(_cursorIndexOfQuestion2TeacherFemale);
+            _item.question2TeacherMalePWDS = _cursor.getString(_cursorIndexOfQuestion2TeacherMalePWDS);
+            _item.question2TeacherFemalePWDS = _cursor.getString(_cursorIndexOfQuestion2TeacherFemalePWDS);
+            _item.question2TeacherTotal = _cursor.getString(_cursorIndexOfQuestion2TeacherTotal);
+            _item.question2PupilMale = _cursor.getString(_cursorIndexOfQuestion2PupilMale);
+            _item.question2PupilFemale = _cursor.getString(_cursorIndexOfQuestion2PupilFemale);
+            _item.question2PupilMalePWDS = _cursor.getString(_cursorIndexOfQuestion2PupilMalePWDS);
+            _item.question2PupilFemalePWDS = _cursor.getString(_cursorIndexOfQuestion2PupilFemalePWDS);
+            _item.question2PupilTotal = _cursor.getString(_cursorIndexOfQuestion2PupilTotal);
+            _item.question2P7Male = _cursor.getString(_cursorIndexOfQuestion2P7Male);
+            _item.question2P7Female = _cursor.getString(_cursorIndexOfQuestion2P7Female);
+            _item.question2P7MalePWDS = _cursor.getString(_cursorIndexOfQuestion2P7MalePWDS);
+            _item.question2P7FemalePWDS = _cursor.getString(_cursorIndexOfQuestion2P7FemalePWDS);
+            _item.question2P7Total = _cursor.getString(_cursorIndexOfQuestion2P7Total);
+            _item.question2DropMale = _cursor.getString(_cursorIndexOfQuestion2DropMale);
+            _item.question2DropFemale = _cursor.getString(_cursorIndexOfQuestion2DropFemale);
+            _item.question2DropMalePWDS = _cursor.getString(_cursorIndexOfQuestion2DropMalePWDS);
+            _item.question2DropFemalePWDS = _cursor.getString(_cursorIndexOfQuestion2DropFemalePWDS);
+            _item.question2DropTotal = _cursor.getString(_cursorIndexOfQuestion2DropTotal);
+            _item.question21Reason = _cursor.getString(_cursorIndexOfQuestion21Reason);
+            _item.question3GrantApprovedBudget = _cursor.getString(_cursorIndexOfQuestion3GrantApprovedBudget);
+            _item.question3GrantBudgetReleased = _cursor.getString(_cursorIndexOfQuestion3GrantBudgetReleased);
+            _item.question3GrantDateReceived = _cursor.getString(_cursorIndexOfQuestion3GrantDateReceived);
+            _item.question3GrantDateWithdrawn = _cursor.getString(_cursorIndexOfQuestion3GrantDateWithdrawn);
+            _item.question3SFGApprovedBudget = _cursor.getString(_cursorIndexOfQuestion3SFGApprovedBudget);
+            _item.question3SFGBudgetReleased = _cursor.getString(_cursorIndexOfQuestion3SFGBudgetReleased);
+            _item.question3SFGDateReceived = _cursor.getString(_cursorIndexOfQuestion3SFGDateReceived);
+            _item.question3SFGDateWithdrawn = _cursor.getString(_cursorIndexOfQuestion3SFGDateWithdrawn);
+            _item.question31Display = _cursor.getString(_cursorIndexOfQuestion31Display);
+            _item.question32Period = _cursor.getString(_cursorIndexOfQuestion32Period);
+            _item.question4Grade1Male = _cursor.getString(_cursorIndexOfQuestion4Grade1Male);
+            _item.question4Grade1Female = _cursor.getString(_cursorIndexOfQuestion4Grade1Female);
+            _item.question4Grade2Male = _cursor.getString(_cursorIndexOfQuestion4Grade2Male);
+            _item.question4Grade2Female = _cursor.getString(_cursorIndexOfQuestion4Grade2Female);
+            _item.question4Grade3Male = _cursor.getString(_cursorIndexOfQuestion4Grade3Male);
+            _item.question4Grade3Female = _cursor.getString(_cursorIndexOfQuestion4Grade3Female);
+            _item.question4GradeOtherMale = _cursor.getString(_cursorIndexOfQuestion4GradeOtherMale);
+            _item.question4GradeOtherFemale = _cursor.getString(_cursorIndexOfQuestion4GradeOtherFemale);
+            _item.question41Performance = _cursor.getString(_cursorIndexOfQuestion41Performance);
+            _item.question42Reason = _cursor.getString(_cursorIndexOfQuestion42Reason);
             final int _tmp;
             _tmp = _cursor.getInt(_cursorIndexOfQuestion5ToiletNoOfBlocks);
-            _tmpQuestion5ToiletNoOfBlocks = _tmp != 0;
-            final boolean _tmpQuestion5ToiletNoOfStances;
+            _item.question5ToiletNoOfBlocks = _tmp != 0;
             final int _tmp_1;
             _tmp_1 = _cursor.getInt(_cursorIndexOfQuestion5ToiletNoOfStances);
-            _tmpQuestion5ToiletNoOfStances = _tmp_1 != 0;
-            final boolean _tmpQuestion5ToiletPupilMaleStances;
+            _item.question5ToiletNoOfStances = _tmp_1 != 0;
             final int _tmp_2;
             _tmp_2 = _cursor.getInt(_cursorIndexOfQuestion5ToiletPupilMaleStances);
-            _tmpQuestion5ToiletPupilMaleStances = _tmp_2 != 0;
-            final boolean _tmpQuestion5ToiletPupilFemaleStances;
+            _item.question5ToiletPupilMaleStances = _tmp_2 != 0;
             final int _tmp_3;
             _tmp_3 = _cursor.getInt(_cursorIndexOfQuestion5ToiletPupilFemaleStances);
-            _tmpQuestion5ToiletPupilFemaleStances = _tmp_3 != 0;
-            final boolean _tmpQuestion5ToiletTeacherMaleStance;
+            _item.question5ToiletPupilFemaleStances = _tmp_3 != 0;
             final int _tmp_4;
             _tmp_4 = _cursor.getInt(_cursorIndexOfQuestion5ToiletTeacherMaleStance);
-            _tmpQuestion5ToiletTeacherMaleStance = _tmp_4 != 0;
-            final boolean _tmpQuestion5ToiletTeacherMFemaleStance;
+            _item.question5ToiletTeacherMaleStance = _tmp_4 != 0;
             final int _tmp_5;
             _tmp_5 = _cursor.getInt(_cursorIndexOfQuestion5ToiletTeacherMFemaleStance);
-            _tmpQuestion5ToiletTeacherMFemaleStance = _tmp_5 != 0;
-            final boolean _tmpQuestion5ToiletTeacherMixedStance;
+            _item.question5ToiletTeacherMFemaleStance = _tmp_5 != 0;
             final int _tmp_6;
             _tmp_6 = _cursor.getInt(_cursorIndexOfQuestion5ToiletTeacherMixedStance);
-            _tmpQuestion5ToiletTeacherMixedStance = _tmp_6 != 0;
-            final boolean _tmpQuestion5ToiletFuncFunctional;
+            _item.question5ToiletTeacherMixedStance = _tmp_6 != 0;
             final int _tmp_7;
             _tmp_7 = _cursor.getInt(_cursorIndexOfQuestion5ToiletFuncFunctional);
-            _tmpQuestion5ToiletFuncFunctional = _tmp_7 != 0;
-            final boolean _tmpQuestion5ToiletFuncNone;
+            _item.question5ToiletFuncFunctional = _tmp_7 != 0;
             final int _tmp_8;
             _tmp_8 = _cursor.getInt(_cursorIndexOfQuestion5ToiletFuncNone);
-            _tmpQuestion5ToiletFuncNone = _tmp_8 != 0;
-            final boolean _tmpQuestion5LatrineNoOfBlocks;
+            _item.question5ToiletFuncNone = _tmp_8 != 0;
             final int _tmp_9;
             _tmp_9 = _cursor.getInt(_cursorIndexOfQuestion5LatrineNoOfBlocks);
-            _tmpQuestion5LatrineNoOfBlocks = _tmp_9 != 0;
-            final boolean _tmpQuestion5LatrineNoOfStances;
+            _item.question5LatrineNoOfBlocks = _tmp_9 != 0;
             final int _tmp_10;
             _tmp_10 = _cursor.getInt(_cursorIndexOfQuestion5LatrineNoOfStances);
-            _tmpQuestion5LatrineNoOfStances = _tmp_10 != 0;
-            final boolean _tmpQuestion5LatrinePupilMaleStances;
+            _item.question5LatrineNoOfStances = _tmp_10 != 0;
             final int _tmp_11;
             _tmp_11 = _cursor.getInt(_cursorIndexOfQuestion5LatrinePupilMaleStances);
-            _tmpQuestion5LatrinePupilMaleStances = _tmp_11 != 0;
-            final boolean _tmpQuestion5LatrinePupilFemaleStances;
+            _item.question5LatrinePupilMaleStances = _tmp_11 != 0;
             final int _tmp_12;
             _tmp_12 = _cursor.getInt(_cursorIndexOfQuestion5LatrinePupilFemaleStances);
-            _tmpQuestion5LatrinePupilFemaleStances = _tmp_12 != 0;
-            final boolean _tmpQuestion5LatrineTeacherMaleStance;
+            _item.question5LatrinePupilFemaleStances = _tmp_12 != 0;
             final int _tmp_13;
             _tmp_13 = _cursor.getInt(_cursorIndexOfQuestion5LatrineTeacherMaleStance);
-            _tmpQuestion5LatrineTeacherMaleStance = _tmp_13 != 0;
-            final boolean _tmpQuestion5LatrineTeacherMFemaleStance;
+            _item.question5LatrineTeacherMaleStance = _tmp_13 != 0;
             final int _tmp_14;
             _tmp_14 = _cursor.getInt(_cursorIndexOfQuestion5LatrineTeacherMFemaleStance);
-            _tmpQuestion5LatrineTeacherMFemaleStance = _tmp_14 != 0;
-            final boolean _tmpQuestion5LatrineTeacherMixedStance;
+            _item.question5LatrineTeacherMFemaleStance = _tmp_14 != 0;
             final int _tmp_15;
             _tmp_15 = _cursor.getInt(_cursorIndexOfQuestion5LatrineTeacherMixedStance);
-            _tmpQuestion5LatrineTeacherMixedStance = _tmp_15 != 0;
-            final boolean _tmpQuestion5LatrineFuncFunctional;
+            _item.question5LatrineTeacherMixedStance = _tmp_15 != 0;
             final int _tmp_16;
             _tmp_16 = _cursor.getInt(_cursorIndexOfQuestion5LatrineFuncFunctional);
-            _tmpQuestion5LatrineFuncFunctional = _tmp_16 != 0;
-            final boolean _tmpQuestion5LatrineFuncNone;
+            _item.question5LatrineFuncFunctional = _tmp_16 != 0;
             final int _tmp_17;
             _tmp_17 = _cursor.getInt(_cursorIndexOfQuestion5LatrineFuncNone);
-            _tmpQuestion5LatrineFuncNone = _tmp_17 != 0;
-            final boolean _tmpQuestion5VIPNoOfBlocks;
+            _item.question5LatrineFuncNone = _tmp_17 != 0;
             final int _tmp_18;
             _tmp_18 = _cursor.getInt(_cursorIndexOfQuestion5VIPNoOfBlocks);
-            _tmpQuestion5VIPNoOfBlocks = _tmp_18 != 0;
-            final boolean _tmpQuestion5VIPNoOfStances;
+            _item.question5VIPNoOfBlocks = _tmp_18 != 0;
             final int _tmp_19;
             _tmp_19 = _cursor.getInt(_cursorIndexOfQuestion5VIPNoOfStances);
-            _tmpQuestion5VIPNoOfStances = _tmp_19 != 0;
-            final boolean _tmpQuestion5VIPPupilMaleStances;
+            _item.question5VIPNoOfStances = _tmp_19 != 0;
             final int _tmp_20;
             _tmp_20 = _cursor.getInt(_cursorIndexOfQuestion5VIPPupilMaleStances);
-            _tmpQuestion5VIPPupilMaleStances = _tmp_20 != 0;
-            final boolean _tmpQuestion5VIPePupilFemaleStances;
+            _item.question5VIPPupilMaleStances = _tmp_20 != 0;
             final int _tmp_21;
             _tmp_21 = _cursor.getInt(_cursorIndexOfQuestion5VIPePupilFemaleStances);
-            _tmpQuestion5VIPePupilFemaleStances = _tmp_21 != 0;
-            final boolean _tmpQuestion5VIPTeacherMaleStance;
+            _item.question5VIPePupilFemaleStances = _tmp_21 != 0;
             final int _tmp_22;
             _tmp_22 = _cursor.getInt(_cursorIndexOfQuestion5VIPTeacherMaleStance);
-            _tmpQuestion5VIPTeacherMaleStance = _tmp_22 != 0;
-            final boolean _tmpQuestion5VIPTeacherMFemaleStance;
+            _item.question5VIPTeacherMaleStance = _tmp_22 != 0;
             final int _tmp_23;
             _tmp_23 = _cursor.getInt(_cursorIndexOfQuestion5VIPTeacherMFemaleStance);
-            _tmpQuestion5VIPTeacherMFemaleStance = _tmp_23 != 0;
-            final boolean _tmpQuestion5VIPTeacherMixedStance;
+            _item.question5VIPTeacherMFemaleStance = _tmp_23 != 0;
             final int _tmp_24;
             _tmp_24 = _cursor.getInt(_cursorIndexOfQuestion5VIPTeacherMixedStance);
-            _tmpQuestion5VIPTeacherMixedStance = _tmp_24 != 0;
-            final boolean _tmpQuestion5VIPFuncFunctional;
+            _item.question5VIPTeacherMixedStance = _tmp_24 != 0;
             final int _tmp_25;
             _tmp_25 = _cursor.getInt(_cursorIndexOfQuestion5VIPFuncFunctional);
-            _tmpQuestion5VIPFuncFunctional = _tmp_25 != 0;
-            final boolean _tmpQuestion5VIPFuncNone;
+            _item.question5VIPFuncFunctional = _tmp_25 != 0;
             final int _tmp_26;
             _tmp_26 = _cursor.getInt(_cursorIndexOfQuestion5VIPFuncNone);
-            _tmpQuestion5VIPFuncNone = _tmp_26 != 0;
-            final boolean _tmpQuestion5FCROOMNoOfBlocks;
+            _item.question5VIPFuncNone = _tmp_26 != 0;
             final int _tmp_27;
             _tmp_27 = _cursor.getInt(_cursorIndexOfQuestion5FCROOMNoOfBlocks);
-            _tmpQuestion5FCROOMNoOfBlocks = _tmp_27 != 0;
-            final boolean _tmpQuestion5FCROOMNoOfStances;
+            _item.question5FCROOMNoOfBlocks = _tmp_27 != 0;
             final int _tmp_28;
             _tmp_28 = _cursor.getInt(_cursorIndexOfQuestion5FCROOMNoOfStances);
-            _tmpQuestion5FCROOMNoOfStances = _tmp_28 != 0;
-            final boolean _tmpQuestion5FCROOMPupilMaleStances;
+            _item.question5FCROOMNoOfStances = _tmp_28 != 0;
             final int _tmp_29;
             _tmp_29 = _cursor.getInt(_cursorIndexOfQuestion5FCROOMPupilMaleStances);
-            _tmpQuestion5FCROOMPupilMaleStances = _tmp_29 != 0;
-            final boolean _tmpQuestion5FCROOMPupilFemaleStances;
+            _item.question5FCROOMPupilMaleStances = _tmp_29 != 0;
             final int _tmp_30;
             _tmp_30 = _cursor.getInt(_cursorIndexOfQuestion5FCROOMPupilFemaleStances);
-            _tmpQuestion5FCROOMPupilFemaleStances = _tmp_30 != 0;
-            final boolean _tmpQuestion5FCROOMTeacherMaleStance;
+            _item.question5FCROOMPupilFemaleStances = _tmp_30 != 0;
             final int _tmp_31;
             _tmp_31 = _cursor.getInt(_cursorIndexOfQuestion5FCROOMTeacherMaleStance);
-            _tmpQuestion5FCROOMTeacherMaleStance = _tmp_31 != 0;
-            final boolean _tmpQuestion5FCROOMTeacherMFemaleStance;
+            _item.question5FCROOMTeacherMaleStance = _tmp_31 != 0;
             final int _tmp_32;
             _tmp_32 = _cursor.getInt(_cursorIndexOfQuestion5FCROOMTeacherMFemaleStance);
-            _tmpQuestion5FCROOMTeacherMFemaleStance = _tmp_32 != 0;
-            final boolean _tmpQuestion5FCROOMTeacherMixedStance;
+            _item.question5FCROOMTeacherMFemaleStance = _tmp_32 != 0;
             final int _tmp_33;
             _tmp_33 = _cursor.getInt(_cursorIndexOfQuestion5FCROOMTeacherMixedStance);
-            _tmpQuestion5FCROOMTeacherMixedStance = _tmp_33 != 0;
-            final boolean _tmpQuestion5FCROOMFuncFunctional;
+            _item.question5FCROOMTeacherMixedStance = _tmp_33 != 0;
             final int _tmp_34;
             _tmp_34 = _cursor.getInt(_cursorIndexOfQuestion5FCROOMFuncFunctional);
-            _tmpQuestion5FCROOMFuncFunctional = _tmp_34 != 0;
-            final boolean _tmpQuestion5FCROOMFuncNone;
+            _item.question5FCROOMFuncFunctional = _tmp_34 != 0;
             final int _tmp_35;
             _tmp_35 = _cursor.getInt(_cursorIndexOfQuestion5FCROOMFuncNone);
-            _tmpQuestion5FCROOMFuncNone = _tmp_35 != 0;
-            final boolean _tmpQuestion5UFBNoOfBlocks;
+            _item.question5FCROOMFuncNone = _tmp_35 != 0;
             final int _tmp_36;
             _tmp_36 = _cursor.getInt(_cursorIndexOfQuestion5UFBNoOfBlocks);
-            _tmpQuestion5UFBNoOfBlocks = _tmp_36 != 0;
-            final boolean _tmpQuestion5UFBNoOfStances;
+            _item.question5UFBNoOfBlocks = _tmp_36 != 0;
             final int _tmp_37;
             _tmp_37 = _cursor.getInt(_cursorIndexOfQuestion5UFBNoOfStances);
-            _tmpQuestion5UFBNoOfStances = _tmp_37 != 0;
-            final boolean _tmpQuestion5UFBPupilMaleStances;
+            _item.question5UFBNoOfStances = _tmp_37 != 0;
             final int _tmp_38;
             _tmp_38 = _cursor.getInt(_cursorIndexOfQuestion5UFBPupilMaleStances);
-            _tmpQuestion5UFBPupilMaleStances = _tmp_38 != 0;
-            final boolean _tmpQuestion5UFBPupilFemaleStances;
+            _item.question5UFBPupilMaleStances = _tmp_38 != 0;
             final int _tmp_39;
             _tmp_39 = _cursor.getInt(_cursorIndexOfQuestion5UFBPupilFemaleStances);
-            _tmpQuestion5UFBPupilFemaleStances = _tmp_39 != 0;
-            final boolean _tmpQuestion5UFBTeacherMaleStance;
+            _item.question5UFBPupilFemaleStances = _tmp_39 != 0;
             final int _tmp_40;
             _tmp_40 = _cursor.getInt(_cursorIndexOfQuestion5UFBTeacherMaleStance);
-            _tmpQuestion5UFBTeacherMaleStance = _tmp_40 != 0;
-            final boolean _tmpQuestion5UFBTeacherMFemaleStance;
+            _item.question5UFBTeacherMaleStance = _tmp_40 != 0;
             final int _tmp_41;
             _tmp_41 = _cursor.getInt(_cursorIndexOfQuestion5UFBTeacherMFemaleStance);
-            _tmpQuestion5UFBTeacherMFemaleStance = _tmp_41 != 0;
-            final boolean _tmpQuestion5UFBTeacherMixedStance;
+            _item.question5UFBTeacherMFemaleStance = _tmp_41 != 0;
             final int _tmp_42;
             _tmp_42 = _cursor.getInt(_cursorIndexOfQuestion5UFBTeacherMixedStance);
-            _tmpQuestion5UFBTeacherMixedStance = _tmp_42 != 0;
-            final boolean _tmpQuestion5UFBFuncFunctional;
+            _item.question5UFBTeacherMixedStance = _tmp_42 != 0;
             final int _tmp_43;
             _tmp_43 = _cursor.getInt(_cursorIndexOfQuestion5UFBFuncFunctional);
-            _tmpQuestion5UFBFuncFunctional = _tmp_43 != 0;
-            final boolean _tmpQuestion5UFBFuncNone;
+            _item.question5UFBFuncFunctional = _tmp_43 != 0;
             final int _tmp_44;
             _tmp_44 = _cursor.getInt(_cursorIndexOfQuestion5UFBFuncNone);
-            _tmpQuestion5UFBFuncNone = _tmp_44 != 0;
-            final boolean _tmpQuestion51Latrine;
+            _item.question5UFBFuncNone = _tmp_44 != 0;
             final int _tmp_45;
             _tmp_45 = _cursor.getInt(_cursorIndexOfQuestion51Latrine);
-            _tmpQuestion51Latrine = _tmp_45 != 0;
-            final String _tmpQuestion52Ramps;
-            _tmpQuestion52Ramps = _cursor.getString(_cursorIndexOfQuestion52Ramps);
-            final String _tmpQuestion52PWD;
-            _tmpQuestion52PWD = _cursor.getString(_cursorIndexOfQuestion52PWD);
-            final String _tmpQuestion52None;
-            _tmpQuestion52None = _cursor.getString(_cursorIndexOfQuestion52None);
-            final String _tmpQuestion52OtherSpec;
-            _tmpQuestion52OtherSpec = _cursor.getString(_cursorIndexOfQuestion52OtherSpec);
-            final boolean _tmpQuestion53YesNo;
+            _item.question51Latrine = _tmp_45 != 0;
+            _item.question52Ramps = _cursor.getString(_cursorIndexOfQuestion52Ramps);
+            _item.question52PWD = _cursor.getString(_cursorIndexOfQuestion52PWD);
+            _item.question52None = _cursor.getString(_cursorIndexOfQuestion52None);
+            _item.question52OtherSpec = _cursor.getString(_cursorIndexOfQuestion52OtherSpec);
             final int _tmp_46;
             _tmp_46 = _cursor.getInt(_cursorIndexOfQuestion53YesNo);
-            _tmpQuestion53YesNo = _tmp_46 != 0;
-            final String _tmpQuestion53Reason;
-            _tmpQuestion53Reason = _cursor.getString(_cursorIndexOfQuestion53Reason);
-            final String _tmpQuestion61Number;
-            _tmpQuestion61Number = _cursor.getString(_cursorIndexOfQuestion61Number);
-            final String _tmpQuestion62Number;
-            _tmpQuestion62Number = _cursor.getString(_cursorIndexOfQuestion62Number);
-            final String _tmpQuestion63Number;
-            _tmpQuestion63Number = _cursor.getString(_cursorIndexOfQuestion63Number);
-            final String _tmpQuestion7EnrolledMaleTeachers;
-            _tmpQuestion7EnrolledMaleTeachers = _cursor.getString(_cursorIndexOfQuestion7EnrolledMaleTeachers);
-            final String _tmpQuestion7EnrolledFeMaleTeachers;
-            _tmpQuestion7EnrolledFeMaleTeachers = _cursor.getString(_cursorIndexOfQuestion7EnrolledFeMaleTeachers);
-            final String _tmpQuestion7EnrolledMaleTeachersPresentAtVisit;
-            _tmpQuestion7EnrolledMaleTeachersPresentAtVisit = _cursor.getString(_cursorIndexOfQuestion7EnrolledMaleTeachersPresentAtVisit);
-            final String _tmpQuestion7EnrolledFeMaleTeachersPresentAtTimeOfVisit;
-            _tmpQuestion7EnrolledFeMaleTeachersPresentAtTimeOfVisit = _cursor.getString(_cursorIndexOfQuestion7EnrolledFeMaleTeachersPresentAtTimeOfVisit);
-            final String _tmpQuestion7TotalNumOfTeachers;
-            _tmpQuestion7TotalNumOfTeachers = _cursor.getString(_cursorIndexOfQuestion7TotalNumOfTeachers);
-            final String _tmpQuestion71PupilRatio;
-            _tmpQuestion71PupilRatio = _cursor.getString(_cursorIndexOfQuestion71PupilRatio);
-            final boolean _tmpQuestion72WomanTeacher;
+            _item.question53YesNo = _tmp_46 != 0;
+            _item.question53Reason = _cursor.getString(_cursorIndexOfQuestion53Reason);
+            _item.question61Number = _cursor.getString(_cursorIndexOfQuestion61Number);
+            _item.question62Number = _cursor.getString(_cursorIndexOfQuestion62Number);
+            _item.question63Number = _cursor.getString(_cursorIndexOfQuestion63Number);
+            _item.question7EnrolledMaleTeachers = _cursor.getString(_cursorIndexOfQuestion7EnrolledMaleTeachers);
+            _item.question7EnrolledFeMaleTeachers = _cursor.getString(_cursorIndexOfQuestion7EnrolledFeMaleTeachers);
+            _item.question7EnrolledMaleTeachersPresentAtVisit = _cursor.getString(_cursorIndexOfQuestion7EnrolledMaleTeachersPresentAtVisit);
+            _item.question7EnrolledFeMaleTeachersPresentAtTimeOfVisit = _cursor.getString(_cursorIndexOfQuestion7EnrolledFeMaleTeachersPresentAtTimeOfVisit);
+            _item.question7TotalNumOfTeachers = _cursor.getString(_cursorIndexOfQuestion7TotalNumOfTeachers);
+            _item.question71PupilRatio = _cursor.getString(_cursorIndexOfQuestion71PupilRatio);
             final int _tmp_47;
             _tmp_47 = _cursor.getInt(_cursorIndexOfQuestion72WomanTeacher);
-            _tmpQuestion72WomanTeacher = _tmp_47 != 0;
-            final String _tmpQuestion73Question;
-            _tmpQuestion73Question = _cursor.getString(_cursorIndexOfQuestion73Question);
-            final String _tmpQuestion81Inspector;
-            _tmpQuestion81Inspector = _cursor.getString(_cursorIndexOfQuestion81Inspector);
-            final String _tmpQuestion82InspectorVisit;
-            _tmpQuestion82InspectorVisit = _cursor.getString(_cursorIndexOfQuestion82InspectorVisit);
-            final boolean _tmpQuestion83Committee;
+            _item.question72WomanTeacher = _tmp_47 != 0;
+            _item.question73Question = _cursor.getString(_cursorIndexOfQuestion73Question);
+            _item.question81Inspector = _cursor.getString(_cursorIndexOfQuestion81Inspector);
+            _item.question82InspectorVisit = _cursor.getString(_cursorIndexOfQuestion82InspectorVisit);
             final int _tmp_48;
             _tmp_48 = _cursor.getInt(_cursorIndexOfQuestion83Committee);
-            _tmpQuestion83Committee = _tmp_48 != 0;
-            final String _tmpQuestion83Meet;
-            _tmpQuestion83Meet = _cursor.getString(_cursorIndexOfQuestion83Meet);
-            final String _tmpQuestion84SchoolMGT;
-            _tmpQuestion84SchoolMGT = _cursor.getString(_cursorIndexOfQuestion84SchoolMGT);
-            final String _tmpQuestion8OtherObservations;
-            _tmpQuestion8OtherObservations = _cursor.getString(_cursorIndexOfQuestion8OtherObservations);
-            _item = new EducationQuestion(_tmpFinancialYear,_tmpDate,_tmpDistrict,_tmpParish,_tmpSub_county,_tmpFullname,_tmpTel,_tmpQuestion1,_tmpQuestion2TeacherMale,_tmpQuestion2TeacherFemale,_tmpQuestion2TeacherMalePWDS,_tmpQuestion2TeacherFemalePWDS,_tmpQuestion2TeacherTotal,_tmpQuestion2PupilMale,_tmpQuestion2PupilFemale,_tmpQuestion2PupilMalePWDS,_tmpQuestion2PupilFemalePWDS,_tmpQuestion2PupilTotal,_tmpQuestion2P7Male,_tmpQuestion2P7Female,_tmpQuestion2P7MalePWDS,_tmpQuestion2P7FemalePWDS,_tmpQuestion2P7Total,_tmpQuestion2DropMale,_tmpQuestion2DropFemale,_tmpQuestion2DropMalePWDS,_tmpQuestion2DropFemalePWDS,_tmpQuestion2DropTotal,_tmpQuestion21Reason,_tmpQuestion3GrantApprovedBudget,_tmpQuestion3GrantBudgetReleased,_tmpQuestion3GrantDateReceived,_tmpQuestion3GrantDateWithdrawn,_tmpQuestion3SFGApprovedBudget,_tmpQuestion3SFGBudgetReleased,_tmpQuestion3SFGDateReceived,_tmpQuestion3SFGDateWithdrawn,_tmpQuestion31Display,_tmpQuestion32Period,_tmpQuestion4Grade1Male,_tmpQuestion4Grade1Female,_tmpQuestion4Grade2Male,_tmpQuestion4Grade2Female,_tmpQuestion4Grade3Male,_tmpQuestion4Grade3Female,_tmpQuestion4GradeOtherMale,_tmpQuestion4GradeOtherFemale,_tmpQuestion41Performance,_tmpQuestion42Reason,_tmpQuestion5ToiletNoOfBlocks,_tmpQuestion5ToiletNoOfStances,_tmpQuestion5ToiletPupilMaleStances,_tmpQuestion5ToiletPupilFemaleStances,_tmpQuestion5ToiletTeacherMaleStance,_tmpQuestion5ToiletTeacherMFemaleStance,_tmpQuestion5ToiletTeacherMixedStance,_tmpQuestion5ToiletFuncFunctional,_tmpQuestion5ToiletFuncNone,_tmpQuestion5LatrineNoOfBlocks,_tmpQuestion5LatrineNoOfStances,_tmpQuestion5LatrinePupilMaleStances,_tmpQuestion5LatrinePupilFemaleStances,_tmpQuestion5LatrineTeacherMaleStance,_tmpQuestion5LatrineTeacherMFemaleStance,_tmpQuestion5LatrineTeacherMixedStance,_tmpQuestion5LatrineFuncFunctional,_tmpQuestion5LatrineFuncNone,_tmpQuestion5VIPNoOfBlocks,_tmpQuestion5VIPNoOfStances,_tmpQuestion5VIPPupilMaleStances,_tmpQuestion5VIPePupilFemaleStances,_tmpQuestion5VIPTeacherMaleStance,_tmpQuestion5VIPTeacherMFemaleStance,_tmpQuestion5VIPTeacherMixedStance,_tmpQuestion5VIPFuncFunctional,_tmpQuestion5VIPFuncNone,_tmpQuestion5FCROOMNoOfBlocks,_tmpQuestion5FCROOMNoOfStances,_tmpQuestion5FCROOMPupilMaleStances,_tmpQuestion5FCROOMPupilFemaleStances,_tmpQuestion5FCROOMTeacherMaleStance,_tmpQuestion5FCROOMTeacherMFemaleStance,_tmpQuestion5FCROOMTeacherMixedStance,_tmpQuestion5FCROOMFuncFunctional,_tmpQuestion5FCROOMFuncNone,_tmpQuestion5UFBNoOfBlocks,_tmpQuestion5UFBNoOfStances,_tmpQuestion5UFBPupilMaleStances,_tmpQuestion5UFBPupilFemaleStances,_tmpQuestion5UFBTeacherMaleStance,_tmpQuestion5UFBTeacherMFemaleStance,_tmpQuestion5UFBTeacherMixedStance,_tmpQuestion5UFBFuncFunctional,_tmpQuestion5UFBFuncNone,_tmpQuestion51Latrine,_tmpQuestion52Ramps,_tmpQuestion52PWD,_tmpQuestion52None,_tmpQuestion52OtherSpec,_tmpQuestion53YesNo,_tmpQuestion53Reason,_tmpQuestion61Number,_tmpQuestion62Number,_tmpQuestion63Number,_tmpQuestion7EnrolledMaleTeachers,_tmpQuestion7EnrolledFeMaleTeachers,_tmpQuestion7EnrolledMaleTeachersPresentAtVisit,_tmpQuestion7EnrolledFeMaleTeachersPresentAtTimeOfVisit,_tmpQuestion7TotalNumOfTeachers,_tmpQuestion71PupilRatio,_tmpQuestion72WomanTeacher,_tmpQuestion73Question,_tmpQuestion81Inspector,_tmpQuestion82InspectorVisit,_tmpQuestion83Committee,_tmpQuestion83Meet,_tmpQuestion84SchoolMGT,_tmpQuestion8OtherObservations);
-            final int _tmpId;
-            _tmpId = _cursor.getInt(_cursorIndexOfId);
-            _item.setId(_tmpId);
-            final boolean _tmpLocallyStored;
+            _item.question83Committee = _tmp_48 != 0;
+            _item.question83Meet = _cursor.getString(_cursorIndexOfQuestion83Meet);
+            _item.question84SchoolMGT = _cursor.getString(_cursorIndexOfQuestion84SchoolMGT);
+            _item.question8OtherObservations = _cursor.getString(_cursorIndexOfQuestion8OtherObservations);
             final int _tmp_49;
             _tmp_49 = _cursor.getInt(_cursorIndexOfLocallyStored);
-            _tmpLocallyStored = _tmp_49 != 0;
-            _item.setLocallyStored(_tmpLocallyStored);
+            _item.locallyStored = _tmp_49 != 0;
             _result.add(_item);
           }
           return _result;

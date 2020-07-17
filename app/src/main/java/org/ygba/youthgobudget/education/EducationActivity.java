@@ -20,6 +20,7 @@ public class EducationActivity extends AppCompatActivity {
     private EditText eAgentEditText;
     private EditText eAgentTellEditText;
     private EditText eQuestion1EditText;
+    private EditText eQuestionSchoolNameEditText;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -40,5 +41,6 @@ public class EducationActivity extends AppCompatActivity {
         eAgentEditText = findViewById(R.id.ygb_agent_name_edit_view);
         eAgentTellEditText = findViewById(R.id.ygb_agent_tel_edit_view);
         eQuestion1EditText = findViewById(R.id.question_1_edit_text);
+        eQuestionSchoolNameEditText = findViewById(R.id.question_2_school_name_edit_text);
     }
 }

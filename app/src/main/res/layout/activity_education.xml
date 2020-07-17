@@ -223,6 +223,15 @@
             android:paddingStart="5dp"
             android:paddingEnd="5dp" />
 
+        <TextView
+            android:layout_marginVertical="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/education_question_2_introduction"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:textColor="@color/white"/>
+
         <HorizontalScrollView
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
@@ -239,7 +248,6 @@
                     android:layout_marginBottom="5dp"
                     android:text="@string/school_name"
                     android:textColor="@color/white"
-                    android:textStyle="bold"
                     android:layout_column="0"
                     android:layout_row="0"
                     android:textSize="15sp"/>
@@ -247,8 +255,8 @@
                 <EditText
                     android:gravity="start"
                     android:layout_marginHorizontal="5dp"
-                    android:layout_row="1"
-                    android:layout_column="0"
+                    android:layout_row="0"
+                    android:layout_column="1"
                     android:layout_marginVertical="5dp"
                     android:inputType="text"
                     android:hint="@string/school_name_school_name"
@@ -266,7 +274,6 @@
                     android:layout_marginVertical="5dp"
                     android:text="@string/school_teachers"
                     android:textColor="@color/white"
-                    android:textStyle="bold"
                     android:layout_column="0"
                     android:layout_row="3"
                     android:textSize="15sp"/>
@@ -276,7 +283,6 @@
                     android:layout_marginVertical="5dp"
                     android:text="@string/pupil_enrollment"
                     android:textColor="@color/white"
-                    android:textStyle="bold"
                     android:layout_column="0"
                     android:layout_row="4"
                     android:textSize="15sp"/>
@@ -286,7 +292,6 @@
                     android:layout_marginVertical="5dp"
                     android:text="@string/school_number_p_7_pupils"
                     android:textColor="@color/white"
-                    android:textStyle="bold"
                     android:layout_column="0"
                     android:layout_row="5"
                     android:textSize="15sp"/>
@@ -298,7 +303,6 @@
                     android:layout_marginVertical="5dp"
                     android:text="@string/number_of_dropout"
                     android:textColor="@color/white"
-                    android:textStyle="bold"
                     android:layout_column="0"
                     android:layout_row="6"
                     android:textSize="15sp"/>
@@ -313,15 +317,13 @@
                     android:layout_marginHorizontal="5dp"
                     android:text="@string/category"
                     android:textColor="@color/white"
-                    android:textSize="15sp"
-                    android:textStyle="bold" />
+                    android:textSize="15sp" />
 
 <!--                 row 2 column 1 male -->
                 <TextView
                     android:layout_marginHorizontal="5dp"
                     android:text="@string/male"
                     android:textColor="@color/white"
-                    android:textStyle="bold"
                     android:layout_row="2"
                     android:layout_height="wrap_content"
                     android:layout_width="wrap_content"
@@ -335,7 +337,6 @@
                     android:gravity="center"
                     android:text="@string/female"
                     android:textColor="@color/white"
-                    android:textStyle="bold"
                     android:layout_row="2"
                     android:layout_height="wrap_content"
                     android:layout_width="wrap_content"
@@ -349,7 +350,6 @@
                     android:gravity="center"
                     android:text="@string/male_pwds"
                     android:textColor="@color/white"
-                    android:textStyle="bold"
                     android:layout_row="2"
                     android:layout_height="wrap_content"
                     android:layout_width="wrap_content"
@@ -363,7 +363,6 @@
                     android:gravity="center"
                     android:text="@string/female_pwds"
                     android:textColor="@color/white"
-                    android:textStyle="bold"
                     android:layout_row="2"
                     android:layout_height="wrap_content"
                     android:layout_width="wrap_content"
@@ -377,14 +376,13 @@
                     android:gravity="center"
                     android:text="@string/total"
                     android:textColor="@color/white"
-                    android:textStyle="bold"
                     android:layout_row="2"
                     android:layout_height="wrap_content"
                     android:layout_width="wrap_content"
                     android:layout_column="5"
                     android:textSize="15sp"/>
 
-<!--                column 1 male -->
+<!--                column 1 male TODO: start from here -->
                 <EditText
                     android:layout_marginVertical="5dp"
                     android:layout_marginHorizontal="5dp"

@@ -32,7 +32,7 @@ public class EducationQuestion {
     private String tel;
 
     @ColumnInfo(name = EducationQuestionConstants.QUESTION_1_UPE_SCHOOL)
-    private String question1;
+    private String question1SchoolName;
 
     @ColumnInfo(name = EducationQuestionConstants.QUESTION_2_TEACHERS_MALE)
     private String question2TeacherMale;
