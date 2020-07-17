@@ -24,8 +24,6 @@ import org.ygba.youthgobudget.data.agriculture.AgricultureDao;
 import org.ygba.youthgobudget.data.agriculture.AgricultureDao_Impl;
 import org.ygba.youthgobudget.data.budget_information.BudgetInformationFormDao;
 import org.ygba.youthgobudget.data.budget_information.BudgetInformationFormDao_Impl;
-import org.ygba.youthgobudget.data.education.EducationQuestionDao;
-import org.ygba.youthgobudget.data.education.EducationQuestionDao_Impl;
 import org.ygba.youthgobudget.data.socialdevelopment.SocialDevelopmentDao;
 import org.ygba.youthgobudget.data.socialdevelopment.SocialDevelopmentDao_Impl;
 import org.ygba.youthgobudget.data.water_and_environment.WaterEnvironmentQuestionDao;
@@ -37,8 +35,6 @@ public final class YGBDatabase_Impl extends YGBDatabase {
 
   private volatile SocialDevelopmentDao _socialDevelopmentDao;
 
-  private volatile EducationQuestionDao _educationQuestionDao;
-
   private volatile WaterEnvironmentQuestionDao _waterEnvironmentQuestionDao;
 
   private volatile BudgetInformationFormDao _budgetInformationFormDao;
@@ -49,18 +45,16 @@ public final class YGBDatabase_Impl extends YGBDatabase {
       @Override
       public void createAllTables(SupportSQLiteDatabase _db) {
         _db.execSQL("CREATE TABLE IF NOT EXISTS `agric` (`id` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, `fy` TEXT, `date` TEXT, `village` TEXT, `parish` TEXT, `sub_county` TEXT, `name` TEXT, `tel` TEXT, `num` TEXT, `q1o` TEXT, `q1reason` TEXT, `q2ext` TEXT, `q2extreceived` TEXT, `q2dateextReceived` TEXT, `q2extdatewithdrawn` TEXT, `q2devexp` TEXT, `q2devrecieved` TEXT, `q2devdaterecieved` TEXT, `q2devdatewithdrawn` TEXT, `q2_1` TEXT, `q2_2` TEXT, `q2_3` TEXT, `q2_4` TEXT, `q2_5` TEXT, `q3_1` TEXT, `q3_2_num` TEXT, `q3_3_mention` TEXT, `q3_4_male` TEXT, `q3_4_female` TEXT, `q3_5_reason` TEXT, `q4_1_inputs` TEXT, `q4_2_input_1` TEXT, `q4_2_date_1` TEXT, `q4_2_male_number_1` TEXT, `q4_2_female_number_1` TEXT, `q4_2_village_1` TEXT, `q4_2_input_2` TEXT, `q4_2_date_2` TEXT, `q4_2_male_number_2` TEXT, `q4_2_female_number_2` TEXT, `q4_2_village_2` TEXT, `q4_2_input_3` TEXT, `q4_2_date_3` TEXT, `q4_2_male_number_3` TEXT, `q4_2_female_number_3` TEXT, `q4_2_village_3` TEXT, `q4_2_input_4` TEXT, `q4_2_date_4` TEXT, `q4_2_male_number_4` TEXT, `q4_2_female_number_4` TEXT, `q4_2_village_4` TEXT, `q4_2_input_5` TEXT, `q4_2_date_5` TEXT, `q4_2_male_number_5` TEXT, `q4_2_female_number_5` TEXT, `q4_2_village_5` TEXT, `q4_3_reason` TEXT, `q4_3_any_other_reason` TEXT, `locally` INTEGER NOT NULL)");
-        _db.execSQL("CREATE TABLE IF NOT EXISTS `educ_table` (`pri` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, `educ_financial` TEXT, `date` TEXT, `district` TEXT, `parish` TEXT, `sub_county` TEXT, `full_name` TEXT, `telephone` TEXT, `q1` TEXT, `q2_t_m` TEXT, `q2_t_f` TEXT, `q2_t_m_pwd` TEXT, `q2_t_f_pwd` TEXT, `q2_t_t` TEXT, `q2_p_m` TEXT, `q2_p_f` TEXT, `q2_p_m_pwds` TEXT, `q2_p_f_pwds` TEXT, `q2_p_t` TEXT, `q2_p7_m` TEXT, `q2_p7_f` TEXT, `q2_p7_m_pwds` TEXT, `q2_p7_f_pwds` TEXT, `q2_p_7_total` TEXT, `q2_drop_male` TEXT, `q2_drop_female` TEXT, `q2_drop_m_pwds` TEXT, `q2_d_f_pwds` TEXT, `q2_d_t` TEXT, `q2_1_reason` TEXT, `q3_a_b` TEXT, `q3_b_r` TEXT, `q3_g_d_r` TEXT, `q3_g_d_w` TEXT, `q3_sfg_a_b` TEXT, `q3_sfg_b_r` TEXT, `q3_sfg_d_r` TEXT, `q3_fg_d_w` TEXT, `q3_1_sd` TEXT, `q3_2_period` TEXT, `q4_g1_m` TEXT, `q4_g1_f` TEXT, `q4_g2_m` TEXT, `q4_g2_f` TEXT, `q4_g3_m` TEXT, `q4_g3_f` TEXT, `q4_other_m` TEXT, `q4_other_f` TEXT, `q4_1_performance` TEXT, `q4_2_reason` TEXT, `q5_t_nb` INTEGER NOT NULL, `q5_t_ts` INTEGER NOT NULL, `q5_t_m_s` INTEGER NOT NULL, `q5_t_f_s` INTEGER NOT NULL, `q5_t_t_m_s` INTEGER NOT NULL, `q5_t_t_f_s` INTEGER NOT NULL, `q5_t_t_mx_S` INTEGER NOT NULL, `q5_t_f_f` INTEGER NOT NULL, `q5_t_none` INTEGER NOT NULL, `q5_l_n_b` INTEGER NOT NULL, `q5_l_n_s` INTEGER NOT NULL, `q5_l_m_s` INTEGER NOT NULL, `q5_l_p_m_s` INTEGER NOT NULL, `q5_l_p_f_s` INTEGER NOT NULL, `q5_l_t_f_m_s` INTEGER NOT NULL, `q5_l_t_m_m_s` INTEGER NOT NULL, `q5_l_fun_func_ext` INTEGER NOT NULL, `q5_l_b_fun_func` INTEGER NOT NULL, `q5_VIP_n_blocks` INTEGER NOT NULL, `q5_VIP_n_stances` INTEGER NOT NULL, `q5_VIP_m_stances` INTEGER NOT NULL, `q5_VIP_f_stances` INTEGER NOT NULL, `q5_VIP_t_f_stances_23` INTEGER NOT NULL, `q5_VIP_t_f_stances_3` INTEGER NOT NULL, `q5_VIP_t_mixed_stances` INTEGER NOT NULL, `q5_VIP_func_functional` INTEGER NOT NULL, `q5_VIP_func_none` INTEGER NOT NULL, `q5_FCROOM_n_blocks` INTEGER NOT NULL, `q5_FCROOM_n_stances` INTEGER NOT NULL, `q5_FCROOM_n_male_stances` INTEGER NOT NULL, `q5_FCROOM_n_female_stances` INTEGER NOT NULL, `q5_FCROOM_n_t_male_stances` INTEGER NOT NULL, `q5_FCROOM_n_t_f_stances` INTEGER NOT NULL, `q5_FCROOM_n_t_mixed_stances` INTEGER NOT NULL, `q5_FCROOM_func_functional` INTEGER NOT NULL, `q5_FCROOM_func_none` INTEGER NOT NULL, `q5_UFB_n_blocks` INTEGER NOT NULL, `q5_UFB_n_stances` INTEGER NOT NULL, `q5_UFB_m_stances` INTEGER NOT NULL, `q5_UFB_f_stances` INTEGER NOT NULL, `q5_UFB_t_m_stances` INTEGER NOT NULL, `q5_UFB_t_f_stances` INTEGER NOT NULL, `q5_UFB_t_mixed_stances` INTEGER NOT NULL, `q5_UFB_func_functional` INTEGER NOT NULL, `q5_UFB_func_none` INTEGER NOT NULL, `q5_1_l` INTEGER NOT NULL, `q5_2_ramps` TEXT, `q5_2_pwd` TEXT, `q5_2_none` TEXT, `q5_2_others_Spec` TEXT, `q5_3_yes_no` INTEGER NOT NULL, `q5_3_reason` TEXT, `q6_1_num` TEXT, `q6_2_num` TEXT, `q6_3_ratio` TEXT, `q7_e_m_t` TEXT, `q7_e_f_t` TEXT, `q7_e_t_P_a_T_visit` TEXT, `q5_t_p_a_Time` TEXT, `q7_total_number_of1_teachers` TEXT, `q7_1_p_r` TEXT, `q7_2_w_teacher` INTEGER NOT NULL, `q7_3_q` TEXT, `q8_1_inspector` TEXT, `q8_2_inspector_visits` TEXT, `q8_3_com` INTEGER NOT NULL, `q8_4_meet` TEXT, `q8_5_sch_mgt` TEXT, `q8_other_observations` TEXT, `stored_locally` INTEGER NOT NULL)");
         _db.execSQL("CREATE TABLE IF NOT EXISTS `social_dev` (`id` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, `financial_year` TEXT, `date` TEXT, `district` TEXT, `village` TEXT, `parish` TEXT, `division` TEXT, `agent_name` TEXT, `tel` TEXT, `q2_com_expec` TEXT, `q2_com_received` TEXT, `q2_com_date_received` TEXT, `q2_com_date_withdrawn` TEXT, `q2_others_expected` TEXT, `q2_others_amount_received` TEXT, `q2_others_date_received` TEXT, `q2_others_date_withdrawn` TEXT, `q3_w_e_objective` TEXT, `q3_w_e_objective_reason` TEXT, `q3_w_g_1_name` TEXT, `q3_w_g_1_village` TEXT, `q3_w_g_1_m_numbers` TEXT, `q3_w_g_1_f_numbers` TEXT, `q3_w_g_1_a_received` TEXT, `q3_w_g_2_name` TEXT, `q3_w_g_2_village` TEXT, `q3_w_g_2_m_numbers` TEXT, `q3_w_g_2_f_numbers` TEXT, `q3_w_g_2_a_received` TEXT, `q3_w_g_3_name` TEXT, `q3_w_g_3_village` TEXT, `q3_w_g_3_m_numbers` TEXT, `q3_w_g_3_f_numbers` TEXT, `q3_w_g_3_a_received` TEXT, `q3_w_g_4_name` TEXT, `q3_w_g_4_village` TEXT, `q3_w_g_4_m_numbers` TEXT, `q3_w_g_4_f_numbers` TEXT, `q3_w_g_4_a_received` TEXT, `q3_w_g_5_name` TEXT, `q3_w_g_5_village` TEXT, `q3_w_g_5_m_numbers` TEXT, `q3_w_g_5_f_numbers` TEXT, `q3_w_g_5_a_received` TEXT, `q3_w_g_6_name` TEXT, `q3_w_g_6_village` TEXT, `q3_w_g_6_m_numbers` TEXT, `q3_w_g_6_f_numbers` TEXT, `q3_w_g_6_a_received` TEXT, `q3_w_g_7_name` TEXT, `q3_w_g_7_village` TEXT, `q3_w_g_7_m_numbers` TEXT, `q3_w_g_7_f_numbers` TEXT, `q3_w_g_7_a_received` TEXT, `q5_li_obj` TEXT, `q5_li_obj_reason` TEXT, `q4_y_g_1_name` TEXT, `q4_Y_g_1_village` TEXT, `q4_Y_g_1_m_numbers` TEXT, `q4_Y_g_1_f_numbers` TEXT, `q4_Y_g_1_a_received` TEXT, `q4_Y_g_2_name` TEXT, `q4_Y_g_2_village` TEXT, `q4_Y_g_2_m_numbers` TEXT, `q4_Y_g_2_f_numbers` TEXT, `q4_Y_g_2_a_received` TEXT, `q4_Y_g_3_name` TEXT, `q4_Y_g_3_village` TEXT, `q4_Y_g_3_m_numbers` TEXT, `q4_4_g_3_f_numbers` TEXT, `q4_Y_g_3_a_received` TEXT, `q4_Y_g_4_name` TEXT, `q4_Y_g_4_village` TEXT, `q4_Y_g_4_m_numbers` TEXT, `q4_Y_g_4_f_numbers` TEXT, `q4_Y_g_4_a_received` TEXT, `q4_Y_g_5_name` TEXT, `q4_Y_g_5_village` TEXT, `q4_Y_g_5_m_numbers` TEXT, `q4_Y_g_5_f_numbers` TEXT, `q4_Y_g_5_a_received` TEXT, `q4_6_g_6_name` TEXT, `q5_Y_g_6_village` TEXT, `q4_Y_g_6_m_numbers` TEXT, `Q4_Y_g_6_f_numbers` TEXT, `q4_Y_g_6_a_received` TEXT, `q4_Y_g_7_name` TEXT, `q4_Y_g_7_village` TEXT, `q4_Y_g_7_m_numbers` TEXT, `q4_Y_g_7_f_numbers` TEXT, `q4_Y_g_7_a_received` TEXT, `q5_number_m_trained` TEXT, `q5_number_f_trained` TEXT, `q6_com_g_formed` TEXT, `q7_others_challenges` TEXT, `locally_stored` INTEGER NOT NULL)");
         _db.execSQL("CREATE TABLE IF NOT EXISTS `water_and_env` (`id` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, `financial_year` TEXT, `date` TEXT, `district` TEXT, `village` TEXT, `parish` TEXT, `sub_county` TEXT, `agent_name` TEXT, `agent_tel` TEXT, `q_1_objective` INTEGER NOT NULL, `q_1_reason` TEXT, `q_2_reason` TEXT, `q_4_answer` TEXT, `q_3_objective` INTEGER NOT NULL, `q_5_text` TEXT, `q_5_sub_1` TEXT, `q_5_ws_1` TEXT, `q_5_functional_1` INTEGER NOT NULL, `q_5_none_functional_1` INTEGER NOT NULL, `q_5_no_ws_available_1` INTEGER NOT NULL, `q_5_sub_2` TEXT, `q_5_ws_2` TEXT, `q_5_functional_2` INTEGER NOT NULL, `q_5_none_functional_2` INTEGER NOT NULL, `q_5_no_ws_available_2` INTEGER NOT NULL, `q_5_sub_3` TEXT, `q_5_ws_3` TEXT, `q_5_functional_3` INTEGER NOT NULL, `q_5_none_functional_3` INTEGER NOT NULL, `q_5_no_ws_available_3` INTEGER NOT NULL, `q_5_sub_4` TEXT, `q_5_ws_4` TEXT, `q_5_functional_4` INTEGER NOT NULL, `q_5_none_functional_4` INTEGER NOT NULL, `q_5_no_ws_available_4` INTEGER NOT NULL, `q_5_sub_5` TEXT, `q_5_ws_5` TEXT, `q_5_functional_5` INTEGER NOT NULL, `q_5_none_functional_5` INTEGER NOT NULL, `q_5_no_ws_available_5` INTEGER NOT NULL, `q_5_sub_6` TEXT, `q_5_ws_6` TEXT, `q_5_functional_6` INTEGER NOT NULL, `q_5_none_functional_6` INTEGER NOT NULL, `q_5_no_ws_available_6` INTEGER NOT NULL, `q_5_objective` INTEGER NOT NULL, `q_5_objective_reason` TEXT, `q_6_wetland_demarcated` TEXT, `q_6_village_name_1` TEXT, `q_6_1_wetland_1` INTEGER NOT NULL, `q_6_village_name_2` TEXT, `q_6_1_wetland_2` INTEGER NOT NULL, `q_6_village_name_3` TEXT, `q_6_1_wetland_3` INTEGER NOT NULL, `q_6_village_name_4` TEXT, `q_6_1_wetland_4` INTEGER NOT NULL, `q_6_village_name_5` TEXT, `q_6_1_wetland_5` INTEGER NOT NULL, `q_6_village_name_6` TEXT, `q_6_1_wetland_6` INTEGER NOT NULL, `q_6_2_tree_planting` TEXT, `locally_stored` INTEGER NOT NULL)");
         _db.execSQL("CREATE TABLE IF NOT EXISTS `budget_information` (`primary_key` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, `fin_year` TEXT, `admin_approved` INTEGER NOT NULL, `admin_percentage` INTEGER NOT NULL, `fin_approved` INTEGER NOT NULL, `fin_percentage` INTEGER NOT NULL, `statu_approved` INTEGER NOT NULL, `statu_per` INTEGER NOT NULL, `pro_approved` INTEGER NOT NULL, `pro_perc` INTEGER NOT NULL, `health_approved` INTEGER NOT NULL, `health_percentage` INTEGER NOT NULL, `education_approved` INTEGER NOT NULL, `education_percentage` INTEGER NOT NULL, `road_approved` INTEGER NOT NULL, `road_percentagae` INTEGER NOT NULL, `water_approved` INTEGER NOT NULL, `water_percentage` INTEGER NOT NULL, `natural_approved` INTEGER NOT NULL, `natural_percentage` INTEGER NOT NULL, `com_approved` INTEGER NOT NULL, `com_percentage` INTEGER NOT NULL, `planning_approved` INTEGER NOT NULL, `planning_percentage` INTEGER NOT NULL, `internal_audit` INTEGER NOT NULL, `internal_percentage` INTEGER NOT NULL, `trade_approved` INTEGER NOT NULL, `trade_percentage` INTEGER NOT NULL, `total_approved` INTEGER NOT NULL, `total_percentage` INTEGER NOT NULL, `wage_approved_b` INTEGER NOT NULL, `wage_approved_a` INTEGER NOT NULL, `none_wage_approved_d` INTEGER NOT NULL, `none_wage_perce` INTEGER NOT NULL, `domestic_approved` INTEGER NOT NULL, `domestic_percentage` INTEGER NOT NULL, `ext_approved` INTEGER NOT NULL, `ext_percentage` INTEGER NOT NULL, `dis_name` TEXT, `service_name` TEXT, `com_wish_name` TEXT, `dis_1_sector` INTEGER NOT NULL, `sub_1_sect` INTEGER NOT NULL, `fin_1_sec` TEXT, `service_1_sector` TEXT, `community_wishes_1` TEXT, `dis_2_sector` INTEGER NOT NULL, `sub_2_sect` INTEGER NOT NULL, `fin_2_sec` TEXT, `service_2_sector` TEXT, `community_wishes_2` TEXT, `dis_3_sector` INTEGER NOT NULL, `sub_3_sect` INTEGER NOT NULL, `fin_3_sec` TEXT, `service_3_sector` TEXT, `community_wishes_3` TEXT, `dis_4_sector` INTEGER NOT NULL, `sub_4_sect` INTEGER NOT NULL, `fin_4_sec` TEXT, `service_4_sector` TEXT, `community_wishes_4` TEXT, `dis_5_sector` INTEGER NOT NULL, `sub_5_sect` INTEGER NOT NULL, `fin_5_sec` TEXT, `service_5_sector` TEXT, `community_wishes_5` TEXT, `dis_6_sector` INTEGER NOT NULL, `sub_6_sect` INTEGER NOT NULL, `fin_6_sec` TEXT, `service_6_sector` TEXT, `community_wishes_6` TEXT, `dis_7_sector` INTEGER NOT NULL, `sub_7_sect` INTEGER NOT NULL, `fin_7_sec` TEXT, `service_7_sector` TEXT, `community_wishes_7` TEXT, `stored_locally` INTEGER NOT NULL)");
         _db.execSQL("CREATE TABLE IF NOT EXISTS room_master_table (id INTEGER PRIMARY KEY,identity_hash TEXT)");
-        _db.execSQL("INSERT OR REPLACE INTO room_master_table (id,identity_hash) VALUES(42, '519512a71607f3d939f86b80bc749664')");
+        _db.execSQL("INSERT OR REPLACE INTO room_master_table (id,identity_hash) VALUES(42, 'd765022a807ff35192ccf32881b31a79')");
       }
 
       @Override
       public void dropAllTables(SupportSQLiteDatabase _db) {
         _db.execSQL("DROP TABLE IF EXISTS `agric`");
-        _db.execSQL("DROP TABLE IF EXISTS `educ_table`");
         _db.execSQL("DROP TABLE IF EXISTS `social_dev`");
         _db.execSQL("DROP TABLE IF EXISTS `water_and_env`");
         _db.execSQL("DROP TABLE IF EXISTS `budget_information`");
@@ -170,136 +164,6 @@ public final class YGBDatabase_Impl extends YGBDatabase {
           return new RoomOpenHelper.ValidationResult(false, "agric(org.ygba.youthgobudget.data.agriculture.AgricultureQuestion).\n"
                   + " Expected:\n" + _infoAgric + "\n"
                   + " Found:\n" + _existingAgric);
-        }
-        final HashMap<String, TableInfo.Column> _columnsEducTable = new HashMap<String, TableInfo.Column>(120);
-        _columnsEducTable.put("pri", new TableInfo.Column("pri", "INTEGER", true, 1, null, TableInfo.CREATED_FROM_ENTITY));
-        _columnsEducTable.put("educ_financial", new TableInfo.Column("educ_financial", "TEXT", false, 0, null, TableInfo.CREATED_FROM_ENTITY));
-        _columnsEducTable.put("date", new TableInfo.Column("date", "TEXT", false, 0, null, TableInfo.CREATED_FROM_ENTITY));
-        _columnsEducTable.put("district", new TableInfo.Column("district", "TEXT", false, 0, null, TableInfo.CREATED_FROM_ENTITY));
-        _columnsEducTable.put("parish", new TableInfo.Column("parish", "TEXT", false, 0, null, TableInfo.CREATED_FROM_ENTITY));
-        _columnsEducTable.put("sub_county", new TableInfo.Column("sub_county", "TEXT", false, 0, null, TableInfo.CREATED_FROM_ENTITY));
-        _columnsEducTable.put("full_name", new TableInfo.Column("full_name", "TEXT", false, 0, null, TableInfo.CREATED_FROM_ENTITY));
-        _columnsEducTable.put("telephone", new TableInfo.Column("telephone", "TEXT", false, 0, null, TableInfo.CREATED_FROM_ENTITY));
-        _columnsEducTable.put("q1", new TableInfo.Column("q1", "TEXT", false, 0, null, TableInfo.CREATED_FROM_ENTITY));
-        _columnsEducTable.put("q2_t_m", new TableInfo.Column("q2_t_m", "TEXT", false, 0, null, TableInfo.CREATED_FROM_ENTITY));
-        _columnsEducTable.put("q2_t_f", new TableInfo.Column("q2_t_f", "TEXT", false, 0, null, TableInfo.CREATED_FROM_ENTITY));
-        _columnsEducTable.put("q2_t_m_pwd", new TableInfo.Column("q2_t_m_pwd", "TEXT", false, 0, null, TableInfo.CREATED_FROM_ENTITY));
-        _columnsEducTable.put("q2_t_f_pwd", new TableInfo.Column("q2_t_f_pwd", "TEXT", false, 0, null, TableInfo.CREATED_FROM_ENTITY));
-        _columnsEducTable.put("q2_t_t", new TableInfo.Column("q2_t_t", "TEXT", false, 0, null, TableInfo.CREATED_FROM_ENTITY));
-        _columnsEducTable.put("q2_p_m", new TableInfo.Column("q2_p_m", "TEXT", false, 0, null, TableInfo.CREATED_FROM_ENTITY));
-        _columnsEducTable.put("q2_p_f", new TableInfo.Column("q2_p_f", "TEXT", false, 0, null, TableInfo.CREATED_FROM_ENTITY));
-        _columnsEducTable.put("q2_p_m_pwds", new TableInfo.Column("q2_p_m_pwds", "TEXT", false, 0, null, TableInfo.CREATED_FROM_ENTITY));
-        _columnsEducTable.put("q2_p_f_pwds", new TableInfo.Column("q2_p_f_pwds", "TEXT", false, 0, null, TableInfo.CREATED_FROM_ENTITY));
-        _columnsEducTable.put("q2_p_t", new TableInfo.Column("q2_p_t", "TEXT", false, 0, null, TableInfo.CREATED_FROM_ENTITY));
-        _columnsEducTable.put("q2_p7_m", new TableInfo.Column("q2_p7_m", "TEXT", false, 0, null, TableInfo.CREATED_FROM_ENTITY));
-        _columnsEducTable.put("q2_p7_f", new TableInfo.Column("q2_p7_f", "TEXT", false, 0, null, TableInfo.CREATED_FROM_ENTITY));
-        _columnsEducTable.put("q2_p7_m_pwds", new TableInfo.Column("q2_p7_m_pwds", "TEXT", false, 0, null, TableInfo.CREATED_FROM_ENTITY));
-        _columnsEducTable.put("q2_p7_f_pwds", new TableInfo.Column("q2_p7_f_pwds", "TEXT", false, 0, null, TableInfo.CREATED_FROM_ENTITY));
-        _columnsEducTable.put("q2_p_7_total", new TableInfo.Column("q2_p_7_total", "TEXT", false, 0, null, TableInfo.CREATED_FROM_ENTITY));
-        _columnsEducTable.put("q2_drop_male", new TableInfo.Column("q2_drop_male", "TEXT", false, 0, null, TableInfo.CREATED_FROM_ENTITY));
-        _columnsEducTable.put("q2_drop_female", new TableInfo.Column("q2_drop_female", "TEXT", false, 0, null, TableInfo.CREATED_FROM_ENTITY));
-        _columnsEducTable.put("q2_drop_m_pwds", new TableInfo.Column("q2_drop_m_pwds", "TEXT", false, 0, null, TableInfo.CREATED_FROM_ENTITY));
-        _columnsEducTable.put("q2_d_f_pwds", new TableInfo.Column("q2_d_f_pwds", "TEXT", false, 0, null, TableInfo.CREATED_FROM_ENTITY));
-        _columnsEducTable.put("q2_d_t", new TableInfo.Column("q2_d_t", "TEXT", false, 0, null, TableInfo.CREATED_FROM_ENTITY));
-        _columnsEducTable.put("q2_1_reason", new TableInfo.Column("q2_1_reason", "TEXT", false, 0, null, TableInfo.CREATED_FROM_ENTITY));
-        _columnsEducTable.put("q3_a_b", new TableInfo.Column("q3_a_b", "TEXT", false, 0, null, TableInfo.CREATED_FROM_ENTITY));
-        _columnsEducTable.put("q3_b_r", new TableInfo.Column("q3_b_r", "TEXT", false, 0, null, TableInfo.CREATED_FROM_ENTITY));
-        _columnsEducTable.put("q3_g_d_r", new TableInfo.Column("q3_g_d_r", "TEXT", false, 0, null, TableInfo.CREATED_FROM_ENTITY));
-        _columnsEducTable.put("q3_g_d_w", new TableInfo.Column("q3_g_d_w", "TEXT", false, 0, null, TableInfo.CREATED_FROM_ENTITY));
-        _columnsEducTable.put("q3_sfg_a_b", new TableInfo.Column("q3_sfg_a_b", "TEXT", false, 0, null, TableInfo.CREATED_FROM_ENTITY));
-        _columnsEducTable.put("q3_sfg_b_r", new TableInfo.Column("q3_sfg_b_r", "TEXT", false, 0, null, TableInfo.CREATED_FROM_ENTITY));
-        _columnsEducTable.put("q3_sfg_d_r", new TableInfo.Column("q3_sfg_d_r", "TEXT", false, 0, null, TableInfo.CREATED_FROM_ENTITY));
-        _columnsEducTable.put("q3_fg_d_w", new TableInfo.Column("q3_fg_d_w", "TEXT", false, 0, null, TableInfo.CREATED_FROM_ENTITY));
-        _columnsEducTable.put("q3_1_sd", new TableInfo.Column("q3_1_sd", "TEXT", false, 0, null, TableInfo.CREATED_FROM_ENTITY));
-        _columnsEducTable.put("q3_2_period", new TableInfo.Column("q3_2_period", "TEXT", false, 0, null, TableInfo.CREATED_FROM_ENTITY));
-        _columnsEducTable.put("q4_g1_m", new TableInfo.Column("q4_g1_m", "TEXT", false, 0, null, TableInfo.CREATED_FROM_ENTITY));
-        _columnsEducTable.put("q4_g1_f", new TableInfo.Column("q4_g1_f", "TEXT", false, 0, null, TableInfo.CREATED_FROM_ENTITY));
-        _columnsEducTable.put("q4_g2_m", new TableInfo.Column("q4_g2_m", "TEXT", false, 0, null, TableInfo.CREATED_FROM_ENTITY));
-        _columnsEducTable.put("q4_g2_f", new TableInfo.Column("q4_g2_f", "TEXT", false, 0, null, TableInfo.CREATED_FROM_ENTITY));
-        _columnsEducTable.put("q4_g3_m", new TableInfo.Column("q4_g3_m", "TEXT", false, 0, null, TableInfo.CREATED_FROM_ENTITY));
-        _columnsEducTable.put("q4_g3_f", new TableInfo.Column("q4_g3_f", "TEXT", false, 0, null, TableInfo.CREATED_FROM_ENTITY));
-        _columnsEducTable.put("q4_other_m", new TableInfo.Column("q4_other_m", "TEXT", false, 0, null, TableInfo.CREATED_FROM_ENTITY));
-        _columnsEducTable.put("q4_other_f", new TableInfo.Column("q4_other_f", "TEXT", false, 0, null, TableInfo.CREATED_FROM_ENTITY));
-        _columnsEducTable.put("q4_1_performance", new TableInfo.Column("q4_1_performance", "TEXT", false, 0, null, TableInfo.CREATED_FROM_ENTITY));
-        _columnsEducTable.put("q4_2_reason", new TableInfo.Column("q4_2_reason", "TEXT", false, 0, null, TableInfo.CREATED_FROM_ENTITY));
-        _columnsEducTable.put("q5_t_nb", new TableInfo.Column("q5_t_nb", "INTEGER", true, 0, null, TableInfo.CREATED_FROM_ENTITY));
-        _columnsEducTable.put("q5_t_ts", new TableInfo.Column("q5_t_ts", "INTEGER", true, 0, null, TableInfo.CREATED_FROM_ENTITY));
-        _columnsEducTable.put("q5_t_m_s", new TableInfo.Column("q5_t_m_s", "INTEGER", true, 0, null, TableInfo.CREATED_FROM_ENTITY));
-        _columnsEducTable.put("q5_t_f_s", new TableInfo.Column("q5_t_f_s", "INTEGER", true, 0, null, TableInfo.CREATED_FROM_ENTITY));
-        _columnsEducTable.put("q5_t_t_m_s", new TableInfo.Column("q5_t_t_m_s", "INTEGER", true, 0, null, TableInfo.CREATED_FROM_ENTITY));
-        _columnsEducTable.put("q5_t_t_f_s", new TableInfo.Column("q5_t_t_f_s", "INTEGER", true, 0, null, TableInfo.CREATED_FROM_ENTITY));
-        _columnsEducTable.put("q5_t_t_mx_S", new TableInfo.Column("q5_t_t_mx_S", "INTEGER", true, 0, null, TableInfo.CREATED_FROM_ENTITY));
-        _columnsEducTable.put("q5_t_f_f", new TableInfo.Column("q5_t_f_f", "INTEGER", true, 0, null, TableInfo.CREATED_FROM_ENTITY));
-        _columnsEducTable.put("q5_t_none", new TableInfo.Column("q5_t_none", "INTEGER", true, 0, null, TableInfo.CREATED_FROM_ENTITY));
-        _columnsEducTable.put("q5_l_n_b", new TableInfo.Column("q5_l_n_b", "INTEGER", true, 0, null, TableInfo.CREATED_FROM_ENTITY));
-        _columnsEducTable.put("q5_l_n_s", new TableInfo.Column("q5_l_n_s", "INTEGER", true, 0, null, TableInfo.CREATED_FROM_ENTITY));
-        _columnsEducTable.put("q5_l_m_s", new TableInfo.Column("q5_l_m_s", "INTEGER", true, 0, null, TableInfo.CREATED_FROM_ENTITY));
-        _columnsEducTable.put("q5_l_p_m_s", new TableInfo.Column("q5_l_p_m_s", "INTEGER", true, 0, null, TableInfo.CREATED_FROM_ENTITY));
-        _columnsEducTable.put("q5_l_p_f_s", new TableInfo.Column("q5_l_p_f_s", "INTEGER", true, 0, null, TableInfo.CREATED_FROM_ENTITY));
-        _columnsEducTable.put("q5_l_t_f_m_s", new TableInfo.Column("q5_l_t_f_m_s", "INTEGER", true, 0, null, TableInfo.CREATED_FROM_ENTITY));
-        _columnsEducTable.put("q5_l_t_m_m_s", new TableInfo.Column("q5_l_t_m_m_s", "INTEGER", true, 0, null, TableInfo.CREATED_FROM_ENTITY));
-        _columnsEducTable.put("q5_l_fun_func_ext", new TableInfo.Column("q5_l_fun_func_ext", "INTEGER", true, 0, null, TableInfo.CREATED_FROM_ENTITY));
-        _columnsEducTable.put("q5_l_b_fun_func", new TableInfo.Column("q5_l_b_fun_func", "INTEGER", true, 0, null, TableInfo.CREATED_FROM_ENTITY));
-        _columnsEducTable.put("q5_VIP_n_blocks", new TableInfo.Column("q5_VIP_n_blocks", "INTEGER", true, 0, null, TableInfo.CREATED_FROM_ENTITY));
-        _columnsEducTable.put("q5_VIP_n_stances", new TableInfo.Column("q5_VIP_n_stances", "INTEGER", true, 0, null, TableInfo.CREATED_FROM_ENTITY));
-        _columnsEducTable.put("q5_VIP_m_stances", new TableInfo.Column("q5_VIP_m_stances", "INTEGER", true, 0, null, TableInfo.CREATED_FROM_ENTITY));
-        _columnsEducTable.put("q5_VIP_f_stances", new TableInfo.Column("q5_VIP_f_stances", "INTEGER", true, 0, null, TableInfo.CREATED_FROM_ENTITY));
-        _columnsEducTable.put("q5_VIP_t_f_stances_23", new TableInfo.Column("q5_VIP_t_f_stances_23", "INTEGER", true, 0, null, TableInfo.CREATED_FROM_ENTITY));
-        _columnsEducTable.put("q5_VIP_t_f_stances_3", new TableInfo.Column("q5_VIP_t_f_stances_3", "INTEGER", true, 0, null, TableInfo.CREATED_FROM_ENTITY));
-        _columnsEducTable.put("q5_VIP_t_mixed_stances", new TableInfo.Column("q5_VIP_t_mixed_stances", "INTEGER", true, 0, null, TableInfo.CREATED_FROM_ENTITY));
-        _columnsEducTable.put("q5_VIP_func_functional", new TableInfo.Column("q5_VIP_func_functional", "INTEGER", true, 0, null, TableInfo.CREATED_FROM_ENTITY));
-        _columnsEducTable.put("q5_VIP_func_none", new TableInfo.Column("q5_VIP_func_none", "INTEGER", true, 0, null, TableInfo.CREATED_FROM_ENTITY));
-        _columnsEducTable.put("q5_FCROOM_n_blocks", new TableInfo.Column("q5_FCROOM_n_blocks", "INTEGER", true, 0, null, TableInfo.CREATED_FROM_ENTITY));
-        _columnsEducTable.put("q5_FCROOM_n_stances", new TableInfo.Column("q5_FCROOM_n_stances", "INTEGER", true, 0, null, TableInfo.CREATED_FROM_ENTITY));
-        _columnsEducTable.put("q5_FCROOM_n_male_stances", new TableInfo.Column("q5_FCROOM_n_male_stances", "INTEGER", true, 0, null, TableInfo.CREATED_FROM_ENTITY));
-        _columnsEducTable.put("q5_FCROOM_n_female_stances", new TableInfo.Column("q5_FCROOM_n_female_stances", "INTEGER", true, 0, null, TableInfo.CREATED_FROM_ENTITY));
-        _columnsEducTable.put("q5_FCROOM_n_t_male_stances", new TableInfo.Column("q5_FCROOM_n_t_male_stances", "INTEGER", true, 0, null, TableInfo.CREATED_FROM_ENTITY));
-        _columnsEducTable.put("q5_FCROOM_n_t_f_stances", new TableInfo.Column("q5_FCROOM_n_t_f_stances", "INTEGER", true, 0, null, TableInfo.CREATED_FROM_ENTITY));
-        _columnsEducTable.put("q5_FCROOM_n_t_mixed_stances", new TableInfo.Column("q5_FCROOM_n_t_mixed_stances", "INTEGER", true, 0, null, TableInfo.CREATED_FROM_ENTITY));
-        _columnsEducTable.put("q5_FCROOM_func_functional", new TableInfo.Column("q5_FCROOM_func_functional", "INTEGER", true, 0, null, TableInfo.CREATED_FROM_ENTITY));
-        _columnsEducTable.put("q5_FCROOM_func_none", new TableInfo.Column("q5_FCROOM_func_none", "INTEGER", true, 0, null, TableInfo.CREATED_FROM_ENTITY));
-        _columnsEducTable.put("q5_UFB_n_blocks", new TableInfo.Column("q5_UFB_n_blocks", "INTEGER", true, 0, null, TableInfo.CREATED_FROM_ENTITY));
-        _columnsEducTable.put("q5_UFB_n_stances", new TableInfo.Column("q5_UFB_n_stances", "INTEGER", true, 0, null, TableInfo.CREATED_FROM_ENTITY));
-        _columnsEducTable.put("q5_UFB_m_stances", new TableInfo.Column("q5_UFB_m_stances", "INTEGER", true, 0, null, TableInfo.CREATED_FROM_ENTITY));
-        _columnsEducTable.put("q5_UFB_f_stances", new TableInfo.Column("q5_UFB_f_stances", "INTEGER", true, 0, null, TableInfo.CREATED_FROM_ENTITY));
-        _columnsEducTable.put("q5_UFB_t_m_stances", new TableInfo.Column("q5_UFB_t_m_stances", "INTEGER", true, 0, null, TableInfo.CREATED_FROM_ENTITY));
-        _columnsEducTable.put("q5_UFB_t_f_stances", new TableInfo.Column("q5_UFB_t_f_stances", "INTEGER", true, 0, null, TableInfo.CREATED_FROM_ENTITY));
-        _columnsEducTable.put("q5_UFB_t_mixed_stances", new TableInfo.Column("q5_UFB_t_mixed_stances", "INTEGER", true, 0, null, TableInfo.CREATED_FROM_ENTITY));
-        _columnsEducTable.put("q5_UFB_func_functional", new TableInfo.Column("q5_UFB_func_functional", "INTEGER", true, 0, null, TableInfo.CREATED_FROM_ENTITY));
-        _columnsEducTable.put("q5_UFB_func_none", new TableInfo.Column("q5_UFB_func_none", "INTEGER", true, 0, null, TableInfo.CREATED_FROM_ENTITY));
-        _columnsEducTable.put("q5_1_l", new TableInfo.Column("q5_1_l", "INTEGER", true, 0, null, TableInfo.CREATED_FROM_ENTITY));
-        _columnsEducTable.put("q5_2_ramps", new TableInfo.Column("q5_2_ramps", "TEXT", false, 0, null, TableInfo.CREATED_FROM_ENTITY));
-        _columnsEducTable.put("q5_2_pwd", new TableInfo.Column("q5_2_pwd", "TEXT", false, 0, null, TableInfo.CREATED_FROM_ENTITY));
-        _columnsEducTable.put("q5_2_none", new TableInfo.Column("q5_2_none", "TEXT", false, 0, null, TableInfo.CREATED_FROM_ENTITY));
-        _columnsEducTable.put("q5_2_others_Spec", new TableInfo.Column("q5_2_others_Spec", "TEXT", false, 0, null, TableInfo.CREATED_FROM_ENTITY));
-        _columnsEducTable.put("q5_3_yes_no", new TableInfo.Column("q5_3_yes_no", "INTEGER", true, 0, null, TableInfo.CREATED_FROM_ENTITY));
-        _columnsEducTable.put("q5_3_reason", new TableInfo.Column("q5_3_reason", "TEXT", false, 0, null, TableInfo.CREATED_FROM_ENTITY));
-        _columnsEducTable.put("q6_1_num", new TableInfo.Column("q6_1_num", "TEXT", false, 0, null, TableInfo.CREATED_FROM_ENTITY));
-        _columnsEducTable.put("q6_2_num", new TableInfo.Column("q6_2_num", "TEXT", false, 0, null, TableInfo.CREATED_FROM_ENTITY));
-        _columnsEducTable.put("q6_3_ratio", new TableInfo.Column("q6_3_ratio", "TEXT", false, 0, null, TableInfo.CREATED_FROM_ENTITY));
-        _columnsEducTable.put("q7_e_m_t", new TableInfo.Column("q7_e_m_t", "TEXT", false, 0, null, TableInfo.CREATED_FROM_ENTITY));
-        _columnsEducTable.put("q7_e_f_t", new TableInfo.Column("q7_e_f_t", "TEXT", false, 0, null, TableInfo.CREATED_FROM_ENTITY));
-        _columnsEducTable.put("q7_e_t_P_a_T_visit", new TableInfo.Column("q7_e_t_P_a_T_visit", "TEXT", false, 0, null, TableInfo.CREATED_FROM_ENTITY));
-        _columnsEducTable.put("q5_t_p_a_Time", new TableInfo.Column("q5_t_p_a_Time", "TEXT", false, 0, null, TableInfo.CREATED_FROM_ENTITY));
-        _columnsEducTable.put("q7_total_number_of1_teachers", new TableInfo.Column("q7_total_number_of1_teachers", "TEXT", false, 0, null, TableInfo.CREATED_FROM_ENTITY));
-        _columnsEducTable.put("q7_1_p_r", new TableInfo.Column("q7_1_p_r", "TEXT", false, 0, null, TableInfo.CREATED_FROM_ENTITY));
-        _columnsEducTable.put("q7_2_w_teacher", new TableInfo.Column("q7_2_w_teacher", "INTEGER", true, 0, null, TableInfo.CREATED_FROM_ENTITY));
-        _columnsEducTable.put("q7_3_q", new TableInfo.Column("q7_3_q", "TEXT", false, 0, null, TableInfo.CREATED_FROM_ENTITY));
-        _columnsEducTable.put("q8_1_inspector", new TableInfo.Column("q8_1_inspector", "TEXT", false, 0, null, TableInfo.CREATED_FROM_ENTITY));
-        _columnsEducTable.put("q8_2_inspector_visits", new TableInfo.Column("q8_2_inspector_visits", "TEXT", false, 0, null, TableInfo.CREATED_FROM_ENTITY));
-        _columnsEducTable.put("q8_3_com", new TableInfo.Column("q8_3_com", "INTEGER", true, 0, null, TableInfo.CREATED_FROM_ENTITY));
-        _columnsEducTable.put("q8_4_meet", new TableInfo.Column("q8_4_meet", "TEXT", false, 0, null, TableInfo.CREATED_FROM_ENTITY));
-        _columnsEducTable.put("q8_5_sch_mgt", new TableInfo.Column("q8_5_sch_mgt", "TEXT", false, 0, null, TableInfo.CREATED_FROM_ENTITY));
-        _columnsEducTable.put("q8_other_observations", new TableInfo.Column("q8_other_observations", "TEXT", false, 0, null, TableInfo.CREATED_FROM_ENTITY));
-        _columnsEducTable.put("stored_locally", new TableInfo.Column("stored_locally", "INTEGER", true, 0, null, TableInfo.CREATED_FROM_ENTITY));
-        final HashSet<TableInfo.ForeignKey> _foreignKeysEducTable = new HashSet<TableInfo.ForeignKey>(0);
-        final HashSet<TableInfo.Index> _indicesEducTable = new HashSet<TableInfo.Index>(0);
-        final TableInfo _infoEducTable = new TableInfo("educ_table", _columnsEducTable, _foreignKeysEducTable, _indicesEducTable);
-        final TableInfo _existingEducTable = TableInfo.read(_db, "educ_table");
-        if (! _infoEducTable.equals(_existingEducTable)) {
-          return new RoomOpenHelper.ValidationResult(false, "educ_table(org.ygba.youthgobudget.data.education.EducationQuestion).\n"
-                  + " Expected:\n" + _infoEducTable + "\n"
-                  + " Found:\n" + _existingEducTable);
         }
         final HashMap<String, TableInfo.Column> _columnsSocialDev = new HashMap<String, TableInfo.Column>(96);
         _columnsSocialDev.put("id", new TableInfo.Column("id", "INTEGER", true, 1, null, TableInfo.CREATED_FROM_ENTITY));
@@ -568,7 +432,7 @@ public final class YGBDatabase_Impl extends YGBDatabase {
         }
         return new RoomOpenHelper.ValidationResult(true, null);
       }
-    }, "519512a71607f3d939f86b80bc749664", "5d186a443c8a0f3828fc24c148b06993");
+    }, "d765022a807ff35192ccf32881b31a79", "d295ed0da5cc36ef50bf94e31d87392c");
     final SupportSQLiteOpenHelper.Configuration _sqliteConfig = SupportSQLiteOpenHelper.Configuration.builder(configuration.context)
         .name(configuration.name)
         .callback(_openCallback)
@@ -581,7 +445,7 @@ public final class YGBDatabase_Impl extends YGBDatabase {
   protected InvalidationTracker createInvalidationTracker() {
     final HashMap<String, String> _shadowTablesMap = new HashMap<String, String>(0);
     HashMap<String, Set<String>> _viewTables = new HashMap<String, Set<String>>(0);
-    return new InvalidationTracker(this, _shadowTablesMap, _viewTables, "agric","educ_table","social_dev","water_and_env","budget_information");
+    return new InvalidationTracker(this, _shadowTablesMap, _viewTables, "agric","social_dev","water_and_env","budget_information");
   }
 
   @Override
@@ -591,7 +455,6 @@ public final class YGBDatabase_Impl extends YGBDatabase {
     try {
       super.beginTransaction();
       _db.execSQL("DELETE FROM `agric`");
-      _db.execSQL("DELETE FROM `educ_table`");
       _db.execSQL("DELETE FROM `social_dev`");
       _db.execSQL("DELETE FROM `water_and_env`");
       _db.execSQL("DELETE FROM `budget_information`");
@@ -629,20 +492,6 @@ public final class YGBDatabase_Impl extends YGBDatabase {
           _socialDevelopmentDao = new SocialDevelopmentDao_Impl(this);
         }
         return _socialDevelopmentDao;
-      }
-    }
-  }
-
-  @Override
-  public EducationQuestionDao educationQuestionDao() {
-    if (_educationQuestionDao != null) {
-      return _educationQuestionDao;
-    } else {
-      synchronized(this) {
-        if(_educationQuestionDao == null) {
-          _educationQuestionDao = new EducationQuestionDao_Impl(this);
-        }
-        return _educationQuestionDao;
       }
     }
   }

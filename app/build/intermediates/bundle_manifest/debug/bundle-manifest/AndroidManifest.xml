@@ -23,12 +23,24 @@
         android:supportsRtl="true"
         android:testOnly="true"
         android:theme="@style/AppTheme" >
-        <activity android:name="org.ygba.youthgobudget.allocation.AllocationActivity" />
-        <activity android:name="org.ygba.youthgobudget.history.HistoryActivity" />
-        <activity android:name="org.ygba.youthgobudget.help.HelpActivity" />
-        <activity android:name="org.ygba.youthgobudget.polls.PollActivity" />
-        <activity android:name="org.ygba.youthgobudget.budget_cycle.BudgetCycleActivity" />
-        <activity android:name="org.ygba.youthgobudget.local_government.LocalGovernmentActivity" />
+        <activity
+            android:name="org.ygba.youthgobudget.allocation.AllocationActivity"
+            android:parentActivityName="org.ygba.youthgobudget.MainActivity" />
+        <activity
+            android:name="org.ygba.youthgobudget.history.HistoryActivity"
+            android:parentActivityName="org.ygba.youthgobudget.MainActivity" />
+        <activity
+            android:name="org.ygba.youthgobudget.help.HelpActivity"
+            android:parentActivityName="org.ygba.youthgobudget.MainActivity" />
+        <activity
+            android:name="org.ygba.youthgobudget.polls.PollActivity"
+            android:parentActivityName="org.ygba.youthgobudget.MainActivity" />
+        <activity
+            android:name="org.ygba.youthgobudget.budget_cycle.BudgetCycleActivity"
+            android:parentActivityName="org.ygba.youthgobudget.MainActivity" />
+        <activity
+            android:name="org.ygba.youthgobudget.local_government.LocalGovernmentActivity"
+            android:parentActivityName="org.ygba.youthgobudget.MainActivity" />
         <activity
             android:name="org.ygba.youthgobudget.budget_information.BudgetInformationActivity"
             android:label="Budget Information"
@@ -46,6 +58,7 @@
             android:parentActivityName="org.ygba.youthgobudget.MainActivity" />
         <activity
             android:name="org.ygba.youthgobudget.education.EducationActivity"
+            android:exported="true"
             android:parentActivityName="org.ygba.youthgobudget.MainActivity" />
         <activity
             android:name="org.ygba.youthgobudget.health.HealthActivity"

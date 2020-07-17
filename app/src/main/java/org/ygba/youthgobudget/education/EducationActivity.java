@@ -46,10 +46,10 @@ public class EducationActivity extends AppCompatActivity {
         eAgentEditText = findViewById(R.id.ygb_agent_name_edit_view);
         eAgentTellEditText = findViewById(R.id.ygb_agent_tel_edit_view);
         eQuestion1EditText = findViewById(R.id.question_1_edit_text);
-        eQuestionSchoolNameEditText = findViewById(R.id.question_2_school_name_edit_text);
-        eQuestionMaleTeachersEditText = findViewById(R.id.question_2_teacher_male_edit_text);
-        eQuestion2MaleEnrolledPupilsEditText = findViewById(R.id.question_2_pupil_enrollment_male_edit_text);
-        eQuestion2NumberP7PupilEditText = findViewById(R.id.question_2_number_p7_male_edit_text);
-        eQuestion2MaleDropoutPupilEditText = findViewById(R.id.question_2_number_of_p7_male_edit_text);
+//        eQuestionSchoolNameEditText = findViewById(R.id.question_2_school_name_edit_text);
+//        eQuestionMaleTeachersEditText = findViewById(R.id.question_2_teacher_male_edit_text);
+//        eQuestion2MaleEnrolledPupilsEditText = findViewById(R.id.question_2_pupil_enrollment_male_edit_text);
+//        eQuestion2NumberP7PupilEditText = findViewById(R.id.question_2_number_p7_male_edit_text);
+//        eQuestion2MaleDropoutPupilEditText = findViewById(R.id.question_2_number_of_p7_male_edit_text);
     }
 }
