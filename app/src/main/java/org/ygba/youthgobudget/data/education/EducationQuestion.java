@@ -35,16 +35,16 @@ public class EducationQuestion {
     private String question1SchoolName;
 
     @ColumnInfo(name = EducationQuestionConstants.QUESTION_2_TEACHERS_MALE)
-    private String question2TeacherMale;
+    private int question2MaleTeachers;
 
     @ColumnInfo(name = EducationQuestionConstants.QUESTION_2_TEACHERS_FEMALE)
-    private String question2TeacherFemale;
+    private String question2FemaleTeachers;
 
     @ColumnInfo(name = EducationQuestionConstants.QUESTION_2_TEACHERS_MALE_PWDS)
-    private String question2TeacherMalePWDS;
+    private String question2MaleTeachersPWDS;
 
     @ColumnInfo(name = EducationQuestionConstants.QUESTION_2_TEACHERS_FEMALE_PWDS)
-    private String question2TeacherFemalePWDS;
+    private String question2FemaleTeacherPWDS;
 
     @ColumnInfo(name = EducationQuestionConstants.QUESTION_2_TEACHERS_TOTAL)
     private String question2TeacherTotal;
