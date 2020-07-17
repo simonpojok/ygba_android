@@ -53,6 +53,7 @@ public class EducationActivity extends AppCompatActivity {
 
     private void saveData() {
         EducationQuestion educationQuestion = new EducationQuestion.Builder()
+                .setFinancialYear("Fina")
                 .build();
     }
 
