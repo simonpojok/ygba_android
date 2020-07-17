@@ -1620,7 +1620,6 @@ id district_7
 id district_sector_spinner
 id district_text_edit
 id division_text_edit
-id drawer_layout
 id dropdown_menu
 id edit_query
 id education_question_4_1_Good
@@ -1871,7 +1870,6 @@ id nav_gallery
 id nav_home
 id nav_host_fragment_container
 id nav_slideshow
-id nav_view
 id navigation_header_container
 id never
 id noScroll
@@ -2248,10 +2246,8 @@ id textSpacerNoButtons
 id textSpacerNoTitle
 id textStart
 id textView
-id text_gallery
 id text_input_end_icon
 id text_input_start_icon
-id text_slideshow
 id textinput_counter
 id textinput_error
 id textinput_helper_text
@@ -2415,7 +2411,6 @@ layout activity_education
 layout activity_health
 layout activity_local_government
 layout activity_main
-layout activity_main34
 layout activity_social_development
 layout activity_social_development_list
 layout activity_water_environment
@@ -2437,9 +2432,6 @@ layout design_navigation_menu
 layout design_navigation_menu_item
 layout design_text_input_end_icon
 layout design_text_input_start_icon
-layout fragment_gallery
-layout fragment_home
-layout fragment_slideshow
 layout mtrl_alert_dialog
 layout mtrl_alert_dialog_actions
 layout mtrl_alert_dialog_title

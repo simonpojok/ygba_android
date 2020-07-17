@@ -4,10 +4,6 @@
         "source": "/home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/res/mipmap-xhdpi/ic_launcher_round.png"
     },
     {
-        "merged": "/home/mckeyo/AndroidStudioProjects/ygba_android/app/build/intermediates/res/merged/debug/layout_fragment_gallery.xml.flat",
-        "source": "/home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/res/layout/fragment_gallery.xml"
-    },
-    {
         "merged": "/home/mckeyo/AndroidStudioProjects/ygba_android/app/build/intermediates/res/merged/debug/mipmap-anydpi-v26_ic_launcher_round.xml.flat",
         "source": "/home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml"
     },
@@ -18,10 +14,6 @@
     {
         "merged": "/home/mckeyo/AndroidStudioProjects/ygba_android/app/build/intermediates/res/merged/debug/drawable_ic_agriculture_white_24dp.xml.flat",
         "source": "/home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/res/drawable/ic_agriculture_white_24dp.xml"
-    },
-    {
-        "merged": "/home/mckeyo/AndroidStudioProjects/ygba_android/app/build/intermediates/res/merged/debug/layout_activity_main34.xml.flat",
-        "source": "/home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/res/layout/activity_main34.xml"
     },
     {
         "merged": "/home/mckeyo/AndroidStudioProjects/ygba_android/app/build/intermediates/res/merged/debug/drawable_ic_baseline_nature_people_24.xml.flat",
@@ -160,10 +152,6 @@
         "source": "/home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/res/layout/activity_social_development.xml"
     },
     {
-        "merged": "/home/mckeyo/AndroidStudioProjects/ygba_android/app/build/intermediates/res/merged/debug/layout_fragment_slideshow.xml.flat",
-        "source": "/home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/res/layout/fragment_slideshow.xml"
-    },
-    {
         "merged": "/home/mckeyo/AndroidStudioProjects/ygba_android/app/build/intermediates/res/merged/debug/drawable_ic_baseline_account_balance_24.xml.flat",
         "source": "/home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/res/drawable/ic_baseline_account_balance_24.xml"
     },
@@ -214,10 +202,6 @@
     {
         "merged": "/home/mckeyo/AndroidStudioProjects/ygba_android/app/build/intermediates/res/merged/debug/drawable_ic_baseline_account_circle_24.xml.flat",
         "source": "/home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/res/drawable/ic_baseline_account_circle_24.xml"
-    },
-    {
-        "merged": "/home/mckeyo/AndroidStudioProjects/ygba_android/app/build/intermediates/res/merged/debug/layout_fragment_home.xml.flat",
-        "source": "/home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/res/layout/fragment_home.xml"
     },
     {
         "merged": "/home/mckeyo/AndroidStudioProjects/ygba_android/app/build/intermediates/res/merged/debug/drawable_ic_batch_prediction_white_50dp.xml.flat",
