@@ -55,4 +55,12 @@ public class EducationActivity extends AppCompatActivity {
         EducationQuestion educationQuestion = new EducationQuestion.Builder()
                 .build();
     }
+
+    private String getTextValue(EditText editText) {
+        return  editText.getText().toString();
+    }
+
+    private String getTextValue(TextView editText) {
+        return  editText.getText().toString();
+    }
 }
