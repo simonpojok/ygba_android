@@ -91,4 +91,5 @@ public class EducationQuestionConstants {
     public static final String QUESTION_5_FEMALE_CHANGING_ROOM_FEMALE_TEACHER_STANCES = "question_5_female_changing_room_female_teacher";
     public static final String QUESTION_5_FEMALE_CHANGING_ROOM_MIXED_TEACHER = "question_5_female_changing_mixed_teachers";
     public static final String QUESTION_5_FEMALE_CHANGING_ROOM_FUNCTIONAL = "question_5_female_changing_room_functioal";
+    public static final String QUESTION_5_FEMALE_CHANGING_ROOM_NONE_FUNCTIONAL = "question_question_5_female_changing_none_functional";
 }
