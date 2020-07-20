@@ -135,6 +135,9 @@ public class EducationQuestion {
     @ColumnInfo(name = EducationQuestionConstants.QUESTION_3_SFG_DATE_RECIEVED)
     private String question3SFGDateReceived;
 
+    @ColumnInfo(name = EducationQuestionConstants.QUESTION_3_SFG_DATE_WITHDRAWN)
+    private String question3SFGDateWithdrawn;
+
 
 
     public static class Builder {
@@ -334,10 +337,23 @@ public class EducationQuestion {
             INSTANCE.setQuestion3SFGDateReceived(textValue);
             return this;
         }
+
+        public Builder setQ3SFGDateWithdrawn(String textValue) {
+            INSTANCE.setQuestion3SFGDateWithdrawn(textValue);
+            return this;
+        }
     }
 
     @Ignore
     private EducationQuestion() {
+    }
+
+    public String getQuestion3SFGDateWithdrawn() {
+        return question3SFGDateWithdrawn;
+    }
+
+    public void setQuestion3SFGDateWithdrawn(String question3SFGDateWithdrawn) {
+        this.question3SFGDateWithdrawn = question3SFGDateWithdrawn;
     }
 
     public String getQuestion3SFGDateReceived() {
