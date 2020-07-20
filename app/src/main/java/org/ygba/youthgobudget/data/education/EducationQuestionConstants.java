@@ -95,4 +95,7 @@ public class EducationQuestionConstants {
     public static final String QUESTION_5_URINALS_FOR_BOYS_BLOCK_NUMBERS = "question_5_uirinals_for_boys_block_number";
     public static final String QUESTION_5_URINALS_FOR_BOYS_NUMBER_STANCES = "question_urinals_number_stances";
     public static final String QUESTION_5_URINALS_FOR_BOYS_NUMBER_TEACHERS = "question_5_urinals_for_boys_number_stances_teachers";
+    public static final String QUESTION_5_URINALS_FOR_BOYS_NUMBER_MIXED_TEACHER = "question_5_urinals_for_boys_mixed_teachers";
+    public static final String QUESTION_5_URINALS_FOR_BOYS_NUMBER_FUNCTIONAL = "question_5_urinals_for_boys_functional";
+    public static final String QUESTION_5_URINALS_FOR_BOYS_NONE_FUNCTIONAL = "question_5_urinals_for_boys_none_functional";
 }

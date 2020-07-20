@@ -292,6 +292,15 @@ public class EducationQuestion {
     @ColumnInfo(name = EducationQuestionConstants.QUESTION_5_URINALS_FOR_BOYS_NUMBER_TEACHERS)
     private int question5UrinalsForBoysNumberStancesTeacher;
 
+    @ColumnInfo(name = EducationQuestionConstants.QUESTION_5_URINALS_FOR_BOYS_NUMBER_MIXED_TEACHER)
+    private int question5UrinalsForBoysMixedTeachers;
+
+    @ColumnInfo(name = EducationQuestionConstants.QUESTION_5_URINALS_FOR_BOYS_NUMBER_FUNCTIONAL)
+    private int question5UrinalsForBoysTeacherFunctional;
+
+    @ColumnInfo(name = EducationQuestionConstants.QUESTION_5_URINALS_FOR_BOYS_NONE_FUNCTIONAL)
+    private int question5UrinalsForBoysNoneFunctional;
+
     public static class Builder {
         private final EducationQuestion INSTANCE;
         public Builder() {
@@ -754,6 +763,45 @@ public class EducationQuestion {
             INSTANCE.setQuestion5UrinalsForBoysNumberStancesTeacher(integerValue);
             return this;
         }
+
+        public Builder setQ5UrinalsForBoysStancesNumberMixedTeachers(int integerValue) {
+            INSTANCE.setQuestion5UrinalsForBoysMixedTeachers(integerValue);
+            return this;
+        }
+
+        public Builder setQ5UrinalsForBoysStancesFunctional(int integerValue) {
+            INSTANCE.setQuestion5UrinalsForBoysTeacherFunctional(integerValue);
+            return this;
+        }
+
+        public Builder setQ5UrinalsForBoysStancesNoneFunctional(int integerValue) {
+            INSTANCE.setQuestion5UrinalsForBoysNoneFunctional(integerValue);
+            return this;
+        }
+    }
+
+    public int getQuestion5UrinalsForBoysNoneFunctional() {
+        return question5UrinalsForBoysNoneFunctional;
+    }
+
+    public void setQuestion5UrinalsForBoysNoneFunctional(int question5UrinalsForBoysNoneFunctional) {
+        this.question5UrinalsForBoysNoneFunctional = question5UrinalsForBoysNoneFunctional;
+    }
+
+    public int getQuestion5UrinalsForBoysTeacherFunctional() {
+        return question5UrinalsForBoysTeacherFunctional;
+    }
+
+    public void setQuestion5UrinalsForBoysTeacherFunctional(int question5UrinalsForBoysTeacherFunctional) {
+        this.question5UrinalsForBoysTeacherFunctional = question5UrinalsForBoysTeacherFunctional;
+    }
+
+    public int getQuestion5UrinalsForBoysMixedTeachers() {
+        return question5UrinalsForBoysMixedTeachers;
+    }
+
+    public void setQuestion5UrinalsForBoysMixedTeachers(int question5UrinalsForBoysMixedTeachers) {
+        this.question5UrinalsForBoysMixedTeachers = question5UrinalsForBoysMixedTeachers;
     }
 
     public int getQuestion5UrinalsForBoysNumberStancesTeacher() {
