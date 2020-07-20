@@ -223,6 +223,12 @@ public class EducationQuestion {
     @ColumnInfo(name = EducationQuestionConstants.QUESTION_5_LATRINE_NUMBER_OF_STANCES_MALE_TEACHER)
     private int question5LatrineNumberStancesMaleTeachers;
 
+    @ColumnInfo(name = EducationQuestionConstants.QUESTION_5_LATRINE_NUMBER_OF_STANCES_FEMALE_TEACHER)
+    private int question5LatrineNumberStancesFemaleTeachers;
+
+    @ColumnInfo(name = EducationQuestionConstants.QUESTION_5_LATRINE_MIXED_TEACHER)
+    private int question5LatrineMixedTeachers;
+
     public static class Builder {
         private final EducationQuestion INSTANCE;
         public Builder() {
@@ -570,6 +576,32 @@ public class EducationQuestion {
             INSTANCE.setQuestion5LatrineNumberStancesMaleTeachers(integerValue);
             return this;
         }
+
+        public Builder setQ5LatrineNumberOfFemaleStancesTeachers(int integerValue) {
+            INSTANCE.setQuestion5LatrineNumberStancesFemaleTeachers(integerValue);
+            return this;
+        }
+
+        public Builder setQ5LatrineNumberMixedTeachers(int integerValue) {
+            INSTANCE.setQuestion5LatrineMixedTeachers(integerValue);
+            return this;
+        }
+    }
+
+    public int getQuestion5LatrineMixedTeachers() {
+        return question5LatrineMixedTeachers;
+    }
+
+    public void setQuestion5LatrineMixedTeachers(int question5LatrineMixedTeachers) {
+        this.question5LatrineMixedTeachers = question5LatrineMixedTeachers;
+    }
+
+    public int getQuestion5LatrineNumberStancesFemaleTeachers() {
+        return question5LatrineNumberStancesFemaleTeachers;
+    }
+
+    public void setQuestion5LatrineNumberStancesFemaleTeachers(int question5LatrineNumberStancesFemaleTeachers) {
+        this.question5LatrineNumberStancesFemaleTeachers = question5LatrineNumberStancesFemaleTeachers;
     }
 
     public int getQuestion5LatrineNumberStancesMaleTeachers() {
