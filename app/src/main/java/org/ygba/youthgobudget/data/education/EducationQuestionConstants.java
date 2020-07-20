@@ -70,4 +70,5 @@ public class EducationQuestionConstants {
     public static final String QUESTION_5_LATRINE_NUMBER_BLOCKS = "question_5_number_blocks_latrine";
     public static final String QUESTION_5_LATRINE_NUMBER_STANCES = "question_5_number_latrine_stances";
     public static final String QUESTION_5_LATRINE_NUMBER_OF_INSTANCES_MALE_PUPIL = "question_5_latrine_number_instances_male_pupil";
+    public static final String QUESTION_5_LATRINE_NUMBER_OF_STANCES_FEMALE_PUPIL = "question_5_number_stances_female_stances_female";
 }

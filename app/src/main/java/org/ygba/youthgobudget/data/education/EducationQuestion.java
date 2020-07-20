@@ -217,7 +217,8 @@ public class EducationQuestion {
     @ColumnInfo(name = EducationQuestionConstants.QUESTION_5_LATRINE_NUMBER_OF_INSTANCES_MALE_PUPIL)
     private int question5LatrineNumberStanceMalePupil;
 
-
+    @ColumnInfo(name = EducationQuestionConstants.QUESTION_5_LATRINE_NUMBER_OF_STANCES_FEMALE_PUPIL)
+    private int question5LatrineNumberStanceFemalePupil;
 
     public static class Builder {
         private final EducationQuestion INSTANCE;
@@ -556,6 +557,19 @@ public class EducationQuestion {
             INSTANCE.setQuestion5LatrineNumberStanceMalePupil(integerValue);
             return this;
         }
+
+        public Builder setQ5LatrineNumberOfFemaleStancesPupil(int integerValue) {
+            INSTANCE.setQuestion5LatrineNumberStanceFemalePupil(integerValue);
+            return this;
+        }
+    }
+
+    public int getQuestion5LatrineNumberStanceFemalePupil() {
+        return question5LatrineNumberStanceFemalePupil;
+    }
+
+    public void setQuestion5LatrineNumberStanceFemalePupil(int question5LatrineNumberStanceFemalePupil) {
+        this.question5LatrineNumberStanceFemalePupil = question5LatrineNumberStanceFemalePupil;
     }
 
     public int getQuestion5LatrineNumberStanceMalePupil() {
