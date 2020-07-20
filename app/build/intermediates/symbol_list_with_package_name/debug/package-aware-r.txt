@@ -1952,9 +1952,14 @@ id question_2_vaccination_for_hep_b_yes
 id question_2_youth_friendly_corners_no
 id question_2_youth_friendly_corners_radio_group
 id question_2_youth_friendly_corners_yes
+id question_3_1_head_teacher_office
 id question_3_1_no
+id question_3_1_not_displayed
 id question_3_1_radio_group
+id question_3_1_school_notice_board
+id question_3_1_school_staff_room
 id question_3_1_yes
+id question_3_2_state_reason_edit_text
 id question_3_capital_grant_date_received_edit_text
 id question_3_capital_grant_date_withdrawn_edit_text
 id question_3_capital_grant_edit_text
@@ -2804,6 +2809,8 @@ string sub_county_label_sub
 string sub_county_or_village
 string telephone_hint
 string termly
+string text_question_3_1
+string text_question_3_2
 string total
 string total_label
 string trade_label

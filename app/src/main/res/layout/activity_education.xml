@@ -931,12 +931,11 @@
             android:text="@string/text_question_3_1"
             android:textSize="15sp"
             android:textColor="@color/white"/>
-
         <LinearLayout
             android:layout_marginVertical="5dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:orientation="horizontal">
+            android:orientation="vertical">
             <CheckBox
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -953,12 +952,6 @@
                 android:text="Head Teacher Office"
                 android:id="@+id/question_3_1_head_teacher_office"
                 android:textColor="@color/white"/>
-        </LinearLayout>
-        <LinearLayout
-            android:layout_marginVertical="5dp"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
             <CheckBox
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
