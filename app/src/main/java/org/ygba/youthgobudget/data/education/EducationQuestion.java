@@ -169,6 +169,9 @@ public class EducationQuestion {
     @ColumnInfo(name = EducationQuestionConstants.QUESTION_4_GRADE_2_FEMALE_NUMBER)
     private int question4Grade2FemaleNumber;
 
+    @ColumnInfo(name = EducationQuestionConstants.QUESTION_4_GRADE_3_FEMALE_NUMBER)
+    private int question4Grade3FemaleNumber;
+
 
 
     public static class Builder {
@@ -428,10 +431,23 @@ public class EducationQuestion {
             INSTANCE.setQuestion4Grade2FemaleNumber(integerValue);
             return this;
         }
+
+        public Builder setQ4Grade3FemaleNumber(int integerValue) {
+            INSTANCE.setQuestion4Grade3FemaleNumber(integerValue);
+            return this;
+        }
     }
 
     @Ignore
     private EducationQuestion() {
+    }
+
+    public int getQuestion4Grade3FemaleNumber() {
+        return question4Grade3FemaleNumber;
+    }
+
+    public void setQuestion4Grade3FemaleNumber(int question4Grade3FemaleNumber) {
+        this.question4Grade3FemaleNumber = question4Grade3FemaleNumber;
     }
 
     public int getQuestion4Grade2FemaleNumber() {

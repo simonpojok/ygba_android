@@ -76,6 +76,7 @@ public class EducationActivity extends AppCompatActivity {
 
     private EditText eQ4Grade1GirlEditText;
     private EditText eQ4Grade2GirlEditText;
+    private EditText eQ4Grade3GirlEditText;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -170,6 +171,7 @@ public class EducationActivity extends AppCompatActivity {
 
         eQ4Grade1GirlEditText = findViewById(R.id.question_4_grade_1_female_edit_text);
         eQ4Grade2GirlEditText = findViewById(R.id.question_4_grade_2_female_edit_text);
+        eQ4Grade3GirlEditText = findViewById(R.id.question_4_grade_3_female_edit_text);
 
         findViewById(R.id.saved_form_data).setOnClickListener(new View.OnClickListener() {
             @Override
@@ -238,6 +240,7 @@ public class EducationActivity extends AppCompatActivity {
 
                 .setQ4Grade1FemaleNumber(getIntegerValue(eQ4Grade1GirlEditText))
                 .setQ4Grade2FemaleNumber(getIntegerValue(eQ4Grade2GirlEditText))
+                .setQ4Grade3FemaleNumber(getIntegerValue(eQ4Grade3GirlEditText))
                 .build();
     }
 
