@@ -152,6 +152,10 @@
         "source": "/home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png"
     },
     {
+        "merged": "/home/mckeyo/AndroidStudioProjects/ygba_android/app/build/intermediates/res/merged/debug/layout_def.xml.flat",
+        "source": "/home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/res/layout/def.xml"
+    },
+    {
         "merged": "/home/mckeyo/AndroidStudioProjects/ygba_android/app/build/intermediates/res/merged/debug/drawable_ic_baseline_local_hospital_24.xml.flat",
         "source": "/home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/res/drawable/ic_baseline_local_hospital_24.xml"
     },
