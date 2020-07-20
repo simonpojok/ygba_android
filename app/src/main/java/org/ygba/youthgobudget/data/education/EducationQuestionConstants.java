@@ -87,4 +87,5 @@ public class EducationQuestionConstants {
     public static final String QUESTION_5_VIP_LATRINE_NONE_FUNCTIONAL = "question_5_latrine_none_functional_vip";
     public static final String QUESTION_5_FEMALE_CHANGING_ROOM_BLOCKS = "question_5_female_changing_block_number";
     public static final String QUESTION_5_FEMALE_CHANGING_ROOM_STANCES = "question_5_female_changing_block_stances  ";
+    public static final String QUESTION_5_FEMALE_CHANGING_ROOM_FEMALE_STANCES = "question_5_female_changing_female_stances";
 }

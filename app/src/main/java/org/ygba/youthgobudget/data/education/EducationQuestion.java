@@ -268,6 +268,9 @@ public class EducationQuestion {
     @ColumnInfo(name = EducationQuestionConstants.QUESTION_5_FEMALE_CHANGING_ROOM_STANCES)
     private int question5FemaleChangingRoomStanceNumber;
 
+    @ColumnInfo(name = EducationQuestionConstants.QUESTION_5_FEMALE_CHANGING_ROOM_FEMALE_STANCES)
+    private int question5FemaleChangingRoomFemaleStances;
+
     public static class Builder {
         private final EducationQuestion INSTANCE;
         public Builder() {
@@ -690,6 +693,19 @@ public class EducationQuestion {
             INSTANCE.setQuestion5FemaleChangingRoomStanceNumber(integerValue);
             return this;
         }
+
+        public Builder setQ5FemaleChangingRoomNumberFemaleStance(int integerValue) {
+            INSTANCE.setQuestion5FemaleChangingRoomFemaleStances(integerValue);
+            return this;
+        }
+    }
+
+    public int getQuestion5FemaleChangingRoomFemaleStances() {
+        return question5FemaleChangingRoomFemaleStances;
+    }
+
+    public void setQuestion5FemaleChangingRoomFemaleStances(int question5FemaleChangingRoomFemaleStances) {
+        this.question5FemaleChangingRoomFemaleStances = question5FemaleChangingRoomFemaleStances;
     }
 
     public int getQuestion5FemaleChangingRoomStanceNumber() {
