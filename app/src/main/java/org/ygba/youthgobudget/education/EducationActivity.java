@@ -57,8 +57,11 @@ public class EducationActivity extends AppCompatActivity {
 
     private EditText eQ2DropOutReasonIfDropOut;
     private EditText eQ3CapitalGrantReleasedBudgetExitText;
-    private EditText eQ3CapitalBudgetReceivedDateEditText;
+    private TextView eQ3CapitalBudgetReceivedDateEditText;
     private TextView eQ3CapitalBudgetDateWithdrawnEditText;
+
+    private EditText eQ3SFGApprovedBudgetEditText;
+    private EditText eQ3SFGBudgetReleasedEditText;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -127,6 +130,9 @@ public class EducationActivity extends AppCompatActivity {
             }
         });
 
+        eQ3SFGApprovedBudgetEditText = findViewById(R.id.question_3_sfg_approved_budget_edit_text);
+        eQ3SFGBudgetReleasedEditText = findViewById(R.id.question_3_sfg_budget_released_edit_text)
+
 
         findViewById(R.id.saved_form_data).setOnClickListener(new View.OnClickListener() {
             @Override
@@ -178,6 +184,8 @@ public class EducationActivity extends AppCompatActivity {
                 .setQ3CapitalGrantReleasedBudget(getIntegerValue(eQ3CapitalGrantReleasedBudgetExitText))
                 .setQ3CapitalGrantDateReceived(getTextValue(eQ3CapitalBudgetReceivedDateEditText))
                 .setQ3CapitalGrantDateWithdrawn(getTextValue(eQ3CapitalBudgetDateWithdrawnEditText))
+                .setQ3SFGApprovedBudget(getIntegerValue(eQ3SFGApprovedBudgetEditText))
+                .setQ3SFGBudgetReleased(getIntegerValue(eQ3SFGBudgetReleasedEditText))
                 .build();
     }
 

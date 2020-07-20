@@ -126,6 +126,12 @@ public class EducationQuestion {
     @ColumnInfo(name = EducationQuestionConstants.QUESTION_3_CAPITAL_GRANT_DATE_WITHDRAWN)
     private String question3CapitalDateWithdrawn;
 
+    @ColumnInfo(name = EducationQuestionConstants.QUESTION_3_SFG_APPROVED_BUDGET)
+    private int question3SFGApprovedBudgetEditText;
+
+    @ColumnInfo(name = EducationQuestionConstants.QUESTION_3_SFG_BUDGET_RECEIVED)
+    private int question3SFGBudgetReceived;
+
 
 
     public static class Builder {
@@ -310,10 +316,36 @@ public class EducationQuestion {
             INSTANCE.setQuestion3CapitalDateWithdrawn(textValue);
             return this;
         }
+
+        public Builder setQ3SFGApprovedBudget(int integerValue) {
+            INSTANCE.setQuestion3SFGApprovedBudgetEditText(integerValue);
+            return this;
+        }
+
+        public Builder setQ3SFGBudgetReleased(int integerValue) {
+            INSTANCE.setQuestion3SFGBudgetReceived(integerValue);
+            return this;
+        }
     }
 
     @Ignore
     private EducationQuestion() {
+    }
+
+    public int getQuestion3SFGBudgetReceived() {
+        return question3SFGBudgetReceived;
+    }
+
+    public void setQuestion3SFGBudgetReceived(int question3SFGBudgetReceived) {
+        this.question3SFGBudgetReceived = question3SFGBudgetReceived;
+    }
+
+    public int getQuestion3SFGApprovedBudgetEditText() {
+        return question3SFGApprovedBudgetEditText;
+    }
+
+    public void setQuestion3SFGApprovedBudgetEditText(int question3SFGApprovedBudgetEditText) {
+        this.question3SFGApprovedBudgetEditText = question3SFGApprovedBudgetEditText;
     }
 
     public String getQuestion3CapitalDateWithdrawn() {
