@@ -123,6 +123,7 @@ public class EducationActivity extends AppCompatActivity {
     private EditText eQ5UrinalsForBoysNumberStancesMixedTeacher;
     private EditText eQ5UrinalsForBoysNumberStancesFunctional;
     private EditText eQ5UrinalsForBoysNNumberNoneFunctional;
+    private EditText eQ5UrinalsForBoysNumberMalePupil;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -262,11 +263,11 @@ public class EducationActivity extends AppCompatActivity {
 
         eQ5UrinalsForBoysNumberBlocks = findViewById(R.id.eduction_question_5_UFB_latrine_blocks);
         eQ5UrinalsForBoysNumberOfStances = findViewById(R.id.eduction_question_5_UFB_latrine_stances);
-        eQ5UrinalsForBoysNumberStancesTeachers = findViewById(R.id.eduction_question_5_UFB_latrine_pupil_male_stances);
+        eQ5UrinalsForBoysNumberStancesTeachers = findViewById(R.id.eduction_question_5_UFB_latrine_teacher_male_stances);
         eQ5UrinalsForBoysNumberStancesMixedTeacher = findViewById(R.id.eduction_question_5_UFB_latrine_teacher_mixed_stances);
         eQ5UrinalsForBoysNumberStancesFunctional = findViewById(R.id.eduction_question_5_UFB_latrine_functional_stances);
         eQ5UrinalsForBoysNNumberNoneFunctional = findViewById(R.id.eduction_question_5_UFB_latrine_none_stances);
-
+        eQ5UrinalsForBoysNumberMalePupil = findViewById(R.id.eduction_question_5_UFB_latrine_pupil_male_stances);
         findViewById(R.id.saved_form_data).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -381,6 +382,7 @@ public class EducationActivity extends AppCompatActivity {
 
                 .setQ5UrinalsForBoysBlockNumber(getIntegerValue(eQ5UrinalsForBoysNumberBlocks))
                 .setQ5UrinalsForBoysStancesNumber(getIntegerValue(eQ5UrinalsForBoysNumberOfStances))
+                .setQ5UrinalsForBoysStancesNumberMalePupil(getIntegerValue(eQ5UrinalsForBoysNumberMalePupil))
                 .setQ5UrinalsForBoysStancesNumberTeachers(getIntegerValue(eQ5UrinalsForBoysNumberStancesTeachers))
                 .setQ5UrinalsForBoysStancesNumberMixedTeachers(getIntegerValue(eQ5UrinalsForBoysNumberStancesMixedTeacher))
                 .setQ5UrinalsForBoysStancesFunctional(getIntegerValue(eQ5UrinalsForBoysNumberStancesFunctional))
