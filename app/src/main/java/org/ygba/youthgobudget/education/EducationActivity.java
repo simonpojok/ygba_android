@@ -82,6 +82,7 @@ public class EducationActivity extends AppCompatActivity {
     private EditText eQ42Reason4AttributeAnswerEditText;
 
     private EditText eQ5NumberOfBlocksToiletEditText;
+    private EditText eQ5NumberOfBlocksStancesEditText;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -182,6 +183,7 @@ public class EducationActivity extends AppCompatActivity {
         eQ42Reason4AttributeAnswerEditText = findViewById(R.id.question_4_2_edit_text);
 
         eQ5NumberOfBlocksToiletEditText = findViewById(R.id.question_4_toilet_blocks_edit_text);
+        eQ5NumberOfBlocksStancesEditText = findViewById(R.id.question_4_toilet_stances_edit_text);
 
         findViewById(R.id.saved_form_data).setOnClickListener(new View.OnClickListener() {
             @Override
@@ -257,6 +259,7 @@ public class EducationActivity extends AppCompatActivity {
                 .setQ42AttributeReasonAnswer(getTextValue(eQ42Reason4AttributeAnswerEditText))
 
                 .setQ5BlocksToiletNumber(getIntegerValue(eQ5NumberOfBlocksToiletEditText))
+                .setQ5ToiletNumberOfStances(getIntegerValue(eQ5NumberOfBlocksStancesEditText))
                 .build();
     }
 
