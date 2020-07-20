@@ -138,6 +138,9 @@ public class EducationQuestion {
     @ColumnInfo(name = EducationQuestionConstants.QUESTION_3_SFG_DATE_WITHDRAWN)
     private String question3SFGDateWithdrawn;
 
+    @ColumnInfo(name = EducationQuestionConstants.QUESTION_3_INFROMATION_NOTICE_BOARD_DISPLAYED)
+    private boolean informationNoticeBoardDisplayed;
+
 
 
     public static class Builder {
@@ -342,10 +345,23 @@ public class EducationQuestion {
             INSTANCE.setQuestion3SFGDateWithdrawn(textValue);
             return this;
         }
+
+        public Builder setQ3IsInformationNoticeBoardDisplayed(boolean budgetInformationDisplayedInSchoolNoticeBoard) {
+            INSTANCE.setInformationNoticeBoardDisplayed(budgetInformationDisplayedInSchoolNoticeBoard);
+            return this;
+        }
     }
 
     @Ignore
     private EducationQuestion() {
+    }
+
+    public boolean isInformationNoticeBoardDisplayed() {
+        return informationNoticeBoardDisplayed;
+    }
+
+    public void setInformationNoticeBoardDisplayed(boolean informationNoticeBoardDisplayed) {
+        this.informationNoticeBoardDisplayed = informationNoticeBoardDisplayed;
     }
 
     public String getQuestion3SFGDateWithdrawn() {

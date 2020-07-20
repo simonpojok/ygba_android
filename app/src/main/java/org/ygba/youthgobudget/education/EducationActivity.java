@@ -6,6 +6,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.RadioGroup;
 import android.widget.Spinner;
@@ -208,6 +209,7 @@ public class EducationActivity extends AppCompatActivity {
                 .setQ3SFGBudgetReleased(getIntegerValue(eQ3SFGBudgetReleasedEditText))
                 .setQ3SFGReceivedDate(getTextValue(eQ3SFGDateReceivedEditText))
                 .setQ3SFGDateWithdrawn(getTextValue(eQ3SFGDateWithdrawnEditText))
+                .setQ3IsInformationNoticeBoardDisplayed(isBudgetInformationDisplayedInSchoolNoticeBoard())
                 .build();
     }
 
@@ -235,5 +237,9 @@ public class EducationActivity extends AppCompatActivity {
                 eQ3SFGDateReceivedEditText.setText(data.getStringExtra(DatePickerActivity.SELECTED_DATE));
             }
         }
+    }
+
+    private boolean isBudgetInformationDisplayedInSchoolNoticeBoard() {
+        return ((CheckBox) findViewById(R.id.question_3_1_school_notice_board)).isChecked();
     }
 }
