@@ -181,6 +181,9 @@ public class EducationQuestion {
     @ColumnInfo(name = EducationQuestionConstants.QUESTION_4_2_REASON_ATTRIBUTE)
     private String question42ReasonAttribute;
 
+    @ColumnInfo(name = EducationQuestionConstants.QUESTION_5_TOILET_NUMBER_OF_BLOCKS)
+    private int question5ToiletNumberBlocks;
+
 
 
     public static class Builder {
@@ -460,10 +463,23 @@ public class EducationQuestion {
             INSTANCE.setQuestion42ReasonAttribute(textValue);
             return this;
         }
+
+        public Builder setQ5BlocksToiletNumber(int integerValue) {
+            INSTANCE.setQuestion5ToiletNumberBlocks(integerValue);
+            return this;
+        }
     }
 
     @Ignore
     private EducationQuestion() {
+    }
+
+    public int getQuestion5ToiletNumberBlocks() {
+        return question5ToiletNumberBlocks;
+    }
+
+    public void setQuestion5ToiletNumberBlocks(int question5ToiletNumberBlocks) {
+        this.question5ToiletNumberBlocks = question5ToiletNumberBlocks;
     }
 
     public String getQuestion42ReasonAttribute() {
