@@ -102,6 +102,8 @@ public class EducationActivity extends AppCompatActivity {
     private EditText eQ5NumberLatrineFunctional;
     private EditText eQ5NumberLatrineNonFunctional;
 
+    private EditText eQ5NumberVIPLatrineNumberBlocks;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -220,6 +222,8 @@ public class EducationActivity extends AppCompatActivity {
         eQ5NumberLatrineFunctional = findViewById(R.id.eduction_question_5_latrine_functional_stances);
         eQ5NumberLatrineNonFunctional = findViewById(R.id.eduction_question_5_latrine_none_stances);
 
+        eQ5NumberVIPLatrineNumberBlocks = findViewById(R.id.eduction_question_5_VIP_latrine_blocks);
+
         findViewById(R.id.saved_form_data).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -312,6 +316,8 @@ public class EducationActivity extends AppCompatActivity {
                 .setQ5LatrineNumberMixedTeachers(getIntegerValue(eQ5NumberStancesMixedTeachers))
                 .setQ5LatrineNumberFunctional(getIntegerValue(eQ5NumberLatrineFunctional))
                 .setQ5LatrineNumberNoneFunctional(getIntegerValue(eQ5NumberLatrineNonFunctional))
+
+                .setQ5VIPLatrineNumberOfBlocks(getIntegerValue(eQ5NumberVIPLatrineNumberBlocks))
                 .build();
     }
 
