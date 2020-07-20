@@ -229,6 +229,9 @@ public class EducationQuestion {
     @ColumnInfo(name = EducationQuestionConstants.QUESTION_5_LATRINE_MIXED_TEACHER)
     private int question5LatrineMixedTeachers;
 
+    @ColumnInfo(name = EducationQuestionConstants.QUESTION_5_LATRINE_FUNCTIONAL)
+    private int question5LatrineFunctional;
+
     public static class Builder {
         private final EducationQuestion INSTANCE;
         public Builder() {
@@ -586,6 +589,19 @@ public class EducationQuestion {
             INSTANCE.setQuestion5LatrineMixedTeachers(integerValue);
             return this;
         }
+
+        public Builder setQ5LatrineNumberFunctional(int integerValue) {
+            INSTANCE.setQuestion5LatrineFunctional(integerValue);
+            return this;
+        }
+    }
+
+    public int getQuestion5LatrineFunctional() {
+        return question5LatrineFunctional;
+    }
+
+    public void setQuestion5LatrineFunctional(int question5LatrineFunctional) {
+        this.question5LatrineFunctional = question5LatrineFunctional;
     }
 
     public int getQuestion5LatrineMixedTeachers() {

@@ -99,6 +99,7 @@ public class EducationActivity extends AppCompatActivity {
     private EditText eQ5NumberOfLatrineMaleStancesTeacher;
     private EditText eQ5NumberOfLatrineFemaleStancesTeacher;
     private EditText eQ5NumberStancesMixedTeachers;
+    private EditText eQ5NumberLatrineFunctional;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -215,6 +216,7 @@ public class EducationActivity extends AppCompatActivity {
         eQ5NumberOfLatrineMaleStancesTeacher = findViewById(R.id.eduction_question_5_latrine_teacher_male_stances);
         eQ5NumberOfLatrineFemaleStancesTeacher = findViewById(R.id.eduction_question_5_latrine_teacher_female_stances);
         eQ5NumberStancesMixedTeachers = findViewById(R.id.eduction_question_5_latrine_teacher_mixed_stances);
+        eQ5NumberLatrineFunctional = findViewById(R.id.eduction_question_5_latrine_functional_stances);
 
         findViewById(R.id.saved_form_data).setOnClickListener(new View.OnClickListener() {
             @Override
@@ -305,7 +307,8 @@ public class EducationActivity extends AppCompatActivity {
                 .setQ5LatrineNumberOfFemaleStancesPupil(getIntegerValue(eQ5NumberOfLatrineFemaleStancesPupil))
                 .setQ5LatrineNumberOfMaleStancesTeacher(getIntegerValue(eQ5NumberOfLatrineMaleStancesTeacher))
                 .setQ5LatrineNumberOfFemaleStancesTeachers(getIntegerValue(eQ5NumberOfLatrineFemaleStancesTeacher))
-                .setQ5NumberMixedTeachers(getIntegerValue(eQ5NumberStancesMixedTeachers))
+                .setQ5LatrineNumberMixedTeachers(getIntegerValue(eQ5NumberStancesMixedTeachers))
+                .setQ5LatrineNumberFunctional(getIntegerValue(eQ5NumberLatrineFunctional))
                 .build();
     }
 
