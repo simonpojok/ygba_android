@@ -60,4 +60,5 @@ public class EducationQuestionConstants {
     public static final String QUESTION_4_2_REASON_ATTRIBUTE = "question_4_2_attribute_reason";
     public static final String QUESTION_5_TOILET_NUMBER_OF_BLOCKS = "question_5_toilet_blocks";
     public static final String QUESTION_5_TOILET_NUMBER_OF_STANCES = "question_5_toilet_stances";
+    public static final String QUESTION_5_TOILET_NUMBER_MALE_STANCES_PUPIL = "question_5_male_stances_pupil";
 }
