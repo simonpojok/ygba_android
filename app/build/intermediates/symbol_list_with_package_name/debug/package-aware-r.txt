@@ -1590,10 +1590,10 @@ id cut
 id cv_agriculture
 id cv_allocation_icon
 id cv_budget_cycle_icon
+id cv_community_wishes
 id cv_education
 id cv_health_icon
 id cv_help_icon
-id cv_history
 id cv_local_government_icon
 id cv_polls_icon
 id cv_social_development_icon
@@ -2449,6 +2449,8 @@ layout activity_agriculture_activity
 layout activity_allocation
 layout activity_budget_cycle
 layout activity_budget_information
+layout activity_community_wish
+layout activity_community_wishes
 layout activity_date_picker
 layout activity_education
 layout activity_health

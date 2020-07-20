@@ -4,26 +4,17 @@
             "outputFile": "/home/mckeyo/AndroidStudioProjects/ygba_android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v23/values-v23.xml",
             "map": [
                 {
-                    "source": "/home/mckeyo/.gradle/caches/transforms-2/files-2.1/081958b85be993b26123dd5b1125e07f/material-1.1.0/res/values-v23/values-v23.xml",
+                    "source": "/home/mckeyo/.gradle/caches/transforms-2/files-2.1/a75852264f39bf8524c1928f8e3de566/work-runtime-2.3.4/res/values-v23/values-v23.xml",
                     "from": {
-                        "startLines": "2,6",
+                        "startLines": "2,3",
                         "startColumns": "4,4",
-                        "startOffsets": "55,320",
-                        "endLines": "5,9",
-                        "endColumns": "10,10",
-                        "endOffsets": "315,588"
-                    },
-                    "to": {
-                        "startLines": "53,57",
-                        "startColumns": "4,4",
-                        "startOffsets": "3686,3951",
-                        "endLines": "56,60",
-                        "endColumns": "10,10",
-                        "endOffsets": "3946,4219"
+                        "startOffsets": "55,121",
+                        "endColumns": "65,62",
+                        "endOffsets": "116,179"
                     }
                 },
                 {
-                    "source": "/home/mckeyo/.gradle/caches/transforms-2/files-2.1/c2c5fa787d66aaf40578b3071f4d283f/appcompat-1.1.0/res/values-v23/values-v23.xml",
+                    "source": "/home/mckeyo/.gradle/caches/transforms-2/files-2.1/e46f3e16fd8948e8e4c48c913cb404d3/appcompat-1.1.0/res/values-v23/values-v23.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,20,34,35,36,37,41,42,43,44",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -42,7 +33,26 @@
                     }
                 },
                 {
-                    "source": "/home/mckeyo/.gradle/caches/transforms-2/files-2.1/c53a1cf06eec9ec8e2c1fa79d76edf7f/cardview-1.0.0/res/values-v23/values-v23.xml",
+                    "source": "/home/mckeyo/.gradle/caches/transforms-2/files-2.1/3cbf517ba7e3687c73b950c88e49ed8a/material-1.1.0/res/values-v23/values-v23.xml",
+                    "from": {
+                        "startLines": "2,6",
+                        "startColumns": "4,4",
+                        "startOffsets": "55,320",
+                        "endLines": "5,9",
+                        "endColumns": "10,10",
+                        "endOffsets": "315,588"
+                    },
+                    "to": {
+                        "startLines": "53,57",
+                        "startColumns": "4,4",
+                        "startOffsets": "3686,3951",
+                        "endLines": "56,60",
+                        "endColumns": "10,10",
+                        "endOffsets": "3946,4219"
+                    }
+                },
+                {
+                    "source": "/home/mckeyo/.gradle/caches/transforms-2/files-2.1/c97b0db2e77adb45592bee740aa5d495/cardview-1.0.0/res/values-v23/values-v23.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -58,16 +68,6 @@
                         "endLines": "52",
                         "endColumns": "12",
                         "endOffsets": "3681"
-                    }
-                },
-                {
-                    "source": "/home/mckeyo/.gradle/caches/transforms-2/files-2.1/446681819e58f432b643173d75fac265/work-runtime-2.3.4/res/values-v23/values-v23.xml",
-                    "from": {
-                        "startLines": "2,3",
-                        "startColumns": "4,4",
-                        "startOffsets": "55,121",
-                        "endColumns": "65,62",
-                        "endOffsets": "116,179"
                     }
                 }
             ]

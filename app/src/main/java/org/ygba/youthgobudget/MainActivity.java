@@ -14,6 +14,7 @@ import org.ygba.youthgobudget.agriculture.AgricultureActivity;
 import org.ygba.youthgobudget.allocation.AllocationActivity;
 import org.ygba.youthgobudget.budget_cycle.BudgetCycleActivity;
 import org.ygba.youthgobudget.budget_information.BudgetInformationActivity;
+import org.ygba.youthgobudget.community_wishes.CommunityWishesActivity;
 import org.ygba.youthgobudget.education.EducationActivity;
 import org.ygba.youthgobudget.health.HealthActivity;
 import org.ygba.youthgobudget.help.HelpActivity;
@@ -109,10 +110,10 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        findViewById(R.id.cv_history).setOnClickListener(new View.OnClickListener() {
+        findViewById(R.id.cv_community_wishes).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(MainActivity.this, HistoryActivity.class));
+                startActivity(new Intent(MainActivity.this, CommunityWishesActivity.class));
             }
         });
 

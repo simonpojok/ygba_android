@@ -1,98 +1,98 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/AndroidManifest.xml:2:1-67:12
-INJECTED from /home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/AndroidManifest.xml:2:1-67:12
-INJECTED from /home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/AndroidManifest.xml:2:1-67:12
-INJECTED from /home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/AndroidManifest.xml:2:1-67:12
-MERGED from [androidx.navigation:navigation-ui:2.3.0] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/12c3ae384a8de2484709228873cd2fcd/navigation-ui-2.3.0/AndroidManifest.xml:17:1-24:12
-MERGED from [com.google.android.material:material:1.1.0] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/081958b85be993b26123dd5b1125e07f/material-1.1.0/AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.appcompat:appcompat:1.1.0] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/c2c5fa787d66aaf40578b3071f4d283f/appcompat-1.1.0/AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.legacy:legacy-support-v4:1.0.0] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/2fb8103c62e3ee1e6e4cc337dd696441/legacy-support-v4-1.0.0/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/28120aa98d624ce8fee0a8087788fd91/constraintlayout-1.1.3/AndroidManifest.xml:2:1-11:12
-MERGED from [androidx.navigation:navigation-fragment:2.3.0] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/696ab8ce48cef933e2e0665c213a460c/navigation-fragment-2.3.0/AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.lifecycle:lifecycle-extensions:2.2.0] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/4ae243b19b2695436af7af05993728e4/lifecycle-extensions-2.2.0/AndroidManifest.xml:17:1-27:12
-MERGED from [androidx.cardview:cardview:1.0.0] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/c53a1cf06eec9ec8e2c1fa79d76edf7f/cardview-1.0.0/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.viewpager2:viewpager2:1.0.0] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/9b843ef8b45a09e63c481ebf2cc33a53/jetified-viewpager2-1.0.0/AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.recyclerview:recyclerview:1.1.0] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/bf9fe2c920747fc8887d65d599c47d6a/recyclerview-1.1.0/AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.work:work-runtime:2.3.4] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/446681819e58f432b643173d75fac265/work-runtime-2.3.4/AndroidManifest.xml:17:1-132:12
-MERGED from [androidx.room:room-runtime:2.2.5] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/717f65762e8c098ad71282db36fbc63c/room-runtime-2.2.5/AndroidManifest.xml:17:1-31:12
-MERGED from [com.android.volley:dc-volley:1.1.0] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/a6125cd27ef2fbdb39329d7a8a7d62cd/jetified-dc-volley-1.1.0/AndroidManifest.xml:2:1-11:12
-MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/51c4c178afaeff173cfa265953a5c82e/legacy-support-core-ui-1.0.0/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/28174e475fcfd6ae966ed5772f6694ac/cursoradapter-1.0.0/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.appcompat:appcompat-resources:1.1.0] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/7c534088c709ef4f962350c99f0510e9/jetified-appcompat-resources-1.1.0/AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.media:media:1.0.0] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/ffc4098914b91b7860907277c6a73623/media-1.0.0/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/0173e97803654dcbfad44abe4036c6e5/legacy-support-core-utils-1.0.0/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/6cac2e40aaad7d17efd78ef41d825d1b/coordinatorlayout-1.1.0/AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/3cf213e33fb5a76421a4e937ff33f07e/vectordrawable-animated-1.1.0/AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/bde687302d742df89f7d227a2e48b0d9/vectordrawable-1.1.0/AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.fragment:fragment:1.2.4] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/adef42df42474202ea7e5ab8a15cb1b3/fragment-1.2.4/AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.drawerlayout:drawerlayout:1.1.0] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/2cbbc70e3847308c9f0475dbed9a6604/drawerlayout-1.1.0/AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.transition:transition:1.3.0] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/f27e49002cf9c3056059bb8c53c2fdc9/transition-1.3.0/AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.viewpager:viewpager:1.0.0] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/32e32c376d22cae962a95f2aba892822/viewpager-1.0.0/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/86564163a688b7c5915aebbf0594d3b9/slidingpanelayout-1.0.0/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.customview:customview:1.1.0] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/2835da86225ae7e1fc4f577c781272cf/customview-1.1.0/AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.lifecycle:lifecycle-process:2.2.0] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/12565117c533432cd60af9b41fd49aa9/jetified-lifecycle-process-2.2.0/AndroidManifest.xml:17:1-32:12
-MERGED from [androidx.lifecycle:lifecycle-service:2.2.0] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/2305679b05aee9825a290be1cd0434b0/jetified-lifecycle-service-2.2.0/AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.navigation:navigation-runtime:2.3.0] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/cd1c652d26b5b57b76298288dc5cf7a5/navigation-runtime-2.3.0/AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.activity:activity:1.1.0] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/ba130429194fcaadaa2d9343029d47ed/jetified-activity-1.1.0/AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.loader:loader:1.0.0] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/c3d8ec33b66c793058ded980a54c4fd5/loader-1.0.0/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/39b4f59a835527a351392d1b387458e1/swiperefreshlayout-1.0.0/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/d11ce741c2c27f6eeb8e3514151430d9/asynclayoutinflater-1.0.0/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.navigation:navigation-common:2.3.0] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/29a0615a830944b3e7af025aea4c6aff/navigation-common-2.3.0/AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.core:core:1.3.0] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/881ed38d8f80da7a88cb010386d80aa8/core-1.3.0/AndroidManifest.xml:17:1-26:12
-MERGED from [androidx.lifecycle:lifecycle-runtime:2.2.0] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/3b42a536ebf513f3936a66975b947a3a/lifecycle-runtime-2.2.0/AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.lifecycle:lifecycle-livedata:2.2.0] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/7f2302b983f8a1963dea998766c57103/lifecycle-livedata-2.2.0/AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.2.0] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/76ad8784f7775ee085a507499a94a7b5/jetified-lifecycle-viewmodel-savedstate-2.2.0/AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.2.0] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/3b280e712fa64b7564c60c94f2d493e6/lifecycle-livedata-core-2.2.0/AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.arch.core:core-runtime:2.1.0] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/de7b0c2f4705e3cb372b76d33c6f36f6/core-runtime-2.1.0/AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.savedstate:savedstate:1.0.0] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/8a52da53b02a83b08615debb9b2e109c/jetified-savedstate-1.0.0/AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.2.0] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/4f5d76a0bab1f8f190523edd3e5489e3/lifecycle-viewmodel-2.2.0/AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.sqlite:sqlite-framework:2.1.0] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/0d8bd2ec6bd7eb9e77e6f450e3c56271/sqlite-framework-2.1.0/AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.sqlite:sqlite:2.1.0] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/30b6cbc3dd9149954732f23c79b260ce/sqlite-2.1.0/AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/3c1a5ebf565097fe10667d6b9a2c1703/versionedparcelable-1.1.0/AndroidManifest.xml:17:1-27:12
-MERGED from [androidx.documentfile:documentfile:1.0.0] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/275bb0cd718ded38eec8234e7513c16c/documentfile-1.0.0/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/fc12b1d7b1a887a81ff1f750b0b473c7/localbroadcastmanager-1.0.0/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.print:print:1.0.0] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/6a5aacb22b562922820652a32ac05ba6/print-1.0.0/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.interpolator:interpolator:1.0.0] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/3e5d045fdd42de39d437ce94a2ff87c7/interpolator-1.0.0/AndroidManifest.xml:17:1-22:12
-INJECTED from /home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/AndroidManifest.xml:2:1-67:12
-INJECTED from /home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/AndroidManifest.xml:2:1-67:12
-INJECTED from /home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/AndroidManifest.xml:2:1-67:12
+ADDED from /home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/AndroidManifest.xml:2:1-68:12
+INJECTED from /home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/AndroidManifest.xml:2:1-68:12
+INJECTED from /home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/AndroidManifest.xml:2:1-68:12
+INJECTED from /home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/AndroidManifest.xml:2:1-68:12
+MERGED from [androidx.navigation:navigation-ui:2.3.0] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/0aa507778343d18846653e86273d2c78/navigation-ui-2.3.0/AndroidManifest.xml:17:1-24:12
+MERGED from [com.google.android.material:material:1.1.0] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/3cbf517ba7e3687c73b950c88e49ed8a/material-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.appcompat:appcompat:1.1.0] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/e46f3e16fd8948e8e4c48c913cb404d3/appcompat-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.legacy:legacy-support-v4:1.0.0] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/9360cf1367a704ccd74509b9c6640d83/legacy-support-v4-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/0686ca90b872620e1e93c4a9f2d2181e/constraintlayout-1.1.3/AndroidManifest.xml:2:1-11:12
+MERGED from [androidx.navigation:navigation-fragment:2.3.0] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/d43ae9bba4e837dad22e69a05c334f15/navigation-fragment-2.3.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.lifecycle:lifecycle-extensions:2.2.0] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/98833e53bb355185e0f47305db61d10e/lifecycle-extensions-2.2.0/AndroidManifest.xml:17:1-27:12
+MERGED from [androidx.cardview:cardview:1.0.0] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/c97b0db2e77adb45592bee740aa5d495/cardview-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.viewpager2:viewpager2:1.0.0] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/0dcc16b5dc73a1cc0cf5eba175827f08/jetified-viewpager2-1.0.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.recyclerview:recyclerview:1.1.0] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/97573fd8ee0071872c0f381c5efa805a/recyclerview-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.work:work-runtime:2.3.4] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/a75852264f39bf8524c1928f8e3de566/work-runtime-2.3.4/AndroidManifest.xml:17:1-132:12
+MERGED from [androidx.room:room-runtime:2.2.5] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/2d748680cf13dd7f220a248fe33b243e/room-runtime-2.2.5/AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.volley:dc-volley:1.1.0] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/62c3763884bfb60c062e67098826fa56/jetified-dc-volley-1.1.0/AndroidManifest.xml:2:1-11:12
+MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/8d8538b270dedbd719c054e5cb3c4560/legacy-support-core-ui-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/b37b2aeed146cfc3b1274c4cf21d4028/cursoradapter-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.appcompat:appcompat-resources:1.1.0] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/8bdc78f309f7ef2e274359e8a4f096da/jetified-appcompat-resources-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.media:media:1.0.0] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/21868e54ee8fa7c5ee3c87552712a96c/media-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/7d485c838bde573a9b774202fc501e14/legacy-support-core-utils-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/0f0ffc8e4dfb0b800297b8b0b7b2d9cb/coordinatorlayout-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/721dcdb357351f758b5df456f00974d6/vectordrawable-animated-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/5449d447cecb7a5b7105df425966ce92/vectordrawable-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.fragment:fragment:1.2.4] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/699c07647e1bcfce37801bd06ea367ad/fragment-1.2.4/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.drawerlayout:drawerlayout:1.1.0] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/b8a3259470123dfed0e43e61c6eff16b/drawerlayout-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.transition:transition:1.3.0] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/49e87052dbc7e54adc24e6fd58977f58/transition-1.3.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.viewpager:viewpager:1.0.0] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/1570490a9aefa8bf7c72c2091e5007e6/viewpager-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/0fcb8293f1ad8a72968cee415eb0b621/slidingpanelayout-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.customview:customview:1.1.0] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/d2902ccca63eb72acdc3af5cd70f7119/customview-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.lifecycle:lifecycle-process:2.2.0] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/2361ea377168cc8246990125988fc654/jetified-lifecycle-process-2.2.0/AndroidManifest.xml:17:1-32:12
+MERGED from [androidx.lifecycle:lifecycle-service:2.2.0] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/e2a30fb692538b5141affee97e18e800/jetified-lifecycle-service-2.2.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.navigation:navigation-runtime:2.3.0] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/2e018843594c4eae1ff3c98de02c63c6/navigation-runtime-2.3.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.activity:activity:1.1.0] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/a25024b780f89edcf3abc79c71ed194b/jetified-activity-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.loader:loader:1.0.0] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/c38deefe61a4b29c2fedadb5cb828cb9/loader-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/47969dd378bd395d9c130e31d38327f3/swiperefreshlayout-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/abef6da21d1c57f9122d146255360cc7/asynclayoutinflater-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.navigation:navigation-common:2.3.0] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/f0f6d05421a34e0812e16f9bef3b9a0b/navigation-common-2.3.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.core:core:1.3.0] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/8106c9afeb27cc0c50f85995740f877c/core-1.3.0/AndroidManifest.xml:17:1-26:12
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.2.0] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/c1dcce990c851a8414570974f70142b1/lifecycle-runtime-2.2.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.2.0] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/67ea9f3ab19511c1cd0eb45f53118b8f/lifecycle-livedata-2.2.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.2.0] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/5e31839b08ae558f3abba08de2305004/jetified-lifecycle-viewmodel-savedstate-2.2.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.2.0] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/581e1a8ec6b82705d06cbf6d3a9a167d/lifecycle-livedata-core-2.2.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.arch.core:core-runtime:2.1.0] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/ebcca62d7cfb14bdd40adc31f292a35f/core-runtime-2.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.savedstate:savedstate:1.0.0] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/3a332f7b3ba12f0d97b1eff5486f8fcf/jetified-savedstate-1.0.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.2.0] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/df4e9b3359966e99ba4d46a442645558/lifecycle-viewmodel-2.2.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.sqlite:sqlite-framework:2.1.0] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/cc44fb15301f38c5be5bba7f754d036c/sqlite-framework-2.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.sqlite:sqlite:2.1.0] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/82480ede89761411cd87ee914c8ed859/sqlite-2.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/b741faf0c0e978004788a3922a8a438d/versionedparcelable-1.1.0/AndroidManifest.xml:17:1-27:12
+MERGED from [androidx.documentfile:documentfile:1.0.0] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/abca430f327a1ba4137054854d25dfd3/documentfile-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/836e9858d101fce50deef7223d87d0d6/localbroadcastmanager-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.print:print:1.0.0] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/6083e5aff4a41b4b352509ce72ef01fb/print-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.interpolator:interpolator:1.0.0] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/32691ed1dd96a709bdd6754d66b7ebfd/interpolator-1.0.0/AndroidManifest.xml:17:1-22:12
+INJECTED from /home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/AndroidManifest.xml:2:1-68:12
+INJECTED from /home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/AndroidManifest.xml:2:1-68:12
+INJECTED from /home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/AndroidManifest.xml:2:1-68:12
 	package
 		ADDED from /home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/AndroidManifest.xml:3:5-37
 		INJECTED from /home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/AndroidManifest.xml
 		INJECTED from /home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/AndroidManifest.xml
 	android:versionName
 		INJECTED from /home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/AndroidManifest.xml
-		ADDED from /home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/AndroidManifest.xml:2:1-67:12
+		ADDED from /home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/AndroidManifest.xml:2:1-68:12
 		INJECTED from /home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/AndroidManifest.xml
 	android:versionCode
 		INJECTED from /home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/AndroidManifest.xml
-		ADDED from /home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/AndroidManifest.xml:2:1-67:12
+		ADDED from /home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/AndroidManifest.xml:2:1-68:12
 		INJECTED from /home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/AndroidManifest.xml
 	xmlns:android
 		ADDED from /home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/AndroidManifest.xml:2:11-69
 application
-ADDED from /home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/AndroidManifest.xml:5:5-65:19
-MERGED from [com.google.android.material:material:1.1.0] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/081958b85be993b26123dd5b1125e07f/material-1.1.0/AndroidManifest.xml:22:5-20
-MERGED from [com.google.android.material:material:1.1.0] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/081958b85be993b26123dd5b1125e07f/material-1.1.0/AndroidManifest.xml:22:5-20
-MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/28120aa98d624ce8fee0a8087788fd91/constraintlayout-1.1.3/AndroidManifest.xml:9:5-20
-MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/28120aa98d624ce8fee0a8087788fd91/constraintlayout-1.1.3/AndroidManifest.xml:9:5-20
-MERGED from [androidx.lifecycle:lifecycle-extensions:2.2.0] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/4ae243b19b2695436af7af05993728e4/lifecycle-extensions-2.2.0/AndroidManifest.xml:24:5-25:19
-MERGED from [androidx.lifecycle:lifecycle-extensions:2.2.0] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/4ae243b19b2695436af7af05993728e4/lifecycle-extensions-2.2.0/AndroidManifest.xml:24:5-25:19
-MERGED from [androidx.work:work-runtime:2.3.4] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/446681819e58f432b643173d75fac265/work-runtime-2.3.4/AndroidManifest.xml:30:5-130:19
-MERGED from [androidx.work:work-runtime:2.3.4] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/446681819e58f432b643173d75fac265/work-runtime-2.3.4/AndroidManifest.xml:30:5-130:19
-MERGED from [androidx.room:room-runtime:2.2.5] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/717f65762e8c098ad71282db36fbc63c/room-runtime-2.2.5/AndroidManifest.xml:24:5-29:19
-MERGED from [androidx.room:room-runtime:2.2.5] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/717f65762e8c098ad71282db36fbc63c/room-runtime-2.2.5/AndroidManifest.xml:24:5-29:19
-MERGED from [com.android.volley:dc-volley:1.1.0] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/a6125cd27ef2fbdb39329d7a8a7d62cd/jetified-dc-volley-1.1.0/AndroidManifest.xml:9:5-20
-MERGED from [com.android.volley:dc-volley:1.1.0] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/a6125cd27ef2fbdb39329d7a8a7d62cd/jetified-dc-volley-1.1.0/AndroidManifest.xml:9:5-20
-MERGED from [androidx.lifecycle:lifecycle-process:2.2.0] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/12565117c533432cd60af9b41fd49aa9/jetified-lifecycle-process-2.2.0/AndroidManifest.xml:24:5-30:19
-MERGED from [androidx.lifecycle:lifecycle-process:2.2.0] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/12565117c533432cd60af9b41fd49aa9/jetified-lifecycle-process-2.2.0/AndroidManifest.xml:24:5-30:19
-MERGED from [androidx.core:core:1.3.0] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/881ed38d8f80da7a88cb010386d80aa8/core-1.3.0/AndroidManifest.xml:24:5-89
-MERGED from [androidx.core:core:1.3.0] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/881ed38d8f80da7a88cb010386d80aa8/core-1.3.0/AndroidManifest.xml:24:5-89
-MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/3c1a5ebf565097fe10667d6b9a2c1703/versionedparcelable-1.1.0/AndroidManifest.xml:24:5-25:19
-MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/3c1a5ebf565097fe10667d6b9a2c1703/versionedparcelable-1.1.0/AndroidManifest.xml:24:5-25:19
+ADDED from /home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/AndroidManifest.xml:5:5-66:19
+MERGED from [com.google.android.material:material:1.1.0] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/3cbf517ba7e3687c73b950c88e49ed8a/material-1.1.0/AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.material:material:1.1.0] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/3cbf517ba7e3687c73b950c88e49ed8a/material-1.1.0/AndroidManifest.xml:22:5-20
+MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/0686ca90b872620e1e93c4a9f2d2181e/constraintlayout-1.1.3/AndroidManifest.xml:9:5-20
+MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/0686ca90b872620e1e93c4a9f2d2181e/constraintlayout-1.1.3/AndroidManifest.xml:9:5-20
+MERGED from [androidx.lifecycle:lifecycle-extensions:2.2.0] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/98833e53bb355185e0f47305db61d10e/lifecycle-extensions-2.2.0/AndroidManifest.xml:24:5-25:19
+MERGED from [androidx.lifecycle:lifecycle-extensions:2.2.0] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/98833e53bb355185e0f47305db61d10e/lifecycle-extensions-2.2.0/AndroidManifest.xml:24:5-25:19
+MERGED from [androidx.work:work-runtime:2.3.4] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/a75852264f39bf8524c1928f8e3de566/work-runtime-2.3.4/AndroidManifest.xml:30:5-130:19
+MERGED from [androidx.work:work-runtime:2.3.4] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/a75852264f39bf8524c1928f8e3de566/work-runtime-2.3.4/AndroidManifest.xml:30:5-130:19
+MERGED from [androidx.room:room-runtime:2.2.5] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/2d748680cf13dd7f220a248fe33b243e/room-runtime-2.2.5/AndroidManifest.xml:24:5-29:19
+MERGED from [androidx.room:room-runtime:2.2.5] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/2d748680cf13dd7f220a248fe33b243e/room-runtime-2.2.5/AndroidManifest.xml:24:5-29:19
+MERGED from [com.android.volley:dc-volley:1.1.0] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/62c3763884bfb60c062e67098826fa56/jetified-dc-volley-1.1.0/AndroidManifest.xml:9:5-20
+MERGED from [com.android.volley:dc-volley:1.1.0] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/62c3763884bfb60c062e67098826fa56/jetified-dc-volley-1.1.0/AndroidManifest.xml:9:5-20
+MERGED from [androidx.lifecycle:lifecycle-process:2.2.0] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/2361ea377168cc8246990125988fc654/jetified-lifecycle-process-2.2.0/AndroidManifest.xml:24:5-30:19
+MERGED from [androidx.lifecycle:lifecycle-process:2.2.0] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/2361ea377168cc8246990125988fc654/jetified-lifecycle-process-2.2.0/AndroidManifest.xml:24:5-30:19
+MERGED from [androidx.core:core:1.3.0] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/8106c9afeb27cc0c50f85995740f877c/core-1.3.0/AndroidManifest.xml:24:5-89
+MERGED from [androidx.core:core:1.3.0] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/8106c9afeb27cc0c50f85995740f877c/core-1.3.0/AndroidManifest.xml:24:5-89
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/b741faf0c0e978004788a3922a8a438d/versionedparcelable-1.1.0/AndroidManifest.xml:24:5-25:19
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/b741faf0c0e978004788a3922a8a438d/versionedparcelable-1.1.0/AndroidManifest.xml:24:5-25:19
 	android:appComponentFactory
-		ADDED from [androidx.core:core:1.3.0] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/881ed38d8f80da7a88cb010386d80aa8/core-1.3.0/AndroidManifest.xml:24:18-86
+		ADDED from [androidx.core:core:1.3.0] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/8106c9afeb27cc0c50f85995740f877c/core-1.3.0/AndroidManifest.xml:24:18-86
 	android:supportsRtl
 		ADDED from /home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/AndroidManifest.xml:10:9-35
 	android:label
@@ -105,216 +105,220 @@ MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] /home/mckey
 		ADDED from /home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/AndroidManifest.xml:6:9-35
 	android:theme
 		ADDED from /home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/AndroidManifest.xml:11:9-40
+activity#org.ygba.youthgobudget.community_wishes.CommunityWishesActivity
+ADDED from /home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/AndroidManifest.xml:12:9-78
+	android:name
+		ADDED from /home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/AndroidManifest.xml:12:19-75
 activity#org.ygba.youthgobudget.allocation.AllocationActivity
-ADDED from /home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/AndroidManifest.xml:12:9-14:57
+ADDED from /home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/AndroidManifest.xml:13:9-15:58
 	android:parentActivityName
-		ADDED from /home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/AndroidManifest.xml:14:13-55
+		ADDED from /home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/AndroidManifest.xml:15:13-55
 	android:name
-		ADDED from /home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/AndroidManifest.xml:13:13-58
+		ADDED from /home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/AndroidManifest.xml:14:13-58
 activity#org.ygba.youthgobudget.history.HistoryActivity
-ADDED from /home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/AndroidManifest.xml:15:9-17:57
+ADDED from /home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/AndroidManifest.xml:16:9-18:58
 	android:parentActivityName
-		ADDED from /home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/AndroidManifest.xml:17:13-55
+		ADDED from /home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/AndroidManifest.xml:18:13-55
 	android:name
-		ADDED from /home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/AndroidManifest.xml:16:13-52
+		ADDED from /home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/AndroidManifest.xml:17:13-52
 activity#org.ygba.youthgobudget.help.HelpActivity
-ADDED from /home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/AndroidManifest.xml:18:9-20:57
+ADDED from /home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/AndroidManifest.xml:19:9-21:58
 	android:parentActivityName
-		ADDED from /home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/AndroidManifest.xml:20:13-55
+		ADDED from /home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/AndroidManifest.xml:21:13-55
 	android:name
-		ADDED from /home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/AndroidManifest.xml:19:13-46
+		ADDED from /home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/AndroidManifest.xml:20:13-46
 activity#org.ygba.youthgobudget.polls.PollActivity
-ADDED from /home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/AndroidManifest.xml:21:9-23:57
+ADDED from /home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/AndroidManifest.xml:22:9-24:58
 	android:parentActivityName
-		ADDED from /home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/AndroidManifest.xml:23:13-55
+		ADDED from /home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/AndroidManifest.xml:24:13-55
 	android:name
-		ADDED from /home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/AndroidManifest.xml:22:13-47
+		ADDED from /home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/AndroidManifest.xml:23:13-47
 activity#org.ygba.youthgobudget.budget_cycle.BudgetCycleActivity
-ADDED from /home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/AndroidManifest.xml:24:9-26:57
+ADDED from /home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/AndroidManifest.xml:25:9-27:58
 	android:parentActivityName
-		ADDED from /home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/AndroidManifest.xml:26:13-55
+		ADDED from /home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/AndroidManifest.xml:27:13-55
 	android:name
-		ADDED from /home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/AndroidManifest.xml:25:13-61
+		ADDED from /home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/AndroidManifest.xml:26:13-61
 activity#org.ygba.youthgobudget.local_government.LocalGovernmentActivity
-ADDED from /home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/AndroidManifest.xml:27:9-29:57
+ADDED from /home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/AndroidManifest.xml:28:9-30:58
 	android:parentActivityName
-		ADDED from /home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/AndroidManifest.xml:29:13-55
+		ADDED from /home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/AndroidManifest.xml:30:13-55
 	android:name
-		ADDED from /home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/AndroidManifest.xml:28:13-69
+		ADDED from /home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/AndroidManifest.xml:29:13-69
 activity#org.ygba.youthgobudget.budget_information.BudgetInformationActivity
-ADDED from /home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/AndroidManifest.xml:30:9-33:58
+ADDED from /home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/AndroidManifest.xml:31:9-34:58
 	android:parentActivityName
-		ADDED from /home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/AndroidManifest.xml:33:13-55
+		ADDED from /home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/AndroidManifest.xml:34:13-55
 	android:label
-		ADDED from /home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/AndroidManifest.xml:32:13-47
+		ADDED from /home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/AndroidManifest.xml:33:13-47
 	android:name
-		ADDED from /home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/AndroidManifest.xml:31:13-73
+		ADDED from /home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/AndroidManifest.xml:32:13-73
 activity#org.ygba.youthgobudget.water_and_environment.WaterEnvironmentActivity
-ADDED from /home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/AndroidManifest.xml:34:9-36:58
+ADDED from /home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/AndroidManifest.xml:35:9-37:58
 	android:parentActivityName
-		ADDED from /home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/AndroidManifest.xml:36:13-55
+		ADDED from /home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/AndroidManifest.xml:37:13-55
 	android:name
-		ADDED from /home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/AndroidManifest.xml:35:13-75
+		ADDED from /home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/AndroidManifest.xml:36:13-75
 activity#org.ygba.youthgobudget.social_development.SocialDevelopmentListActivity
-ADDED from /home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/AndroidManifest.xml:37:9-86
+ADDED from /home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/AndroidManifest.xml:38:9-86
 	android:name
-		ADDED from /home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/AndroidManifest.xml:37:19-83
+		ADDED from /home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/AndroidManifest.xml:38:19-83
 activity#org.ygba.youthgobudget.dialogs.DatePickerActivity
-ADDED from /home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/AndroidManifest.xml:38:9-41:79
+ADDED from /home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/AndroidManifest.xml:39:9-42:79
 	android:label
-		ADDED from /home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/AndroidManifest.xml:40:13-38
+		ADDED from /home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/AndroidManifest.xml:41:13-38
 	android:theme
-		ADDED from /home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/AndroidManifest.xml:41:13-76
+		ADDED from /home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/AndroidManifest.xml:42:13-76
 	android:name
-		ADDED from /home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/AndroidManifest.xml:39:13-55
+		ADDED from /home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/AndroidManifest.xml:40:13-55
 activity#org.ygba.youthgobudget.social_development.SocialDevelopmentActivity
-ADDED from /home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/AndroidManifest.xml:42:9-44:58
+ADDED from /home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/AndroidManifest.xml:43:9-45:58
 	android:parentActivityName
-		ADDED from /home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/AndroidManifest.xml:44:13-55
+		ADDED from /home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/AndroidManifest.xml:45:13-55
 	android:name
-		ADDED from /home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/AndroidManifest.xml:43:13-73
+		ADDED from /home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/AndroidManifest.xml:44:13-73
 activity#org.ygba.youthgobudget.education.EducationActivity
-ADDED from /home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/AndroidManifest.xml:45:9-48:58
+ADDED from /home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/AndroidManifest.xml:46:9-49:58
 	android:parentActivityName
-		ADDED from /home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/AndroidManifest.xml:48:13-55
+		ADDED from /home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/AndroidManifest.xml:49:13-55
 	android:exported
-		ADDED from /home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/AndroidManifest.xml:47:13-36
+		ADDED from /home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/AndroidManifest.xml:48:13-36
 	android:name
-		ADDED from /home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/AndroidManifest.xml:46:13-56
+		ADDED from /home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/AndroidManifest.xml:47:13-56
 activity#org.ygba.youthgobudget.health.HealthActivity
-ADDED from /home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/AndroidManifest.xml:49:9-51:58
+ADDED from /home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/AndroidManifest.xml:50:9-52:58
 	android:parentActivityName
-		ADDED from /home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/AndroidManifest.xml:51:13-55
+		ADDED from /home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/AndroidManifest.xml:52:13-55
 	android:name
-		ADDED from /home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/AndroidManifest.xml:50:13-50
+		ADDED from /home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/AndroidManifest.xml:51:13-50
 activity#org.ygba.youthgobudget.agriculture.AgricultureActivity
-ADDED from /home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/AndroidManifest.xml:52:9-54:58
+ADDED from /home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/AndroidManifest.xml:53:9-55:58
 	android:parentActivityName
-		ADDED from /home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/AndroidManifest.xml:54:13-55
+		ADDED from /home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/AndroidManifest.xml:55:13-55
 	android:name
-		ADDED from /home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/AndroidManifest.xml:53:13-60
+		ADDED from /home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/AndroidManifest.xml:54:13-60
 activity#org.ygba.youthgobudget.MainActivity
-ADDED from /home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/AndroidManifest.xml:55:9-64:20
+ADDED from /home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/AndroidManifest.xml:56:9-65:20
 	android:label
-		ADDED from /home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/AndroidManifest.xml:57:13-45
+		ADDED from /home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/AndroidManifest.xml:58:13-45
 	android:theme
-		ADDED from /home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/AndroidManifest.xml:58:13-56
+		ADDED from /home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/AndroidManifest.xml:59:13-56
 	android:name
-		ADDED from /home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/AndroidManifest.xml:56:13-41
+		ADDED from /home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/AndroidManifest.xml:57:13-41
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from /home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/AndroidManifest.xml:59:13-63:29
+ADDED from /home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/AndroidManifest.xml:60:13-64:29
 action#android.intent.action.MAIN
-ADDED from /home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/AndroidManifest.xml:60:17-69
+ADDED from /home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/AndroidManifest.xml:61:17-69
 	android:name
-		ADDED from /home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/AndroidManifest.xml:60:25-66
+		ADDED from /home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/AndroidManifest.xml:61:25-66
 category#android.intent.category.LAUNCHER
-ADDED from /home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/AndroidManifest.xml:62:17-77
+ADDED from /home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/AndroidManifest.xml:63:17-77
 	android:name
-		ADDED from /home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/AndroidManifest.xml:62:27-74
+		ADDED from /home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/AndroidManifest.xml:63:27-74
 uses-sdk
 INJECTED from /home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from /home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/AndroidManifest.xml
 INJECTED from /home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/AndroidManifest.xml
-MERGED from [androidx.navigation:navigation-ui:2.3.0] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/12c3ae384a8de2484709228873cd2fcd/navigation-ui-2.3.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.navigation:navigation-ui:2.3.0] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/12c3ae384a8de2484709228873cd2fcd/navigation-ui-2.3.0/AndroidManifest.xml:20:5-22:41
-MERGED from [com.google.android.material:material:1.1.0] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/081958b85be993b26123dd5b1125e07f/material-1.1.0/AndroidManifest.xml:20:5-44
-MERGED from [com.google.android.material:material:1.1.0] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/081958b85be993b26123dd5b1125e07f/material-1.1.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.appcompat:appcompat:1.1.0] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/c2c5fa787d66aaf40578b3071f4d283f/appcompat-1.1.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.appcompat:appcompat:1.1.0] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/c2c5fa787d66aaf40578b3071f4d283f/appcompat-1.1.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.legacy:legacy-support-v4:1.0.0] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/2fb8103c62e3ee1e6e4cc337dd696441/legacy-support-v4-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.legacy:legacy-support-v4:1.0.0] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/2fb8103c62e3ee1e6e4cc337dd696441/legacy-support-v4-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/28120aa98d624ce8fee0a8087788fd91/constraintlayout-1.1.3/AndroidManifest.xml:5:5-7:41
-MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/28120aa98d624ce8fee0a8087788fd91/constraintlayout-1.1.3/AndroidManifest.xml:5:5-7:41
-MERGED from [androidx.navigation:navigation-fragment:2.3.0] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/696ab8ce48cef933e2e0665c213a460c/navigation-fragment-2.3.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.navigation:navigation-fragment:2.3.0] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/696ab8ce48cef933e2e0665c213a460c/navigation-fragment-2.3.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.lifecycle:lifecycle-extensions:2.2.0] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/4ae243b19b2695436af7af05993728e4/lifecycle-extensions-2.2.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.lifecycle:lifecycle-extensions:2.2.0] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/4ae243b19b2695436af7af05993728e4/lifecycle-extensions-2.2.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.cardview:cardview:1.0.0] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/c53a1cf06eec9ec8e2c1fa79d76edf7f/cardview-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.cardview:cardview:1.0.0] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/c53a1cf06eec9ec8e2c1fa79d76edf7f/cardview-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.viewpager2:viewpager2:1.0.0] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/9b843ef8b45a09e63c481ebf2cc33a53/jetified-viewpager2-1.0.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.viewpager2:viewpager2:1.0.0] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/9b843ef8b45a09e63c481ebf2cc33a53/jetified-viewpager2-1.0.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.recyclerview:recyclerview:1.1.0] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/bf9fe2c920747fc8887d65d599c47d6a/recyclerview-1.1.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.recyclerview:recyclerview:1.1.0] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/bf9fe2c920747fc8887d65d599c47d6a/recyclerview-1.1.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.work:work-runtime:2.3.4] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/446681819e58f432b643173d75fac265/work-runtime-2.3.4/AndroidManifest.xml:21:5-23:41
-MERGED from [androidx.work:work-runtime:2.3.4] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/446681819e58f432b643173d75fac265/work-runtime-2.3.4/AndroidManifest.xml:21:5-23:41
-MERGED from [androidx.room:room-runtime:2.2.5] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/717f65762e8c098ad71282db36fbc63c/room-runtime-2.2.5/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.room:room-runtime:2.2.5] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/717f65762e8c098ad71282db36fbc63c/room-runtime-2.2.5/AndroidManifest.xml:20:5-22:41
-MERGED from [com.android.volley:dc-volley:1.1.0] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/a6125cd27ef2fbdb39329d7a8a7d62cd/jetified-dc-volley-1.1.0/AndroidManifest.xml:7:5-43
-MERGED from [com.android.volley:dc-volley:1.1.0] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/a6125cd27ef2fbdb39329d7a8a7d62cd/jetified-dc-volley-1.1.0/AndroidManifest.xml:7:5-43
-MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/51c4c178afaeff173cfa265953a5c82e/legacy-support-core-ui-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/51c4c178afaeff173cfa265953a5c82e/legacy-support-core-ui-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/28174e475fcfd6ae966ed5772f6694ac/cursoradapter-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/28174e475fcfd6ae966ed5772f6694ac/cursoradapter-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.appcompat:appcompat-resources:1.1.0] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/7c534088c709ef4f962350c99f0510e9/jetified-appcompat-resources-1.1.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.appcompat:appcompat-resources:1.1.0] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/7c534088c709ef4f962350c99f0510e9/jetified-appcompat-resources-1.1.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.media:media:1.0.0] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/ffc4098914b91b7860907277c6a73623/media-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.media:media:1.0.0] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/ffc4098914b91b7860907277c6a73623/media-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/0173e97803654dcbfad44abe4036c6e5/legacy-support-core-utils-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/0173e97803654dcbfad44abe4036c6e5/legacy-support-core-utils-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/6cac2e40aaad7d17efd78ef41d825d1b/coordinatorlayout-1.1.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/6cac2e40aaad7d17efd78ef41d825d1b/coordinatorlayout-1.1.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/3cf213e33fb5a76421a4e937ff33f07e/vectordrawable-animated-1.1.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/3cf213e33fb5a76421a4e937ff33f07e/vectordrawable-animated-1.1.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/bde687302d742df89f7d227a2e48b0d9/vectordrawable-1.1.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/bde687302d742df89f7d227a2e48b0d9/vectordrawable-1.1.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.fragment:fragment:1.2.4] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/adef42df42474202ea7e5ab8a15cb1b3/fragment-1.2.4/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.fragment:fragment:1.2.4] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/adef42df42474202ea7e5ab8a15cb1b3/fragment-1.2.4/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.drawerlayout:drawerlayout:1.1.0] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/2cbbc70e3847308c9f0475dbed9a6604/drawerlayout-1.1.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.drawerlayout:drawerlayout:1.1.0] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/2cbbc70e3847308c9f0475dbed9a6604/drawerlayout-1.1.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.transition:transition:1.3.0] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/f27e49002cf9c3056059bb8c53c2fdc9/transition-1.3.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.transition:transition:1.3.0] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/f27e49002cf9c3056059bb8c53c2fdc9/transition-1.3.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.viewpager:viewpager:1.0.0] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/32e32c376d22cae962a95f2aba892822/viewpager-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.viewpager:viewpager:1.0.0] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/32e32c376d22cae962a95f2aba892822/viewpager-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/86564163a688b7c5915aebbf0594d3b9/slidingpanelayout-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/86564163a688b7c5915aebbf0594d3b9/slidingpanelayout-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.customview:customview:1.1.0] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/2835da86225ae7e1fc4f577c781272cf/customview-1.1.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.customview:customview:1.1.0] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/2835da86225ae7e1fc4f577c781272cf/customview-1.1.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.lifecycle:lifecycle-process:2.2.0] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/12565117c533432cd60af9b41fd49aa9/jetified-lifecycle-process-2.2.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.lifecycle:lifecycle-process:2.2.0] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/12565117c533432cd60af9b41fd49aa9/jetified-lifecycle-process-2.2.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.lifecycle:lifecycle-service:2.2.0] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/2305679b05aee9825a290be1cd0434b0/jetified-lifecycle-service-2.2.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.lifecycle:lifecycle-service:2.2.0] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/2305679b05aee9825a290be1cd0434b0/jetified-lifecycle-service-2.2.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.navigation:navigation-runtime:2.3.0] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/cd1c652d26b5b57b76298288dc5cf7a5/navigation-runtime-2.3.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.navigation:navigation-runtime:2.3.0] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/cd1c652d26b5b57b76298288dc5cf7a5/navigation-runtime-2.3.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.activity:activity:1.1.0] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/ba130429194fcaadaa2d9343029d47ed/jetified-activity-1.1.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.activity:activity:1.1.0] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/ba130429194fcaadaa2d9343029d47ed/jetified-activity-1.1.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.loader:loader:1.0.0] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/c3d8ec33b66c793058ded980a54c4fd5/loader-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.loader:loader:1.0.0] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/c3d8ec33b66c793058ded980a54c4fd5/loader-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/39b4f59a835527a351392d1b387458e1/swiperefreshlayout-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/39b4f59a835527a351392d1b387458e1/swiperefreshlayout-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/d11ce741c2c27f6eeb8e3514151430d9/asynclayoutinflater-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/d11ce741c2c27f6eeb8e3514151430d9/asynclayoutinflater-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.navigation:navigation-common:2.3.0] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/29a0615a830944b3e7af025aea4c6aff/navigation-common-2.3.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.navigation:navigation-common:2.3.0] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/29a0615a830944b3e7af025aea4c6aff/navigation-common-2.3.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.core:core:1.3.0] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/881ed38d8f80da7a88cb010386d80aa8/core-1.3.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.core:core:1.3.0] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/881ed38d8f80da7a88cb010386d80aa8/core-1.3.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.lifecycle:lifecycle-runtime:2.2.0] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/3b42a536ebf513f3936a66975b947a3a/lifecycle-runtime-2.2.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.lifecycle:lifecycle-runtime:2.2.0] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/3b42a536ebf513f3936a66975b947a3a/lifecycle-runtime-2.2.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.lifecycle:lifecycle-livedata:2.2.0] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/7f2302b983f8a1963dea998766c57103/lifecycle-livedata-2.2.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.lifecycle:lifecycle-livedata:2.2.0] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/7f2302b983f8a1963dea998766c57103/lifecycle-livedata-2.2.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.2.0] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/76ad8784f7775ee085a507499a94a7b5/jetified-lifecycle-viewmodel-savedstate-2.2.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.2.0] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/76ad8784f7775ee085a507499a94a7b5/jetified-lifecycle-viewmodel-savedstate-2.2.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.2.0] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/3b280e712fa64b7564c60c94f2d493e6/lifecycle-livedata-core-2.2.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.2.0] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/3b280e712fa64b7564c60c94f2d493e6/lifecycle-livedata-core-2.2.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.arch.core:core-runtime:2.1.0] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/de7b0c2f4705e3cb372b76d33c6f36f6/core-runtime-2.1.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.arch.core:core-runtime:2.1.0] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/de7b0c2f4705e3cb372b76d33c6f36f6/core-runtime-2.1.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.savedstate:savedstate:1.0.0] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/8a52da53b02a83b08615debb9b2e109c/jetified-savedstate-1.0.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.savedstate:savedstate:1.0.0] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/8a52da53b02a83b08615debb9b2e109c/jetified-savedstate-1.0.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.2.0] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/4f5d76a0bab1f8f190523edd3e5489e3/lifecycle-viewmodel-2.2.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.2.0] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/4f5d76a0bab1f8f190523edd3e5489e3/lifecycle-viewmodel-2.2.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.sqlite:sqlite-framework:2.1.0] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/0d8bd2ec6bd7eb9e77e6f450e3c56271/sqlite-framework-2.1.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.sqlite:sqlite-framework:2.1.0] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/0d8bd2ec6bd7eb9e77e6f450e3c56271/sqlite-framework-2.1.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.sqlite:sqlite:2.1.0] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/30b6cbc3dd9149954732f23c79b260ce/sqlite-2.1.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.sqlite:sqlite:2.1.0] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/30b6cbc3dd9149954732f23c79b260ce/sqlite-2.1.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/3c1a5ebf565097fe10667d6b9a2c1703/versionedparcelable-1.1.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/3c1a5ebf565097fe10667d6b9a2c1703/versionedparcelable-1.1.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.documentfile:documentfile:1.0.0] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/275bb0cd718ded38eec8234e7513c16c/documentfile-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.documentfile:documentfile:1.0.0] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/275bb0cd718ded38eec8234e7513c16c/documentfile-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/fc12b1d7b1a887a81ff1f750b0b473c7/localbroadcastmanager-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/fc12b1d7b1a887a81ff1f750b0b473c7/localbroadcastmanager-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.print:print:1.0.0] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/6a5aacb22b562922820652a32ac05ba6/print-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.print:print:1.0.0] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/6a5aacb22b562922820652a32ac05ba6/print-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.interpolator:interpolator:1.0.0] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/3e5d045fdd42de39d437ce94a2ff87c7/interpolator-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.interpolator:interpolator:1.0.0] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/3e5d045fdd42de39d437ce94a2ff87c7/interpolator-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.navigation:navigation-ui:2.3.0] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/0aa507778343d18846653e86273d2c78/navigation-ui-2.3.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.navigation:navigation-ui:2.3.0] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/0aa507778343d18846653e86273d2c78/navigation-ui-2.3.0/AndroidManifest.xml:20:5-22:41
+MERGED from [com.google.android.material:material:1.1.0] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/3cbf517ba7e3687c73b950c88e49ed8a/material-1.1.0/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.material:material:1.1.0] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/3cbf517ba7e3687c73b950c88e49ed8a/material-1.1.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.appcompat:appcompat:1.1.0] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/e46f3e16fd8948e8e4c48c913cb404d3/appcompat-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.appcompat:appcompat:1.1.0] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/e46f3e16fd8948e8e4c48c913cb404d3/appcompat-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.legacy:legacy-support-v4:1.0.0] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/9360cf1367a704ccd74509b9c6640d83/legacy-support-v4-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-v4:1.0.0] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/9360cf1367a704ccd74509b9c6640d83/legacy-support-v4-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/0686ca90b872620e1e93c4a9f2d2181e/constraintlayout-1.1.3/AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/0686ca90b872620e1e93c4a9f2d2181e/constraintlayout-1.1.3/AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.navigation:navigation-fragment:2.3.0] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/d43ae9bba4e837dad22e69a05c334f15/navigation-fragment-2.3.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.navigation:navigation-fragment:2.3.0] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/d43ae9bba4e837dad22e69a05c334f15/navigation-fragment-2.3.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-extensions:2.2.0] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/98833e53bb355185e0f47305db61d10e/lifecycle-extensions-2.2.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-extensions:2.2.0] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/98833e53bb355185e0f47305db61d10e/lifecycle-extensions-2.2.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.cardview:cardview:1.0.0] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/c97b0db2e77adb45592bee740aa5d495/cardview-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.cardview:cardview:1.0.0] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/c97b0db2e77adb45592bee740aa5d495/cardview-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.viewpager2:viewpager2:1.0.0] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/0dcc16b5dc73a1cc0cf5eba175827f08/jetified-viewpager2-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.viewpager2:viewpager2:1.0.0] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/0dcc16b5dc73a1cc0cf5eba175827f08/jetified-viewpager2-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.recyclerview:recyclerview:1.1.0] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/97573fd8ee0071872c0f381c5efa805a/recyclerview-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.recyclerview:recyclerview:1.1.0] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/97573fd8ee0071872c0f381c5efa805a/recyclerview-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.work:work-runtime:2.3.4] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/a75852264f39bf8524c1928f8e3de566/work-runtime-2.3.4/AndroidManifest.xml:21:5-23:41
+MERGED from [androidx.work:work-runtime:2.3.4] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/a75852264f39bf8524c1928f8e3de566/work-runtime-2.3.4/AndroidManifest.xml:21:5-23:41
+MERGED from [androidx.room:room-runtime:2.2.5] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/2d748680cf13dd7f220a248fe33b243e/room-runtime-2.2.5/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.room:room-runtime:2.2.5] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/2d748680cf13dd7f220a248fe33b243e/room-runtime-2.2.5/AndroidManifest.xml:20:5-22:41
+MERGED from [com.android.volley:dc-volley:1.1.0] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/62c3763884bfb60c062e67098826fa56/jetified-dc-volley-1.1.0/AndroidManifest.xml:7:5-43
+MERGED from [com.android.volley:dc-volley:1.1.0] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/62c3763884bfb60c062e67098826fa56/jetified-dc-volley-1.1.0/AndroidManifest.xml:7:5-43
+MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/8d8538b270dedbd719c054e5cb3c4560/legacy-support-core-ui-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/8d8538b270dedbd719c054e5cb3c4560/legacy-support-core-ui-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/b37b2aeed146cfc3b1274c4cf21d4028/cursoradapter-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/b37b2aeed146cfc3b1274c4cf21d4028/cursoradapter-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.appcompat:appcompat-resources:1.1.0] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/8bdc78f309f7ef2e274359e8a4f096da/jetified-appcompat-resources-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.appcompat:appcompat-resources:1.1.0] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/8bdc78f309f7ef2e274359e8a4f096da/jetified-appcompat-resources-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.media:media:1.0.0] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/21868e54ee8fa7c5ee3c87552712a96c/media-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.media:media:1.0.0] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/21868e54ee8fa7c5ee3c87552712a96c/media-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/7d485c838bde573a9b774202fc501e14/legacy-support-core-utils-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/7d485c838bde573a9b774202fc501e14/legacy-support-core-utils-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/0f0ffc8e4dfb0b800297b8b0b7b2d9cb/coordinatorlayout-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/0f0ffc8e4dfb0b800297b8b0b7b2d9cb/coordinatorlayout-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/721dcdb357351f758b5df456f00974d6/vectordrawable-animated-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/721dcdb357351f758b5df456f00974d6/vectordrawable-animated-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/5449d447cecb7a5b7105df425966ce92/vectordrawable-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/5449d447cecb7a5b7105df425966ce92/vectordrawable-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.fragment:fragment:1.2.4] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/699c07647e1bcfce37801bd06ea367ad/fragment-1.2.4/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.fragment:fragment:1.2.4] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/699c07647e1bcfce37801bd06ea367ad/fragment-1.2.4/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.drawerlayout:drawerlayout:1.1.0] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/b8a3259470123dfed0e43e61c6eff16b/drawerlayout-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.drawerlayout:drawerlayout:1.1.0] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/b8a3259470123dfed0e43e61c6eff16b/drawerlayout-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.transition:transition:1.3.0] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/49e87052dbc7e54adc24e6fd58977f58/transition-1.3.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.transition:transition:1.3.0] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/49e87052dbc7e54adc24e6fd58977f58/transition-1.3.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.viewpager:viewpager:1.0.0] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/1570490a9aefa8bf7c72c2091e5007e6/viewpager-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.viewpager:viewpager:1.0.0] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/1570490a9aefa8bf7c72c2091e5007e6/viewpager-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/0fcb8293f1ad8a72968cee415eb0b621/slidingpanelayout-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/0fcb8293f1ad8a72968cee415eb0b621/slidingpanelayout-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.customview:customview:1.1.0] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/d2902ccca63eb72acdc3af5cd70f7119/customview-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.customview:customview:1.1.0] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/d2902ccca63eb72acdc3af5cd70f7119/customview-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-process:2.2.0] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/2361ea377168cc8246990125988fc654/jetified-lifecycle-process-2.2.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-process:2.2.0] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/2361ea377168cc8246990125988fc654/jetified-lifecycle-process-2.2.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-service:2.2.0] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/e2a30fb692538b5141affee97e18e800/jetified-lifecycle-service-2.2.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-service:2.2.0] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/e2a30fb692538b5141affee97e18e800/jetified-lifecycle-service-2.2.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.navigation:navigation-runtime:2.3.0] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/2e018843594c4eae1ff3c98de02c63c6/navigation-runtime-2.3.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.navigation:navigation-runtime:2.3.0] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/2e018843594c4eae1ff3c98de02c63c6/navigation-runtime-2.3.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.activity:activity:1.1.0] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/a25024b780f89edcf3abc79c71ed194b/jetified-activity-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.activity:activity:1.1.0] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/a25024b780f89edcf3abc79c71ed194b/jetified-activity-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.loader:loader:1.0.0] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/c38deefe61a4b29c2fedadb5cb828cb9/loader-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/c38deefe61a4b29c2fedadb5cb828cb9/loader-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/47969dd378bd395d9c130e31d38327f3/swiperefreshlayout-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/47969dd378bd395d9c130e31d38327f3/swiperefreshlayout-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/abef6da21d1c57f9122d146255360cc7/asynclayoutinflater-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/abef6da21d1c57f9122d146255360cc7/asynclayoutinflater-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.navigation:navigation-common:2.3.0] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/f0f6d05421a34e0812e16f9bef3b9a0b/navigation-common-2.3.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.navigation:navigation-common:2.3.0] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/f0f6d05421a34e0812e16f9bef3b9a0b/navigation-common-2.3.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.core:core:1.3.0] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/8106c9afeb27cc0c50f85995740f877c/core-1.3.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.core:core:1.3.0] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/8106c9afeb27cc0c50f85995740f877c/core-1.3.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.2.0] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/c1dcce990c851a8414570974f70142b1/lifecycle-runtime-2.2.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.2.0] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/c1dcce990c851a8414570974f70142b1/lifecycle-runtime-2.2.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.2.0] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/67ea9f3ab19511c1cd0eb45f53118b8f/lifecycle-livedata-2.2.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.2.0] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/67ea9f3ab19511c1cd0eb45f53118b8f/lifecycle-livedata-2.2.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.2.0] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/5e31839b08ae558f3abba08de2305004/jetified-lifecycle-viewmodel-savedstate-2.2.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.2.0] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/5e31839b08ae558f3abba08de2305004/jetified-lifecycle-viewmodel-savedstate-2.2.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.2.0] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/581e1a8ec6b82705d06cbf6d3a9a167d/lifecycle-livedata-core-2.2.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.2.0] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/581e1a8ec6b82705d06cbf6d3a9a167d/lifecycle-livedata-core-2.2.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.arch.core:core-runtime:2.1.0] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/ebcca62d7cfb14bdd40adc31f292a35f/core-runtime-2.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.arch.core:core-runtime:2.1.0] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/ebcca62d7cfb14bdd40adc31f292a35f/core-runtime-2.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.savedstate:savedstate:1.0.0] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/3a332f7b3ba12f0d97b1eff5486f8fcf/jetified-savedstate-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.savedstate:savedstate:1.0.0] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/3a332f7b3ba12f0d97b1eff5486f8fcf/jetified-savedstate-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.2.0] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/df4e9b3359966e99ba4d46a442645558/lifecycle-viewmodel-2.2.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.2.0] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/df4e9b3359966e99ba4d46a442645558/lifecycle-viewmodel-2.2.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.sqlite:sqlite-framework:2.1.0] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/cc44fb15301f38c5be5bba7f754d036c/sqlite-framework-2.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.sqlite:sqlite-framework:2.1.0] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/cc44fb15301f38c5be5bba7f754d036c/sqlite-framework-2.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.sqlite:sqlite:2.1.0] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/82480ede89761411cd87ee914c8ed859/sqlite-2.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.sqlite:sqlite:2.1.0] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/82480ede89761411cd87ee914c8ed859/sqlite-2.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/b741faf0c0e978004788a3922a8a438d/versionedparcelable-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/b741faf0c0e978004788a3922a8a438d/versionedparcelable-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.documentfile:documentfile:1.0.0] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/abca430f327a1ba4137054854d25dfd3/documentfile-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.documentfile:documentfile:1.0.0] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/abca430f327a1ba4137054854d25dfd3/documentfile-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/836e9858d101fce50deef7223d87d0d6/localbroadcastmanager-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/836e9858d101fce50deef7223d87d0d6/localbroadcastmanager-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.print:print:1.0.0] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/6083e5aff4a41b4b352509ce72ef01fb/print-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.print:print:1.0.0] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/6083e5aff4a41b4b352509ce72ef01fb/print-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.interpolator:interpolator:1.0.0] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/32691ed1dd96a709bdd6754d66b7ebfd/interpolator-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.interpolator:interpolator:1.0.0] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/32691ed1dd96a709bdd6754d66b7ebfd/interpolator-1.0.0/AndroidManifest.xml:20:5-44
 INJECTED from /home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/AndroidManifest.xml
 INJECTED from /home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/AndroidManifest.xml
 	android:targetSdkVersion
@@ -326,228 +330,228 @@ INJECTED from /home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/Andro
 		ADDED from /home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/AndroidManifest.xml
 		INJECTED from /home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/AndroidManifest.xml
 uses-permission#android.permission.WAKE_LOCK
-ADDED from [androidx.work:work-runtime:2.3.4] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/446681819e58f432b643173d75fac265/work-runtime-2.3.4/AndroidManifest.xml:25:5-68
+ADDED from [androidx.work:work-runtime:2.3.4] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/a75852264f39bf8524c1928f8e3de566/work-runtime-2.3.4/AndroidManifest.xml:25:5-68
 	android:name
-		ADDED from [androidx.work:work-runtime:2.3.4] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/446681819e58f432b643173d75fac265/work-runtime-2.3.4/AndroidManifest.xml:25:22-65
+		ADDED from [androidx.work:work-runtime:2.3.4] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/a75852264f39bf8524c1928f8e3de566/work-runtime-2.3.4/AndroidManifest.xml:25:22-65
 uses-permission#android.permission.ACCESS_NETWORK_STATE
-ADDED from [androidx.work:work-runtime:2.3.4] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/446681819e58f432b643173d75fac265/work-runtime-2.3.4/AndroidManifest.xml:26:5-79
+ADDED from [androidx.work:work-runtime:2.3.4] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/a75852264f39bf8524c1928f8e3de566/work-runtime-2.3.4/AndroidManifest.xml:26:5-79
 	android:name
-		ADDED from [androidx.work:work-runtime:2.3.4] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/446681819e58f432b643173d75fac265/work-runtime-2.3.4/AndroidManifest.xml:26:22-76
+		ADDED from [androidx.work:work-runtime:2.3.4] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/a75852264f39bf8524c1928f8e3de566/work-runtime-2.3.4/AndroidManifest.xml:26:22-76
 uses-permission#android.permission.RECEIVE_BOOT_COMPLETED
-ADDED from [androidx.work:work-runtime:2.3.4] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/446681819e58f432b643173d75fac265/work-runtime-2.3.4/AndroidManifest.xml:27:5-81
+ADDED from [androidx.work:work-runtime:2.3.4] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/a75852264f39bf8524c1928f8e3de566/work-runtime-2.3.4/AndroidManifest.xml:27:5-81
 	android:name
-		ADDED from [androidx.work:work-runtime:2.3.4] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/446681819e58f432b643173d75fac265/work-runtime-2.3.4/AndroidManifest.xml:27:22-78
+		ADDED from [androidx.work:work-runtime:2.3.4] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/a75852264f39bf8524c1928f8e3de566/work-runtime-2.3.4/AndroidManifest.xml:27:22-78
 uses-permission#android.permission.FOREGROUND_SERVICE
-ADDED from [androidx.work:work-runtime:2.3.4] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/446681819e58f432b643173d75fac265/work-runtime-2.3.4/AndroidManifest.xml:28:5-77
+ADDED from [androidx.work:work-runtime:2.3.4] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/a75852264f39bf8524c1928f8e3de566/work-runtime-2.3.4/AndroidManifest.xml:28:5-77
 	android:name
-		ADDED from [androidx.work:work-runtime:2.3.4] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/446681819e58f432b643173d75fac265/work-runtime-2.3.4/AndroidManifest.xml:28:22-74
+		ADDED from [androidx.work:work-runtime:2.3.4] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/a75852264f39bf8524c1928f8e3de566/work-runtime-2.3.4/AndroidManifest.xml:28:22-74
 provider#androidx.work.impl.WorkManagerInitializer
-ADDED from [androidx.work:work-runtime:2.3.4] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/446681819e58f432b643173d75fac265/work-runtime-2.3.4/AndroidManifest.xml:31:9-37:35
+ADDED from [androidx.work:work-runtime:2.3.4] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/a75852264f39bf8524c1928f8e3de566/work-runtime-2.3.4/AndroidManifest.xml:31:9-37:35
 	android:authorities
-		ADDED from [androidx.work:work-runtime:2.3.4] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/446681819e58f432b643173d75fac265/work-runtime-2.3.4/AndroidManifest.xml:33:13-68
+		ADDED from [androidx.work:work-runtime:2.3.4] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/a75852264f39bf8524c1928f8e3de566/work-runtime-2.3.4/AndroidManifest.xml:33:13-68
 	android:multiprocess
-		ADDED from [androidx.work:work-runtime:2.3.4] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/446681819e58f432b643173d75fac265/work-runtime-2.3.4/AndroidManifest.xml:36:13-40
+		ADDED from [androidx.work:work-runtime:2.3.4] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/a75852264f39bf8524c1928f8e3de566/work-runtime-2.3.4/AndroidManifest.xml:36:13-40
 	android:exported
-		ADDED from [androidx.work:work-runtime:2.3.4] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/446681819e58f432b643173d75fac265/work-runtime-2.3.4/AndroidManifest.xml:35:13-37
+		ADDED from [androidx.work:work-runtime:2.3.4] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/a75852264f39bf8524c1928f8e3de566/work-runtime-2.3.4/AndroidManifest.xml:35:13-37
 	tools:targetApi
-		ADDED from [androidx.work:work-runtime:2.3.4] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/446681819e58f432b643173d75fac265/work-runtime-2.3.4/AndroidManifest.xml:37:13-32
+		ADDED from [androidx.work:work-runtime:2.3.4] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/a75852264f39bf8524c1928f8e3de566/work-runtime-2.3.4/AndroidManifest.xml:37:13-32
 	android:directBootAware
-		ADDED from [androidx.work:work-runtime:2.3.4] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/446681819e58f432b643173d75fac265/work-runtime-2.3.4/AndroidManifest.xml:34:13-44
+		ADDED from [androidx.work:work-runtime:2.3.4] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/a75852264f39bf8524c1928f8e3de566/work-runtime-2.3.4/AndroidManifest.xml:34:13-44
 	android:name
-		ADDED from [androidx.work:work-runtime:2.3.4] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/446681819e58f432b643173d75fac265/work-runtime-2.3.4/AndroidManifest.xml:32:13-69
+		ADDED from [androidx.work:work-runtime:2.3.4] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/a75852264f39bf8524c1928f8e3de566/work-runtime-2.3.4/AndroidManifest.xml:32:13-69
 service#androidx.work.impl.background.systemalarm.SystemAlarmService
-ADDED from [androidx.work:work-runtime:2.3.4] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/446681819e58f432b643173d75fac265/work-runtime-2.3.4/AndroidManifest.xml:39:9-44:35
+ADDED from [androidx.work:work-runtime:2.3.4] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/a75852264f39bf8524c1928f8e3de566/work-runtime-2.3.4/AndroidManifest.xml:39:9-44:35
 	android:enabled
-		ADDED from [androidx.work:work-runtime:2.3.4] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/446681819e58f432b643173d75fac265/work-runtime-2.3.4/AndroidManifest.xml:42:13-72
+		ADDED from [androidx.work:work-runtime:2.3.4] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/a75852264f39bf8524c1928f8e3de566/work-runtime-2.3.4/AndroidManifest.xml:42:13-72
 	android:exported
-		ADDED from [androidx.work:work-runtime:2.3.4] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/446681819e58f432b643173d75fac265/work-runtime-2.3.4/AndroidManifest.xml:43:13-37
+		ADDED from [androidx.work:work-runtime:2.3.4] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/a75852264f39bf8524c1928f8e3de566/work-runtime-2.3.4/AndroidManifest.xml:43:13-37
 	tools:targetApi
-		ADDED from [androidx.work:work-runtime:2.3.4] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/446681819e58f432b643173d75fac265/work-runtime-2.3.4/AndroidManifest.xml:44:13-32
+		ADDED from [androidx.work:work-runtime:2.3.4] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/a75852264f39bf8524c1928f8e3de566/work-runtime-2.3.4/AndroidManifest.xml:44:13-32
 	android:directBootAware
-		ADDED from [androidx.work:work-runtime:2.3.4] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/446681819e58f432b643173d75fac265/work-runtime-2.3.4/AndroidManifest.xml:41:13-44
+		ADDED from [androidx.work:work-runtime:2.3.4] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/a75852264f39bf8524c1928f8e3de566/work-runtime-2.3.4/AndroidManifest.xml:41:13-44
 	android:name
-		ADDED from [androidx.work:work-runtime:2.3.4] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/446681819e58f432b643173d75fac265/work-runtime-2.3.4/AndroidManifest.xml:40:13-88
+		ADDED from [androidx.work:work-runtime:2.3.4] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/a75852264f39bf8524c1928f8e3de566/work-runtime-2.3.4/AndroidManifest.xml:40:13-88
 service#androidx.work.impl.background.systemjob.SystemJobService
-ADDED from [androidx.work:work-runtime:2.3.4] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/446681819e58f432b643173d75fac265/work-runtime-2.3.4/AndroidManifest.xml:45:9-51:35
+ADDED from [androidx.work:work-runtime:2.3.4] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/a75852264f39bf8524c1928f8e3de566/work-runtime-2.3.4/AndroidManifest.xml:45:9-51:35
 	android:enabled
-		ADDED from [androidx.work:work-runtime:2.3.4] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/446681819e58f432b643173d75fac265/work-runtime-2.3.4/AndroidManifest.xml:48:13-70
+		ADDED from [androidx.work:work-runtime:2.3.4] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/a75852264f39bf8524c1928f8e3de566/work-runtime-2.3.4/AndroidManifest.xml:48:13-70
 	android:exported
-		ADDED from [androidx.work:work-runtime:2.3.4] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/446681819e58f432b643173d75fac265/work-runtime-2.3.4/AndroidManifest.xml:49:13-36
+		ADDED from [androidx.work:work-runtime:2.3.4] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/a75852264f39bf8524c1928f8e3de566/work-runtime-2.3.4/AndroidManifest.xml:49:13-36
 	android:permission
-		ADDED from [androidx.work:work-runtime:2.3.4] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/446681819e58f432b643173d75fac265/work-runtime-2.3.4/AndroidManifest.xml:50:13-69
+		ADDED from [androidx.work:work-runtime:2.3.4] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/a75852264f39bf8524c1928f8e3de566/work-runtime-2.3.4/AndroidManifest.xml:50:13-69
 	tools:targetApi
-		ADDED from [androidx.work:work-runtime:2.3.4] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/446681819e58f432b643173d75fac265/work-runtime-2.3.4/AndroidManifest.xml:51:13-32
+		ADDED from [androidx.work:work-runtime:2.3.4] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/a75852264f39bf8524c1928f8e3de566/work-runtime-2.3.4/AndroidManifest.xml:51:13-32
 	android:directBootAware
-		ADDED from [androidx.work:work-runtime:2.3.4] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/446681819e58f432b643173d75fac265/work-runtime-2.3.4/AndroidManifest.xml:47:13-44
+		ADDED from [androidx.work:work-runtime:2.3.4] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/a75852264f39bf8524c1928f8e3de566/work-runtime-2.3.4/AndroidManifest.xml:47:13-44
 	android:name
-		ADDED from [androidx.work:work-runtime:2.3.4] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/446681819e58f432b643173d75fac265/work-runtime-2.3.4/AndroidManifest.xml:46:13-84
+		ADDED from [androidx.work:work-runtime:2.3.4] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/a75852264f39bf8524c1928f8e3de566/work-runtime-2.3.4/AndroidManifest.xml:46:13-84
 service#androidx.work.impl.foreground.SystemForegroundService
-ADDED from [androidx.work:work-runtime:2.3.4] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/446681819e58f432b643173d75fac265/work-runtime-2.3.4/AndroidManifest.xml:52:9-57:35
+ADDED from [androidx.work:work-runtime:2.3.4] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/a75852264f39bf8524c1928f8e3de566/work-runtime-2.3.4/AndroidManifest.xml:52:9-57:35
 	android:enabled
-		ADDED from [androidx.work:work-runtime:2.3.4] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/446681819e58f432b643173d75fac265/work-runtime-2.3.4/AndroidManifest.xml:55:13-77
+		ADDED from [androidx.work:work-runtime:2.3.4] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/a75852264f39bf8524c1928f8e3de566/work-runtime-2.3.4/AndroidManifest.xml:55:13-77
 	android:exported
-		ADDED from [androidx.work:work-runtime:2.3.4] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/446681819e58f432b643173d75fac265/work-runtime-2.3.4/AndroidManifest.xml:56:13-37
+		ADDED from [androidx.work:work-runtime:2.3.4] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/a75852264f39bf8524c1928f8e3de566/work-runtime-2.3.4/AndroidManifest.xml:56:13-37
 	tools:targetApi
-		ADDED from [androidx.work:work-runtime:2.3.4] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/446681819e58f432b643173d75fac265/work-runtime-2.3.4/AndroidManifest.xml:57:13-32
+		ADDED from [androidx.work:work-runtime:2.3.4] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/a75852264f39bf8524c1928f8e3de566/work-runtime-2.3.4/AndroidManifest.xml:57:13-32
 	android:directBootAware
-		ADDED from [androidx.work:work-runtime:2.3.4] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/446681819e58f432b643173d75fac265/work-runtime-2.3.4/AndroidManifest.xml:54:13-44
+		ADDED from [androidx.work:work-runtime:2.3.4] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/a75852264f39bf8524c1928f8e3de566/work-runtime-2.3.4/AndroidManifest.xml:54:13-44
 	android:name
-		ADDED from [androidx.work:work-runtime:2.3.4] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/446681819e58f432b643173d75fac265/work-runtime-2.3.4/AndroidManifest.xml:53:13-81
+		ADDED from [androidx.work:work-runtime:2.3.4] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/a75852264f39bf8524c1928f8e3de566/work-runtime-2.3.4/AndroidManifest.xml:53:13-81
 receiver#androidx.work.impl.utils.ForceStopRunnable$BroadcastReceiver
-ADDED from [androidx.work:work-runtime:2.3.4] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/446681819e58f432b643173d75fac265/work-runtime-2.3.4/AndroidManifest.xml:59:9-64:35
+ADDED from [androidx.work:work-runtime:2.3.4] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/a75852264f39bf8524c1928f8e3de566/work-runtime-2.3.4/AndroidManifest.xml:59:9-64:35
 	android:enabled
-		ADDED from [androidx.work:work-runtime:2.3.4] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/446681819e58f432b643173d75fac265/work-runtime-2.3.4/AndroidManifest.xml:62:13-35
+		ADDED from [androidx.work:work-runtime:2.3.4] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/a75852264f39bf8524c1928f8e3de566/work-runtime-2.3.4/AndroidManifest.xml:62:13-35
 	android:exported
-		ADDED from [androidx.work:work-runtime:2.3.4] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/446681819e58f432b643173d75fac265/work-runtime-2.3.4/AndroidManifest.xml:63:13-37
+		ADDED from [androidx.work:work-runtime:2.3.4] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/a75852264f39bf8524c1928f8e3de566/work-runtime-2.3.4/AndroidManifest.xml:63:13-37
 	tools:targetApi
-		ADDED from [androidx.work:work-runtime:2.3.4] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/446681819e58f432b643173d75fac265/work-runtime-2.3.4/AndroidManifest.xml:64:13-32
+		ADDED from [androidx.work:work-runtime:2.3.4] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/a75852264f39bf8524c1928f8e3de566/work-runtime-2.3.4/AndroidManifest.xml:64:13-32
 	android:directBootAware
-		ADDED from [androidx.work:work-runtime:2.3.4] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/446681819e58f432b643173d75fac265/work-runtime-2.3.4/AndroidManifest.xml:61:13-44
+		ADDED from [androidx.work:work-runtime:2.3.4] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/a75852264f39bf8524c1928f8e3de566/work-runtime-2.3.4/AndroidManifest.xml:61:13-44
 	android:name
-		ADDED from [androidx.work:work-runtime:2.3.4] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/446681819e58f432b643173d75fac265/work-runtime-2.3.4/AndroidManifest.xml:60:13-88
+		ADDED from [androidx.work:work-runtime:2.3.4] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/a75852264f39bf8524c1928f8e3de566/work-runtime-2.3.4/AndroidManifest.xml:60:13-88
 receiver#androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy
-ADDED from [androidx.work:work-runtime:2.3.4] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/446681819e58f432b643173d75fac265/work-runtime-2.3.4/AndroidManifest.xml:65:9-75:20
+ADDED from [androidx.work:work-runtime:2.3.4] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/a75852264f39bf8524c1928f8e3de566/work-runtime-2.3.4/AndroidManifest.xml:65:9-75:20
 	android:enabled
-		ADDED from [androidx.work:work-runtime:2.3.4] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/446681819e58f432b643173d75fac265/work-runtime-2.3.4/AndroidManifest.xml:68:13-36
+		ADDED from [androidx.work:work-runtime:2.3.4] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/a75852264f39bf8524c1928f8e3de566/work-runtime-2.3.4/AndroidManifest.xml:68:13-36
 	android:exported
-		ADDED from [androidx.work:work-runtime:2.3.4] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/446681819e58f432b643173d75fac265/work-runtime-2.3.4/AndroidManifest.xml:69:13-37
+		ADDED from [androidx.work:work-runtime:2.3.4] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/a75852264f39bf8524c1928f8e3de566/work-runtime-2.3.4/AndroidManifest.xml:69:13-37
 	tools:targetApi
-		ADDED from [androidx.work:work-runtime:2.3.4] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/446681819e58f432b643173d75fac265/work-runtime-2.3.4/AndroidManifest.xml:70:13-32
+		ADDED from [androidx.work:work-runtime:2.3.4] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/a75852264f39bf8524c1928f8e3de566/work-runtime-2.3.4/AndroidManifest.xml:70:13-32
 	android:directBootAware
-		ADDED from [androidx.work:work-runtime:2.3.4] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/446681819e58f432b643173d75fac265/work-runtime-2.3.4/AndroidManifest.xml:67:13-44
+		ADDED from [androidx.work:work-runtime:2.3.4] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/a75852264f39bf8524c1928f8e3de566/work-runtime-2.3.4/AndroidManifest.xml:67:13-44
 	android:name
-		ADDED from [androidx.work:work-runtime:2.3.4] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/446681819e58f432b643173d75fac265/work-runtime-2.3.4/AndroidManifest.xml:66:13-106
+		ADDED from [androidx.work:work-runtime:2.3.4] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/a75852264f39bf8524c1928f8e3de566/work-runtime-2.3.4/AndroidManifest.xml:66:13-106
 intent-filter#action:name:android.intent.action.ACTION_POWER_CONNECTED+action:name:android.intent.action.ACTION_POWER_DISCONNECTED
-ADDED from [androidx.work:work-runtime:2.3.4] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/446681819e58f432b643173d75fac265/work-runtime-2.3.4/AndroidManifest.xml:71:13-74:29
+ADDED from [androidx.work:work-runtime:2.3.4] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/a75852264f39bf8524c1928f8e3de566/work-runtime-2.3.4/AndroidManifest.xml:71:13-74:29
 action#android.intent.action.ACTION_POWER_CONNECTED
-ADDED from [androidx.work:work-runtime:2.3.4] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/446681819e58f432b643173d75fac265/work-runtime-2.3.4/AndroidManifest.xml:72:17-87
+ADDED from [androidx.work:work-runtime:2.3.4] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/a75852264f39bf8524c1928f8e3de566/work-runtime-2.3.4/AndroidManifest.xml:72:17-87
 	android:name
-		ADDED from [androidx.work:work-runtime:2.3.4] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/446681819e58f432b643173d75fac265/work-runtime-2.3.4/AndroidManifest.xml:72:25-84
+		ADDED from [androidx.work:work-runtime:2.3.4] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/a75852264f39bf8524c1928f8e3de566/work-runtime-2.3.4/AndroidManifest.xml:72:25-84
 action#android.intent.action.ACTION_POWER_DISCONNECTED
-ADDED from [androidx.work:work-runtime:2.3.4] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/446681819e58f432b643173d75fac265/work-runtime-2.3.4/AndroidManifest.xml:73:17-90
+ADDED from [androidx.work:work-runtime:2.3.4] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/a75852264f39bf8524c1928f8e3de566/work-runtime-2.3.4/AndroidManifest.xml:73:17-90
 	android:name
-		ADDED from [androidx.work:work-runtime:2.3.4] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/446681819e58f432b643173d75fac265/work-runtime-2.3.4/AndroidManifest.xml:73:25-87
+		ADDED from [androidx.work:work-runtime:2.3.4] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/a75852264f39bf8524c1928f8e3de566/work-runtime-2.3.4/AndroidManifest.xml:73:25-87
 receiver#androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy
-ADDED from [androidx.work:work-runtime:2.3.4] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/446681819e58f432b643173d75fac265/work-runtime-2.3.4/AndroidManifest.xml:76:9-86:20
+ADDED from [androidx.work:work-runtime:2.3.4] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/a75852264f39bf8524c1928f8e3de566/work-runtime-2.3.4/AndroidManifest.xml:76:9-86:20
 	android:enabled
-		ADDED from [androidx.work:work-runtime:2.3.4] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/446681819e58f432b643173d75fac265/work-runtime-2.3.4/AndroidManifest.xml:79:13-36
+		ADDED from [androidx.work:work-runtime:2.3.4] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/a75852264f39bf8524c1928f8e3de566/work-runtime-2.3.4/AndroidManifest.xml:79:13-36
 	android:exported
-		ADDED from [androidx.work:work-runtime:2.3.4] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/446681819e58f432b643173d75fac265/work-runtime-2.3.4/AndroidManifest.xml:80:13-37
+		ADDED from [androidx.work:work-runtime:2.3.4] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/a75852264f39bf8524c1928f8e3de566/work-runtime-2.3.4/AndroidManifest.xml:80:13-37
 	tools:targetApi
-		ADDED from [androidx.work:work-runtime:2.3.4] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/446681819e58f432b643173d75fac265/work-runtime-2.3.4/AndroidManifest.xml:81:13-32
+		ADDED from [androidx.work:work-runtime:2.3.4] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/a75852264f39bf8524c1928f8e3de566/work-runtime-2.3.4/AndroidManifest.xml:81:13-32
 	android:directBootAware
-		ADDED from [androidx.work:work-runtime:2.3.4] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/446681819e58f432b643173d75fac265/work-runtime-2.3.4/AndroidManifest.xml:78:13-44
+		ADDED from [androidx.work:work-runtime:2.3.4] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/a75852264f39bf8524c1928f8e3de566/work-runtime-2.3.4/AndroidManifest.xml:78:13-44
 	android:name
-		ADDED from [androidx.work:work-runtime:2.3.4] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/446681819e58f432b643173d75fac265/work-runtime-2.3.4/AndroidManifest.xml:77:13-104
+		ADDED from [androidx.work:work-runtime:2.3.4] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/a75852264f39bf8524c1928f8e3de566/work-runtime-2.3.4/AndroidManifest.xml:77:13-104
 intent-filter#action:name:android.intent.action.BATTERY_LOW+action:name:android.intent.action.BATTERY_OKAY
-ADDED from [androidx.work:work-runtime:2.3.4] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/446681819e58f432b643173d75fac265/work-runtime-2.3.4/AndroidManifest.xml:82:13-85:29
+ADDED from [androidx.work:work-runtime:2.3.4] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/a75852264f39bf8524c1928f8e3de566/work-runtime-2.3.4/AndroidManifest.xml:82:13-85:29
 action#android.intent.action.BATTERY_OKAY
-ADDED from [androidx.work:work-runtime:2.3.4] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/446681819e58f432b643173d75fac265/work-runtime-2.3.4/AndroidManifest.xml:83:17-77
+ADDED from [androidx.work:work-runtime:2.3.4] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/a75852264f39bf8524c1928f8e3de566/work-runtime-2.3.4/AndroidManifest.xml:83:17-77
 	android:name
-		ADDED from [androidx.work:work-runtime:2.3.4] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/446681819e58f432b643173d75fac265/work-runtime-2.3.4/AndroidManifest.xml:83:25-74
+		ADDED from [androidx.work:work-runtime:2.3.4] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/a75852264f39bf8524c1928f8e3de566/work-runtime-2.3.4/AndroidManifest.xml:83:25-74
 action#android.intent.action.BATTERY_LOW
-ADDED from [androidx.work:work-runtime:2.3.4] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/446681819e58f432b643173d75fac265/work-runtime-2.3.4/AndroidManifest.xml:84:17-76
+ADDED from [androidx.work:work-runtime:2.3.4] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/a75852264f39bf8524c1928f8e3de566/work-runtime-2.3.4/AndroidManifest.xml:84:17-76
 	android:name
-		ADDED from [androidx.work:work-runtime:2.3.4] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/446681819e58f432b643173d75fac265/work-runtime-2.3.4/AndroidManifest.xml:84:25-73
+		ADDED from [androidx.work:work-runtime:2.3.4] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/a75852264f39bf8524c1928f8e3de566/work-runtime-2.3.4/AndroidManifest.xml:84:25-73
 receiver#androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy
-ADDED from [androidx.work:work-runtime:2.3.4] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/446681819e58f432b643173d75fac265/work-runtime-2.3.4/AndroidManifest.xml:87:9-97:20
+ADDED from [androidx.work:work-runtime:2.3.4] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/a75852264f39bf8524c1928f8e3de566/work-runtime-2.3.4/AndroidManifest.xml:87:9-97:20
 	android:enabled
-		ADDED from [androidx.work:work-runtime:2.3.4] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/446681819e58f432b643173d75fac265/work-runtime-2.3.4/AndroidManifest.xml:90:13-36
+		ADDED from [androidx.work:work-runtime:2.3.4] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/a75852264f39bf8524c1928f8e3de566/work-runtime-2.3.4/AndroidManifest.xml:90:13-36
 	android:exported
-		ADDED from [androidx.work:work-runtime:2.3.4] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/446681819e58f432b643173d75fac265/work-runtime-2.3.4/AndroidManifest.xml:91:13-37
+		ADDED from [androidx.work:work-runtime:2.3.4] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/a75852264f39bf8524c1928f8e3de566/work-runtime-2.3.4/AndroidManifest.xml:91:13-37
 	tools:targetApi
-		ADDED from [androidx.work:work-runtime:2.3.4] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/446681819e58f432b643173d75fac265/work-runtime-2.3.4/AndroidManifest.xml:92:13-32
+		ADDED from [androidx.work:work-runtime:2.3.4] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/a75852264f39bf8524c1928f8e3de566/work-runtime-2.3.4/AndroidManifest.xml:92:13-32
 	android:directBootAware
-		ADDED from [androidx.work:work-runtime:2.3.4] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/446681819e58f432b643173d75fac265/work-runtime-2.3.4/AndroidManifest.xml:89:13-44
+		ADDED from [androidx.work:work-runtime:2.3.4] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/a75852264f39bf8524c1928f8e3de566/work-runtime-2.3.4/AndroidManifest.xml:89:13-44
 	android:name
-		ADDED from [androidx.work:work-runtime:2.3.4] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/446681819e58f432b643173d75fac265/work-runtime-2.3.4/AndroidManifest.xml:88:13-104
+		ADDED from [androidx.work:work-runtime:2.3.4] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/a75852264f39bf8524c1928f8e3de566/work-runtime-2.3.4/AndroidManifest.xml:88:13-104
 intent-filter#action:name:android.intent.action.DEVICE_STORAGE_LOW+action:name:android.intent.action.DEVICE_STORAGE_OK
-ADDED from [androidx.work:work-runtime:2.3.4] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/446681819e58f432b643173d75fac265/work-runtime-2.3.4/AndroidManifest.xml:93:13-96:29
+ADDED from [androidx.work:work-runtime:2.3.4] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/a75852264f39bf8524c1928f8e3de566/work-runtime-2.3.4/AndroidManifest.xml:93:13-96:29
 action#android.intent.action.DEVICE_STORAGE_LOW
-ADDED from [androidx.work:work-runtime:2.3.4] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/446681819e58f432b643173d75fac265/work-runtime-2.3.4/AndroidManifest.xml:94:17-83
+ADDED from [androidx.work:work-runtime:2.3.4] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/a75852264f39bf8524c1928f8e3de566/work-runtime-2.3.4/AndroidManifest.xml:94:17-83
 	android:name
-		ADDED from [androidx.work:work-runtime:2.3.4] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/446681819e58f432b643173d75fac265/work-runtime-2.3.4/AndroidManifest.xml:94:25-80
+		ADDED from [androidx.work:work-runtime:2.3.4] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/a75852264f39bf8524c1928f8e3de566/work-runtime-2.3.4/AndroidManifest.xml:94:25-80
 action#android.intent.action.DEVICE_STORAGE_OK
-ADDED from [androidx.work:work-runtime:2.3.4] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/446681819e58f432b643173d75fac265/work-runtime-2.3.4/AndroidManifest.xml:95:17-82
+ADDED from [androidx.work:work-runtime:2.3.4] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/a75852264f39bf8524c1928f8e3de566/work-runtime-2.3.4/AndroidManifest.xml:95:17-82
 	android:name
-		ADDED from [androidx.work:work-runtime:2.3.4] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/446681819e58f432b643173d75fac265/work-runtime-2.3.4/AndroidManifest.xml:95:25-79
+		ADDED from [androidx.work:work-runtime:2.3.4] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/a75852264f39bf8524c1928f8e3de566/work-runtime-2.3.4/AndroidManifest.xml:95:25-79
 receiver#androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy
-ADDED from [androidx.work:work-runtime:2.3.4] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/446681819e58f432b643173d75fac265/work-runtime-2.3.4/AndroidManifest.xml:98:9-107:20
+ADDED from [androidx.work:work-runtime:2.3.4] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/a75852264f39bf8524c1928f8e3de566/work-runtime-2.3.4/AndroidManifest.xml:98:9-107:20
 	android:enabled
-		ADDED from [androidx.work:work-runtime:2.3.4] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/446681819e58f432b643173d75fac265/work-runtime-2.3.4/AndroidManifest.xml:101:13-36
+		ADDED from [androidx.work:work-runtime:2.3.4] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/a75852264f39bf8524c1928f8e3de566/work-runtime-2.3.4/AndroidManifest.xml:101:13-36
 	android:exported
-		ADDED from [androidx.work:work-runtime:2.3.4] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/446681819e58f432b643173d75fac265/work-runtime-2.3.4/AndroidManifest.xml:102:13-37
+		ADDED from [androidx.work:work-runtime:2.3.4] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/a75852264f39bf8524c1928f8e3de566/work-runtime-2.3.4/AndroidManifest.xml:102:13-37
 	tools:targetApi
-		ADDED from [androidx.work:work-runtime:2.3.4] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/446681819e58f432b643173d75fac265/work-runtime-2.3.4/AndroidManifest.xml:103:13-32
+		ADDED from [androidx.work:work-runtime:2.3.4] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/a75852264f39bf8524c1928f8e3de566/work-runtime-2.3.4/AndroidManifest.xml:103:13-32
 	android:directBootAware
-		ADDED from [androidx.work:work-runtime:2.3.4] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/446681819e58f432b643173d75fac265/work-runtime-2.3.4/AndroidManifest.xml:100:13-44
+		ADDED from [androidx.work:work-runtime:2.3.4] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/a75852264f39bf8524c1928f8e3de566/work-runtime-2.3.4/AndroidManifest.xml:100:13-44
 	android:name
-		ADDED from [androidx.work:work-runtime:2.3.4] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/446681819e58f432b643173d75fac265/work-runtime-2.3.4/AndroidManifest.xml:99:13-103
+		ADDED from [androidx.work:work-runtime:2.3.4] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/a75852264f39bf8524c1928f8e3de566/work-runtime-2.3.4/AndroidManifest.xml:99:13-103
 intent-filter#action:name:android.net.conn.CONNECTIVITY_CHANGE
-ADDED from [androidx.work:work-runtime:2.3.4] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/446681819e58f432b643173d75fac265/work-runtime-2.3.4/AndroidManifest.xml:104:13-106:29
+ADDED from [androidx.work:work-runtime:2.3.4] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/a75852264f39bf8524c1928f8e3de566/work-runtime-2.3.4/AndroidManifest.xml:104:13-106:29
 action#android.net.conn.CONNECTIVITY_CHANGE
-ADDED from [androidx.work:work-runtime:2.3.4] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/446681819e58f432b643173d75fac265/work-runtime-2.3.4/AndroidManifest.xml:105:17-79
+ADDED from [androidx.work:work-runtime:2.3.4] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/a75852264f39bf8524c1928f8e3de566/work-runtime-2.3.4/AndroidManifest.xml:105:17-79
 	android:name
-		ADDED from [androidx.work:work-runtime:2.3.4] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/446681819e58f432b643173d75fac265/work-runtime-2.3.4/AndroidManifest.xml:105:25-76
+		ADDED from [androidx.work:work-runtime:2.3.4] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/a75852264f39bf8524c1928f8e3de566/work-runtime-2.3.4/AndroidManifest.xml:105:25-76
 receiver#androidx.work.impl.background.systemalarm.RescheduleReceiver
-ADDED from [androidx.work:work-runtime:2.3.4] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/446681819e58f432b643173d75fac265/work-runtime-2.3.4/AndroidManifest.xml:108:9-119:20
+ADDED from [androidx.work:work-runtime:2.3.4] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/a75852264f39bf8524c1928f8e3de566/work-runtime-2.3.4/AndroidManifest.xml:108:9-119:20
 	android:enabled
-		ADDED from [androidx.work:work-runtime:2.3.4] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/446681819e58f432b643173d75fac265/work-runtime-2.3.4/AndroidManifest.xml:111:13-36
+		ADDED from [androidx.work:work-runtime:2.3.4] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/a75852264f39bf8524c1928f8e3de566/work-runtime-2.3.4/AndroidManifest.xml:111:13-36
 	android:exported
-		ADDED from [androidx.work:work-runtime:2.3.4] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/446681819e58f432b643173d75fac265/work-runtime-2.3.4/AndroidManifest.xml:112:13-37
+		ADDED from [androidx.work:work-runtime:2.3.4] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/a75852264f39bf8524c1928f8e3de566/work-runtime-2.3.4/AndroidManifest.xml:112:13-37
 	tools:targetApi
-		ADDED from [androidx.work:work-runtime:2.3.4] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/446681819e58f432b643173d75fac265/work-runtime-2.3.4/AndroidManifest.xml:113:13-32
+		ADDED from [androidx.work:work-runtime:2.3.4] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/a75852264f39bf8524c1928f8e3de566/work-runtime-2.3.4/AndroidManifest.xml:113:13-32
 	android:directBootAware
-		ADDED from [androidx.work:work-runtime:2.3.4] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/446681819e58f432b643173d75fac265/work-runtime-2.3.4/AndroidManifest.xml:110:13-44
+		ADDED from [androidx.work:work-runtime:2.3.4] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/a75852264f39bf8524c1928f8e3de566/work-runtime-2.3.4/AndroidManifest.xml:110:13-44
 	android:name
-		ADDED from [androidx.work:work-runtime:2.3.4] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/446681819e58f432b643173d75fac265/work-runtime-2.3.4/AndroidManifest.xml:109:13-88
+		ADDED from [androidx.work:work-runtime:2.3.4] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/a75852264f39bf8524c1928f8e3de566/work-runtime-2.3.4/AndroidManifest.xml:109:13-88
 intent-filter#action:name:android.intent.action.BOOT_COMPLETED+action:name:android.intent.action.TIMEZONE_CHANGED+action:name:android.intent.action.TIME_SET
-ADDED from [androidx.work:work-runtime:2.3.4] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/446681819e58f432b643173d75fac265/work-runtime-2.3.4/AndroidManifest.xml:114:13-118:29
+ADDED from [androidx.work:work-runtime:2.3.4] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/a75852264f39bf8524c1928f8e3de566/work-runtime-2.3.4/AndroidManifest.xml:114:13-118:29
 action#android.intent.action.BOOT_COMPLETED
-ADDED from [androidx.work:work-runtime:2.3.4] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/446681819e58f432b643173d75fac265/work-runtime-2.3.4/AndroidManifest.xml:115:17-79
+ADDED from [androidx.work:work-runtime:2.3.4] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/a75852264f39bf8524c1928f8e3de566/work-runtime-2.3.4/AndroidManifest.xml:115:17-79
 	android:name
-		ADDED from [androidx.work:work-runtime:2.3.4] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/446681819e58f432b643173d75fac265/work-runtime-2.3.4/AndroidManifest.xml:115:25-76
+		ADDED from [androidx.work:work-runtime:2.3.4] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/a75852264f39bf8524c1928f8e3de566/work-runtime-2.3.4/AndroidManifest.xml:115:25-76
 action#android.intent.action.TIME_SET
-ADDED from [androidx.work:work-runtime:2.3.4] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/446681819e58f432b643173d75fac265/work-runtime-2.3.4/AndroidManifest.xml:116:17-73
+ADDED from [androidx.work:work-runtime:2.3.4] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/a75852264f39bf8524c1928f8e3de566/work-runtime-2.3.4/AndroidManifest.xml:116:17-73
 	android:name
-		ADDED from [androidx.work:work-runtime:2.3.4] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/446681819e58f432b643173d75fac265/work-runtime-2.3.4/AndroidManifest.xml:116:25-70
+		ADDED from [androidx.work:work-runtime:2.3.4] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/a75852264f39bf8524c1928f8e3de566/work-runtime-2.3.4/AndroidManifest.xml:116:25-70
 action#android.intent.action.TIMEZONE_CHANGED
-ADDED from [androidx.work:work-runtime:2.3.4] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/446681819e58f432b643173d75fac265/work-runtime-2.3.4/AndroidManifest.xml:117:17-81
+ADDED from [androidx.work:work-runtime:2.3.4] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/a75852264f39bf8524c1928f8e3de566/work-runtime-2.3.4/AndroidManifest.xml:117:17-81
 	android:name
-		ADDED from [androidx.work:work-runtime:2.3.4] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/446681819e58f432b643173d75fac265/work-runtime-2.3.4/AndroidManifest.xml:117:25-78
+		ADDED from [androidx.work:work-runtime:2.3.4] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/a75852264f39bf8524c1928f8e3de566/work-runtime-2.3.4/AndroidManifest.xml:117:25-78
 receiver#androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver
-ADDED from [androidx.work:work-runtime:2.3.4] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/446681819e58f432b643173d75fac265/work-runtime-2.3.4/AndroidManifest.xml:120:9-129:20
+ADDED from [androidx.work:work-runtime:2.3.4] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/a75852264f39bf8524c1928f8e3de566/work-runtime-2.3.4/AndroidManifest.xml:120:9-129:20
 	android:enabled
-		ADDED from [androidx.work:work-runtime:2.3.4] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/446681819e58f432b643173d75fac265/work-runtime-2.3.4/AndroidManifest.xml:123:13-72
+		ADDED from [androidx.work:work-runtime:2.3.4] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/a75852264f39bf8524c1928f8e3de566/work-runtime-2.3.4/AndroidManifest.xml:123:13-72
 	android:exported
-		ADDED from [androidx.work:work-runtime:2.3.4] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/446681819e58f432b643173d75fac265/work-runtime-2.3.4/AndroidManifest.xml:124:13-37
+		ADDED from [androidx.work:work-runtime:2.3.4] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/a75852264f39bf8524c1928f8e3de566/work-runtime-2.3.4/AndroidManifest.xml:124:13-37
 	tools:targetApi
-		ADDED from [androidx.work:work-runtime:2.3.4] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/446681819e58f432b643173d75fac265/work-runtime-2.3.4/AndroidManifest.xml:125:13-32
+		ADDED from [androidx.work:work-runtime:2.3.4] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/a75852264f39bf8524c1928f8e3de566/work-runtime-2.3.4/AndroidManifest.xml:125:13-32
 	android:directBootAware
-		ADDED from [androidx.work:work-runtime:2.3.4] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/446681819e58f432b643173d75fac265/work-runtime-2.3.4/AndroidManifest.xml:122:13-44
+		ADDED from [androidx.work:work-runtime:2.3.4] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/a75852264f39bf8524c1928f8e3de566/work-runtime-2.3.4/AndroidManifest.xml:122:13-44
 	android:name
-		ADDED from [androidx.work:work-runtime:2.3.4] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/446681819e58f432b643173d75fac265/work-runtime-2.3.4/AndroidManifest.xml:121:13-99
+		ADDED from [androidx.work:work-runtime:2.3.4] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/a75852264f39bf8524c1928f8e3de566/work-runtime-2.3.4/AndroidManifest.xml:121:13-99
 intent-filter#action:name:androidx.work.impl.background.systemalarm.UpdateProxies
-ADDED from [androidx.work:work-runtime:2.3.4] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/446681819e58f432b643173d75fac265/work-runtime-2.3.4/AndroidManifest.xml:126:13-128:29
+ADDED from [androidx.work:work-runtime:2.3.4] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/a75852264f39bf8524c1928f8e3de566/work-runtime-2.3.4/AndroidManifest.xml:126:13-128:29
 action#androidx.work.impl.background.systemalarm.UpdateProxies
-ADDED from [androidx.work:work-runtime:2.3.4] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/446681819e58f432b643173d75fac265/work-runtime-2.3.4/AndroidManifest.xml:127:17-98
+ADDED from [androidx.work:work-runtime:2.3.4] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/a75852264f39bf8524c1928f8e3de566/work-runtime-2.3.4/AndroidManifest.xml:127:17-98
 	android:name
-		ADDED from [androidx.work:work-runtime:2.3.4] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/446681819e58f432b643173d75fac265/work-runtime-2.3.4/AndroidManifest.xml:127:25-95
+		ADDED from [androidx.work:work-runtime:2.3.4] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/a75852264f39bf8524c1928f8e3de566/work-runtime-2.3.4/AndroidManifest.xml:127:25-95
 service#androidx.room.MultiInstanceInvalidationService
-ADDED from [androidx.room:room-runtime:2.2.5] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/717f65762e8c098ad71282db36fbc63c/room-runtime-2.2.5/AndroidManifest.xml:25:9-28:40
+ADDED from [androidx.room:room-runtime:2.2.5] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/2d748680cf13dd7f220a248fe33b243e/room-runtime-2.2.5/AndroidManifest.xml:25:9-28:40
 	android:exported
-		ADDED from [androidx.room:room-runtime:2.2.5] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/717f65762e8c098ad71282db36fbc63c/room-runtime-2.2.5/AndroidManifest.xml:28:13-37
+		ADDED from [androidx.room:room-runtime:2.2.5] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/2d748680cf13dd7f220a248fe33b243e/room-runtime-2.2.5/AndroidManifest.xml:28:13-37
 	android:directBootAware
-		ADDED from [androidx.room:room-runtime:2.2.5] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/717f65762e8c098ad71282db36fbc63c/room-runtime-2.2.5/AndroidManifest.xml:27:13-43
+		ADDED from [androidx.room:room-runtime:2.2.5] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/2d748680cf13dd7f220a248fe33b243e/room-runtime-2.2.5/AndroidManifest.xml:27:13-43
 	android:name
-		ADDED from [androidx.room:room-runtime:2.2.5] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/717f65762e8c098ad71282db36fbc63c/room-runtime-2.2.5/AndroidManifest.xml:26:13-74
+		ADDED from [androidx.room:room-runtime:2.2.5] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/2d748680cf13dd7f220a248fe33b243e/room-runtime-2.2.5/AndroidManifest.xml:26:13-74
 provider#androidx.lifecycle.ProcessLifecycleOwnerInitializer
-ADDED from [androidx.lifecycle:lifecycle-process:2.2.0] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/12565117c533432cd60af9b41fd49aa9/jetified-lifecycle-process-2.2.0/AndroidManifest.xml:25:9-29:43
+ADDED from [androidx.lifecycle:lifecycle-process:2.2.0] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/2361ea377168cc8246990125988fc654/jetified-lifecycle-process-2.2.0/AndroidManifest.xml:25:9-29:43
 	android:authorities
-		ADDED from [androidx.lifecycle:lifecycle-process:2.2.0] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/12565117c533432cd60af9b41fd49aa9/jetified-lifecycle-process-2.2.0/AndroidManifest.xml:27:13-69
+		ADDED from [androidx.lifecycle:lifecycle-process:2.2.0] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/2361ea377168cc8246990125988fc654/jetified-lifecycle-process-2.2.0/AndroidManifest.xml:27:13-69
 	android:multiprocess
-		ADDED from [androidx.lifecycle:lifecycle-process:2.2.0] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/12565117c533432cd60af9b41fd49aa9/jetified-lifecycle-process-2.2.0/AndroidManifest.xml:29:13-40
+		ADDED from [androidx.lifecycle:lifecycle-process:2.2.0] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/2361ea377168cc8246990125988fc654/jetified-lifecycle-process-2.2.0/AndroidManifest.xml:29:13-40
 	android:exported
-		ADDED from [androidx.lifecycle:lifecycle-process:2.2.0] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/12565117c533432cd60af9b41fd49aa9/jetified-lifecycle-process-2.2.0/AndroidManifest.xml:28:13-37
+		ADDED from [androidx.lifecycle:lifecycle-process:2.2.0] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/2361ea377168cc8246990125988fc654/jetified-lifecycle-process-2.2.0/AndroidManifest.xml:28:13-37
 	android:name
-		ADDED from [androidx.lifecycle:lifecycle-process:2.2.0] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/12565117c533432cd60af9b41fd49aa9/jetified-lifecycle-process-2.2.0/AndroidManifest.xml:26:13-79
+		ADDED from [androidx.lifecycle:lifecycle-process:2.2.0] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/2361ea377168cc8246990125988fc654/jetified-lifecycle-process-2.2.0/AndroidManifest.xml:26:13-79

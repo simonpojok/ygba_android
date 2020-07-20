@@ -23,6 +23,7 @@
         android:supportsRtl="true"
         android:testOnly="true"
         android:theme="@style/AppTheme" >
+        <activity android:name="org.ygba.youthgobudget.community_wishes.CommunityWishesActivity" />
         <activity
             android:name="org.ygba.youthgobudget.allocation.AllocationActivity"
             android:parentActivityName="org.ygba.youthgobudget.MainActivity" />
