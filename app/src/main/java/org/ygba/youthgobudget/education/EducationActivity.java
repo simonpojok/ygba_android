@@ -11,7 +11,6 @@ import android.widget.EditText;
 import android.widget.RadioGroup;
 import android.widget.Spinner;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import org.ygba.youthgobudget.R;
 import org.ygba.youthgobudget.data.education.EducationQuestion;
@@ -116,6 +115,7 @@ public class EducationActivity extends AppCompatActivity {
     private EditText eQ5FemaleChangingRoomFemaleStances;
     private EditText eQ5FemaleChangingRoomFemaleStancesTeacher;
     private EditText eQ5FemaleChangingRoomMixedTeacher;
+    private EditText eQ5FemaleChangingRoomFunction;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -250,6 +250,7 @@ public class EducationActivity extends AppCompatActivity {
         eQ5FemaleChangingRoomFemaleStances = findViewById(R.id.eduction_question_5_FCR_latrine_pupil_female_stances);
         eQ5FemaleChangingRoomFemaleStancesTeacher = findViewById(R.id.eduction_question_5_latrine_FCR_teacher_female_stances);
         eQ5FemaleChangingRoomMixedTeacher = findViewById(R.id.eduction_question_5_FCR_latrine_teacher_mixed_stances);
+        eQ5FemaleChangingRoomFunction = findViewById(R.id.eduction_question_5_FCR_latrine_functional_stances);
 
         findViewById(R.id.saved_form_data).setOnClickListener(new View.OnClickListener() {
             @Override
@@ -359,6 +360,7 @@ public class EducationActivity extends AppCompatActivity {
                 .setQ5FemaleChangingRoomNumberFemaleStance(getIntegerValue(eQ5FemaleChangingRoomFemaleStances))
                 .setQ5FemaleChangingRoomNumberFemaleTeacher(getIntegerValue(eQ5FemaleChangingRoomFemaleStancesTeacher))
                 .setQ5FemaleChangingRoomNumberMixedTeachers(getIntegerValue(eQ5FemaleChangingRoomMixedTeacher))
+                .setQ5FemaleChangingRoomNumberFunctional(getIntegerValue(eQ5FemaleChangingRoomFunction))
                 .build();
     }
 
