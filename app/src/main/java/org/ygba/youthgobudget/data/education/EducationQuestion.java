@@ -141,6 +141,12 @@ public class EducationQuestion {
     @ColumnInfo(name = EducationQuestionConstants.QUESTION_3_INFROMATION_NOTICE_BOARD_DISPLAYED)
     private boolean informationNoticeBoardDisplayed;
 
+    @ColumnInfo(name = EducationQuestionConstants.QUESTION_3_INFORMATION_HEAD_TEACHER_OFFICE_DISPLAYED)
+    private boolean informationHeadTeacherOfficeDisplayed;
+
+    @ColumnInfo(name = EducationQuestionConstants.QUESTION_3_INFROMATION_STAFF_ROOM_DISPLAYED)
+    private boolean informationStaffRoomDisplayed;
+
 
 
     public static class Builder {
@@ -350,10 +356,36 @@ public class EducationQuestion {
             INSTANCE.setInformationNoticeBoardDisplayed(budgetInformationDisplayedInSchoolNoticeBoard);
             return this;
         }
+
+        public Builder setQ3IsInformationHeaderTeacherOfficeDisplayed(boolean budgetInformationHeadTeacherOfficeDisplayed) {
+            INSTANCE.setInformationHeadTeacherOfficeDisplayed(budgetInformationHeadTeacherOfficeDisplayed);
+            return this;
+        }
+
+        public Builder setQ3IsInformationStaffRoomDisplayed(boolean budgetInformationStaffRoomDisplayed) {
+            INSTANCE.setInformationStaffRoomDisplayed(budgetInformationStaffRoomDisplayed);
+            return this;
+        }
     }
 
     @Ignore
     private EducationQuestion() {
+    }
+
+    public boolean isInformationStaffRoomDisplayed() {
+        return informationStaffRoomDisplayed;
+    }
+
+    public void setInformationStaffRoomDisplayed(boolean informationStaffRoomDisplayed) {
+        this.informationStaffRoomDisplayed = informationStaffRoomDisplayed;
+    }
+
+    public boolean isInformationHeadTeacherOfficeDisplayed() {
+        return informationHeadTeacherOfficeDisplayed;
+    }
+
+    public void setInformationHeadTeacherOfficeDisplayed(boolean informationHeadTeacherOfficeDisplayed) {
+        this.informationHeadTeacherOfficeDisplayed = informationHeadTeacherOfficeDisplayed;
     }
 
     public boolean isInformationNoticeBoardDisplayed() {

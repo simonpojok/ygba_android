@@ -44,4 +44,6 @@ public class EducationQuestionConstants {
     public static final String QUESTION_3_SFG_DATE_RECIEVED = "question_3_date_received_sfg";
     public static final String QUESTION_3_SFG_DATE_WITHDRAWN = "question_3_sfg_date_withdrawn";
     public static final String QUESTION_3_INFROMATION_NOTICE_BOARD_DISPLAYED = "question_3_1_information_notice_board_displayed";
+    public static final String QUESTION_3_INFORMATION_HEAD_TEACHER_OFFICE_DISPLAYED = "question_3_displayed_head_teacher_office";
+    public static final String QUESTION_3_INFROMATION_STAFF_ROOM_DISPLAYED = "question_3_1_information_staff_room";
 }

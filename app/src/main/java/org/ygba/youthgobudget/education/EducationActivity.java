@@ -210,6 +210,8 @@ public class EducationActivity extends AppCompatActivity {
                 .setQ3SFGReceivedDate(getTextValue(eQ3SFGDateReceivedEditText))
                 .setQ3SFGDateWithdrawn(getTextValue(eQ3SFGDateWithdrawnEditText))
                 .setQ3IsInformationNoticeBoardDisplayed(isBudgetInformationDisplayedInSchoolNoticeBoard())
+                .setQ3IsInformationHeaderTeacherOfficeDisplayed(isBudgetInformationHeadTeacherOfficeDisplayed())
+                .setQ3IsInformationStaffRoomDisplayed(isBudgetInformationStaffRoomDisplayed())
                 .build();
     }
 
@@ -241,5 +243,13 @@ public class EducationActivity extends AppCompatActivity {
 
     private boolean isBudgetInformationDisplayedInSchoolNoticeBoard() {
         return ((CheckBox) findViewById(R.id.question_3_1_school_notice_board)).isChecked();
+    }
+
+    private boolean isBudgetInformationHeadTeacherOfficeDisplayed() {
+        return ((CheckBox) findViewById(R.id.question_3_1_head_teacher_office)).isChecked();
+    }
+
+    private boolean isBudgetInformationStaffRoomDisplayed() {
+        return ((CheckBox) findViewById(R.id.question_3_1_school_staff_room)).isChecked();
     }
 }

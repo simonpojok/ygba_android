@@ -933,6 +933,7 @@
             android:textColor="@color/white"/>
 
         <LinearLayout
+            android:layout_marginVertical="5dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="horizontal">
@@ -951,6 +952,28 @@
                 android:textSize="15sp"
                 android:text="Head Teacher Office"
                 android:id="@+id/question_3_1_head_teacher_office"
+                android:textColor="@color/white"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginVertical="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:text="Staff Room"
+                android:id="@+id/question_3_1_school_staff_room"
+                android:textColor="@color/white"/>
+
+            <CheckBox
+                android:layout_gravity="end"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:text="Not Displayed"
+                android:id="@+id/question_3_1_not_displayed"
                 android:textColor="@color/white"/>
         </LinearLayout>
 
