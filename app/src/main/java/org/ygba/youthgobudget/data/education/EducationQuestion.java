@@ -259,6 +259,9 @@ public class EducationQuestion {
     @ColumnInfo(name = EducationQuestionConstants.QUESTION_5_VIP_LATRINE_FUNCTION)
     private int question5VIPLatrineFunction;
 
+    @ColumnInfo(name = EducationQuestionConstants.QUESTION_5_VIP_LATRINE_NONE_FUNCTIONAL)
+    private int question5VIPNoneFunctional;
+
     public static class Builder {
         private final EducationQuestion INSTANCE;
         public Builder() {
@@ -664,6 +667,10 @@ public class EducationQuestion {
 
         public Builder setQ5VIPLatrineFunctional(int integerValue) {
             INSTANCE.setQuestion5VIPLatrineFunction(integerValue);
+            return this;
+        }
+
+        public Builder setQ5VIPLatrineNoneFunctional(int integerValue) {
             return this;
         }
     }
