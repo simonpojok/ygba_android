@@ -118,6 +118,7 @@ public class EducationActivity extends AppCompatActivity {
     private EditText eQ5FemaleChangingRoomFunction;
     private EditText eQ5FemaleChangingRoomNoneFunction;
     private EditText eQ5UrinalsForBoysNumberBlocks;
+    private EditText eQ5UrinalsForBoysNumberOfStances;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -256,6 +257,7 @@ public class EducationActivity extends AppCompatActivity {
         eQ5FemaleChangingRoomNoneFunction = findViewById(R.id.eduction_question_5_FCR_latrine_none_stances);
 
         eQ5UrinalsForBoysNumberBlocks = findViewById(R.id.eduction_question_5_UFB_latrine_blocks);
+        eQ5UrinalsForBoysNumberOfStances = findViewById(R.id.eduction_question_5_UFB_latrine_stances);
 
         findViewById(R.id.saved_form_data).setOnClickListener(new View.OnClickListener() {
             @Override
@@ -370,6 +372,7 @@ public class EducationActivity extends AppCompatActivity {
 
 
                 .setQ5UrinalsForBoysBlockNumber(getIntegerValue(eQ5UrinalsForBoysNumberBlocks))
+                .setQ5UrinalsForBoysStancesNumber(getIntegerValue(eQ5UrinalsForBoysNumberOfStances))
                 .build();
     }
 
