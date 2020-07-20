@@ -74,6 +74,9 @@ public class EducationActivity extends AppCompatActivity {
     private EditText eQ4Grade3MaleEditText;
     private EditText eQ4Grade4MaleEditText;
 
+    private EditText eQ4Grade1GirlEditText;
+    private EditText eQ4Grade2GirlEditText;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -163,9 +166,10 @@ public class EducationActivity extends AppCompatActivity {
         eQ4Grade1MaleEditText = findViewById(R.id.question_4_grade_1_male_edit_text);
         eQ4Grade2MaleEditText = findViewById(R.id.question_4_grade_2_male_edit_text);
         eQ4Grade3MaleEditText = findViewById(R.id.question_4_grade_3_male_edit_text);
-        eQ4Grade3MaleEditText = findViewById(R.id.question_4_grade_others_male_edit_text);
+        eQ4Grade4MaleEditText = findViewById(R.id.question_4_grade_others_male_edit_text);
 
-
+        eQ4Grade1GirlEditText = findViewById(R.id.question_4_grade_1_female_edit_text);
+        eQ4Grade2GirlEditText = findViewById(R.id.question_4_grade_2_female_edit_text);
 
         findViewById(R.id.saved_form_data).setOnClickListener(new View.OnClickListener() {
             @Override
@@ -230,7 +234,9 @@ public class EducationActivity extends AppCompatActivity {
                 .setQ4Grade1MaleNumber(getIntegerValue(eQ4Grade1MaleEditText))
                 .setQ4Grade2MaleNumber(getIntegerValue(eQ4Grade2MaleEditText))
                 .setQ4Grade3MaleNumber(getIntegerValue(eQ4Grade3MaleEditText))
-                .setQ4Grade4MaleNumber(getIntegerValue(eQ4Grade3MaleEditText))
+                .setQ4Grade4MaleNumber(getIntegerValue(eQ4Grade4MaleEditText))
+
+                .setQ4Grade4FemaleNumber(getIntegerValue(eQ4Grade1GirlEditText))
                 .build();
     }
 
