@@ -92,6 +92,9 @@ public class EducationActivity extends AppCompatActivity {
     private EditText eQ5NumberOfToiletFunctional;
     private EditText eQ5NumberOfToiletNonFunctional;
 
+    private EditText eQ5numberOfLatrineBlocks;
+    private EditText eQ5NumberOfLatrineStances;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -200,6 +203,9 @@ public class EducationActivity extends AppCompatActivity {
         eQ5NumberOfToiletFunctional = findViewById(R.id.question_4_toilet_functional_edit_text);
         eQ5NumberOfToiletNonFunctional = findViewById(R.id.question_4_toilet_none_edit_text);
 
+        eQ5numberOfLatrineBlocks = findViewById(R.id.eduction_question_5_latrine_blocks);
+        eQ5NumberOfLatrineStances = findViewById(R.id.eduction_question_5_latrine_stances);
+
         findViewById(R.id.saved_form_data).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -282,6 +288,9 @@ public class EducationActivity extends AppCompatActivity {
                 .setQ5ToiletNumberOfMixedStances(getIntegerValue(eQ5NumberOfToiletMixed))
                 .setQ5ToiletFunctional(getIntegerValue(eQ5NumberOfToiletFunctional))
                 .setQ5ToiletNonFuctional(getIntegerValue(eQ5NumberOfToiletNonFunctional))
+
+                .setQ5LatrineNumberOfBlocks(getIntegerValue(eQ5numberOfLatrineBlocks))
+                .setQ5LatrineNumberOfStances(getIntegerValue(eQ5NumberOfLatrineStances))
                 .build();
     }
 

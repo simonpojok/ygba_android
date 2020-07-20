@@ -67,4 +67,6 @@ public class EducationQuestionConstants {
     public static final String QUESTION_5_TOILET_NUMBER_MIXED_STANCES = "question_5_mixed_stances_number_toilet";
     public static final String QUESTION_5_TOILET_FUNCTIONAL = "question_5_toilet_function";
     public static final String QUESTION_5_TOILET_NON_FUNCTIONAL = "question_5_toilet_none_functional";
+    public static final String QUESTION_5_LATRINE_NUMBER_BLOCKS = "question_5_number_blocks_latrine";
+    public static final String QUESTION_5_LATRINE_NUMBER_STANCES = "question_5_number_latrine_stances";
 }

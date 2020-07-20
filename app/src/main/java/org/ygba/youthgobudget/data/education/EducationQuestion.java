@@ -208,6 +208,12 @@ public class EducationQuestion {
     @ColumnInfo(name = EducationQuestionConstants.QUESTION_5_TOILET_NON_FUNCTIONAL)
     private int question5ToiletNoneFunctional;
 
+    @ColumnInfo(name = EducationQuestionConstants.QUESTION_5_LATRINE_NUMBER_BLOCKS)
+    private int question5LatrineNumberBlocks;
+
+    @ColumnInfo(name = EducationQuestionConstants.QUESTION_5_LATRINE_NUMBER_STANCES)
+    private int question5LatrineNumberStances;
+
 
 
     public static class Builder {
@@ -532,6 +538,23 @@ public class EducationQuestion {
             INSTANCE.setQuestion5ToiletNoneFunctional(integerValue);
             return this;
         }
+
+        public Builder setQ5LatrineNumberOfBlocks(int integerValue) {
+            INSTANCE.setQuestion5LatrineNumberBlocks(integerValue);
+            return this;
+        }
+
+        public Builder setQ5LatrineNumberOfStances(int integerValue) {
+            return this;
+        }
+    }
+
+    public int getQuestion5LatrineNumberBlocks() {
+        return question5LatrineNumberBlocks;
+    }
+
+    public void setQuestion5LatrineNumberBlocks(int question5LatrineNumberBlocks) {
+        this.question5LatrineNumberBlocks = question5LatrineNumberBlocks;
     }
 
     public int getQuestion5ToiletNoneFunctional() {
