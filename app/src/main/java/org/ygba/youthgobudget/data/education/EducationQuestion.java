@@ -256,8 +256,8 @@ public class EducationQuestion {
     @ColumnInfo(name = EducationQuestionConstants.QUESTION_5_VIP_LATRINE_NUMBER_MIXED_TEACHER)
     private int question5VIPLatrineNumberStancesMixedTeachers;
 
-    @ColumnInfo(name = EducationQuestionConstants.QUESTION_5_VIP_LATRINE_NONE_FUNCTION)
-    private int question5VIPLatrineNoneFunction;
+    @ColumnInfo(name = EducationQuestionConstants.QUESTION_5_VIP_LATRINE_FUNCTION)
+    private int question5VIPLatrineFunction;
 
     public static class Builder {
         private final EducationQuestion INSTANCE;
@@ -662,18 +662,18 @@ public class EducationQuestion {
             return this;
         }
 
-        public Builder setQ5VIPLatrineNoneFunctional(int integerValue) {
-            INSTANCE.setQuestion5VIPLatrineNoneFunction(integerValue);
+        public Builder setQ5VIPLatrineFunctional(int integerValue) {
+            INSTANCE.setQuestion5VIPLatrineFunction(integerValue);
             return this;
         }
     }
 
-    public int getQuestion5VIPLatrineNoneFunction() {
-        return question5VIPLatrineNoneFunction;
+    public int getQuestion5VIPLatrineFunction() {
+        return question5VIPLatrineFunction;
     }
 
-    public void setQuestion5VIPLatrineNoneFunction(int question5VIPLatrineNoneFunction) {
-        this.question5VIPLatrineNoneFunction = question5VIPLatrineNoneFunction;
+    public void setQuestion5VIPLatrineFunction(int question5VIPLatrineNoneFunction) {
+        this.question5VIPLatrineFunction = question5VIPLatrineNoneFunction;
     }
 
     public int getQuestion5VIPLatrineNumberStancesMixedTeachers() {

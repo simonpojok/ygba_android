@@ -83,5 +83,5 @@ public class EducationQuestionConstants {
     public static final String QUESTION_5_VIP_LATRINE_NUMBER_STANCES_NUMBER_MALE_TEACHER = "question_5_vip_number_stances_male_teacher";
     public static final String QUESTION_5_VIP_LATRINE_NUMBER_STANCES_FEMALE_TEACHER = "question_5_vip_number_stances_female_teacher";
     public static final String QUESTION_5_VIP_LATRINE_NUMBER_MIXED_TEACHER = "question_5_vip_number_stances_mixed_teachers";
-    public static final String QUESTION_5_VIP_LATRINE_NONE_FUNCTION = "question_5_latrine_none_functional";
+    public static final String QUESTION_5_VIP_LATRINE_FUNCTION = "question_5_latrine_none_functional";
 }

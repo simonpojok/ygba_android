@@ -338,7 +338,7 @@ public class EducationActivity extends AppCompatActivity {
                 .setQ5VIPLatrineNumberOfStancesMaleTeacher(getIntegerValue(eQ5NumberVIPLatrineNumberStancesMaleTeacher))
                 .setQ5VIPLatrineNumberOfStancesFemaleTeacher(getIntegerValue(eQ5NumberVIPLatrineNumberStancesFemaleTeacher))
                 .setQ5VIPLatrineNumberOfStancesMixedTeacher(getIntegerValue(eQ5NumberVIPLatrineStancesMixed))
-                .setQ5VIPLatrineNoneFunctional(getIntegerValue(eQ5NumberVIPLatrineStancesNoneFunctional))
+                .setQ5VIPLatrineFunctional(getIntegerValue(eQ5NumberVIPLatrineStancesNoneFunctional))
                 .build();
     }
 
