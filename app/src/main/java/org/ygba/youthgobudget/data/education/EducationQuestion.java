@@ -409,12 +409,21 @@ public class EducationQuestion {
         }
 
         public Builder setQ4Grade4MaleNumber(int integerValue) {
+            INSTANCE.setQuestion4Grade4MaleNumber(integerValue);
             return this;
         }
     }
 
     @Ignore
     private EducationQuestion() {
+    }
+
+    public int getQuestion4Grade4MaleNumber() {
+        return question4Grade4MaleNumber;
+    }
+
+    public void setQuestion4Grade4MaleNumber(int question4Grade4MaleNumber) {
+        this.question4Grade4MaleNumber = question4Grade4MaleNumber;
     }
 
     public int getQuestion4Grade3MaleNumber() {
