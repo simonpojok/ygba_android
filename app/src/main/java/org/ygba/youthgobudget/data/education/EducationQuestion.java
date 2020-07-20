@@ -253,6 +253,9 @@ public class EducationQuestion {
     @ColumnInfo(name = EducationQuestionConstants.QUESTION_5_VIP_LATRINE_NUMBER_STANCES_FEMALE_TEACHER)
     private int question5VIPLatrineNumberStancesFemaleTeachers;
 
+    @ColumnInfo(name = EducationQuestionConstants.QUESTION_5_VIP_LATRINE_NUMBER_MIXED_TEACHER)
+    private int question5VIPLatrineNumberStancesMixedTeachers;
+
     public static class Builder {
         private final EducationQuestion INSTANCE;
         public Builder() {
@@ -650,6 +653,19 @@ public class EducationQuestion {
             INSTANCE.setQuestion5VIPLatrineNumberStancesFemaleTeachers(integerValue);
             return this;
         }
+
+        public Builder setQ5VIPLatrineNumberOfStancesMixedTeacher(int integerValue) {
+            INSTANCE.setQuestion5VIPLatrineNumberStancesMixedTeachers(integerValue);
+            return this;
+        }
+    }
+
+    public int getQuestion5VIPLatrineNumberStancesMixedTeachers() {
+        return question5VIPLatrineNumberStancesMixedTeachers;
+    }
+
+    public void setQuestion5VIPLatrineNumberStancesMixedTeachers(int question5VIPLatrineNumberStancesMixedTeachers) {
+        this.question5VIPLatrineNumberStancesMixedTeachers = question5VIPLatrineNumberStancesMixedTeachers;
     }
 
     public int getQuestion5VIPLatrineNumberStancesFemaleTeachers() {

@@ -108,6 +108,7 @@ public class EducationActivity extends AppCompatActivity {
     private EditText eQ5NumberVIPLatrineNumberStancesFemalePupil;
     private EditText eQ5NumberVIPLatrineNumberStancesMaleTeacher;
     private EditText eQ5NumberVIPLatrineNumberStancesFemaleTeacher;
+    private EditText eQ5NumberVIPLatrineStancesMixed;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -233,6 +234,7 @@ public class EducationActivity extends AppCompatActivity {
         eQ5NumberVIPLatrineNumberStancesFemalePupil = findViewById(R.id.eduction_question_5_VIP_latrine_pupil_female_stances);
         eQ5NumberVIPLatrineNumberStancesMaleTeacher = findViewById(R.id.eduction_question_5_VIP_latrine_teacher_male_stances);
         eQ5NumberVIPLatrineNumberStancesFemaleTeacher = findViewById(R.id.eduction_question_5_latrine_VIP_teacher_female_stances);
+        eQ5NumberVIPLatrineStancesMixed = findViewById(R.id.eduction_question_5_VIP_latrine_teacher_mixed_stances);
 
         findViewById(R.id.saved_form_data).setOnClickListener(new View.OnClickListener() {
             @Override
@@ -333,6 +335,7 @@ public class EducationActivity extends AppCompatActivity {
                 .setQ5VIPLatrineNumberOfStancesFemalePupil(getIntegerValue(eQ5NumberVIPLatrineNumberStancesFemalePupil))
                 .setQ5VIPLatrineNumberOfStancesMaleTeacher(getIntegerValue(eQ5NumberVIPLatrineNumberStancesMaleTeacher))
                 .setQ5VIPLatrineNumberOfStancesFemaleTeacher(getIntegerValue(eQ5NumberVIPLatrineNumberStancesFemaleTeacher))
+                .setQ5VIPLatrineNumberOfStancesMixedTeacher(getIntegerValue(eQ5NumberVIPLatrineStancesMixed))
                 .build();
     }
 
