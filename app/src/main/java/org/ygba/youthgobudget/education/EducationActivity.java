@@ -212,6 +212,7 @@ public class EducationActivity extends AppCompatActivity {
                 .setQ3IsInformationNoticeBoardDisplayed(isBudgetInformationDisplayedInSchoolNoticeBoard())
                 .setQ3IsInformationHeaderTeacherOfficeDisplayed(isBudgetInformationHeadTeacherOfficeDisplayed())
                 .setQ3IsInformationStaffRoomDisplayed(isBudgetInformationStaffRoomDisplayed())
+                .setQ3IsBudgetInformationNotDisplayed(isBudgetInformationNotDisplayed())
                 .build();
     }
 
@@ -251,5 +252,9 @@ public class EducationActivity extends AppCompatActivity {
 
     private boolean isBudgetInformationStaffRoomDisplayed() {
         return ((CheckBox) findViewById(R.id.question_3_1_school_staff_room)).isChecked();
+    }
+
+    private boolean isBudgetInformationNotDisplayed() {
+        return ((CheckBox) findViewById(R.id.question_3_1_not_displayed)).isChecked();
     }
 }

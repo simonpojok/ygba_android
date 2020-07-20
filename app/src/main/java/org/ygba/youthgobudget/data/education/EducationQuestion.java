@@ -1,7 +1,5 @@
 package org.ygba.youthgobudget.data.education;
 
-import android.widget.EditText;
-
 import androidx.room.ColumnInfo;
 import androidx.room.Entity;
 import androidx.room.Ignore;
@@ -139,13 +137,16 @@ public class EducationQuestion {
     private String question3SFGDateWithdrawn;
 
     @ColumnInfo(name = EducationQuestionConstants.QUESTION_3_INFROMATION_NOTICE_BOARD_DISPLAYED)
-    private boolean informationNoticeBoardDisplayed;
+    private boolean question31InformationNoticeBoardDisplayed;
 
     @ColumnInfo(name = EducationQuestionConstants.QUESTION_3_INFORMATION_HEAD_TEACHER_OFFICE_DISPLAYED)
-    private boolean informationHeadTeacherOfficeDisplayed;
+    private boolean question3InformationHeadTeacherOfficeDisplayed;
 
     @ColumnInfo(name = EducationQuestionConstants.QUESTION_3_INFROMATION_STAFF_ROOM_DISPLAYED)
-    private boolean informationStaffRoomDisplayed;
+    private boolean question31InformationStaffRoomDisplayed;
+
+    @ColumnInfo(name = EducationQuestionConstants.QUESTION_3_INFORMATION_NOT_DISPLAYED)
+    private boolean question31InformationNoteDisplayed;
 
 
 
@@ -353,17 +354,22 @@ public class EducationQuestion {
         }
 
         public Builder setQ3IsInformationNoticeBoardDisplayed(boolean budgetInformationDisplayedInSchoolNoticeBoard) {
-            INSTANCE.setInformationNoticeBoardDisplayed(budgetInformationDisplayedInSchoolNoticeBoard);
+            INSTANCE.setQuestion31InformationNoticeBoardDisplayed(budgetInformationDisplayedInSchoolNoticeBoard);
             return this;
         }
 
         public Builder setQ3IsInformationHeaderTeacherOfficeDisplayed(boolean budgetInformationHeadTeacherOfficeDisplayed) {
-            INSTANCE.setInformationHeadTeacherOfficeDisplayed(budgetInformationHeadTeacherOfficeDisplayed);
+            INSTANCE.setQuestion3InformationHeadTeacherOfficeDisplayed(budgetInformationHeadTeacherOfficeDisplayed);
             return this;
         }
 
         public Builder setQ3IsInformationStaffRoomDisplayed(boolean budgetInformationStaffRoomDisplayed) {
-            INSTANCE.setInformationStaffRoomDisplayed(budgetInformationStaffRoomDisplayed);
+            INSTANCE.setQuestion31InformationStaffRoomDisplayed(budgetInformationStaffRoomDisplayed);
+            return this;
+        }
+
+        public Builder setQ3IsBudgetInformationNotDisplayed(boolean budgetInformationNotDisplayed) {
+            INSTANCE.setQuestion31InformationNoteDisplayed(budgetInformationNotDisplayed);
             return this;
         }
     }
@@ -372,28 +378,36 @@ public class EducationQuestion {
     private EducationQuestion() {
     }
 
-    public boolean isInformationStaffRoomDisplayed() {
-        return informationStaffRoomDisplayed;
+    public boolean isQuestion31InformationNoteDisplayed() {
+        return question31InformationNoteDisplayed;
     }
 
-    public void setInformationStaffRoomDisplayed(boolean informationStaffRoomDisplayed) {
-        this.informationStaffRoomDisplayed = informationStaffRoomDisplayed;
+    public void setQuestion31InformationNoteDisplayed(boolean question31InformationNoteDisplayed) {
+        this.question31InformationNoteDisplayed = question31InformationNoteDisplayed;
     }
 
-    public boolean isInformationHeadTeacherOfficeDisplayed() {
-        return informationHeadTeacherOfficeDisplayed;
+    public boolean isQuestion31InformationStaffRoomDisplayed() {
+        return question31InformationStaffRoomDisplayed;
     }
 
-    public void setInformationHeadTeacherOfficeDisplayed(boolean informationHeadTeacherOfficeDisplayed) {
-        this.informationHeadTeacherOfficeDisplayed = informationHeadTeacherOfficeDisplayed;
+    public void setQuestion31InformationStaffRoomDisplayed(boolean question31InformationStaffRoomDisplayed) {
+        this.question31InformationStaffRoomDisplayed = question31InformationStaffRoomDisplayed;
     }
 
-    public boolean isInformationNoticeBoardDisplayed() {
-        return informationNoticeBoardDisplayed;
+    public boolean isQuestion3InformationHeadTeacherOfficeDisplayed() {
+        return question3InformationHeadTeacherOfficeDisplayed;
     }
 
-    public void setInformationNoticeBoardDisplayed(boolean informationNoticeBoardDisplayed) {
-        this.informationNoticeBoardDisplayed = informationNoticeBoardDisplayed;
+    public void setQuestion3InformationHeadTeacherOfficeDisplayed(boolean question3InformationHeadTeacherOfficeDisplayed) {
+        this.question3InformationHeadTeacherOfficeDisplayed = question3InformationHeadTeacherOfficeDisplayed;
+    }
+
+    public boolean isQuestion31InformationNoticeBoardDisplayed() {
+        return question31InformationNoticeBoardDisplayed;
+    }
+
+    public void setQuestion31InformationNoticeBoardDisplayed(boolean question31InformationNoticeBoardDisplayed) {
+        this.question31InformationNoticeBoardDisplayed = question31InformationNoticeBoardDisplayed;
     }
 
     public String getQuestion3SFGDateWithdrawn() {
