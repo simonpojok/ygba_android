@@ -244,6 +244,12 @@ public class EducationQuestion {
     @ColumnInfo(name = EducationQuestionConstants.QUESTION_5_VIP_LATRINE_NUMBER_STANCE_MALE_PUPIL)
     private int question5VIPLatrineNumberStancesMalePupil;
 
+    @ColumnInfo(name = EducationQuestionConstants.QUESTION_5_VIP_LATRINE_NUMBER_STANCES_FEMALE_PUPIL)
+    private int question5VIPLatrineNumberStancesFemalePupil;
+
+    @ColumnInfo(name = EducationQuestionConstants.QUESTION_5_VIP_LATRINE_NUMBER_STANCES_NUMBER_MALE_TEACHER)
+    private int question5VIPLatrineNumberStancesMaleTeacher;
+
     public static class Builder {
         private final EducationQuestion INSTANCE;
         public Builder() {
@@ -626,6 +632,32 @@ public class EducationQuestion {
             INSTANCE.setQuestion5VIPLatrineNumberStancesMalePupil(integerValue);
             return this;
         }
+
+        public Builder setQ5VIPLatrineNumberOfStancesFemalePupil(int integerValue) {
+            INSTANCE.setQuestion5VIPLatrineNumberStancesFemalePupil(integerValue);
+            return this;
+        }
+
+        public Builder setQ5VIPLatrineNumberOfStancesMaleTeacher(int integerValue) {
+            INSTANCE.setQuestion5VIPLatrineNumberStancesMaleTeacher(integerValue);
+            return this;
+        }
+    }
+
+    public int getQuestion5VIPLatrineNumberStancesMaleTeacher() {
+        return question5VIPLatrineNumberStancesMaleTeacher;
+    }
+
+    public void setQuestion5VIPLatrineNumberStancesMaleTeacher(int question5VIPLatrineNumberStancesMaleTeacher) {
+        this.question5VIPLatrineNumberStancesMaleTeacher = question5VIPLatrineNumberStancesMaleTeacher;
+    }
+
+    public int getQuestion5VIPLatrineNumberStancesFemalePupil() {
+        return question5VIPLatrineNumberStancesFemalePupil;
+    }
+
+    public void setQuestion5VIPLatrineNumberStancesFemalePupil(int question5VIPLatrineNumberStancesFemalePupil) {
+        this.question5VIPLatrineNumberStancesFemalePupil = question5VIPLatrineNumberStancesFemalePupil;
     }
 
     public int getQuestion5VIPLatrineNumberStancesMalePupil() {
