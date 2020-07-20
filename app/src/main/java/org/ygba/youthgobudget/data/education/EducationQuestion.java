@@ -175,6 +175,12 @@ public class EducationQuestion {
     @ColumnInfo(name = EducationQuestionConstants.QUESTION_4_GRADE_4_FEMALE_NUMBER)
     private int question4Grade4FemaleNumber;
 
+    @ColumnInfo(name = EducationQuestionConstants.QUESTION_4_1_CURRENT_TERMS_PERFORMANCE)
+    private String question41CurrentTermPerformance;
+
+    @ColumnInfo(name = EducationQuestionConstants.QUESTION_4_2_REASON_ATTRIBUTE)
+    private String question42ReasonAttribute;
+
 
 
     public static class Builder {
@@ -444,10 +450,36 @@ public class EducationQuestion {
             INSTANCE.setQuestion4Grade4FemaleNumber(integerValue);
             return this;
         }
+
+        public Builder setQ41ObjectiveCurrentTermPerformance(String question41ObjectiveAnswer) {
+            INSTANCE.setQuestion41CurrentTermPerformance(question41ObjectiveAnswer);
+            return this;
+        }
+
+        public Builder setQ42AttributeReasonAnswer(String textValue) {
+            INSTANCE.setQuestion42ReasonAttribute(textValue);
+            return this;
+        }
     }
 
     @Ignore
     private EducationQuestion() {
+    }
+
+    public String getQuestion42ReasonAttribute() {
+        return question42ReasonAttribute;
+    }
+
+    public void setQuestion42ReasonAttribute(String question42ReasonAttribute) {
+        this.question42ReasonAttribute = question42ReasonAttribute;
+    }
+
+    public String getQuestion41CurrentTermPerformance() {
+        return question41CurrentTermPerformance;
+    }
+
+    public void setQuestion41CurrentTermPerformance(String question41CurrentTermPerformance) {
+        this.question41CurrentTermPerformance = question41CurrentTermPerformance;
     }
 
     public int getQuestion4Grade4FemaleNumber() {

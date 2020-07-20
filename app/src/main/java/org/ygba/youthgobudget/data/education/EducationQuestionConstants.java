@@ -56,4 +56,6 @@ public class EducationQuestionConstants {
     public static final String QUESTION_4_GRADE_2_FEMALE_NUMBER = "question_grade_2_female_number";
     public static final String QUESTION_4_GRADE_3_FEMALE_NUMBER = "question_grade_3_female_number";
     public static final String QUESTION_4_GRADE_4_FEMALE_NUMBER = "question_grade_4_female_number";
+    public static final String QUESTION_4_1_CURRENT_TERMS_PERFORMANCE = "question_4_1_current_performance";
+    public static final String QUESTION_4_2_REASON_ATTRIBUTE = "question_4_2_attribute_reason";
 }

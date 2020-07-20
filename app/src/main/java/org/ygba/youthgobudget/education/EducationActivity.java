@@ -79,6 +79,8 @@ public class EducationActivity extends AppCompatActivity {
     private EditText eQ4Grade3GirlEditText;
     private EditText eQ4Grade4GirlEditText;
 
+    private EditText eQ42Reason4AttributeAnswerEditText;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -175,6 +177,8 @@ public class EducationActivity extends AppCompatActivity {
         eQ4Grade3GirlEditText = findViewById(R.id.question_4_grade_3_female_edit_text);
         eQ4Grade4GirlEditText = findViewById(R.id.question_4_grade_others_female_edit_text);
 
+        eQ42Reason4AttributeAnswerEditText = findViewById(R.id.question_4_2_edit_text);
+
         findViewById(R.id.saved_form_data).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -244,6 +248,9 @@ public class EducationActivity extends AppCompatActivity {
                 .setQ4Grade2FemaleNumber(getIntegerValue(eQ4Grade2GirlEditText))
                 .setQ4Grade3FemaleNumber(getIntegerValue(eQ4Grade3GirlEditText))
                 .setQ4Grade4FemaleNumber(getIntegerValue(eQ4Grade4GirlEditText))
+
+                .setQ41ObjectiveCurrentTermPerformance(getQuestion41ObjectiveAnswer())
+                .setQ42AttributeReasonAnswer(getTextValue(eQ42Reason4AttributeAnswerEditText))
                 .build();
     }
 
