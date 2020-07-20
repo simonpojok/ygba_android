@@ -1268,6 +1268,887 @@
             android:textColor="@color/white"
             android:textStyle="bold" />
 
+        <TextView
+            android:layout_marginVertical="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/education_question_5_0_text"
+            android:textSize="15sp"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+
+        <HorizontalScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <GridLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:columnCount="10"
+                android:rowCount="7"
+                android:orientation="horizontal">
+
+                <!--                row 0 -->
+
+                <TextView
+                    android:layout_column="3"
+                    android:layout_row="0"
+                    android:layout_columnSpan="2"
+                    android:layout_marginVertical="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/education_question_5_pupils"
+                    android:textSize="15sp"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_column="5"
+                    android:layout_row="0"
+                    android:layout_columnSpan="3"
+                    android:layout_marginVertical="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/education_question_5_teachers"
+                    android:textSize="15sp"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_column="8"
+                    android:layout_row="0"
+                    android:layout_columnSpan="2"
+                    android:layout_marginVertical="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/education_question_5_functionality"
+                    android:textSize="15sp"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+                <!--                row 1 -->
+                <TextView
+                    android:layout_column="0"
+                    android:layout_row="1"
+                    android:layout_marginVertical="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/education_question_5_facility"
+                    android:textSize="15sp"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_column="1"
+                    android:layout_row="1"
+                    android:layout_marginVertical="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/education_question_5_number_of_blocks"
+                    android:textSize="15sp"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_column="2"
+                    android:layout_row="1"
+                    android:layout_marginVertical="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/education_question_5_number_of_stances"
+                    android:textSize="15sp"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_column="3"
+                    android:layout_row="1"
+                    android:layout_marginVertical="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/education_question_5_male_stances"
+                    android:textSize="15sp"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_column="4"
+                    android:layout_row="1"
+                    android:layout_marginVertical="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/education_question_5_female_stances"
+                    android:textSize="15sp"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_column="5"
+                    android:layout_row="1"
+                    android:layout_marginVertical="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/education_question_5_teacher_male_stances"
+                    android:textSize="15sp"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_column="6"
+                    android:layout_row="1"
+                    android:layout_marginVertical="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/education_question_5_teacher_female_stances"
+                    android:textSize="15sp"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_column="7"
+                    android:layout_row="1"
+                    android:layout_marginVertical="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/education_question_5_teacher_mixed_stances"
+                    android:textSize="15sp"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_column="8"
+                    android:layout_row="1"
+                    android:layout_marginVertical="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/education_question_5_functional"
+                    android:textSize="15sp"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_column="9"
+                    android:layout_row="1"
+                    android:layout_marginVertical="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/education_question_5_none"
+                    android:textSize="15sp"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+
+                <!--                row 2 -->
+                <TextView
+                    android:layout_column="0"
+                    android:layout_row="2"
+                    android:layout_marginVertical="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/education_question_5_toilet"
+                    android:textSize="15sp"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:layout_marginHorizontal="5dp"
+                    android:gravity="center"
+                    android:layout_column="1"
+                    android:layout_row="2"
+                    android:layout_marginVertical="5dp"
+                    android:inputType="number"
+                    android:id="@+id/question_4_toilet_blocks_edit_text"
+                    android:layout_width="200dp"
+                    android:layout_height="40dp"
+                    android:textSize="15sp"
+                    android:background="@drawable/edit_text_style"
+                    android:padding="5dp"
+                    android:autofillHints=""
+                    tools:ignore="LabelFor" />
+
+                <EditText
+                    android:layout_marginHorizontal="5dp"
+                    android:gravity="center"
+                    android:layout_column="2"
+                    android:layout_row="2"
+                    android:layout_marginVertical="5dp"
+                    android:inputType="number"
+                    android:id="@+id/question_4_toilet_stances_edit_text"
+                    android:layout_width="200dp"
+                    android:layout_height="40dp"
+                    android:textSize="15sp"
+                    android:background="@drawable/edit_text_style"
+                    android:padding="5dp"
+                    android:autofillHints=""
+                    tools:ignore="LabelFor" />
+
+                <EditText
+                    android:layout_marginHorizontal="5dp"
+                    android:gravity="center"
+                    android:layout_column="3"
+                    android:layout_row="2"
+                    android:layout_marginVertical="5dp"
+                    android:inputType="number"
+                    android:id="@+id/question_4_toilet_male_stances_edit_text"
+                    android:layout_width="200dp"
+                    android:layout_height="40dp"
+                    android:textSize="15sp"
+                    android:background="@drawable/edit_text_style"
+                    android:padding="5dp"
+                    android:autofillHints=""
+                    tools:ignore="LabelFor" />
+
+                <EditText
+                    android:layout_marginHorizontal="5dp"
+                    android:gravity="center"
+                    android:layout_column="4"
+                    android:layout_row="2"
+                    android:layout_marginVertical="5dp"
+                    android:inputType="number"
+                    android:id="@+id/question_4_toilet_female_stances_edit_text"
+                    android:layout_width="200dp"
+                    android:layout_height="40dp"
+                    android:textSize="15sp"
+                    android:background="@drawable/edit_text_style"
+                    android:padding="5dp"
+                    android:autofillHints=""
+                    tools:ignore="LabelFor" />
+
+                <EditText
+                    android:layout_marginHorizontal="5dp"
+                    android:gravity="center"
+                    android:layout_column="5"
+                    android:layout_row="2"
+                    android:layout_marginVertical="5dp"
+                    android:inputType="phone"
+                    android:id="@+id/question_4_toilet_teacher_male_stances_edit_text"
+                    android:layout_width="200dp"
+                    android:layout_height="40dp"
+                    android:textSize="15sp"
+                    android:background="@drawable/edit_text_style"
+                    android:padding="5dp"
+                    android:autofillHints=""
+                    tools:ignore="LabelFor" />
+
+                <EditText
+                    android:layout_marginHorizontal="5dp"
+                    android:gravity="center"
+                    android:layout_column="6"
+                    android:layout_row="2"
+                    android:layout_marginVertical="5dp"
+                    android:inputType="number"
+                    android:id="@+id/question_4_toilet_teacher_female_stances_edit_text"
+                    android:layout_width="200dp"
+                    android:layout_height="40dp"
+                    android:textSize="15sp"
+                    android:background="@drawable/edit_text_style"
+                    android:padding="5dp"
+                    android:autofillHints=""
+                    tools:ignore="LabelFor" />
+
+                <EditText
+                    android:layout_marginHorizontal="5dp"
+                    android:gravity="center"
+                    android:layout_column="7"
+                    android:layout_row="2"
+                    android:layout_marginVertical="5dp"
+                    android:inputType="number"
+                    android:id="@+id/question_4_toilet_teacher_mixed_stances_edit_text"
+                    android:layout_width="200dp"
+                    android:layout_height="40dp"
+                    android:textSize="15sp"
+                    android:background="@drawable/edit_text_style"
+                    android:padding="5dp"
+                    android:autofillHints=""
+                    tools:ignore="LabelFor" />
+
+                <EditText
+                    android:layout_marginHorizontal="5dp"
+                    android:gravity="center"
+                    android:layout_column="8"
+                    android:layout_row="2"
+                    android:layout_marginVertical="5dp"
+                    android:inputType="number"
+                    android:id="@+id/question_4_toilet_functional_edit_text"
+                    android:layout_width="200dp"
+                    android:layout_height="40dp"
+                    android:textSize="15sp"
+                    android:background="@drawable/edit_text_style"
+                    android:padding="5dp"
+                    android:autofillHints=""
+                    tools:ignore="LabelFor" />
+
+                <EditText
+                    android:layout_marginHorizontal="5dp"
+                    android:gravity="center"
+                    android:layout_column="9"
+                    android:layout_row="2"
+                    android:layout_marginVertical="5dp"
+                    android:inputType="number"
+                    android:id="@+id/question_4_toilet_none_edit_text"
+                    android:layout_width="200dp"
+                    android:layout_height="40dp"
+                    android:textSize="15sp"
+                    android:background="@drawable/edit_text_style"
+                    android:padding="5dp"
+                    android:autofillHints=""
+                    tools:ignore="LabelFor" />
+
+                <!--                row 3 -->
+                <TextView
+                    android:layout_column="0"
+                    android:layout_row="3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/education_question_5_latrine"
+                    android:textSize="15sp"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:layout_marginHorizontal="5dp"
+                    android:gravity="center"
+                    android:layout_column="1"
+                    android:layout_row="3"
+                    android:layout_marginVertical="5dp"
+                    android:inputType="number"
+                    android:id="@+id/eduction_question_5_latrine_blocks"
+                    android:layout_width="200dp"
+                    android:layout_height="40dp"
+                    android:textSize="15sp"
+                    android:background="@drawable/edit_text_style"
+                    android:paddingStart="5dp"
+                    android:paddingEnd="5dp" />
+
+                <EditText
+                    android:layout_marginHorizontal="5dp"
+                    android:gravity="center"
+                    android:layout_column="2"
+                    android:layout_row="3"
+                    android:layout_marginVertical="5dp"
+                    android:inputType="number"
+                    android:id="@+id/eduction_question_5_latrine_stances"
+                    android:layout_width="200dp"
+                    android:layout_height="40dp"
+                    android:textSize="15sp"
+                    android:background="@drawable/edit_text_style"
+                    android:paddingStart="5dp"
+                    android:paddingEnd="5dp" />
+
+                <EditText
+                    android:layout_marginHorizontal="5dp"
+                    android:gravity="center"
+                    android:layout_column="3"
+                    android:layout_row="3"
+                    android:layout_marginVertical="5dp"
+                    android:inputType="number"
+                    android:id="@+id/eduction_question_5_latrine_pupil_male_stances"
+                    android:layout_width="200dp"
+                    android:layout_height="40dp"
+                    android:textSize="15sp"
+                    android:background="@drawable/edit_text_style"
+                    android:paddingStart="5dp"
+                    android:paddingEnd="5dp" />
+
+                <EditText
+                    android:layout_marginHorizontal="5dp"
+                    android:gravity="center"
+                    android:layout_column="4"
+                    android:layout_row="3"
+                    android:layout_marginVertical="5dp"
+                    android:inputType="number"
+                    android:id="@+id/eduction_question_5_latrine_pupil_female_stances"
+                    android:layout_width="200dp"
+                    android:layout_height="40dp"
+                    android:textSize="15sp"
+                    android:background="@drawable/edit_text_style"
+                    android:paddingStart="5dp"
+                    android:paddingEnd="5dp" />
+
+                <EditText
+                    android:layout_marginHorizontal="5dp"
+                    android:gravity="center"
+                    android:layout_column="5"
+                    android:layout_row="3"
+                    android:layout_marginVertical="5dp"
+                    android:inputType="number"
+                    android:id="@+id/eduction_question_5_latrine_teacher_male_stances"
+                    android:layout_width="200dp"
+                    android:layout_height="40dp"
+                    android:textSize="15sp"
+                    android:background="@drawable/edit_text_style"
+                    android:paddingStart="5dp"
+                    android:paddingEnd="5dp" />
+
+                <EditText
+                    android:layout_marginHorizontal="5dp"
+                    android:gravity="center"
+                    android:layout_column="6"
+                    android:layout_row="3"
+                    android:layout_marginVertical="5dp"
+                    android:inputType="number"
+                    android:id="@+id/eduction_question_5_latrine_teacher_female_stances"
+                    android:layout_width="200dp"
+                    android:layout_height="40dp"
+                    android:textSize="15sp"
+                    android:background="@drawable/edit_text_style"
+                    android:paddingStart="5dp"
+                    android:paddingEnd="5dp" />
+
+                <EditText
+                    android:layout_marginHorizontal="5dp"
+                    android:gravity="center"
+                    android:layout_column="7"
+                    android:layout_row="3"
+                    android:layout_marginVertical="5dp"
+                    android:inputType="number"
+                    android:id="@+id/eduction_question_5_latrine_teacher_mixed_stances"
+                    android:layout_width="200dp"
+                    android:layout_height="40dp"
+                    android:textSize="15sp"
+                    android:background="@drawable/edit_text_style"
+                    android:paddingStart="5dp"
+                    android:paddingEnd="5dp" />
+
+                <EditText
+                    android:layout_marginHorizontal="5dp"
+                    android:gravity="center"
+                    android:layout_column="8"
+                    android:layout_row="3"
+                    android:layout_marginVertical="5dp"
+                    android:inputType="number"
+                    android:id="@+id/eduction_question_5_latrine_functional_stances"
+                    android:layout_width="200dp"
+                    android:layout_height="40dp"
+                    android:textSize="15sp"
+                    android:background="@drawable/edit_text_style"
+                    android:paddingStart="5dp"
+                    android:paddingEnd="5dp" />
+
+                <EditText
+                    android:layout_marginHorizontal="5dp"
+                    android:gravity="center"
+                    android:layout_column="9"
+                    android:layout_row="3"
+                    android:layout_marginVertical="5dp"
+                    android:inputType="number"
+                    android:id="@+id/eduction_question_5_latrine_none_stances"
+                    android:layout_width="200dp"
+                    android:layout_height="40dp"
+                    android:textSize="15sp"
+                    android:background="@drawable/edit_text_style"
+                    android:paddingStart="5dp"
+                    android:paddingEnd="5dp" />
+
+                <!--                row 4 -->
+                <TextView
+                    android:layout_column="0"
+                    android:layout_row="4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/education_question_5_VIP_latrine"
+                    android:textSize="15sp"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:layout_marginHorizontal="5dp"
+                    android:gravity="center"
+                    android:layout_column="1"
+                    android:layout_row="4"
+                    android:layout_marginVertical="5dp"
+                    android:inputType="number"
+                    android:id="@+id/eduction_question_5_VIP_latrine_blocks"
+                    android:layout_width="200dp"
+                    android:layout_height="40dp"
+                    android:textSize="15sp"
+                    android:background="@drawable/edit_text_style"
+                    android:paddingStart="5dp"
+                    android:paddingEnd="5dp" />
+
+                <EditText
+                    android:layout_marginHorizontal="5dp"
+                    android:gravity="center"
+                    android:layout_column="2"
+                    android:layout_row="4"
+                    android:layout_marginVertical="5dp"
+                    android:inputType="number"
+                    android:id="@+id/eduction_question_5_VIP_latrine_stances"
+                    android:layout_width="200dp"
+                    android:layout_height="40dp"
+                    android:textSize="15sp"
+                    android:background="@drawable/edit_text_style"
+                    android:paddingStart="5dp"
+                    android:paddingEnd="5dp" />
+
+                <EditText
+                    android:layout_marginHorizontal="5dp"
+                    android:gravity="center"
+                    android:layout_column="3"
+                    android:layout_row="4"
+                    android:layout_marginVertical="5dp"
+                    android:inputType="number"
+                    android:id="@+id/eduction_question_5_VIP_latrine_pupil_male_stances"
+                    android:layout_width="200dp"
+                    android:layout_height="40dp"
+                    android:textSize="15sp"
+                    android:background="@drawable/edit_text_style"
+                    android:paddingStart="5dp"
+                    android:paddingEnd="5dp" />
+
+                <EditText
+                    android:layout_marginHorizontal="5dp"
+                    android:gravity="center"
+                    android:layout_column="4"
+                    android:layout_row="4"
+                    android:layout_marginVertical="5dp"
+                    android:inputType="number"
+                    android:id="@+id/eduction_question_5_VIP_latrine_pupil_female_stances"
+                    android:layout_width="200dp"
+                    android:layout_height="40dp"
+                    android:textSize="15sp"
+                    android:background="@drawable/edit_text_style"
+                    android:paddingStart="5dp"
+                    android:paddingEnd="5dp" />
+
+                <EditText
+                    android:layout_marginHorizontal="5dp"
+                    android:gravity="center"
+                    android:layout_column="5"
+                    android:layout_row="4"
+                    android:layout_marginVertical="5dp"
+                    android:inputType="number"
+                    android:id="@+id/eduction_question_5_VIP_latrine_teacher_male_stances"
+                    android:layout_width="200dp"
+                    android:layout_height="40dp"
+                    android:textSize="15sp"
+                    android:background="@drawable/edit_text_style"
+                    android:paddingStart="5dp"
+                    android:paddingEnd="5dp" />
+
+                <EditText
+                    android:layout_marginHorizontal="5dp"
+                    android:gravity="center"
+                    android:layout_column="6"
+                    android:layout_row="4"
+                    android:layout_marginVertical="5dp"
+                    android:inputType="number"
+                    android:id="@+id/eduction_question_5_latrine_VIP_teacher_female_stances"
+                    android:layout_width="200dp"
+                    android:layout_height="40dp"
+                    android:textSize="15sp"
+                    android:background="@drawable/edit_text_style"
+                    android:paddingStart="5dp"
+                    android:paddingEnd="5dp" />
+
+                <EditText
+                    android:layout_marginHorizontal="5dp"
+                    android:gravity="center"
+                    android:layout_column="7"
+                    android:layout_row="4"
+                    android:layout_marginVertical="5dp"
+                    android:inputType="number"
+                    android:id="@+id/eduction_question_5_VIP_latrine_teacher_mixed_stances"
+                    android:layout_width="200dp"
+                    android:layout_height="40dp"
+                    android:textSize="15sp"
+                    android:background="@drawable/edit_text_style"
+                    android:paddingStart="5dp"
+                    android:paddingEnd="5dp" />
+
+                <EditText
+                    android:layout_marginHorizontal="5dp"
+                    android:gravity="center"
+                    android:layout_column="8"
+                    android:layout_row="4"
+                    android:layout_marginVertical="5dp"
+                    android:inputType="number"
+                    android:id="@+id/eduction_question_5_VIP_latrine_functional_stances"
+                    android:layout_width="200dp"
+                    android:layout_height="40dp"
+                    android:textSize="15sp"
+                    android:background="@drawable/edit_text_style"
+                    android:paddingStart="5dp"
+                    android:paddingEnd="5dp" />
+
+                <EditText
+                    android:layout_marginHorizontal="5dp"
+                    android:gravity="center"
+                    android:layout_column="9"
+                    android:layout_row="4"
+                    android:layout_marginVertical="5dp"
+                    android:inputType="number"
+                    android:id="@+id/eduction_question_5_VIP_latrine_none_stances"
+                    android:layout_width="200dp"
+                    android:layout_height="40dp"
+                    android:textSize="15sp"
+                    android:background="@drawable/edit_text_style"
+                    android:paddingStart="5dp"
+                    android:paddingEnd="5dp" />
+
+                <!--                row 5 -->
+                <TextView
+                    android:layout_column="0"
+                    android:layout_row="5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/education_question_5_FCR_latrine"
+                    android:textSize="15sp"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:layout_marginHorizontal="5dp"
+                    android:gravity="center"
+                    android:layout_column="1"
+                    android:layout_row="5"
+                    android:layout_marginVertical="5dp"
+                    android:inputType="number"
+                    android:id="@+id/eduction_question_5_FCR_latrine_blocks"
+                    android:layout_width="200dp"
+                    android:layout_height="40dp"
+                    android:textSize="15sp"
+                    android:background="@drawable/edit_text_style"
+                    android:paddingStart="5dp"
+                    android:paddingEnd="5dp" />
+
+                <EditText
+                    android:layout_marginHorizontal="5dp"
+                    android:gravity="center"
+                    android:layout_column="2"
+                    android:layout_row="5"
+                    android:layout_marginVertical="5dp"
+                    android:inputType="number"
+                    android:id="@+id/eduction_question_5_FCR_latrine_stances"
+                    android:layout_width="200dp"
+                    android:layout_height="40dp"
+                    android:textSize="15sp"
+                    android:background="@drawable/edit_text_style"
+                    android:paddingStart="5dp"
+                    android:paddingEnd="5dp" />
+
+                <EditText
+                    android:layout_marginHorizontal="5dp"
+                    android:gravity="center"
+                    android:layout_column="4"
+                    android:layout_row="5"
+                    android:layout_marginVertical="5dp"
+                    android:inputType="number"
+                    android:id="@+id/eduction_question_5_FCR_latrine_pupil_female_stances"
+                    android:layout_width="200dp"
+                    android:layout_height="40dp"
+                    android:textSize="15sp"
+                    android:background="@drawable/edit_text_style"
+                    android:paddingStart="5dp"
+                    android:paddingEnd="5dp" />
+
+                <EditText
+                    android:layout_marginHorizontal="5dp"
+                    android:gravity="center"
+                    android:layout_column="6"
+                    android:layout_row="5"
+                    android:layout_marginVertical="5dp"
+                    android:inputType="number"
+                    android:id="@+id/eduction_question_5_latrine_FCR_teacher_female_stances"
+                    android:layout_width="200dp"
+                    android:layout_height="40dp"
+                    android:textSize="15sp"
+                    android:background="@drawable/edit_text_style"
+                    android:paddingStart="5dp"
+                    android:paddingEnd="5dp" />
+
+                <EditText
+                    android:layout_marginHorizontal="5dp"
+                    android:gravity="center"
+                    android:layout_column="7"
+                    android:layout_row="5"
+                    android:layout_marginVertical="5dp"
+                    android:inputType="number"
+                    android:id="@+id/eduction_question_5_FCR_latrine_teacher_mixed_stances"
+                    android:layout_width="200dp"
+                    android:layout_height="40dp"
+                    android:textSize="15sp"
+                    android:background="@drawable/edit_text_style"
+                    android:paddingStart="5dp"
+                    android:paddingEnd="5dp" />
+
+                <EditText
+                    android:layout_marginHorizontal="5dp"
+                    android:gravity="center"
+                    android:layout_column="8"
+                    android:layout_row="5"
+                    android:layout_marginVertical="5dp"
+                    android:inputType="number"
+                    android:id="@+id/eduction_question_5_FCR_latrine_functional_stances"
+                    android:layout_width="200dp"
+                    android:layout_height="40dp"
+                    android:textSize="15sp"
+                    android:background="@drawable/edit_text_style"
+                    android:paddingStart="5dp"
+                    android:paddingEnd="5dp" />
+
+                <EditText
+                    android:layout_marginHorizontal="5dp"
+                    android:gravity="center"
+                    android:layout_column="9"
+                    android:layout_row="5"
+                    android:layout_marginVertical="5dp"
+                    android:inputType="number"
+                    android:id="@+id/eduction_question_5_FCR_latrine_none_stances"
+                    android:layout_width="200dp"
+                    android:layout_height="40dp"
+                    android:textSize="15sp"
+                    android:background="@drawable/edit_text_style"
+                    android:paddingStart="5dp"
+                    android:paddingEnd="5dp" />
+
+                <!--                row 6 -->
+                <TextView
+                    android:layout_column="0"
+                    android:layout_row="6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/education_question_5_Urinals"
+                    android:textSize="15sp"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:layout_marginHorizontal="5dp"
+                    android:gravity="center"
+                    android:layout_column="1"
+                    android:layout_row="6"
+                    android:layout_marginVertical="5dp"
+                    android:inputType="number"
+                    android:id="@+id/eduction_question_5_UFB_latrine_blocks"
+                    android:layout_width="200dp"
+                    android:layout_height="40dp"
+                    android:textSize="15sp"
+                    android:background="@drawable/edit_text_style"
+                    android:paddingStart="5dp"
+                    android:paddingEnd="5dp" />
+
+                <EditText
+                    android:layout_marginHorizontal="5dp"
+                    android:gravity="center"
+                    android:layout_column="2"
+                    android:layout_row="6"
+                    android:layout_marginVertical="5dp"
+                    android:inputType="number"
+                    android:id="@+id/eduction_question_5_UFB_latrine_stances"
+                    android:layout_width="200dp"
+                    android:layout_height="40dp"
+                    android:textSize="15sp"
+                    android:background="@drawable/edit_text_style"
+                    android:paddingStart="5dp"
+                    android:paddingEnd="5dp" />
+
+                <EditText
+                    android:layout_marginHorizontal="5dp"
+                    android:gravity="center"
+                    android:layout_column="3"
+                    android:layout_row="6"
+                    android:layout_marginVertical="5dp"
+                    android:inputType="number"
+                    android:id="@+id/eduction_question_5_UFB_latrine_pupil_male_stances"
+                    android:layout_width="200dp"
+                    android:layout_height="40dp"
+                    android:textSize="15sp"
+                    android:background="@drawable/edit_text_style"
+                    android:paddingStart="5dp"
+                    android:paddingEnd="5dp" />
+
+                <EditText
+                    android:layout_marginHorizontal="5dp"
+                    android:gravity="center"
+                    android:layout_column="4"
+                    android:layout_row="6"
+                    android:layout_marginVertical="5dp"
+                    android:inputType="number"
+                    android:id="@+id/eduction_question_5_UFB_latrine_pupil_female_stances"
+                    android:layout_width="200dp"
+                    android:layout_height="40dp"
+                    android:textSize="15sp"
+                    android:background="@drawable/edit_text_style"
+                    android:paddingStart="5dp"
+                    android:paddingEnd="5dp" />
+
+                <EditText
+                    android:layout_marginHorizontal="5dp"
+                    android:gravity="center"
+                    android:layout_column="5"
+                    android:layout_row="6"
+                    android:layout_marginVertical="5dp"
+                    android:inputType="number"
+                    android:id="@+id/eduction_question_5_UFB_latrine_teacher_male_stances"
+                    android:layout_width="200dp"
+                    android:layout_height="40dp"
+                    android:textSize="15sp"
+                    android:background="@drawable/edit_text_style"
+                    android:paddingStart="5dp"
+                    android:paddingEnd="5dp" />
+
+                <EditText
+                    android:layout_marginHorizontal="5dp"
+                    android:gravity="center"
+                    android:layout_column="6"
+                    android:layout_row="6"
+                    android:layout_marginVertical="5dp"
+                    android:inputType="number"
+                    android:id="@+id/eduction_question_5_latrine_UFB_teacher_female_stances"
+                    android:layout_width="200dp"
+                    android:layout_height="40dp"
+                    android:textSize="15sp"
+                    android:background="@drawable/edit_text_style"
+                    android:paddingStart="5dp"
+                    android:paddingEnd="5dp" />
+
+                <EditText
+                    android:layout_marginHorizontal="5dp"
+                    android:gravity="center"
+                    android:layout_column="7"
+                    android:layout_row="6"
+                    android:layout_marginVertical="5dp"
+                    android:inputType="number"
+                    android:id="@+id/eduction_question_5_UFB_latrine_teacher_mixed_stances"
+                    android:layout_width="200dp"
+                    android:layout_height="40dp"
+                    android:textSize="15sp"
+                    android:background="@drawable/edit_text_style"
+                    android:paddingStart="5dp"
+                    android:paddingEnd="5dp" />
+
+                <EditText
+                    android:layout_marginHorizontal="5dp"
+                    android:gravity="center"
+                    android:layout_column="8"
+                    android:layout_row="6"
+                    android:layout_marginVertical="5dp"
+                    android:inputType="number"
+                    android:id="@+id/eduction_question_5_UFB_latrine_functional_stances"
+                    android:layout_width="200dp"
+                    android:layout_height="40dp"
+                    android:textSize="15sp"
+                    android:background="@drawable/edit_text_style"
+                    android:paddingStart="5dp"
+                    android:paddingEnd="5dp" />
+
+                <EditText
+                    android:layout_marginHorizontal="5dp"
+                    android:gravity="center"
+                    android:layout_column="9"
+                    android:layout_row="6"
+                    android:layout_marginVertical="5dp"
+                    android:inputType="number"
+                    android:id="@+id/eduction_question_5_UFB_latrine_none_stances"
+                    android:layout_width="200dp"
+                    android:layout_height="40dp"
+                    android:textSize="15sp"
+                    android:background="@drawable/edit_text_style"
+                    android:paddingStart="5dp"
+                    android:paddingEnd="5dp" />
+
+            </GridLayout>
+        </HorizontalScrollView>
+
 
 
         <androidx.cardview.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
