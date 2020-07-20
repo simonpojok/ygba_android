@@ -77,4 +77,6 @@ public class EducationQuestionConstants {
     public static final String QUESTION_5_LATRINE_FUNCTIONAL = "question_5_latrine_functional";
     public static final String QUESTION_5_LATRINE_NONE_FUNCTIONAL = "question_5_latrine_none_functional";
     public static final String QUESTION_5_VIP_LATRINE_NUMBER_BLOCKS = "question_5_vip_latrine_number_blocks";
+    public static final String QUESTION_5_VIP_LATRINE_NUMBER_STANCES = "question_5_vip_latrine_number_stances";
+    public static final String QUESTION_5_VIP_LATRINE_NUMBER_STANCE_MALE_PUPIL = "question_5_vip_number_latrine_male_pupil_stances";
 }
