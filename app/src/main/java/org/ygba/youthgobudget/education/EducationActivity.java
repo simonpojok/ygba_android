@@ -47,6 +47,8 @@ public class EducationActivity extends AppCompatActivity {
     private EditText eQ2NumberDropOutFemalePWD;
     private EditText eQ2NumberDropOutTotal;
 
+    private EditText eQ3CapitalGrantApprovedBudgetExitText;
+
     private EditText eQ2DropOutReasonIfDropOut;
 
     @Override
@@ -95,6 +97,8 @@ public class EducationActivity extends AppCompatActivity {
 
         eQ2DropOutReasonIfDropOut = findViewById(R.id.question_2_dropout_reason);
 
+        eQ3CapitalGrantApprovedBudgetExitText = findViewById(R.id.question_3_capital_grant_edit_text);
+
 
         findViewById(R.id.saved_form_data).setOnClickListener(new View.OnClickListener() {
             @Override
@@ -141,6 +145,8 @@ public class EducationActivity extends AppCompatActivity {
                 .setQuestion2NumberDropOutTotal(getIntegerValue(eQ2NumberDropOutTotal))
 
                 .setQuestion2DropOutReasonIfAny(getTextValue(eQ2DropOutReasonIfDropOut))
+
+                .setQ3CapitalGrantApprovedBudget(getIntegerValue(eQ3CapitalGrantApprovedBudgetExitText))
                 .build();
     }
 

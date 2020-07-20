@@ -106,6 +106,9 @@ public class EducationQuestion {
     @ColumnInfo(name = EducationQuestionConstants.QUESTION_2_DROPOUT_REASONS_IF_ANY)
     private String question2DropOutReasonIfAny;
 
+    @ColumnInfo(name = EducationQuestionConstants.QUESTION_3_CAPITAL_GRANT_APPROVED_BUDGET)
+    private int question3capitalGrantApprovedBudget;
+
 
 
     public static class Builder {
@@ -268,6 +271,11 @@ public class EducationQuestion {
 
         public Builder setQuestion2DropOutReasonIfAny(String textValue) {
             INSTANCE.setQuestion2DropOutReasonIfAny(textValue);
+            return this;
+        }
+
+        public Builder setQ3CapitalGrantApprovedBudget(int integerValue) {
+            INSTANCE.setQuestion3capitalGrantApprovedBudget(integerValue);
             return this;
         }
     }
@@ -530,5 +538,13 @@ public class EducationQuestion {
 
     public void setQuestion2DropOutReasonIfAny(String question2DropOutReasonIfAny) {
         this.question2DropOutReasonIfAny = question2DropOutReasonIfAny;
+    }
+
+    public int getQuestion3capitalGrantApprovedBudget() {
+        return question3capitalGrantApprovedBudget;
+    }
+
+    public void setQuestion3capitalGrantApprovedBudget(int question3capitalGrantApprovedBudget) {
+        this.question3capitalGrantApprovedBudget = question3capitalGrantApprovedBudget;
     }
 }

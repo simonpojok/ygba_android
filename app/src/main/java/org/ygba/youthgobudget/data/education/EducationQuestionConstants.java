@@ -35,4 +35,5 @@ public class EducationQuestionConstants {
     public static final String QUESTION_2_NUMBER_DROPOUT_FEMALE_PWD = "pwd_2_female_dropout_2";
     public static final String QUESTION_2_NUMBER_DROPOUT_TOTAL = "total_dropout_q2";
     public static final String QUESTION_2_DROPOUT_REASONS_IF_ANY = "question_2_drop_out_reasons_if_any";
+    public static final String QUESTION_3_CAPITAL_GRANT_APPROVED_BUDGET = "question_3_capital_grants_approved";
 }
