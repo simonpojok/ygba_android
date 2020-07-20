@@ -51,6 +51,7 @@ public class EducationActivity extends AppCompatActivity {
 
     private EditText eQ2DropOutReasonIfDropOut;
     private EditText eQ3CapitalGrantReleasedBudgetExitText;
+    private EditText eQ3CapitalBudgetReceivedDateEditText;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -100,6 +101,7 @@ public class EducationActivity extends AppCompatActivity {
 
         eQ3CapitalGrantApprovedBudgetExitText = findViewById(R.id.question_3_capital_grant_edit_text);
         eQ3CapitalGrantReleasedBudgetExitText = findViewById(R.id.question_3_capital_grant_released_budget_edit_text);
+        eQ3CapitalBudgetReceivedDateEditText = findViewById(R.id.question_3_capital_grant_date_received_edit_text);
 
 
         findViewById(R.id.saved_form_data).setOnClickListener(new View.OnClickListener() {
@@ -150,6 +152,7 @@ public class EducationActivity extends AppCompatActivity {
 
                 .setQ3CapitalGrantApprovedBudget(getIntegerValue(eQ3CapitalGrantApprovedBudgetExitText))
                 .setQ3CapitalGrantReleasedBudget(getIntegerValue(eQ3CapitalGrantReleasedBudgetExitText))
+                .setQ3CapitalGrantDateReceived(getTextValue(eQ3CapitalBudgetReceivedDateEditText))
                 .build();
     }
 

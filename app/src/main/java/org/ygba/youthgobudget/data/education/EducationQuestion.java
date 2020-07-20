@@ -120,6 +120,9 @@ public class EducationQuestion {
     @ColumnInfo(name = EducationQuestionConstants.QUESTION_3_CAPITAL_GRANT_RELEASED_BUDGET)
     private int question3CapitalGrantReleaseBudget;
 
+    @ColumnInfo(name = EducationQuestionConstants.QUESTION_3_CAPITAL_BUDGET_DATE_RECEIVED)
+    private String question3CapitalReceivedDate;
+
 
 
     public static class Builder {
@@ -294,10 +297,23 @@ public class EducationQuestion {
             INSTANCE.setQuestion3CapitalGrantReleaseBudget(integerValue);
             return this;
         }
+
+        public Builder setQ3CapitalGrantDateReceived(String textValue) {
+            INSTANCE.setQuestion3CapitalReceivedDate(textValue);
+            return this;
+        }
     }
 
     @Ignore
     private EducationQuestion() {
+    }
+
+    public String getQuestion3CapitalReceivedDate() {
+        return question3CapitalReceivedDate;
+    }
+
+    public void setQuestion3CapitalReceivedDate(String question3CapitalReceivedDate) {
+        this.question3CapitalReceivedDate = question3CapitalReceivedDate;
     }
 
     public int getId() {

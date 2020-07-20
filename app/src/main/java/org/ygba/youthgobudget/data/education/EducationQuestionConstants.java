@@ -37,4 +37,5 @@ public class EducationQuestionConstants {
     public static final String QUESTION_2_DROPOUT_REASONS_IF_ANY = "question_2_drop_out_reasons_if_any";
     public static final String QUESTION_3_CAPITAL_GRANT_APPROVED_BUDGET = "question_3_capital_grants_approved";
     public static final String QUESTION_3_CAPITAL_GRANT_RELEASED_BUDGET = "question_3_capital_grant_released_budget";
+    public static final String QUESTION_3_CAPITAL_BUDGET_DATE_RECEIVED = "questions_3_date_received";
 }
