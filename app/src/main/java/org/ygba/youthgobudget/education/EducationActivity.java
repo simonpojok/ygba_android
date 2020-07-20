@@ -21,6 +21,7 @@ public class EducationActivity extends AppCompatActivity {
     private final int CAPITAL_RECEIVED_DATE_REQUEST_CODE = 1;
     private final int CAPITAL_DATE_WITHDRAWN_REQUEST_CODE = 2;
     private final int SFG_DATE_RECEIVED_REQUEST_CODE = 3;
+    private final int SFG_DATE_WITHDRAWN_REQUEST_CODE = 4;
     private TextView eDateTextView;
     private Spinner eFinancialYearSpinner;
     private EditText eVillageEditText;
@@ -144,6 +145,12 @@ public class EducationActivity extends AppCompatActivity {
         });
 
         eQ3SFGDateWithdrawnEditText = findViewById(R.id.question_3_sfg_date_withdrawn_edit_text);
+        eQ3SFGDateWithdrawnEditText.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivityForResult(new Intent(EducationActivity.this, DatePickerActivity.class), SFG_DATE_WITHDRAWN_REQUEST_CODE);
+            }
+        });
 
 
 
