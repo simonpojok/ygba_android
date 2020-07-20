@@ -193,6 +193,9 @@ public class EducationQuestion {
     @ColumnInfo(name = EducationQuestionConstants.QUESTION_5_TOILET_NUMBER_FEMALE_STANCSES_PUPIL)
     private int question5ToiletNumberFemaleStancesPupil;
 
+    @ColumnInfo(name = EducationQuestionConstants.QUESTION_5_TOILET_NUMBER_MALE_STANCES_TEACHER)
+    private  int question5ToiletNumberMaleStancesTeacher;
+
 
 
     public static class Builder {
@@ -492,6 +495,19 @@ public class EducationQuestion {
             INSTANCE.setQuestion5ToiletNumberFemaleStancesPupil(integerValue);
             return this;
         }
+
+        public Builder setQ5ToiletNumberOfMaleStancesTeacher(int integerValue) {
+            INSTANCE.setQuestion5ToiletNumberMaleStancesTeacher(integerValue);
+            return this;
+        }
+    }
+
+    public int getQuestion5ToiletNumberMaleStancesTeacher() {
+        return question5ToiletNumberMaleStancesTeacher;
+    }
+
+    public void setQuestion5ToiletNumberMaleStancesTeacher(int question5ToiletNumberMaleStancesTeacher) {
+        this.question5ToiletNumberMaleStancesTeacher = question5ToiletNumberMaleStancesTeacher;
     }
 
     public int getQuestion5ToiletNumberFemaleStancesPupil() {
