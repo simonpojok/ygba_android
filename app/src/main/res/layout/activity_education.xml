@@ -748,12 +748,34 @@
 
                 <TextView
                     android:layout_row="1"
-                    android:layout_column="1"
+                    android:layout_column="2"
                     android:layout_marginVertical="5dp"
                     android:layout_marginHorizontal="5dp"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/budget_released_actual"
+                    android:textSize="15sp"
+                    android:textColor="@color/white"/>
+
+                <TextView
+                    android:layout_row="1"
+                    android:layout_column="3"
+                    android:layout_marginVertical="5dp"
+                    android:layout_marginHorizontal="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/date_received"
+                    android:textSize="15sp"
+                    android:textColor="@color/white"/>
+
+                <TextView
+                    android:layout_row="1"
+                    android:layout_column="4"
+                    android:layout_marginVertical="5dp"
+                    android:layout_marginHorizontal="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/date_withdrawn"
                     android:textSize="15sp"
                     android:textColor="@color/white"/>
 
