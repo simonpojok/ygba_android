@@ -288,4 +288,15 @@ public class EducationActivity extends AppCompatActivity {
     private boolean isBudgetInformationNotDisplayed() {
         return ((CheckBox) findViewById(R.id.question_3_1_not_displayed)).isChecked();
     }
+
+    private String getQuestion41ObjectiveAnswer() {
+        if (((RadioGroup) findViewById(R.id.question41RadioGroup)).getCheckedRadioButtonId() == R.id.education_question_4_1_Good) {
+            return "Good";
+        } else  if (((RadioGroup) findViewById(R.id.question41RadioGroup)).getCheckedRadioButtonId() == R.id.education_question_4_1_bad) {
+            return "Bad";
+        } else if (((RadioGroup) findViewById(R.id.question41RadioGroup)).getCheckedRadioButtonId() == R.id.education_question_4_1_same) {
+            return "Same";
+        }
+        return "Same";
+    }
 }

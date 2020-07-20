@@ -1199,6 +1199,45 @@
             </GridLayout>
         </HorizontalScrollView>
 
+        <TextView
+            android:layout_marginVertical="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/education_question_4_1_1_text"
+            android:textSize="15sp"
+            android:textColor="@color/white" />
+
+        <RadioGroup
+            android:id="@+id/question41RadioGroup"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <RadioButton android:id="@+id/education_question_4_1_Good"
+                android:checked="true"
+                android:textSize="15sp"
+                android:layout_marginEnd="10dp"
+                android:textColor="@color/white"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/good" />
+            <RadioButton
+                android:layout_marginHorizontal="10dp"
+                android:textSize="15sp"
+                android:textColor="@color/white"
+                android:id="@+id/education_question_4_1_bad"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/bad" />
+
+            <RadioButton
+                android:textSize="15sp"
+                android:textColor="@color/white"
+                android:id="@+id/education_question_4_1_same"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/same" />
+        </RadioGroup>
+
 
 
         <androidx.cardview.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
