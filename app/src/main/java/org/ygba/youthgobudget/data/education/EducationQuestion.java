@@ -148,6 +148,9 @@ public class EducationQuestion {
     @ColumnInfo(name = EducationQuestionConstants.QUESTION_3_INFORMATION_NOT_DISPLAYED)
     private boolean question31InformationNoteDisplayed;
 
+    @ColumnInfo(name = EducationQuestionConstants.QUESTION_3_STATEMENT_PERIOD)
+    private String question32StatementPeriod;
+
 
 
     public static class Builder {
@@ -372,10 +375,23 @@ public class EducationQuestion {
             INSTANCE.setQuestion31InformationNoteDisplayed(budgetInformationNotDisplayed);
             return this;
         }
+
+        public Builder setQ32PeriodStatement(String textValue) {
+            INSTANCE.setQuestion32StatementPeriod(textValue);
+            return this;
+        }
     }
 
     @Ignore
     private EducationQuestion() {
+    }
+
+    public String getQuestion32StatementPeriod() {
+        return question32StatementPeriod;
+    }
+
+    public void setQuestion32StatementPeriod(String question32StatementPeriod) {
+        this.question32StatementPeriod = question32StatementPeriod;
     }
 
     public boolean isQuestion31InformationNoteDisplayed() {

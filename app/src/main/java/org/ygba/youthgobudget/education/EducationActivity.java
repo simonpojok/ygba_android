@@ -67,6 +67,7 @@ public class EducationActivity extends AppCompatActivity {
     private EditText eQ3SFGBudgetReleasedEditText;
     private TextView eQ3SFGDateReceivedEditText;
     private TextView eQ3SFGDateWithdrawnEditText;
+    private EditText eQ3StateReasonEditText;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -153,6 +154,8 @@ public class EducationActivity extends AppCompatActivity {
             }
         });
 
+        eQ3StateReasonEditText = findViewById(R.id.question_3_2_state_reason_edit_text);
+
 
 
         findViewById(R.id.saved_form_data).setOnClickListener(new View.OnClickListener() {
@@ -213,6 +216,7 @@ public class EducationActivity extends AppCompatActivity {
                 .setQ3IsInformationHeaderTeacherOfficeDisplayed(isBudgetInformationHeadTeacherOfficeDisplayed())
                 .setQ3IsInformationStaffRoomDisplayed(isBudgetInformationStaffRoomDisplayed())
                 .setQ3IsBudgetInformationNotDisplayed(isBudgetInformationNotDisplayed())
+                .setQ32PeriodStatement(getTextValue(eQ3StateReasonEditText))
                 .build();
     }
 
