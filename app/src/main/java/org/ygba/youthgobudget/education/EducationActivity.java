@@ -69,6 +69,8 @@ public class EducationActivity extends AppCompatActivity {
     private TextView eQ3SFGDateWithdrawnEditText;
     private EditText eQ3StateReasonEditText;
 
+    private EditText eQ4Grade1MaleEditText;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -155,6 +157,7 @@ public class EducationActivity extends AppCompatActivity {
         });
 
         eQ3StateReasonEditText = findViewById(R.id.question_3_2_state_reason_edit_text);
+        eQ4Grade1MaleEditText = findViewById(R.id.question_4_grade_1_male_edit_text);
 
 
 
@@ -217,6 +220,8 @@ public class EducationActivity extends AppCompatActivity {
                 .setQ3IsInformationStaffRoomDisplayed(isBudgetInformationStaffRoomDisplayed())
                 .setQ3IsBudgetInformationNotDisplayed(isBudgetInformationNotDisplayed())
                 .setQ32PeriodStatement(getTextValue(eQ3StateReasonEditText))
+
+                .setQ4Grade1MaleNumber(getIntegerValue(eQ4Grade1MaleEditText))
                 .build();
     }
 

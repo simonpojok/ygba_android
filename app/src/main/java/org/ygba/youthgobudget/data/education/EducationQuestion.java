@@ -151,6 +151,9 @@ public class EducationQuestion {
     @ColumnInfo(name = EducationQuestionConstants.QUESTION_3_STATEMENT_PERIOD)
     private String question32StatementPeriod;
 
+    @ColumnInfo(name = EducationQuestionConstants.QUESTION_4_GRADE_1_MALE_NUMBER)
+    private int question4Grade1MaleNumber;
+
 
 
     public static class Builder {
@@ -380,10 +383,23 @@ public class EducationQuestion {
             INSTANCE.setQuestion32StatementPeriod(textValue);
             return this;
         }
+
+        public Builder setQ4Grade1MaleNumber(int integerValue) {
+            INSTANCE.setQuestion4Grade1MaleNumber(integerValue);
+            return this;
+        }
     }
 
     @Ignore
     private EducationQuestion() {
+    }
+
+    public int getQuestion4Grade1MaleNumber() {
+        return question4Grade1MaleNumber;
+    }
+
+    public void setQuestion4Grade1MaleNumber(int question4Grade1MaleNumber) {
+        this.question4Grade1MaleNumber = question4Grade1MaleNumber;
     }
 
     public String getQuestion32StatementPeriod() {
