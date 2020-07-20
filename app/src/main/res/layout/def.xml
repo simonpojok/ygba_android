@@ -1,0 +1,2873 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingHorizontal="8dp"
+    android:background="@color/colorActivityBackground"
+    tools:context=".education.EducationActivity">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_gravity="center_horizontal"
+            android:gravity="center_horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="@string/education_sector_header"
+            android:textSize="25sp"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+
+        <TextView
+            android:gravity="center"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:padding="10dp"
+            android:text="@string/agriculture_form_description"
+            android:textSize="18sp"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_gravity="end"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="20dp"
+            android:text="23 - October 2020"
+            android:textSize="18sp"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_marginBottom="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/financial_year_label"
+            android:textSize="15sp"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+
+        <Spinner
+            android:id="@+id/financial_year_spinner"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:textSize="15sp"
+            android:background="@drawable/edit_text_style"
+            tools:ignore="RtlSymmetry" />
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:labelFor="@id/village_text_edit"
+            android:text="@string/village_label"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:layout_marginVertical="10dp"
+            android:layout_marginBottom="10dp"
+            android:paddingStart="5dp"
+            android:paddingEnd="5dp"
+            android:hint="@string/village_hint"
+            android:id="@+id/village_text_edit"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/edit_text_style"
+            android:autofillHints=""
+            android:textSize="15sp"
+            android:inputType="text"
+            tools:ignore="LabelFor" />
+
+        <TextView
+            android:labelFor="@id/parish_text_edit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/parish_label"
+            android:textSize="15sp"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+
+        <EditText
+            android:layout_marginBottom="10dp"
+            android:paddingStart="5dp"
+            android:paddingEnd="5dp"
+            android:hint="@string/parish_hint"
+            android:id="@+id/parish_text_edit"
+            android:layout_width="match_parent"
+            android:layout_marginVertical="10dp"
+            android:layout_height="40dp"
+            android:background="@drawable/edit_text_style"
+            android:autofillHints=""
+            android:inputType="text"
+            android:textSize="15sp"
+            tools:ignore="LabelFor" />
+
+        <TextView
+            android:labelFor="@id/division_text_edit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/division_label"
+            android:textSize="15sp"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+
+        <EditText
+            android:layout_marginVertical="10dp"
+            android:layout_marginBottom="5dp"
+            android:hint="@string/division_hint"
+            android:id="@+id/division_text_edit"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/edit_text_style"
+            android:autofillHints=""
+            android:paddingStart="5dp"
+            android:paddingEnd="5dp"
+            android:textSize="15sp"
+            android:overScrollMode="always"
+            android:inputType="text"
+            tools:ignore="LabelFor" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="@string/ygb_agent_name_label"
+            android:textSize="15sp"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:layout_marginVertical="10dp"
+            android:hint="@string/fullname_hint"
+            android:inputType="text"
+            android:textSize="15sp"
+            android:id="@+id/ygb_agent_name_edit_view"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/edit_text_style"
+            android:paddingStart="5dp"
+            android:paddingEnd="5dp"
+            android:autofillHints="" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/ygb_agent_tel_label"
+            android:textSize="15sp"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+
+        <EditText
+            android:layout_marginVertical="10dp"
+            android:inputType="phone"
+            android:hint="@string/telephone_hint"
+            android:id="@+id/ygb_agent_tel_edit_view"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:textSize="15sp"
+            android:background="@drawable/edit_text_style"
+            android:paddingStart="5dp"
+            android:paddingEnd="5dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/education_question_1_note"
+            android:textSize="15sp"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_marginVertical="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/education_question_1_upe"
+            android:textSize="15sp"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+
+        <EditText
+            android:layout_marginVertical="10dp"
+            android:inputType="text"
+            android:hint="@string/school_name_hint"
+            android:id="@+id/question_1_edit_text"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:textSize="15sp"
+            android:background="@drawable/edit_text_style"
+            android:paddingStart="5dp"
+            android:paddingEnd="5dp" />
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <GridLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/GridLayout1"
+                android:columnCount="7"
+                android:rowCount="7"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_marginHorizontal="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:text="@string/school_name"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    android:layout_column="0"
+                    android:layout_row="0"
+                    android:textSize="15sp"/>
+
+                <EditText
+                    android:gravity="start"
+                    android:layout_marginHorizontal="5dp"
+                    android:layout_row="1"
+                    android:layout_column="0"
+                    android:layout_marginVertical="5dp"
+                    android:inputType="text"
+                    android:hint="@string/school_name_school_name"
+                    android:id="@+id/question_2_school_name_edit_text"
+                    android:layout_width="200dp"
+                    android:layout_height="40dp"
+                    android:textSize="15sp"
+                    android:layout_rowSpan="2"
+                    android:background="@drawable/edit_text_style"
+                    android:paddingStart="5dp"
+                    android:paddingEnd="5dp" />
+
+                <TextView
+                    android:layout_marginHorizontal="5dp"
+                    android:layout_marginVertical="5dp"
+                    android:text="@string/school_teachers"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    android:layout_column="0"
+                    android:layout_row="3"
+                    android:textSize="15sp"/>
+
+                <TextView
+                    android:layout_marginHorizontal="5dp"
+                    android:layout_marginVertical="5dp"
+                    android:text="@string/pupil_enrollment"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    android:layout_column="0"
+                    android:layout_row="4"
+                    android:textSize="15sp"/>
+
+                <TextView
+                    android:layout_marginHorizontal="5dp"
+                    android:layout_marginVertical="5dp"
+                    android:text="@string/school_number_p_7_pupils"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    android:layout_column="0"
+                    android:layout_row="5"
+                    android:textSize="15sp"/>
+
+                <!--                number of drop out column 0 row 6 -->
+                <TextView
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginHorizontal="5dp"
+                    android:layout_marginVertical="5dp"
+                    android:text="@string/number_of_dropout"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    android:layout_column="0"
+                    android:layout_row="6"
+                    android:textSize="15sp"/>
+
+                <!--                category row 1 column 1 span 6 -->
+                <TextView
+                    android:layout_columnSpan="6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_row="1"
+                    android:layout_column="1"
+                    android:layout_marginHorizontal="5dp"
+                    android:text="@string/category"
+                    android:textColor="@color/white"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+                <!--                 row 2 column 1 male -->
+                <TextView
+                    android:layout_marginHorizontal="5dp"
+                    android:text="@string/male"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    android:layout_row="2"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:layout_column="1"
+                    android:textSize="15sp"/>
+
+                <!--                female row 3 cplunm 2 -->
+                <TextView
+                    android:layout_marginVertical="5dp"
+                    android:layout_marginHorizontal="5dp"
+                    android:gravity="center"
+                    android:text="@string/female"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    android:layout_row="2"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:layout_column="2"
+                    android:textSize="15sp"/>
+
+                <!--                male pwd row 2 column 3-->
+                <TextView
+                    android:layout_marginVertical="5dp"
+                    android:layout_marginHorizontal="5dp"
+                    android:gravity="center"
+                    android:text="@string/male_pwds"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    android:layout_row="2"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:layout_column="3"
+                    android:textSize="15sp"/>
+
+                <!--                female pwds row 3 column 4 -->
+                <TextView
+                    android:layout_marginVertical="5dp"
+                    android:layout_marginHorizontal="5dp"
+                    android:gravity="center"
+                    android:text="@string/female_pwds"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    android:layout_row="2"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:layout_column="4"
+                    android:textSize="15sp"/>
+
+                <!--                total label column 5 row 3 -->
+                <TextView
+                    android:layout_marginVertical="5dp"
+                    android:layout_marginHorizontal="5dp"
+                    android:gravity="center"
+                    android:text="@string/total"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    android:layout_row="2"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:layout_column="5"
+                    android:textSize="15sp"/>
+
+                <!--                column 1 male -->
+                <EditText
+                    android:layout_marginVertical="5dp"
+                    android:layout_marginHorizontal="5dp"
+                    android:gravity="center"
+                    android:inputType="number"
+                    android:id="@+id/question_2_teacher_male_edit_text"
+                    android:layout_width="200dp"
+                    android:layout_height="40dp"
+                    android:textSize="15sp"
+                    android:background="@drawable/edit_text_style"
+                    android:paddingStart="5dp"
+                    android:layout_column="1"
+                    android:layout_row="3"
+                    android:paddingEnd="5dp" />
+
+                <EditText
+                    android:id="@+id/question_2_pupil_enrollment_male_edit_text"
+                    android:layout_width="200dp"
+                    android:layout_height="40dp"
+                    android:layout_row="4"
+                    android:layout_column="1"
+                    android:layout_marginVertical="5dp"
+                    android:layout_marginHorizontal="5dp"
+                    android:gravity="center"
+                    android:background="@drawable/edit_text_style"
+                    android:inputType="number"
+                    android:paddingStart="5dp"
+                    android:paddingEnd="5dp"
+                    android:textSize="15sp" />
+
+                <EditText
+                    android:layout_marginVertical="5dp"
+                    android:layout_marginHorizontal="5dp"
+                    android:gravity="center"
+                    android:inputType="number"
+                    android:id="@+id/question_2_number_p7_male_edit_text"
+                    android:layout_width="200dp"
+                    android:layout_height="40dp"
+                    android:textSize="15sp"
+                    android:background="@drawable/edit_text_style"
+                    android:paddingStart="5dp"
+                    android:layout_column="1"
+                    android:layout_row="5"
+                    android:paddingEnd="5dp" />
+
+                <EditText
+                    android:layout_marginVertical="5dp"
+                    android:layout_marginHorizontal="5dp"
+                    android:gravity="center"
+                    android:inputType="number"
+                    android:id="@+id/question_2_number_of_p7_male_edit_text"
+                    android:layout_width="200dp"
+                    android:layout_height="40dp"
+                    android:textSize="15sp"
+                    android:background="@drawable/edit_text_style"
+                    android:paddingStart="5dp"
+                    android:layout_column="1"
+                    android:layout_row="6"
+                    android:paddingEnd="5dp" />
+
+                <!--                column  2 female -->
+                <EditText
+                    android:layout_marginVertical="5dp"
+                    android:layout_marginHorizontal="5dp"
+                    android:gravity="center"
+                    android:inputType="number"
+                    android:id="@+id/question_2_teachers_female_edit_text"
+                    android:layout_width="200dp"
+                    android:layout_height="40dp"
+                    android:textSize="15sp"
+                    android:background="@drawable/edit_text_style"
+                    android:paddingStart="5dp"
+                    android:layout_column="2"
+                    android:layout_row="3"
+                    android:paddingEnd="5dp" />
+
+                <EditText
+                    android:layout_marginVertical="5dp"
+                    android:layout_marginHorizontal="5dp"
+                    android:gravity="center"
+                    android:inputType="number"
+                    android:id="@+id/question_2_number_of_dropout_female_edit_text"
+                    android:layout_width="200dp"
+                    android:layout_height="40dp"
+                    android:textSize="15sp"
+                    android:background="@drawable/edit_text_style"
+                    android:paddingStart="5dp"
+                    android:layout_column="2"
+                    android:layout_row="4"
+                    android:paddingEnd="5dp" />
+
+                <EditText
+                    android:layout_marginVertical="5dp"
+                    android:layout_marginHorizontal="5dp"
+                    android:gravity="center"
+                    android:inputType="number"
+                    android:id="@+id/question_2_number_p7_enrollment_female_edit_text"
+                    android:layout_width="200dp"
+                    android:layout_height="40dp"
+                    android:textSize="15sp"
+                    android:background="@drawable/edit_text_style"
+                    android:paddingStart="5dp"
+                    android:layout_column="2"
+                    android:layout_row="5"
+                    android:paddingEnd="5dp" />
+
+                <EditText
+                    android:layout_marginVertical="5dp"
+                    android:layout_marginHorizontal="5dp"
+                    android:gravity="center"
+                    android:inputType="number"
+                    android:id="@+id/question_2_number_of_dropout_enrollment_female_edit_text"
+                    android:layout_width="200dp"
+                    android:layout_height="40dp"
+                    android:textSize="15sp"
+                    android:background="@drawable/edit_text_style"
+                    android:paddingStart="5dp"
+                    android:layout_column="2"
+                    android:layout_row="6"
+                    android:paddingEnd="5dp" />
+
+                <!--                male pwds column 3-->
+
+                <EditText
+                    android:layout_marginVertical="5dp"
+                    android:layout_marginHorizontal="5dp"
+                    android:gravity="center"
+                    android:inputType="number"
+                    android:id="@+id/question_2_number_p7_enrollment_male_edit_text"
+                    android:layout_width="200dp"
+                    android:layout_height="40dp"
+                    android:textSize="15sp"
+                    android:background="@drawable/edit_text_style"
+                    android:paddingStart="5dp"
+                    android:layout_column="3"
+                    android:layout_row="5"
+                    android:paddingEnd="5dp" />
+
+                <EditText
+                    android:layout_marginVertical="5dp"
+                    android:layout_marginHorizontal="5dp"
+                    android:gravity="center"
+                    android:inputType="number"
+                    android:id="@+id/question_2_number_of_dropout_enrollment_male_edit_text"
+                    android:layout_width="200dp"
+                    android:layout_height="40dp"
+                    android:textSize="15sp"
+                    android:background="@drawable/edit_text_style"
+                    android:paddingStart="5dp"
+                    android:layout_column="3"
+                    android:layout_row="6"
+                    android:paddingEnd="5dp" />
+
+                <EditText
+                    android:layout_marginVertical="5dp"
+                    android:layout_marginHorizontal="5dp"
+                    android:gravity="center"
+                    android:inputType="number"
+                    android:id="@+id/question_2_teacher_female_pwd_edit_text"
+                    android:layout_width="200dp"
+                    android:layout_height="40dp"
+                    android:textSize="15sp"
+                    android:background="@drawable/edit_text_style"
+                    android:paddingStart="5dp"
+                    android:layout_column="3"
+                    android:layout_row="3"
+                    android:paddingEnd="5dp" />
+
+                <EditText
+                    android:layout_marginVertical="5dp"
+                    android:layout_marginHorizontal="5dp"
+                    android:gravity="center"
+                    android:inputType="number"
+                    android:id="@+id/question_2_pupil_enrollment_female_pwd_edit_text"
+                    android:layout_width="200dp"
+                    android:layout_height="40dp"
+                    android:textSize="15sp"
+                    android:background="@drawable/edit_text_style"
+                    android:paddingStart="5dp"
+                    android:layout_column="3"
+                    android:layout_row="4"
+                    android:paddingEnd="5dp" />
+
+                <!--                column 4 female pwds-->
+                <EditText
+                    android:layout_marginVertical="5dp"
+                    android:layout_marginHorizontal="5dp"
+                    android:gravity="center"
+                    android:inputType="number"
+                    android:id="@+id/question_2_teacher_female_pwds_edit_text"
+                    android:layout_width="200dp"
+                    android:layout_height="40dp"
+                    android:textSize="15sp"
+                    android:background="@drawable/edit_text_style"
+                    android:paddingStart="5dp"
+                    android:layout_column="4"
+                    android:layout_row="3"
+                    android:paddingEnd="5dp"
+                    android:autofillHints="" />
+
+                <EditText
+                    android:layout_marginVertical="5dp"
+                    android:layout_marginHorizontal="5dp"
+                    android:gravity="center"
+                    android:inputType="number"
+                    android:id="@+id/question_2_pupil_enrollment_female_pwds_edit_text"
+                    android:layout_width="200dp"
+                    android:layout_height="40dp"
+                    android:textSize="15sp"
+                    android:background="@drawable/edit_text_style"
+                    android:paddingStart="5dp"
+                    android:layout_column="4"
+                    android:layout_row="4"
+                    android:paddingEnd="5dp"
+                    android:autofillHints="" />
+
+                <EditText
+                    android:layout_marginVertical="5dp"
+                    android:layout_marginHorizontal="5dp"
+                    android:gravity="center"
+                    android:inputType="number"
+                    android:id="@+id/question_2_number_p7_female_pwds_edit_text"
+                    android:layout_width="200dp"
+                    android:layout_height="40dp"
+                    android:textSize="15sp"
+                    android:background="@drawable/edit_text_style"
+                    android:paddingStart="5dp"
+                    android:layout_column="4"
+                    android:layout_row="5"
+                    android:paddingEnd="5dp" />
+
+                <EditText
+                    android:layout_marginVertical="5dp"
+                    android:layout_marginHorizontal="5dp"
+                    android:gravity="center"
+                    android:inputType="number"
+                    android:id="@+id/question_2_number_of_dropout_enrollment_female_pwds_edit_text"
+                    android:layout_width="200dp"
+                    android:layout_height="40dp"
+                    android:textSize="15sp"
+                    android:background="@drawable/edit_text_style"
+                    android:paddingStart="5dp"
+                    android:layout_column="4"
+                    android:layout_row="6"
+                    android:paddingEnd="5dp" />
+
+                <!--                 column 5 total -->
+                <EditText
+                    android:layout_marginVertical="5dp"
+                    android:layout_marginHorizontal="5dp"
+                    android:gravity="center"
+                    android:inputType="number"
+                    android:id="@+id/question_2_teacher_total_edit_text"
+                    android:layout_width="200dp"
+                    android:layout_height="40dp"
+                    android:textSize="15sp"
+                    android:background="@drawable/edit_text_style"
+                    android:paddingStart="5dp"
+                    android:layout_column="5"
+                    android:layout_row="3"
+                    android:paddingEnd="5dp"
+                    android:autofillHints="" />
+
+                <EditText
+                    android:layout_marginVertical="5dp"
+                    android:layout_marginHorizontal="5dp"
+                    android:gravity="center"
+                    android:inputType="number"
+                    android:id="@+id/question_2_pupil_enrollment_total_edit_text"
+                    android:layout_width="200dp"
+                    android:layout_height="40dp"
+                    android:textSize="15sp"
+                    android:background="@drawable/edit_text_style"
+                    android:paddingStart="5dp"
+                    android:layout_column="5"
+                    android:layout_row="4"
+                    android:paddingEnd="5dp"
+                    android:autofillHints="" />
+
+                <EditText
+                    android:layout_marginVertical="5dp"
+                    android:layout_marginHorizontal="5dp"
+                    android:gravity="center"
+                    android:inputType="number"
+                    android:id="@+id/question_2_number_p7_enrollment_total_edit_text"
+                    android:layout_width="200dp"
+                    android:layout_height="40dp"
+                    android:textSize="15sp"
+                    android:background="@drawable/edit_text_style"
+                    android:paddingStart="5dp"
+                    android:layout_column="5"
+                    android:layout_row="5"
+                    android:paddingEnd="5dp" />
+
+                <EditText
+                    android:layout_marginVertical="5dp"
+                    android:layout_marginHorizontal="5dp"
+                    android:gravity="center"
+                    android:inputType="number"
+                    android:id="@+id/question_2_number_of_dropout_enrollment_total_edit_text"
+                    android:layout_width="200dp"
+                    android:layout_height="40dp"
+                    android:textSize="15sp"
+                    android:background="@drawable/edit_text_style"
+                    android:paddingStart="5dp"
+                    android:layout_column="5"
+                    android:layout_row="6"
+                    android:paddingEnd="5dp" />
+            </GridLayout>
+        </HorizontalScrollView>
+
+        <!--         question 2 1 -->
+        <TextView
+            android:layout_marginVertical="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/education_question_2_1_dropout"
+            android:textSize="15sp"
+            android:textColor="@color/white"
+            android:textStyle="italic" />
+
+        <!--        question 2 _ 1 answer -->
+        <EditText
+            android:gravity="start"
+            android:layout_marginVertical="10dp"
+            android:inputType="phone"
+            android:id="@+id/question_2_1_edit_text"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:textSize="15sp"
+            android:background="@drawable/edit_text_style"
+            android:padding="5dp" />
+
+        <!--        question 3 text introduction -->
+        <TextView
+            android:layout_marginVertical="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/education_question_3_introduction"
+            android:textSize="18sp"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+
+        <HorizontalScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <GridLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:columnCount="5"
+                android:rowCount="4"
+                android:orientation="horizontal">
+
+                <!--                Budget founds, receipts and release dates row 0 column 0 columspan all -->
+                <TextView
+                    android:layout_column="0"
+                    android:layout_row="0"
+                    android:layout_columnSpan="4"
+                    android:layout_marginVertical="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/education_question_3_header"
+                    android:textSize="15sp"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+                <!--                Grants row 1 column 0 -->
+                <TextView
+                    android:layout_column="0"
+                    android:layout_row="1"
+                    android:layout_marginVertical="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/education_question_3_grant"
+                    android:textSize="15sp"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+                <!--                Capitation grant row 2 column 1 -->
+                <TextView
+                    android:layout_column="0"
+                    android:layout_row="2"
+                    android:layout_marginVertical="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/education_question_3_capitation_grant"
+                    android:textSize="15sp"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+                <!--                SFG text -->
+                <TextView
+                    android:layout_column="0"
+                    android:layout_row="3"
+                    android:layout_marginHorizontal="5dp"
+                    android:layout_marginVertical="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/education_question_3_SFG"
+                    android:textSize="15sp"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+
+                <!--                Approved Budgets row 1 column 1 -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_row="1"
+                    android:layout_column="1"
+                    android:layout_marginHorizontal="5dp"
+                    android:layout_marginVertical="5dp"
+                    android:text="@string/education_question_3_approved_budget"
+                    android:textColor="@color/white"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+                <!--                capitation grant approved budget row 2 column 1 -->
+                <EditText
+                    android:layout_column="1"
+                    android:layout_row="2"
+                    android:layout_marginVertical="5dp"
+                    android:layout_marginHorizontal="5dp"
+                    android:gravity="center"
+                    android:inputType="numberDecimal"
+                    android:id="@+id/question_3_capitation_grant_approved_budget"
+                    android:layout_width="200dp"
+                    android:layout_height="40dp"
+                    android:textSize="15sp"
+                    android:background="@drawable/edit_text_style"
+                    android:paddingStart="5dp"
+                    android:paddingEnd="5dp" />
+
+                <!--                sfg approved budget row 3 column 1 -->
+                <EditText
+                    android:layout_column="1"
+                    android:layout_row="3"
+                    android:layout_marginVertical="10dp"
+                    android:inputType="numberDecimal"
+                    android:id="@+id/question_3_SFG_grant_approved_budget"
+                    android:layout_width="200dp"
+                    android:layout_height="40dp"
+                    android:textSize="15sp"
+                    android:background="@drawable/edit_text_style"
+                    android:paddingStart="5dp"
+                    android:paddingEnd="5dp" />
+
+                <!--                capitation grant budget released row 1 column 2 -->
+                <EditText
+                    android:layout_column="2"
+                    android:layout_row="2"
+                    android:layout_marginVertical="5dp"
+                    android:layout_marginHorizontal="5dp"
+                    android:gravity="center"
+                    android:inputType="numberDecimal"
+                    android:id="@+id/question_3_capitation_grant_budget_released_tv"
+                    android:layout_width="200dp"
+                    android:layout_height="40dp"
+                    android:textSize="15sp"
+                    android:background="@drawable/edit_text_style"
+                    android:paddingStart="5dp"
+                    android:paddingEnd="5dp" />
+
+                <!--                SFG grant budget received row 2 column 2 -->
+                <EditText
+                    android:layout_column="2"
+                    android:layout_row="3"
+                    android:layout_marginVertical="5dp"
+                    android:layout_marginHorizontal="5dp"
+                    android:gravity="center"
+                    android:inputType="numberDecimal"
+                    android:id="@+id/question_3_SFG_grant_budget_released_tv"
+                    android:layout_width="200dp"
+                    android:layout_height="40dp"
+                    android:textSize="15sp"
+                    android:background="@drawable/edit_text_style"
+                    android:paddingStart="5dp"
+                    android:paddingEnd="5dp" />
+
+                <!--                capitation grant date recieved row 2 column 3 -->
+                <EditText
+                    android:layout_column="3"
+                    android:layout_row="2"
+                    android:layout_marginVertical="5dp"
+                    android:layout_marginHorizontal="5dp"
+                    android:gravity="center"
+                    android:inputType="date"
+                    android:id="@+id/question_3_capitation_date_received_released_tv"
+                    android:layout_width="200dp"
+                    android:layout_height="40dp"
+                    android:textSize="15sp"
+                    android:background="@drawable/edit_text_style"
+                    android:paddingStart="5dp"
+                    android:paddingEnd="5dp" />
+
+                <!--                SFG date received row 3 column 3 -->
+                <EditText
+                    android:layout_column="3"
+                    android:layout_row="3"
+                    android:layout_marginVertical="5dp"
+                    android:layout_marginHorizontal="5dp"
+                    android:gravity="center"
+                    android:inputType="date"
+                    android:id="@+id/question_3_SFG_date_received_released_tv"
+                    android:layout_width="200dp"
+                    android:layout_height="40dp"
+                    android:textSize="15sp"
+                    android:background="@drawable/edit_text_style"
+                    android:paddingStart="5dp"
+                    android:paddingEnd="5dp" />
+
+                <!--                capitation date withdrawn row 1 column 4-->
+                <EditText
+                    android:layout_column="4"
+                    android:layout_row="2"
+                    android:layout_marginVertical="5dp"
+                    android:layout_marginHorizontal="5dp"
+                    android:gravity="center"
+                    android:inputType="date"
+                    android:id="@+id/question_3_capitation_date_withdrawn_tv"
+                    android:layout_width="200dp"
+                    android:layout_height="40dp"
+                    android:textSize="15sp"
+                    android:background="@drawable/edit_text_style"
+                    android:paddingStart="5dp"
+                    android:paddingEnd="5dp" />
+                <!--                SFG date withdrawn row 2 column 4 -->
+                <EditText
+                    android:layout_column="4"
+                    android:layout_row="3"
+                    android:layout_marginVertical="5dp"
+                    android:layout_marginHorizontal="5dp"
+                    android:gravity="center"
+                    android:inputType="date"
+                    android:id="@+id/question_3_SFG_date_withdrawn_tv"
+                    android:layout_width="200dp"
+                    android:layout_height="40dp"
+                    android:textSize="15sp"
+                    android:background="@drawable/edit_text_style"
+                    android:paddingStart="5dp"
+                    android:paddingEnd="5dp" />
+
+                <TextView
+                    android:layout_column="2"
+                    android:layout_row="1"
+                    android:layout_marginVertical="5dp"
+                    android:layout_marginHorizontal="5dp"
+                    android:gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/education_question_3_budget_released"
+                    android:textSize="15sp"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_column="3"
+                    android:layout_row="1"
+                    android:layout_marginVertical="5dp"
+                    android:layout_marginHorizontal="5dp"
+                    android:gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/education_question_3_date_recieved"
+                    android:textSize="15sp"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_column="4"
+                    android:layout_row="1"
+                    android:layout_marginVertical="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/education_question_3_date_withdrawn"
+                    android:textSize="15sp"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+
+            </GridLayout>
+        </HorizontalScrollView>
+
+        <TextView
+            android:layout_marginVertical="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/education_question_3_1_text"
+            android:textSize="15sp"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textSize="15sp"
+            android:textColor="@color/white"
+            android:text="@string/school_notice_board"
+            android:id="@+id/question_3_1_sch_noticeboard_cb"/>
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textSize="15sp"
+            android:textColor="@color/white"
+            android:text="@string/head_teacher_notice"
+            android:id="@+id/question_3_1_head_teacher_notice_cb"/>
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textSize="15sp"
+            android:textColor="@color/white"
+            android:text="@string/staff_room"
+            android:id="@+id/question_3_1_staff_room_cb"/>
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textSize="15sp"
+            android:textColor="@color/white"
+            android:text="@string/displayed"
+            android:id="@+id/question_3_1_displayed_cb"
+            tools:ignore="TooManyViews" />
+
+        <TextView
+            android:layout_marginVertical="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/education_question_3_2_text"
+            android:textSize="15sp"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+
+        <EditText
+            android:gravity="start"
+            android:layout_marginVertical="10dp"
+            android:inputType="phone"
+            android:id="@+id/question_3_2_edit_text"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:textSize="15sp"
+            android:background="@drawable/edit_text_style"
+            android:padding="5dp"
+            android:autofillHints="" />
+
+        <TextView
+            android:layout_marginVertical="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/education_question_4_1_text"
+            android:textSize="18sp"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+
+        <HorizontalScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <GridLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:columnCount="3"
+                android:rowCount="5">
+
+                <TextView
+                    android:layout_marginHorizontal="5dp"
+                    android:gravity="center"
+                    android:layout_column="1"
+                    android:layout_row="0"
+                    android:layout_marginVertical="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/male"
+                    android:textSize="15sp"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_marginHorizontal="5dp"
+                    android:gravity="center"
+                    android:layout_column="2"
+                    android:layout_row="0"
+                    android:layout_marginVertical="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/female"
+                    android:textSize="15sp"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_marginHorizontal="5dp"
+                    android:layout_column="0"
+                    android:layout_row="1"
+                    android:layout_marginVertical="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/grade_1"
+                    android:textSize="15sp"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_marginHorizontal="5dp"
+                    android:layout_column="0"
+                    android:layout_row="2"
+                    android:layout_marginVertical="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/grade_2"
+                    android:textSize="15sp"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_marginHorizontal="5dp"
+                    android:layout_column="0"
+                    android:layout_row="3"
+                    android:layout_marginVertical="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/grade_3"
+                    android:textSize="15sp"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_marginHorizontal="5dp"
+                    android:layout_column="0"
+                    android:layout_row="4"
+                    android:layout_marginVertical="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/grade_others"
+                    android:textSize="15sp"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+                <!-- male -->
+                <EditText
+                    android:layout_marginHorizontal="5dp"
+                    android:gravity="center"
+                    android:layout_column="1"
+                    android:layout_row="1"
+                    android:layout_marginVertical="5dp"
+                    android:inputType="number"
+                    android:id="@+id/question_4_grade_1_male_edit_text"
+                    android:layout_width="200dp"
+                    android:layout_height="40dp"
+                    android:textSize="15sp"
+                    android:background="@drawable/edit_text_style"
+                    android:padding="5dp"
+                    android:autofillHints="" />
+
+                <EditText
+                    android:layout_column="1"
+                    android:layout_row="2"
+                    android:layout_marginHorizontal="5dp"
+                    android:gravity="center"
+                    android:layout_marginVertical="5dp"
+                    android:inputType="number"
+                    android:id="@+id/question_4_grade_2_male_edit_text"
+                    android:layout_width="200dp"
+                    android:layout_height="40dp"
+                    android:textSize="15sp"
+                    android:background="@drawable/edit_text_style"
+                    android:padding="5dp"
+                    android:autofillHints="" />
+
+                <EditText
+                    android:layout_column="1"
+                    android:layout_row="3"
+                    android:layout_marginHorizontal="5dp"
+                    android:gravity="center"
+                    android:layout_marginVertical="5dp"
+                    android:inputType="number"
+                    android:id="@+id/question_4_grade_3_male_edit_text"
+                    android:layout_width="200dp"
+                    android:layout_height="40dp"
+                    android:textSize="15sp"
+                    android:background="@drawable/edit_text_style"
+                    android:padding="5dp"
+                    android:autofillHints="" />
+                <EditText
+                    android:layout_column="1"
+                    android:layout_row="4"
+                    android:layout_marginHorizontal="5dp"
+                    android:gravity="center"
+                    android:layout_marginVertical="5dp"
+                    android:inputType="number"
+                    android:id="@+id/question_4_grade_others_male_edit_text"
+                    android:layout_width="200dp"
+                    android:layout_height="40dp"
+                    android:textSize="15sp"
+                    android:background="@drawable/edit_text_style"
+                    android:padding="5dp"
+                    android:autofillHints="" />
+
+                <!--                // female-->
+                <EditText
+                    android:layout_column="2"
+                    android:layout_row="1"
+                    android:layout_marginHorizontal="5dp"
+                    android:gravity="center"
+                    android:layout_marginVertical="5dp"
+                    android:inputType="number"
+                    android:id="@+id/question_4_grade_1_female_edit_text"
+                    android:layout_width="200dp"
+                    android:layout_height="40dp"
+                    android:textSize="15sp"
+                    android:background="@drawable/edit_text_style"
+                    android:padding="5dp"
+                    android:autofillHints=""
+                    tools:ignore="LabelFor" />
+
+                <EditText
+                    android:layout_column="2"
+                    android:layout_row="2"
+                    android:layout_marginHorizontal="5dp"
+                    android:gravity="center"
+                    android:layout_marginVertical="5dp"
+                    android:inputType="number"
+                    android:id="@+id/question_4_grade_2_female_edit_text"
+                    android:layout_width="200dp"
+                    android:layout_height="40dp"
+                    android:textSize="15sp"
+                    android:background="@drawable/edit_text_style"
+                    android:padding="5dp"
+                    android:autofillHints=""
+                    tools:ignore="LabelFor" />
+
+                <EditText
+                    android:layout_marginHorizontal="5dp"
+                    android:gravity="center"
+                    android:layout_column="2"
+                    android:layout_row="3"
+                    android:layout_marginVertical="5dp"
+                    android:inputType="number"
+                    android:id="@+id/question_4_grade_3_female_edit_text"
+                    android:layout_width="200dp"
+                    android:layout_height="40dp"
+                    android:textSize="15sp"
+                    android:background="@drawable/edit_text_style"
+                    android:padding="5dp"
+                    android:autofillHints="" />
+                <EditText
+                    android:layout_marginHorizontal="5dp"
+                    android:gravity="center"
+                    android:layout_column="2"
+                    android:layout_row="4"
+                    android:layout_marginVertical="5dp"
+                    android:inputType="number"
+                    android:id="@+id/question_4_grade_others_female_edit_text"
+                    android:layout_width="200dp"
+                    android:layout_height="40dp"
+                    android:textSize="15sp"
+                    android:background="@drawable/edit_text_style"
+                    android:padding="5dp"
+                    android:autofillHints=""
+                    tools:ignore="LabelFor" />
+
+            </GridLayout>
+        </HorizontalScrollView>
+
+        <TextView
+            android:layout_marginVertical="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/education_question_4_1_1_text"
+            android:textSize="15sp"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+
+        <RadioGroup
+            android:id="@+id/question41RadioGroup"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <RadioButton android:id="@+id/education_question_4_1_Good"
+                android:checked="true"
+                android:textSize="15sp"
+                android:layout_marginEnd="10dp"
+                android:textColor="@color/white"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/good" />
+            <RadioButton
+                android:layout_marginHorizontal="10dp"
+                android:textSize="15sp"
+                android:textColor="@color/white"
+                android:id="@+id/education_question_4_1_bad"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/bad" />
+
+            <RadioButton
+                android:textSize="15sp"
+                android:textColor="@color/white"
+                android:id="@+id/education_question_4_1_same"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/same" />
+        </RadioGroup>
+
+        <TextView
+            android:layout_marginVertical="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/education_question_4_2_text"
+            android:textSize="15sp"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+
+        <EditText
+            android:gravity="start"
+            android:layout_marginVertical="10dp"
+            android:inputType="phone"
+            android:id="@+id/question_4_2_edit_text"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:textSize="15sp"
+            android:background="@drawable/edit_text_style"
+            android:padding="5dp"
+            android:autofillHints=""
+            tools:ignore="LabelFor" />
+
+        <TextView
+            android:layout_marginVertical="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/education_question_5_text"
+            android:textSize="18sp"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_marginVertical="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/education_question_5_0_text"
+            android:textSize="15sp"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+
+        <HorizontalScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <GridLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:columnCount="10"
+                android:rowCount="7"
+                android:orientation="horizontal">
+
+                <!--                row 0 -->
+
+                <TextView
+                    android:layout_column="3"
+                    android:layout_row="0"
+                    android:layout_columnSpan="2"
+                    android:layout_marginVertical="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/education_question_5_pupils"
+                    android:textSize="15sp"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_column="5"
+                    android:layout_row="0"
+                    android:layout_columnSpan="3"
+                    android:layout_marginVertical="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/education_question_5_teachers"
+                    android:textSize="15sp"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_column="8"
+                    android:layout_row="0"
+                    android:layout_columnSpan="2"
+                    android:layout_marginVertical="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/education_question_5_functionality"
+                    android:textSize="15sp"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+                <!--                row 1 -->
+                <TextView
+                    android:layout_column="0"
+                    android:layout_row="1"
+                    android:layout_marginVertical="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/education_question_5_facility"
+                    android:textSize="15sp"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_column="1"
+                    android:layout_row="1"
+                    android:layout_marginVertical="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/education_question_5_number_of_blocks"
+                    android:textSize="15sp"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_column="2"
+                    android:layout_row="1"
+                    android:layout_marginVertical="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/education_question_5_number_of_stances"
+                    android:textSize="15sp"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_column="3"
+                    android:layout_row="1"
+                    android:layout_marginVertical="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/education_question_5_male_stances"
+                    android:textSize="15sp"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_column="4"
+                    android:layout_row="1"
+                    android:layout_marginVertical="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/education_question_5_female_stances"
+                    android:textSize="15sp"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_column="5"
+                    android:layout_row="1"
+                    android:layout_marginVertical="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/education_question_5_teacher_male_stances"
+                    android:textSize="15sp"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_column="6"
+                    android:layout_row="1"
+                    android:layout_marginVertical="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/education_question_5_teacher_female_stances"
+                    android:textSize="15sp"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_column="7"
+                    android:layout_row="1"
+                    android:layout_marginVertical="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/education_question_5_teacher_mixed_stances"
+                    android:textSize="15sp"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_column="8"
+                    android:layout_row="1"
+                    android:layout_marginVertical="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/education_question_5_functional"
+                    android:textSize="15sp"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_column="9"
+                    android:layout_row="1"
+                    android:layout_marginVertical="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/education_question_5_none"
+                    android:textSize="15sp"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+
+                <!--                row 2 -->
+                <TextView
+                    android:layout_column="0"
+                    android:layout_row="2"
+                    android:layout_marginVertical="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/education_question_5_toilet"
+                    android:textSize="15sp"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:layout_marginHorizontal="5dp"
+                    android:gravity="center"
+                    android:layout_column="1"
+                    android:layout_row="2"
+                    android:layout_marginVertical="5dp"
+                    android:inputType="number"
+                    android:id="@+id/question_4_toilet_blocks_edit_text"
+                    android:layout_width="200dp"
+                    android:layout_height="40dp"
+                    android:textSize="15sp"
+                    android:background="@drawable/edit_text_style"
+                    android:padding="5dp"
+                    android:autofillHints=""
+                    tools:ignore="LabelFor" />
+
+                <EditText
+                    android:layout_marginHorizontal="5dp"
+                    android:gravity="center"
+                    android:layout_column="2"
+                    android:layout_row="2"
+                    android:layout_marginVertical="5dp"
+                    android:inputType="number"
+                    android:id="@+id/question_4_toilet_stances_edit_text"
+                    android:layout_width="200dp"
+                    android:layout_height="40dp"
+                    android:textSize="15sp"
+                    android:background="@drawable/edit_text_style"
+                    android:padding="5dp"
+                    android:autofillHints=""
+                    tools:ignore="LabelFor" />
+
+                <EditText
+                    android:layout_marginHorizontal="5dp"
+                    android:gravity="center"
+                    android:layout_column="3"
+                    android:layout_row="2"
+                    android:layout_marginVertical="5dp"
+                    android:inputType="number"
+                    android:id="@+id/question_4_toilet_male_stances_edit_text"
+                    android:layout_width="200dp"
+                    android:layout_height="40dp"
+                    android:textSize="15sp"
+                    android:background="@drawable/edit_text_style"
+                    android:padding="5dp"
+                    android:autofillHints=""
+                    tools:ignore="LabelFor" />
+
+                <EditText
+                    android:layout_marginHorizontal="5dp"
+                    android:gravity="center"
+                    android:layout_column="4"
+                    android:layout_row="2"
+                    android:layout_marginVertical="5dp"
+                    android:inputType="number"
+                    android:id="@+id/question_4_toilet_female_stances_edit_text"
+                    android:layout_width="200dp"
+                    android:layout_height="40dp"
+                    android:textSize="15sp"
+                    android:background="@drawable/edit_text_style"
+                    android:padding="5dp"
+                    android:autofillHints=""
+                    tools:ignore="LabelFor" />
+
+                <EditText
+                    android:layout_marginHorizontal="5dp"
+                    android:gravity="center"
+                    android:layout_column="5"
+                    android:layout_row="2"
+                    android:layout_marginVertical="5dp"
+                    android:inputType="phone"
+                    android:id="@+id/question_4_toilet_teacher_male_stances_edit_text"
+                    android:layout_width="200dp"
+                    android:layout_height="40dp"
+                    android:textSize="15sp"
+                    android:background="@drawable/edit_text_style"
+                    android:padding="5dp"
+                    android:autofillHints=""
+                    tools:ignore="LabelFor" />
+
+                <EditText
+                    android:layout_marginHorizontal="5dp"
+                    android:gravity="center"
+                    android:layout_column="6"
+                    android:layout_row="2"
+                    android:layout_marginVertical="5dp"
+                    android:inputType="number"
+                    android:id="@+id/question_4_toilet_teacher_female_stances_edit_text"
+                    android:layout_width="200dp"
+                    android:layout_height="40dp"
+                    android:textSize="15sp"
+                    android:background="@drawable/edit_text_style"
+                    android:padding="5dp"
+                    android:autofillHints=""
+                    tools:ignore="LabelFor" />
+
+                <EditText
+                    android:layout_marginHorizontal="5dp"
+                    android:gravity="center"
+                    android:layout_column="7"
+                    android:layout_row="2"
+                    android:layout_marginVertical="5dp"
+                    android:inputType="number"
+                    android:id="@+id/question_4_toilet_teacher_mixed_stances_edit_text"
+                    android:layout_width="200dp"
+                    android:layout_height="40dp"
+                    android:textSize="15sp"
+                    android:background="@drawable/edit_text_style"
+                    android:padding="5dp"
+                    android:autofillHints=""
+                    tools:ignore="LabelFor" />
+
+                <EditText
+                    android:layout_marginHorizontal="5dp"
+                    android:gravity="center"
+                    android:layout_column="8"
+                    android:layout_row="2"
+                    android:layout_marginVertical="5dp"
+                    android:inputType="number"
+                    android:id="@+id/question_4_toilet_functional_edit_text"
+                    android:layout_width="200dp"
+                    android:layout_height="40dp"
+                    android:textSize="15sp"
+                    android:background="@drawable/edit_text_style"
+                    android:padding="5dp"
+                    android:autofillHints=""
+                    tools:ignore="LabelFor" />
+
+                <EditText
+                    android:layout_marginHorizontal="5dp"
+                    android:gravity="center"
+                    android:layout_column="9"
+                    android:layout_row="2"
+                    android:layout_marginVertical="5dp"
+                    android:inputType="number"
+                    android:id="@+id/question_4_toilet_none_edit_text"
+                    android:layout_width="200dp"
+                    android:layout_height="40dp"
+                    android:textSize="15sp"
+                    android:background="@drawable/edit_text_style"
+                    android:padding="5dp"
+                    android:autofillHints=""
+                    tools:ignore="LabelFor" />
+
+                <!--                row 3 -->
+                <TextView
+                    android:layout_column="0"
+                    android:layout_row="3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/education_question_5_latrine"
+                    android:textSize="15sp"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:layout_marginHorizontal="5dp"
+                    android:gravity="center"
+                    android:layout_column="1"
+                    android:layout_row="3"
+                    android:layout_marginVertical="5dp"
+                    android:inputType="number"
+                    android:id="@+id/eduction_question_5_latrine_blocks"
+                    android:layout_width="200dp"
+                    android:layout_height="40dp"
+                    android:textSize="15sp"
+                    android:background="@drawable/edit_text_style"
+                    android:paddingStart="5dp"
+                    android:paddingEnd="5dp" />
+
+                <EditText
+                    android:layout_marginHorizontal="5dp"
+                    android:gravity="center"
+                    android:layout_column="2"
+                    android:layout_row="3"
+                    android:layout_marginVertical="5dp"
+                    android:inputType="number"
+                    android:id="@+id/eduction_question_5_latrine_stances"
+                    android:layout_width="200dp"
+                    android:layout_height="40dp"
+                    android:textSize="15sp"
+                    android:background="@drawable/edit_text_style"
+                    android:paddingStart="5dp"
+                    android:paddingEnd="5dp" />
+
+                <EditText
+                    android:layout_marginHorizontal="5dp"
+                    android:gravity="center"
+                    android:layout_column="3"
+                    android:layout_row="3"
+                    android:layout_marginVertical="5dp"
+                    android:inputType="number"
+                    android:id="@+id/eduction_question_5_latrine_pupil_male_stances"
+                    android:layout_width="200dp"
+                    android:layout_height="40dp"
+                    android:textSize="15sp"
+                    android:background="@drawable/edit_text_style"
+                    android:paddingStart="5dp"
+                    android:paddingEnd="5dp" />
+
+                <EditText
+                    android:layout_marginHorizontal="5dp"
+                    android:gravity="center"
+                    android:layout_column="4"
+                    android:layout_row="3"
+                    android:layout_marginVertical="5dp"
+                    android:inputType="number"
+                    android:id="@+id/eduction_question_5_latrine_pupil_female_stances"
+                    android:layout_width="200dp"
+                    android:layout_height="40dp"
+                    android:textSize="15sp"
+                    android:background="@drawable/edit_text_style"
+                    android:paddingStart="5dp"
+                    android:paddingEnd="5dp" />
+
+                <EditText
+                    android:layout_marginHorizontal="5dp"
+                    android:gravity="center"
+                    android:layout_column="5"
+                    android:layout_row="3"
+                    android:layout_marginVertical="5dp"
+                    android:inputType="number"
+                    android:id="@+id/eduction_question_5_latrine_teacher_male_stances"
+                    android:layout_width="200dp"
+                    android:layout_height="40dp"
+                    android:textSize="15sp"
+                    android:background="@drawable/edit_text_style"
+                    android:paddingStart="5dp"
+                    android:paddingEnd="5dp" />
+
+                <EditText
+                    android:layout_marginHorizontal="5dp"
+                    android:gravity="center"
+                    android:layout_column="6"
+                    android:layout_row="3"
+                    android:layout_marginVertical="5dp"
+                    android:inputType="number"
+                    android:id="@+id/eduction_question_5_latrine_teacher_female_stances"
+                    android:layout_width="200dp"
+                    android:layout_height="40dp"
+                    android:textSize="15sp"
+                    android:background="@drawable/edit_text_style"
+                    android:paddingStart="5dp"
+                    android:paddingEnd="5dp" />
+
+                <EditText
+                    android:layout_marginHorizontal="5dp"
+                    android:gravity="center"
+                    android:layout_column="7"
+                    android:layout_row="3"
+                    android:layout_marginVertical="5dp"
+                    android:inputType="number"
+                    android:id="@+id/eduction_question_5_latrine_teacher_mixed_stances"
+                    android:layout_width="200dp"
+                    android:layout_height="40dp"
+                    android:textSize="15sp"
+                    android:background="@drawable/edit_text_style"
+                    android:paddingStart="5dp"
+                    android:paddingEnd="5dp" />
+
+                <EditText
+                    android:layout_marginHorizontal="5dp"
+                    android:gravity="center"
+                    android:layout_column="8"
+                    android:layout_row="3"
+                    android:layout_marginVertical="5dp"
+                    android:inputType="number"
+                    android:id="@+id/eduction_question_5_latrine_functional_stances"
+                    android:layout_width="200dp"
+                    android:layout_height="40dp"
+                    android:textSize="15sp"
+                    android:background="@drawable/edit_text_style"
+                    android:paddingStart="5dp"
+                    android:paddingEnd="5dp" />
+
+                <EditText
+                    android:layout_marginHorizontal="5dp"
+                    android:gravity="center"
+                    android:layout_column="9"
+                    android:layout_row="3"
+                    android:layout_marginVertical="5dp"
+                    android:inputType="number"
+                    android:id="@+id/eduction_question_5_latrine_none_stances"
+                    android:layout_width="200dp"
+                    android:layout_height="40dp"
+                    android:textSize="15sp"
+                    android:background="@drawable/edit_text_style"
+                    android:paddingStart="5dp"
+                    android:paddingEnd="5dp" />
+
+                <!--                row 4 -->
+                <TextView
+                    android:layout_column="0"
+                    android:layout_row="4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/education_question_5_VIP_latrine"
+                    android:textSize="15sp"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:layout_marginHorizontal="5dp"
+                    android:gravity="center"
+                    android:layout_column="1"
+                    android:layout_row="4"
+                    android:layout_marginVertical="5dp"
+                    android:inputType="number"
+                    android:id="@+id/eduction_question_5_VIP_latrine_blocks"
+                    android:layout_width="200dp"
+                    android:layout_height="40dp"
+                    android:textSize="15sp"
+                    android:background="@drawable/edit_text_style"
+                    android:paddingStart="5dp"
+                    android:paddingEnd="5dp" />
+
+                <EditText
+                    android:layout_marginHorizontal="5dp"
+                    android:gravity="center"
+                    android:layout_column="2"
+                    android:layout_row="4"
+                    android:layout_marginVertical="5dp"
+                    android:inputType="number"
+                    android:id="@+id/eduction_question_5_VIP_latrine_stances"
+                    android:layout_width="200dp"
+                    android:layout_height="40dp"
+                    android:textSize="15sp"
+                    android:background="@drawable/edit_text_style"
+                    android:paddingStart="5dp"
+                    android:paddingEnd="5dp" />
+
+                <EditText
+                    android:layout_marginHorizontal="5dp"
+                    android:gravity="center"
+                    android:layout_column="3"
+                    android:layout_row="4"
+                    android:layout_marginVertical="5dp"
+                    android:inputType="number"
+                    android:id="@+id/eduction_question_5_VIP_latrine_pupil_male_stances"
+                    android:layout_width="200dp"
+                    android:layout_height="40dp"
+                    android:textSize="15sp"
+                    android:background="@drawable/edit_text_style"
+                    android:paddingStart="5dp"
+                    android:paddingEnd="5dp" />
+
+                <EditText
+                    android:layout_marginHorizontal="5dp"
+                    android:gravity="center"
+                    android:layout_column="4"
+                    android:layout_row="4"
+                    android:layout_marginVertical="5dp"
+                    android:inputType="number"
+                    android:id="@+id/eduction_question_5_VIP_latrine_pupil_female_stances"
+                    android:layout_width="200dp"
+                    android:layout_height="40dp"
+                    android:textSize="15sp"
+                    android:background="@drawable/edit_text_style"
+                    android:paddingStart="5dp"
+                    android:paddingEnd="5dp" />
+
+                <EditText
+                    android:layout_marginHorizontal="5dp"
+                    android:gravity="center"
+                    android:layout_column="5"
+                    android:layout_row="4"
+                    android:layout_marginVertical="5dp"
+                    android:inputType="number"
+                    android:id="@+id/eduction_question_5_VIP_latrine_teacher_male_stances"
+                    android:layout_width="200dp"
+                    android:layout_height="40dp"
+                    android:textSize="15sp"
+                    android:background="@drawable/edit_text_style"
+                    android:paddingStart="5dp"
+                    android:paddingEnd="5dp" />
+
+                <EditText
+                    android:layout_marginHorizontal="5dp"
+                    android:gravity="center"
+                    android:layout_column="6"
+                    android:layout_row="4"
+                    android:layout_marginVertical="5dp"
+                    android:inputType="number"
+                    android:id="@+id/eduction_question_5_latrine_VIP_teacher_female_stances"
+                    android:layout_width="200dp"
+                    android:layout_height="40dp"
+                    android:textSize="15sp"
+                    android:background="@drawable/edit_text_style"
+                    android:paddingStart="5dp"
+                    android:paddingEnd="5dp" />
+
+                <EditText
+                    android:layout_marginHorizontal="5dp"
+                    android:gravity="center"
+                    android:layout_column="7"
+                    android:layout_row="4"
+                    android:layout_marginVertical="5dp"
+                    android:inputType="number"
+                    android:id="@+id/eduction_question_5_VIP_latrine_teacher_mixed_stances"
+                    android:layout_width="200dp"
+                    android:layout_height="40dp"
+                    android:textSize="15sp"
+                    android:background="@drawable/edit_text_style"
+                    android:paddingStart="5dp"
+                    android:paddingEnd="5dp" />
+
+                <EditText
+                    android:layout_marginHorizontal="5dp"
+                    android:gravity="center"
+                    android:layout_column="8"
+                    android:layout_row="4"
+                    android:layout_marginVertical="5dp"
+                    android:inputType="number"
+                    android:id="@+id/eduction_question_5_VIP_latrine_functional_stances"
+                    android:layout_width="200dp"
+                    android:layout_height="40dp"
+                    android:textSize="15sp"
+                    android:background="@drawable/edit_text_style"
+                    android:paddingStart="5dp"
+                    android:paddingEnd="5dp" />
+
+                <EditText
+                    android:layout_marginHorizontal="5dp"
+                    android:gravity="center"
+                    android:layout_column="9"
+                    android:layout_row="4"
+                    android:layout_marginVertical="5dp"
+                    android:inputType="number"
+                    android:id="@+id/eduction_question_5_VIP_latrine_none_stances"
+                    android:layout_width="200dp"
+                    android:layout_height="40dp"
+                    android:textSize="15sp"
+                    android:background="@drawable/edit_text_style"
+                    android:paddingStart="5dp"
+                    android:paddingEnd="5dp" />
+
+                <!--                row 5 -->
+                <TextView
+                    android:layout_column="0"
+                    android:layout_row="5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/education_question_5_FCR_latrine"
+                    android:textSize="15sp"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:layout_marginHorizontal="5dp"
+                    android:gravity="center"
+                    android:layout_column="1"
+                    android:layout_row="5"
+                    android:layout_marginVertical="5dp"
+                    android:inputType="number"
+                    android:id="@+id/eduction_question_5_FCR_latrine_blocks"
+                    android:layout_width="200dp"
+                    android:layout_height="40dp"
+                    android:textSize="15sp"
+                    android:background="@drawable/edit_text_style"
+                    android:paddingStart="5dp"
+                    android:paddingEnd="5dp" />
+
+                <EditText
+                    android:layout_marginHorizontal="5dp"
+                    android:gravity="center"
+                    android:layout_column="2"
+                    android:layout_row="5"
+                    android:layout_marginVertical="5dp"
+                    android:inputType="number"
+                    android:id="@+id/eduction_question_5_FCR_latrine_stances"
+                    android:layout_width="200dp"
+                    android:layout_height="40dp"
+                    android:textSize="15sp"
+                    android:background="@drawable/edit_text_style"
+                    android:paddingStart="5dp"
+                    android:paddingEnd="5dp" />
+
+                <EditText
+                    android:layout_marginHorizontal="5dp"
+                    android:gravity="center"
+                    android:layout_column="4"
+                    android:layout_row="5"
+                    android:layout_marginVertical="5dp"
+                    android:inputType="number"
+                    android:id="@+id/eduction_question_5_FCR_latrine_pupil_female_stances"
+                    android:layout_width="200dp"
+                    android:layout_height="40dp"
+                    android:textSize="15sp"
+                    android:background="@drawable/edit_text_style"
+                    android:paddingStart="5dp"
+                    android:paddingEnd="5dp" />
+
+                <EditText
+                    android:layout_marginHorizontal="5dp"
+                    android:gravity="center"
+                    android:layout_column="6"
+                    android:layout_row="5"
+                    android:layout_marginVertical="5dp"
+                    android:inputType="number"
+                    android:id="@+id/eduction_question_5_latrine_FCR_teacher_female_stances"
+                    android:layout_width="200dp"
+                    android:layout_height="40dp"
+                    android:textSize="15sp"
+                    android:background="@drawable/edit_text_style"
+                    android:paddingStart="5dp"
+                    android:paddingEnd="5dp" />
+
+                <EditText
+                    android:layout_marginHorizontal="5dp"
+                    android:gravity="center"
+                    android:layout_column="7"
+                    android:layout_row="5"
+                    android:layout_marginVertical="5dp"
+                    android:inputType="number"
+                    android:id="@+id/eduction_question_5_FCR_latrine_teacher_mixed_stances"
+                    android:layout_width="200dp"
+                    android:layout_height="40dp"
+                    android:textSize="15sp"
+                    android:background="@drawable/edit_text_style"
+                    android:paddingStart="5dp"
+                    android:paddingEnd="5dp" />
+
+                <EditText
+                    android:layout_marginHorizontal="5dp"
+                    android:gravity="center"
+                    android:layout_column="8"
+                    android:layout_row="5"
+                    android:layout_marginVertical="5dp"
+                    android:inputType="number"
+                    android:id="@+id/eduction_question_5_FCR_latrine_functional_stances"
+                    android:layout_width="200dp"
+                    android:layout_height="40dp"
+                    android:textSize="15sp"
+                    android:background="@drawable/edit_text_style"
+                    android:paddingStart="5dp"
+                    android:paddingEnd="5dp" />
+
+                <EditText
+                    android:layout_marginHorizontal="5dp"
+                    android:gravity="center"
+                    android:layout_column="9"
+                    android:layout_row="5"
+                    android:layout_marginVertical="5dp"
+                    android:inputType="number"
+                    android:id="@+id/eduction_question_5_FCR_latrine_none_stances"
+                    android:layout_width="200dp"
+                    android:layout_height="40dp"
+                    android:textSize="15sp"
+                    android:background="@drawable/edit_text_style"
+                    android:paddingStart="5dp"
+                    android:paddingEnd="5dp" />
+
+                <!--                row 6 -->
+                <TextView
+                    android:layout_column="0"
+                    android:layout_row="6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/education_question_5_Urinals"
+                    android:textSize="15sp"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:layout_marginHorizontal="5dp"
+                    android:gravity="center"
+                    android:layout_column="1"
+                    android:layout_row="6"
+                    android:layout_marginVertical="5dp"
+                    android:inputType="number"
+                    android:id="@+id/eduction_question_5_UFB_latrine_blocks"
+                    android:layout_width="200dp"
+                    android:layout_height="40dp"
+                    android:textSize="15sp"
+                    android:background="@drawable/edit_text_style"
+                    android:paddingStart="5dp"
+                    android:paddingEnd="5dp" />
+
+                <EditText
+                    android:layout_marginHorizontal="5dp"
+                    android:gravity="center"
+                    android:layout_column="2"
+                    android:layout_row="6"
+                    android:layout_marginVertical="5dp"
+                    android:inputType="number"
+                    android:id="@+id/eduction_question_5_UFB_latrine_stances"
+                    android:layout_width="200dp"
+                    android:layout_height="40dp"
+                    android:textSize="15sp"
+                    android:background="@drawable/edit_text_style"
+                    android:paddingStart="5dp"
+                    android:paddingEnd="5dp" />
+
+                <EditText
+                    android:layout_marginHorizontal="5dp"
+                    android:gravity="center"
+                    android:layout_column="3"
+                    android:layout_row="6"
+                    android:layout_marginVertical="5dp"
+                    android:inputType="number"
+                    android:id="@+id/eduction_question_5_UFB_latrine_pupil_male_stances"
+                    android:layout_width="200dp"
+                    android:layout_height="40dp"
+                    android:textSize="15sp"
+                    android:background="@drawable/edit_text_style"
+                    android:paddingStart="5dp"
+                    android:paddingEnd="5dp" />
+
+                <EditText
+                    android:layout_marginHorizontal="5dp"
+                    android:gravity="center"
+                    android:layout_column="4"
+                    android:layout_row="6"
+                    android:layout_marginVertical="5dp"
+                    android:inputType="number"
+                    android:id="@+id/eduction_question_5_UFB_latrine_pupil_female_stances"
+                    android:layout_width="200dp"
+                    android:layout_height="40dp"
+                    android:textSize="15sp"
+                    android:background="@drawable/edit_text_style"
+                    android:paddingStart="5dp"
+                    android:paddingEnd="5dp" />
+
+                <EditText
+                    android:layout_marginHorizontal="5dp"
+                    android:gravity="center"
+                    android:layout_column="5"
+                    android:layout_row="6"
+                    android:layout_marginVertical="5dp"
+                    android:inputType="number"
+                    android:id="@+id/eduction_question_5_UFB_latrine_teacher_male_stances"
+                    android:layout_width="200dp"
+                    android:layout_height="40dp"
+                    android:textSize="15sp"
+                    android:background="@drawable/edit_text_style"
+                    android:paddingStart="5dp"
+                    android:paddingEnd="5dp" />
+
+                <EditText
+                    android:layout_marginHorizontal="5dp"
+                    android:gravity="center"
+                    android:layout_column="6"
+                    android:layout_row="6"
+                    android:layout_marginVertical="5dp"
+                    android:inputType="number"
+                    android:id="@+id/eduction_question_5_latrine_UFB_teacher_female_stances"
+                    android:layout_width="200dp"
+                    android:layout_height="40dp"
+                    android:textSize="15sp"
+                    android:background="@drawable/edit_text_style"
+                    android:paddingStart="5dp"
+                    android:paddingEnd="5dp" />
+
+                <EditText
+                    android:layout_marginHorizontal="5dp"
+                    android:gravity="center"
+                    android:layout_column="7"
+                    android:layout_row="6"
+                    android:layout_marginVertical="5dp"
+                    android:inputType="number"
+                    android:id="@+id/eduction_question_5_UFB_latrine_teacher_mixed_stances"
+                    android:layout_width="200dp"
+                    android:layout_height="40dp"
+                    android:textSize="15sp"
+                    android:background="@drawable/edit_text_style"
+                    android:paddingStart="5dp"
+                    android:paddingEnd="5dp" />
+
+                <EditText
+                    android:layout_marginHorizontal="5dp"
+                    android:gravity="center"
+                    android:layout_column="8"
+                    android:layout_row="6"
+                    android:layout_marginVertical="5dp"
+                    android:inputType="number"
+                    android:id="@+id/eduction_question_5_UFB_latrine_functional_stances"
+                    android:layout_width="200dp"
+                    android:layout_height="40dp"
+                    android:textSize="15sp"
+                    android:background="@drawable/edit_text_style"
+                    android:paddingStart="5dp"
+                    android:paddingEnd="5dp" />
+
+                <EditText
+                    android:layout_marginHorizontal="5dp"
+                    android:gravity="center"
+                    android:layout_column="9"
+                    android:layout_row="6"
+                    android:layout_marginVertical="5dp"
+                    android:inputType="number"
+                    android:id="@+id/eduction_question_5_UFB_latrine_none_stances"
+                    android:layout_width="200dp"
+                    android:layout_height="40dp"
+                    android:textSize="15sp"
+                    android:background="@drawable/edit_text_style"
+                    android:paddingStart="5dp"
+                    android:paddingEnd="5dp" />
+
+            </GridLayout>
+        </HorizontalScrollView>
+
+        <TextView
+            android:layout_marginVertical="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/education_question_5_1_text"
+            android:textSize="15sp"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+
+        <RadioGroup
+            android:id="@+id/question51RadioGroup"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <RadioButton
+                android:id="@+id/education_question_5_1_yes"
+                android:checked="true"
+                android:textSize="15sp"
+                android:layout_marginEnd="10dp"
+                android:textColor="@color/white"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/yes" />
+            <RadioButton
+                android:layout_marginHorizontal="10dp"
+                android:textSize="15sp"
+                android:textColor="@color/white"
+                android:id="@+id/education_question_5_1_no"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/no" />
+        </RadioGroup>
+
+        <TextView
+            android:layout_marginVertical="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/education_question_5_2_text"
+            android:textSize="15sp"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textSize="15sp"
+            android:textColor="@color/white"
+            android:text="@string/question_5_2_ramps"
+            android:id="@+id/question_5_ramps_cb"/>
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textSize="15sp"
+            android:textColor="@color/white"
+            android:text="@string/question_5_2_pwd"
+            android:id="@+id/question_5_pwd_cb"/>
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textSize="15sp"
+            android:textColor="@color/white"
+            android:text="@string/question_5_2_none"
+            android:id="@+id/question_5_none_cb"/>
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textSize="15sp"
+            android:textColor="@color/white"
+            android:text="@string/question_5_2_others"
+            android:id="@+id/question_5_others_cb"/>
+
+        <EditText
+            android:gravity="start"
+            android:layout_marginVertical="5dp"
+            android:inputType="text"
+            android:id="@+id/eduction_question_5_2_others_text_view"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:textSize="15sp"
+            android:background="@drawable/edit_text_style"
+            android:padding="5dp" />
+
+        <TextView
+            android:layout_marginVertical="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/education_question_5_3_text"
+            android:textSize="15sp"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+
+        <RadioGroup
+            android:id="@+id/question53RadioGroup"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <RadioButton
+                android:id="@+id/education_question_5_3_yes"
+                android:checked="true"
+                android:textSize="15sp"
+                android:layout_marginEnd="10dp"
+                android:textColor="@color/white"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/yes" />
+            <RadioButton
+                android:layout_marginHorizontal="10dp"
+                android:textSize="15sp"
+                android:textColor="@color/white"
+                android:id="@+id/education_question_5_3_no"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/no" />
+        </RadioGroup>
+
+        <TextView
+            android:layout_marginVertical="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/education_question_5_3_estimate_text"
+            android:textSize="15sp"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+
+        <EditText
+            android:gravity="start"
+            android:layout_marginVertical="5dp"
+            android:inputType="text"
+            android:id="@+id/eduction_question_5_3_estimate_distance_text_view"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:textSize="15sp"
+            android:background="@drawable/edit_text_style"
+            android:padding="5dp" />
+
+        <TextView
+            android:layout_marginVertical="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/education_question_6_0_introduction_text"
+            android:textSize="18sp"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_marginVertical="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/education_question_6_1_text"
+            android:textSize="15sp"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+        <EditText
+            android:gravity="start"
+            android:layout_marginVertical="5dp"
+            android:inputType="number"
+            android:id="@+id/eduction_question_6_1_edit_text"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:textSize="15sp"
+            android:background="@drawable/edit_text_style"
+            android:padding="5dp" />
+
+        <TextView
+            android:layout_marginVertical="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/education_question_6_2_text"
+            android:textSize="15sp"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+
+        <EditText
+            android:gravity="start"
+            android:layout_marginVertical="5dp"
+            android:inputType="number"
+            android:id="@+id/eduction_question_6_2_edit_text"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:textSize="15sp"
+            android:background="@drawable/edit_text_style"
+            android:padding="5dp" />
+
+        <TextView
+            android:layout_marginVertical="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/education_question_6_3_text"
+            android:textSize="15sp"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+
+        <EditText
+            android:gravity="start"
+            android:layout_marginVertical="5dp"
+            android:inputType="text"
+            android:id="@+id/eduction_question_6_3_edit_text"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:textSize="15sp"
+            android:background="@drawable/edit_text_style"
+            android:padding="5dp" />
+
+        <!--        question 7 -->
+        <TextView
+            android:layout_marginVertical="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/education_question_7_introduction_text"
+            android:textSize="18sp"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+
+        <HorizontalScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <GridLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:columnCount="2"
+                android:rowCount="4"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_column="0"
+                    android:layout_row="0"
+                    android:layout_marginVertical="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/education_question_7_0_present_teachers_text"
+                    android:textSize="15sp"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_column="1"
+                    android:layout_row="0"
+                    android:layout_marginVertical="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/education_question_7_0_present_at_visit_teachers_text"
+                    android:textSize="15sp"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+
+                <!--                 row 1 -->
+
+                <LinearLayout
+                    android:layout_row="1"
+                    android:layout_column="0"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_marginVertical="5dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/education_question_7_0_enrolled_teachers_male_text"
+                        android:textSize="15sp"
+                        android:textColor="@color/white"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:gravity="center"
+                        android:layout_marginVertical="5dp"
+                        android:inputType="text"
+                        android:id="@+id/eduction_question_7_0_enrolled_male_teachers_text_view"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:textSize="15sp"
+                        android:background="@drawable/edit_text_style"
+                        android:padding="5dp" />
+
+                    <!--                    female -->
+                    <TextView
+                        android:layout_marginVertical="5dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/education_question_7_0_enrolled_teachers_female_text"
+                        android:textSize="15sp"
+                        android:textColor="@color/white"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:gravity="center"
+                        android:layout_marginVertical="5dp"
+                        android:inputType="text"
+                        android:id="@+id/eduction_question_7_0_enrolled_female_teachers_text_view"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:textSize="15sp"
+                        android:background="@drawable/edit_text_style"
+                        android:padding="5dp" />
+
+                    <TextView
+                        android:layout_marginVertical="5dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/education_question_7_0_total_text"
+                        android:textSize="15sp"
+                        android:textColor="@color/white"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:gravity="center"
+                        android:layout_marginVertical="5dp"
+                        android:inputType="text"
+                        android:id="@+id/eduction_question_7_0_teachers_on_payroll_text_view"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:textSize="15sp"
+                        android:background="@drawable/edit_text_style"
+                        android:padding="5dp" />
+                </LinearLayout>
+                <!--                column 1 -->
+                <LinearLayout
+                    android:layout_marginHorizontal="5dp"
+                    android:layout_row="1"
+                    android:layout_column="1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_marginVertical="5dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/education_question_7_0_enrolled_teachers_male_present_text"
+                        android:textSize="15sp"
+                        android:textColor="@color/white"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:gravity="center"
+                        android:layout_marginVertical="5dp"
+                        android:inputType="text"
+                        android:id="@+id/eduction_question_7_0_enrolled_male_teachers_present_text_view"
+                        android:layout_width="200dp"
+                        android:layout_height="40dp"
+                        android:textSize="15sp"
+                        android:background="@drawable/edit_text_style"
+                        android:padding="5dp" />
+
+                    <!--                    female -->
+                    <TextView
+                        android:layout_marginVertical="5dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/education_question_7_0_enrolled_teachers_female_present_text"
+                        android:textSize="15sp"
+                        android:textColor="@color/white"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:gravity="center"
+                        android:layout_marginVertical="5dp"
+                        android:inputType="text"
+                        android:id="@+id/eduction_question_7_0_enrolled_female_teachers_present_text_view"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:textSize="15sp"
+                        android:background="@drawable/edit_text_style"
+                        android:padding="5dp" />
+                </LinearLayout>
+            </GridLayout>
+        </HorizontalScrollView>
+        <TextView
+            android:layout_marginVertical="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/education_question_7_note_text"
+            android:textSize="15sp"
+            android:textColor="@color/white"
+            android:textStyle="italic" />
+
+        <!--       question 7 1  -->
+        <TextView
+            android:layout_marginVertical="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/education_question_7_1_text"
+            android:textSize="15sp"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+
+        <EditText
+            android:gravity="start"
+            android:layout_marginVertical="5dp"
+            android:inputType="number"
+            android:id="@+id/eduction_question_7_1_edit_text"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:textSize="15sp"
+            android:background="@drawable/edit_text_style"
+            android:padding="5dp" />
+
+        <TextView
+            android:layout_marginVertical="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/education_question_7_2_text"
+            android:textSize="15sp"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+
+        <RadioGroup
+            android:id="@+id/question72RadioGroup"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <RadioButton
+                android:id="@+id/education_question_7_2_yes"
+                android:checked="true"
+                android:textSize="15sp"
+                android:layout_marginEnd="10dp"
+                android:textColor="@color/white"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/yes" />
+            <RadioButton
+                android:layout_marginHorizontal="10dp"
+                android:textSize="15sp"
+                android:textColor="@color/white"
+                android:id="@+id/education_question_7_2_no"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/no" />
+        </RadioGroup>
+
+        <TextView
+            android:layout_marginVertical="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/education_question_7_3_text"
+            android:textSize="15sp"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+
+        <EditText
+            android:gravity="start"
+            android:layout_marginVertical="5dp"
+            android:inputType="textMultiLine"
+            android:id="@+id/eduction_question_7_3_edit_text"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:textSize="15sp"
+            android:background="@drawable/edit_text_style"
+            android:padding="5dp" />
+
+        <TextView
+            android:layout_marginVertical="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/education_question_8_introduction_text"
+            android:textSize="16sp"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_marginVertical="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/education_question_8_1_text"
+            android:textSize="15sp"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+
+        <EditText
+            android:gravity="start"
+            android:layout_marginVertical="5dp"
+            android:inputType="textMultiLine"
+            android:id="@+id/eduction_question_8_1_edit_text"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:textSize="15sp"
+            android:background="@drawable/edit_text_style"
+            android:padding="5dp" />
+
+        <TextView
+            android:layout_marginVertical="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/education_question_8_2_text"
+            android:textSize="15sp"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+
+        <EditText
+            android:gravity="start"
+            android:layout_marginVertical="5dp"
+            android:inputType="date"
+            android:id="@+id/eduction_question_8_2_edit_text"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:textSize="15sp"
+            android:background="@drawable/edit_text_style"
+            android:padding="5dp" />
+
+        <TextView
+            android:layout_marginVertical="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/education_question_8_3_text"
+            android:textSize="15sp"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+
+        <RadioGroup
+            android:id="@+id/question82RadioGroup"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <RadioButton
+                android:id="@+id/education_question_8_3_yes"
+                android:checked="true"
+                android:textSize="15sp"
+                android:layout_marginEnd="10dp"
+                android:textColor="@color/white"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/yes" />
+            <RadioButton
+                android:layout_marginHorizontal="10dp"
+                android:textSize="15sp"
+                android:textColor="@color/white"
+                android:id="@+id/education_question_8_3_no"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/no" />
+        </RadioGroup>
+
+        <TextView
+            android:layout_marginVertical="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/education_question_8_4_text"
+            android:textSize="15sp"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+
+        <RadioGroup
+            android:id="@+id/question84RadioGroup"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <RadioButton
+                android:id="@+id/education_question_8_4_monthly"
+                android:checked="true"
+                android:textSize="15sp"
+                android:layout_marginEnd="10dp"
+                android:textColor="@color/white"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/monthly" />
+            <RadioButton
+                android:id="@+id/education_question_8_4_termly"
+                android:checked="true"
+                android:textSize="15sp"
+                android:layout_marginEnd="10dp"
+                android:textColor="@color/white"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/termly" />
+
+            <RadioButton
+                android:id="@+id/education_question_8_4_others"
+                android:checked="true"
+                android:textSize="15sp"
+                android:layout_marginEnd="10dp"
+                android:textColor="@color/white"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/others" />
+        </RadioGroup>
+
+        <EditText
+            android:gravity="start"
+            android:layout_marginVertical="5dp"
+            android:inputType="textMultiLine"
+            android:id="@+id/eduction_question_8_4_edit_text"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:textSize="15sp"
+            android:background="@drawable/edit_text_style"
+            android:padding="5dp" />
+
+        <TextView
+            android:layout_marginVertical="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/education_question_8_5_text"
+            android:textSize="15sp"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+
+        <RadioGroup
+            android:id="@+id/question85RadioGroup"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <RadioButton
+                android:id="@+id/education_question_8_5_yes"
+                android:checked="true"
+                android:textSize="15sp"
+                android:layout_marginEnd="10dp"
+                android:textColor="@color/white"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/yes" />
+            <RadioButton
+                android:id="@+id/education_question_8_5_no"
+                android:checked="true"
+                android:textSize="15sp"
+                android:layout_marginEnd="10dp"
+                android:textColor="@color/white"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/no" />
+
+            <RadioButton
+                android:id="@+id/education_question_8_5_not_sure"
+                android:checked="true"
+                android:textSize="15sp"
+                android:layout_marginEnd="10dp"
+                android:textColor="@color/white"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/not_sure" />
+        </RadioGroup>
+
+        <TextView
+            android:layout_marginVertical="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/education_question_8_5_others_text"
+            android:textSize="15sp"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+
+        <EditText
+            android:gravity="start"
+            android:layout_marginVertical="5dp"
+            android:inputType="textMultiLine"
+            android:id="@+id/eduction_question_8_5_others_edit_text"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:textSize="15sp"
+            android:background="@drawable/edit_text_style"
+            android:padding="5dp" />
+
+        <androidx.cardview.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:id="@+id/saved_form_data"
+            card_view:cardCornerRadius="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="70dp"
+            android:layout_marginStart="70dp"
+            android:layout_marginRight="70dp"
+            android:layout_marginEnd="70dp"
+            android:layout_marginBottom="27dp"
+            card_view:cardBackgroundColor="@color/white">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="0dp"
+                android:text="Save"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:fontFamily="sans-serif-condensed"
+                android:textColor="#000"/>
+
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+
+</ScrollView>
