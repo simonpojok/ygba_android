@@ -408,4 +408,5 @@
     <string name="education_question_3_budget_funds">Budgeted Funds, receipts and release dates</string>
     <string name="approved_budgets">Approved Budgets</string>
     <string name="budget_released_actual">Budget released ( Actual )</string>
+    <string name="capital_grant">Capital Grant</string>
 </resources>

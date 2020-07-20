@@ -817,9 +817,12 @@
     <string name="amount_received_label">Amount Recieved</string>
     <string name="app_name">YouthGoBudget</string>
     <string name="appbar_scrolling_view_behavior" translatable="false">com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior</string>
+    <string name="approved_budgets">Approved Budgets</string>
     <string name="bad">Bad</string>
     <string name="bottom_sheet_behavior" translatable="false">com.google.android.material.bottomsheet.BottomSheetBehavior</string>
     <string name="budget_information_sector_header">District Budget Information</string>
+    <string name="budget_released_actual">Budget released ( Actual )</string>
+    <string name="capital_grant">Capital Grant</string>
     <string name="category">CATEGORY</string>
     <string name="character_counter_content_description">Characters entered %1$d of %2$d</string>
     <string name="character_counter_overflowed_content_description">Character limit exceeded %1$d of %2$d</string>
@@ -863,13 +866,14 @@
     </string>
     <string name="education_question_3_SFG">School Facilitation Grant ( SFG )</string>
     <string name="education_question_3_approved_budget">Approved Budgets</string>
+    <string name="education_question_3_budget_funds">Budgeted Funds, receipts and release dates</string>
     <string name="education_question_3_budget_released">Budget released (Actual)</string>
     <string name="education_question_3_capitation_grant">Capitation grant</string>
     <string name="education_question_3_date_recieved">Date Recieved</string>
     <string name="education_question_3_date_withdrawn">Date Withdrawn</string>
     <string name="education_question_3_grant">Grants</string>
     <string name="education_question_3_header">Budget founds, receipts and release dates</string>
-    <string name="education_question_3_introduction">BUDGET INFORMATION</string>
+    <string name="education_question_3_introduction">3. BUDGET INFORMATION</string>
     <string name="education_question_4_1_1_text">
         4.1 How is the current terms performance when compared to last terms ?
     </string>
