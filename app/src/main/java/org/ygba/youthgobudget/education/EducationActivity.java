@@ -50,6 +50,7 @@ public class EducationActivity extends AppCompatActivity {
     private EditText eQ3CapitalGrantApprovedBudgetExitText;
 
     private EditText eQ2DropOutReasonIfDropOut;
+    private EditText eQ3CapitalGrantReleasedBudgetExitText;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -98,6 +99,7 @@ public class EducationActivity extends AppCompatActivity {
         eQ2DropOutReasonIfDropOut = findViewById(R.id.question_2_dropout_reason);
 
         eQ3CapitalGrantApprovedBudgetExitText = findViewById(R.id.question_3_capital_grant_edit_text);
+        eQ3CapitalGrantReleasedBudgetExitText = findViewById(R.id.question_3_capital_grant_released_budget_edit_text);
 
 
         findViewById(R.id.saved_form_data).setOnClickListener(new View.OnClickListener() {
@@ -147,6 +149,7 @@ public class EducationActivity extends AppCompatActivity {
                 .setQuestion2DropOutReasonIfAny(getTextValue(eQ2DropOutReasonIfDropOut))
 
                 .setQ3CapitalGrantApprovedBudget(getIntegerValue(eQ3CapitalGrantApprovedBudgetExitText))
+                .setQ3CapitalGrantReleasedBudget(getIntegerValue(eQ3CapitalGrantReleasedBudgetExitText))
                 .build();
     }
 

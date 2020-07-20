@@ -109,6 +109,17 @@ public class EducationQuestion {
     @ColumnInfo(name = EducationQuestionConstants.QUESTION_3_CAPITAL_GRANT_APPROVED_BUDGET)
     private int question3capitalGrantApprovedBudget;
 
+    public int getQuestion3CapitalGrantReleaseBudget() {
+        return question3CapitalGrantReleaseBudget;
+    }
+
+    public void setQuestion3CapitalGrantReleaseBudget(int question3CapitalGrantReleaseBudget) {
+        this.question3CapitalGrantReleaseBudget = question3CapitalGrantReleaseBudget;
+    }
+
+    @ColumnInfo(name = EducationQuestionConstants.QUESTION_3_CAPITAL_GRANT_RELEASED_BUDGET)
+    private int question3CapitalGrantReleaseBudget;
+
 
 
     public static class Builder {
@@ -276,6 +287,11 @@ public class EducationQuestion {
 
         public Builder setQ3CapitalGrantApprovedBudget(int integerValue) {
             INSTANCE.setQuestion3capitalGrantApprovedBudget(integerValue);
+            return this;
+        }
+
+        public Builder setQ3CapitalGrantReleasedBudget(int integerValue) {
+            INSTANCE.setQuestion3CapitalGrantReleaseBudget(integerValue);
             return this;
         }
     }
