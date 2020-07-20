@@ -94,6 +94,7 @@ public class EducationActivity extends AppCompatActivity {
 
     private EditText eQ5numberOfLatrineBlocks;
     private EditText eQ5NumberOfLatrineStances;
+    private EditText eQ5NumberOfLatrineMaleStancesPupil;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -205,6 +206,7 @@ public class EducationActivity extends AppCompatActivity {
 
         eQ5numberOfLatrineBlocks = findViewById(R.id.eduction_question_5_latrine_blocks);
         eQ5NumberOfLatrineStances = findViewById(R.id.eduction_question_5_latrine_stances);
+        eQ5NumberOfLatrineMaleStancesPupil = findViewById(R.id.eduction_question_5_latrine_pupil_male_stances);
 
         findViewById(R.id.saved_form_data).setOnClickListener(new View.OnClickListener() {
             @Override
@@ -291,6 +293,7 @@ public class EducationActivity extends AppCompatActivity {
 
                 .setQ5LatrineNumberOfBlocks(getIntegerValue(eQ5numberOfLatrineBlocks))
                 .setQ5LatrineNumberOfStances(getIntegerValue(eQ5NumberOfLatrineStances))
+                .setQ5LatrineNumberOfMaleStancesPupil(getIntegerValue(eQ5NumberOfLatrineMaleStancesPupil))
                 .build();
     }
 

@@ -214,6 +214,9 @@ public class EducationQuestion {
     @ColumnInfo(name = EducationQuestionConstants.QUESTION_5_LATRINE_NUMBER_STANCES)
     private int question5LatrineNumberStances;
 
+    @ColumnInfo(name = EducationQuestionConstants.QUESTION_5_LATRINE_NUMBER_OF_INSTANCES_MALE_PUPIL)
+    private int question5LatrineNumberStanceMalePupil;
+
 
 
     public static class Builder {
@@ -545,8 +548,30 @@ public class EducationQuestion {
         }
 
         public Builder setQ5LatrineNumberOfStances(int integerValue) {
+            INSTANCE.setQuestion5LatrineNumberStances(integerValue);
             return this;
         }
+
+        public Builder setQ5LatrineNumberOfMaleStancesPupil(int integerValue) {
+            INSTANCE.setQuestion5LatrineNumberStanceMalePupil(integerValue);
+            return this;
+        }
+    }
+
+    public int getQuestion5LatrineNumberStanceMalePupil() {
+        return question5LatrineNumberStanceMalePupil;
+    }
+
+    public void setQuestion5LatrineNumberStanceMalePupil(int question5LatrineNumberStanceMalePupil) {
+        this.question5LatrineNumberStanceMalePupil = question5LatrineNumberStanceMalePupil;
+    }
+
+    public int getQuestion5LatrineNumberStances() {
+        return question5LatrineNumberStances;
+    }
+
+    public void setQuestion5LatrineNumberStances(int question5LatrineNumberStances) {
+        this.question5LatrineNumberStances = question5LatrineNumberStances;
     }
 
     public int getQuestion5LatrineNumberBlocks() {
