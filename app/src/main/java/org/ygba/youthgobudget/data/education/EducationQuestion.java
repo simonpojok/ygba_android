@@ -283,6 +283,9 @@ public class EducationQuestion {
     @ColumnInfo(name = EducationQuestionConstants.QUESTION_5_FEMALE_CHANGING_ROOM_NONE_FUNCTIONAL)
     private int question5FemaleChangingRoomNoneFunctional;
 
+    @ColumnInfo(name = EducationQuestionConstants.QUESTION_5_URINALS_FOR_BOYS_BLOCK_NUMBERS)
+    private int question5UrinalsForBoysBlockNumber;
+
     public static class Builder {
         private final EducationQuestion INSTANCE;
         public Builder() {
@@ -730,6 +733,19 @@ public class EducationQuestion {
             INSTANCE.setQuestion5FemaleChangingRoomNoneFunctional(integerValue);
             return this;
         }
+
+        public Builder setQ5UrinalsForBoysBlockNumber(int integerValue) {
+            INSTANCE.setQuestion5UrinalsForBoysBlockNumber(integerValue);
+            return this;
+        }
+    }
+
+    public int getQuestion5UrinalsForBoysBlockNumber() {
+        return question5UrinalsForBoysBlockNumber;
+    }
+
+    public void setQuestion5UrinalsForBoysBlockNumber(int question5UrinalsForBoysBlockNumber) {
+        this.question5UrinalsForBoysBlockNumber = question5UrinalsForBoysBlockNumber;
     }
 
     public int getQuestion5FemaleChangingRoomNoneFunctional() {
