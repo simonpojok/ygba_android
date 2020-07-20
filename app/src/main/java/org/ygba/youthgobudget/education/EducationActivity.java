@@ -8,6 +8,7 @@ import android.widget.EditText;
 import android.widget.RadioGroup;
 import android.widget.Spinner;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import org.ygba.youthgobudget.R;
 import org.ygba.youthgobudget.data.education.EducationQuestion;
@@ -52,7 +53,7 @@ public class EducationActivity extends AppCompatActivity {
     private EditText eQ2DropOutReasonIfDropOut;
     private EditText eQ3CapitalGrantReleasedBudgetExitText;
     private EditText eQ3CapitalBudgetReceivedDateEditText;
-    private EditText eQ3CapitalBudgetDateWithdrawnEditText;
+    private TextView eQ3CapitalBudgetDateWithdrawnEditText;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -103,7 +104,21 @@ public class EducationActivity extends AppCompatActivity {
         eQ3CapitalGrantApprovedBudgetExitText = findViewById(R.id.question_3_capital_grant_edit_text);
         eQ3CapitalGrantReleasedBudgetExitText = findViewById(R.id.question_3_capital_grant_released_budget_edit_text);
         eQ3CapitalBudgetReceivedDateEditText = findViewById(R.id.question_3_capital_grant_date_received_edit_text);
+        eQ3CapitalBudgetReceivedDateEditText.setInputType(View.AUTOFILL_TYPE_NONE);
+        eQ3CapitalBudgetReceivedDateEditText.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Toast.makeText(EducationActivity.this, "Clicked", Toast.LENGTH_LONG).show();
+            }
+        });
         eQ3CapitalBudgetDateWithdrawnEditText = findViewById(R.id.question_3_capital_grant_date_withdrawn_edit_text);
+        eQ3CapitalBudgetDateWithdrawnEditText.setInputType(View.AUTOFILL_TYPE_NONE);
+        eQ3CapitalBudgetDateWithdrawnEditText.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Toast.makeText(EducationActivity.this, "Clicked", Toast.LENGTH_LONG).show();
+            }
+        });
 
 
         findViewById(R.id.saved_form_data).setOnClickListener(new View.OnClickListener() {

@@ -1955,7 +1955,10 @@ id question_2_youth_friendly_corners_yes
 id question_3_1_no
 id question_3_1_radio_group
 id question_3_1_yes
-id question_3_capital_grant_edit_tex
+id question_3_capital_grant_date_received_edit_text
+id question_3_capital_grant_date_withdrawn_edit_text
+id question_3_capital_grant_edit_text
+id question_3_capital_grant_released_budget_edit_text
 id question_4_1_no
 id question_4_1_water_point_accessible_radio_group
 id question_4_1_yes
