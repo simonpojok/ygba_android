@@ -111,6 +111,7 @@ public class EducationActivity extends AppCompatActivity {
     private EditText eQ5NumberVIPLatrineStancesMixed;
     private EditText eQ5NumberVIPLatrineStancesFunctional;
     private EditText eQ5NumberVIPLatrineStancesNoneFunctional;
+    private EditText eQFemaleChangingRoomBlockNumber;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -240,6 +241,8 @@ public class EducationActivity extends AppCompatActivity {
         eQ5NumberVIPLatrineStancesFunctional = findViewById(R.id.eduction_question_5_VIP_latrine_functional_stances);
         eQ5NumberVIPLatrineStancesNoneFunctional = findViewById(R.id.eduction_question_5_VIP_latrine_none_stances);
 
+        eQFemaleChangingRoomBlockNumber = findViewById(R.id.eduction_question_5_FCR_latrine_blocks);
+
         findViewById(R.id.saved_form_data).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -342,6 +345,8 @@ public class EducationActivity extends AppCompatActivity {
                 .setQ5VIPLatrineNumberOfStancesMixedTeacher(getIntegerValue(eQ5NumberVIPLatrineStancesMixed))
                 .setQ5VIPLatrineFunctional(getIntegerValue(eQ5NumberVIPLatrineStancesFunctional))
                 .setQ5VIPLatrineNoneFunctional(getIntegerValue(eQ5NumberVIPLatrineStancesNoneFunctional))
+
+                .setQFemaleChangingRoomNumberBlocks(getIntegerValue(eQFemaleChangingRoomBlockNumber))
                 .build();
     }
 

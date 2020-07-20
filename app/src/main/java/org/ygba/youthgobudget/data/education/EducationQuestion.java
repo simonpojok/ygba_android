@@ -262,6 +262,9 @@ public class EducationQuestion {
     @ColumnInfo(name = EducationQuestionConstants.QUESTION_5_VIP_LATRINE_NONE_FUNCTIONAL)
     private int question5VIPNoneFunctional;
 
+    @ColumnInfo(name = EducationQuestionConstants.QUESTION_5_FEMALE_CHANGING_ROOM_BLOCKS)
+    private int question5FemaleChangingRoomBlockNumber;
+
     public static class Builder {
         private final EducationQuestion INSTANCE;
         public Builder() {
@@ -671,8 +674,30 @@ public class EducationQuestion {
         }
 
         public Builder setQ5VIPLatrineNoneFunctional(int integerValue) {
+            INSTANCE.setQuestion5VIPNoneFunctional(integerValue);
             return this;
         }
+
+        public Builder setQFemaleChangingRoomNumberBlocks(int integerValue) {
+            INSTANCE.setQuestion5FemaleChangingRoomBlockNumber(integerValue);
+            return this;
+        }
+    }
+
+    public int getQuestion5FemaleChangingRoomBlockNumber() {
+        return question5FemaleChangingRoomBlockNumber;
+    }
+
+    public void setQuestion5FemaleChangingRoomBlockNumber(int question5FemaleChangingRoomBlockNumber) {
+        this.question5FemaleChangingRoomBlockNumber = question5FemaleChangingRoomBlockNumber;
+    }
+
+    public int getQuestion5VIPNoneFunctional() {
+        return question5VIPNoneFunctional;
+    }
+
+    public void setQuestion5VIPNoneFunctional(int question5VIPNoneFunctional) {
+        this.question5VIPNoneFunctional = question5VIPNoneFunctional;
     }
 
     public int getQuestion5VIPLatrineFunction() {
