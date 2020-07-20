@@ -114,6 +114,8 @@ public class EducationActivity extends AppCompatActivity {
     private EditText eQFemaleChangingRoomBlockNumber;
     private EditText eQ5FemaleChangingRoomStanceNumber;
     private EditText eQ5FemaleChangingRoomFemaleStances;
+    private EditText eQ5FemaleChangingRoomFemaleStancesTeacher;
+    private EditText eQ5FemaleChangingRoomMixedTeacher;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -246,6 +248,8 @@ public class EducationActivity extends AppCompatActivity {
         eQFemaleChangingRoomBlockNumber = findViewById(R.id.eduction_question_5_FCR_latrine_blocks);
         eQ5FemaleChangingRoomStanceNumber =  findViewById(R.id.eduction_question_5_FCR_latrine_stances);
         eQ5FemaleChangingRoomFemaleStances = findViewById(R.id.eduction_question_5_FCR_latrine_pupil_female_stances);
+        eQ5FemaleChangingRoomFemaleStancesTeacher = findViewById(R.id.eduction_question_5_latrine_FCR_teacher_female_stances);
+        eQ5FemaleChangingRoomMixedTeacher = findViewById(R.id.eduction_question_5_FCR_latrine_teacher_mixed_stances);
 
         findViewById(R.id.saved_form_data).setOnClickListener(new View.OnClickListener() {
             @Override
@@ -353,6 +357,8 @@ public class EducationActivity extends AppCompatActivity {
                 .setQFemaleChangingRoomNumberBlocks(getIntegerValue(eQFemaleChangingRoomBlockNumber))
                 .setQ5FemaleChangingRoomNumberStances(getIntegerValue(eQ5FemaleChangingRoomStanceNumber))
                 .setQ5FemaleChangingRoomNumberFemaleStance(getIntegerValue(eQ5FemaleChangingRoomFemaleStances))
+                .setQ5FemaleChangingRoomNumberFemaleTeacher(getIntegerValue(eQ5FemaleChangingRoomFemaleStancesTeacher))
+                .setQ5FemaleChangingRoomNumberMixedTeachers(getIntegerValue(eQ5FemaleChangingRoomMixedTeacher))
                 .build();
     }
 

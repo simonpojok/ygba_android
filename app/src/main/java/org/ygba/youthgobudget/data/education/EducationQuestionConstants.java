@@ -88,4 +88,6 @@ public class EducationQuestionConstants {
     public static final String QUESTION_5_FEMALE_CHANGING_ROOM_BLOCKS = "question_5_female_changing_block_number";
     public static final String QUESTION_5_FEMALE_CHANGING_ROOM_STANCES = "question_5_female_changing_block_stances  ";
     public static final String QUESTION_5_FEMALE_CHANGING_ROOM_FEMALE_STANCES = "question_5_female_changing_female_stances";
+    public static final String QUESTION_5_FEMALE_CHANGING_ROOM_FEMALE_TEACHER_STANCES = "question_5_female_changing_room_female_teacher";
+    public static final String QUESTION_5_FEMALE_CHANGING_ROOM_MIXED_TEACHER = "question_5_female_changing_mixed_teachers";
 }
