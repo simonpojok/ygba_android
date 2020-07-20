@@ -20,6 +20,7 @@ import org.ygba.youthgobudget.utils.DynamicData;
 public class EducationActivity extends AppCompatActivity {
     private final int CAPITAL_RECEIVED_DATE_REQUEST_CODE = 1;
     private final int CAPITAL_DATE_WITHDRAWN_REQUEST_CODE = 2;
+    private final int SFG_DATE_RECEIVED_REQUEST_CODE = 3;
     private TextView eDateTextView;
     private Spinner eFinancialYearSpinner;
     private EditText eVillageEditText;
@@ -134,6 +135,13 @@ public class EducationActivity extends AppCompatActivity {
         eQ3SFGApprovedBudgetEditText = findViewById(R.id.question_3_sfg_approved_budget_edit_text);
         eQ3SFGBudgetReleasedEditText = findViewById(R.id.question_3_sfg_budget_released_edit_text);
         eQ3SFGDateReceivedEditText = findViewById(R.id.question_3_sfg_date_received_edit_text);
+        eQ3SFGDateReceivedEditText.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivityForResult(new Intent(EducationActivity.this, DatePickerActivity.class), SFG_DATE_RECEIVED_REQUEST_CODE);
+            }
+        });
+
 
 
         findViewById(R.id.saved_form_data).setOnClickListener(new View.OnClickListener() {
@@ -212,6 +220,8 @@ public class EducationActivity extends AppCompatActivity {
                 eQ3CapitalBudgetReceivedDateEditText.setText(data.getStringExtra(DatePickerActivity.SELECTED_DATE));
             } else if (requestCode == CAPITAL_DATE_WITHDRAWN_REQUEST_CODE) {
                 eQ3CapitalBudgetDateWithdrawnEditText.setText(data.getStringExtra(DatePickerActivity.SELECTED_DATE));
+            } else if (requestCode == SFG_DATE_RECEIVED_REQUEST_CODE) {
+                eQ3SFGDateReceivedEditText.setText(data.getStringExtra(DatePickerActivity.SELECTED_DATE));
             }
         }
     }
