@@ -89,6 +89,8 @@ public class EducationActivity extends AppCompatActivity {
     private EditText eQ5NumberOfToiletMaleStancesTeacher;
     private EditText eQ5NumberOfToiletFemaleStancesTeacher;
     private EditText eQ5NumberOfToiletMixed;
+    private EditText eQ5NumberOfToiletFunctional;
+    private EditText eQ5NumberOfToiletNonFunctional;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -195,6 +197,8 @@ public class EducationActivity extends AppCompatActivity {
         eQ5NumberOfToiletMaleStancesTeacher = findViewById(R.id.question_4_toilet_teacher_male_stances_edit_text);
         eQ5NumberOfToiletFemaleStancesTeacher = findViewById(R.id.question_4_toilet_teacher_female_stances_edit_text);
         eQ5NumberOfToiletMixed = findViewById(R.id.question_4_toilet_teacher_mixed_stances_edit_text);
+        eQ5NumberOfToiletFunctional = findViewById(R.id.question_4_toilet_functional_edit_text);
+        eQ5NumberOfToiletNonFunctional = findViewById(R.id.question_4_toilet_none_edit_text);
 
         findViewById(R.id.saved_form_data).setOnClickListener(new View.OnClickListener() {
             @Override
@@ -276,6 +280,8 @@ public class EducationActivity extends AppCompatActivity {
                 .setQ5ToiletNumberOfMaleStancesTeacher(getIntegerValue(eQ5NumberOfToiletMaleStancesTeacher))
                 .setQ5ToiletNumberOfFemaleStancesTeacher(getIntegerValue(eQ5NumberOfToiletFemaleStancesTeacher))
                 .setQ5ToiletNumberOfMixedStances(getIntegerValue(eQ5NumberOfToiletMixed))
+                .setQ5ToiletFunctional(getIntegerValue(eQ5NumberOfToiletFunctional))
+                .setQ5ToiletNonFuctional(getIntegerValue(eQ5NumberOfToiletNonFunctional))
                 .build();
     }
 

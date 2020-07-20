@@ -202,6 +202,12 @@ public class EducationQuestion {
     @ColumnInfo(name = EducationQuestionConstants.QUESTION_5_TOILET_NUMBER_MIXED_STANCES)
     private int question5ToiletNumberStancesMixed;
 
+    @ColumnInfo(name = EducationQuestionConstants.QUESTION_5_TOILET_FUNCTIONAL)
+    private int question5ToiletFunctional;
+
+    @ColumnInfo(name = EducationQuestionConstants.QUESTION_5_TOILET_NON_FUNCTIONAL)
+    private int question5ToiletNoneFunctional;
+
 
 
     public static class Builder {
@@ -508,7 +514,7 @@ public class EducationQuestion {
         }
 
         public Builder setQ5ToiletNumberOfFemaleStancesTeacher(int integerValue) {
-            INSTANCE.setQuestion5ToiletNumberStancesFemaleTeachers((integerValue);
+            INSTANCE.setQuestion5ToiletNumberStancesFemaleTeachers(integerValue);
             return this;
         }
 
@@ -516,6 +522,32 @@ public class EducationQuestion {
             INSTANCE.setQuestion5ToiletNumberStancesMixed(integerValue);
             return this;
         }
+
+        public Builder setQ5ToiletFunctional(int integerValue) {
+            INSTANCE.setQuestion5ToiletFunctional(integerValue);
+            return this;
+        }
+
+        public Builder setQ5ToiletNonFuctional(int integerValue) {
+            INSTANCE.setQuestion5ToiletNoneFunctional(integerValue);
+            return this;
+        }
+    }
+
+    public int getQuestion5ToiletNoneFunctional() {
+        return question5ToiletNoneFunctional;
+    }
+
+    public void setQuestion5ToiletNoneFunctional(int question5ToiletNoneFunctional) {
+        this.question5ToiletNoneFunctional = question5ToiletNoneFunctional;
+    }
+
+    public int getQuestion5ToiletFunctional() {
+        return question5ToiletFunctional;
+    }
+
+    public void setQuestion5ToiletFunctional(int question5ToiletFunctional) {
+        this.question5ToiletFunctional = question5ToiletFunctional;
     }
 
     public int getQuestion5ToiletNumberStancesMixed() {
