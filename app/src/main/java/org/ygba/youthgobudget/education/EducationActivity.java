@@ -62,6 +62,7 @@ public class EducationActivity extends AppCompatActivity {
 
     private EditText eQ3SFGApprovedBudgetEditText;
     private EditText eQ3SFGBudgetReleasedEditText;
+    private TextView eQ3SFGDateReceivedEditText;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -131,7 +132,8 @@ public class EducationActivity extends AppCompatActivity {
         });
 
         eQ3SFGApprovedBudgetEditText = findViewById(R.id.question_3_sfg_approved_budget_edit_text);
-        eQ3SFGBudgetReleasedEditText = findViewById(R.id.question_3_sfg_budget_released_edit_text)
+        eQ3SFGBudgetReleasedEditText = findViewById(R.id.question_3_sfg_budget_released_edit_text);
+        eQ3SFGDateReceivedEditText = findViewById(R.id.question_3_sfg_date_received_edit_text);
 
 
         findViewById(R.id.saved_form_data).setOnClickListener(new View.OnClickListener() {
@@ -186,6 +188,7 @@ public class EducationActivity extends AppCompatActivity {
                 .setQ3CapitalGrantDateWithdrawn(getTextValue(eQ3CapitalBudgetDateWithdrawnEditText))
                 .setQ3SFGApprovedBudget(getIntegerValue(eQ3SFGApprovedBudgetEditText))
                 .setQ3SFGBudgetReleased(getIntegerValue(eQ3SFGBudgetReleasedEditText))
+                .setQ3SFGReceivedDate(getTextValue(eQ3SFGDateReceivedEditText))
                 .build();
     }
 
