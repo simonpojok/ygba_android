@@ -236,7 +236,8 @@ public class EducationActivity extends AppCompatActivity {
                 .setQ4Grade3MaleNumber(getIntegerValue(eQ4Grade3MaleEditText))
                 .setQ4Grade4MaleNumber(getIntegerValue(eQ4Grade4MaleEditText))
 
-                .setQ4Grade4FemaleNumber(getIntegerValue(eQ4Grade1GirlEditText))
+                .setQ4Grade1FemaleNumber(getIntegerValue(eQ4Grade1GirlEditText))
+                .setQ4Grade2FemaleNumber(getIntegerValue(eQ4Grade2GirlEditText))
                 .build();
     }
 
