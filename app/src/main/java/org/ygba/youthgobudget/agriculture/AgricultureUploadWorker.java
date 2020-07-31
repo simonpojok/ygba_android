@@ -14,7 +14,13 @@ import com.android.volley.toolbox.JsonObjectRequest;
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
+import org.ygba.youthgobudget.data.YGBDatabase;
+import org.ygba.youthgobudget.data.agriculture.AgricultureDao;
 import org.ygba.youthgobudget.data.agriculture.AgricultureQuestion;
+
+import java.util.List;
+import java.util.concurrent.Callable;
+import java.util.concurrent.ExecutionException;
 
 
 /*
@@ -64,14 +70,20 @@ Schema::create('agriculture', function (Blueprint $table) {
 
 
 public class AgricultureUploadWorker extends Worker {
+    private AgricultureDao agricultureDao;
     public AgricultureUploadWorker(@NonNull Context context, @NonNull WorkerParameters workerParams) {
         super(context, workerParams);
+        agricultureDao = YGBDatabase.getInstance(context.getApplicationContext()).agricultureDao();
     }
 
     @NonNull
     @Override
     public Result doWork() {
+        List<AgricultureQuestion> agricultureQuestions = agricultureDao.getAgricultureQuestionForUpload(true);
         try {
+
+
+
             AgricultureQuestion agricultureQuestion = null;
             JSONObject jsonObject = new JSONObject();
             JSONArray jsonArray = new JSONArray();
@@ -136,6 +148,17 @@ public class AgricultureUploadWorker extends Worker {
             e.printStackTrace();
         }
         return null;
+    }
+
+    private List<AgricultureQuestion> getAgricultureQuestion() throws ExecutionException, InterruptedException {
+        Callable<List<AgricultureQuestion>> listCallable = new Callable<List<AgricultureQuestion>>() {
+
+            @Override
+            public List<AgricultureQuestion> call() throws Exception {
+                return agricultureDao.getAgricultureQuestionForUpload(true);
+            }
+        };
+        return YGBDatabase.db_executor.submit(listCallable).get();
     }
 }
 //        'number_of_field_visits_for_farmer_support',
