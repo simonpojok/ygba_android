@@ -117,6 +117,8 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        // start all workers
+        WorkerTrigger.startAllUploadWorker(this);
     }
 
     @Override
