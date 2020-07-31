@@ -79,75 +79,76 @@ public class AgricultureUploadWorker extends Worker {
     @NonNull
     @Override
     public Result doWork() {
-        List<AgricultureQuestion> agricultureQuestions = agricultureDao.getAgricultureQuestionForUpload(true);
+
         try {
+            List<AgricultureQuestion> agricultureQuestions = getAgricultureQuestion();
+
+            for (AgricultureQuestion agricultureQuestion: agricultureQuestions) {
+
+                JSONObject jsonObject = new JSONObject();
+                JSONArray jsonArray = new JSONArray();
+                JSONObject body = new JSONObject();
+                jsonObject.put("DATA", jsonArray);
+                body.put("financial_year", agricultureQuestion.getFinancialYear());
+                body.put("date_recorded", agricultureQuestion.getDate());
+                body.put("village", agricultureQuestion.getVillage());
+                body.put("parish", agricultureQuestion.getParish());
+                body.put("subcounty", agricultureQuestion.getSubCounty());
+                body.put("staff_name", agricultureQuestion.getAgentName());
+                body.put("phone_id", agricultureQuestion.getAgentNumber());
+                body.put("staff_number", agricultureQuestion.getAgentNumber());
+                body.put("quarter", "No recorded Yet");
+                body.put("gender", "gender");
+                body.put("is_there_substantive_agricultural_extension_worker", agricultureQuestion.getQuestion1Objective());
+                body.put("if_no_why", agricultureQuestion.getQuestion1Reason());
+                body.put("extension_services_expected_or_approved", agricultureQuestion.getQuestion2ExtensionExpectedAmount());
+                body.put("extension_services_amount_received", agricultureQuestion.getQuestion2ExtensionAmountReceived());
+                body.put("extension_services_date_received", agricultureQuestion.getQuestion2ExtensionDateReceived());
+                body.put("extension_services_date_withdrawn", agricultureQuestion.getQuestion2ExtensionDateWithdram());
+                body.put("development_expected_or_approved", agricultureQuestion.getQuestion2DevelopmentAmountExpected());
+                body.put("development_amount_received", agricultureQuestion.getQuestion2DevelopmentAmountReceived());
+                body.put("development_date_received", agricultureQuestion.getQuestion2DevelopmentDateReceived());
+                body.put("development_date_withdrawn", agricultureQuestion.getQuestion2DevelopmentDateWithdrawn());
+                body.put("number_of_field_visits_for_farmer_support", agricultureQuestion.getAnswerQuestion2_1());
+                body.put("advisory_demonstration_community", agricultureQuestion.getAnswerQuestion2_2());
+                body.put("if_yes_how_many_during_the_quarter", agricultureQuestion.getAnswerQuestion2_3());
+                body.put("areas_where_the_meetings_or_workshops_were_held", agricultureQuestion.getAnswerQuestion2_4());
+                body.put("reasons_for_not_conducting_the_community_meeting", agricultureQuestion.getAnswerQuestion2_5());
+                body.put("are_there_any_advisory_services", agricultureQuestion.getAnswerQuestion3_1());
+                body.put("if_yes_how_many_were_done_during_the_quarter", agricultureQuestion.getAnswerQuestion3_2());
+                body.put("mention_the_areas_where_the_visits_were_made", agricultureQuestion.getAnswerQuestion3_3());
+                body.put("female_number_of_farmers_visited_for_advisory_services", agricultureQuestion.getAnswerQuestion3_4_Female());
+                body.put("male_number_of_farmers_visited_for_advisory_services", agricultureQuestion.getAnswerQuestion3_4_Male());
+                body.put("reasons_for_not_conducting_the_farmer_advisory_services_visits", agricultureQuestion.getAnswerQuestion3_5());
+                body.put("reasons_for_no_agriculture_inputs_and_livestock", agricultureQuestion.getAnswerQuestion4_3_reason());
+                body.put("any_other_observations_or_challenges", agricultureQuestion.getAnswerQuestion4_3_otherReason());
 
 
+                JsonObjectRequest jsonObjectRequest = new JsonObjectRequest(
+                        Request.Method.POST,
+                        "",
+                        new JSONObject(),
+                        new Response.Listener<JSONObject>() {
+                            @Override
+                            public void onResponse(JSONObject response) {
 
-            AgricultureQuestion agricultureQuestion = null;
-            JSONObject jsonObject = new JSONObject();
-            JSONArray jsonArray = new JSONArray();
-            JSONObject body = new JSONObject();
+                            }
+                        },
+                        new Response.ErrorListener() {
+                            @Override
+                            public void onErrorResponse(VolleyError error) {
 
-            jsonObject.put("DATA", jsonArray);
-            body.put("financial_year", agricultureQuestion.getFinancialYear());
-            body.put("date_recorded", agricultureQuestion.getDate());
-            body.put("village", agricultureQuestion.getVillage());
-            body.put("parish", agricultureQuestion.getParish());
-            body.put("subcounty", agricultureQuestion.getSubCounty());
-            body.put("staff_name", agricultureQuestion.getAgentName());
-            body.put("phone_id", agricultureQuestion.getAgentNumber());
-            body.put("staff_number", agricultureQuestion.getAgentNumber());
-            body.put("quarter", "No recorded Yet");
-            body.put("gender", "gender");
-            body.put("is_there_substantive_agricultural_extension_worker", agricultureQuestion.getQuestion1Objective());
-            body.put("if_no_why", agricultureQuestion.getQuestion1Reason());
-            body.put("extension_services_expected_or_approved", agricultureQuestion.getQuestion2ExtensionExpectedAmount());
-            body.put("extension_services_amount_received", agricultureQuestion.getQuestion2ExtensionAmountReceived());
-            body.put("extension_services_date_received", agricultureQuestion.getQuestion2ExtensionDateReceived());
-            body.put("extension_services_date_withdrawn", agricultureQuestion.getQuestion2ExtensionDateWithdram());
-            body.put("development_expected_or_approved", agricultureQuestion.getQuestion2DevelopmentAmountExpected());
-            body.put("development_amount_received", agricultureQuestion.getQuestion2DevelopmentAmountReceived());
-            body.put("development_date_received", agricultureQuestion.getQuestion2DevelopmentDateReceived());
-            body.put("development_date_withdrawn", agricultureQuestion.getQuestion2DevelopmentDateWithdrawn());
-            body.put("number_of_field_visits_for_farmer_support", agricultureQuestion.getAnswerQuestion2_1());
-            body.put("advisory_demonstration_community", agricultureQuestion.getAnswerQuestion2_2());
-            body.put("if_yes_how_many_during_the_quarter", agricultureQuestion.getAnswerQuestion2_3());
-            body.put("areas_where_the_meetings_or_workshops_were_held", agricultureQuestion.getAnswerQuestion2_4());
-            body.put("reasons_for_not_conducting_the_community_meeting", agricultureQuestion.getAnswerQuestion2_5());
-            body.put("are_there_any_advisory_services", agricultureQuestion.getAnswerQuestion3_1());
-            body.put("if_yes_how_many_were_done_during_the_quarter", agricultureQuestion.getAnswerQuestion3_2());
-            body.put("mention_the_areas_where_the_visits_were_made", agricultureQuestion.getAnswerQuestion3_3());
-            body.put("female_number_of_farmers_visited_for_advisory_services", agricultureQuestion.getAnswerQuestion3_4_Female());
-            body.put("male_number_of_farmers_visited_for_advisory_services", agricultureQuestion.getAnswerQuestion3_4_Male());
-            body.put("reasons_for_not_conducting_the_farmer_advisory_services_visits", agricultureQuestion.getAnswerQuestion3_5());
-            body.put("reasons_for_no_agriculture_inputs_and_livestock", agricultureQuestion.getAnswerQuestion4_3_reason());
-            body.put("any_other_observations_or_challenges", agricultureQuestion.getAnswerQuestion4_3_otherReason());
-
-
-            JsonObjectRequest jsonObjectRequest = new JsonObjectRequest(
-                    Request.Method.POST,
-                    "",
-                    new JSONObject(),
-                    new Response.Listener<JSONObject>() {
-                        @Override
-                        public void onResponse(JSONObject response) {
-
+                            }
                         }
-                    },
-                    new Response.ErrorListener() {
-                        @Override
-                        public void onErrorResponse(VolleyError error) {
-
-                        }
-                    }
-            );
+                );
+            }
 
 
-        } catch (JSONException e) {
+        } catch (JSONException | ExecutionException | InterruptedException e) {
             e.printStackTrace();
+            return Result.failure();
         }
-        return null;
+        return Result.retry();
     }
 
     private List<AgricultureQuestion> getAgricultureQuestion() throws ExecutionException, InterruptedException {
@@ -161,7 +162,3 @@ public class AgricultureUploadWorker extends Worker {
         return YGBDatabase.db_executor.submit(listCallable).get();
     }
 }
-//        'number_of_field_visits_for_farmer_support',
-//        'mention_the_areas_where_the_visits_were_made',
-//        'any_owc_inputs',
-//        'owc_inputs'
