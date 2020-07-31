@@ -16,4 +16,10 @@ public interface AgricultureDao {
             "SELECT * FROM " + AgricultureConstants.TABLE_NAME
     )
     LiveData<List<AgricultureQuestion>> getAllAgricultureAnswers();
+
+    @Query(
+            "SELECT * FROM " + AgricultureConstants.TABLE_NAME
+            + " WHERE " + AgricultureConstants.IS_STORED_LOCALLY + " =:isStoredLocally"
+    )
+    List<AgricultureQuestion> getAgricultureQuestionForUpload(boolean isStoredLocally);
 }

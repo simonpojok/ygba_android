@@ -71,11 +71,12 @@ public class AgricultureUploadWorker extends Worker {
     @NonNull
     @Override
     public Result doWork() {
-        AgricultureQuestion agricultureQuestion = null;
-        JSONObject jsonObject = new JSONObject();
-        JSONArray jsonArray = new JSONArray();
-        JSONObject body = new JSONObject();
         try {
+            AgricultureQuestion agricultureQuestion = null;
+            JSONObject jsonObject = new JSONObject();
+            JSONArray jsonArray = new JSONArray();
+            JSONObject body = new JSONObject();
+
             jsonObject.put("DATA", jsonArray);
             body.put("financial_year", agricultureQuestion.getFinancialYear());
             body.put("date_recorded", agricultureQuestion.getDate());
@@ -112,28 +113,28 @@ public class AgricultureUploadWorker extends Worker {
             body.put("any_other_observations_or_challenges", agricultureQuestion.getAnswerQuestion4_3_otherReason());
 
 
+            JsonObjectRequest jsonObjectRequest = new JsonObjectRequest(
+                    Request.Method.POST,
+                    "",
+                    new JSONObject(),
+                    new Response.Listener<JSONObject>() {
+                        @Override
+                        public void onResponse(JSONObject response) {
+
+                        }
+                    },
+                    new Response.ErrorListener() {
+                        @Override
+                        public void onErrorResponse(VolleyError error) {
+
+                        }
+                    }
+            );
+
 
         } catch (JSONException e) {
             e.printStackTrace();
         }
-        JsonObjectRequest jsonObjectRequest = new JsonObjectRequest(
-                Request.Method.POST,
-                "",
-                new JSONObject(),
-                new Response.Listener<JSONObject>() {
-                    @Override
-                    public void onResponse(JSONObject response) {
-
-                    }
-                },
-                new Response.ErrorListener() {
-                    @Override
-                    public void onErrorResponse(VolleyError error) {
-
-                    }
-                }
-        );
-
         return null;
     }
 }
