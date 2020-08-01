@@ -44,6 +44,9 @@ public class HealthQuestion {
     @ColumnInfo(name = HealthQuestionConstants.NUMBER_OUT_PATIENTS_QUESTION_B)
     private int questionBOutPatientOPDAttendance;
 
+    @ColumnInfo(name = HealthQuestionConstants.QUESTION_C_IN_PATIENT)
+    private int questionCInPatientAttendance;
+
 
     private HealthQuestion() {}
 
@@ -112,6 +115,19 @@ public class HealthQuestion {
             INSTANCE.setQuestionBOutPatientOPDAttendance(integerValue);
             return this;
         }
+
+        public Builder setQuestionCInPatientAttendance(int integerValue) {
+            INSTANCE.setQuestionCInPatientAttendance(integerValue);
+            return this;
+        }
+    }
+
+    public int getQuestionCInPatientAttendance() {
+        return questionCInPatientAttendance;
+    }
+
+    public void setQuestionCInPatientAttendance(int questionCInPatientAttendance) {
+        this.questionCInPatientAttendance = questionCInPatientAttendance;
     }
 
     public int getQuestionBOutPatientOPDAttendance() {

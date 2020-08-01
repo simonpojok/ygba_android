@@ -14,4 +14,5 @@ public class HealthQuestionConstants {
     public static final String TEL_NUMBER = "tell_number";
     public static final String NAME_AND_GRADE_HEALTH_CENTER = "question_a_health";
     public static final String NUMBER_OUT_PATIENTS_QUESTION_B = "question_b";
+    public static final String QUESTION_C_IN_PATIENT = "question_c_in_patients";
 }

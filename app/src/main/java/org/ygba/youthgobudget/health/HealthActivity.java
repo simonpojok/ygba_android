@@ -202,8 +202,8 @@ public class HealthActivity extends AppCompatActivity {
         agentFulNameEditText = findViewById(R.id.ygb_agent_name_edit_view);
         agentTelEditText = findViewById(R.id.ygb_agent_tel_edit_view);
         qQANameAndGradeHealthCenterEditText = findViewById(R.id.h_name_and_grade_health_center);
-
         hQBAttendanceEditText = findViewById(R.id.h_question_d_attendance_edit_text);
+
         hQCInpatientNumberEditText = findViewById(R.id.h_question_c_inpatient_number);
         hQ1RecurrentApprovedEditText = findViewById(R.id.h_question_1_recurrent_approved);
         hQ1RecurrentBudgetReleaseTextEdit = findViewById(R.id.h_question_1_recurrent_budget_released_edit_text);
@@ -319,6 +319,7 @@ public class HealthActivity extends AppCompatActivity {
                 .setTelNumber(getTextValue(agentTelEditText))
                 .setNameAndGradeHealthCenter(getTextValue(qQANameAndGradeHealthCenterEditText))
                 .setQuestionBOutPatientOPD(getIntegerValue(hQBAttendanceEditText))
+                .setQuestionCInPatientAttendance(getIntegerValue(hQCInpatientNumberEditText))
                 .build();
     }
 
