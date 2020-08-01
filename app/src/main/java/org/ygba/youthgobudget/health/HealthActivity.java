@@ -17,6 +17,7 @@ import android.widget.Spinner;
 import android.widget.TextView;
 
 import org.ygba.youthgobudget.R;
+import org.ygba.youthgobudget.data.health.HealthQuestion;
 import org.ygba.youthgobudget.dialogs.DatePickerActivity;
 
 public class HealthActivity extends AppCompatActivity {
@@ -302,6 +303,11 @@ public class HealthActivity extends AppCompatActivity {
                 // save form data
             }
         });
+    }
+
+    private void saveHealthQuestion() {
+        HealthQuestion healthQuestion = new HealthQuestion.Builder()
+                .build();
     }
 
 
