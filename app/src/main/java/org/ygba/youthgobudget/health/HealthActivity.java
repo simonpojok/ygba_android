@@ -343,6 +343,11 @@ public class HealthActivity extends AppCompatActivity {
                 .setQuestion2GeneralWardYesNo(getQuestion2GeneralWardObjective())
                 .setQuestion2DeliveryBedsYesNo(getQuestion2DeliveryBedsObjective())
                 .setQuestion2FamilyPlanningServicesYesNo(getQuestion2FamilyPlanningServicesObjective())
+                .setQuestion2HIVCounsellingTestingAndTreatmentYesNo(getQuestion2HIVCounsellingTestingObjective())
+                .setQuestion2PMTCTYesNo(getQuestion2PMTCTObjective())
+                .setQuestion2ImmunizationYesNo(getQuestion2ImmunizationObjective())
+                .setQuestion2YouthFriendlyCornersYesNo(getQuestion2YouthFriendlyCornersObjective())
+                .setQuestion2Vaccination4HEPBYesNo(getQuestion2VaccinationHEPBObjective())
                 .build();
     }
 

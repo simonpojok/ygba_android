@@ -56,11 +56,13 @@ public class HealthQuestionUploadWorker extends Worker {
             body.put("is_general_ward", healthQuestion.isQuestion2GeneralWardYesNo());
             body.put("are_there_delivery_beds", healthQuestion.isQuestion2DeliveryBedsYesNo());
             body.put("are_there_family_planing_services", healthQuestion.isQuestion2FamilyPlanningServicesYesNo());
-            body.put("are_there_hiv_services", "");
-            body.put("is_pmtct", "");
-            body.put("is_immunization", "");
-            body.put("is_youth_friendly_corners", "");
-            body.put("is_vaccination_for_hep_b", "");
+            body.put("are_there_hiv_services", healthQuestion.isQuestion2HIVCounsellingTestingAndTreatmentYesNo());
+            body.put("is_pmtct", healthQuestion.isQuestion2PMTCTYesNo());
+            body.put("is_immunization", healthQuestion.isQuestion2ImmunizationYesNo());
+            body.put("is_youth_friendly_corners", healthQuestion.isQuestion2YouthFriendlyCornersYesNo());
+            body.put("is_vaccination_for_hep_b", healthQuestion.isQuestion2Vaccination4HEPBYesNo());
+
+            // 2 1
 
 
         } catch (Exception e) {

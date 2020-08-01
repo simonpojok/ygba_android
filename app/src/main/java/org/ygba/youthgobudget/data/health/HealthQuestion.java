@@ -89,6 +89,21 @@ public class HealthQuestion {
     @ColumnInfo(name = HealthQuestionConstants.QUESTION_2_FAMILY_PLANNING_YES_NO)
     private boolean question2FamilyPlanningServicesYesNo;
 
+    @ColumnInfo(name = HealthQuestionConstants.QUESTION_2_HIV_TESTING_AND_TREACTMENT)
+    private boolean question2HIVCounsellingTestingAndTreatmentYesNo;
+
+    @ColumnInfo(name = HealthQuestionConstants.QUESTION_2_PMTCT)
+    private boolean question2PMTCTYesNo;
+
+    @ColumnInfo(name = HealthQuestionConstants.QUESTION_2_IMMUNIZATION_YES_NO)
+    private boolean question2ImmunizationYesNo;
+
+    @ColumnInfo(name = HealthQuestionConstants.QUESTION_2_YOUTH_FRIENDLY_CORNERS_YES_NO)
+    private boolean question2YouthFriendlyCornersYesNo;
+
+    @ColumnInfo(name = HealthQuestionConstants.QUESTION_2_HEP_B_YES_NO)
+    private boolean question2Vaccination4HEPBYesNo;
+
     private HealthQuestion() {}
 
     public static class Builder {
@@ -231,6 +246,71 @@ public class HealthQuestion {
             INSTANCE.setQuestion2FamilyPlanningServicesYesNo(question2FamilyPlanningServicesObjective);
             return this;
         }
+
+        public Builder setQuestion2HIVCounsellingTestingAndTreatmentYesNo(boolean question2HIVCounsellingTestingObjective) {
+            INSTANCE.setQuestion2HIVCounsellingTestingAndTreatmentYesNo(question2HIVCounsellingTestingObjective);
+            return this;
+        }
+
+        public Builder setQuestion2PMTCTYesNo(boolean question2PMTCTObjective) {
+            INSTANCE.setQuestion2PMTCTYesNo(question2PMTCTObjective);
+            return this;
+        }
+
+        public Builder setQuestion2ImmunizationYesNo(boolean question2ImmunizationObjective) {
+            INSTANCE.setQuestion2ImmunizationYesNo(question2ImmunizationObjective);
+            return this;
+        }
+
+        public Builder setQuestion2YouthFriendlyCornersYesNo(boolean question2YouthFriendlyCornersObjective) {
+            INSTANCE.setQuestion2YouthFriendlyCornersYesNo(question2YouthFriendlyCornersObjective);
+            return this;
+        }
+
+        public Builder setQuestion2Vaccination4HEPBYesNo(boolean question2VaccinationHEPBObjective) {
+            INSTANCE.setQuestion2Vaccination4HEPBYesNo(question2VaccinationHEPBObjective);
+            return this;
+        }
+    }
+
+    public boolean isQuestion2Vaccination4HEPBYesNo() {
+        return question2Vaccination4HEPBYesNo;
+    }
+
+    public void setQuestion2Vaccination4HEPBYesNo(boolean question2Vaccination4HEPBYesNo) {
+        this.question2Vaccination4HEPBYesNo = question2Vaccination4HEPBYesNo;
+    }
+
+    public boolean isQuestion2YouthFriendlyCornersYesNo() {
+        return question2YouthFriendlyCornersYesNo;
+    }
+
+    public void setQuestion2YouthFriendlyCornersYesNo(boolean question2YouthFriendlyCornersYesNo) {
+        this.question2YouthFriendlyCornersYesNo = question2YouthFriendlyCornersYesNo;
+    }
+
+    public boolean isQuestion2ImmunizationYesNo() {
+        return question2ImmunizationYesNo;
+    }
+
+    public void setQuestion2ImmunizationYesNo(boolean question2ImmunizationYesNo) {
+        this.question2ImmunizationYesNo = question2ImmunizationYesNo;
+    }
+
+    public boolean isQuestion2PMTCTYesNo() {
+        return question2PMTCTYesNo;
+    }
+
+    public void setQuestion2PMTCTYesNo(boolean question2PMTCTYesNo) {
+        this.question2PMTCTYesNo = question2PMTCTYesNo;
+    }
+
+    public boolean isQuestion2HIVCounsellingTestingAndTreatmentYesNo() {
+        return question2HIVCounsellingTestingAndTreatmentYesNo;
+    }
+
+    public void setQuestion2HIVCounsellingTestingAndTreatmentYesNo(boolean question2HIVCounsellingTestingAndTreatmentYesNo) {
+        this.question2HIVCounsellingTestingAndTreatmentYesNo = question2HIVCounsellingTestingAndTreatmentYesNo;
     }
 
     public boolean isQuestion2FamilyPlanningServicesYesNo() {

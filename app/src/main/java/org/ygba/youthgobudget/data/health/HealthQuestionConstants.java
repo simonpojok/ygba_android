@@ -29,4 +29,9 @@ public class HealthQuestionConstants {
     public static final String QUESTION_2_GENERAL_WARD_YES_NO = "general_ward_yes_no";
     public static final String QUESTION_2_DELIVERY_YES_NO = "delivery_beds_yes_no";
     public static final String QUESTION_2_FAMILY_PLANNING_YES_NO = "family_planning_yes_no";
+    public static final String QUESTION_2_HIV_TESTING_AND_TREACTMENT = "hiv_yes_no";
+    public static final String QUESTION_2_PMTCT = "question_pmtctc_yes_no";
+    public static final String QUESTION_2_IMMUNIZATION_YES_NO = "immunization_yes_no";
+    public static final String QUESTION_2_YOUTH_FRIENDLY_CORNERS_YES_NO = "youth_corners_yes_no";
+    public static final String QUESTION_2_HEP_B_YES_NO = "hep_2_b";
 }
