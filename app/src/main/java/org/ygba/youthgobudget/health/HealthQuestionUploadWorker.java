@@ -6,6 +6,10 @@ import androidx.annotation.NonNull;
 import androidx.work.Worker;
 import androidx.work.WorkerParameters;
 
+import org.json.JSONArray;
+import org.json.JSONObject;
+import org.ygba.youthgobudget.data.health.HealthQuestion;
+
 public class HealthQuestionUploadWorker extends Worker {
     public HealthQuestionUploadWorker(@NonNull Context context, @NonNull WorkerParameters workerParams) {
         super(context, workerParams);
@@ -15,6 +19,50 @@ public class HealthQuestionUploadWorker extends Worker {
     @Override
     public Result doWork() {
         try {
+            HealthQuestion healthQuestion = null;
+            JSONObject body = new JSONObject();
+            body.put("record_id", healthQuestion.getPrimaryKey());
+            body.put("financial_yr", healthQuestion.getFinancialYear());
+            body.put("quarter", healthQuestion.getFinancialYearQuarter());
+            body.put("date", healthQuestion.getData());
+            body.put("district", healthQuestion.getDistrict());
+            body.put("region", "Some Region");
+            body.put("village", healthQuestion.getVillage());
+            // TODO: Parish array
+            body.put("parish", healthQuestion.getParish());
+            body.put("subcounty", healthQuestion.getTownCouncil());
+            body.put("staffName", healthQuestion.getNameMonitorAgent());
+            body.put("staff_phone", healthQuestion.getTelNumber());
+            body.put("health_center_name", healthQuestion.getQuestionANameHealthCenter());
+            body.put("health_center_grade", "Name Not Provided Yet");
+            body.put("no_of_outpatients", healthQuestion.getQuestionBOutPatientOPDAttendance());
+            body.put("no_of_inpatients", healthQuestion.getQuestionCInPatientAttendance());
+
+            // first table
+            body.put("grant_recurrent_approved", healthQuestion.getQuestion1RecurrentApprovedBudget());
+            body.put("grant_recurrent_released", healthQuestion.getQuestion1RecurrentBudgetReleased());
+            body.put("grant_recurrent_date_received", healthQuestion.getQuestion1RecurrentDateReceived());
+            body.put("grant_recurrent_date_withdrawn", healthQuestion.getQuestion1RecurrentDateWithdrawn());
+
+            body.put("grant_devt_approved", healthQuestion.getQuestion1DevelopmentApprovedBudget());
+            body.put("grant_devt_released", healthQuestion.getQuestion1DevelopmentReleasedBudget());
+            body.put("grant_devt_date_received", healthQuestion.getQuestion1DevelopmentReleasedBudget());
+            body.put("grant_devt_date_withdrawn", healthQuestion.getQuestion1DevelopmentDateWithdrawn());
+
+            // array
+            JSONArray displayArray = new JSONArray();
+            displayArray.put("Health facility notice board");
+            displayArray.put("In charge’s or Facility Admin. Office");
+            displayArray.put("Not displayed");
+            body.put("where_public_display_of_budget_info", displayArray);
+
+            JSONArray quarterArray = new JSONArray();
+            quarterArray.put("quarter1");
+            quarterArray.put("quarter2");
+            quarterArray.put("quarter3");
+            quarterArray.put("quarter4");
+            body.put("period_to_which_budget_info_relates", quarterArray);
+
 
         } catch (Exception e) {
 

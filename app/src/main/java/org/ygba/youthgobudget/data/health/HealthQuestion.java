@@ -266,7 +266,7 @@ public class HealthQuestion {
         this.questionBOutPatientOPDAttendance = questionBOutPatientOPDAttendance;
     }
 
-    public String getQuestionANameAndGradeHealthCenter() {
+    public String getQuestionANameHealthCenter() {
         return questionANameAndGradeHealthCenter;
     }
 
