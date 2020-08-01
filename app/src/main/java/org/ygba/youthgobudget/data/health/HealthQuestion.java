@@ -140,6 +140,9 @@ public class HealthQuestion {
     @ColumnInfo(name = HealthQuestionConstants.QUESTION_3_0_TOILET_NONE_FUNCTION_NUMBER)
     private int question3ToiletNonFunctionNumber;
 
+    @ColumnInfo(name = HealthQuestionConstants.QUESTION_3_0_LATRINE_NUMBER_BLOCKS)
+    private int question3LatrineNumberBlocks;
+
     private HealthQuestion() {}
 
     public static class Builder {
@@ -367,6 +370,19 @@ public class HealthQuestion {
             INSTANCE.setQuestion3ToiletNonFunctionNumber(integerValue);
             return this;
         }
+
+        public Builder setQuestion3LatrineNumberBlocks(int integerValue) {
+            INSTANCE.setQuestion3LatrineNumberBlocks(integerValue);
+            return this;
+        }
+    }
+
+    public int getQuestion3LatrineNumberBlocks() {
+        return question3LatrineNumberBlocks;
+    }
+
+    public void setQuestion3LatrineNumberBlocks(int question3LatrineNumberBlocks) {
+        this.question3LatrineNumberBlocks = question3LatrineNumberBlocks;
     }
 
     public int getQuestion3ToiletNonFunctionNumber() {

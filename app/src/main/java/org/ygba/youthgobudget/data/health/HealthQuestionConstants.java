@@ -46,4 +46,5 @@ public class HealthQuestionConstants {
     public static final String QUESTION_3_0_HEALTH_MIXED_NUMBER_STANCES = "wwrbbjnjiouydyhddvsvhsfdfgsdfgsddff";
     public static final String QUESTION_3_4_TOILET_NUMBER_FUNCTIONAL = "QUESTION_3_4_TOILET_NUMBER_FUNCTIONAL";
     public static final String QUESTION_3_0_TOILET_NONE_FUNCTION_NUMBER = "QUESTION_3_0_TOILET_NONE_FUNCTION_NUMBER";
+    public static final String QUESTION_3_0_LATRINE_NUMBER_BLOCKS = "QUESTION_3_0_LATRINE_NUMBER_BLOCKS";
 }

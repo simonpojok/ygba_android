@@ -256,6 +256,7 @@ public class HealthActivity extends AppCompatActivity {
         hQ3StaffLatrineMixedStances = findViewById(R.id.health_3_latrine_staff_mixed_stances);
         hQ3StaffLatrineFunctional =  findViewById(R.id.health_3_latrine_functional);
         hQ3StaffLatrineNone = findViewById(R.id.health_3_latrine_none);
+
         hQ3FFCNumberBlocks = findViewById(R.id.health_3_ffc_blocks);
         hQ3FFCNumberStances = findViewById(R.id.health_3_ffc_stances);
         hQ3PatientFFCFemaleStances = findViewById(R.id.health_3_ffc_patients_female_stances);
@@ -367,7 +368,21 @@ public class HealthActivity extends AppCompatActivity {
                 .setQuestion3HealthStaffNumberToiletMixedStances(getIntegerValue(hQ3StaffToiletMixedStances))
                 .setQuestion3ToiletFunctionalNumber(getIntegerValue(hQ3StaffToiletFunctional))
                 .setQuestion3ToiletNonFunctionNumber(getIntegerValue( hQ3StaffToiletNone))
+
+                // latrine
+                .setQuestion3LatrineNumberBlocks(getIntegerValue(hQ3LatrineNumberBlocks))
                 .build();
+
+
+        hQ3LatrineNumberBlocks = findViewById(R.id.health_3_latrine_blocks);
+        hQ3LatrineNumberStances = findViewById(R.id.health_3_latrine_stances);
+        hQ3PatientLatrineMaleStances = findViewById(R.id.health_3_latrine_patients_male_stances);
+        hQ3PatientLatrineFemaleStances = findViewById(R.id.health_3_latrine_patients_female_stances);
+        hQ3StaffLatrineMaleStances = findViewById(R.id.health_3_latrine_staff_male_stances);
+        hQ3StaffLatrineFemaleStances = findViewById(R.id.health_3_latrine_staff_female_stances);
+        hQ3StaffLatrineMixedStances = findViewById(R.id.health_3_latrine_staff_mixed_stances);
+        hQ3StaffLatrineFunctional =  findViewById(R.id.health_3_latrine_functional);
+        hQ3StaffLatrineNone = findViewById(R.id.health_3_latrine_none);
     }
 
 

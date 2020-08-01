@@ -80,6 +80,16 @@ public class HealthQuestionUploadWorker extends Worker {
             body.put("no_santn_toilet_functional", healthQuestion.getQuestion3ToiletFunctionalNumber());
             body.put("no_santn_toilet_non_functional", healthQuestion.getQuestion3ToiletNonFunctionNumber());
 
+            // row 2
+            body.put("no_santn_latrine_blocks", healthQuestion.getQuestion3LatrineNumberBlocks());
+            body.put("no_santn_latrine_stances", 78);
+            body.put("no_santn_latrine_patient_male_stances", 90);
+            body.put("no_santn_latrine_patient_female_stances", 999);
+            body.put("no_santn_latrine_male_staff", 675);
+            body.put("no_santn_latrine_female_staff", 787);
+            body.put("no_santn_latrine_mixed_staff", 887);
+            body.put("no_santn_latrine_non_functional", 898);
+
 
         } catch (JSONException e) {
             e.printStackTrace();
