@@ -390,6 +390,10 @@ public class HealthActivity extends AppCompatActivity {
                 .setQuestion3FCRNumberStaffMixedStances(getIntegerValue(hQ3StaffFFCMixedStances))
                 .setQuestion3FCRNumberFunctionalStances(getIntegerValue(hQ3StaffFFCFunctional))
                 .setQuestion3FCRNumberNoneFunction(getIntegerValue(hQ3StaffFFCNone))
+
+                // 31
+                .setQuestion31HealthFacilityToiletFacilities(getQuestion31ToiletObjective())
+                .setQuestion32HealthFacilityToiletReasonFacilities("reasons")
                 .build();
 
     }

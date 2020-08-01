@@ -191,6 +191,13 @@ public class HealthQuestion {
     @ColumnInfo(name = HealthQuestionConstants.QUESTION_3_0_FCR_NONE_FUNCTION)
     private int question3FCRNumberNoneFunction;
 
+    @ColumnInfo(name = HealthQuestionConstants.QUESTION_3_0_FCR_REASON_PWD_FRIENDLY)
+    private String question32HealthFacilityToiletReasonFacilities;
+
+
+    @ColumnInfo(name = HealthQuestionConstants.QUESTION_3_1_HEALTH_FACILITY_FACILITIES)
+    private boolean question31HealthFacilityToiletFacilities;
+
     private HealthQuestion() {}
 
     public static class Builder {
@@ -503,6 +510,32 @@ public class HealthQuestion {
             INSTANCE.setQuestion3FCRNumberNoneFunction(integerValue);
             return this;
         }
+
+        public Builder setQuestion31HealthFacilityToiletFacilities(boolean question31ToiletObjective) {
+            INSTANCE.setQuestion31HealthFacilityToiletFacilities(question31ToiletObjective);
+            return this;
+        }
+
+        public Builder setQuestion32HealthFacilityToiletReasonFacilities(String reasons) {
+            INSTANCE.setQuestion32HealthFacilityToiletReasonFacilities(reasons);
+            return this;
+        }
+    }
+
+    public String getQuestion32HealthFacilityToiletReasonFacilities() {
+        return question32HealthFacilityToiletReasonFacilities;
+    }
+
+    public void setQuestion32HealthFacilityToiletReasonFacilities(String question32HealthFacilityToiletReasonFacilities) {
+        this.question32HealthFacilityToiletReasonFacilities = question32HealthFacilityToiletReasonFacilities;
+    }
+
+    public boolean isQuestion31HealthFacilityToiletFacilities() {
+        return question31HealthFacilityToiletFacilities;
+    }
+
+    public void setQuestion31HealthFacilityToiletFacilities(boolean question31HealthFacilityToiletFacilities) {
+        this.question31HealthFacilityToiletFacilities = question31HealthFacilityToiletFacilities;
     }
 
     public int getQuestion3FCRNumberNoneFunction() {

@@ -100,6 +100,11 @@ public class HealthQuestionUploadWorker extends Worker {
             body.put("no_santn_female_change_rm_functional", healthQuestion.getQuestion3FCRNumberFunctionalStances());
             body.put("no_santn_female_change_rm_non_functional", healthQuestion.getQuestion3FCRNumberNoneFunction());
 
+            body.put("are_health_disabled_toilets", healthQuestion.isQuestion31HealthFacilityToiletFacilities());
+            body.put("if_yes_method_of_access", healthQuestion.getQuestion32HealthFacilityToiletReasonFacilities());
+
+            // question 4
+
 
         } catch (JSONException e) {
             e.printStackTrace();
