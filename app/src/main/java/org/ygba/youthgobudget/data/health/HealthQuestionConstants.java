@@ -11,4 +11,7 @@ public class HealthQuestionConstants {
     public static final String PARISH_NAME = "parish";
     public static final String TOWN_COUNCIL = "town_council";
     public static final String NAME_MONITOR_AGENT = "name_monitor_agent";
+    public static final String TEL_NUMBER = "tell_number";
+    public static final String NAME_AND_GRADE_HEALTH_CENTER = "question_a_health";
+    public static final String NUMBER_OUT_PATIENTS_QUESTION_B = "question_b";
 }

@@ -35,6 +35,15 @@ public class HealthQuestion {
     @ColumnInfo(name = HealthQuestionConstants.NAME_MONITOR_AGENT)
     private String nameMonitorAgent;
 
+    @ColumnInfo(name = HealthQuestionConstants.TEL_NUMBER)
+    private String telNumber;
+
+    @ColumnInfo(name = HealthQuestionConstants.NAME_AND_GRADE_HEALTH_CENTER)
+    private String questionANameAndGradeHealthCenter;
+
+    @ColumnInfo(name = HealthQuestionConstants.NUMBER_OUT_PATIENTS_QUESTION_B)
+    private int questionBOutPatientOPDAttendance;
+
 
     private HealthQuestion() {}
 
@@ -88,6 +97,45 @@ public class HealthQuestion {
             INSTANCE.setNameMonitorAgent(textValue);
             return this;
         }
+
+        public Builder setTelNumber(String textValue) {
+            INSTANCE.setTelNumber(textValue);
+            return this;
+        }
+
+        public Builder setNameAndGradeHealthCenter(String textValue) {
+            INSTANCE.setQuestionANameAndGradeHealthCenter(textValue);
+            return this;
+        }
+
+        public Builder setQuestionBOutPatientOPD(int integerValue) {
+            INSTANCE.setQuestionBOutPatientOPDAttendance(integerValue);
+            return this;
+        }
+    }
+
+    public int getQuestionBOutPatientOPDAttendance() {
+        return questionBOutPatientOPDAttendance;
+    }
+
+    public void setQuestionBOutPatientOPDAttendance(int questionBOutPatientOPDAttendance) {
+        this.questionBOutPatientOPDAttendance = questionBOutPatientOPDAttendance;
+    }
+
+    public String getQuestionANameAndGradeHealthCenter() {
+        return questionANameAndGradeHealthCenter;
+    }
+
+    public void setQuestionANameAndGradeHealthCenter(String questionANameAndGradeHealthCenter) {
+        this.questionANameAndGradeHealthCenter = questionANameAndGradeHealthCenter;
+    }
+
+    public String getTelNumber() {
+        return telNumber;
+    }
+
+    public void setTelNumber(String telNumber) {
+        this.telNumber = telNumber;
     }
 
     public String getNameMonitorAgent() {
