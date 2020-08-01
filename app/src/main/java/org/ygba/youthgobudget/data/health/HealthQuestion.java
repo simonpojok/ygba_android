@@ -22,4 +22,16 @@ public class HealthQuestion {
 
 
     private HealthQuestion() {}
+
+    public static class Builder {
+        private final HealthQuestion INSTANCE;
+
+        public Builder() {
+            INSTANCE = new HealthQuestion();
+        }
+
+        public HealthQuestion build() {
+            return INSTANCE;
+        }
+    }
 }
