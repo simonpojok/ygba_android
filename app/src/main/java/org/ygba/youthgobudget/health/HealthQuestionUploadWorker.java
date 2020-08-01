@@ -51,6 +51,17 @@ public class HealthQuestionUploadWorker extends Worker {
             body.put("where_public_display_of_budget_info", healthQuestion.getQuestion11DisplayBudgetInformation());
             body.put("period_to_which_budget_info_relates", healthQuestion.getQuestion12BudgetInformationRelates());
 
+            // 2
+            body.put("is_maternity_ward", healthQuestion.isQuestion2MaternityYesNo());
+            body.put("is_general_ward", healthQuestion.isQuestion2GeneralWardYesNo());
+            body.put("are_there_delivery_beds", "");
+            body.put("are_there_family_planing_services", "");
+            body.put("are_there_hiv_services", "");
+            body.put("is_pmtct", "");
+            body.put("is_immunization", "");
+            body.put("is_youth_friendly_corners", "");
+            body.put("is_vaccination_for_hep_b", "");
+
 
         } catch (Exception e) {
 

@@ -77,6 +77,12 @@ public class HealthQuestion {
     @ColumnInfo(name = HealthQuestionConstants.QUESTION_1_2_DISPLAY_INFORMATION_RELATES)
     private String question12BudgetInformationRelates;
 
+    @ColumnInfo(name = HealthQuestionConstants.QUESTION_2_MATERNITY_YES_NO)
+    private boolean question2MaternityYesNo;
+
+    @ColumnInfo(name = HealthQuestionConstants.QUESTION_2_GENERAL_WARD_YES_NO)
+    private boolean question2GeneralWardYesNo;
+
     private HealthQuestion() {}
 
     public static class Builder {
@@ -199,6 +205,36 @@ public class HealthQuestion {
             INSTANCE.setQuestion12BudgetInformationRelates(textValue);
             return this;
         }
+
+        public Builder setQuestion2MaternityYesNo(boolean question2MaternityWardObjective) {
+            INSTANCE.setQuestion2MaternityYesNo(question2MaternityWardObjective);
+            return this;
+        }
+
+        public Builder setQuestion2GeneralWardYesNo(boolean question2GeneralWardObjective) {
+            INSTANCE.setQuestion2GeneralWardYesNo(question2GeneralWardObjective);
+            return this;
+        }
+    }
+
+    public boolean isQuestion2GeneralWardYesNo() {
+        return question2GeneralWardYesNo;
+    }
+
+    public void setQuestion2GeneralWardYesNo(boolean question2GeneralWardYesNo) {
+        this.question2GeneralWardYesNo = question2GeneralWardYesNo;
+    }
+
+    public String getQuestionANameAndGradeHealthCenter() {
+        return questionANameAndGradeHealthCenter;
+    }
+
+    public boolean isQuestion2MaternityYesNo() {
+        return question2MaternityYesNo;
+    }
+
+    public void setQuestion2MaternityYesNo(boolean question2MaternityYesNo) {
+        this.question2MaternityYesNo = question2MaternityYesNo;
     }
 
     public String getQuestion12BudgetInformationRelates() {

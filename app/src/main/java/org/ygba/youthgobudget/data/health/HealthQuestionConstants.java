@@ -25,4 +25,6 @@ public class HealthQuestionConstants {
     public static final String QUESTION_1_DEVELOPMENT_DATE_WITHDRAWN = "question_1_development_date_withdrawn";
     public static final String QUESTION_1_1_DISPLAY_AREA = "question_1_1_display_area";
     public static final String QUESTION_1_2_DISPLAY_INFORMATION_RELATES = "question_1_2_display_reason";
+    public static final String QUESTION_2_MATERNITY_YES_NO = "maternity_yes_no";
+    public static final String QUESTION_2_GENERAL_WARD_YES_NO = "general_ward_yes_no";
 }

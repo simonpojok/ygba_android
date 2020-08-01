@@ -340,6 +340,10 @@ public class HealthActivity extends AppCompatActivity {
 
                 .setQuestion11DisplayBudgetInformation("Display Area")
                 .setQuestion12BudgetInformationRelates(getTextValue(hQ1_2BudgetInformationEditText))
+
+
+                .setQuestion2MaternityYesNo(getQuestion2MaternityWardObjective())
+                .setQuestion2GeneralWardYesNo(getQuestion2GeneralWardObjective())
                 .build();
     }
 
@@ -366,18 +370,6 @@ public class HealthActivity extends AppCompatActivity {
                 h73DrugLastDateEditText.setText(data.getStringExtra(DatePickerActivity.SELECTED_DATE));
             }
         }
-    }
-
-    private boolean getBudgetNotDisplayOnNoticeBoard() {
-        return ((CheckBox) findViewById(R.id.h_q_1_health_not_displayed)).isChecked(); // cynphia 0780178108
-    }
-
-    private boolean getBudgetDisplayedFacilityNoticeBoard() {
-        return ((CheckBox) findViewById(R.id.h_q_1_health_facility_notice_board)).isChecked();
-    }
-
-    private boolean getBudgetDisplayedFacilityAdamOffice() {
-        return ((CheckBox) findViewById(R.id.h_q_1_1_facility_admin_notice_board)).isChecked();
     }
 
     private boolean getQuestion2MaternityWardObjective() {
