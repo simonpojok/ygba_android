@@ -325,8 +325,16 @@ public class HealthActivity extends AppCompatActivity {
                 .setNameAndGradeHealthCenter(getTextValue(qQANameAndGradeHealthCenterEditText))
                 .setQuestionBOutPatientOPD(getIntegerValue(hQBAttendanceEditText))
                 .setQuestionCInPatientAttendance(getIntegerValue(hQCInpatientNumberEditText))
+
                 .setQuestion1RecurrentApprovedBudget(getIntegerValue(hQ1RecurrentApprovedEditText))
                 .setQuestion1RecurrentBudgetReleased(getIntegerValue(hQ1RecurrentBudgetReleaseTextEdit))
+                .setQuestion1RecurrentDateReceived(getTextValue(hQ1RecurrentDateReceivedEditText))
+                .setQuestion1RecurrentDateWithdrawn(getTextValue(hQ1RecurrentDateWithdrawnEditText))
+
+                .setQuestion1DevelopmentApprovedBudget(getIntegerValue(hQ1DevelopmentApprovedEditText))
+                .setQuestion1DevelopmentReleasedBudget(getIntegerValue(hQ1DevelopmentBudgetReleaseTextEdit))
+                .setQuestion1DevelopmentDateReceived(getTextValue(hQ1DevelopmentDateReceivedEditText))
+                .setQuestion1DevelopmentDateWithdrawn(getTextValue(hQ1DevelopmentDateWithdrawnEditText))
                 .build();
     }
 

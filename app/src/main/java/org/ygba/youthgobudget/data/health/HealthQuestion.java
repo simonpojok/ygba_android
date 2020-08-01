@@ -50,8 +50,26 @@ public class HealthQuestion {
     @ColumnInfo(name = HealthQuestionConstants.QUESYION_1_RECURRENT_APPROVED_BUDGET)
     private int question1RecurrentApprovedBudget;
 
-    @ColumnInfo(name = HealthQuestionConstants.QUESTION_2_RECURRENT_BUDGET_RECIEVED)
+    @ColumnInfo(name = HealthQuestionConstants.QUESTION_1_RECURRENT_BUDGET_RECIEVED)
     private int question1RecurrentBudgetReleased;
+
+    @ColumnInfo(name = HealthQuestionConstants.QUESTION_1_RECURRENT_DATE_RECIEVED)
+    private String question1RecurrentDateReceived;
+
+    @ColumnInfo(name = HealthQuestionConstants.QUESTION_1_RECURRENT_DATE_WITHDRAWN)
+    private String question1RecurrentDateWithdrawn;
+
+    @ColumnInfo(name = HealthQuestionConstants.QUESTION_1_DEVELOPMENT_APPROVED_BUDGET)
+    private int question1DevelopmentApprovedBudget;
+
+    @ColumnInfo(name = HealthQuestionConstants.QUESTION_1_DEVELOPMENT_RELEASED_BUDGET)
+    private int question1DevelopmentReleasedBudget;
+
+    @ColumnInfo(name = HealthQuestionConstants.QUESTION_1_DEVELOMENT_DATE_RECIEVED)
+    private String question1DevelopmentDateReceived;
+
+    @ColumnInfo(name = HealthQuestionConstants.QUESTION_1_DEVELOPMENT_DATE_WITHDRAWN)
+    private String question1DevelopmentDateWithdrawn;
 
 
     private HealthQuestion() {}
@@ -136,6 +154,84 @@ public class HealthQuestion {
             INSTANCE.setQuestion1RecurrentBudgetReleased(integerValue);
             return this;
         }
+
+        public Builder setQuestion1RecurrentDateReceived(String textValue) {
+            INSTANCE.setQuestion1RecurrentDateReceived(textValue);
+            return this;
+        }
+
+        public Builder setQuestion1RecurrentDateWithdrawn(String textValue) {
+            INSTANCE.setQuestion1RecurrentDateWithdrawn(textValue);
+            return this;
+        }
+
+        public Builder setQuestion1DevelopmentApprovedBudget(int integerValue) {
+            INSTANCE.setQuestion1DevelopmentApprovedBudget(integerValue);
+            return this;
+        }
+
+        public Builder setQuestion1DevelopmentReleasedBudget(int integerValue) {
+            INSTANCE.setQuestion1DevelopmentReleasedBudget(integerValue);
+            return this;
+        }
+
+        public Builder setQuestion1DevelopmentDateReceived(String textValue) {
+            INSTANCE.setQuestion1DevelopmentDateReceived(textValue);
+            return this;
+        }
+
+        public Builder setQuestion1DevelopmentDateWithdrawn(String textValue) {
+            INSTANCE.setQuestion1DevelopmentDateWithdrawn(textValue);
+            return this;
+        }
+    }
+
+    public String getQuestion1DevelopmentDateWithdrawn() {
+        return question1DevelopmentDateWithdrawn;
+    }
+
+    public void setQuestion1DevelopmentDateWithdrawn(String question1DevelopmentDateWithdrawn) {
+        this.question1DevelopmentDateWithdrawn = question1DevelopmentDateWithdrawn;
+    }
+
+    public String getQuestion1DevelopmentDateReceived() {
+        return question1DevelopmentDateReceived;
+    }
+
+    public void setQuestion1DevelopmentDateReceived(String question1DevelopmentDateReceived) {
+        this.question1DevelopmentDateReceived = question1DevelopmentDateReceived;
+    }
+
+    public int getQuestion1DevelopmentReleasedBudget() {
+        return question1DevelopmentReleasedBudget;
+    }
+
+    public void setQuestion1DevelopmentReleasedBudget(int question1DevelopmentReleasedBudget) {
+        this.question1DevelopmentReleasedBudget = question1DevelopmentReleasedBudget;
+    }
+
+    public int getQuestion1DevelopmentApprovedBudget() {
+        return question1DevelopmentApprovedBudget;
+    }
+
+    public void setQuestion1DevelopmentApprovedBudget(int question1DevelopmentApprovedBudget) {
+        this.question1DevelopmentApprovedBudget = question1DevelopmentApprovedBudget;
+    }
+
+    public String getQuestion1RecurrentDateWithdrawn() {
+        return question1RecurrentDateWithdrawn;
+    }
+
+    public void setQuestion1RecurrentDateWithdrawn(String question1RecurrentDateWithdrawn) {
+        this.question1RecurrentDateWithdrawn = question1RecurrentDateWithdrawn;
+    }
+
+    public String getQuestion1RecurrentDateReceived() {
+        return question1RecurrentDateReceived;
+    }
+
+    public void setQuestion1RecurrentDateReceived(String question1RecurrentDateReceived) {
+        this.question1RecurrentDateReceived = question1RecurrentDateReceived;
     }
 
     public int getQuestion1RecurrentBudgetReleased() {

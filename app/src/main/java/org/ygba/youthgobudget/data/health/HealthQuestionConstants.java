@@ -16,5 +16,11 @@ public class HealthQuestionConstants {
     public static final String NUMBER_OUT_PATIENTS_QUESTION_B = "question_b";
     public static final String QUESTION_C_IN_PATIENT = "question_c_in_patients";
     public static final String QUESYION_1_RECURRENT_APPROVED_BUDGET = "question_1_re_approved_budget";
-    public static final String QUESTION_2_RECURRENT_BUDGET_RECIEVED = "question_1_budget_received";
+    public static final String QUESTION_1_RECURRENT_BUDGET_RECIEVED = "question_1_budget_received";
+    public static final String QUESTION_1_RECURRENT_DATE_RECIEVED = "question_1_re_date_received";
+    public static final String QUESTION_1_RECURRENT_DATE_WITHDRAWN = "question_1_rec_date_withdrawn";
+    public static final String QUESTION_1_DEVELOPMENT_APPROVED_BUDGET = "dev_1_approved_budget";
+    public static final String QUESTION_1_DEVELOPMENT_RELEASED_BUDGET = "question_1_deve_1_bud_re";
+    public static final String QUESTION_1_DEVELOMENT_DATE_RECIEVED = "question_1_development_1_date_recieved";
+    public static final String QUESTION_1_DEVELOPMENT_DATE_WITHDRAWN = "question_1_development_date_withdrawn";
 }
