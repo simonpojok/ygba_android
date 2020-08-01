@@ -82,13 +82,14 @@ public class HealthQuestionUploadWorker extends Worker {
 
             // row 2
             body.put("no_santn_latrine_blocks", healthQuestion.getQuestion3LatrineNumberBlocks());
-            body.put("no_santn_latrine_stances", 78);
-            body.put("no_santn_latrine_patient_male_stances", 90);
-            body.put("no_santn_latrine_patient_female_stances", 999);
-            body.put("no_santn_latrine_male_staff", 675);
-            body.put("no_santn_latrine_female_staff", 787);
-            body.put("no_santn_latrine_mixed_staff", 887);
-            body.put("no_santn_latrine_non_functional", 898);
+            body.put("no_santn_latrine_stances", healthQuestion.getQuestion3LatrineNumberStances());
+            body.put("no_santn_latrine_patient_male_stances", healthQuestion.getQuestion3LatrineNumberMaleStances());
+            body.put("no_santn_latrine_patient_female_stances", healthQuestion.getQuestion3LatrineNumberFemaleStances());
+            body.put("no_santn_latrine_male_staff", healthQuestion.getQuestion3LatrineNumberStaffMaleStances());
+            body.put("no_santn_latrine_female_staff", healthQuestion.getQuestion3LatrineNumberStaffFemaleStance());
+            body.put("no_santn_latrine_mixed_staff", healthQuestion.getQuestion3LatrineNumberStaffMixedStances());
+            body.put("no_santn_latrine_functional", healthQuestion.getQuestion3LatrineNumberFunctional());
+            body.put("no_santn_latrine_non_functional", healthQuestion.getQuestion3LatrineNoneFunctional());
 
 
         } catch (JSONException e) {

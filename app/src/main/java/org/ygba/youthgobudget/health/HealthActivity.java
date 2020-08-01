@@ -371,18 +371,16 @@ public class HealthActivity extends AppCompatActivity {
 
                 // latrine
                 .setQuestion3LatrineNumberBlocks(getIntegerValue(hQ3LatrineNumberBlocks))
+                .setQuestion3LatrineNumberStances(getIntegerValue(hQ3LatrineNumberStances))
+                .setQuestion3LatrineNumberMaleStances(getIntegerValue(hQ3PatientLatrineMaleStances))
+                .setQuestion3LatrineNumberFemaleStances(getIntegerValue(hQ3PatientLatrineFemaleStances))
+                .setQuestion3LatrineNumberPatientMaleStances(56)
+                .setQuestion3LatrineNumberStaffMaleStances(getIntegerValue(hQ3StaffLatrineMaleStances))
+                .setQuestion3LatrineNumberStaffFemaleStance(getIntegerValue(hQ3StaffLatrineFemaleStances))
+                .setQuestion3LatrineNumberStaffMixedStances(getIntegerValue( hQ3StaffLatrineMixedStances))
+                .setQuestion3LatrineNumberNumberFunctional(getIntegerValue(hQ3StaffLatrineFunctional))
+                .setQuestion3LatrineNoneFunctional(getIntegerValue(hQ3StaffLatrineNone))
                 .build();
-
-
-        hQ3LatrineNumberBlocks = findViewById(R.id.health_3_latrine_blocks);
-        hQ3LatrineNumberStances = findViewById(R.id.health_3_latrine_stances);
-        hQ3PatientLatrineMaleStances = findViewById(R.id.health_3_latrine_patients_male_stances);
-        hQ3PatientLatrineFemaleStances = findViewById(R.id.health_3_latrine_patients_female_stances);
-        hQ3StaffLatrineMaleStances = findViewById(R.id.health_3_latrine_staff_male_stances);
-        hQ3StaffLatrineFemaleStances = findViewById(R.id.health_3_latrine_staff_female_stances);
-        hQ3StaffLatrineMixedStances = findViewById(R.id.health_3_latrine_staff_mixed_stances);
-        hQ3StaffLatrineFunctional =  findViewById(R.id.health_3_latrine_functional);
-        hQ3StaffLatrineNone = findViewById(R.id.health_3_latrine_none);
     }
 
 

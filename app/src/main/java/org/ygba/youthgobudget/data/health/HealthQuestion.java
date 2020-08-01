@@ -143,6 +143,33 @@ public class HealthQuestion {
     @ColumnInfo(name = HealthQuestionConstants.QUESTION_3_0_LATRINE_NUMBER_BLOCKS)
     private int question3LatrineNumberBlocks;
 
+    @ColumnInfo(name = HealthQuestionConstants.QUESTION_3_0_LATRINE_NUMBER_STANCES)
+    private int question3LatrineNumberStances;
+
+    @ColumnInfo(name = HealthQuestionConstants.QUESTION_3_0_LATRINE_NUMBER_MALE_STANCES)
+    private int question3LatrineNumberMaleStances;
+
+    @ColumnInfo(name = HealthQuestionConstants.QUESTION_3_0_LATRINE_NUMBER_FEMALE_STANCES)
+    private int question3LatrineNumberFemaleStances;
+
+    @ColumnInfo(name = HealthQuestionConstants.QUESTION_3_0_LATRINE_PATIENTS_NUMBER_MALE_STANCES)
+    private int question3LatrineNumberPatientMaleStances;
+
+    @ColumnInfo(name = HealthQuestionConstants.QUESTION_3_0_LATRINE_STAFF_NUMBER_MALE_STANCES)
+    private int question3LatrineNumberStaffMaleStances;
+
+    @ColumnInfo(name = HealthQuestionConstants.QUESTION_3_0_LATRINE_STAFF_NUMBER_FEMALE_STANCES)
+    private int question3LatrineNumberStaffFemaleStance;
+
+    @ColumnInfo(name = HealthQuestionConstants.QUESTION_3_0_LATRINE_NUMBER_STAFF_MIXED_STANCES)
+    private int question3LatrineNumberStaffMixedStances;
+
+    @ColumnInfo(name = HealthQuestionConstants.QUESTION_3_0_LATRINE_NUMBER_NON_FUNCTIONAL)
+    private int question3LatrineNumberFunctional;
+
+    @ColumnInfo(name = HealthQuestionConstants.QUESTION_3_0_LATRINE_NUMBER_NONE_FUNCTIONAL)
+    private int question3LatrineNoneFunctional;
+
     private HealthQuestion() {}
 
     public static class Builder {
@@ -375,6 +402,123 @@ public class HealthQuestion {
             INSTANCE.setQuestion3LatrineNumberBlocks(integerValue);
             return this;
         }
+
+        public Builder setQuestion3LatrineNumberStances(int integerValue) {
+            INSTANCE.setQuestion3LatrineNumberStances(integerValue);
+            return this;
+        }
+
+        public Builder setQuestion3LatrineNumberMaleStances(int integerValue) {
+            INSTANCE.setQuestion3LatrineNumberMaleStances(integerValue);
+            return this;
+        }
+
+        public Builder setQuestion3LatrineNumberFemaleStances(int integerValue) {
+            INSTANCE.setQuestion3LatrineNumberFemaleStances(integerValue);
+            return this;
+        }
+
+        public Builder setQuestion3LatrineNumberPatientMaleStances(int i) {
+            INSTANCE.setQuestion3LatrineNumberPatientMaleStances(i);
+            return this;
+        }
+
+        public Builder setQuestion3LatrineNumberStaffMaleStances(int integerValue) {
+            INSTANCE.setQuestion3LatrineNumberStaffMaleStances(integerValue);
+            return this;
+        }
+
+        public Builder setQuestion3LatrineNumberStaffFemaleStance(int integerValue) {
+            INSTANCE.setQuestion3LatrineNumberStaffFemaleStance(integerValue);
+            return this;
+        }
+
+        public Builder setQuestion3LatrineNumberStaffMixedStances(int integerValue) {
+            INSTANCE.setQuestion3LatrineNumberStaffMixedStances(integerValue);
+            return this;
+        }
+
+        public Builder setQuestion3LatrineNumberNumberFunctional(int integerValue) {
+            INSTANCE.setQuestion3LatrineNumberFunctional(integerValue);
+            return this;
+        }
+
+        public Builder setQuestion3LatrineNoneFunctional(int integerValue) {
+            INSTANCE.setQuestion3LatrineNoneFunctional(integerValue);
+            return this;
+        }
+    }
+
+    public int getQuestion3LatrineNoneFunctional() {
+        return question3LatrineNoneFunctional;
+    }
+
+    public void setQuestion3LatrineNoneFunctional(int question3LatrineNoneFunctional) {
+        this.question3LatrineNoneFunctional = question3LatrineNoneFunctional;
+    }
+
+    public int getQuestion3LatrineNumberFunctional() {
+        return question3LatrineNumberFunctional;
+    }
+
+    public void setQuestion3LatrineNumberFunctional(int question3LatrineNumberFunctional) {
+        this.question3LatrineNumberFunctional = question3LatrineNumberFunctional;
+    }
+
+    public int getQuestion3LatrineNumberStaffMixedStances() {
+        return question3LatrineNumberStaffMixedStances;
+    }
+
+    public void setQuestion3LatrineNumberStaffMixedStances(int question3LatrineNumberStaffMixedStances) {
+        this.question3LatrineNumberStaffMixedStances = question3LatrineNumberStaffMixedStances;
+    }
+
+    public int getQuestion3LatrineNumberStaffFemaleStance() {
+        return question3LatrineNumberStaffFemaleStance;
+    }
+
+    public void setQuestion3LatrineNumberStaffFemaleStance(int question3LatrineNumberStaffFemaleStance) {
+        this.question3LatrineNumberStaffFemaleStance = question3LatrineNumberStaffFemaleStance;
+    }
+
+    public int getQuestion3LatrineNumberStaffMaleStances() {
+        return question3LatrineNumberStaffMaleStances;
+    }
+
+    public void setQuestion3LatrineNumberStaffMaleStances(int question3LatrineNumberStaffMaleStances) {
+        this.question3LatrineNumberStaffMaleStances = question3LatrineNumberStaffMaleStances;
+    }
+
+    public int getQuestion3LatrineNumberPatientMaleStances() {
+        return question3LatrineNumberPatientMaleStances;
+    }
+
+    public void setQuestion3LatrineNumberPatientMaleStances(int question3LatrineNumberPatientMaleStances) {
+        this.question3LatrineNumberPatientMaleStances = question3LatrineNumberPatientMaleStances;
+    }
+
+    public int getQuestion3LatrineNumberFemaleStances() {
+        return question3LatrineNumberFemaleStances;
+    }
+
+    public void setQuestion3LatrineNumberFemaleStances(int question3LatrineNumberFemaleStances) {
+        this.question3LatrineNumberFemaleStances = question3LatrineNumberFemaleStances;
+    }
+
+    public int getQuestion3LatrineNumberMaleStances() {
+        return question3LatrineNumberMaleStances;
+    }
+
+    public void setQuestion3LatrineNumberMaleStances(int question3LatrineNumberMaleStances) {
+        this.question3LatrineNumberMaleStances = question3LatrineNumberMaleStances;
+    }
+
+    public int getQuestion3LatrineNumberStances() {
+        return question3LatrineNumberStances;
+    }
+
+    public void setQuestion3LatrineNumberStances(int question3LatrineNumberStances) {
+        this.question3LatrineNumberStances = question3LatrineNumberStances;
     }
 
     public int getQuestion3LatrineNumberBlocks() {
