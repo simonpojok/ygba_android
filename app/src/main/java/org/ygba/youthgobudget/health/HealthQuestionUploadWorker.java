@@ -63,6 +63,8 @@ public class HealthQuestionUploadWorker extends Worker {
             body.put("is_vaccination_for_hep_b", healthQuestion.isQuestion2Vaccination4HEPBYesNo());
 
             // 2 1
+            body.put("no_live_deliveries", healthQuestion.getQuestion21CategoryLiveNumberDeliveries());
+            body.put("no_still_deliveries", healthQuestion.getQuestion21CategoryStillNumberDeliveries());
 
 
         } catch (Exception e) {

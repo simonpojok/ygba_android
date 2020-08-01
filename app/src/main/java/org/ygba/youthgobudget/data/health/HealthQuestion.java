@@ -104,6 +104,12 @@ public class HealthQuestion {
     @ColumnInfo(name = HealthQuestionConstants.QUESTION_2_HEP_B_YES_NO)
     private boolean question2Vaccination4HEPBYesNo;
 
+    @ColumnInfo(name = HealthQuestionConstants.QUESTION_2_1_CATEGORY_LIVE_NUMBER)
+    private int question21CategoryLiveNumberDeliveries;
+
+    @ColumnInfo(name = HealthQuestionConstants.QUESTION_2_1_CATEGORY_STILL_NUMBER)
+    private int question21CategoryStillNumberDeliveries;
+
     private HealthQuestion() {}
 
     public static class Builder {
@@ -271,6 +277,32 @@ public class HealthQuestion {
             INSTANCE.setQuestion2Vaccination4HEPBYesNo(question2VaccinationHEPBObjective);
             return this;
         }
+
+        public Builder setQuestion21CategoryLiveNumberDeliveries(int integerValue) {
+            INSTANCE.setQuestion21CategoryLiveNumberDeliveries(integerValue);
+            return this;
+        }
+
+        public Builder setQuestion21CategoryStillNumberDeliveries(int integerValue) {
+            INSTANCE.setQuestion21CategoryStillNumberDeliveries(integerValue);
+            return this;
+        }
+    }
+
+    public int getQuestion21CategoryStillNumberDeliveries() {
+        return question21CategoryStillNumberDeliveries;
+    }
+
+    public void setQuestion21CategoryStillNumberDeliveries(int question21CategoryStillNumberDeliveries) {
+        this.question21CategoryStillNumberDeliveries = question21CategoryStillNumberDeliveries;
+    }
+
+    public int getQuestion21CategoryLiveNumberDeliveries() {
+        return question21CategoryLiveNumberDeliveries;
+    }
+
+    public void setQuestion21CategoryLiveNumberDeliveries(int question21CategoryLiveNumberDeliveries) {
+        this.question21CategoryLiveNumberDeliveries = question21CategoryLiveNumberDeliveries;
     }
 
     public boolean isQuestion2Vaccination4HEPBYesNo() {

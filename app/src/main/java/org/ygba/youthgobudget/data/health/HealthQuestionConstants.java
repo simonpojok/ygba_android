@@ -34,4 +34,6 @@ public class HealthQuestionConstants {
     public static final String QUESTION_2_IMMUNIZATION_YES_NO = "immunization_yes_no";
     public static final String QUESTION_2_YOUTH_FRIENDLY_CORNERS_YES_NO = "youth_corners_yes_no";
     public static final String QUESTION_2_HEP_B_YES_NO = "hep_2_b";
+    public static final String QUESTION_2_1_CATEGORY_LIVE_NUMBER = "live_number_deliveries";
+    public static final String QUESTION_2_1_CATEGORY_STILL_NUMBER = "number_still_number";
 }

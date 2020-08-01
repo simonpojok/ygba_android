@@ -348,6 +348,10 @@ public class HealthActivity extends AppCompatActivity {
                 .setQuestion2ImmunizationYesNo(getQuestion2ImmunizationObjective())
                 .setQuestion2YouthFriendlyCornersYesNo(getQuestion2YouthFriendlyCornersObjective())
                 .setQuestion2Vaccination4HEPBYesNo(getQuestion2VaccinationHEPBObjective())
+
+                // 2.1
+                .setQuestion21CategoryLiveNumberDeliveries(getIntegerValue(hQ2_1_LiveNumberDeliveriesTextEdit))
+                .setQuestion21CategoryStillNumberDeliveries(getIntegerValue(hQ2_1_StillNumberDeliveriesTextEdit))
                 .build();
     }
 
