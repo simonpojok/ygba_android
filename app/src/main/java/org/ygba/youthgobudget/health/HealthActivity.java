@@ -307,7 +307,9 @@ public class HealthActivity extends AppCompatActivity {
 
     private void saveHealthQuestion() {
         HealthQuestion healthQuestion = new HealthQuestion.Builder()
-                .setFinancialYear()
+                .setFinancialYear("2020")
+                .setFinancialYearQuarter("IV")
+                .setDate(getTextValue(hDateTextView))
                 .build();
     }
 
