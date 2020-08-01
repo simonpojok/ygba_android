@@ -71,6 +71,11 @@ public class HealthQuestion {
     @ColumnInfo(name = HealthQuestionConstants.QUESTION_1_DEVELOPMENT_DATE_WITHDRAWN)
     private String question1DevelopmentDateWithdrawn;
 
+    @ColumnInfo(name = HealthQuestionConstants.QUESTION_1_1_DISPLAY_AREA)
+    private String question11DisplayBudgetInformation;
+
+    @ColumnInfo(name = HealthQuestionConstants.QUESTION_1_2_DISPLAY_INFORMATION_RELATES)
+    private String question12BudgetInformationRelates;
 
     private HealthQuestion() {}
 
@@ -184,6 +189,32 @@ public class HealthQuestion {
             INSTANCE.setQuestion1DevelopmentDateWithdrawn(textValue);
             return this;
         }
+
+        public Builder setQuestion11DisplayBudgetInformation(String display_area) {
+            INSTANCE.setQuestion11DisplayBudgetInformation(display_area);
+            return this;
+        }
+
+        public Builder setQuestion12BudgetInformationRelates(String textValue) {
+            INSTANCE.setQuestion12BudgetInformationRelates(textValue);
+            return this;
+        }
+    }
+
+    public String getQuestion12BudgetInformationRelates() {
+        return question12BudgetInformationRelates;
+    }
+
+    public void setQuestion12BudgetInformationRelates(String question12BudgetInformationRelates) {
+        this.question12BudgetInformationRelates = question12BudgetInformationRelates;
+    }
+
+    public String getQuestion11DisplayBudgetInformation() {
+        return question11DisplayBudgetInformation;
+    }
+
+    public void setQuestion11DisplayBudgetInformation(String question11DisplayBudgetInformation) {
+        this.question11DisplayBudgetInformation = question11DisplayBudgetInformation;
     }
 
     public String getQuestion1DevelopmentDateWithdrawn() {

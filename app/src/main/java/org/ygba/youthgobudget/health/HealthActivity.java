@@ -231,6 +231,8 @@ public class HealthActivity extends AppCompatActivity {
         hQ63LastDateAppraisalEditText = findViewById(R.id.health_6_3_date_last);
         hQ63LastDateAppraisalEditText.setInputType(View.AUTOFILL_TYPE_NONE);;
         hQ1_2BudgetInformationEditText = findViewById(R.id.h_question_1_2_budget_information);
+
+
         hQ2_1_LiveNumberDeliveriesTextEdit = findViewById(R.id.health_live_number_deliveries);
         hQ2_1_StillNumberDeliveriesTextEdit = findViewById(R.id.health_still_number_deliveries);
         hQ2_2_VaccineEditText = findViewById(R.id.health_2_2_vaccine);
@@ -335,6 +337,9 @@ public class HealthActivity extends AppCompatActivity {
                 .setQuestion1DevelopmentReleasedBudget(getIntegerValue(hQ1DevelopmentBudgetReleaseTextEdit))
                 .setQuestion1DevelopmentDateReceived(getTextValue(hQ1DevelopmentDateReceivedEditText))
                 .setQuestion1DevelopmentDateWithdrawn(getTextValue(hQ1DevelopmentDateWithdrawnEditText))
+
+                .setQuestion11DisplayBudgetInformation("Display Area")
+                .setQuestion12BudgetInformationRelates(getTextValue(hQ1_2BudgetInformationEditText))
                 .build();
     }
 
@@ -364,7 +369,7 @@ public class HealthActivity extends AppCompatActivity {
     }
 
     private boolean getBudgetNotDisplayOnNoticeBoard() {
-        return ((CheckBox) findViewById(R.id.h_q_1_health_not_displayed)).isChecked();
+        return ((CheckBox) findViewById(R.id.h_q_1_health_not_displayed)).isChecked(); // cynphia 0780178108
     }
 
     private boolean getBudgetDisplayedFacilityNoticeBoard() {

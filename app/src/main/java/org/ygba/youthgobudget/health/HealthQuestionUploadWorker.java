@@ -48,20 +48,8 @@ public class HealthQuestionUploadWorker extends Worker {
             body.put("grant_devt_released", healthQuestion.getQuestion1DevelopmentReleasedBudget());
             body.put("grant_devt_date_received", healthQuestion.getQuestion1DevelopmentReleasedBudget());
             body.put("grant_devt_date_withdrawn", healthQuestion.getQuestion1DevelopmentDateWithdrawn());
-
-            // array
-            JSONArray displayArray = new JSONArray();
-            displayArray.put("Health facility notice board");
-            displayArray.put("In charge’s or Facility Admin. Office");
-            displayArray.put("Not displayed");
-            body.put("where_public_display_of_budget_info", displayArray);
-
-            JSONArray quarterArray = new JSONArray();
-            quarterArray.put("quarter1");
-            quarterArray.put("quarter2");
-            quarterArray.put("quarter3");
-            quarterArray.put("quarter4");
-            body.put("period_to_which_budget_info_relates", quarterArray);
+            body.put("where_public_display_of_budget_info", healthQuestion.getQuestion11DisplayBudgetInformation());
+            body.put("period_to_which_budget_info_relates", healthQuestion.getQuestion12BudgetInformationRelates());
 
 
         } catch (Exception e) {
