@@ -203,20 +203,25 @@ public class HealthActivity extends AppCompatActivity {
         agentTelEditText = findViewById(R.id.ygb_agent_tel_edit_view);
         qQANameAndGradeHealthCenterEditText = findViewById(R.id.h_name_and_grade_health_center);
         hQBAttendanceEditText = findViewById(R.id.h_question_d_attendance_edit_text);
-
         hQCInpatientNumberEditText = findViewById(R.id.h_question_c_inpatient_number);
+
+
         hQ1RecurrentApprovedEditText = findViewById(R.id.h_question_1_recurrent_approved);
         hQ1RecurrentBudgetReleaseTextEdit = findViewById(R.id.h_question_1_recurrent_budget_released_edit_text);
         hQ1RecurrentDateReceivedEditText = findViewById(R.id.h_question_1_recurrent_date_received_edit_text);
         hQ1RecurrentDateReceivedEditText.setInputType(View.AUTOFILL_TYPE_NONE);
         hQ1RecurrentDateWithdrawnEditText = findViewById(R.id.h_question_1_recurrent_date_withdrawn_edit_text);
         hQ1RecurrentDateWithdrawnEditText.setInputType(View.AUTOFILL_TYPE_NONE);
+
+
         hQ1DevelopmentApprovedEditText = findViewById(R.id.h_question_1_development_approved);
         hQ1DevelopmentBudgetReleaseTextEdit = findViewById(R.id.h_question_1_development_budget_released_edit_text);
         hQ1DevelopmentDateReceivedEditText = findViewById(R.id.h_question_1_development_date_received_edit_text);
         hQ1DevelopmentDateReceivedEditText.setInputType(View.AUTOFILL_TYPE_NONE);
         hQ1DevelopmentDateWithdrawnEditText = findViewById(R.id.h_question_1_development_date_withdrawn_edit_text);
         hQ1DevelopmentDateWithdrawnEditText.setInputType(View.AUTOFILL_TYPE_NONE);
+
+
         h53LastVisitDate = findViewById(R.id.health_5_3_date_last);
         h53LastVisitDate.setInputType(View.AUTOFILL_TYPE_NONE);
         h71DeliveryDateEditText = findViewById(R.id.health_7_1_delivery_date);
@@ -320,6 +325,8 @@ public class HealthActivity extends AppCompatActivity {
                 .setNameAndGradeHealthCenter(getTextValue(qQANameAndGradeHealthCenterEditText))
                 .setQuestionBOutPatientOPD(getIntegerValue(hQBAttendanceEditText))
                 .setQuestionCInPatientAttendance(getIntegerValue(hQCInpatientNumberEditText))
+                .setQuestion1RecurrentApprovedBudget(getIntegerValue(hQ1RecurrentApprovedEditText))
+                .setQuestion1RecurrentBudgetReleased(getIntegerValue(hQ1RecurrentBudgetReleaseTextEdit))
                 .build();
     }
 

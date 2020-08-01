@@ -47,6 +47,12 @@ public class HealthQuestion {
     @ColumnInfo(name = HealthQuestionConstants.QUESTION_C_IN_PATIENT)
     private int questionCInPatientAttendance;
 
+    @ColumnInfo(name = HealthQuestionConstants.QUESYION_1_RECURRENT_APPROVED_BUDGET)
+    private int question1RecurrentApprovedBudget;
+
+    @ColumnInfo(name = HealthQuestionConstants.QUESTION_2_RECURRENT_BUDGET_RECIEVED)
+    private int question1RecurrentBudgetReleased;
+
 
     private HealthQuestion() {}
 
@@ -120,6 +126,32 @@ public class HealthQuestion {
             INSTANCE.setQuestionCInPatientAttendance(integerValue);
             return this;
         }
+
+        public Builder setQuestion1RecurrentApprovedBudget(int integerValue) {
+            INSTANCE.setQuestion1RecurrentApprovedBudget(integerValue);
+            return this;
+        }
+
+        public Builder setQuestion1RecurrentBudgetReleased(int integerValue) {
+            INSTANCE.setQuestion1RecurrentBudgetReleased(integerValue);
+            return this;
+        }
+    }
+
+    public int getQuestion1RecurrentBudgetReleased() {
+        return question1RecurrentBudgetReleased;
+    }
+
+    public void setQuestion1RecurrentBudgetReleased(int question1RecurrentBudgetReleased) {
+        this.question1RecurrentBudgetReleased = question1RecurrentBudgetReleased;
+    }
+
+    public int getQuestion1RecurrentApprovedBudget() {
+        return question1RecurrentApprovedBudget;
+    }
+
+    public void setQuestion1RecurrentApprovedBudget(int question1RecurrentApprovedBudget) {
+        this.question1RecurrentApprovedBudget = question1RecurrentApprovedBudget;
     }
 
     public int getQuestionCInPatientAttendance() {
