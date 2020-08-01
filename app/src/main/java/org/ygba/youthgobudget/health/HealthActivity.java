@@ -307,6 +307,7 @@ public class HealthActivity extends AppCompatActivity {
 
     private void saveHealthQuestion() {
         HealthQuestion healthQuestion = new HealthQuestion.Builder()
+                .setFinancialYear()
                 .build();
     }
 
@@ -435,5 +436,21 @@ public class HealthActivity extends AppCompatActivity {
     private boolean getQuestion75Objective() {
         RadioGroup radioGroup = findViewById(R.id.question_7_5_amubance_radio_group);
         return radioGroup.getCheckedRadioButtonId() == R.id.question_7_5_ambulance_yes;
+    }
+
+    private String getTextValue(EditText editText) {
+        return editText.getText().toString();
+    }
+
+    private String getTextValue(TextView textView) {
+        return textView.getText().toString();
+    }
+
+    private int getIntegerValue(EditText editText) {
+        return 34;
+    }
+
+    private int getIntegerValue(TextView textView) {
+        return 56;
     }
 }
