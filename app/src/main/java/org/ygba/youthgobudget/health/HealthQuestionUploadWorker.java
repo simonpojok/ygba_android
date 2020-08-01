@@ -54,8 +54,8 @@ public class HealthQuestionUploadWorker extends Worker {
             // 2
             body.put("is_maternity_ward", healthQuestion.isQuestion2MaternityYesNo());
             body.put("is_general_ward", healthQuestion.isQuestion2GeneralWardYesNo());
-            body.put("are_there_delivery_beds", "");
-            body.put("are_there_family_planing_services", "");
+            body.put("are_there_delivery_beds", healthQuestion.isQuestion2DeliveryBedsYesNo());
+            body.put("are_there_family_planing_services", healthQuestion.isQuestion2FamilyPlanningServicesYesNo());
             body.put("are_there_hiv_services", "");
             body.put("is_pmtct", "");
             body.put("is_immunization", "");

@@ -27,4 +27,6 @@ public class HealthQuestionConstants {
     public static final String QUESTION_1_2_DISPLAY_INFORMATION_RELATES = "question_1_2_display_reason";
     public static final String QUESTION_2_MATERNITY_YES_NO = "maternity_yes_no";
     public static final String QUESTION_2_GENERAL_WARD_YES_NO = "general_ward_yes_no";
+    public static final String QUESTION_2_DELIVERY_YES_NO = "delivery_beds_yes_no";
+    public static final String QUESTION_2_FAMILY_PLANNING_YES_NO = "family_planning_yes_no";
 }

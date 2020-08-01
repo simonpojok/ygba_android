@@ -83,6 +83,12 @@ public class HealthQuestion {
     @ColumnInfo(name = HealthQuestionConstants.QUESTION_2_GENERAL_WARD_YES_NO)
     private boolean question2GeneralWardYesNo;
 
+    @ColumnInfo(name = HealthQuestionConstants.QUESTION_2_DELIVERY_YES_NO)
+    private boolean question2DeliveryBedsYesNo;
+
+    @ColumnInfo(name = HealthQuestionConstants.QUESTION_2_FAMILY_PLANNING_YES_NO)
+    private boolean question2FamilyPlanningServicesYesNo;
+
     private HealthQuestion() {}
 
     public static class Builder {
@@ -215,6 +221,32 @@ public class HealthQuestion {
             INSTANCE.setQuestion2GeneralWardYesNo(question2GeneralWardObjective);
             return this;
         }
+
+        public Builder setQuestion2DeliveryBedsYesNo(boolean question2DeliveryBedsObjective) {
+            INSTANCE.setQuestion2DeliveryBedsYesNo(question2DeliveryBedsObjective);
+            return this;
+        }
+
+        public Builder setQuestion2FamilyPlanningServicesYesNo(boolean question2FamilyPlanningServicesObjective) {
+            INSTANCE.setQuestion2FamilyPlanningServicesYesNo(question2FamilyPlanningServicesObjective);
+            return this;
+        }
+    }
+
+    public boolean isQuestion2FamilyPlanningServicesYesNo() {
+        return question2FamilyPlanningServicesYesNo;
+    }
+
+    public void setQuestion2FamilyPlanningServicesYesNo(boolean question2FamilyPlanningServicesYesNo) {
+        this.question2FamilyPlanningServicesYesNo = question2FamilyPlanningServicesYesNo;
+    }
+
+    public boolean isQuestion2DeliveryBedsYesNo() {
+        return question2DeliveryBedsYesNo;
+    }
+
+    public void setQuestion2DeliveryBedsYesNo(boolean question2DeliveryBedsYesNo) {
+        this.question2DeliveryBedsYesNo = question2DeliveryBedsYesNo;
     }
 
     public boolean isQuestion2GeneralWardYesNo() {

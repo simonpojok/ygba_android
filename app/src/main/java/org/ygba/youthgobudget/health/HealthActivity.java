@@ -1,17 +1,14 @@
 package org.ygba.youthgobudget.health;
 
 import androidx.annotation.Nullable;
-import androidx.annotation.RequiresApi;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.cardview.widget.CardView;
 
 import android.content.Intent;
-import android.os.Build;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.CheckBox;
 import android.widget.EditText;
-import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.Spinner;
 import android.widget.TextView;
@@ -344,6 +341,8 @@ public class HealthActivity extends AppCompatActivity {
 
                 .setQuestion2MaternityYesNo(getQuestion2MaternityWardObjective())
                 .setQuestion2GeneralWardYesNo(getQuestion2GeneralWardObjective())
+                .setQuestion2DeliveryBedsYesNo(getQuestion2DeliveryBedsObjective())
+                .setQuestion2FamilyPlanningServicesYesNo(getQuestion2FamilyPlanningServicesObjective())
                 .build();
     }
 
