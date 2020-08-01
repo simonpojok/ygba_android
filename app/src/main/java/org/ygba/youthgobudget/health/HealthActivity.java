@@ -264,6 +264,8 @@ public class HealthActivity extends AppCompatActivity {
         hQ3StaffFFCMixedStances = findViewById(R.id.health_3_ffc_staff_mixed_stances);
         hQ3StaffFFCFunctional =  findViewById(R.id.health_3_ffc_functional);
         hQ3StaffFFCNone = findViewById(R.id.health_3_ffc_none);
+
+
         hQ32OtherSpecifyTextEdit = findViewById(R.id.health_3_2_other_specify);
         hQ4BoreholeNumberEditText = findViewById(R.id.health_4_borehole_number);
         hQ4BoreholeNumberFunctionalEditText = findViewById(R.id.health_4_borehole_number_functional);
@@ -374,13 +376,22 @@ public class HealthActivity extends AppCompatActivity {
                 .setQuestion3LatrineNumberStances(getIntegerValue(hQ3LatrineNumberStances))
                 .setQuestion3LatrineNumberMaleStances(getIntegerValue(hQ3PatientLatrineMaleStances))
                 .setQuestion3LatrineNumberFemaleStances(getIntegerValue(hQ3PatientLatrineFemaleStances))
-                .setQuestion3LatrineNumberPatientMaleStances(56)
                 .setQuestion3LatrineNumberStaffMaleStances(getIntegerValue(hQ3StaffLatrineMaleStances))
                 .setQuestion3LatrineNumberStaffFemaleStance(getIntegerValue(hQ3StaffLatrineFemaleStances))
                 .setQuestion3LatrineNumberStaffMixedStances(getIntegerValue( hQ3StaffLatrineMixedStances))
                 .setQuestion3LatrineNumberNumberFunctional(getIntegerValue(hQ3StaffLatrineFunctional))
                 .setQuestion3LatrineNoneFunctional(getIntegerValue(hQ3StaffLatrineNone))
+
+                // fcrs
+                .setQuestion3FCRNumberBlock(getIntegerValue(hQ3FFCNumberBlocks))
+                .setQuestion3FCRNumberStances(getIntegerValue(hQ3FFCNumberStances))
+                .setQuestion3FCRNumberFemaleStances(getIntegerValue(hQ3PatientFFCFemaleStances))
+                .setQuestion3FCRNumberStaffFemaleStances(getIntegerValue(hQ3StaffFFCFemaleStances))
+                .setQuestion3FCRNumberStaffMixedStances(getIntegerValue(hQ3StaffFFCMixedStances))
+                .setQuestion3FCRNumberFunctionalStances(getIntegerValue(hQ3StaffFFCFunctional))
+                .setQuestion3FCRNumberNoneFunction(getIntegerValue(hQ3StaffFFCNone))
                 .build();
+
     }
 
 

@@ -6,7 +6,6 @@ import androidx.annotation.NonNull;
 import androidx.work.Worker;
 import androidx.work.WorkerParameters;
 
-import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 import org.ygba.youthgobudget.data.health.HealthQuestion;
@@ -88,8 +87,18 @@ public class HealthQuestionUploadWorker extends Worker {
             body.put("no_santn_latrine_male_staff", healthQuestion.getQuestion3LatrineNumberStaffMaleStances());
             body.put("no_santn_latrine_female_staff", healthQuestion.getQuestion3LatrineNumberStaffFemaleStance());
             body.put("no_santn_latrine_mixed_staff", healthQuestion.getQuestion3LatrineNumberStaffMixedStances());
+            //TODO: field missing
             body.put("no_santn_latrine_functional", healthQuestion.getQuestion3LatrineNumberFunctional());
             body.put("no_santn_latrine_non_functional", healthQuestion.getQuestion3LatrineNoneFunctional());
+
+            // fcr
+            body.put("no_santn_female_change_rm_blocks", healthQuestion.getQuestion3FCRNumberBlock());
+            body.put("no_santn_female_change_rm_stances", healthQuestion.getQuestion3FCRNumberStances());
+            body.put("no_santn_female_change_rm_patient_female_stances", healthQuestion.getQuestion3FCRNumberFemaleStances());
+            body.put("no_santn_female_change_rm_female_staff", healthQuestion.getQuestion3FCRNumberStaffFemaleStances());
+            body.put("no_santn_female_change_rm_mixed_staff", healthQuestion.getQuestion3FCRNumberStaffMixedStances());
+            body.put("no_santn_female_change_rm_functional", healthQuestion.getQuestion3FCRNumberFunctionalStances());
+            body.put("no_santn_female_change_rm_non_functional", healthQuestion.getQuestion3FCRNumberNoneFunction());
 
 
         } catch (JSONException e) {

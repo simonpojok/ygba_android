@@ -170,6 +170,27 @@ public class HealthQuestion {
     @ColumnInfo(name = HealthQuestionConstants.QUESTION_3_0_LATRINE_NUMBER_NONE_FUNCTIONAL)
     private int question3LatrineNoneFunctional;
 
+    @ColumnInfo(name = HealthQuestionConstants.QUESTION_3_0_FCM_NUMBER_BLOCKS)
+    private int question3FCRNumberBlock;
+
+    @ColumnInfo(name = HealthQuestionConstants.QUESTION_3_0_FCM_NUMBER_STANCES)
+    private int question3FCRNumberStances;
+
+    @ColumnInfo(name = HealthQuestionConstants.QUESTION_3_0_FEM_NUMBER_FEMALE_STANCES)
+    private int question3FCRNumberFemaleStances;
+
+    @ColumnInfo(name = HealthQuestionConstants.QUESTION_3_0_FCM_STAFF_NUMBER_STANCES)
+    private int question3FCRNumberStaffFemaleStances;
+
+    @ColumnInfo(name = HealthQuestionConstants.QUESTION_3_0_FCR_STAFF_MIXED_STANCES)
+    private int question3FCRNumberStaffMixedStances;
+
+    @ColumnInfo(name = HealthQuestionConstants.QUESTION_3_0_FCR_FUNCTION)
+    private int question3FCRNumberFunctionalStances;
+
+    @ColumnInfo(name = HealthQuestionConstants.QUESTION_3_0_FCR_NONE_FUNCTION)
+    private int question3FCRNumberNoneFunction;
+
     private HealthQuestion() {}
 
     public static class Builder {
@@ -447,6 +468,97 @@ public class HealthQuestion {
             INSTANCE.setQuestion3LatrineNoneFunctional(integerValue);
             return this;
         }
+
+        public Builder setQuestion3FCRNumberBlock(int integerValue) {
+            INSTANCE.setQuestion3FCRNumberBlock(integerValue);
+            return this;
+        }
+
+        public Builder setQuestion3FCRNumberStances(int integerValue) {
+            INSTANCE.setQuestion3FCRNumberStances(integerValue);
+            return this;
+        }
+
+        public Builder setQuestion3FCRNumberFemaleStances(int integerValue) {
+            INSTANCE.setQuestion3FCRNumberFemaleStances(integerValue);
+            return this;
+        }
+
+        public Builder setQuestion3FCRNumberStaffFemaleStances(int integerValue) {
+            INSTANCE.setQuestion3FCRNumberStaffFemaleStances(integerValue);
+            return this;
+        }
+
+        public Builder setQuestion3FCRNumberStaffMixedStances(int integerValue) {
+            INSTANCE.setQuestion3FCRNumberStaffMixedStances(integerValue);
+            return this;
+        }
+
+        public Builder setQuestion3FCRNumberFunctionalStances(int integerValue) {
+            INSTANCE.setQuestion3FCRNumberFunctionalStances(integerValue);
+            return this;
+        }
+
+        public Builder setQuestion3FCRNumberNoneFunction(int integerValue) {
+            INSTANCE.setQuestion3FCRNumberNoneFunction(integerValue);
+            return this;
+        }
+    }
+
+    public int getQuestion3FCRNumberNoneFunction() {
+        return question3FCRNumberNoneFunction;
+    }
+
+    public void setQuestion3FCRNumberNoneFunction(int question3FCRNumberNoneFunction) {
+        this.question3FCRNumberNoneFunction = question3FCRNumberNoneFunction;
+    }
+
+    public int getQuestion3FCRNumberFunctionalStances() {
+        return question3FCRNumberFunctionalStances;
+    }
+
+    public void setQuestion3FCRNumberFunctionalStances(int question3FCRNumberFunctionalStances) {
+        this.question3FCRNumberFunctionalStances = question3FCRNumberFunctionalStances;
+    }
+
+    public int getQuestion3FCRNumberStaffMixedStances() {
+        return question3FCRNumberStaffMixedStances;
+    }
+
+    public void setQuestion3FCRNumberStaffMixedStances(int question3FCRNumberStaffMixedStances) {
+        this.question3FCRNumberStaffMixedStances = question3FCRNumberStaffMixedStances;
+    }
+
+    public int getQuestion3FCRNumberStaffFemaleStances() {
+        return question3FCRNumberStaffFemaleStances;
+    }
+
+    public void setQuestion3FCRNumberStaffFemaleStances(int question3FCRNumberStaffFemaleStances) {
+        this.question3FCRNumberStaffFemaleStances = question3FCRNumberStaffFemaleStances;
+    }
+
+    public int getQuestion3FCRNumberFemaleStances() {
+        return question3FCRNumberFemaleStances;
+    }
+
+    public void setQuestion3FCRNumberFemaleStances(int question3FCRNumberFemaleStances) {
+        this.question3FCRNumberFemaleStances = question3FCRNumberFemaleStances;
+    }
+
+    public int getQuestion3FCRNumberStances() {
+        return question3FCRNumberStances;
+    }
+
+    public void setQuestion3FCRNumberStances(int question3FCRNumberStances) {
+        this.question3FCRNumberStances = question3FCRNumberStances;
+    }
+
+    public int getQuestion3FCRNumberBlock() {
+        return question3FCRNumberBlock;
+    }
+
+    public void setQuestion3FCRNumberBlock(int question3FCRNumberBlock) {
+        this.question3FCRNumberBlock = question3FCRNumberBlock;
     }
 
     public int getQuestion3LatrineNoneFunctional() {
