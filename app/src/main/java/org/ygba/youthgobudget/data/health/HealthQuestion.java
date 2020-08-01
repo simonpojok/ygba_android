@@ -113,6 +113,33 @@ public class HealthQuestion {
     @ColumnInfo(name = HealthQuestionConstants.QUESTION_2_2_NUMBER_CHILDREN_IMMUNIZED)
     private int question22ChildrenImmunized;
 
+    @ColumnInfo(name = HealthQuestionConstants.QUESTION_3_0_TOILET_NUMBER_BLOCKS)
+    private int question3ToiletNumberBlocks;
+
+    @ColumnInfo(name = HealthQuestionConstants.QUESTION_3_0_TOILET_NUMBER_INSTANCES)
+    private int question3ToiletNumberInstances;
+
+    @ColumnInfo(name = HealthQuestionConstants.QUESTION_3_0_PATIENT_NUMBER_MALE_STANCES)
+    private int question3PatientToiletNumberMaleStances;
+
+    @ColumnInfo(name = HealthQuestionConstants.QUESTION_3_0_PATIENT_NUMBER_STANCES)
+    private int question3PatientToiletNumberFemaleStances;
+
+    @ColumnInfo(name = HealthQuestionConstants.QUESTION_3_0_HEALTH_STAFF_NUMBER_MALE_STANCES)
+    private int question3HealthStaffNumberToiletMaleStance;
+
+    @ColumnInfo(name = HealthQuestionConstants.QUESTION_3_HEALTH_STAFF_NUMBER_FEMALE_STANCES)
+    private int question3HealthStaffNumberToiletFemaleStances;
+
+    @ColumnInfo(name = HealthQuestionConstants.QUESTION_3_0_HEALTH_MIXED_NUMBER_STANCES)
+    private int question3HealthStaffNumberToiletMixedStances;
+
+    @ColumnInfo(name = HealthQuestionConstants.QUESTION_3_4_TOILET_NUMBER_FUNCTIONAL)
+    private int question3ToiletFunctionalNumber;
+
+    @ColumnInfo(name = HealthQuestionConstants.QUESTION_3_0_TOILET_NONE_FUNCTION_NUMBER)
+    private int question3ToiletNonFunctionNumber;
+
     private HealthQuestion() {}
 
     public static class Builder {
@@ -295,6 +322,123 @@ public class HealthQuestion {
             INSTANCE.setQuestion22ChildrenImmunized(integerValue);
             return this;
         }
+
+        public Builder setQuestion3ToiletNumberBlocks(int integerValue) {
+            INSTANCE.setQuestion3ToiletNumberBlocks(integerValue);
+            return this;
+        }
+
+        public Builder setQuestion3ToiletNumberInstances(int integerValue) {
+            INSTANCE.setQuestion3ToiletNumberInstances(integerValue);
+            return this;
+        }
+
+        public Builder setQuestion3PatientToiletNumberMaleStances(int integerValue) {
+            INSTANCE.setQuestion3PatientToiletNumberMaleStances(integerValue);
+            return this;
+        }
+
+        public Builder setQuestion3PatientToiletNumberFemaleStances(int integerValue) {
+            INSTANCE.setQuestion3PatientToiletNumberFemaleStances(integerValue);
+            return this;
+        }
+
+        public Builder setQuestion3HealthStaffNumberToiletMaleStance(int integerValue) {
+            INSTANCE.setQuestion3HealthStaffNumberToiletMaleStance(integerValue);
+            return this;
+        }
+
+        public Builder setQuestion3HealthStaffNumberToiletFemaleStances(int integerValue) {
+            INSTANCE.setQuestion3HealthStaffNumberToiletFemaleStances(integerValue);
+            return this;
+        }
+
+        public Builder setQuestion3HealthStaffNumberToiletMixedStances(int integerValue) {
+            INSTANCE.setQuestion3HealthStaffNumberToiletMixedStances(integerValue);
+            return this;
+        }
+
+        public Builder setQuestion3ToiletFunctionalNumber(int integerValue) {
+            INSTANCE.setQuestion3ToiletFunctionalNumber(integerValue);
+            return this;
+        }
+
+        public Builder setQuestion3ToiletNonFunctionNumber(int integerValue) {
+            INSTANCE.setQuestion3ToiletNonFunctionNumber(integerValue);
+            return this;
+        }
+    }
+
+    public int getQuestion3ToiletNonFunctionNumber() {
+        return question3ToiletNonFunctionNumber;
+    }
+
+    public void setQuestion3ToiletNonFunctionNumber(int question3ToiletNonFunctionNumber) {
+        this.question3ToiletNonFunctionNumber = question3ToiletNonFunctionNumber;
+    }
+
+    public int getQuestion3ToiletFunctionalNumber() {
+        return question3ToiletFunctionalNumber;
+    }
+
+    public void setQuestion3ToiletFunctionalNumber(int question3ToiletFunctionalNumber) {
+        this.question3ToiletFunctionalNumber = question3ToiletFunctionalNumber;
+    }
+
+    public int getQuestion3HealthStaffNumberToiletMixedStances() {
+        return question3HealthStaffNumberToiletMixedStances;
+    }
+
+    public void setQuestion3HealthStaffNumberToiletMixedStances(int question3HealthStaffNumberToiletMixedStances) {
+        this.question3HealthStaffNumberToiletMixedStances = question3HealthStaffNumberToiletMixedStances;
+    }
+
+    public int getQuestion3HealthStaffNumberToiletFemaleStances() {
+        return question3HealthStaffNumberToiletFemaleStances;
+    }
+
+    public void setQuestion3HealthStaffNumberToiletFemaleStances(int question3HealthStaffNumberToiletFemaleStances) {
+        this.question3HealthStaffNumberToiletFemaleStances = question3HealthStaffNumberToiletFemaleStances;
+    }
+
+    public int getQuestion3HealthStaffNumberToiletMaleStance() {
+        return question3HealthStaffNumberToiletMaleStance;
+    }
+
+    public void setQuestion3HealthStaffNumberToiletMaleStance(int qestion3HealthStaffNumberToiletMaleStance) {
+        this.question3HealthStaffNumberToiletMaleStance = qestion3HealthStaffNumberToiletMaleStance;
+    }
+
+    public int getQuestion3PatientToiletNumberFemaleStances() {
+        return question3PatientToiletNumberFemaleStances;
+    }
+
+    public void setQuestion3PatientToiletNumberFemaleStances(int question3PatientToiletNumberFemaleStances) {
+        this.question3PatientToiletNumberFemaleStances = question3PatientToiletNumberFemaleStances;
+    }
+
+    public int getQuestion3PatientToiletNumberMaleStances() {
+        return question3PatientToiletNumberMaleStances;
+    }
+
+    public void setQuestion3PatientToiletNumberMaleStances(int question3PatientToiletNumberMaleStances) {
+        this.question3PatientToiletNumberMaleStances = question3PatientToiletNumberMaleStances;
+    }
+
+    public int getQuestion3ToiletNumberInstances() {
+        return question3ToiletNumberInstances;
+    }
+
+    public void setQuestion3ToiletNumberInstances(int question3ToiletNumberInstances) {
+        this.question3ToiletNumberInstances = question3ToiletNumberInstances;
+    }
+
+    public int getQuestion3ToiletNumberBlocks() {
+        return question3ToiletNumberBlocks;
+    }
+
+    public void setQuestion3ToiletNumberBlocks(int question3ToiletNumberBlocks) {
+        this.question3ToiletNumberBlocks = question3ToiletNumberBlocks;
     }
 
     public int getQuestion22ChildrenImmunized() {

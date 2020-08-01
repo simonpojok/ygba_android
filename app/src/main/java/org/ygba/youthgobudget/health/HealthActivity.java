@@ -233,6 +233,8 @@ public class HealthActivity extends AppCompatActivity {
         hQ2_1_LiveNumberDeliveriesTextEdit = findViewById(R.id.health_live_number_deliveries);
         hQ2_1_StillNumberDeliveriesTextEdit = findViewById(R.id.health_still_number_deliveries);
         hQ2_2_VaccineEditText = findViewById(R.id.health_2_2_vaccine);
+
+
         hQ3ToiletNumberBlocks = findViewById(R.id.health_3_toilet_blocks);
         hQ3ToiletNumberStances = findViewById(R.id.health_3_toilet_stances);
         hQ3PatientToiletMaleStances = findViewById(R.id.health_3_toilet_patients_male_stances);
@@ -242,6 +244,9 @@ public class HealthActivity extends AppCompatActivity {
         hQ3StaffToiletMixedStances = findViewById(R.id.health_3_toilet_staff_mixed_stances);
         hQ3StaffToiletFunctional =  findViewById(R.id.health_3_toilet_functional);
         hQ3StaffToiletNone = findViewById(R.id.health_3_toilet_none);
+
+
+
         hQ3LatrineNumberBlocks = findViewById(R.id.health_3_latrine_blocks);
         hQ3LatrineNumberStances = findViewById(R.id.health_3_latrine_stances);
         hQ3PatientLatrineMaleStances = findViewById(R.id.health_3_latrine_patients_male_stances);
@@ -353,6 +358,15 @@ public class HealthActivity extends AppCompatActivity {
                 .setQuestion21CategoryLiveNumberDeliveries(getIntegerValue(hQ2_1_LiveNumberDeliveriesTextEdit))
                 .setQuestion21CategoryStillNumberDeliveries(getIntegerValue(hQ2_1_StillNumberDeliveriesTextEdit))
                 .setQuestion22ChildrenImmunized(getIntegerValue(hQ2_2_VaccineEditText))
+                .setQuestion3ToiletNumberBlocks(getIntegerValue( hQ3ToiletNumberBlocks))
+                .setQuestion3ToiletNumberInstances(getIntegerValue(hQ3ToiletNumberStances))
+                .setQuestion3PatientToiletNumberMaleStances(getIntegerValue(hQ3PatientToiletMaleStances))
+                .setQuestion3PatientToiletNumberFemaleStances(getIntegerValue(hQ3PatientToiletFemaleStances))
+                .setQuestion3HealthStaffNumberToiletMaleStance(getIntegerValue(hQ3StaffToiletMaleStances))
+                .setQuestion3HealthStaffNumberToiletFemaleStances(getIntegerValue(hQ3StaffToiletFemaleStances))
+                .setQuestion3HealthStaffNumberToiletMixedStances(getIntegerValue(hQ3StaffToiletMixedStances))
+                .setQuestion3ToiletFunctionalNumber(getIntegerValue(hQ3StaffToiletFunctional))
+                .setQuestion3ToiletNonFunctionNumber(getIntegerValue( hQ3StaffToiletNone))
                 .build();
     }
 

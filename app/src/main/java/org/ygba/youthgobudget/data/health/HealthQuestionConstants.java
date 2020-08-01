@@ -37,4 +37,13 @@ public class HealthQuestionConstants {
     public static final String QUESTION_2_1_CATEGORY_LIVE_NUMBER = "live_number_deliveries";
     public static final String QUESTION_2_1_CATEGORY_STILL_NUMBER = "number_still_number";
     public static final String QUESTION_2_2_NUMBER_CHILDREN_IMMUNIZED = "question_2_2_children_number";
+    public static final String QUESTION_3_0_TOILET_NUMBER_BLOCKS = "question_3_0_number_blocks_toilet";
+    public static final String QUESTION_3_0_TOILET_NUMBER_INSTANCES = "question_3_0_number_stances_toilet";
+    public static final String QUESTION_3_0_PATIENT_NUMBER_MALE_STANCES = "question_male_number_patient_stances";
+    public static final String QUESTION_3_0_PATIENT_NUMBER_STANCES = "Q3_0_F_stancies";
+    public static final String QUESTION_3_0_HEALTH_STAFF_NUMBER_MALE_STANCES = "QUESTION_3_0_HEALTH_STAFF_NUMBER_MALE_STANCES";
+    public static final String QUESTION_3_HEALTH_STAFF_NUMBER_FEMALE_STANCES = "QUESTION_3_HEALTH_STAFF_NUMBER_FEMALE_STANCES";
+    public static final String QUESTION_3_0_HEALTH_MIXED_NUMBER_STANCES = "wwrbbjnjiouydyhddvsvhsfdfgsdfgsddff";
+    public static final String QUESTION_3_4_TOILET_NUMBER_FUNCTIONAL = "QUESTION_3_4_TOILET_NUMBER_FUNCTIONAL";
+    public static final String QUESTION_3_0_TOILET_NONE_FUNCTION_NUMBER = "QUESTION_3_0_TOILET_NONE_FUNCTION_NUMBER";
 }

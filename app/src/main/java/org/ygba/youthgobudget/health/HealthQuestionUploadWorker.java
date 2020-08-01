@@ -70,15 +70,15 @@ public class HealthQuestionUploadWorker extends Worker {
             body.put("no_immunized_pentavalent_vaccine", healthQuestion.getQuestion22ChildrenImmunized());
 
             // 3.0
-            body.put("no_santn_toilet_blocks", 565);
-            body.put("no_santn_toilet_stances", 787);
-            body.put("no_santn_toilet_patient_male_stances", 898);
-            body.put("no_santn_toilet_patient_female_stances", 787);
-            body.put("no_santn_toilet_male_staff", 787);
-            body.put("no_santn_toilet_female_staff", 98);
-            body.put("no_santn_toilet_mixed_staff", 767);
-            body.put("no_santn_toilet_functional", 65);
-            body.put("no_santn_toilet_non_functional", 656);
+            body.put("no_santn_toilet_blocks", healthQuestion.getQuestion3ToiletNumberBlocks());
+            body.put("no_santn_toilet_stances", healthQuestion.getQuestion3ToiletNumberInstances());
+            body.put("no_santn_toilet_patient_male_stances", healthQuestion.getQuestion3PatientToiletNumberMaleStances());
+            body.put("no_santn_toilet_patient_female_stances", healthQuestion.getQuestion3PatientToiletNumberFemaleStances());
+            body.put("no_santn_toilet_male_staff", healthQuestion.getQuestion3HealthStaffNumberToiletMaleStance());
+            body.put("no_santn_toilet_female_staff", healthQuestion.getQuestion3HealthStaffNumberToiletFemaleStances());
+            body.put("no_santn_toilet_mixed_staff", healthQuestion.getQuestion3HealthStaffNumberToiletMixedStances());
+            body.put("no_santn_toilet_functional", healthQuestion.getQuestion3ToiletFunctionalNumber());
+            body.put("no_santn_toilet_non_functional", healthQuestion.getQuestion3ToiletNonFunctionNumber());
 
 
         } catch (JSONException e) {
