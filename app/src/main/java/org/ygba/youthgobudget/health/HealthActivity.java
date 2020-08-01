@@ -310,6 +310,11 @@ public class HealthActivity extends AppCompatActivity {
                 .setFinancialYear("2020")
                 .setFinancialYearQuarter("IV")
                 .setDate(getTextValue(hDateTextView))
+                .setDistrict("District Name")
+                .setVillage(getTextValue(villageEditText))
+                .setParish(getTextValue(parishEditText))
+                .setSubCountyDivision(getTextValue(divisionEditText))
+                .setNameMonitorAgent(getTextValue(agentFulNameEditText))
                 .build();
     }
 

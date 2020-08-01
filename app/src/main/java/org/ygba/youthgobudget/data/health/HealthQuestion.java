@@ -20,6 +20,21 @@ public class HealthQuestion {
     @ColumnInfo(name = HealthQuestionConstants.DATE)
     private String data;
 
+    @ColumnInfo(name = HealthQuestionConstants.DISTRICT_NAME)
+    private String district;
+
+    @ColumnInfo(name = HealthQuestionConstants.VILLAGE_NAME)
+    private String village;
+
+    @ColumnInfo(name = HealthQuestionConstants.PARISH_NAME)
+    private String parish;
+
+    @ColumnInfo(name = HealthQuestionConstants.TOWN_COUNCIL)
+    private String townCouncil;
+
+    @ColumnInfo(name = HealthQuestionConstants.NAME_MONITOR_AGENT)
+    private String nameMonitorAgent;
+
 
     private HealthQuestion() {}
 
@@ -48,6 +63,47 @@ public class HealthQuestion {
             INSTANCE.setData(textValue);
             return this;
         }
+
+        public Builder setDistrict(String district_name) {
+            INSTANCE.setDistrict(district_name);
+            return this;
+        }
+
+        public Builder setVillage(String textValue) {
+            INSTANCE.setVillage(textValue);
+            return this;
+        }
+
+        public Builder setParish(String textValue) {
+            INSTANCE.setParish(textValue);
+            return this;
+        }
+
+        public Builder setSubCountyDivision(String textValue) {
+            INSTANCE.setTownCouncil(textValue);
+            return this;
+        }
+
+        public Builder setNameMonitorAgent(String textValue) {
+            INSTANCE.setNameMonitorAgent(textValue);
+            return this;
+        }
+    }
+
+    public String getNameMonitorAgent() {
+        return nameMonitorAgent;
+    }
+
+    public void setNameMonitorAgent(String nameMonitorAgent) {
+        this.nameMonitorAgent = nameMonitorAgent;
+    }
+
+    public String getTownCouncil() {
+        return townCouncil;
+    }
+
+    public void setTownCouncil(String townCouncil) {
+        this.townCouncil = townCouncil;
     }
 
     public int getPrimaryKey() {
@@ -80,5 +136,29 @@ public class HealthQuestion {
 
     public void setData(String data) {
         this.data = data;
+    }
+
+    public String getDistrict() {
+        return district;
+    }
+
+    public void setDistrict(String district) {
+        this.district = district;
+    }
+
+    public String getVillage() {
+        return village;
+    }
+
+    public void setVillage(String village) {
+        this.village = village;
+    }
+
+    public String getParish() {
+        return parish;
+    }
+
+    public void setParish(String parish) {
+        this.parish = parish;
     }
 }
