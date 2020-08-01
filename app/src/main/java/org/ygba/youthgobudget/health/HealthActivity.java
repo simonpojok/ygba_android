@@ -352,6 +352,7 @@ public class HealthActivity extends AppCompatActivity {
                 // 2.1
                 .setQuestion21CategoryLiveNumberDeliveries(getIntegerValue(hQ2_1_LiveNumberDeliveriesTextEdit))
                 .setQuestion21CategoryStillNumberDeliveries(getIntegerValue(hQ2_1_StillNumberDeliveriesTextEdit))
+                .setQuestion22ChildrenImmunized(getIntegerValue(hQ2_2_VaccineEditText))
                 .build();
     }
 

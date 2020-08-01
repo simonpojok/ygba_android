@@ -110,6 +110,9 @@ public class HealthQuestion {
     @ColumnInfo(name = HealthQuestionConstants.QUESTION_2_1_CATEGORY_STILL_NUMBER)
     private int question21CategoryStillNumberDeliveries;
 
+    @ColumnInfo(name = HealthQuestionConstants.QUESTION_2_2_NUMBER_CHILDREN_IMMUNIZED)
+    private int question22ChildrenImmunized;
+
     private HealthQuestion() {}
 
     public static class Builder {
@@ -287,6 +290,19 @@ public class HealthQuestion {
             INSTANCE.setQuestion21CategoryStillNumberDeliveries(integerValue);
             return this;
         }
+
+        public Builder setQuestion22ChildrenImmunized(int integerValue) {
+            INSTANCE.setQuestion22ChildrenImmunized(integerValue);
+            return this;
+        }
+    }
+
+    public int getQuestion22ChildrenImmunized() {
+        return question22ChildrenImmunized;
+    }
+
+    public void setQuestion22ChildrenImmunized(int question22ChildrenImmunized) {
+        this.question22ChildrenImmunized = question22ChildrenImmunized;
     }
 
     public int getQuestion21CategoryStillNumberDeliveries() {

@@ -7,6 +7,7 @@ import androidx.work.Worker;
 import androidx.work.WorkerParameters;
 
 import org.json.JSONArray;
+import org.json.JSONException;
 import org.json.JSONObject;
 import org.ygba.youthgobudget.data.health.HealthQuestion;
 
@@ -66,9 +67,22 @@ public class HealthQuestionUploadWorker extends Worker {
             body.put("no_live_deliveries", healthQuestion.getQuestion21CategoryLiveNumberDeliveries());
             body.put("no_still_deliveries", healthQuestion.getQuestion21CategoryStillNumberDeliveries());
 
+            body.put("no_immunized_pentavalent_vaccine", healthQuestion.getQuestion22ChildrenImmunized());
 
-        } catch (Exception e) {
+            // 3.0
+            body.put("no_santn_toilet_blocks", 565);
+            body.put("no_santn_toilet_stances", 787);
+            body.put("no_santn_toilet_patient_male_stances", 898);
+            body.put("no_santn_toilet_patient_female_stances", 787);
+            body.put("no_santn_toilet_male_staff", 787);
+            body.put("no_santn_toilet_female_staff", 98);
+            body.put("no_santn_toilet_mixed_staff", 767);
+            body.put("no_santn_toilet_functional", 65);
+            body.put("no_santn_toilet_non_functional", 656);
 
+
+        } catch (JSONException e) {
+            e.printStackTrace();
         }
         return null;
     }
