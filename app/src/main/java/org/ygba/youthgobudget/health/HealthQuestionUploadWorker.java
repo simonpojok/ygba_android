@@ -106,8 +106,8 @@ public class HealthQuestionUploadWorker extends Worker {
 
             // question 4
             body.put("no_borehole", healthQuestion.getQuestion4NumberOfBoreHole());
-            body.put("no_borehole_functional", 67);
-            body.put("no_borehole_none_functional", 78);
+            body.put("no_borehole_functional", healthQuestion.getQuestion4NumberOfBoreHoleFunctional());
+            body.put("no_borehole_none_functional", healthQuestion.getQuestion4NumberOfBoreHoleNoneFunctional());
 
             body.put("no_tap", 67);
             body.put("no_tap_functional", 67);

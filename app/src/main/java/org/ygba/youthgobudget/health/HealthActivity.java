@@ -269,6 +269,8 @@ public class HealthActivity extends AppCompatActivity {
         hQ4BoreholeNumberEditText = findViewById(R.id.health_4_borehole_number);
         hQ4BoreholeNumberFunctionalEditText = findViewById(R.id.health_4_borehole_number_functional);
         hQ4BoreholeNumberNoneFunctional = findViewById(R.id.health_4_borehole_number_none);
+
+
         hQ4TapNumberEditText = findViewById(R.id.health_4_tap_number);
         hQ4TapNumberFunctionalEditText = findViewById(R.id.health_4_tap_number_functional);
         hQ4TapNumberNoneFunctional = findViewById(R.id.health_4_tap_number_none);
@@ -396,6 +398,7 @@ public class HealthActivity extends AppCompatActivity {
 
                 .setQuestion4NumberOfBoreHole(getIntegerValue(hQ4BoreholeNumberEditText))
                 .setQuestion4NumberOfBoreHoleFunctional(getIntegerValue(hQ4BoreholeNumberFunctionalEditText))
+                .setQuestion4NumberOfBoreHoleNoneFunctional(getIntegerValue( hQ4BoreholeNumberNoneFunctional))
                 .build();
 
     }

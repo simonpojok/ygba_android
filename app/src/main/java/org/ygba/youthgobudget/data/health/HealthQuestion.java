@@ -204,6 +204,9 @@ public class HealthQuestion {
     @ColumnInfo(name = HealthQuestionConstants.QUESTION_4_NUMBER_OF_BORE_HOLE_FUNCTIONAL)
     private int question4NumberOfBoreHoleFunctional;
 
+    @ColumnInfo(name = HealthQuestionConstants.QUESTION_4_NUMBER_OF_BORE_HOLE_NONE_FUNCTIONAL)
+    private int question4NumberOfBoreHoleNoneFunctional;
+
     private HealthQuestion() {}
 
     public static class Builder {
@@ -536,6 +539,19 @@ public class HealthQuestion {
             INSTANCE.setQuestion4NumberOfBoreHoleFunctional(integerValue);
             return this;
         }
+
+        public Builder setQuestion4NumberOfBoreHoleNoneFunctional(int integerValue) {
+            INSTANCE.setQuestion4NumberOfBoreHoleNoneFunctional(integerValue);
+            return this;
+        }
+    }
+
+    public int getQuestion4NumberOfBoreHoleNoneFunctional() {
+        return question4NumberOfBoreHoleNoneFunctional;
+    }
+
+    public void setQuestion4NumberOfBoreHoleNoneFunctional(int question4NumberOfBoreHoleNoneFunctional) {
+        this.question4NumberOfBoreHoleNoneFunctional = question4NumberOfBoreHoleNoneFunctional;
     }
 
     public int getQuestion4NumberOfBoreHoleFunctional() {
