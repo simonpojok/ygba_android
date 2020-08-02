@@ -129,9 +129,12 @@ public class HealthQuestionUploadWorker extends Worker {
             body.put("is_handwashing_facility", healthQuestion.isQuestion44HandWashingInstalled());
 
             // question 5
-            body.put("is_health_unit_mgt_commit", true);
-            body.put("if_yes_meeting_frequency", 2);
-            body.put("last_visit_by_health_inspector", "Y-m-d");
+            body.put("is_health_unit_mgt_commit", healthQuestion.isQuestion51HealthUnitManagementCommittee());
+            // frequency TODO: need to be changed
+            body.put("if_yes_meeting_frequency", healthQuestion.getQuestion52HowOftenTheyMeet());
+            body.put("last_visit_by_health_inspector", healthQuestion.getQuestion53LastVisitSupportSupervisor()); // Y-m-d
+
+            // question 6
             body.put("medical_staff_ceiling", 2);
             body.put("medical_staff_total", 2);
             body.put("medical_staff_present", 2);

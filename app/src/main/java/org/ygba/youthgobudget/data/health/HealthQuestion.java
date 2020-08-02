@@ -249,6 +249,15 @@ public class HealthQuestion {
     @ColumnInfo(name = HealthQuestionConstants.QUESTION_4_4_HAND_WASHING_INSTALLED)
     private boolean question44HandWashingInstalled;
 
+    @ColumnInfo(name = HealthQuestionConstants.QUESTION_5_1_HEALTH_UNIT_MANAGEMENT_COMMITTE)
+    private boolean question51HealthUnitManagementCommittee;
+
+    @ColumnInfo(name = HealthQuestionConstants.QUESTION_5_2_HOW_OFTEN_THEY_MEET)
+    private String question52HowOftenTheyMeet;
+
+    @ColumnInfo(name = HealthQuestionConstants.QUESTION_5_3_LAST_SUPPORT_SUPERVISOR_VISIT)
+    private String question53LastVisitSupportSupervisor;
+
     private HealthQuestion() {}
 
     public static class Builder {
@@ -656,6 +665,45 @@ public class HealthQuestion {
             INSTANCE.setQuestion44HandWashingInstalled(question44HandWashingObjective);
             return this;
         }
+
+        public Builder setQuestion51HealthUnitManagementCommittee(boolean question51HUMCObjective) {
+            INSTANCE.setQuestion51HealthUnitManagementCommittee(question51HUMCObjective);
+            return this;
+        }
+
+        public Builder setQuestion52HowOftenTheyMeet(String question52MeetingObjective) {
+            INSTANCE.setQuestion52HowOftenTheyMeet(question52MeetingObjective);
+            return this;
+        }
+
+        public Builder setQuestion53LastVisitSupportSupervisor(String textValue) {
+            INSTANCE.setQuestion53LastVisitSupportSupervisor(textValue);
+            return this;
+        }
+    }
+
+    public String getQuestion53LastVisitSupportSupervisor() {
+        return question53LastVisitSupportSupervisor;
+    }
+
+    public void setQuestion53LastVisitSupportSupervisor(String question53LastVisitSupportSupervisor) {
+        this.question53LastVisitSupportSupervisor = question53LastVisitSupportSupervisor;
+    }
+
+    public String getQuestion52HowOftenTheyMeet() {
+        return question52HowOftenTheyMeet;
+    }
+
+    public void setQuestion52HowOftenTheyMeet(String question52HowOftenTheyMeet) {
+        this.question52HowOftenTheyMeet = question52HowOftenTheyMeet;
+    }
+
+    public boolean isQuestion51HealthUnitManagementCommittee() {
+        return question51HealthUnitManagementCommittee;
+    }
+
+    public void setQuestion51HealthUnitManagementCommittee(boolean question51HealthUnitManagementCommittee) {
+        this.question51HealthUnitManagementCommittee = question51HealthUnitManagementCommittee;
     }
 
     public boolean isQuestion44HandWashingInstalled() {
