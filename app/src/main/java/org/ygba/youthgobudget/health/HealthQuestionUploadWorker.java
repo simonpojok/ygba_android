@@ -109,13 +109,13 @@ public class HealthQuestionUploadWorker extends Worker {
             body.put("no_borehole_functional", healthQuestion.getQuestion4NumberOfBoreHoleFunctional());
             body.put("no_borehole_none_functional", healthQuestion.getQuestion4NumberOfBoreHoleNoneFunctional());
 
-            body.put("no_tap", 67);
-            body.put("no_tap_functional", 67);
-            body.put("no_tap_none_functional", 56);
+            body.put("no_tap", healthQuestion.getQuestion4NumberOfTap());
+            body.put("no_tap_functional", healthQuestion.getQuestion4NumberOfTapFunctional());
+            body.put("no_tap_none_functional", healthQuestion.getQuestion4NumberOfTapNoneFunctional());
 
-            body.put("no_water_tank", 56);
-            body.put("no_water_tank_functional", 67);
-            body.put("no_water_tank_none_functional", 78);
+            body.put("no_water_tank", healthQuestion.getQuestion4NumberOfWaterTank());
+            body.put("no_water_tank_functional", healthQuestion.getQuestion4NumberOfWaterTankFunctional());
+            body.put("no_water_tank_none_functional", healthQuestion.getQuestion4NumberOfWaterTankNoneFunctional());
 
             body.put("no_others", 89);
             body.put("no_others_functional", 89);

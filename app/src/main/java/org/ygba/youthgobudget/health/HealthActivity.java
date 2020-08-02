@@ -274,9 +274,13 @@ public class HealthActivity extends AppCompatActivity {
         hQ4TapNumberEditText = findViewById(R.id.health_4_tap_number);
         hQ4TapNumberFunctionalEditText = findViewById(R.id.health_4_tap_number_functional);
         hQ4TapNumberNoneFunctional = findViewById(R.id.health_4_tap_number_none);
+
+
         hQ4WaterTankNumberEditText = findViewById(R.id.health_4_water_tank_number);
         hQ4WaterTankNumberFunctionalEditText = findViewById(R.id.health_4_water_tank_number_functional);
         hQ4WaterTankNumberNoneFunctional = findViewById(R.id.health_4_water_tank_number_none);
+
+
         hQ4NoneTankNumberEditText = findViewById(R.id.health_4_none_number);
         hQ4NoneTankNumberFunctionalEditText = findViewById(R.id.health_4_water_none_functional);
         hQ4NoneTankNumberNoneFunctional = findViewById(R.id.health_4_none_number_none);
@@ -399,6 +403,14 @@ public class HealthActivity extends AppCompatActivity {
                 .setQuestion4NumberOfBoreHole(getIntegerValue(hQ4BoreholeNumberEditText))
                 .setQuestion4NumberOfBoreHoleFunctional(getIntegerValue(hQ4BoreholeNumberFunctionalEditText))
                 .setQuestion4NumberOfBoreHoleNoneFunctional(getIntegerValue( hQ4BoreholeNumberNoneFunctional))
+
+                .setQuestion4NumberOfTap(getIntegerValue(hQ4TapNumberEditText))
+                .setQuestion4NumberOfTapFunctional(getIntegerValue(hQ4TapNumberFunctionalEditText))
+                .setQuestion4NumberOfTapNoneFunctional(getIntegerValue(hQ4TapNumberNoneFunctional))
+
+                .setQuestion4NumberOfWaterTank(getIntegerValue(hQ4WaterTankNumberEditText))
+                .setQuestion4NumberOfWaterTankFunctional(getIntegerValue(hQ4NoneTankNumberFunctionalEditText))
+                .setQuestion4NumberOfWaterTankNoneFunctional(getIntegerValue(hQ4NoneTankNumberNoneFunctional))
                 .build();
 
     }

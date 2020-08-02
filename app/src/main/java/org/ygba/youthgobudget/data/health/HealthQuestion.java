@@ -207,6 +207,24 @@ public class HealthQuestion {
     @ColumnInfo(name = HealthQuestionConstants.QUESTION_4_NUMBER_OF_BORE_HOLE_NONE_FUNCTIONAL)
     private int question4NumberOfBoreHoleNoneFunctional;
 
+    @ColumnInfo(name = HealthQuestionConstants.QUESTION_4_NUMBER_OF_TOP)
+    private int question4NumberOfTap;
+
+    @ColumnInfo(name = HealthQuestionConstants.QUESTION_4_NUMBER_OF_TOP_FUNCTIONAL)
+    private int question4NumberOfTapFunctional;
+
+    @ColumnInfo(name = HealthQuestionConstants.QUESTION_4_NUMBER_OF_TOP_NONE_FUNCTIONAL)
+    private int question4NumberOfTapNoneFunctional;
+
+    @ColumnInfo(name = HealthQuestionConstants.QUESTION_4_NUMBER_OF_WATER_TANK)
+    private int question4NumberOfWaterTank;
+
+    @ColumnInfo(name = HealthQuestionConstants.QUESTION_4_NUMBER_OF_WATER_TANK_FUNCTIONAL)
+    private int question4NumberOfWaterTankFunctional;
+
+    @ColumnInfo(name = HealthQuestionConstants.QUESTION_4_NUMBER_OF_WATER_TANK_NONE_FUNCTIONAL)
+    private int question4NumberOfWaterTankNoneFunctional;
+
     private HealthQuestion() {}
 
     public static class Builder {
@@ -544,6 +562,84 @@ public class HealthQuestion {
             INSTANCE.setQuestion4NumberOfBoreHoleNoneFunctional(integerValue);
             return this;
         }
+
+        public Builder setQuestion4NumberOfTap(int integerValue) {
+            INSTANCE.setQuestion4NumberOfTap(integerValue);
+            return this;
+        }
+
+        public Builder setQuestion4NumberOfTapFunctional(int integerValue) {
+            INSTANCE.setQuestion4NumberOfTapFunctional(integerValue);
+            return this;
+        }
+
+        public Builder setQuestion4NumberOfTapNoneFunctional(int integerValue) {
+            INSTANCE.setQuestion4NumberOfTapNoneFunctional(integerValue);
+            return this;
+        }
+
+        public Builder setQuestion4NumberOfWaterTank(int integerValue) {
+            INSTANCE.setQuestion4NumberOfWaterTank(integerValue);
+            return this;
+        }
+
+        public Builder setQuestion4NumberOfWaterTankFunctional(int integerValue) {
+            INSTANCE.setQuestion4NumberOfWaterTankFunctional(integerValue);
+            return this;
+        }
+
+        public Builder setQuestion4NumberOfWaterTankNoneFunctional(int integerValue) {
+            INSTANCE.setQuestion4NumberOfWaterTankNoneFunctional(integerValue);
+            return this;
+        }
+    }
+
+    public int getQuestion4NumberOfWaterTankNoneFunctional() {
+        return question4NumberOfWaterTankNoneFunctional;
+    }
+
+    public void setQuestion4NumberOfWaterTankNoneFunctional(int question4NumberOfWaterTankNoneFunctional) {
+        this.question4NumberOfWaterTankNoneFunctional = question4NumberOfWaterTankNoneFunctional;
+    }
+
+    public int getQuestion4NumberOfWaterTankFunctional() {
+        return question4NumberOfWaterTankFunctional;
+    }
+
+    public void setQuestion4NumberOfWaterTankFunctional(int question4NumberOfWaterTankFunctional) {
+        this.question4NumberOfWaterTankFunctional = question4NumberOfWaterTankFunctional;
+    }
+
+    public int getQuestion4NumberOfWaterTank() {
+        return question4NumberOfWaterTank;
+    }
+
+    public void setQuestion4NumberOfWaterTank(int question4NumberOfWaterTank) {
+        this.question4NumberOfWaterTank = question4NumberOfWaterTank;
+    }
+
+    public int getQuestion4NumberOfTapNoneFunctional() {
+        return question4NumberOfTapNoneFunctional;
+    }
+
+    public void setQuestion4NumberOfTapNoneFunctional(int question4NumberOfTapNoneFunctional) {
+        this.question4NumberOfTapNoneFunctional = question4NumberOfTapNoneFunctional;
+    }
+
+    public int getQuestion4NumberOfTapFunctional() {
+        return question4NumberOfTapFunctional;
+    }
+
+    public void setQuestion4NumberOfTapFunctional(int question4NumberOfTapFunctional) {
+        this.question4NumberOfTapFunctional = question4NumberOfTapFunctional;
+    }
+
+    public int getQuestion4NumberOfTap() {
+        return question4NumberOfTap;
+    }
+
+    public void setQuestion4NumberOfTap(int question4NumberOfTap) {
+        this.question4NumberOfTap = question4NumberOfTap;
     }
 
     public int getQuestion4NumberOfBoreHoleNoneFunctional() {
