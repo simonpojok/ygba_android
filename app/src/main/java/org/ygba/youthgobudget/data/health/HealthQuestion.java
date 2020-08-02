@@ -237,6 +237,18 @@ public class HealthQuestion {
     @ColumnInfo(name = HealthQuestionConstants.QUESTION_4_NUMBER_OF_OTHERS_NONE_FUNCTIONAL)
     private int question4OtherNumberNoneFunctional;
 
+    @ColumnInfo(name = HealthQuestionConstants.QUESTION_4_1_POIN_ACCESSIBLE_PWD)
+    private boolean question41WaterPointAccessible;
+
+    @ColumnInfo(name = HealthQuestionConstants.QUESTION_4_3_FUNCTIONAL_WATER_POINT)
+    private boolean question43FunctionalWaterPoint;
+
+    @ColumnInfo(name = HealthQuestionConstants.QUESTION_4_3_OBJECTIVE_REASON)
+    private String question43IfNoneReason;
+
+    @ColumnInfo(name = HealthQuestionConstants.QUESTION_4_4_HAND_WASHING_INSTALLED)
+    private boolean question44HandWashingInstalled;
+
     private HealthQuestion() {}
 
     public static class Builder {
@@ -624,6 +636,58 @@ public class HealthQuestion {
             INSTANCE.setQuestion4OtherNumberNoneFunctional(integerValue);
             return this;
         }
+
+        public Builder setQuestion41WaterPointAccessible(boolean question41WaterPointObjective) {
+            INSTANCE.setQuestion41WaterPointAccessible(question41WaterPointObjective);
+            return this;
+        }
+
+        public Builder setQuestion43FunctionalWaterPoint(boolean question43WaterPointObjective) {
+            INSTANCE.setQuestion43FunctionalWaterPoint(question43WaterPointObjective);
+            return this;
+        }
+
+        public Builder setQuestion43IfNoneReason(String textValue) {
+            INSTANCE.setQuestion43IfNoneReason(textValue);
+            return this;
+        }
+
+        public Builder setQuestion44HandWashingInstalled(boolean question44HandWashingObjective) {
+            INSTANCE.setQuestion44HandWashingInstalled(question44HandWashingObjective);
+            return this;
+        }
+    }
+
+    public boolean isQuestion44HandWashingInstalled() {
+        return question44HandWashingInstalled;
+    }
+
+    public void setQuestion44HandWashingInstalled(boolean question44HandWashingInstalled) {
+        this.question44HandWashingInstalled = question44HandWashingInstalled;
+    }
+
+    public String getQuestion43IfNoneReason() {
+        return question43IfNoneReason;
+    }
+
+    public void setQuestion43IfNoneReason(String question43IfNoneReason) {
+        this.question43IfNoneReason = question43IfNoneReason;
+    }
+
+    public boolean isQuestion43FunctionalWaterPoint() {
+        return question43FunctionalWaterPoint;
+    }
+
+    public void setQuestion43FunctionalWaterPoint(boolean question43FunctionalWaterPoint) {
+        this.question43FunctionalWaterPoint = question43FunctionalWaterPoint;
+    }
+
+    public boolean isQuestion41WaterPointAccessible() {
+        return question41WaterPointAccessible;
+    }
+
+    public void setQuestion41WaterPointAccessible(boolean question41WaterPointAccessible) {
+        this.question41WaterPointAccessible = question41WaterPointAccessible;
     }
 
     public int getQuestion4OtherNumberNoneFunctional() {

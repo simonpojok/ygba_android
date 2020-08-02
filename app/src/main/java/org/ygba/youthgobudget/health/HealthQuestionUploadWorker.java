@@ -122,11 +122,13 @@ public class HealthQuestionUploadWorker extends Worker {
             body.put("no_others_functional", healthQuestion.getQuestion4OtherNumberFunctional());
             body.put("no_others_none_functional", healthQuestion.getQuestion4OtherNumberNoneFunctional());
 
-            body.put("is_water_accessible_to_pwds", true);
-            body.put("is_water_point_within", 89);
-            body.put("if_not_within_how_far", "some reason");
+            body.put("is_water_accessible_to_pwds", healthQuestion.isQuestion41WaterPointAccessible());
+            body.put("is_water_point_within", healthQuestion.isQuestion43FunctionalWaterPoint());
+            body.put("if_not_within_how_far", healthQuestion.getQuestion43IfNoneReason());
 
-            body.put("is_handwashing_facility", true);
+            body.put("is_handwashing_facility", healthQuestion.isQuestion44HandWashingInstalled());
+
+            // question 5
             body.put("is_health_unit_mgt_commit", true);
             body.put("if_yes_meeting_frequency", 2);
             body.put("last_visit_by_health_inspector", "Y-m-d");

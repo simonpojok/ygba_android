@@ -7,7 +7,6 @@ import androidx.cardview.widget.CardView;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.RadioGroup;
 import android.widget.Spinner;
@@ -418,6 +417,12 @@ public class HealthActivity extends AppCompatActivity {
                 .setQuestion4OtherNumber(getIntegerValue(hQ4OtherNameNumberEditText))
                 .setQuestion4OtherNumberFunctional(getIntegerValue( hQ4OtherNameNumberFunctionalEditText))
                 .setQuestion4OtherNumberNoneFunctional(getIntegerValue( hQ4OtherNameNumberNoneFunctional))
+
+                .setQuestion41WaterPointAccessible(getQuestion41WaterPointObjective())
+                .setQuestion43FunctionalWaterPoint(getQuestion43WaterPointObjective())
+                .setQuestion43IfNoneReason(getTextValue(h43NoEstimateEditText))
+
+                .setQuestion44HandWashingInstalled(getQuestion44HandWashingObjective())
                 .build();
 
     }
@@ -488,18 +493,6 @@ public class HealthActivity extends AppCompatActivity {
     private boolean getQuestion31ToiletObjective() {
         RadioGroup radioGroup = findViewById(R.id.question_3_1_radio_group);
         return radioGroup.getCheckedRadioButtonId() == R.id.question_3_1_yes;
-    }
-
-    private boolean getQuestion31RampAnswer() {
-        return ((CheckBox) findViewById(R.id.health_question_3_2_ramp)).isChecked();
-    }
-
-    private boolean getQuestion31SpecializedToiletAnswer() {
-        return ((CheckBox) findViewById(R.id.health_question_3_2_specialized_toilet)).isChecked();
-    }
-
-    private boolean getQuestion31Others() {
-        return ((CheckBox) findViewById(R.id.health_question_3_others)).isChecked();
     }
 
     private boolean getQuestion41WaterPointObjective() {
