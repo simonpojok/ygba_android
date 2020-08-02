@@ -289,6 +289,8 @@ public class HealthActivity extends AppCompatActivity {
         hQ4OtherNameNumberEditText = findViewById(R.id.health_4_others_number);
         hQ4OtherNameNumberFunctionalEditText = findViewById(R.id.health_4_water_others_functional);
         hQ4OtherNameNumberNoneFunctional = findViewById(R.id.health_4_others_number_none);
+
+
         h43NoEstimateEditText = findViewById(R.id.health_4_2_other_specify);
         hQ5OthersSpecify = findViewById(R.id.health_5_2_other_specify);
         hQ6MedicalStaffCeilingEditText = findViewById(R.id.health_6_medical_staff_ceiling);
@@ -411,6 +413,11 @@ public class HealthActivity extends AppCompatActivity {
                 .setQuestion4NumberOfWaterTank(getIntegerValue(hQ4WaterTankNumberEditText))
                 .setQuestion4NumberOfWaterTankFunctional(getIntegerValue(hQ4NoneTankNumberFunctionalEditText))
                 .setQuestion4NumberOfWaterTankNoneFunctional(getIntegerValue(hQ4NoneTankNumberNoneFunctional))
+
+                .setQuestion4OtherName(getTextValue(hQ4OtherNameEditText))
+                .setQuestion4OtherNumber(getIntegerValue(hQ4OtherNameNumberEditText))
+                .setQuestion4OtherNumberFunctional(getIntegerValue( hQ4OtherNameNumberFunctionalEditText))
+                .setQuestion4OtherNumberNoneFunctional(getIntegerValue( hQ4OtherNameNumberNoneFunctional))
                 .build();
 
     }

@@ -117,9 +117,10 @@ public class HealthQuestionUploadWorker extends Worker {
             body.put("no_water_tank_functional", healthQuestion.getQuestion4NumberOfWaterTankFunctional());
             body.put("no_water_tank_none_functional", healthQuestion.getQuestion4NumberOfWaterTankNoneFunctional());
 
-            body.put("no_others", 89);
-            body.put("no_others_functional", 89);
-            body.put("no_others_none_functional", 90);
+            body.put("no_others_name", healthQuestion.getQuestion4OtherName());
+            body.put("no_others", healthQuestion.getQuestion4OtherNumber());
+            body.put("no_others_functional", healthQuestion.getQuestion4OtherNumberFunctional());
+            body.put("no_others_none_functional", healthQuestion.getQuestion4OtherNumberNoneFunctional());
 
             body.put("is_water_accessible_to_pwds", true);
             body.put("is_water_point_within", 89);

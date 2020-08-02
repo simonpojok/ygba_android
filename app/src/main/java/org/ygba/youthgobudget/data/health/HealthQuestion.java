@@ -225,6 +225,18 @@ public class HealthQuestion {
     @ColumnInfo(name = HealthQuestionConstants.QUESTION_4_NUMBER_OF_WATER_TANK_NONE_FUNCTIONAL)
     private int question4NumberOfWaterTankNoneFunctional;
 
+    @ColumnInfo(name = HealthQuestionConstants.QUESTION_4_NAME_OF_OTHERS)
+    private String question4OtherName;
+
+    @ColumnInfo(name = HealthQuestionConstants.QUESTION_4_NUMBER_OF_OTHERS)
+    private int question4OtherNumber;
+
+    @ColumnInfo(name = HealthQuestionConstants.QUESTION_4_NUMBER_OF_OTHERS_FUNCTIONAL)
+    private int question4OtherNumberFunctional;
+
+    @ColumnInfo(name = HealthQuestionConstants.QUESTION_4_NUMBER_OF_OTHERS_NONE_FUNCTIONAL)
+    private int question4OtherNumberNoneFunctional;
+
     private HealthQuestion() {}
 
     public static class Builder {
@@ -592,6 +604,58 @@ public class HealthQuestion {
             INSTANCE.setQuestion4NumberOfWaterTankNoneFunctional(integerValue);
             return this;
         }
+
+        public Builder setQuestion4OtherName(String textValue) {
+            INSTANCE.setQuestion4OtherName(textValue);
+            return this;
+        }
+
+        public Builder setQuestion4OtherNumber(int integerValue) {
+            INSTANCE.setQuestion4OtherNumber(integerValue);
+            return this;
+        }
+
+        public Builder setQuestion4OtherNumberFunctional(int integerValue) {
+            INSTANCE.setQuestion4OtherNumberFunctional(integerValue);
+            return this;
+        }
+
+        public Builder setQuestion4OtherNumberNoneFunctional(int integerValue) {
+            INSTANCE.setQuestion4OtherNumberNoneFunctional(integerValue);
+            return this;
+        }
+    }
+
+    public int getQuestion4OtherNumberNoneFunctional() {
+        return question4OtherNumberNoneFunctional;
+    }
+
+    public void setQuestion4OtherNumberNoneFunctional(int question4OtherNumberNoneFunctional) {
+        this.question4OtherNumberNoneFunctional = question4OtherNumberNoneFunctional;
+    }
+
+    public int getQuestion4OtherNumberFunctional() {
+        return question4OtherNumberFunctional;
+    }
+
+    public void setQuestion4OtherNumberFunctional(int question4OtherNumberFunctional) {
+        this.question4OtherNumberFunctional = question4OtherNumberFunctional;
+    }
+
+    public int getQuestion4OtherNumber() {
+        return question4OtherNumber;
+    }
+
+    public void setQuestion4OtherNumber(int question4OtherNumber) {
+        this.question4OtherNumber = question4OtherNumber;
+    }
+
+    public String getQuestion4OtherName() {
+        return question4OtherName;
+    }
+
+    public void setQuestion4OtherName(String question4OtherName) {
+        this.question4OtherName = question4OtherName;
     }
 
     public int getQuestion4NumberOfWaterTankNoneFunctional() {
