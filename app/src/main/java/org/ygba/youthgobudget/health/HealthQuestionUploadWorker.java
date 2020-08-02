@@ -105,7 +105,7 @@ public class HealthQuestionUploadWorker extends Worker {
             body.put("if_yes_method_of_access", healthQuestion.getQuestion32HealthFacilityToiletReasonFacilities());
 
             // question 4
-            body.put("no_borehole", 56);
+            body.put("no_borehole", healthQuestion.getQuestion4NumberOfBoreHole());
             body.put("no_borehole_functional", 67);
             body.put("no_borehole_none_functional", 78);
 

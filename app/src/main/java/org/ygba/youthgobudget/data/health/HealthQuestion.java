@@ -198,6 +198,12 @@ public class HealthQuestion {
     @ColumnInfo(name = HealthQuestionConstants.QUESTION_3_1_HEALTH_FACILITY_FACILITIES)
     private boolean question31HealthFacilityToiletFacilities;
 
+    @ColumnInfo(name = HealthQuestionConstants.QUESTION_4_NUMBER_OF_BORE_HOLE)
+    private int question4NumberOfBoreHole;
+
+    @ColumnInfo(name = HealthQuestionConstants.QUESTION_4_NUMBER_OF_BORE_HOLE_FUNCTIONAL)
+    private int question4NumberOfBoreHoleFunctional;
+
     private HealthQuestion() {}
 
     public static class Builder {
@@ -520,6 +526,32 @@ public class HealthQuestion {
             INSTANCE.setQuestion32HealthFacilityToiletReasonFacilities(reasons);
             return this;
         }
+
+        public Builder setQuestion4NumberOfBoreHole(int integerValue) {
+            INSTANCE.setQuestion4NumberOfBoreHole(integerValue);
+            return this;
+        }
+
+        public Builder setQuestion4NumberOfBoreHoleFunctional(int integerValue) {
+            INSTANCE.setQuestion4NumberOfBoreHoleFunctional(integerValue);
+            return this;
+        }
+    }
+
+    public int getQuestion4NumberOfBoreHoleFunctional() {
+        return question4NumberOfBoreHoleFunctional;
+    }
+
+    public void setQuestion4NumberOfBoreHoleFunctional(int question4NumberOfBoreHoleFunctional) {
+        this.question4NumberOfBoreHoleFunctional = question4NumberOfBoreHoleFunctional;
+    }
+
+    public int getQuestion4NumberOfBoreHole() {
+        return question4NumberOfBoreHole;
+    }
+
+    public void setQuestion4NumberOfBoreHole(int question4NumberOfBoreHole) {
+        this.question4NumberOfBoreHole = question4NumberOfBoreHole;
     }
 
     public String getQuestion32HealthFacilityToiletReasonFacilities() {
