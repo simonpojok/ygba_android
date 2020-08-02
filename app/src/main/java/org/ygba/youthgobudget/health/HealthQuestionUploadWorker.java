@@ -135,17 +135,18 @@ public class HealthQuestionUploadWorker extends Worker {
             body.put("last_visit_by_health_inspector", healthQuestion.getQuestion53LastVisitSupportSupervisor()); // Y-m-d
 
             // question 6
-            body.put("medical_staff_ceiling", 2);
-            body.put("medical_staff_total", 2);
-            body.put("medical_staff_present", 2);
-            body.put("non_medical_staff_ceiling", 45);
-            body.put("non_medical_staff_total", 45);
-            body.put("non_medical_staff_present", 45);
-            body.put("reason_for_absent_staff", 34);
-            body.put("last_date_staff_perfomance_appraisal", "Y-m-d");
-            body.put("no_of_staff_appraised", 3);
-            body.put("received_medical_supplies_from_nms", true);
-            body.put("if_yes_date", 4);
+            body.put("medical_staff_ceiling", healthQuestion.getQuestion6MedicalStaffCeilingNumber());
+            body.put("medical_staff_total", healthQuestion.getQuestion6MedicalTotalNumberStaff());
+            body.put("medical_staff_present", healthQuestion.getQuestion6MedicalNumberStuffPresent());
+
+            body.put("non_medical_staff_ceiling", healthQuestion.getQuestion6NoneMedicalStaffCeilingNumber());
+            body.put("non_medical_staff_total", healthQuestion.getQuestion6NoneMedicalStaffTotalNumberStaff());
+            body.put("non_medical_staff_present", healthQuestion.getQuestion6NoneMedicalNumberStaffPresent());
+            body.put("reason_for_absent_staff", healthQuestion.getQuestion6ReasonsForStaffAbsence());
+            body.put("last_date_staff_perfomance_appraisal", healthQuestion.getQuestion6LastDatePerformanceAppraisal());
+            body.put("no_of_staff_appraised", healthQuestion.getQuestion6NumberOfStaffAppraised());
+            body.put("received_medical_supplies_from_nms", healthQuestion.isQuestion7HCReceiveMedicalSupplies());
+            body.put("if_yes_date", healthQuestion.getQuestion7HCReceiveMedicalSuppliesIfNo());
 
             JSONArray essentialDrugs = new JSONArray();
 

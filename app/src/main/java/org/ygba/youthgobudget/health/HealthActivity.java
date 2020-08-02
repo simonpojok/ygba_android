@@ -225,10 +225,9 @@ public class HealthActivity extends AppCompatActivity {
         h73DrugLastDateEditText = findViewById(R.id.health_7_3_last_date_drug_Edit_text);
         h73DrugLastDateEditText.setInputType(View.AUTOFILL_TYPE_NONE);
         hQ63LastDateAppraisalEditText = findViewById(R.id.health_6_3_date_last);
-        hQ63LastDateAppraisalEditText.setInputType(View.AUTOFILL_TYPE_NONE);;
+        hQ63LastDateAppraisalEditText.setInputType(View.AUTOFILL_TYPE_NONE);
+
         hQ1_2BudgetInformationEditText = findViewById(R.id.h_question_1_2_budget_information);
-
-
         hQ2_1_LiveNumberDeliveriesTextEdit = findViewById(R.id.health_live_number_deliveries);
         hQ2_1_StillNumberDeliveriesTextEdit = findViewById(R.id.health_still_number_deliveries);
         hQ2_2_VaccineEditText = findViewById(R.id.health_2_2_vaccine);
@@ -289,15 +288,18 @@ public class HealthActivity extends AppCompatActivity {
         hQ4OtherNameNumberFunctionalEditText = findViewById(R.id.health_4_water_others_functional);
         hQ4OtherNameNumberNoneFunctional = findViewById(R.id.health_4_others_number_none);
         h43NoEstimateEditText = findViewById(R.id.health_4_2_other_specify);
-
-
         hQ5OthersSpecify = findViewById(R.id.health_5_2_other_specify);
+
+
         hQ6MedicalStaffCeilingEditText = findViewById(R.id.health_6_medical_staff_ceiling);
         hQ6MedicalTotalNumberStaffEditText = findViewById(R.id.health_6_medical_total_number_staff_ceiling);
         hQ6MedicalTotalNumberStaffPresentEditText = findViewById(R.id.health_6_medical_total_number_staff_present);
+
         hQ6NoneMedicalStaffCeilingEditText = findViewById(R.id.health_6_none_medical_staff_ceiling);
         hQ6NoneMedicalTotalNumberStaffEditText = findViewById(R.id.health_6_none_medical_total_number_staff_ceiling);
         hQ6NoneMedicalTotalNumberStaffPresentEditText = findViewById(R.id.health_6_none_medical_total_number_staff_present);
+
+
         hQ6ReasonsEditText = findViewById(R.id.health_6_2_absence_reason_edit_Text);
         h64NumberOfStaffAppraisedEditText = findViewById(R.id.health_6_4_number_of_staff_appraised);
         hQ72Drug1NameEditText = findViewById(R.id.health_7_2_drug_name_1);
@@ -427,6 +429,22 @@ public class HealthActivity extends AppCompatActivity {
                 .setQuestion51HealthUnitManagementCommittee(getQuestion51HUMCObjective())
                 .setQuestion52HowOftenTheyMeet(getQuestion52MeetingObjective())
                 .setQuestion53LastVisitSupportSupervisor(getTextValue(h53LastVisitDate))
+
+                .setQuestion6MedicalStaffCeilingNumber(getIntegerValue(hQ6MedicalStaffCeilingEditText))
+                .setQuestion6MedicalTotalNumberStaff(getIntegerValue( hQ6MedicalTotalNumberStaffEditText))
+                .setQuestion6MedicalNumberStuffPresent(getIntegerValue(hQ6MedicalTotalNumberStaffPresentEditText))
+
+                .setQuestion6NoneMedicalStaffCeilingNumber(getIntegerValue(hQ6NoneMedicalStaffCeilingEditText))
+                .setQuestion6NoneMedicalStaffTotalNumberStaff(getIntegerValue(hQ6NoneMedicalTotalNumberStaffEditText))
+                .setQuestion6NoneMedicalNumberStaffPresent(getIntegerValue(hQ6NoneMedicalTotalNumberStaffPresentEditText))
+
+                .setQuestion6ReasonsForStaffAbsence(getTextValue(hQ6ReasonsEditText))
+                .setQuestion6LastDatePerformanceAppraisal(getTextValue(hQ63LastDateAppraisalEditText))
+                .setQuestion6NumberOfStaffAppraised(getIntegerValue(hQ63LastDateAppraisalEditText))
+
+                // question 7
+                .setQuestion7HCReceiveMedicalSupplies(getQuestion71Objective())
+                .setQuestion7HCReceiveMedicalSuppliesIfNo("reason")
                 .build();
 
     }
@@ -525,7 +543,7 @@ public class HealthActivity extends AppCompatActivity {
         }
         return "Others";
     }
-    private boolean getQuestion61Objective() {
+    private boolean getQuestion71Objective() {
         RadioGroup radioGroup = findViewById(R.id.question_7_1_radio_group);
         return radioGroup.getCheckedRadioButtonId() == R.id.question_7_1_yes;
     }

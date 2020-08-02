@@ -258,6 +258,40 @@ public class HealthQuestion {
     @ColumnInfo(name = HealthQuestionConstants.QUESTION_5_3_LAST_SUPPORT_SUPERVISOR_VISIT)
     private String question53LastVisitSupportSupervisor;
 
+    @ColumnInfo(name = HealthQuestionConstants.QUESTION_6_MEDICAL_STAFF_CEILING_NUMBER)
+    private int question6MedicalStaffCeilingNumber;
+
+
+    @ColumnInfo(name = HealthQuestionConstants.QUESTION_6_MEDICAL_TOTAL_NUMBER_STAFF)
+    private int question6MedicalTotalNumberStaff;
+
+    @ColumnInfo(name = HealthQuestionConstants.QUESTION_6_MEDICAL_NUMBER_STAFF_PRESENT)
+    private int question6MedicalNumberStuffPresent;
+
+    @ColumnInfo(name = HealthQuestionConstants.QUESTION_6_NONE_MEDICAL_STAFF_CEILING_NUMBER)
+    private int question6NoneMedicalStaffCeilingNumber;
+
+    @ColumnInfo(name = HealthQuestionConstants.QUESTION_6_NONE_MEDICAL_TOTAL_NUMBER_STAFF)
+    private int question6NoneMedicalStaffTotalNumberStaff;
+
+    @ColumnInfo(name = HealthQuestionConstants.QUESTION_6_NONE_MEDICAL_STAFF_PRESENT)
+    private int question6NoneMedicalNumberStaffPresent;
+
+    @ColumnInfo(name = HealthQuestionConstants.QUESTION_6_REASON_FOR_ABSENCE)
+    private String question6ReasonsForStaffAbsence;
+
+    @ColumnInfo(name = HealthQuestionConstants.QUESTION_6_LAST_DATE_OF_APPRAISAL)
+    private String question6LastDatePerformanceAppraisal;
+
+    @ColumnInfo(name = HealthQuestionConstants.QUESTION_6_NUMBER_OFF_STAFF_APPRAISED)
+    private int question6NumberOfStaffAppraised;
+
+    @ColumnInfo(name = HealthQuestionConstants.QUESTION_7_1_HC_RECIEVE_MEDICAL_SUPPLY)
+    private boolean question7HCReceiveMedicalSupplies;
+
+    @ColumnInfo(name = HealthQuestionConstants.QUESTION_7_1_HC_RECIEVE_MEDICAL_SUPPLY_IF_NO)
+    private String question7HCReceiveMedicalSuppliesIfNo;
+
     private HealthQuestion() {}
 
     public static class Builder {
@@ -680,6 +714,149 @@ public class HealthQuestion {
             INSTANCE.setQuestion53LastVisitSupportSupervisor(textValue);
             return this;
         }
+
+        public Builder setQuestion6MedicalStaffCeilingNumber(int integerValue) {
+            INSTANCE.setQuestion6MedicalStaffCeilingNumber(integerValue);
+            return this;
+        }
+
+        public Builder setQuestion6MedicalTotalNumberStaff(int integerValue) {
+            INSTANCE.setQuestion6MedicalTotalNumberStaff(integerValue);
+            return this;
+        }
+
+        public Builder setQuestion6MedicalNumberStuffPresent(int integerValue) {
+            INSTANCE.setQuestion6MedicalNumberStuffPresent(integerValue);
+            return this;
+        }
+
+        public Builder setQuestion6NoneMedicalStaffCeilingNumber(int integerValue) {
+            INSTANCE.setQuestion6NoneMedicalStaffCeilingNumber(integerValue);
+            return this;
+        }
+
+        public Builder setQuestion6NoneMedicalStaffTotalNumberStaff(int integerValue) {
+            INSTANCE.setQuestion6NoneMedicalStaffTotalNumberStaff(integerValue);
+            return this;
+        }
+
+        public Builder setQuestion6NoneMedicalNumberStaffPresent(int integerValue) {
+            INSTANCE.setQuestion6NoneMedicalNumberStaffPresent(integerValue);
+            return this;
+        }
+
+        public Builder setQuestion6ReasonsForStaffAbsence(String textValue) {
+            INSTANCE.setQuestion6ReasonsForStaffAbsence(textValue);
+            return this;
+        }
+
+        public Builder setQuestion6LastDatePerformanceAppraisal(String textValue) {
+            INSTANCE.setQuestion6LastDatePerformanceAppraisal(textValue);
+            return this;
+        }
+
+        public Builder setQuestion6NumberOfStaffAppraised(int integerValue) {
+            INSTANCE.setQuestion6NumberOfStaffAppraised(integerValue);
+            return this;
+        }
+
+        public Builder setQuestion7HCReceiveMedicalSupplies(boolean question71Objective) {
+            INSTANCE.setQuestion7HCReceiveMedicalSupplies(question71Objective);
+            return this;
+        }
+
+        public Builder setQuestion7HCReceiveMedicalSuppliesIfNo(String reason) {
+            INSTANCE.setQuestion7HCReceiveMedicalSuppliesIfNo(reason);
+            return this;
+        }
+    }
+
+    public String getQuestion7HCReceiveMedicalSuppliesIfNo() {
+        return question7HCReceiveMedicalSuppliesIfNo;
+    }
+
+    public void setQuestion7HCReceiveMedicalSuppliesIfNo(String question7HCReceiveMedicalSuppliesIfNo) {
+        this.question7HCReceiveMedicalSuppliesIfNo = question7HCReceiveMedicalSuppliesIfNo;
+    }
+
+    public boolean isQuestion7HCReceiveMedicalSupplies() {
+        return question7HCReceiveMedicalSupplies;
+    }
+
+    public void setQuestion7HCReceiveMedicalSupplies(boolean question7HCReceiveMedicalSupplies) {
+        this.question7HCReceiveMedicalSupplies = question7HCReceiveMedicalSupplies;
+    }
+
+    public int getQuestion6NumberOfStaffAppraised() {
+        return question6NumberOfStaffAppraised;
+    }
+
+    public void setQuestion6NumberOfStaffAppraised(int question6NumberOfStaffAppraised) {
+        this.question6NumberOfStaffAppraised = question6NumberOfStaffAppraised;
+    }
+
+    public String getQuestion6LastDatePerformanceAppraisal() {
+        return question6LastDatePerformanceAppraisal;
+    }
+
+    public void setQuestion6LastDatePerformanceAppraisal(String question6LastDatePerformanceAppraisal) {
+        this.question6LastDatePerformanceAppraisal = question6LastDatePerformanceAppraisal;
+    }
+
+    public String getQuestion6ReasonsForStaffAbsence() {
+        return question6ReasonsForStaffAbsence;
+    }
+
+    public void setQuestion6ReasonsForStaffAbsence(String question6ReasonsForStaffAbsence) {
+        this.question6ReasonsForStaffAbsence = question6ReasonsForStaffAbsence;
+    }
+
+    public int getQuestion6NoneMedicalNumberStaffPresent() {
+        return question6NoneMedicalNumberStaffPresent;
+    }
+
+    public void setQuestion6NoneMedicalNumberStaffPresent(int question6NoneMedicalNumberStaffPresent) {
+        this.question6NoneMedicalNumberStaffPresent = question6NoneMedicalNumberStaffPresent;
+    }
+
+    public int getQuestion6NoneMedicalStaffTotalNumberStaff() {
+        return question6NoneMedicalStaffTotalNumberStaff;
+    }
+
+    public void setQuestion6NoneMedicalStaffTotalNumberStaff(int question6NoneMedicalStaffTotalNumberStaff) {
+        this.question6NoneMedicalStaffTotalNumberStaff = question6NoneMedicalStaffTotalNumberStaff;
+    }
+
+    public int getQuestion6NoneMedicalStaffCeilingNumber() {
+        return question6NoneMedicalStaffCeilingNumber;
+    }
+
+    public void setQuestion6NoneMedicalStaffCeilingNumber(int question6NoneMedicalStaffCeilingNumber) {
+        this.question6NoneMedicalStaffCeilingNumber = question6NoneMedicalStaffCeilingNumber;
+    }
+
+    public int getQuestion6MedicalNumberStuffPresent() {
+        return question6MedicalNumberStuffPresent;
+    }
+
+    public void setQuestion6MedicalNumberStuffPresent(int question6MedicalNumberStuffPresent) {
+        this.question6MedicalNumberStuffPresent = question6MedicalNumberStuffPresent;
+    }
+
+    public int getQuestion6MedicalTotalNumberStaff() {
+        return question6MedicalTotalNumberStaff;
+    }
+
+    public void setQuestion6MedicalTotalNumberStaff(int question6MedicalTotalNumberStaff) {
+        this.question6MedicalTotalNumberStaff = question6MedicalTotalNumberStaff;
+    }
+
+    public int getQuestion6MedicalStaffCeilingNumber() {
+        return question6MedicalStaffCeilingNumber;
+    }
+
+    public void setQuestion6MedicalStaffCeilingNumber(int question6MedicalStaffCeilingNumber) {
+        this.question6MedicalStaffCeilingNumber = question6MedicalStaffCeilingNumber;
     }
 
     public String getQuestion53LastVisitSupportSupervisor() {
