@@ -6,6 +6,7 @@ import androidx.annotation.NonNull;
 import androidx.work.Worker;
 import androidx.work.WorkerParameters;
 
+import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 import org.ygba.youthgobudget.data.health.HealthQuestion;
@@ -92,7 +93,7 @@ public class HealthQuestionUploadWorker extends Worker {
             body.put("no_santn_latrine_non_functional", healthQuestion.getQuestion3LatrineNoneFunctional());
 
             // fcr
-            body.put("no_santn_female_change_rm_blocks", healthQuestion.getQuestion3FCRNumberBlock());
+            body.put("no_santn_female_change_rm_blocks", healthQuestion.getQuestion3FCRNumberBlock()); // buzuuko - road block buloba - ivory school oposite restaurent
             body.put("no_santn_female_change_rm_stances", healthQuestion.getQuestion3FCRNumberStances());
             body.put("no_santn_female_change_rm_patient_female_stances", healthQuestion.getQuestion3FCRNumberFemaleStances());
             body.put("no_santn_female_change_rm_female_staff", healthQuestion.getQuestion3FCRNumberStaffFemaleStances());
@@ -104,6 +105,76 @@ public class HealthQuestionUploadWorker extends Worker {
             body.put("if_yes_method_of_access", healthQuestion.getQuestion32HealthFacilityToiletReasonFacilities());
 
             // question 4
+            body.put("no_borehole", 56);
+            body.put("no_borehole_functional", 67);
+            body.put("no_borehole_none_functional", 78);
+
+            body.put("no_tap", 67);
+            body.put("no_tap_functional", 67);
+            body.put("no_tap_none_functional", 56);
+
+            body.put("no_water_tank", 56);
+            body.put("no_water_tank_functional", 67);
+            body.put("no_water_tank_none_functional", 78);
+
+            body.put("no_others", 89);
+            body.put("no_others_functional", 89);
+            body.put("no_others_none_functional", 90);
+
+            body.put("is_water_accessible_to_pwds", true);
+            body.put("is_water_point_within", 89);
+            body.put("if_not_within_how_far", "some reason");
+
+            body.put("is_handwashing_facility", true);
+            body.put("is_health_unit_mgt_commit", true);
+            body.put("if_yes_meeting_frequency", 2);
+            body.put("last_visit_by_health_inspector", "Y-m-d");
+            body.put("medical_staff_ceiling", 2);
+            body.put("medical_staff_total", 2);
+            body.put("medical_staff_present", 2);
+            body.put("non_medical_staff_ceiling", 45);
+            body.put("non_medical_staff_total", 45);
+            body.put("non_medical_staff_present", 45);
+            body.put("reason_for_absent_staff", 34);
+            body.put("last_date_staff_perfomance_appraisal", "Y-m-d");
+            body.put("no_of_staff_appraised", 3);
+            body.put("received_medical_supplies_from_nms", true);
+            body.put("if_yes_date", 4);
+
+            JSONArray essentialDrugs = new JSONArray();
+
+            JSONObject essentialDrug1 = new JSONObject();
+            essentialDrug1.put("name", "name");
+            essentialDrug1.put("stock_required", 89);
+            essentialDrugs.put(essentialDrug1);
+
+            JSONObject essentialDrug2 = new JSONObject();
+            essentialDrug2.put("name", "name");
+            essentialDrug2.put("stock_required", 67);
+            essentialDrugs.put(essentialDrug2);
+
+            JSONObject essentialDrug3 = new JSONObject();
+            essentialDrug3.put("stock_required", 78);
+            essentialDrug3.put("name", "name");
+            essentialDrugs.put(essentialDrug3);
+
+            JSONObject essentialDrug4 = new JSONObject();
+            essentialDrug4.put("stock_required", 78);
+            essentialDrug4.put("name", "name");
+            essentialDrugs.put(essentialDrug4);
+
+            JSONObject essentialDrug5 = new JSONObject();
+            essentialDrug5.put("stock_required", 78);
+            essentialDrug5.put("name", "name");
+            essentialDrugs.put(essentialDrug5);
+            body.put("essential_drugs", essentialDrugs);
+
+            body.put("when_last_drugs_consgmt_finished", "Y-m-d");
+            body.put("no_medical_equip_bought", 89);
+            body.put("is_ambulance", true);
+            body.put("if_no_how_referrals_handled", 4);
+            body.put("other_observations", "some data will go here");
+
 
 
         } catch (JSONException e) {
