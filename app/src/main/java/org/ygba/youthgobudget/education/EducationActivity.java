@@ -12,12 +12,18 @@ import android.widget.RadioGroup;
 import android.widget.Spinner;
 import android.widget.TextView;
 
+import com.mobsandgeeks.saripaar.ValidationError;
+import com.mobsandgeeks.saripaar.Validator;
+import com.mobsandgeeks.saripaar.annotation.NotEmpty;
+
 import org.ygba.youthgobudget.R;
 import org.ygba.youthgobudget.data.education.EducationQuestion;
 import org.ygba.youthgobudget.dialogs.DatePickerActivity;
 import org.ygba.youthgobudget.utils.DynamicData;
 
-public class EducationActivity extends AppCompatActivity {
+import java.util.List;
+
+public class EducationActivity extends AppCompatActivity implements Validator.ValidationListener{
     private final int CAPITAL_RECEIVED_DATE_REQUEST_CODE = 1;
     private final int CAPITAL_DATE_WITHDRAWN_REQUEST_CODE = 2;
     private final int SFG_DATE_RECEIVED_REQUEST_CODE = 3;
@@ -26,6 +32,7 @@ public class EducationActivity extends AppCompatActivity {
     private TextView eDateTextView;
     private Spinner eFinancialYearSpinner;
     private EditText eVillageEditText;
+    @NotEmpty
     private EditText eParishEditText;
     private EditText eDivisionEditText;
     private EditText eDistrictEditText;
@@ -141,13 +148,16 @@ public class EducationActivity extends AppCompatActivity {
     private EditText question84HowOftenSMCMeet;
     private EditText question8ObservationsChallenges;
 
-
+    private Validator validator;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_education);
 
         initViews();
+        validator = new Validator(this);
+        validator.setValidationListener(this);
+
     }
 
     private void initViews() {
@@ -316,7 +326,7 @@ public class EducationActivity extends AppCompatActivity {
         findViewById(R.id.saved_form_data).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                // save data
+                validator.validate();
             }
         });
     }
@@ -339,11 +349,11 @@ public class EducationActivity extends AppCompatActivity {
                 .setQ2FemalePWDSTeachers(getIntegerValue(eQ2FemalePWDSTeachersEditText))
                 .setQ2TeachersTotal(getIntegerValue(eQ2TeachersTotal))
 
-                .setQ2PupilEnrollmentTeachers(getIntegerValue(eQ2MaleTeachersEditText))
-                .setQ2FeMalePupilEnrollment(getIntegerValue(eQ2FeMaleTeachersEditText))
-                .setQ2MalePWDPupilEnrollment(getIntegerValue(eQ2MalePWDSTeachersEditText))
-                .setQ2FemalePWDSPupilEnrollment(getIntegerValue(eQ2FemalePWDSTeachersEditText))
-                .setQ2PupilEnrollmentTotal(getIntegerValue(eQ2TeachersTotal))
+                .setQ2PupilEnrollmentTeachers(getIntegerValue(eQ2MalePupilEnrollmentEditText))
+                .setQ2FeMalePupilEnrollment(getIntegerValue(eQ2FeMalePupilEnrollmentEditText))
+                .setQ2MalePWDPupilEnrollment(getIntegerValue(eQ2MalePWDSPupilEnrollmentEditText))
+                .setQ2FemalePWDSPupilEnrollment(getIntegerValue(eQ2FemalePWDSPupilEnrollmentEditText))
+                .setQ2PupilEnrollmentTotal(getIntegerValue(eQ2PupilEnrollmentTotal))
 
                 .setNumberP7Male(getIntegerValue(eQ2NumberP7Male))
                 .setQuestionNumberP7FeMale(getIntegerValue(eQ2NumberP7FeMale))
@@ -540,5 +550,15 @@ public class EducationActivity extends AppCompatActivity {
     private boolean getQuestion53ObjectiveAnswer() {
         RadioGroup radioGroup = findViewById(R.id.question53RadioGroup);
         return radioGroup.getCheckedRadioButtonId() == R.id.education_question_5_3_yes;
+    }
+
+    @Override
+    public void onValidationSucceeded() {
+        saveData();
+    }
+
+    @Override
+    public void onValidationFailed(List<ValidationError> errors) {
+
     }
 }
