@@ -346,6 +346,26 @@ public class EducationQuestion {
     @ColumnInfo(name = EducationQuestionConstants.QUESTION_7_3_HOW_SWT_OFFER_SUPPORT)
     private String question73SWFOfferSupportHow;
 
+    @ColumnInfo(name = EducationQuestionConstants.QUESTION_8_0_HOW_OFTEN_INSPECTOR_VISIT_SCHOOL)
+    private String question8HowOftenSchoolInspectorVisit;
+
+    @ColumnInfo(name = EducationQuestionConstants.QUESTION_8_2_LAST_TIME_INSPECTOR_VISIT)
+    private String question82LastTimeInspectorVisit;
+
+
+    @ColumnInfo(name = EducationQuestionConstants.QUESTION_8_3_SCHOOL_HAVE_SCHOOL_MANAGEMENT_COMMITTEE)
+    private boolean question83SchoolHaveSchoolManagementCommittee;
+
+    @ColumnInfo(name = EducationQuestionConstants.QUESTION_8_4_HOW_OFTEN_SMC_MEET)
+    private String question84HowOftenSMCMeet;
+
+
+    @ColumnInfo(name = EducationQuestionConstants.QUESTION_8_5_IS_SMC_TRAINED)
+    private String question85IsSMCTrained;
+
+    @ColumnInfo(name = EducationQuestionConstants.QUESTION_8_OBERSAVATIONS_OR_CHALLENGES)
+    private String question8ObservationsOrChallenges;
+
     public static class Builder {
         private final EducationQuestion INSTANCE;
         public Builder() {
@@ -898,6 +918,84 @@ public class EducationQuestion {
             INSTANCE.setQuestion73SWFOfferSupportHow(textValue);
             return this;
         }
+
+        public Builder setQuestion8HowOftenSchoolInspectorVisit(String textValue) {
+            INSTANCE.setQuestion8HowOftenSchoolInspectorVisit(textValue);
+            return this;
+        }
+
+        public Builder setQuestion82LastTimeInspectorVisit(String textValue) {
+            INSTANCE.setQuestion82LastTimeInspectorVisit(textValue);
+            return this;
+        }
+
+        public Builder setQuestion83SchoolHaveSchoolManagementCommittee(boolean question83SchoolManagementCommittee) {
+            INSTANCE.setQuestion83SchoolHaveSchoolManagementCommittee(question83SchoolManagementCommittee);
+            return this;
+        }
+
+        public Builder setQuestion84HowOftenSMCMeet(String meet_text) {
+            INSTANCE.setQuestion84HowOftenSMCMeet(meet_text);
+            return this;
+        }
+
+        public Builder setQuestion85IsSMCTrained(String question85IsSMCTrained) {
+            INSTANCE.setQuestion85IsSMCTrained(question85IsSMCTrained);
+            return this;
+        }
+
+        public Builder setQuestion8ObservationsOrChallenges(String textValue) {
+            INSTANCE.setQuestion8ObservationsOrChallenges(textValue);
+            return this;
+        }
+    }
+
+    public String getQuestion8ObservationsOrChallenges() {
+        return question8ObservationsOrChallenges;
+    }
+
+    public void setQuestion8ObservationsOrChallenges(String question8ObservationsOrChallenges) {
+        this.question8ObservationsOrChallenges = question8ObservationsOrChallenges;
+    }
+
+    public String getQuestion85IsSMCTrained() {
+        return question85IsSMCTrained;
+    }
+
+    public void setQuestion85IsSMCTrained(String question85IsSMCTrained) {
+        this.question85IsSMCTrained = question85IsSMCTrained;
+    }
+
+    public String getQuestion84HowOftenSMCMeet() {
+        return question84HowOftenSMCMeet;
+    }
+
+    public void setQuestion84HowOftenSMCMeet(String question84HowOftenSMCMeet) {
+        this.question84HowOftenSMCMeet = question84HowOftenSMCMeet;
+    }
+
+    public boolean isQuestion83SchoolHaveSchoolManagementCommittee() {
+        return question83SchoolHaveSchoolManagementCommittee;
+    }
+
+    public void setQuestion83SchoolHaveSchoolManagementCommittee(boolean question83SchoolHaveSchoolManagementCommittee) {
+        this.question83SchoolHaveSchoolManagementCommittee = question83SchoolHaveSchoolManagementCommittee;
+    }
+
+    public String getQuestion82LastTimeInspectorVisit() {
+        return question82LastTimeInspectorVisit;
+    }
+
+    public void setQuestion82LastTimeInspectorVisit(String question82LastTimeInspectorVisit) {
+        this.question82LastTimeInspectorVisit = question82LastTimeInspectorVisit;
+    }
+
+    public String getQuestion8HowOftenSchoolInspectorVisit() {
+        return question8HowOftenSchoolInspectorVisit;
+    }
+
+    public void setQuestion8HowOftenSchoolInspectorVisit(String question8HowOftenSchoolInspectorVisit) {
+        this.question8HowOftenSchoolInspectorVisit = question8HowOftenSchoolInspectorVisit;
     }
 
     public String getQuestion73SWFOfferSupportHow() {

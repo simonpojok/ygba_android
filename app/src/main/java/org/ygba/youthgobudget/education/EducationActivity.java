@@ -22,6 +22,7 @@ public class EducationActivity extends AppCompatActivity {
     private final int CAPITAL_DATE_WITHDRAWN_REQUEST_CODE = 2;
     private final int SFG_DATE_RECEIVED_REQUEST_CODE = 3;
     private final int SFG_DATE_WITHDRAWN_REQUEST_CODE = 4;
+    private final int LAST_TIME_INSPECTOR_VISIT_REQUEST_CODE = 6;
     private TextView eDateTextView;
     private Spinner eFinancialYearSpinner;
     private EditText eVillageEditText;
@@ -135,6 +136,10 @@ public class EducationActivity extends AppCompatActivity {
     private EditText question70NumberOfTeacherInPayroll;
     private EditText question71TeacherPupilRatio;
     private EditText question73SWTOfferSupportEditText;
+    private EditText question81SchoolInspector;
+    private TextView question82LastTimeSchoolInspectorVisit;
+    private EditText question84HowOftenSMCMeet;
+    private EditText question8ObservationsChallenges;
 
 
     @Override
@@ -296,6 +301,18 @@ public class EducationActivity extends AppCompatActivity {
 
         question71TeacherPupilRatio = findViewById(R.id.eduction_question_7_1_edit_text);
         question73SWTOfferSupportEditText = findViewById(R.id.eduction_question_7_3_edit_text);
+        question81SchoolInspector = findViewById(R.id.eduction_question_8_1_edit_text);
+
+        question82LastTimeSchoolInspectorVisit = findViewById(R.id.eduction_question_8_2_edit_text);
+        question82LastTimeSchoolInspectorVisit.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(EducationActivity.this, DatePickerActivity.class);
+                startActivityForResult(intent, LAST_TIME_INSPECTOR_VISIT_REQUEST_CODE);
+            }
+        });
+//        question84HowOftenSMCMeet = findViewById(R.id.)
+        question8ObservationsChallenges = findViewById(R.id.eduction_question_8_5_others_edit_text);
         findViewById(R.id.saved_form_data).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -436,7 +453,23 @@ public class EducationActivity extends AppCompatActivity {
                 .setQuestion71TeacherPupilRatio(getTextValue(question71TeacherPupilRatio))
                 .setQuestion72SeniorWomanTeacherYesNo(getQuestion72SeniorWomanTeacherObjectiveAnswer())
                 .setQuestion73SWFOfferSupportHow(getTextValue(question73SWTOfferSupportEditText))
+                .setQuestion8HowOftenSchoolInspectorVisit(getTextValue(question81SchoolInspector))
+                .setQuestion82LastTimeInspectorVisit(getTextValue(question82LastTimeSchoolInspectorVisit))
+                .setQuestion83SchoolHaveSchoolManagementCommittee(getQuestion83SchoolManagementCommittee())
+                .setQuestion84HowOftenSMCMeet("meet_text")
+                .setQuestion85IsSMCTrained(getQuestion85IsSMCTrained())
+                .setQuestion8ObservationsOrChallenges(getTextValue(question8ObservationsChallenges))
                 .build();
+    }
+
+    private String getQuestion85IsSMCTrained() {
+        RadioGroup radioGroup = findViewById(R.id.question85RadioGroup);
+        return "Others";
+    }
+
+    private boolean getQuestion83SchoolManagementCommittee() {
+        RadioGroup radioGroup = findViewById(R.id.question82RadioGroup);
+        return radioGroup.getCheckedRadioButtonId() == R.id.education_question_8_3_yes;
     }
 
     private boolean getQuestion72SeniorWomanTeacherObjectiveAnswer() {
@@ -466,6 +499,8 @@ public class EducationActivity extends AppCompatActivity {
                 eQ3CapitalBudgetDateWithdrawnEditText.setText(data.getStringExtra(DatePickerActivity.SELECTED_DATE));
             } else if (requestCode == SFG_DATE_RECEIVED_REQUEST_CODE) {
                 eQ3SFGDateReceivedEditText.setText(data.getStringExtra(DatePickerActivity.SELECTED_DATE));
+            } else if (requestCode == LAST_TIME_INSPECTOR_VISIT_REQUEST_CODE) {
+                question82LastTimeSchoolInspectorVisit.setText(data.getStringExtra(DatePickerActivity.SELECTED_DATE));
             }
         }
     }
