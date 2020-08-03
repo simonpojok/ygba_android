@@ -13,11 +13,16 @@ import android.widget.RadioGroup;
 import android.widget.Spinner;
 import android.widget.TextView;
 
+import com.mobsandgeeks.saripaar.ValidationError;
+import com.mobsandgeeks.saripaar.Validator;
+
 import org.ygba.youthgobudget.R;
 import org.ygba.youthgobudget.data.health.HealthQuestion;
 import org.ygba.youthgobudget.dialogs.DatePickerActivity;
 
-public class HealthActivity extends AppCompatActivity {
+import java.util.List;
+
+public class HealthActivity extends AppCompatActivity implements Validator.ValidationListener {
     private final int Q_5_LAST_DAY_VISIT_REQUEST_CODE = 5;
     private final int Q_1_RECURRENT_DATE_RECEIVED_REQUEST_CODE = 1;
     private final int Q_1_RECURRENT_DATE_WITHDRAWN_REQUEST_CODE = 2;
@@ -123,6 +128,7 @@ public class HealthActivity extends AppCompatActivity {
     EditText h8OtherObservationEditText;
 
     private HealthActivityViewModel healthActivityViewModel;
+    private Validator validator;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -130,9 +136,11 @@ public class HealthActivity extends AppCompatActivity {
         setContentView(R.layout.activity_health);
 
         healthActivityViewModel = new ViewModelProvider(this).get(HealthActivityViewModel.class);
-
         initViews();
         initEventHandlers();
+
+        validator = new Validator(this);
+        validator.setValidationListener(this);
     }
 
     private void initEventHandlers() {
@@ -326,7 +334,7 @@ public class HealthActivity extends AppCompatActivity {
         ((CardView) findViewById(R.id.saved_form_data)).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                // save form data
+                validator.validate();
             }
         });
     }
@@ -568,5 +576,21 @@ public class HealthActivity extends AppCompatActivity {
 
     private int getIntegerValue(TextView textView) {
         return 56;
+    }
+
+    @Override
+    public void onValidationSucceeded() {
+        saveHealthQuestion();
+    }
+
+    @Override
+    public void onValidationFailed(List<ValidationError> errors) {
+        for (ValidationError error: errors) {
+            View view = error.getView();
+            String message = error.getCollatedErrorMessage(this);
+            if (view instanceof EditText) {
+                ( (EditText) view).setError(message);
+            }
+        }
     }
 }
