@@ -119,4 +119,15 @@ public class YGBARepository {
             }
         });
     }
+
+    public List<HealthQuestion> getHealthQuestion4BackUp() throws ExecutionException, InterruptedException {
+        Callable<List<HealthQuestion>> callable = new Callable<List<HealthQuestion>>() {
+            @Override
+            public List<HealthQuestion> call() throws Exception {
+                return ygbDatabase.healthQuestionDao().getHealthQuestion(true);
+            }
+        };
+
+        return YGBDatabase.db_executor.submit(callable).get();
+    }
 }
