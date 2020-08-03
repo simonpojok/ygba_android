@@ -5,6 +5,7 @@ import androidx.lifecycle.LiveData;
 import org.ygba.youthgobudget.data.YGBDatabase;
 import org.ygba.youthgobudget.data.agriculture.AgricultureQuestion;
 import org.ygba.youthgobudget.data.budget_information.BudgetInformationForm;
+import org.ygba.youthgobudget.data.education.EducationQuestion;
 import org.ygba.youthgobudget.data.health.HealthQuestion;
 import org.ygba.youthgobudget.data.socialdevelopment.SocialDevelopmentQuestion;
 import org.ygba.youthgobudget.data.water_and_environment.WaterEnvironmentQuestion;
@@ -129,5 +130,15 @@ public class YGBARepository {
         };
 
         return YGBDatabase.db_executor.submit(callable).get();
+    }
+
+    public List<EducationQuestion> getEducationQuestion4BackUp() throws ExecutionException, InterruptedException {
+        Callable<List<EducationQuestion>> listCallable = new Callable<List<EducationQuestion>>() {
+            @Override
+            public List<EducationQuestion> call() throws Exception {
+                return ygbDatabase.educationQuestionDao().getEducationQuestionForBackUp(true);
+            }
+        };
+        return YGBDatabase.db_executor.submit(listCallable).get();
     }
 }

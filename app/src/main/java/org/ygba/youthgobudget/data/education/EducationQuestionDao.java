@@ -14,4 +14,6 @@ public interface EducationQuestionDao {
 
     @Query("SELECT * FROM " + EducationQuestionConstants.TABLE_NAME)
     LiveData<List<EducationQuestion>> getAllEducationQuestions();
+
+    List<EducationQuestion> getEducationQuestionForBackUp(boolean isStoredLocally);
 }

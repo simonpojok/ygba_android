@@ -32,7 +32,7 @@ public abstract class YGBDatabase extends RoomDatabase {
     private static YGBDatabase INSTANCE;
     public abstract AgricultureDao agricultureDao();
     public abstract SocialDevelopmentDao socialDevelopmentDao();
-//    public abstract EducationQuestionDao educationQuestionDao();
+    public abstract EducationQuestionDao educationQuestionDao();
     public abstract WaterEnvironmentQuestionDao waterEnvironmentQuestionDao();
     public abstract BudgetInformationFormDao budgetInformationFormDao();
     public abstract HealthQuestionDao healthQuestionDao();
