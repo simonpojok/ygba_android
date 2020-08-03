@@ -141,4 +141,13 @@ public class YGBARepository {
         };
         return YGBDatabase.db_executor.submit(listCallable).get();
     }
+
+    public void saveEducationQuestion(final EducationQuestion educationQuestion) {
+        YGBDatabase.db_executor.execute(new Runnable() {
+            @Override
+            public void run() {
+                ygbDatabase.educationQuestionDao().saveEducationQuestion(educationQuestion);
+            }
+        });
+    }
 }

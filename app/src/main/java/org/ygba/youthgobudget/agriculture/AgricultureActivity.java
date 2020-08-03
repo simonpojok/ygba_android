@@ -235,6 +235,7 @@ public class AgricultureActivity extends AppCompatActivity implements  AdapterVi
                 question43Reason.getText().toString(),
                 question43AnyReason.getText().toString()
         );
+        activityViewModel.saveAgricultureQuestion(agricultureQuestion);
     }
 
     private String getQuestion41Answer() {

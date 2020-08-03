@@ -2,6 +2,7 @@ package org.ygba.youthgobudget.education;
 
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.lifecycle.ViewModelProvider;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -149,6 +150,7 @@ public class EducationActivity extends AppCompatActivity implements Validator.Va
     private EditText question8ObservationsChallenges;
 
     private Validator validator;
+    private EducationActivityViewModel educationActivityViewModel;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -157,6 +159,7 @@ public class EducationActivity extends AppCompatActivity implements Validator.Va
         initViews();
         validator = new Validator(this);
         validator.setValidationListener(this);
+        educationActivityViewModel = new ViewModelProvider(this).get(EducationActivityViewModel.class);
 
     }
 
@@ -470,6 +473,8 @@ public class EducationActivity extends AppCompatActivity implements Validator.Va
                 .setQuestion85IsSMCTrained(getQuestion85IsSMCTrained())
                 .setQuestion8ObservationsOrChallenges(getTextValue(question8ObservationsChallenges))
                 .build();
+
+        educationActivityViewModel.saveEducationQuestion(educationQuestion);
     }
 
     private String getQuestion85IsSMCTrained() {
