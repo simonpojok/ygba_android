@@ -12,6 +12,7 @@ import org.ygba.youthgobudget.data.budget_information.BudgetInformationForm;
 import org.ygba.youthgobudget.data.budget_information.BudgetInformationFormDao;
 import org.ygba.youthgobudget.data.education.EducationQuestion;
 import org.ygba.youthgobudget.data.education.EducationQuestionDao;
+import org.ygba.youthgobudget.data.health.HealthQuestionDao;
 import org.ygba.youthgobudget.data.socialdevelopment.SocialDevelopmentDao;
 import org.ygba.youthgobudget.data.socialdevelopment.SocialDevelopmentQuestion;
 import org.ygba.youthgobudget.data.water_and_environment.WaterEnvironmentQuestion;
@@ -34,6 +35,7 @@ public abstract class YGBDatabase extends RoomDatabase {
 //    public abstract EducationQuestionDao educationQuestionDao();
     public abstract WaterEnvironmentQuestionDao waterEnvironmentQuestionDao();
     public abstract BudgetInformationFormDao budgetInformationFormDao();
+    public abstract HealthQuestionDao healthQuestionDao();
 
 
     public static final int NUMBER_OF_THREADS = 5;

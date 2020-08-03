@@ -3,6 +3,7 @@ package org.ygba.youthgobudget.health;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.cardview.widget.CardView;
+import androidx.lifecycle.ViewModelProvider;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -121,10 +122,14 @@ public class HealthActivity extends AppCompatActivity {
     EditText h76ReferralHandling;
     EditText h8OtherObservationEditText;
 
+    private HealthActivityViewModel healthActivityViewModel;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_health);
+
+        healthActivityViewModel = new ViewModelProvider(this).get(HealthActivityViewModel.class);
 
         initViews();
         initEventHandlers();
@@ -441,6 +446,8 @@ public class HealthActivity extends AppCompatActivity {
                 .setQuestion76Referrals(getTextValue(h76ReferralHandling))
                 .setQuestion80ChallengesAndObservation(getTextValue(h8OtherObservationEditText))
                 .build();
+
+        healthActivityViewModel.insertHealthQuestion(healthQuestion);
 
     }
 
