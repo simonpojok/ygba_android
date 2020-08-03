@@ -124,6 +124,10 @@ public class EducationActivity extends AppCompatActivity {
     private EditText eQ5UrinalsForBoysNumberStancesFunctional;
     private EditText eQ5UrinalsForBoysNNumberNoneFunctional;
     private EditText eQ5UrinalsForBoysNumberMalePupil;
+    private EditText question53FunctionWaterPointReason;
+    private EditText question61NumberPermanentClassRoomEditText;
+    private EditText question62NumberOfDeskInSchool;
+    private EditText question63PupilDeskRatioEditText;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -268,6 +272,12 @@ public class EducationActivity extends AppCompatActivity {
         eQ5UrinalsForBoysNumberStancesFunctional = findViewById(R.id.eduction_question_5_UFB_latrine_functional_stances);
         eQ5UrinalsForBoysNNumberNoneFunctional = findViewById(R.id.eduction_question_5_UFB_latrine_none_stances);
         eQ5UrinalsForBoysNumberMalePupil = findViewById(R.id.eduction_question_5_UFB_latrine_pupil_male_stances);
+
+        question53FunctionWaterPointReason = findViewById(R.id.eduction_question_5_3_estimate_distance_text_view);
+
+        question61NumberPermanentClassRoomEditText = findViewById(R.id.eduction_question_6_1_edit_text);
+        question62NumberOfDeskInSchool = findViewById(R.id.eduction_question_6_2_edit_text);
+        question63PupilDeskRatioEditText = findViewById(R.id.eduction_question_6_3_edit_text);
         findViewById(R.id.saved_form_data).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -389,6 +399,14 @@ public class EducationActivity extends AppCompatActivity {
                 .setQ5UrinalsForBoysStancesNoneFunctional(getIntegerValue(eQ5UrinalsForBoysNNumberNoneFunctional))
 
                 .setQ5SchoolToiletAccessible(getQuestion51SchoolToiletFacilitiesAccessible())
+                // TODO: question 5.2 missing information
+                .setQ5FunctionalWaterPoint(getQuestion53ObjectiveAnswer())
+                .setQ5FunctionalWaterPointReasonIfNo(getTextValue(question53FunctionWaterPointReason))
+
+                // question 6
+                .setQuestion61NumberPermanentClassRooms(getIntegerValue(question61NumberPermanentClassRoomEditText))
+                .setQuestion62NumberOfDeskInSchool(getIntegerValue(question62NumberOfDeskInSchool))
+                .setQuestion63PupilDeskRatio(getTextValue(question63PupilDeskRatioEditText))
                 .build();
     }
 
@@ -448,5 +466,10 @@ public class EducationActivity extends AppCompatActivity {
     private boolean getQuestion51SchoolToiletFacilitiesAccessible() {
         RadioGroup radioGroup = findViewById(R.id.question51RadioGroup);
         return radioGroup.getCheckedRadioButtonId() == R.id.education_question_5_1_yes;
+    }
+
+    private boolean getQuestion53ObjectiveAnswer() {
+        RadioGroup radioGroup = findViewById(R.id.question53RadioGroup);
+        return radioGroup.getCheckedRadioButtonId() == R.id.education_question_5_3_yes;
     }
 }

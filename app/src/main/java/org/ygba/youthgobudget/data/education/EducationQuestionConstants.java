@@ -100,4 +100,9 @@ public class EducationQuestionConstants {
     public static final String QUESTION_5_URINALS_FOR_BOYS_NONE_FUNCTIONAL = "question_5_urinals_for_boys_none_functional";
     public static final String QUESTION_5_URINALS_FOR_BOYS_MALE_PUPIL = "question_5_boys_satnces";
     public static final String QUESTION_5_1_TOILET_ACCESSIBLE = "QUESTION_5_1_TOILET_ACCESSIBLE";
+    public static final String QUESTION_5_3_FUNCTIONAL_OBJECTIVE = "QUESTION_5_3_FUNCTIONAL_OBJECTIVE";
+    public static final String QUESTION_5_3_FUNCTIONAL_WATER_POINT_REASON_IF_NO = "QUESTION_5_3_FUNCTIONAL_WATER_POINT_REASON_IF_NO";
+    public static final String QUESTION_6_1_PERMANENT_CLASS_ROOM = "QUESTION_6_1_PERMANENT_CLASS_ROOM";
+    public static final String QUESTION_6_2_NUMBER_OF_DESK = "QUESTION_6_1_NUMBER_OF_DESK";
+    public static final String QUESTION_6_3_PUPIL_DESK_RATIO = "QUESTION_6_3_PUPIL_DESK_RATIO";
 }

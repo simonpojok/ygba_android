@@ -307,6 +307,21 @@ public class EducationQuestion {
     @ColumnInfo(name = EducationQuestionConstants.QUESTION_5_1_TOILET_ACCESSIBLE)
     private boolean Q5SchoolToiletAccessible;
 
+    @ColumnInfo(name = EducationQuestionConstants.QUESTION_5_3_FUNCTIONAL_OBJECTIVE)
+    private boolean q5FunctionalWaterPoint;
+
+    @ColumnInfo(name = EducationQuestionConstants.QUESTION_5_3_FUNCTIONAL_WATER_POINT_REASON_IF_NO)
+    private String q5FunctionalWaterPointReasonIfNo;
+
+    @ColumnInfo(name = EducationQuestionConstants.QUESTION_6_1_PERMANENT_CLASS_ROOM)
+    private int question61NumberPermanentClassRooms;
+
+    @ColumnInfo(name = EducationQuestionConstants.QUESTION_6_2_NUMBER_OF_DESK)
+    private int question62NumberOfDeskInSchool;
+
+    @ColumnInfo(name = EducationQuestionConstants.QUESTION_6_3_PUPIL_DESK_RATIO)
+    private String question63PupilDeskRatio;
+
     public static class Builder {
         private final EducationQuestion INSTANCE;
         public Builder() {
@@ -794,6 +809,71 @@ public class EducationQuestion {
             INSTANCE.setQ5SchoolToiletAccessible(question51SchoolToiletFacilitiesAccessible);
             return this;
         }
+
+        public Builder setQ5FunctionalWaterPoint(boolean question53ObjectiveAnswer) {
+            INSTANCE.setQ5FunctionalWaterPoint(question53ObjectiveAnswer);
+            return this;
+        }
+
+        public Builder setQ5FunctionalWaterPointReasonIfNo(String textValue) {
+            INSTANCE.setQ5FunctionalWaterPointReasonIfNo(textValue);
+            return this;
+        }
+
+        public Builder setQuestion61NumberPermanentClassRooms(int integerValue) {
+            INSTANCE.setQuestion61NumberPermanentClassRooms(integerValue);
+            return this;
+        }
+
+        public Builder setQuestion62NumberOfDeskInSchool(int integerValue) {
+            INSTANCE.setQuestion62NumberOfDeskInSchool(integerValue);
+            return this;
+        }
+
+        public Builder setQuestion63PupilDeskRatio(String textValue) {
+            INSTANCE.setQuestion63PupilDeskRatio(textValue);
+            return this;
+        }
+    }
+
+    public String getQuestion63PupilDeskRatio() {
+        return question63PupilDeskRatio;
+    }
+
+    public void setQuestion63PupilDeskRatio(String question63PupilDeskRatio) {
+        this.question63PupilDeskRatio = question63PupilDeskRatio;
+    }
+
+    public int getQuestion62NumberOfDeskInSchool() {
+        return question62NumberOfDeskInSchool;
+    }
+
+    public void setQuestion62NumberOfDeskInSchool(int question62NumberOfDeskInSchool) {
+        this.question62NumberOfDeskInSchool = question62NumberOfDeskInSchool;
+    }
+
+    public int getQuestion61NumberPermanentClassRooms() {
+        return question61NumberPermanentClassRooms;
+    }
+
+    public void setQuestion61NumberPermanentClassRooms(int question61NumberPermanentClassRooms) {
+        this.question61NumberPermanentClassRooms = question61NumberPermanentClassRooms;
+    }
+
+    public String getQ5FunctionalWaterPointReasonIfNo() {
+        return q5FunctionalWaterPointReasonIfNo;
+    }
+
+    public void setQ5FunctionalWaterPointReasonIfNo(String q5FunctionalWaterPointReasonIfNo) {
+        this.q5FunctionalWaterPointReasonIfNo = q5FunctionalWaterPointReasonIfNo;
+    }
+
+    public boolean isQ5FunctionalWaterPoint() {
+        return q5FunctionalWaterPoint;
+    }
+
+    public void setQ5FunctionalWaterPoint(boolean q5FunctionalWaterPoint) {
+        this.q5FunctionalWaterPoint = q5FunctionalWaterPoint;
     }
 
     public boolean isQ5SchoolToiletAccessible() {
