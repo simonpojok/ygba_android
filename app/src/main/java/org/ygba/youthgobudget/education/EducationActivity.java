@@ -387,6 +387,8 @@ public class EducationActivity extends AppCompatActivity {
                 .setQ5UrinalsForBoysStancesNumberMixedTeachers(getIntegerValue(eQ5UrinalsForBoysNumberStancesMixedTeacher))
                 .setQ5UrinalsForBoysStancesFunctional(getIntegerValue(eQ5UrinalsForBoysNumberStancesFunctional))
                 .setQ5UrinalsForBoysStancesNoneFunctional(getIntegerValue(eQ5UrinalsForBoysNNumberNoneFunctional))
+
+                .setQ5SchoolToiletAccessible(getQuestion51SchoolToiletFacilitiesAccessible())
                 .build();
     }
 
@@ -441,5 +443,10 @@ public class EducationActivity extends AppCompatActivity {
             return "Same";
         }
         return "Same";
+    }
+
+    private boolean getQuestion51SchoolToiletFacilitiesAccessible() {
+        RadioGroup radioGroup = findViewById(R.id.question51RadioGroup);
+        return radioGroup.getCheckedRadioButtonId() == R.id.education_question_5_1_yes;
     }
 }

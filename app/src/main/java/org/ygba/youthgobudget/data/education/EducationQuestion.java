@@ -304,6 +304,9 @@ public class EducationQuestion {
     @ColumnInfo(name = EducationQuestionConstants.QUESTION_5_URINALS_FOR_BOYS_MALE_PUPIL)
     private int question5UrinalsForBoysStancesPupil;
 
+    @ColumnInfo(name = EducationQuestionConstants.QUESTION_5_1_TOILET_ACCESSIBLE)
+    private boolean Q5SchoolToiletAccessible;
+
     public static class Builder {
         private final EducationQuestion INSTANCE;
         public Builder() {
@@ -786,6 +789,19 @@ public class EducationQuestion {
             INSTANCE.setQuestion5UrinalsForBoysStancesPupil(integerValue);
             return this;
         }
+
+        public Builder setQ5SchoolToiletAccessible(boolean question51SchoolToiletFacilitiesAccessible) {
+            INSTANCE.setQ5SchoolToiletAccessible(question51SchoolToiletFacilitiesAccessible);
+            return this;
+        }
+    }
+
+    public boolean isQ5SchoolToiletAccessible() {
+        return Q5SchoolToiletAccessible;
+    }
+
+    public void setQ5SchoolToiletAccessible(boolean q5SchoolToiletAccessible) {
+        this.Q5SchoolToiletAccessible = q5SchoolToiletAccessible;
     }
 
     public int getQuestion5UrinalsForBoysStancesPupil() {
