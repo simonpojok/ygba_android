@@ -176,11 +176,11 @@ public class HealthQuestionUploadWorker extends Worker {
             essentialDrugs.put(essentialDrug5);
             body.put("essential_drugs", essentialDrugs);
 
-            body.put("when_last_drugs_consgmt_finished", "Y-m-d");
-            body.put("no_medical_equip_bought", 89);
-            body.put("is_ambulance", true);
-            body.put("if_no_how_referrals_handled", 4);
-            body.put("other_observations", "some data will go here");
+            body.put("when_last_drugs_consgmt_finished", healthQuestion.getQuestion73HCLastDrugsConsignment());
+            body.put("no_medical_equip_bought", healthQuestion.getQuestion74NumberMedicalEquipmentBrought());
+            body.put("is_ambulance", healthQuestion.isQuestion75HaveAmbulance());
+            body.put("if_no_how_referrals_handled", healthQuestion.getQuestion76Referrals());
+            body.put("other_observations", healthQuestion.getQuestion80ChallengesAndObservation());
 
 
 

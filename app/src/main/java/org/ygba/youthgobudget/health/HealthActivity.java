@@ -461,6 +461,14 @@ public class HealthActivity extends AppCompatActivity {
 
                 .setQuestion72EssentialDrug5Name(getTextValue(hQ72Drug5NameEditText))
                 .setQuestion72EssentialDrug5RequiredStock(getIntegerValue(hQ72Drug5RequiredStockEditText))
+
+                .setQuestion73HCLastDrugsConsignment(getTextValue(h73DrugLastDateEditText))
+                .setQuestion74NumberMedicalEquipmentBrought(getIntegerValue(h74NumberOfMedicalEquipmentBought))
+
+                .setQuestion75HaveAmbulance(getQuestion75Objective())
+
+                .setQuestion76Referrals(getTextValue(h76ReferralHandling))
+                .setQuestion80ChallengesAndObservation(getTextValue(h8OtherObservationEditText))
                 .build();
 
     }

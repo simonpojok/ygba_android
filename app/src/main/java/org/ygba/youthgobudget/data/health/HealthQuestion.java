@@ -322,6 +322,20 @@ public class HealthQuestion {
     @ColumnInfo(name = HealthQuestionConstants.QUESTION_7_2_ESSENTIAL_DRUG_5_REQUIRED_STOCK)
     private int question72EssentialDrug5RequiredStock;
 
+    @ColumnInfo(name = HealthQuestionConstants.QUESTION_7_3_HC_LAST_DRUGS_CONSIGNMENT)
+    private String question73HCLastDrugsConsignment;
+
+    @ColumnInfo(name = HealthQuestionConstants.QUESTION_7_4_NUMBER_MEDICAL_EQUIPMENT_BOUGHT)
+    private int question74NumberMedicalEquipmentBrought;
+
+    @ColumnInfo(name = HealthQuestionConstants.QUESTION_7_5_AMBULANCE)
+    private boolean question75HaveAmbulance;
+
+    @ColumnInfo(name = HealthQuestionConstants.QUESTION_7_6_REFERRALS_HANDLED)
+    private String question76Referrals; // professional my first project, personnal learn and master react native and wordpress as i work on those projects
+
+    @ColumnInfo(name = HealthQuestionConstants.QUESTION_8_0_OBSERVATIONS_AND_CHALLENGES)
+    private String question80ChallengesAndObservation;
     private HealthQuestion() {}
 
     public static class Builder {
@@ -849,6 +863,71 @@ public class HealthQuestion {
             INSTANCE.setQuestion72EssentialDrug5RequiredStock(integerValue);
             return this;
         }
+
+        public Builder setQuestion73HCLastDrugsConsignment(String textValue) {
+            INSTANCE.setQuestion73HCLastDrugsConsignment(textValue);
+            return this;
+        }
+
+        public Builder setQuestion74NumberMedicalEquipmentBrought(int integerValue) {
+            INSTANCE.setQuestion74NumberMedicalEquipmentBrought(integerValue);
+            return this;
+        }
+
+        public Builder setQuestion75HaveAmbulance(boolean question75Objective) {
+            INSTANCE.setQuestion75HaveAmbulance(question75Objective);
+            return this;
+        }
+
+        public Builder setQuestion76Referrals(String textValue) {
+            INSTANCE.setQuestion76Referrals(textValue);
+            return this;
+        }
+
+        public Builder setQuestion80ChallengesAndObservation(String textValue) {
+            INSTANCE.setQuestion80ChallengesAndObservation(textValue);
+            return this;
+        }
+    }
+
+    public String getQuestion80ChallengesAndObservation() {
+        return question80ChallengesAndObservation;
+    }
+
+    public void setQuestion80ChallengesAndObservation(String question80ChallengesAndObservation) {
+        this.question80ChallengesAndObservation = question80ChallengesAndObservation;
+    }
+
+    public String getQuestion76Referrals() {
+        return question76Referrals;
+    }
+
+    public void setQuestion76Referrals(String question76Referrals) {
+        this.question76Referrals = question76Referrals;
+    }
+
+    public boolean isQuestion75HaveAmbulance() {
+        return question75HaveAmbulance;
+    }
+
+    public void setQuestion75HaveAmbulance(boolean question75HaveAmbulance) {
+        this.question75HaveAmbulance = question75HaveAmbulance;
+    }
+
+    public int getQuestion74NumberMedicalEquipmentBrought() {
+        return question74NumberMedicalEquipmentBrought;
+    }
+
+    public void setQuestion74NumberMedicalEquipmentBrought(int question74NumberMedicalEquipmentBrought) {
+        this.question74NumberMedicalEquipmentBrought = question74NumberMedicalEquipmentBrought;
+    }
+
+    public String getQuestion73HCLastDrugsConsignment() {
+        return question73HCLastDrugsConsignment;
+    }
+
+    public void setQuestion73HCLastDrugsConsignment(String question73HCLastDrugsConsignment) {
+        this.question73HCLastDrugsConsignment = question73HCLastDrugsConsignment;
     }
 
     public String getQuestion72EssentialDrug2Name() {
