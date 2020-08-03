@@ -119,4 +119,5 @@ public class EducationQuestionConstants {
     public static final String QUESTION_8_4_HOW_OFTEN_SMC_MEET = "QUESTION_8_4_HOW_OFTEN_SMC_MEET";
     public static final String QUESTION_8_5_IS_SMC_TRAINED = "QUESTION_8_5_IS_SMC_TRAINED";
     public static final String QUESTION_8_OBERSAVATIONS_OR_CHALLENGES = "QUESTION_8_OBERSAVATIONS_OR_CHALLENGES";
+    public static final String QUESTION_8_IS_STORED_LOCALLY = "QUESTION_8_IS_STORED_LOCALLY";
 }

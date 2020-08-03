@@ -366,6 +366,10 @@ public class EducationQuestion {
     @ColumnInfo(name = EducationQuestionConstants.QUESTION_8_OBERSAVATIONS_OR_CHALLENGES)
     private String question8ObservationsOrChallenges;
 
+
+    @ColumnInfo(name = EducationQuestionConstants.QUESTION_8_IS_STORED_LOCALLY)
+    private boolean isStoredLocally;
+
     public static class Builder {
         private final EducationQuestion INSTANCE;
         public Builder() {
@@ -948,6 +952,14 @@ public class EducationQuestion {
             INSTANCE.setQuestion8ObservationsOrChallenges(textValue);
             return this;
         }
+    }
+
+    public boolean isStoredLocally() {
+        return isStoredLocally;
+    }
+
+    public void setStoredLocally(boolean storedLocally) {
+        isStoredLocally = storedLocally;
     }
 
     public String getQuestion8ObservationsOrChallenges() {
