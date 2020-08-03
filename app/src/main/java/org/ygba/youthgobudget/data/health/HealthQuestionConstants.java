@@ -115,4 +115,5 @@ public class HealthQuestionConstants {
     public static final String QUESTION_7_5_AMBULANCE = "QUESTION_7_5_AMBULANCE";
     public static final String QUESTION_7_6_REFERRALS_HANDLED = "QUESTION_7_6_REFERRALS_HANDLED";
     public static final String QUESTION_8_0_OBSERVATIONS_AND_CHALLENGES = "QUESTION_8_0_OBSERVATIONS_AND_CHALLENGES";
+    public static final String IS_LOCALLY_STORED = "IS_LOCALLY_STORED";
 }

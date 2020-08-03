@@ -2,6 +2,7 @@ package org.ygba.youthgobudget.data.health;
 
 import androidx.room.ColumnInfo;
 import androidx.room.Entity;
+import androidx.room.Ignore;
 import androidx.room.PrimaryKey;
 
 @Entity(tableName = HealthQuestionConstants.TABLE_NAME)
@@ -336,6 +337,11 @@ public class HealthQuestion {
 
     @ColumnInfo(name = HealthQuestionConstants.QUESTION_8_0_OBSERVATIONS_AND_CHALLENGES)
     private String question80ChallengesAndObservation;
+
+    @ColumnInfo(name = HealthQuestionConstants.IS_LOCALLY_STORED)
+    private boolean isLocallyStored;
+
+    @Ignore
     private HealthQuestion() {}
 
     public static class Builder {
@@ -581,11 +587,6 @@ public class HealthQuestion {
 
         public Builder setQuestion3LatrineNumberFemaleStances(int integerValue) {
             INSTANCE.setQuestion3LatrineNumberFemaleStances(integerValue);
-            return this;
-        }
-
-        public Builder setQuestion3LatrineNumberPatientMaleStances(int i) {
-            INSTANCE.setQuestion3LatrineNumberPatientMaleStances(i);
             return this;
         }
 
@@ -888,6 +889,126 @@ public class HealthQuestion {
             INSTANCE.setQuestion80ChallengesAndObservation(textValue);
             return this;
         }
+    }
+
+    public HealthQuestion(String financialYear, String financialYearQuarter, String data, String district, String village, String parish, String townCouncil, String nameMonitorAgent, String telNumber, String questionANameAndGradeHealthCenter, int questionBOutPatientOPDAttendance, int questionCInPatientAttendance, int question1RecurrentApprovedBudget, int question1RecurrentBudgetReleased, String question1RecurrentDateReceived, String question1RecurrentDateWithdrawn, int question1DevelopmentApprovedBudget, int question1DevelopmentReleasedBudget, String question1DevelopmentDateReceived, String question1DevelopmentDateWithdrawn, String question11DisplayBudgetInformation, String question12BudgetInformationRelates, boolean question2MaternityYesNo, boolean question2GeneralWardYesNo, boolean question2DeliveryBedsYesNo, boolean question2FamilyPlanningServicesYesNo, boolean question2HIVCounsellingTestingAndTreatmentYesNo, boolean question2PMTCTYesNo, boolean question2ImmunizationYesNo, boolean question2YouthFriendlyCornersYesNo, boolean question2Vaccination4HEPBYesNo, int question21CategoryLiveNumberDeliveries, int question21CategoryStillNumberDeliveries, int question22ChildrenImmunized, int question3ToiletNumberBlocks, int question3ToiletNumberInstances, int question3PatientToiletNumberMaleStances, int question3PatientToiletNumberFemaleStances, int question3HealthStaffNumberToiletMaleStance, int question3HealthStaffNumberToiletFemaleStances, int question3HealthStaffNumberToiletMixedStances, int question3ToiletFunctionalNumber, int question3ToiletNonFunctionNumber, int question3LatrineNumberBlocks, int question3LatrineNumberStances, int question3LatrineNumberMaleStances, int question3LatrineNumberFemaleStances, int question3LatrineNumberPatientMaleStances, int question3LatrineNumberStaffMaleStances, int question3LatrineNumberStaffFemaleStance, int question3LatrineNumberStaffMixedStances, int question3LatrineNumberFunctional, int question3LatrineNoneFunctional, int question3FCRNumberBlock, int question3FCRNumberStances, int question3FCRNumberFemaleStances, int question3FCRNumberStaffFemaleStances, int question3FCRNumberStaffMixedStances, int question3FCRNumberFunctionalStances, int question3FCRNumberNoneFunction, String question32HealthFacilityToiletReasonFacilities, boolean question31HealthFacilityToiletFacilities, int question4NumberOfBoreHole, int question4NumberOfBoreHoleFunctional, int question4NumberOfBoreHoleNoneFunctional, int question4NumberOfTap, int question4NumberOfTapFunctional, int question4NumberOfTapNoneFunctional, int question4NumberOfWaterTank, int question4NumberOfWaterTankFunctional, int question4NumberOfWaterTankNoneFunctional, String question4OtherName, int question4OtherNumber, int question4OtherNumberFunctional, int question4OtherNumberNoneFunctional, boolean question41WaterPointAccessible, boolean question43FunctionalWaterPoint, String question43IfNoneReason, boolean question44HandWashingInstalled, boolean question51HealthUnitManagementCommittee, String question52HowOftenTheyMeet, String question53LastVisitSupportSupervisor, int question6MedicalStaffCeilingNumber, int question6MedicalTotalNumberStaff, int question6MedicalNumberStuffPresent, int question6NoneMedicalStaffCeilingNumber, int question6NoneMedicalStaffTotalNumberStaff, int question6NoneMedicalNumberStaffPresent, String question6ReasonsForStaffAbsence, String question6LastDatePerformanceAppraisal, int question6NumberOfStaffAppraised, boolean question7HCReceiveMedicalSupplies, String question7HCReceiveMedicalSuppliesIfNo, String question72EssentialDrug1Name, int question72EssentialDrug1RequiredStock, String question72EssentialDrug2Name, int question72EssentialDrug2RequiredStock, String question72EssentialDrug3Name, int question72EssentialDrug3RequiredStock, String question72EssentialDrug4Name, int question72EssentialDrug4RequiredStock, String question72EssentialDrug5Name, int question72EssentialDrug5RequiredStock, String question73HCLastDrugsConsignment, int question74NumberMedicalEquipmentBrought, boolean question75HaveAmbulance, String question76Referrals, String question80ChallengesAndObservation) {
+        this.financialYear = financialYear;
+        this.financialYearQuarter = financialYearQuarter;
+        this.data = data;
+        this.district = district;
+        this.village = village;
+        this.parish = parish;
+        this.townCouncil = townCouncil;
+        this.nameMonitorAgent = nameMonitorAgent;
+        this.telNumber = telNumber;
+        this.questionANameAndGradeHealthCenter = questionANameAndGradeHealthCenter;
+        this.questionBOutPatientOPDAttendance = questionBOutPatientOPDAttendance;
+        this.questionCInPatientAttendance = questionCInPatientAttendance;
+        this.question1RecurrentApprovedBudget = question1RecurrentApprovedBudget;
+        this.question1RecurrentBudgetReleased = question1RecurrentBudgetReleased;
+        this.question1RecurrentDateReceived = question1RecurrentDateReceived;
+        this.question1RecurrentDateWithdrawn = question1RecurrentDateWithdrawn;
+        this.question1DevelopmentApprovedBudget = question1DevelopmentApprovedBudget;
+        this.question1DevelopmentReleasedBudget = question1DevelopmentReleasedBudget;
+        this.question1DevelopmentDateReceived = question1DevelopmentDateReceived;
+        this.question1DevelopmentDateWithdrawn = question1DevelopmentDateWithdrawn;
+        this.question11DisplayBudgetInformation = question11DisplayBudgetInformation;
+        this.question12BudgetInformationRelates = question12BudgetInformationRelates;
+        this.question2MaternityYesNo = question2MaternityYesNo;
+        this.question2GeneralWardYesNo = question2GeneralWardYesNo;
+        this.question2DeliveryBedsYesNo = question2DeliveryBedsYesNo;
+        this.question2FamilyPlanningServicesYesNo = question2FamilyPlanningServicesYesNo;
+        this.question2HIVCounsellingTestingAndTreatmentYesNo = question2HIVCounsellingTestingAndTreatmentYesNo;
+        this.question2PMTCTYesNo = question2PMTCTYesNo;
+        this.question2ImmunizationYesNo = question2ImmunizationYesNo;
+        this.question2YouthFriendlyCornersYesNo = question2YouthFriendlyCornersYesNo;
+        this.question2Vaccination4HEPBYesNo = question2Vaccination4HEPBYesNo;
+        this.question21CategoryLiveNumberDeliveries = question21CategoryLiveNumberDeliveries;
+        this.question21CategoryStillNumberDeliveries = question21CategoryStillNumberDeliveries;
+        this.question22ChildrenImmunized = question22ChildrenImmunized;
+        this.question3ToiletNumberBlocks = question3ToiletNumberBlocks;
+        this.question3ToiletNumberInstances = question3ToiletNumberInstances;
+        this.question3PatientToiletNumberMaleStances = question3PatientToiletNumberMaleStances;
+        this.question3PatientToiletNumberFemaleStances = question3PatientToiletNumberFemaleStances;
+        this.question3HealthStaffNumberToiletMaleStance = question3HealthStaffNumberToiletMaleStance;
+        this.question3HealthStaffNumberToiletFemaleStances = question3HealthStaffNumberToiletFemaleStances;
+        this.question3HealthStaffNumberToiletMixedStances = question3HealthStaffNumberToiletMixedStances;
+        this.question3ToiletFunctionalNumber = question3ToiletFunctionalNumber;
+        this.question3ToiletNonFunctionNumber = question3ToiletNonFunctionNumber;
+        this.question3LatrineNumberBlocks = question3LatrineNumberBlocks;
+        this.question3LatrineNumberStances = question3LatrineNumberStances;
+        this.question3LatrineNumberMaleStances = question3LatrineNumberMaleStances;
+        this.question3LatrineNumberFemaleStances = question3LatrineNumberFemaleStances;
+        this.question3LatrineNumberPatientMaleStances = question3LatrineNumberPatientMaleStances;
+        this.question3LatrineNumberStaffMaleStances = question3LatrineNumberStaffMaleStances;
+        this.question3LatrineNumberStaffFemaleStance = question3LatrineNumberStaffFemaleStance;
+        this.question3LatrineNumberStaffMixedStances = question3LatrineNumberStaffMixedStances;
+        this.question3LatrineNumberFunctional = question3LatrineNumberFunctional;
+        this.question3LatrineNoneFunctional = question3LatrineNoneFunctional;
+        this.question3FCRNumberBlock = question3FCRNumberBlock;
+        this.question3FCRNumberStances = question3FCRNumberStances;
+        this.question3FCRNumberFemaleStances = question3FCRNumberFemaleStances;
+        this.question3FCRNumberStaffFemaleStances = question3FCRNumberStaffFemaleStances;
+        this.question3FCRNumberStaffMixedStances = question3FCRNumberStaffMixedStances;
+        this.question3FCRNumberFunctionalStances = question3FCRNumberFunctionalStances;
+        this.question3FCRNumberNoneFunction = question3FCRNumberNoneFunction;
+        this.question32HealthFacilityToiletReasonFacilities = question32HealthFacilityToiletReasonFacilities;
+        this.question31HealthFacilityToiletFacilities = question31HealthFacilityToiletFacilities;
+        this.question4NumberOfBoreHole = question4NumberOfBoreHole;
+        this.question4NumberOfBoreHoleFunctional = question4NumberOfBoreHoleFunctional;
+        this.question4NumberOfBoreHoleNoneFunctional = question4NumberOfBoreHoleNoneFunctional;
+        this.question4NumberOfTap = question4NumberOfTap;
+        this.question4NumberOfTapFunctional = question4NumberOfTapFunctional;
+        this.question4NumberOfTapNoneFunctional = question4NumberOfTapNoneFunctional;
+        this.question4NumberOfWaterTank = question4NumberOfWaterTank;
+        this.question4NumberOfWaterTankFunctional = question4NumberOfWaterTankFunctional;
+        this.question4NumberOfWaterTankNoneFunctional = question4NumberOfWaterTankNoneFunctional;
+        this.question4OtherName = question4OtherName;
+        this.question4OtherNumber = question4OtherNumber;
+        this.question4OtherNumberFunctional = question4OtherNumberFunctional;
+        this.question4OtherNumberNoneFunctional = question4OtherNumberNoneFunctional;
+        this.question41WaterPointAccessible = question41WaterPointAccessible;
+        this.question43FunctionalWaterPoint = question43FunctionalWaterPoint;
+        this.question43IfNoneReason = question43IfNoneReason;
+        this.question44HandWashingInstalled = question44HandWashingInstalled;
+        this.question51HealthUnitManagementCommittee = question51HealthUnitManagementCommittee;
+        this.question52HowOftenTheyMeet = question52HowOftenTheyMeet;
+        this.question53LastVisitSupportSupervisor = question53LastVisitSupportSupervisor;
+        this.question6MedicalStaffCeilingNumber = question6MedicalStaffCeilingNumber;
+        this.question6MedicalTotalNumberStaff = question6MedicalTotalNumberStaff;
+        this.question6MedicalNumberStuffPresent = question6MedicalNumberStuffPresent;
+        this.question6NoneMedicalStaffCeilingNumber = question6NoneMedicalStaffCeilingNumber;
+        this.question6NoneMedicalStaffTotalNumberStaff = question6NoneMedicalStaffTotalNumberStaff;
+        this.question6NoneMedicalNumberStaffPresent = question6NoneMedicalNumberStaffPresent;
+        this.question6ReasonsForStaffAbsence = question6ReasonsForStaffAbsence;
+        this.question6LastDatePerformanceAppraisal = question6LastDatePerformanceAppraisal;
+        this.question6NumberOfStaffAppraised = question6NumberOfStaffAppraised;
+        this.question7HCReceiveMedicalSupplies = question7HCReceiveMedicalSupplies;
+        this.question7HCReceiveMedicalSuppliesIfNo = question7HCReceiveMedicalSuppliesIfNo;
+        this.question72EssentialDrug1Name = question72EssentialDrug1Name;
+        this.question72EssentialDrug1RequiredStock = question72EssentialDrug1RequiredStock;
+        this.question72EssentialDrug2Name = question72EssentialDrug2Name;
+        this.question72EssentialDrug2RequiredStock = question72EssentialDrug2RequiredStock;
+        this.question72EssentialDrug3Name = question72EssentialDrug3Name;
+        this.question72EssentialDrug3RequiredStock = question72EssentialDrug3RequiredStock;
+        this.question72EssentialDrug4Name = question72EssentialDrug4Name;
+        this.question72EssentialDrug4RequiredStock = question72EssentialDrug4RequiredStock;
+        this.question72EssentialDrug5Name = question72EssentialDrug5Name;
+        this.question72EssentialDrug5RequiredStock = question72EssentialDrug5RequiredStock;
+        this.question73HCLastDrugsConsignment = question73HCLastDrugsConsignment;
+        this.question74NumberMedicalEquipmentBrought = question74NumberMedicalEquipmentBrought;
+        this.question75HaveAmbulance = question75HaveAmbulance;
+        this.question76Referrals = question76Referrals;
+        this.question80ChallengesAndObservation = question80ChallengesAndObservation;
+        this.isLocallyStored = true;
+    }
+
+    public boolean isLocallyStored() {
+        return isLocallyStored;
+    }
+
+    public void setLocallyStored(boolean locallyStored) {
+        isLocallyStored = locallyStored;
     }
 
     public String getQuestion80ChallengesAndObservation() {

@@ -340,21 +340,16 @@ public class HealthActivity extends AppCompatActivity {
                 .setNameAndGradeHealthCenter(getTextValue(qQANameAndGradeHealthCenterEditText))
                 .setQuestionBOutPatientOPD(getIntegerValue(hQBAttendanceEditText))
                 .setQuestionCInPatientAttendance(getIntegerValue(hQCInpatientNumberEditText))
-
                 .setQuestion1RecurrentApprovedBudget(getIntegerValue(hQ1RecurrentApprovedEditText))
                 .setQuestion1RecurrentBudgetReleased(getIntegerValue(hQ1RecurrentBudgetReleaseTextEdit))
                 .setQuestion1RecurrentDateReceived(getTextValue(hQ1RecurrentDateReceivedEditText))
                 .setQuestion1RecurrentDateWithdrawn(getTextValue(hQ1RecurrentDateWithdrawnEditText))
-
                 .setQuestion1DevelopmentApprovedBudget(getIntegerValue(hQ1DevelopmentApprovedEditText))
                 .setQuestion1DevelopmentReleasedBudget(getIntegerValue(hQ1DevelopmentBudgetReleaseTextEdit))
                 .setQuestion1DevelopmentDateReceived(getTextValue(hQ1DevelopmentDateReceivedEditText))
                 .setQuestion1DevelopmentDateWithdrawn(getTextValue(hQ1DevelopmentDateWithdrawnEditText))
-
                 .setQuestion11DisplayBudgetInformation("Display Area")
                 .setQuestion12BudgetInformationRelates(getTextValue(hQ1_2BudgetInformationEditText))
-
-
                 .setQuestion2MaternityYesNo(getQuestion2MaternityWardObjective())
                 .setQuestion2GeneralWardYesNo(getQuestion2GeneralWardObjective())
                 .setQuestion2DeliveryBedsYesNo(getQuestion2DeliveryBedsObjective())
@@ -364,7 +359,6 @@ public class HealthActivity extends AppCompatActivity {
                 .setQuestion2ImmunizationYesNo(getQuestion2ImmunizationObjective())
                 .setQuestion2YouthFriendlyCornersYesNo(getQuestion2YouthFriendlyCornersObjective())
                 .setQuestion2Vaccination4HEPBYesNo(getQuestion2VaccinationHEPBObjective())
-
                 // 2.1
                 .setQuestion21CategoryLiveNumberDeliveries(getIntegerValue(hQ2_1_LiveNumberDeliveriesTextEdit))
                 .setQuestion21CategoryStillNumberDeliveries(getIntegerValue(hQ2_1_StillNumberDeliveriesTextEdit))
@@ -378,7 +372,6 @@ public class HealthActivity extends AppCompatActivity {
                 .setQuestion3HealthStaffNumberToiletMixedStances(getIntegerValue(hQ3StaffToiletMixedStances))
                 .setQuestion3ToiletFunctionalNumber(getIntegerValue(hQ3StaffToiletFunctional))
                 .setQuestion3ToiletNonFunctionNumber(getIntegerValue( hQ3StaffToiletNone))
-
                 // latrine
                 .setQuestion3LatrineNumberBlocks(getIntegerValue(hQ3LatrineNumberBlocks))
                 .setQuestion3LatrineNumberStances(getIntegerValue(hQ3LatrineNumberStances))
@@ -389,7 +382,6 @@ public class HealthActivity extends AppCompatActivity {
                 .setQuestion3LatrineNumberStaffMixedStances(getIntegerValue( hQ3StaffLatrineMixedStances))
                 .setQuestion3LatrineNumberNumberFunctional(getIntegerValue(hQ3StaffLatrineFunctional))
                 .setQuestion3LatrineNoneFunctional(getIntegerValue(hQ3StaffLatrineNone))
-
                 // fcrs
                 .setQuestion3FCRNumberBlock(getIntegerValue(hQ3FFCNumberBlocks))
                 .setQuestion3FCRNumberStances(getIntegerValue(hQ3FFCNumberStances))
@@ -398,75 +390,54 @@ public class HealthActivity extends AppCompatActivity {
                 .setQuestion3FCRNumberStaffMixedStances(getIntegerValue(hQ3StaffFFCMixedStances))
                 .setQuestion3FCRNumberFunctionalStances(getIntegerValue(hQ3StaffFFCFunctional))
                 .setQuestion3FCRNumberNoneFunction(getIntegerValue(hQ3StaffFFCNone))
-
                 // 31
                 .setQuestion31HealthFacilityToiletFacilities(getQuestion31ToiletObjective())
                 .setQuestion32HealthFacilityToiletReasonFacilities("reasons")
-
                 .setQuestion4NumberOfBoreHole(getIntegerValue(hQ4BoreholeNumberEditText))
                 .setQuestion4NumberOfBoreHoleFunctional(getIntegerValue(hQ4BoreholeNumberFunctionalEditText))
                 .setQuestion4NumberOfBoreHoleNoneFunctional(getIntegerValue( hQ4BoreholeNumberNoneFunctional))
-
                 .setQuestion4NumberOfTap(getIntegerValue(hQ4TapNumberEditText))
                 .setQuestion4NumberOfTapFunctional(getIntegerValue(hQ4TapNumberFunctionalEditText))
                 .setQuestion4NumberOfTapNoneFunctional(getIntegerValue(hQ4TapNumberNoneFunctional))
-
                 .setQuestion4NumberOfWaterTank(getIntegerValue(hQ4WaterTankNumberEditText))
                 .setQuestion4NumberOfWaterTankFunctional(getIntegerValue(hQ4NoneTankNumberFunctionalEditText))
                 .setQuestion4NumberOfWaterTankNoneFunctional(getIntegerValue(hQ4NoneTankNumberNoneFunctional))
-
                 .setQuestion4OtherName(getTextValue(hQ4OtherNameEditText))
                 .setQuestion4OtherNumber(getIntegerValue(hQ4OtherNameNumberEditText))
                 .setQuestion4OtherNumberFunctional(getIntegerValue( hQ4OtherNameNumberFunctionalEditText))
                 .setQuestion4OtherNumberNoneFunctional(getIntegerValue( hQ4OtherNameNumberNoneFunctional))
-
                 .setQuestion41WaterPointAccessible(getQuestion41WaterPointObjective())
                 .setQuestion43FunctionalWaterPoint(getQuestion43WaterPointObjective())
                 .setQuestion43IfNoneReason(getTextValue(h43NoEstimateEditText))
-
                 .setQuestion44HandWashingInstalled(getQuestion44HandWashingObjective())
-
                 .setQuestion51HealthUnitManagementCommittee(getQuestion51HUMCObjective())
                 .setQuestion52HowOftenTheyMeet(getQuestion52MeetingObjective())
                 .setQuestion53LastVisitSupportSupervisor(getTextValue(h53LastVisitDate))
-
                 .setQuestion6MedicalStaffCeilingNumber(getIntegerValue(hQ6MedicalStaffCeilingEditText))
                 .setQuestion6MedicalTotalNumberStaff(getIntegerValue( hQ6MedicalTotalNumberStaffEditText))
                 .setQuestion6MedicalNumberStuffPresent(getIntegerValue(hQ6MedicalTotalNumberStaffPresentEditText))
-
                 .setQuestion6NoneMedicalStaffCeilingNumber(getIntegerValue(hQ6NoneMedicalStaffCeilingEditText))
                 .setQuestion6NoneMedicalStaffTotalNumberStaff(getIntegerValue(hQ6NoneMedicalTotalNumberStaffEditText))
                 .setQuestion6NoneMedicalNumberStaffPresent(getIntegerValue(hQ6NoneMedicalTotalNumberStaffPresentEditText))
-
                 .setQuestion6ReasonsForStaffAbsence(getTextValue(hQ6ReasonsEditText))
                 .setQuestion6LastDatePerformanceAppraisal(getTextValue(hQ63LastDateAppraisalEditText))
                 .setQuestion6NumberOfStaffAppraised(getIntegerValue(hQ63LastDateAppraisalEditText))
-
                 // question 7
                 .setQuestion7HCReceiveMedicalSupplies(getQuestion71Objective())
-                // TODO: this one should be date
-                .setQuestion7HCReceiveMedicalSuppliesIfNo("reason")
-
+                .setQuestion7HCReceiveMedicalSuppliesIfNo(getTextValue(h71DeliveryDateEditText))
                 .setQuestion72EssentialDrug1Name(getTextValue(hQ72Drug1NameEditText))
                 .setQuestion72EssentialDrug1RequiredStock(getIntegerValue(hQ72Drug1RequiredStockEditText))
-
                 .setQuestion72EssentialDrug2Name(getTextValue(hQ72Drug2NameEditText))
                 .setQuestion72EssentialDrug2RequiredStock(getIntegerValue(hQ72Drug2RequiredStockEditText))
-
                 .setQuestion72EssentialDrug3Name(getTextValue(hQ72Drug3NameEditText))
                 .setQuestion72EssentialDrug3RequiredStock(getIntegerValue(hQ72Drug3RequiredStockEditText))
-
                 .setQuestion72EssentialDrug4Name(getTextValue(hQ72Drug4NameEditText))
                 .setQuestion72EssentialDrug4RequiredStock(getIntegerValue(hQ72Drug4RequiredStockEditText))
-
                 .setQuestion72EssentialDrug5Name(getTextValue(hQ72Drug5NameEditText))
                 .setQuestion72EssentialDrug5RequiredStock(getIntegerValue(hQ72Drug5RequiredStockEditText))
-
                 .setQuestion73HCLastDrugsConsignment(getTextValue(h73DrugLastDateEditText))
                 .setQuestion74NumberMedicalEquipmentBrought(getIntegerValue(h74NumberOfMedicalEquipmentBought))
-
                 .setQuestion75HaveAmbulance(getQuestion75Objective())
-
                 .setQuestion76Referrals(getTextValue(h76ReferralHandling))
                 .setQuestion80ChallengesAndObservation(getTextValue(h8OtherObservationEditText))
                 .build();
