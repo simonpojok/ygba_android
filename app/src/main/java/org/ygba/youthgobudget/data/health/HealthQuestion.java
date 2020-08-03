@@ -298,6 +298,30 @@ public class HealthQuestion {
     @ColumnInfo(name = HealthQuestionConstants.QUESTION_7_2_ESSENTIAL_DRUG_1_REQUIRED_STOCK)
     private int question72EssentialDrug1RequiredStock;
 
+    @ColumnInfo(name = HealthQuestionConstants.QUESTION_7_2_ESSENTIAL_DRUG_2_NAME)
+    private String question72EssentialDrug2Name;
+
+    @ColumnInfo(name = HealthQuestionConstants.QUESTION_7_2_ESSENTIAL_DRUG_2_REQUIRED_STOCK)
+    private int question72EssentialDrug2RequiredStock;
+
+    @ColumnInfo(name = HealthQuestionConstants.QUESTION_7_2_ESSENTIAL_DRUG_3_NAME)
+    private String question72EssentialDrug3Name;
+
+    @ColumnInfo(name = HealthQuestionConstants.QUESTION_7_2_ESSENTIAL_DRUG_3_REQUIRED_STOCK)
+    private int question72EssentialDrug3RequiredStock;
+
+    @ColumnInfo(name = HealthQuestionConstants.QUESTION_7_2_ESSENTIAL_DRUG_4_NAME)
+    private String question72EssentialDrug4Name;
+
+    @ColumnInfo(name = HealthQuestionConstants.QUESTION_7_2_ESSENTIAL_DRUG_4_REQUIRED_STOCK)
+    private int question72EssentialDrug4RequiredStock;
+
+    @ColumnInfo(name = HealthQuestionConstants.QUESTION_7_2_ESSENTIAL_DRUG_5_NAME)
+    private String question72EssentialDrug5Name;
+
+    @ColumnInfo(name = HealthQuestionConstants.QUESTION_7_2_ESSENTIAL_DRUG_5_REQUIRED_STOCK)
+    private int question72EssentialDrug5RequiredStock;
+
     private HealthQuestion() {}
 
     public static class Builder {
@@ -785,6 +809,110 @@ public class HealthQuestion {
             INSTANCE.setQuestion72EssentialDrug1RequiredStock(integerValue);
             return this;
         }
+
+        public Builder setQuestion72EssentialDrug2Name(String textValue) {
+            INSTANCE.setQuestion72EssentialDrug2Name(textValue);
+            return this;
+        }
+
+        public Builder setQuestion72EssentialDrug2RequiredStock(int integerValue) {
+            INSTANCE.setQuestion72EssentialDrug2RequiredStock(integerValue);
+            return this;
+        }
+
+        public Builder setQuestion72EssentialDrug3Name(String textValue) {
+            INSTANCE.setQuestion72EssentialDrug3Name(textValue);
+            return this;
+        }
+
+        public Builder setQuestion72EssentialDrug3RequiredStock(int integerValue) {
+            INSTANCE.setQuestion72EssentialDrug3RequiredStock(integerValue);
+            return this;
+        }
+
+        public Builder setQuestion72EssentialDrug4Name(String textValue) {
+            INSTANCE.setQuestion72EssentialDrug4Name(textValue);
+            return this;
+        }
+
+        public Builder setQuestion72EssentialDrug4RequiredStock(int integerValue) {
+            INSTANCE.setQuestion72EssentialDrug4RequiredStock(integerValue);
+            return this;
+        }
+
+        public Builder setQuestion72EssentialDrug5Name(String textValue) {
+            INSTANCE.setQuestion72EssentialDrug5Name(textValue);
+            return this;
+        }
+
+        public Builder setQuestion72EssentialDrug5RequiredStock(int integerValue) {
+            INSTANCE.setQuestion72EssentialDrug5RequiredStock(integerValue);
+            return this;
+        }
+    }
+
+    public String getQuestion72EssentialDrug2Name() {
+        return question72EssentialDrug2Name;
+    }
+
+    public void setQuestion72EssentialDrug2Name(String question72EssentialDrug2Name) {
+        this.question72EssentialDrug2Name = question72EssentialDrug2Name;
+    }
+
+    public int getQuestion72EssentialDrug2RequiredStock() {
+        return question72EssentialDrug2RequiredStock;
+    }
+
+    public void setQuestion72EssentialDrug2RequiredStock(int question72EssentialDrug2RequiredStock) {
+        this.question72EssentialDrug2RequiredStock = question72EssentialDrug2RequiredStock;
+    }
+
+    public String getQuestion72EssentialDrug3Name() {
+        return question72EssentialDrug3Name;
+    }
+
+    public void setQuestion72EssentialDrug3Name(String question72EssentialDrug3Name) {
+        this.question72EssentialDrug3Name = question72EssentialDrug3Name;
+    }
+
+    public int getQuestion72EssentialDrug3RequiredStock() {
+        return question72EssentialDrug3RequiredStock;
+    }
+
+    public void setQuestion72EssentialDrug3RequiredStock(int question72EssentialDrug3RequiredStock) {
+        this.question72EssentialDrug3RequiredStock = question72EssentialDrug3RequiredStock;
+    }
+
+    public String getQuestion72EssentialDrug4Name() {
+        return question72EssentialDrug4Name;
+    }
+
+    public void setQuestion72EssentialDrug4Name(String question72EssentialDrug4Name) {
+        this.question72EssentialDrug4Name = question72EssentialDrug4Name;
+    }
+
+    public int getQuestion72EssentialDrug4RequiredStock() {
+        return question72EssentialDrug4RequiredStock;
+    }
+
+    public void setQuestion72EssentialDrug4RequiredStock(int question72EssentialDrug4RequiredStock) {
+        this.question72EssentialDrug4RequiredStock = question72EssentialDrug4RequiredStock;
+    }
+
+    public String getQuestion72EssentialDrug5Name() {
+        return question72EssentialDrug5Name;
+    }
+
+    public void setQuestion72EssentialDrug5Name(String question72EssentialDrug5Name) {
+        this.question72EssentialDrug5Name = question72EssentialDrug5Name;
+    }
+
+    public int getQuestion72EssentialDrug5RequiredStock() {
+        return question72EssentialDrug5RequiredStock;
+    }
+
+    public void setQuestion72EssentialDrug5RequiredStock(int question72EssentialDrug5RequiredStock) {
+        this.question72EssentialDrug5RequiredStock = question72EssentialDrug5RequiredStock;
     }
 
     public int getQuestion72EssentialDrug1RequiredStock() {
