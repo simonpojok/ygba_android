@@ -151,28 +151,28 @@ public class HealthQuestionUploadWorker extends Worker {
             JSONArray essentialDrugs = new JSONArray();
 
             JSONObject essentialDrug1 = new JSONObject();
-            essentialDrug1.put("name", "name");
-            essentialDrug1.put("stock_required", 89);
+            essentialDrug1.put("name", healthQuestion.getQuestion72EssentialDrug1Name());
+            essentialDrug1.put("stock_required", healthQuestion.getQuestion72EssentialDrug1RequiredStock());
             essentialDrugs.put(essentialDrug1);
 
             JSONObject essentialDrug2 = new JSONObject();
-            essentialDrug2.put("name", "name");
-            essentialDrug2.put("stock_required", 67);
+            essentialDrug2.put("name", healthQuestion.getQuestion72EssentialDrug2Name());
+            essentialDrug2.put("stock_required", healthQuestion.getQuestion72EssentialDrug2RequiredStock());
             essentialDrugs.put(essentialDrug2);
 
             JSONObject essentialDrug3 = new JSONObject();
-            essentialDrug3.put("stock_required", 78);
-            essentialDrug3.put("name", "name");
+            essentialDrug3.put("name", healthQuestion.getQuestion72EssentialDrug3Name());
+            essentialDrug3.put("stock_required", healthQuestion.getQuestion72EssentialDrug3RequiredStock());
             essentialDrugs.put(essentialDrug3);
 
             JSONObject essentialDrug4 = new JSONObject();
-            essentialDrug4.put("stock_required", 78);
-            essentialDrug4.put("name", "name");
+            essentialDrug4.put("name", healthQuestion.getQuestion72EssentialDrug4Name());
+            essentialDrug4.put("stock_required", healthQuestion.getQuestion72EssentialDrug4RequiredStock());
             essentialDrugs.put(essentialDrug4);
 
             JSONObject essentialDrug5 = new JSONObject();
-            essentialDrug5.put("stock_required", 78);
-            essentialDrug5.put("name", "name");
+            essentialDrug5.put("stock_required", healthQuestion.getQuestion72EssentialDrug5RequiredStock());
+            essentialDrug5.put("name", healthQuestion.getQuestion72EssentialDrug5Name());
             essentialDrugs.put(essentialDrug5);
             body.put("essential_drugs", essentialDrugs);
 

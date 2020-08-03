@@ -292,6 +292,12 @@ public class HealthQuestion {
     @ColumnInfo(name = HealthQuestionConstants.QUESTION_7_1_HC_RECIEVE_MEDICAL_SUPPLY_IF_NO)
     private String question7HCReceiveMedicalSuppliesIfNo;
 
+    @ColumnInfo(name = HealthQuestionConstants.QUESTION_7_2_ESSENTIAL_DRUG_1_NAME)
+    private String question72EssentialDrug1Name;
+
+    @ColumnInfo(name = HealthQuestionConstants.QUESTION_7_2_ESSENTIAL_DRUG_1_REQUIRED_STOCK)
+    private int question72EssentialDrug1RequiredStock;
+
     private HealthQuestion() {}
 
     public static class Builder {
@@ -769,6 +775,32 @@ public class HealthQuestion {
             INSTANCE.setQuestion7HCReceiveMedicalSuppliesIfNo(reason);
             return this;
         }
+
+        public Builder setQuestion72EssentialDrug1Name(String textValue) {
+            INSTANCE.setQuestion72EssentialDrug1Name(textValue);
+            return this;
+        }
+
+        public Builder setQuestion72EssentialDrug1RequiredStock(int integerValue) {
+            INSTANCE.setQuestion72EssentialDrug1RequiredStock(integerValue);
+            return this;
+        }
+    }
+
+    public int getQuestion72EssentialDrug1RequiredStock() {
+        return question72EssentialDrug1RequiredStock;
+    }
+
+    public void setQuestion72EssentialDrug1RequiredStock(int question72EssentialDrug1RequiredStock) {
+        this.question72EssentialDrug1RequiredStock = question72EssentialDrug1RequiredStock;
+    }
+
+    public String getQuestion72EssentialDrug1Name() {
+        return question72EssentialDrug1Name;
+    }
+
+    public void setQuestion72EssentialDrug1Name(String question72EssentialDrug1Name) {
+        this.question72EssentialDrug1Name = question72EssentialDrug1Name;
     }
 
     public String getQuestion7HCReceiveMedicalSuppliesIfNo() {

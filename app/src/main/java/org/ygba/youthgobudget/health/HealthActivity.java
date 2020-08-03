@@ -444,7 +444,11 @@ public class HealthActivity extends AppCompatActivity {
 
                 // question 7
                 .setQuestion7HCReceiveMedicalSupplies(getQuestion71Objective())
+                // TODO: this one should be date
                 .setQuestion7HCReceiveMedicalSuppliesIfNo("reason")
+
+                .setQuestion72EssentialDrug1Name(getTextValue(hQ72Drug1NameEditText))
+                .setQuestion72EssentialDrug1RequiredStock(getIntegerValue(hQ72Drug1RequiredStockEditText))
                 .build();
 
     }
