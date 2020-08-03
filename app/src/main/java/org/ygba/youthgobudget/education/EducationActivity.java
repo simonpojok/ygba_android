@@ -128,6 +128,14 @@ public class EducationActivity extends AppCompatActivity {
     private EditText question61NumberPermanentClassRoomEditText;
     private EditText question62NumberOfDeskInSchool;
     private EditText question63PupilDeskRatioEditText;
+    private EditText question70NumberOfTeacherMaleEnrolled;
+    private EditText question70NumberOfTeacherFemaleEnrolled;
+    private EditText question70NumberOfTeacherMalePresent;
+    private EditText question70NumberOfTeacherFemalePresent;
+    private EditText question70NumberOfTeacherInPayroll;
+    private EditText question71TeacherPupilRatio;
+    private EditText question73SWTOfferSupportEditText;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -278,6 +286,16 @@ public class EducationActivity extends AppCompatActivity {
         question61NumberPermanentClassRoomEditText = findViewById(R.id.eduction_question_6_1_edit_text);
         question62NumberOfDeskInSchool = findViewById(R.id.eduction_question_6_2_edit_text);
         question63PupilDeskRatioEditText = findViewById(R.id.eduction_question_6_3_edit_text);
+
+
+        question70NumberOfTeacherMaleEnrolled = findViewById(R.id.eduction_question_7_0_enrolled_male_teachers_text_view);
+        question70NumberOfTeacherFemaleEnrolled = findViewById(R.id.eduction_question_7_0_enrolled_female_teachers_text_view);
+        question70NumberOfTeacherMalePresent = findViewById(R.id.eduction_question_7_0_enrolled_male_teachers_present_text_view);
+        question70NumberOfTeacherFemalePresent = findViewById(R.id.eduction_question_7_0_enrolled_female_teachers_present_text_view);
+        question70NumberOfTeacherInPayroll = findViewById(R.id.eduction_question_7_0_teachers_on_payroll_text_view);
+
+        question71TeacherPupilRatio = findViewById(R.id.eduction_question_7_1_edit_text);
+        question73SWTOfferSupportEditText = findViewById(R.id.eduction_question_7_3_edit_text);
         findViewById(R.id.saved_form_data).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -407,7 +425,23 @@ public class EducationActivity extends AppCompatActivity {
                 .setQuestion61NumberPermanentClassRooms(getIntegerValue(question61NumberPermanentClassRoomEditText))
                 .setQuestion62NumberOfDeskInSchool(getIntegerValue(question62NumberOfDeskInSchool))
                 .setQuestion63PupilDeskRatio(getTextValue(question63PupilDeskRatioEditText))
+
+                // question 7
+                .setQuestion70NumberOfMaleTeacherEnrolled(getIntegerValue(question70NumberOfTeacherMaleEnrolled))
+                .setQuestion70NumberOfFemaleTeacherEnrolled(getIntegerValue(question70NumberOfTeacherFemaleEnrolled))
+                .setQuestion70NumberOfFemaleTeacherPresent(getIntegerValue(question70NumberOfTeacherFemalePresent))
+                .setQuestion70NumberOfTeachersOnPayroll(getIntegerValue(question70NumberOfTeacherInPayroll))
+                .setQuestion70NumberOfTeachersPresentMale(getIntegerValue(question70NumberOfTeacherMalePresent))
+
+                .setQuestion71TeacherPupilRatio(getTextValue(question71TeacherPupilRatio))
+                .setQuestion72SeniorWomanTeacherYesNo(getQuestion72SeniorWomanTeacherObjectiveAnswer())
+                .setQuestion73SWFOfferSupportHow(getTextValue(question73SWTOfferSupportEditText))
                 .build();
+    }
+
+    private boolean getQuestion72SeniorWomanTeacherObjectiveAnswer() {
+        RadioGroup radioGroup = findViewById(R.id.question72RadioGroup);
+        return radioGroup.getCheckedRadioButtonId() == R.id.education_question_7_2_yes;
     }
 
     private String getTextValue(EditText editText) {

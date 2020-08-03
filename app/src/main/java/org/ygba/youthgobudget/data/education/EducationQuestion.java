@@ -322,6 +322,30 @@ public class EducationQuestion {
     @ColumnInfo(name = EducationQuestionConstants.QUESTION_6_3_PUPIL_DESK_RATIO)
     private String question63PupilDeskRatio;
 
+    @ColumnInfo(name = EducationQuestionConstants.QUESTION_7_0_NUMBER_MALE_TEACHER_ENROLLED)
+    private int question70NumberOfMaleTeacherEnrolled;
+
+    @ColumnInfo(name = EducationQuestionConstants.QUESTION_7_0_NUMBER_OF_FEMALE_TEACHER_ENROLLED)
+    private int question70NumberOfFemaleTeacherEnrolled;
+
+    @ColumnInfo(name = EducationQuestionConstants.QUESTION_7_0_NUMBER_OF_TEACHER_PAYROLL)
+    private int question70NumberOfTeachersOnPayroll;
+
+    @ColumnInfo(name = EducationQuestionConstants.QUESTION_7_0_NUMBER_OF_TEACHERS_PRESENT)
+    private int question70NumberOfTeachersPresentMale;
+
+    @ColumnInfo(name = EducationQuestionConstants.QUESTION_7_0_NUMBER_TEACHERS_PRESENT_FEMALE)
+    private int question70NumberOfFemaleTeacherPresent;
+
+    @ColumnInfo(name = EducationQuestionConstants.QUESTION_7_1_TEACHER_PUPIL_RATIO)
+    private String question71TeacherPupilRatio;
+
+    @ColumnInfo(name = EducationQuestionConstants.QUESTION_7_2_SENIOR_WOMAN_TEACHER)
+    private boolean question72SeniorWomanTeacherYesNo;
+
+    @ColumnInfo(name = EducationQuestionConstants.QUESTION_7_3_HOW_SWT_OFFER_SUPPORT)
+    private String question73SWFOfferSupportHow;
+
     public static class Builder {
         private final EducationQuestion INSTANCE;
         public Builder() {
@@ -834,6 +858,110 @@ public class EducationQuestion {
             INSTANCE.setQuestion63PupilDeskRatio(textValue);
             return this;
         }
+
+        public Builder setQuestion70NumberOfMaleTeacherEnrolled(int integerValue) {
+            INSTANCE.setQuestion70NumberOfMaleTeacherEnrolled(integerValue);
+            return this;
+        }
+
+        public Builder setQuestion70NumberOfFemaleTeacherEnrolled(int integerValue) {
+            INSTANCE.setQuestion70NumberOfFemaleTeacherEnrolled(integerValue);
+            return this;
+        }
+
+        public Builder setQuestion70NumberOfTeachersOnPayroll(int integerValue) {
+            INSTANCE.setQuestion70NumberOfTeachersOnPayroll(integerValue);
+            return this;
+        }
+
+        public Builder setQuestion70NumberOfTeachersPresentMale(int integerValue) {
+            INSTANCE.setQuestion70NumberOfTeachersPresentMale(integerValue);
+            return this;
+        }
+
+        public Builder setQuestion70NumberOfFemaleTeacherPresent(int integerValue) {
+            INSTANCE.setQuestion70NumberOfFemaleTeacherPresent(integerValue);
+            return this;
+        }
+
+        public Builder setQuestion71TeacherPupilRatio(String textValue) {
+            INSTANCE.setQuestion71TeacherPupilRatio(textValue);
+            return this;
+        }
+
+        public Builder setQuestion72SeniorWomanTeacherYesNo(boolean question72SeniorWomanTeacherObjectiveAnswer) {
+            INSTANCE.setQuestion72SeniorWomanTeacherYesNo(question72SeniorWomanTeacherObjectiveAnswer);
+            return this;
+        }
+
+        public Builder setQuestion73SWFOfferSupportHow(String textValue) {
+            INSTANCE.setQuestion73SWFOfferSupportHow(textValue);
+            return this;
+        }
+    }
+
+    public String getQuestion73SWFOfferSupportHow() {
+        return question73SWFOfferSupportHow;
+    }
+
+    public void setQuestion73SWFOfferSupportHow(String question73SWFOfferSupportHow) {
+        this.question73SWFOfferSupportHow = question73SWFOfferSupportHow;
+    }
+
+    public boolean isQuestion72SeniorWomanTeacherYesNo() {
+        return question72SeniorWomanTeacherYesNo;
+    }
+
+    public void setQuestion72SeniorWomanTeacherYesNo(boolean question72SeniorWomanTeacherYesNo) {
+        this.question72SeniorWomanTeacherYesNo = question72SeniorWomanTeacherYesNo;
+    }
+
+    public String getQuestion71TeacherPupilRatio() {
+        return question71TeacherPupilRatio;
+    }
+
+    public void setQuestion71TeacherPupilRatio(String question71TeacherPupilRatio) {
+        this.question71TeacherPupilRatio = question71TeacherPupilRatio;
+    }
+
+    public int getQuestion70NumberOfFemaleTeacherPresent() {
+        return question70NumberOfFemaleTeacherPresent;
+    }
+
+    public void setQuestion70NumberOfFemaleTeacherPresent(int question70NumberOfFemaleTeacherPresent) {
+        this.question70NumberOfFemaleTeacherPresent = question70NumberOfFemaleTeacherPresent;
+    }
+
+    public int getQuestion70NumberOfTeachersPresentMale() {
+        return question70NumberOfTeachersPresentMale;
+    }
+
+    public void setQuestion70NumberOfTeachersPresentMale(int question70NumberOfTeachersPresentMale) {
+        this.question70NumberOfTeachersPresentMale = question70NumberOfTeachersPresentMale;
+    }
+
+    public int getQuestion70NumberOfTeachersOnPayroll() {
+        return question70NumberOfTeachersOnPayroll;
+    }
+
+    public void setQuestion70NumberOfTeachersOnPayroll(int question70NumberOfTeachersOnPayroll) {
+        this.question70NumberOfTeachersOnPayroll = question70NumberOfTeachersOnPayroll;
+    }
+
+    public int getQuestion70NumberOfFemaleTeacherEnrolled() {
+        return question70NumberOfFemaleTeacherEnrolled;
+    }
+
+    public void setQuestion70NumberOfFemaleTeacherEnrolled(int question70NumberOfFemaleTeacherEnrolled) {
+        this.question70NumberOfFemaleTeacherEnrolled = question70NumberOfFemaleTeacherEnrolled;
+    }
+
+    public int getQuestion70NumberOfMaleTeacherEnrolled() {
+        return question70NumberOfMaleTeacherEnrolled;
+    }
+
+    public void setQuestion70NumberOfMaleTeacherEnrolled(int question70NumberOfMaleTeacherEnrolled) {
+        this.question70NumberOfMaleTeacherEnrolled = question70NumberOfMaleTeacherEnrolled;
     }
 
     public String getQuestion63PupilDeskRatio() {
