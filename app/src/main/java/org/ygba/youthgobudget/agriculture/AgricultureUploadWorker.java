@@ -1,15 +1,18 @@
 package org.ygba.youthgobudget.agriculture;
 
 import android.content.Context;
+import android.util.Log;
 
 import androidx.annotation.NonNull;
 import androidx.work.Worker;
 import androidx.work.WorkerParameters;
 
 import com.android.volley.Request;
+import com.android.volley.RequestQueue;
 import com.android.volley.Response;
 import com.android.volley.VolleyError;
 import com.android.volley.toolbox.JsonObjectRequest;
+import com.android.volley.toolbox.Volley;
 
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -73,6 +76,7 @@ Schema::create('agriculture', function (Blueprint $table) {
 
 public class AgricultureUploadWorker extends Worker {
     private AgricultureDao agricultureDao;
+    private Context context;
     public AgricultureUploadWorker(@NonNull Context context, @NonNull WorkerParameters workerParams) {
         super(context, workerParams);
         agricultureDao = YGBDatabase.getInstance(context.getApplicationContext()).agricultureDao();
@@ -135,16 +139,19 @@ public class AgricultureUploadWorker extends Worker {
                         new Response.Listener<JSONObject>() {
                             @Override
                             public void onResponse(JSONObject response) {
-
+                                Log.d("Response", response.toString());
                             }
                         },
                         new Response.ErrorListener() {
                             @Override
                             public void onErrorResponse(VolleyError error) {
-
+                                Log.d("Error", error.toString());
                             }
                         }
                 );
+
+                RequestQueue requestQueue = Volley.newRequestQueue(context);
+                requestQueue.add(jsonObjectRequest);
             }
 
 

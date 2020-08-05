@@ -370,6 +370,8 @@ public class EducationQuestion {
     @ColumnInfo(name = EducationQuestionConstants.QUESTION_8_IS_STORED_LOCALLY)
     private boolean isStoredLocally;
 
+    public EducationQuestion() {}
+
     public static class Builder {
         private final EducationQuestion INSTANCE;
         public Builder() {
@@ -1543,10 +1545,6 @@ public class EducationQuestion {
 
     public void setQuestion5ToiletNumberFemaleStancesPupil(int question5ToiletNumberFemaleStancesPupil) {
         this.question5ToiletNumberFemaleStancesPupil = question5ToiletNumberFemaleStancesPupil;
-    }
-
-    @Ignore
-    private EducationQuestion() {
     }
 
     public int getQuestion5ToiletNumberMaleStancesPupil() {

@@ -15,7 +15,7 @@ public interface HealthQuestionDao {
             "SELECT * FROM "
             + HealthQuestionConstants.TABLE_NAME
             + " WHERE " + HealthQuestionConstants.IS_LOCALLY_STORED
-            + " :=is_stored_locally"
+            + " =:is_stored_locally"
     )
     List<HealthQuestion> getHealthQuestion(boolean is_stored_locally);
 }
