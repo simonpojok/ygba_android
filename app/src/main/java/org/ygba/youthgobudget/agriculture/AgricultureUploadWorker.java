@@ -17,6 +17,7 @@ import com.android.volley.toolbox.Volley;
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
+import org.ygba.youthgobudget.YGBARepository;
 import org.ygba.youthgobudget.data.YGBDatabase;
 import org.ygba.youthgobudget.data.agriculture.AgricultureDao;
 import org.ygba.youthgobudget.data.agriculture.AgricultureQuestion;
@@ -77,10 +78,12 @@ Schema::create('agriculture', function (Blueprint $table) {
 public class AgricultureUploadWorker extends Worker {
     private AgricultureDao agricultureDao;
     private Context context;
+    private YGBARepository ygbaRepository;
     public AgricultureUploadWorker(@NonNull Context context, @NonNull WorkerParameters workerParams) {
         super(context, workerParams);
         agricultureDao = YGBDatabase.getInstance(context.getApplicationContext()).agricultureDao();
         this.context = context;
+        ygbaRepository = YGBARepository.getInstance(YGBDatabase.getInstance(context.getApplicationContext()));
     }
 
     @NonNull
@@ -164,7 +167,7 @@ public class AgricultureUploadWorker extends Worker {
     }
 
     private void deleteAgricultureQuestion(int record_id) {
-
+        ygbaRepository.getAgricultureQuestionByIdAndDelete(record_id);
     }
 
     private List<AgricultureQuestion> getAgricultureQuestion() throws ExecutionException, InterruptedException {
