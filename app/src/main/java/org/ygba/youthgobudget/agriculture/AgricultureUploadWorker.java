@@ -22,6 +22,8 @@ import java.util.List;
 import java.util.concurrent.Callable;
 import java.util.concurrent.ExecutionException;
 
+import static org.ygba.youthgobudget.utils.Constants.AGRICULTURE_COLLECTION;
+
 
 /*
 Schema::create('agriculture', function (Blueprint $table) {
@@ -85,10 +87,7 @@ public class AgricultureUploadWorker extends Worker {
 
             for (AgricultureQuestion agricultureQuestion: agricultureQuestions) {
 
-                JSONObject jsonObject = new JSONObject();
-                JSONArray jsonArray = new JSONArray();
                 JSONObject body = new JSONObject();
-                jsonObject.put("DATA", jsonArray);
                 body.put("financial_year", agricultureQuestion.getFinancialYear());
                 body.put("date_recorded", agricultureQuestion.getDate());
                 body.put("village", agricultureQuestion.getVillage());
@@ -123,11 +122,16 @@ public class AgricultureUploadWorker extends Worker {
                 body.put("reasons_for_no_agriculture_inputs_and_livestock", agricultureQuestion.getAnswerQuestion4_3_reason());
                 body.put("any_other_observations_or_challenges", agricultureQuestion.getAnswerQuestion4_3_otherReason());
 
+                JSONObject jsonObject = new JSONObject();
+                JSONArray jsonArray = new JSONArray();
+                jsonArray.put(body);
+                jsonObject.put("DATA", jsonArray);
+
 
                 JsonObjectRequest jsonObjectRequest = new JsonObjectRequest(
                         Request.Method.POST,
-                        "",
-                        new JSONObject(),
+                        AGRICULTURE_COLLECTION,
+                        jsonObject,
                         new Response.Listener<JSONObject>() {
                             @Override
                             public void onResponse(JSONObject response) {
