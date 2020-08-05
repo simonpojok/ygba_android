@@ -14,4 +14,10 @@ public interface WaterEnvironmentQuestionDao {
 
     @Query("SELECT * FROM " + WaterEnvironmentConstants.TABLE_NAME)
     LiveData<List<WaterEnvironmentQuestion>> getAllWaterEnvironmentQuestions();
+
+    @Query(
+            "SELECT * FROM " + WaterEnvironmentConstants.TABLE_NAME
+            + " WHERE " + WaterEnvironmentConstants.LOCALLY_STORED + " =:isLocallyStored"
+    )
+    List<WaterEnvironmentQuestion> getWaterEnvironmentForBackUp(boolean isLocallyStored);
 }

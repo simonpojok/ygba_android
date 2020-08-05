@@ -150,4 +150,14 @@ public class YGBARepository {
             }
         });
     }
+
+    public List<WaterEnvironmentQuestion> getWaterEnvironmentForBackUp() throws ExecutionException, InterruptedException {
+        Callable<List<WaterEnvironmentQuestion>> callable = new Callable<List<WaterEnvironmentQuestion>>() {
+            @Override
+            public List<WaterEnvironmentQuestion> call() throws Exception {
+                return ygbDatabase.waterEnvironmentQuestionDao().getWaterEnvironmentForBackUp(true);
+            }
+        };
+        return YGBDatabase.db_executor.submit(callable).get();
+    }
 }
