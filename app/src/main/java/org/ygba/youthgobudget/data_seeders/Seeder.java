@@ -1,73 +1,83 @@
 package org.ygba.youthgobudget.data_seeders;
 
+import android.app.Application;
+
+import org.ygba.youthgobudget.YGBARepository;
+import org.ygba.youthgobudget.data.YGBDatabase;
 import org.ygba.youthgobudget.data.agriculture.AgricultureQuestion;
 
 public class Seeder {
-
+    YGBARepository ygbaRepository;
+    Seeder(Application application) {
+        ygbaRepository = YGBARepository.getInstance(YGBDatabase.getInstance(application));
+    }
     public void seed() {
 
     }
 
     public void seedAgriculture() {
-        AgricultureQuestion agricultureQuestion = new AgricultureQuestion(
-                String financialYear,
-                String date,
-                String village,
-                String parish,
-                String subCounty,
-                String agentName,
-                String tel,
-                String agentNumber,
-                String question1Objective,
-                String question1Reason,
-                String question2ExtensionExpectedAmount,
-                String question2ExtensionAmountReceived,
-                String question2ExtensionDateReceived,
-                String question2ExtensionDateWithdram,
-                String question2DevelopmentAmountExpected,
-                String question2DevelopmentAmountReceived,
-                String question2DevelopmentDateReceived,
-                String question2DevelopmentDateWithdrawn,
-                String answerQuestion2_1,
-                String answerQuestion2_2,
-                String answerQuestion2_3,
-                String answerQuestion2_4,
-                String answerQuestion2_5,
-                String answerQuestion3_1,
-                String answerQuestion3_2,
-                String answerQuestion3_3,
-                String answerQuestion3_4_Male,
-                String answerQuestion3_4_Female,
-                String answerQuestion3_5,
-                String answerQuestion4_1,
-                String answerQuestion4_2_Input_1,
-                String answerQuestion4_2_Date_1,
-                String answerQuestion4_2_Male_Number_1,
-                String answerQuestion4_2_Female_Number_1,
-                String answerQuestion4_2_village_1,
-                String answerQuestion4_2_Input_2,
-                String answerQuestion4_2_Date_2,
-                String answerQuestion4_2_Male_Number_2,
-                String answerQuestion4_2_Female_Number_2,
-                String answerQuestion4_2_village_2,
-                String answerQuestion4_2_Input_3,
-                String answerQuestion4_2_Date_3,
-                String answerQuestion4_2_Male_Number_3,
-                String answerQuestion4_2_Female_Number_3,
-                String answerQuestion4_2_village_3,
-                String answerQuestion4_2_Input_4,
-                String answerQuestion4_2_Date_4,
-                String answerQuestion4_2_Male_Number_4,
-                String answerQuestion4_2_Female_Number_4,
-                String answerQuestion4_2_village_4,
-                String answerQuestion4_2_Input_5,
-                String answerQuestion4_2_Date_5,
-                String answerQuestion4_2_Male_Number_5,
-                String answerQuestion4_2_Female_Number_5,
-                String answerQuestion4_2_village_5,
-                String answerQuestion4_3_reason,
-                String answerQuestion4_3_otherReason
-        ) {
-
+        for (int i = 0; i < 20; i++) {
+            AgricultureQuestion agricultureQuestion = new AgricultureQuestion(
+                    "2020-2021",
+                    "02--03-2020",
+                    "Kijjabwemi",
+                    "Kyabakuza",
+                    "Kimaanya",
+                    "Simon Peter Ojok",
+                    "0772241709",
+                    "2344",
+                    "Yes",
+                    "I have just arrived here few minutes ago",
+                    "24000",
+                    "20000",
+                    "20-03-2020",
+                    "30-04-2020",
+                    "20000",
+                    "14000",
+                    "12-02-2020",
+                    "13-02-2020",
+                    "456",
+                    // "some reason",
+                    "Yes",
+                    "56",
+                    "Kijjabwemi Village B",
+                    "There was no enough fundings",
+                    "Yes",
+                    "78",
+                    "Kijjabwemi Zone B",
+                    "45",
+                    "45",
+                    "The date was not wel communicated",
+                    "Yes",
+                    "Cow",
+                    "20-02-2020",
+                    "45",
+                    "30",
+                    "Kabale",
+                    "Pig",
+                    "20-01-2020",
+                    "4",
+                    "39",
+                    "Kabalema",
+                    "Hoe",
+                    "09-02-2020",
+                    "45",
+                    "30",
+                    "Kabalwe",
+                    "Goat",
+                    "01-02-2020",
+                    "4",
+                    "30",
+                    "Kabaleya",
+                    "Cow",
+                    "20-02-2020",
+                    "45",
+                    "30",
+                    "Kabale",
+                    "Less money was provided some data",
+                    "There was not providing some informations"
+            );
+            ygbaRepository.saveAgricultureQuestion(agricultureQuestion);
         }
+    }
 }
