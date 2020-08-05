@@ -15,6 +15,7 @@ import org.ygba.youthgobudget.allocation.AllocationActivity;
 import org.ygba.youthgobudget.budget_cycle.BudgetCycleActivity;
 import org.ygba.youthgobudget.budget_information.BudgetInformationActivity;
 import org.ygba.youthgobudget.community_wishes.CommunityWishesActivity;
+import org.ygba.youthgobudget.data_seeders.Seeder;
 import org.ygba.youthgobudget.education.EducationActivity;
 import org.ygba.youthgobudget.health.HealthActivity;
 import org.ygba.youthgobudget.help.HelpActivity;
@@ -118,7 +119,14 @@ public class MainActivity extends AppCompatActivity {
         });
 
         // start all workers
-        WorkerTrigger.startAllUploadWorker(this);
+//        WorkerTrigger.startAllUploadWorker(this);
+
+        startSeeders();
+    }
+
+    private void startSeeders() {
+        Seeder seeder = new Seeder(getApplicationContext());
+        seeder.seedAgriculture();
     }
 
     @Override

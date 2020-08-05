@@ -1,6 +1,7 @@
 package org.ygba.youthgobudget.data_seeders;
 
 import android.app.Application;
+import android.content.Context;
 
 import org.ygba.youthgobudget.YGBARepository;
 import org.ygba.youthgobudget.data.YGBDatabase;
@@ -8,7 +9,7 @@ import org.ygba.youthgobudget.data.agriculture.AgricultureQuestion;
 
 public class Seeder {
     YGBARepository ygbaRepository;
-    Seeder(Application application) {
+    public Seeder(Context application) {
         ygbaRepository = YGBARepository.getInstance(YGBDatabase.getInstance(application));
     }
     public void seed() {
