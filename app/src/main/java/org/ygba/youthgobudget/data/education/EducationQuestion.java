@@ -2004,4 +2004,6 @@ public class EducationQuestion {
     public void setQuestion3capitalGrantApprovedBudget(int question3capitalGrantApprovedBudget) {
         this.question3capitalGrantApprovedBudget = question3capitalGrantApprovedBudget;
     }
+
+
 }

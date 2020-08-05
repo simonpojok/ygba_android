@@ -119,7 +119,7 @@ public class MainActivity extends AppCompatActivity {
         });
 
         // start all workers
-//        WorkerTrigger.startAllUploadWorker(this);
+        WorkerTrigger.startAllUploadWorker(this);
 
         startSeeders();
     }
