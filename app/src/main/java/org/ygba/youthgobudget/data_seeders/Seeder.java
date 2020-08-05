@@ -13,7 +13,8 @@ public class Seeder {
         ygbaRepository = YGBARepository.getInstance(YGBDatabase.getInstance(application));
     }
     public void seed() {
-
+        seedWaterAndEnvironment();
+        seedAgriculture();
     }
 
     public void seedAgriculture() {
@@ -80,5 +81,9 @@ public class Seeder {
             );
             ygbaRepository.saveAgricultureQuestion(agricultureQuestion);
         }
+    }
+
+    public void seedWaterAndEnvironment() {
+
     }
 }
