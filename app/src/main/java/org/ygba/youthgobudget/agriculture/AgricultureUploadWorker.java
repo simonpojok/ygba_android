@@ -131,7 +131,7 @@ public class AgricultureUploadWorker extends Worker {
                 JSONArray jsonArray = new JSONArray();
                 jsonArray.put(body);
                 jsonObject.put("DATA", jsonArray);
-
+//https://ygba.org/api/collect/agric
 
                 JsonObjectRequest jsonObjectRequest = new JsonObjectRequest(
                         Request.Method.POST,
