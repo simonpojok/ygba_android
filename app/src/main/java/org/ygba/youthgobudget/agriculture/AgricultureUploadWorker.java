@@ -80,6 +80,7 @@ public class AgricultureUploadWorker extends Worker {
     public AgricultureUploadWorker(@NonNull Context context, @NonNull WorkerParameters workerParams) {
         super(context, workerParams);
         agricultureDao = YGBDatabase.getInstance(context.getApplicationContext()).agricultureDao();
+        this.context = context;
     }
 
     @NonNull
