@@ -184,4 +184,28 @@ public class YGBARepository {
         };
         return YGBDatabase.db_executor.submit(callable).get();
     }
+
+    public  void getAgricultureQuestionByIdAndDelete(int primaryKey) {
+        try {
+            final AgricultureQuestion agricultureQuestion = getAgricultureQuestionById(primaryKey);
+            YGBDatabase.db_executor.execute(new Runnable() {
+                @Override
+                public void run() {
+                    ygbDatabase.agricultureDao().deleteAgricultureQuestion(agricultureQuestion);
+                }
+            });
+        } catch (ExecutionException | InterruptedException e) {
+            e.printStackTrace();
+        }
+    }
+
+    public AgricultureQuestion getAgricultureQuestionById(final int primaryKey) throws ExecutionException, InterruptedException {
+        Callable<AgricultureQuestion> callable = new Callable<AgricultureQuestion>() {
+            @Override
+            public AgricultureQuestion call() throws Exception {
+                return ygbDatabase.agricultureDao().getAgricultureQuestionById(primaryKey);
+            }
+        };
+        return YGBDatabase.db_executor.submit(callable).get();
+    }
 }
