@@ -1,10 +1,18 @@
 package org.ygba.youthgobudget.water_and_environment;
 
 import android.content.Context;
+import android.util.Log;
 
 import androidx.annotation.NonNull;
 import androidx.work.Worker;
 import androidx.work.WorkerParameters;
+
+import com.android.volley.Request;
+import com.android.volley.RequestQueue;
+import com.android.volley.Response;
+import com.android.volley.VolleyError;
+import com.android.volley.toolbox.JsonObjectRequest;
+import com.android.volley.toolbox.Volley;
 
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -15,6 +23,9 @@ import org.ygba.youthgobudget.data.water_and_environment.WaterEnvironmentQuestio
 import java.io.LineNumberInputStream;
 import java.util.List;
 import java.util.concurrent.ExecutionException;
+
+import static org.ygba.youthgobudget.utils.Constants.AGRICULTURE_COLLECTION_URL;
+import static org.ygba.youthgobudget.utils.Constants.WATER_COLLECTION_URL;
 
 public class WaterEnvironmentUploadWorker extends Worker {
     Context context;
@@ -57,12 +68,32 @@ public class WaterEnvironmentUploadWorker extends Worker {
                     body.put("'What_are_the_tree_pl_ms_known_in_the_area", waterEnvironmentQuestion.getQuestion62TreePlanting());
 
 
+                    JsonObjectRequest jsonObjectRequest = new JsonObjectRequest(
+                            Request.Method.POST,
+                            WATER_COLLECTION_URL,
+                            body,
+                            new Response.Listener<JSONObject>() {
+                                @Override
+                                public void onResponse(JSONObject response) {
+                                    Log.d("Response", response.toString());
+                                }
+                            },
+                            new Response.ErrorListener() {
+                                @Override
+                                public void onErrorResponse(VolleyError error) {
+                                    Log.d("Error", error.toString());
+                                }
+                            }
+                    );
+
+                    RequestQueue requestQueue = Volley.newRequestQueue(context);
+                    requestQueue.add(jsonObjectRequest);
                 }
             } catch (JSONException e) {
                 e.printStackTrace();
             }
         }
-        return Result.success();
+        return Result.retry();
     }
 
     private List<WaterEnvironmentQuestion> getList() {
