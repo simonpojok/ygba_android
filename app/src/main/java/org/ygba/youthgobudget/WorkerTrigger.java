@@ -8,6 +8,7 @@ import androidx.work.PeriodicWorkRequest;
 import androidx.work.WorkManager;
 
 import org.ygba.youthgobudget.agriculture.AgricultureUploadWorker;
+import org.ygba.youthgobudget.water_and_environment.WaterEnvironmentUploadWorker;
 
 import java.util.concurrent.TimeUnit;
 
@@ -17,6 +18,7 @@ public class WorkerTrigger {
 
     public static void startAllUploadWorker(Context context) {
         startAgricultureUploadWorker(context);
+        startWaterAndEnvironmentUploadWorker(context);
     }
 
     private static void startAgricultureUploadWorker(Context context) {
@@ -25,6 +27,18 @@ public class WorkerTrigger {
                 .build();
         PeriodicWorkRequest workRequest = new PeriodicWorkRequest.Builder(
                 AgricultureUploadWorker.class,
+                WORKER_TIME_INTERVAL_MINUTES,
+                TimeUnit.MINUTES
+        ).setConstraints(constraints).build();
+        WorkManager.getInstance(context).enqueue(workRequest);
+    }
+
+    private static void startWaterAndEnvironmentUploadWorker(Context context) {
+        Constraints constraints = new Constraints.Builder()
+                .setRequiredNetworkType(NetworkType.CONNECTED)
+                .build();
+        PeriodicWorkRequest workRequest = new PeriodicWorkRequest.Builder(
+                WaterEnvironmentUploadWorker.class,
                 WORKER_TIME_INTERVAL_MINUTES,
                 TimeUnit.MINUTES
         ).setConstraints(constraints).build();

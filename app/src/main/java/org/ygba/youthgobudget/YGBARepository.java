@@ -155,7 +155,21 @@ public class YGBARepository {
         Callable<List<WaterEnvironmentQuestion>> callable = new Callable<List<WaterEnvironmentQuestion>>() {
             @Override
             public List<WaterEnvironmentQuestion> call() throws Exception {
-                return ygbDatabase.waterEnvironmentQuestionDao().getWaterEnvironmentForBackUp(true);
+                return ygbDatabase.waterEnvironmentQuestionDao().getWaterEnvironmentForBackUp();
+            }
+        };
+        return YGBDatabase.db_executor.submit(callable).get();
+    }
+
+    public void getWaterAndEnvironmentQuestionAndDelete(int primaryKey) {
+
+    }
+
+    public WaterEnvironmentQuestion getWaterAndEnvironmentQuestionByPrimaryKey(final int primaryKey) throws ExecutionException, InterruptedException {
+        Callable<WaterEnvironmentQuestion> callable = new Callable<WaterEnvironmentQuestion>() {
+            @Override
+            public WaterEnvironmentQuestion call() throws Exception {
+                return ygbDatabase.waterEnvironmentQuestionDao().getWaterAndEnvironmentById(primaryKey);
             }
         };
         return YGBDatabase.db_executor.submit(callable).get();

@@ -75,7 +75,11 @@ public class WaterEnvironmentUploadWorker extends Worker {
                             new Response.Listener<JSONObject>() {
                                 @Override
                                 public void onResponse(JSONObject response) {
-                                    Log.d("Response", response.toString());
+                                    try {
+                                        deleteWaterAndEnvironmentQuestion(response.getInt("record_id"));
+                                    } catch (JSONException e) {
+                                        e.printStackTrace();
+                                    }
                                 }
                             },
                             new Response.ErrorListener() {
@@ -94,6 +98,10 @@ public class WaterEnvironmentUploadWorker extends Worker {
             }
         }
         return Result.retry();
+    }
+
+    private void deleteWaterAndEnvironmentQuestion(int record_id) {
+
     }
 
     private List<WaterEnvironmentQuestion> getList() {

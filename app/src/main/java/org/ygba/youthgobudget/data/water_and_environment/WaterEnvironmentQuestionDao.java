@@ -2,6 +2,7 @@ package org.ygba.youthgobudget.data.water_and_environment;
 
 import androidx.lifecycle.LiveData;
 import androidx.room.Dao;
+import androidx.room.Delete;
 import androidx.room.Insert;
 import androidx.room.Query;
 
@@ -17,7 +18,12 @@ public interface WaterEnvironmentQuestionDao {
 
     @Query(
             "SELECT * FROM " + WaterEnvironmentConstants.TABLE_NAME
-            + " WHERE " + WaterEnvironmentConstants.LOCALLY_STORED + " =:isLocallyStored"
     )
-    List<WaterEnvironmentQuestion> getWaterEnvironmentForBackUp(boolean isLocallyStored);
+    List<WaterEnvironmentQuestion> getWaterEnvironmentForBackUp();
+
+    @Query("SELECT * FROM " + WaterEnvironmentConstants.TABLE_NAME + " WHERE " + WaterEnvironmentConstants.PRIMARY_KEY + " =:primaryKey")
+    WaterEnvironmentQuestion getWaterAndEnvironmentById(int primaryKey);
+
+    @Delete
+    void deleteWaterAndEnvironmentQuestion(WaterEnvironmentQuestion waterEnvironmentQuestion);
 }

@@ -126,6 +126,7 @@ public class MainActivity extends AppCompatActivity {
 
     private void startSeeders() {
         Seeder seeder = new Seeder(getApplicationContext());
+        seeder.seed();
 //        seeder.seedAgriculture();
     }
 
