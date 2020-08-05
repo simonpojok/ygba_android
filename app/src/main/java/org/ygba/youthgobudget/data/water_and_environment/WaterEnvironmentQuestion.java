@@ -578,6 +578,14 @@ public class WaterEnvironmentQuestion {
             INSTANCE.setQuestion62TreePlanting(stringValue);
             return this;
         }
+
+        public Builder setQuarter(String iv) {
+            return this;
+        }
+
+        public Builder setQuestion5NoneFunctional1(int i) {
+            return this;
+        }
     }
 
     @Ignore

@@ -93,6 +93,7 @@ public class AgricultureUploadWorker extends Worker {
             for (AgricultureQuestion agricultureQuestion: agricultureQuestions) {
 
                 JSONObject body = new JSONObject();
+                body.put("record_id", agricultureQuestion.getId());
                 body.put("financial_year", agricultureQuestion.getFinancialYear());
                 body.put("date_recorded", agricultureQuestion.getDate());
                 body.put("village", agricultureQuestion.getVillage());
@@ -126,17 +127,12 @@ public class AgricultureUploadWorker extends Worker {
                 body.put("reasons_for_not_conducting_the_farmer_advisory_services_visits", agricultureQuestion.getAnswerQuestion3_5());
                 body.put("reasons_for_no_agriculture_inputs_and_livestock", agricultureQuestion.getAnswerQuestion4_3_reason());
                 body.put("any_other_observations_or_challenges", agricultureQuestion.getAnswerQuestion4_3_otherReason());
-
-                JSONObject jsonObject = new JSONObject();
-                JSONArray jsonArray = new JSONArray();
-                jsonArray.put(body);
-                jsonObject.put("DATA", jsonArray);
 //https://ygba.org/api/collect/agric
 
                 JsonObjectRequest jsonObjectRequest = new JsonObjectRequest(
                         Request.Method.POST,
                         AGRICULTURE_COLLECTION_URL,
-                        jsonObject,
+                        body,
                         new Response.Listener<JSONObject>() {
                             @Override
                             public void onResponse(JSONObject response) {

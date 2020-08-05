@@ -6,6 +6,7 @@ import android.content.Context;
 import org.ygba.youthgobudget.YGBARepository;
 import org.ygba.youthgobudget.data.YGBDatabase;
 import org.ygba.youthgobudget.data.agriculture.AgricultureQuestion;
+import org.ygba.youthgobudget.data.water_and_environment.WaterEnvironmentQuestion;
 
 public class Seeder {
     YGBARepository ygbaRepository;
@@ -84,6 +85,52 @@ public class Seeder {
     }
 
     public void seedWaterAndEnvironment() {
+        WaterEnvironmentQuestion waterEnvironmentQuestion = new WaterEnvironmentQuestion.Builder()
+                .setFinancialYear("2020-2030")
+                .setQuarter("iv")
+                .setDate("20-03-2020")
+                .setDistrict("Masaka")
+                .setVillage("Kijjabwemi")
+                .setParish("Kimanya")
+                .setDivision("Kimaanya-Kyabakuzza")
+                .setAgentFullName("Simon Peter Ojok")
+                .setAgentTel("0772241709")
+                .setQuestion1Objective(true)
+                .setQuestion1Reason("This value was entered during api testing")
+                .setQuestion2LongAnswer("Basing this was typed during api testing so please dont record it")
+                .setQuestion3ObjectiveAnswer(true)
+                .setQuestion4LongAnswer("This must be some long text though")
+                .setQuestion5Area1("Kijjabwemi")
+                .setQuestion5WaterSource1("Deep Ocean")
+                .setQuestion5Functional1(45)
+                .setQuestion5NoneFunctional1(34)
+                .setQuestion5NoWaterSourceAvailable(45)
+                .setQuestion5Area2("Kijjabwemi")
+                .setQuestion5WaterSource2("Deep Ocean")
+                .setQuestion5Functional2(45)
+                .setNonFunctional2(34)
+                .setQuestion5NoWaterSourceAvailable3(45)
+                .setQuestion5Area3("Kijjabwemi")
+                .setQuestion5WaterSource3("Deep Ocean")
+                .setQuestion5Functional3(45)
+                .setNonFunctional3(34)
+                .setQuestion5NoWaterSourceAvailable3(45)
+                .setQuestion5Area4("Kijjabwemi")
+                .setQuestion5WaterSource4("Deep Ocean")
+                .setQuestion5Functional4(45)
+                .setNonFunctional4(34)
+                .setQuestion5NoWaterSourceAvailable4(45)
+                .setQuestion5Area5("Kijjabwemi")
+                .setQuestion5WaterSource5("Deep Ocean")
+                .setQuestion5Functional5(45)
+                .setNonFunctional5(34)
+                .setQuestion5NoWaterSourceAvailable5(45)
+                .setQuestion5Area6("Kijjabwemi")
+                .setQuestion5WaterSource6("Deep Ocean")
+                .setQuestion5Functional6(45)
+                .setNonFunctional6(34)
+                .setQuestion5NoWaterSourceAvailable6(45)
+                .build();
 
     }
 }
