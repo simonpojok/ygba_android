@@ -136,7 +136,11 @@ public class AgricultureUploadWorker extends Worker {
                         new Response.Listener<JSONObject>() {
                             @Override
                             public void onResponse(JSONObject response) {
-                                Log.d("Response", response.toString());
+                                try {
+                                    deleteAgricultureQuestion(response.getInt("record_id"));
+                                } catch (JSONException e) {
+                                    e.printStackTrace();
+                                }
                             }
                         },
                         new Response.ErrorListener() {
@@ -157,6 +161,10 @@ public class AgricultureUploadWorker extends Worker {
             return Result.failure();
         }
         return Result.retry();
+    }
+
+    private void deleteAgricultureQuestion(int record_id) {
+
     }
 
     private List<AgricultureQuestion> getAgricultureQuestion() throws ExecutionException, InterruptedException {
