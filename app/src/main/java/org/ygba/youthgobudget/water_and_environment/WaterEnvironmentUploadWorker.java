@@ -12,6 +12,7 @@ import org.ygba.youthgobudget.data.water_and_environment.WaterEnvironmentQuestio
 
 import java.io.LineNumberInputStream;
 import java.util.List;
+import java.util.concurrent.ExecutionException;
 
 public class WaterEnvironmentUploadWorker extends Worker {
     Context context;
@@ -25,10 +26,19 @@ public class WaterEnvironmentUploadWorker extends Worker {
     @NonNull
     @Override
     public Result doWork() {
-        return null;
+        List<WaterEnvironmentQuestion> waterEnvironmentQuestions = getList();
+        for (WaterEnvironmentQuestion waterEnvironmentQuestion: waterEnvironmentQuestions) {
+
+        }
+        return Result.success();
     }
 
     private List<WaterEnvironmentQuestion> getList() {
-//        return ygbaRepository.
+        try {
+            return ygbaRepository.getWaterEnvironmentForBackUp();
+        } catch (ExecutionException | InterruptedException e) {
+            e.printStackTrace();
+        }
+        return null;
     }
 }
