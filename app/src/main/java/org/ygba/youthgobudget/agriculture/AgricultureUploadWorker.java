@@ -25,7 +25,7 @@ import java.util.List;
 import java.util.concurrent.Callable;
 import java.util.concurrent.ExecutionException;
 
-import static org.ygba.youthgobudget.utils.Constants.AGRICULTURE_COLLECTION;
+import static org.ygba.youthgobudget.utils.Constants.AGRICULTURE_COLLECTION_URL;
 
 
 /*
@@ -135,7 +135,7 @@ public class AgricultureUploadWorker extends Worker {
 
                 JsonObjectRequest jsonObjectRequest = new JsonObjectRequest(
                         Request.Method.POST,
-                        AGRICULTURE_COLLECTION,
+                        AGRICULTURE_COLLECTION_URL,
                         jsonObject,
                         new Response.Listener<JSONObject>() {
                             @Override
