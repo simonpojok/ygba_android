@@ -22,7 +22,7 @@ public class Seeder {
         for (int i = 0; i < 20; i++) {
             AgricultureQuestion agricultureQuestion = new AgricultureQuestion(
                     "2020-2021",
-                    "02--03-2020",
+                    "02-03-2020",
                     "Kijjabwemi",
                     "Kyabakuza",
                     "Kimaanya",
