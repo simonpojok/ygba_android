@@ -101,7 +101,7 @@ public class WaterEnvironmentUploadWorker extends Worker {
     }
 
     private void deleteWaterAndEnvironmentQuestion(int record_id) {
-
+        ygbaRepository.getWaterAndEnvironmentQuestionAndDelete(record_id);
     }
 
     private List<WaterEnvironmentQuestion> getList() {

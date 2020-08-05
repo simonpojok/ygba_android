@@ -162,7 +162,17 @@ public class YGBARepository {
     }
 
     public void getWaterAndEnvironmentQuestionAndDelete(int primaryKey) {
-
+        try {
+            final WaterEnvironmentQuestion waterEnvironmentQuestion = getWaterAndEnvironmentQuestionByPrimaryKey(primaryKey);
+            YGBDatabase.db_executor.execute(new Runnable() {
+                @Override
+                public void run() {
+                    ygbDatabase.waterEnvironmentQuestionDao().deleteWaterAndEnvironmentQuestion(waterEnvironmentQuestion);
+                }
+            });
+        } catch (ExecutionException | InterruptedException e) {
+            e.printStackTrace();
+        }
     }
 
     public WaterEnvironmentQuestion getWaterAndEnvironmentQuestionByPrimaryKey(final int primaryKey) throws ExecutionException, InterruptedException {
