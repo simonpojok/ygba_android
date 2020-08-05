@@ -35,6 +35,28 @@ public class WaterEnvironmentUploadWorker extends Worker {
                 for (WaterEnvironmentQuestion waterEnvironmentQuestion: waterEnvironmentQuestions) {
                     JSONObject body = new JSONObject();
                     body.put("record_id", waterEnvironmentQuestion.getPrimaryKey());
+                    body.put("financial_year", waterEnvironmentQuestion.getFinancialYear());
+                    body.put("Quarter", "missing value");
+                    body.put("Date", waterEnvironmentQuestion.getDate());
+                    body.put("District", waterEnvironmentQuestion.getDistrict());
+                    body.put("subcounty", waterEnvironmentQuestion.getSub_county());
+                    body.put("Parish", waterEnvironmentQuestion.getParish());
+                    body.put("Village", waterEnvironmentQuestion.getVillage());
+                    body.put("Name_of_Monitor_YGB", waterEnvironmentQuestion.getAgentName());
+                    body.put("phone_number", waterEnvironmentQuestion.getAgentTel());
+                    body.put("is_there_water_at_office", waterEnvironmentQuestion.isQuestion1Objective());
+                    body.put("If_no_water_why", waterEnvironmentQuestion.getQuestion1ObjectiveReason());
+                    body.put("what_are_the_water_protection_activities_taking", waterEnvironmentQuestion.getQuestion2Water());
+                    body.put("Are_there_rural_safe_low_Wells_boreholes", waterEnvironmentQuestion.getQuestion3Objective());
+                    body.put("clean_water_accessibility", waterEnvironmentQuestion.getQuestion4Answer());
+                    // some table here
+                    //TODO: we are to add some tables here
+                    body.put("do_the_rural_water_point_sources_have_committees", waterEnvironmentQuestion.getQuestion5Text());
+                    body.put("if_they_dont_have_why", waterEnvironmentQuestion.getQuestion5ObjectiveReason());
+                    body.put("Are_there_any_wetlands_demarcated_or_protected", waterEnvironmentQuestion.getQuestion6WetLandDemarcated());
+                    body.put("'What_are_the_tree_pl_ms_known_in_the_area", waterEnvironmentQuestion.getQuestion62TreePlanting());
+
+
                 }
             } catch (JSONException e) {
                 e.printStackTrace();
@@ -52,25 +74,3 @@ public class WaterEnvironmentUploadWorker extends Worker {
         return null;
     }
 }
-
-        $table->string('financial_year')->nullable();
-        $table->string('Quarter')->nullable();
-        $table->date('Date')->nullable();
-        $table->string('District')->nullable();
-        $table->string('subcounty')->nullable();
-        $table->string('Parish')->nullable();
-        $table->string('Village')->nullable();
-        $table->string('Name_of_Monitor_YGB')->nullable();
-        $table->string('phone_number')->nullable();
-        $table->string('is_there_water_at_office')->nullable();
-        $table->text('If_no_water_why')->nullable();
-        $table->text('what_are_the_water_protection_activities_taking')->nullable();
-        $table->string('Are_there_rural_safe_low_Wells_boreholes')->nullable();
-        $table->text('clean_water_accessibility')->nullable();
-        $table->string('do_the_rural_water_point_sources_have_committees')->nullable();
-        $table->text('if_they_dont_have_why')->nullable();
-        $table->text('Are_there_any_wetlands_demarcated_or_protected')->nullable();
-        $table->text('areas_with_wetland_degradation')->nullable();
-        $table->text('What_are_the_tree_pl_ms_known_in_the_area')->nullable();
-        $table->timestamps();
-        $table->softDeletes();
