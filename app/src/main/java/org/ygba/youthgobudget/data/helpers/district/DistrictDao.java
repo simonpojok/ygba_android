@@ -14,5 +14,5 @@ public interface DistrictDao {
     @Query(
             "SELECT * FROM " + DistrictConstants.TABLE_NAME
     )
-    LiveData<List<District>> getAllDistricts();
+    List<District> getAllDistricts();
 }
