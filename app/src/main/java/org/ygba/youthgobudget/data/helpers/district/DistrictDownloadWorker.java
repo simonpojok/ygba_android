@@ -54,7 +54,7 @@ public class DistrictDownloadWorker extends Worker {
 
         RequestQueue requestQueue = Volley.newRequestQueue(context);
         requestQueue.add(jsonObjectRequest);
-        return null;
+        return Result.success();
     }
 
     private void serializeAndSave(JSONObject response) {
@@ -68,7 +68,10 @@ public class DistrictDownloadWorker extends Worker {
             YGBDatabase.db_executor.execute(new Runnable() {
                 @Override
                 public void run() {
-                    districtDao.saveDistrict(district);
+                    District district1 = districtDao.getDistrictByID(district.getId());
+                    if ( district1 == null ) {
+                        districtDao.saveDistrict(district);
+                    }
                 }
             });
         } catch (JSONException e) {

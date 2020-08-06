@@ -11,8 +11,9 @@ import java.util.List;
 public interface DistrictDao {
     @Insert
     void saveDistrict(District district);
-    @Query(
-            "SELECT * FROM " + DistrictConstants.TABLE_NAME
-    )
+    @Query("SELECT * FROM " + DistrictConstants.TABLE_NAME)
     List<District> getAllDistricts();
+
+    @Query("SELECT * FROM " + DistrictConstants.TABLE_NAME + " WHERE " + DistrictConstants.COLUMN_ID + " =:id")
+    District getDistrictByID(int id);
 }
