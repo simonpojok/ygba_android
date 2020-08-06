@@ -17,12 +17,12 @@ public class District {
     private String region;
 
     @ColumnInfo(name = DistrictConstants.COLUMN_REGION_ID)
-    private String region_id;
+    private int region_id;
 
     @ColumnInfo(name = DistrictConstants.COLUMN_ID)
     private int id;
 
-    public District(String name, String region, String region_id, int id) {
+    public District(String name, String region, int region_id, int id) {
         this.name = name;
         this.region = region;
         this.region_id = region_id;
@@ -53,11 +53,11 @@ public class District {
         this.region = region;
     }
 
-    public String getRegion_id() {
+    public int getRegion_id() {
         return region_id;
     }
 
-    public void setRegion_id(String region_id) {
+    public void setRegion_id(int region_id) {
         this.region_id = region_id;
     }
 
@@ -67,16 +67,5 @@ public class District {
 
     public void setId(int id) {
         this.id = id;
-    }
-
-    @Override
-    public String toString() {
-        return "District{" +
-                "primaryKey=" + primaryKey +
-                ", name='" + name + '\'' +
-                ", region='" + region + '\'' +
-                ", region_id='" + region_id + '\'' +
-                ", id=" + id +
-                '}';
     }
 }

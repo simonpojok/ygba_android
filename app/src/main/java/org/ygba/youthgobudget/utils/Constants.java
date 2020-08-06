@@ -9,4 +9,5 @@ public class Constants {
     public static final String EDUCATION_COLLECTION_URL = BASE_URL + "collect/education";
     public static final String WISH_LIST_COLLECTION_URL = BASE_URL + "collect/wishlist";
     public static final String WATER_COLLECTION_URL = BASE_URL + "collect/water";
+    public static final String DISTRICT_COLLECTION_URL = BASE_URL + "areas/district";
 }
