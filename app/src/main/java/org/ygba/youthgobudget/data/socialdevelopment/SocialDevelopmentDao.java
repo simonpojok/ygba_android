@@ -14,4 +14,10 @@ public interface SocialDevelopmentDao {
 
     @Query("SELECT * FROM " + SocialDevelopmentConstants.TABLE_NAME)
     LiveData<List<SocialDevelopmentQuestion>> getAllSocialDevelopmentQuestions();
+
+    @Query("SELECT * FROM " + SocialDevelopmentConstants.TABLE_NAME)
+    List<SocialDevelopmentQuestion> getSocialDevelopmentQuestionsForBackUp();
+
+    @Query("SELECT * FROM " + SocialDevelopmentConstants.TABLE_NAME + " WHERE " + SocialDevelopmentConstants.PRIMARY_KEY + " =:id")
+    SocialDevelopmentQuestion getSocialDevelopmentQuestionById(int id);
 }
