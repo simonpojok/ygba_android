@@ -55,7 +55,7 @@ public class SubCounty {
         this.id = id;
     }
 
-    public SubCounty(String name, int district, int district_id, int id) {
+    public SubCounty(String name, String district, int district_id, int id) {
         this.name = name;
         this.district = district;
         this.district_id = district_id;
