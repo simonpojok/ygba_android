@@ -15,13 +15,20 @@ public class SubCounty {
     private String name;
 
     @ColumnInfo(name = SubCountyConstants.DISTRICT_NAME_COLUMN)
-    private int district;
+    private String district;
 
     @ColumnInfo(name = SubCountyConstants.DISTRICT_ID_COLUMN)
     private int district_id;
 
     @ColumnInfo(name = SubCountyConstants.SUB_COUNTY_ID_COLUMN)
     private int id;
+
+    public SubCounty(String name, String district, int district_id, int id) {
+        this.name = name;
+        this.district = district;
+        this.district_id = district_id;
+        this.id = id;
+    }
 
     public int getPrimaryKey() {
         return primaryKey;
@@ -31,11 +38,19 @@ public class SubCounty {
         this.primaryKey = primaryKey;
     }
 
-    public int getDistrict() {
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public String getDistrict() {
         return district;
     }
 
-    public void setDistrict(int district) {
+    public void setDistrict(String district) {
         this.district = district;
     }
 
@@ -53,20 +68,5 @@ public class SubCounty {
 
     public void setId(int id) {
         this.id = id;
-    }
-
-    public SubCounty(String name, String district, int district_id, int id) {
-        this.name = name;
-        this.district = district;
-        this.district_id = district_id;
-        this.id = id;
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
     }
 }
