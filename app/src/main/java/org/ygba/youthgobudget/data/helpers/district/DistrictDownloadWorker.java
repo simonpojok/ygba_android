@@ -54,7 +54,7 @@ public class DistrictDownloadWorker extends Worker {
 
         RequestQueue requestQueue = Volley.newRequestQueue(context);
         requestQueue.add(jsonObjectRequest);
-        return Result.success();
+        return Result.retry();
     }
 
     private void serializeAndSave(JSONObject response) {
