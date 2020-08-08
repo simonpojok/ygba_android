@@ -78,4 +78,8 @@ public class DistrictDownloadWorker extends Worker {
             e.printStackTrace();
         }
     }
+
+    private static class DistrictList {
+
+    }
 }
