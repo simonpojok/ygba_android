@@ -52,7 +52,7 @@ public class SocialDevelopmentUploadWorker extends Worker {
                     budgetReceiptArray.put(row2);
                     jsonObject.put("budget_receipt_date", budgetReceiptArray);
 
-                    jsonObject.put("are_there_women_empowerment_program", question.getQ3WomenEmpowermentObjective());
+                    jsonObject.put("are_there_women_empowerment_program", question.isQ3WomenEmpowermentObjective());
                     jsonObject.put("if_yes_women_empower_how_many_women_supported", question.getQ3WomenEmpowermentObjectiveReason());
 
 
@@ -106,7 +106,7 @@ public class SocialDevelopmentUploadWorker extends Worker {
                     question3Array.put(tr7);
 
                     jsonObject.put("women_group", question3Array);
-                    jsonObject.put("youth_livelihood_program_running", question.getQ4LivelihoodObjective());
+                    jsonObject.put("youth_livelihood_program_running", question.isQ4LivelihoodObjective());
                     jsonObject.put("if_yes_how_many_youths_have_been_supported", question.getQ4LivelihoodObjectiveReason());
 
                     JSONArray question4Array = new JSONArray();
