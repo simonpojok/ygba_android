@@ -8,6 +8,7 @@ import androidx.work.PeriodicWorkRequest;
 import androidx.work.WorkManager;
 
 import org.ygba.youthgobudget.agriculture.AgricultureUploadWorker;
+import org.ygba.youthgobudget.data.helpers.district.DistrictDownloadWorker;
 import org.ygba.youthgobudget.social_development.SocialDevelopmentUploadWorker;
 import org.ygba.youthgobudget.water_and_environment.WaterEnvironmentUploadWorker;
 
@@ -21,6 +22,7 @@ public class WorkerTrigger {
         startAgricultureUploadWorker(context);
         startWaterAndEnvironmentUploadWorker(context);
         startSocialDevelopmentUploadWorker(context);
+        startDistrictDownloadWorker(context);
     }
 
     private static void startAgricultureUploadWorker(Context context) {
@@ -53,6 +55,18 @@ public class WorkerTrigger {
                 .build();
         PeriodicWorkRequest workRequest = new PeriodicWorkRequest.Builder(
                 SocialDevelopmentUploadWorker.class,
+                WORKER_TIME_INTERVAL_MINUTES,
+                TimeUnit.MINUTES
+        ).setConstraints(constraints).build();
+        WorkManager.getInstance(context).enqueue(workRequest);
+    }
+
+    private static void startDistrictDownloadWorker(Context context) {
+        Constraints constraints = new Constraints.Builder()
+                .setRequiredNetworkType(NetworkType.CONNECTED)
+                .build();
+        PeriodicWorkRequest workRequest = new PeriodicWorkRequest.Builder(
+                DistrictDownloadWorker.class,
                 WORKER_TIME_INTERVAL_MINUTES,
                 TimeUnit.MINUTES
         ).setConstraints(constraints).build();

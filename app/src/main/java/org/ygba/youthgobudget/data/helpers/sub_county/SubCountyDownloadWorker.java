@@ -13,10 +13,13 @@ import com.android.volley.Response;
 import com.android.volley.VolleyError;
 import com.android.volley.toolbox.JsonObjectRequest;
 import com.android.volley.toolbox.Volley;
+import com.google.gson.Gson;
 
 import org.json.JSONException;
 import org.json.JSONObject;
 import org.ygba.youthgobudget.data.YGBDatabase;
+
+import java.util.List;
 
 import static org.ygba.youthgobudget.utils.Constants.DISTRICT_COLLECTION_URL;
 import static org.ygba.youthgobudget.utils.Constants.SUB_COUNTY_COLLECTION_URL;
@@ -40,7 +43,18 @@ public class SubCountyDownloadWorker extends Worker {
                 new Response.Listener<JSONObject>() {
                     @Override
                     public void onResponse(JSONObject response) {
-                        serializeAndSave(response);
+                        SubCountyList countyList = new Gson().fromJson(String.valueOf(response), SubCountyList.class);
+                        for(final SubCounty subCounty : countyList.data) {
+                            YGBDatabase.db_executor.execute(new Runnable() {
+                                @Override
+                                public void run() {
+                                    SubCounty subCounty1 = subCountyDao.getSubCountyById(subCounty.getId());
+                                    if (subCounty1 == null) {
+                                        subCountyDao.saveSubCounty(subCounty);
+                                    }
+                                }
+                            });
+                        }
                     }
                 },
                 new Response.ErrorListener() {
@@ -56,16 +70,7 @@ public class SubCountyDownloadWorker extends Worker {
         return Result.retry();
     }
 
-    private void serializeAndSave(JSONObject response) {
-        try {
-            SubCounty subCounty = new SubCounty(
-                    response.getString("name"),
-                    response.getString("district"),
-                    response.getInt("district_id"),
-                    response.getInt("id")
-            );
-        } catch (JSONException e) {
-            e.printStackTrace();
-        }
+    private static class SubCountyList {
+        List<SubCounty> data;
     }
 }
