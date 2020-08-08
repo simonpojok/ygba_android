@@ -9,13 +9,21 @@ import androidx.work.WorkerParameters;
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
+import org.ygba.youthgobudget.data.YGBDatabase;
+import org.ygba.youthgobudget.data.socialdevelopment.SocialDevelopmentDao;
 import org.ygba.youthgobudget.data.socialdevelopment.SocialDevelopmentQuestion;
 
 import java.util.List;
+import java.util.concurrent.Callable;
+import java.util.concurrent.ExecutionException;
 
 public class SocialDevelopmentUploadWorker extends Worker {
+    private SocialDevelopmentDao socialDevelopmentDao;
+    private Context context;
     public SocialDevelopmentUploadWorker(@NonNull Context context, @NonNull WorkerParameters workerParams) {
         super(context, workerParams);
+        socialDevelopmentDao = YGBDatabase.getInstance(context.getApplicationContext()).socialDevelopmentDao();
+        this.context = context;
     }
 
     @NonNull
@@ -181,5 +189,27 @@ public class SocialDevelopmentUploadWorker extends Worker {
             }
         }
         return null;
+    }
+
+    private List<SocialDevelopmentQuestion> getList(){
+        try {
+            List<SocialDevelopmentQuestion> socialDevelopmentQuestions = handleThreading();
+        } catch (ExecutionException | InterruptedException e) {
+            e.printStackTrace();
+        }
+        return null;
+    }
+
+    private List<SocialDevelopmentQuestion> handleThreading() throws ExecutionException, InterruptedException {
+        Callable<List<SocialDevelopmentQuestion>> listCallable = new Callable<List<SocialDevelopmentQuestion>>() {
+
+            @Override
+            public List<SocialDevelopmentQuestion> call() throws Exception {
+                return socialDevelopmentDao.getSocialDevelopmentQuestionsForBackUp();
+            }
+        };
+
+        return YGBDatabase.db_executor.submit(listCallable).get();
+
     }
 }
