@@ -169,7 +169,8 @@ public class SocialDevelopmentUploadWorker extends Worker {
 
                     jsonObject.put("youth_group", question4Array);
 
-
+                    jsonObject.put("adult_literacy_number_of_male_trained",question.getQ5NumberMaleTrained());
+                    jsonObject.put("adult_literacy_number_of_female_trained", question.getQ5NumberFemaleTrained());
                     jsonObject.put("are_there_any_community_groups", question.getQ6CommunityGroupFormed());
                     jsonObject.put("any_other_challenges_or_observations", question.getQ7OtherChallengesObservations());
                 } catch (JSONException e) {
