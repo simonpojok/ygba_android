@@ -105,6 +105,12 @@ public class SocialDevelopmentUploadWorker extends Worker {
                     tr7.put("amount_received", question.getQ3WomenGroup7AmountReceived());
                     question3Array.put(tr7);
 
+                    jsonObject.put("women_group", question3Array);
+                    jsonObject.put("youth_livelihood_program_running", question.getQ4LivelihoodObjective());
+                    jsonObject.put("if_yes_how_many_youths_have_been_supported", question.getQ4LivelihoodObjectiveReason());
+
+                    JSONArray question4Array = new JSONArray();
+
                 } catch (JSONException e) {
                     e.printStackTrace();
                 }
