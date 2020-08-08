@@ -144,6 +144,10 @@
         "source": "/home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/res/mipmap-xxhdpi/ic_launcher.png"
     },
     {
+        "merged": "/home/mckeyo/AndroidStudioProjects/ygba_android/app/build/intermediates/res/merged/debug/layout_activity_district_picker.xml.flat",
+        "source": "/home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/res/layout/activity_district_picker.xml"
+    },
+    {
         "merged": "/home/mckeyo/AndroidStudioProjects/ygba_android/app/build/intermediates/res/merged/debug/drawable_ic_agriculture_white_50dp.xml.flat",
         "source": "/home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/res/drawable/ic_agriculture_white_50dp.xml"
     },

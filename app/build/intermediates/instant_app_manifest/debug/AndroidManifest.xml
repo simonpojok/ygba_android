@@ -25,6 +25,8 @@
         android:supportsRtl="true"
         android:testOnly="true"
         android:theme="@style/AppTheme" >
+        <activity android:name="org.ygba.youthgobudget.dialogs.DistrictPickerActivity" />
+
         <uses-library
             android:name="org.apache.http.legacy"
             android:required="false" />

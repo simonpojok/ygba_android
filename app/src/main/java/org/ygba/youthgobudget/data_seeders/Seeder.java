@@ -16,9 +16,9 @@ public class Seeder {
         ygbaRepository = YGBARepository.getInstance(YGBDatabase.getInstance(application));
     }
     public void seed() {
-        seedWaterAndEnvironment();
-        seedAgriculture();
-        seedSocialDevelopment();
+//        seedWaterAndEnvironment();
+//        seedAgriculture();
+//        seedSocialDevelopment();
     }
 
     public void seedAgriculture() {
@@ -92,7 +92,7 @@ public class Seeder {
             WaterEnvironmentQuestion waterEnvironmentQuestion = new WaterEnvironmentQuestion.Builder()
                     .setFinancialYear("2020-2030")
                     .setQuarter("iv")
-                    .setDate("20-03-2020")
+                    .setDate("2020-03-04")
                     .setDistrict("Masaka" + String.valueOf(i))
                     .setVillage("Kijjabwemi" + String.valueOf(i))
                     .setParish("Kimanya" + String.valueOf(i))

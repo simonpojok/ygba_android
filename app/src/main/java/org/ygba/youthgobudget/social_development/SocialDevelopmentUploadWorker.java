@@ -45,7 +45,7 @@ public class SocialDevelopmentUploadWorker extends Worker {
             for (SocialDevelopmentQuestion question: questionList) {
                 try {
                     JSONObject jsonObject = new JSONObject();
-                    jsonObject.put("record_id", question.getFinancialYear());
+                    jsonObject.put("record_id", question.getPrimaryKey());
                     jsonObject.put("financial_year", question.getFinancialYear());
                     jsonObject.put("quarter", "IV");
                     jsonObject.put("date", question.getDate());
@@ -230,7 +230,7 @@ public class SocialDevelopmentUploadWorker extends Worker {
 
     private List<SocialDevelopmentQuestion> getList(){
         try {
-            List<SocialDevelopmentQuestion> socialDevelopmentQuestions = handleThreading();
+            return handleThreading();
         } catch (ExecutionException | InterruptedException e) {
             e.printStackTrace();
         }

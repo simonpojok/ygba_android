@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/AndroidManifest.xml:2:1-72:12
-INJECTED from /home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/AndroidManifest.xml:2:1-72:12
-INJECTED from /home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/AndroidManifest.xml:2:1-72:12
-INJECTED from /home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/AndroidManifest.xml:2:1-72:12
+ADDED from /home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/AndroidManifest.xml:2:1-76:12
+INJECTED from /home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/AndroidManifest.xml:2:1-76:12
+INJECTED from /home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/AndroidManifest.xml:2:1-76:12
+INJECTED from /home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/AndroidManifest.xml:2:1-76:12
 MERGED from [androidx.navigation:navigation-ui:2.3.0] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/0aa507778343d18846653e86273d2c78/navigation-ui-2.3.0/AndroidManifest.xml:17:1-24:12
 MERGED from [com.google.android.material:material:1.1.0] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/3cbf517ba7e3687c73b950c88e49ed8a/material-1.1.0/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.appcompat:appcompat:1.1.0] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/e46f3e16fd8948e8e4c48c913cb404d3/appcompat-1.1.0/AndroidManifest.xml:17:1-24:12
@@ -54,20 +54,20 @@ MERGED from [androidx.documentfile:documentfile:1.0.0] /home/mckeyo/.gradle/cach
 MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/836e9858d101fce50deef7223d87d0d6/localbroadcastmanager-1.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.print:print:1.0.0] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/6083e5aff4a41b4b352509ce72ef01fb/print-1.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.interpolator:interpolator:1.0.0] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/32691ed1dd96a709bdd6754d66b7ebfd/interpolator-1.0.0/AndroidManifest.xml:17:1-22:12
-INJECTED from /home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/AndroidManifest.xml:2:1-72:12
-INJECTED from /home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/AndroidManifest.xml:2:1-72:12
-INJECTED from /home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/AndroidManifest.xml:2:1-72:12
+INJECTED from /home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/AndroidManifest.xml:2:1-76:12
+INJECTED from /home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/AndroidManifest.xml:2:1-76:12
+INJECTED from /home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/AndroidManifest.xml:2:1-76:12
 	package
 		ADDED from /home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/AndroidManifest.xml:3:5-37
 		INJECTED from /home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/AndroidManifest.xml
 		INJECTED from /home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/AndroidManifest.xml
 	android:versionName
 		INJECTED from /home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/AndroidManifest.xml
-		ADDED from /home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/AndroidManifest.xml:2:1-72:12
+		ADDED from /home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/AndroidManifest.xml:2:1-76:12
 		INJECTED from /home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/AndroidManifest.xml
 	android:versionCode
 		INJECTED from /home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/AndroidManifest.xml
-		ADDED from /home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/AndroidManifest.xml:2:1-72:12
+		ADDED from /home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/AndroidManifest.xml:2:1-76:12
 		INJECTED from /home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/AndroidManifest.xml
 	xmlns:android
 		ADDED from /home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/AndroidManifest.xml:2:11-69
@@ -76,7 +76,7 @@ ADDED from /home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/AndroidM
 	android:name
 		ADDED from /home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/AndroidManifest.xml:5:22-64
 application
-ADDED from /home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/AndroidManifest.xml:8:5-70:19
+ADDED from /home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/AndroidManifest.xml:7:5-74:19
 MERGED from [com.google.android.material:material:1.1.0] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/3cbf517ba7e3687c73b950c88e49ed8a/material-1.1.0/AndroidManifest.xml:22:5-20
 MERGED from [com.google.android.material:material:1.1.0] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/3cbf517ba7e3687c73b950c88e49ed8a/material-1.1.0/AndroidManifest.xml:22:5-20
 MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/0686ca90b872620e1e93c4a9f2d2181e/constraintlayout-1.1.3/AndroidManifest.xml:9:5-20
@@ -98,133 +98,137 @@ MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] /home/mckey
 	android:appComponentFactory
 		ADDED from [androidx.core:core:1.3.0] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/8106c9afeb27cc0c50f85995740f877c/core-1.3.0/AndroidManifest.xml:24:18-86
 	android:supportsRtl
-		ADDED from /home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/AndroidManifest.xml:13:9-35
+		ADDED from /home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/AndroidManifest.xml:12:9-35
 	android:label
-		ADDED from /home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/AndroidManifest.xml:11:9-41
+		ADDED from /home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/AndroidManifest.xml:10:9-41
 	android:roundIcon
-		ADDED from /home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/AndroidManifest.xml:12:9-54
+		ADDED from /home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/AndroidManifest.xml:11:9-54
 	android:icon
-		ADDED from /home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/AndroidManifest.xml:10:9-43
+		ADDED from /home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/AndroidManifest.xml:9:9-43
 	android:allowBackup
-		ADDED from /home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/AndroidManifest.xml:9:9-35
+		ADDED from /home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/AndroidManifest.xml:8:9-35
 	android:theme
-		ADDED from /home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/AndroidManifest.xml:14:9-40
+		ADDED from /home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/AndroidManifest.xml:13:9-40
+activity#org.ygba.youthgobudget.dialogs.DistrictPickerActivity
+ADDED from /home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/AndroidManifest.xml:14:9-77
+	android:name
+		ADDED from /home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/AndroidManifest.xml:14:19-65
 uses-library#org.apache.http.legacy
-ADDED from /home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/AndroidManifest.xml:15:9-88
+ADDED from /home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/AndroidManifest.xml:16:9-18:40
 	android:required
-		ADDED from /home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/AndroidManifest.xml:15:61-85
+		ADDED from /home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/AndroidManifest.xml:18:13-37
 	android:name
-		ADDED from /home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/AndroidManifest.xml:15:23-60
+		ADDED from /home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/AndroidManifest.xml:17:13-50
 activity#org.ygba.youthgobudget.community_wishes.CommunityWishesActivity
-ADDED from /home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/AndroidManifest.xml:16:9-78
+ADDED from /home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/AndroidManifest.xml:20:9-78
 	android:name
-		ADDED from /home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/AndroidManifest.xml:16:19-75
+		ADDED from /home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/AndroidManifest.xml:20:19-75
 activity#org.ygba.youthgobudget.allocation.AllocationActivity
-ADDED from /home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/AndroidManifest.xml:17:9-19:58
+ADDED from /home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/AndroidManifest.xml:21:9-23:58
 	android:parentActivityName
-		ADDED from /home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/AndroidManifest.xml:19:13-55
+		ADDED from /home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/AndroidManifest.xml:23:13-55
 	android:name
-		ADDED from /home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/AndroidManifest.xml:18:13-58
+		ADDED from /home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/AndroidManifest.xml:22:13-58
 activity#org.ygba.youthgobudget.history.HistoryActivity
-ADDED from /home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/AndroidManifest.xml:20:9-22:58
+ADDED from /home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/AndroidManifest.xml:24:9-26:58
 	android:parentActivityName
-		ADDED from /home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/AndroidManifest.xml:22:13-55
+		ADDED from /home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/AndroidManifest.xml:26:13-55
 	android:name
-		ADDED from /home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/AndroidManifest.xml:21:13-52
+		ADDED from /home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/AndroidManifest.xml:25:13-52
 activity#org.ygba.youthgobudget.help.HelpActivity
-ADDED from /home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/AndroidManifest.xml:23:9-25:58
+ADDED from /home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/AndroidManifest.xml:27:9-29:58
 	android:parentActivityName
-		ADDED from /home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/AndroidManifest.xml:25:13-55
+		ADDED from /home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/AndroidManifest.xml:29:13-55
 	android:name
-		ADDED from /home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/AndroidManifest.xml:24:13-46
+		ADDED from /home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/AndroidManifest.xml:28:13-46
 activity#org.ygba.youthgobudget.polls.PollActivity
-ADDED from /home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/AndroidManifest.xml:26:9-28:58
+ADDED from /home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/AndroidManifest.xml:30:9-32:58
 	android:parentActivityName
-		ADDED from /home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/AndroidManifest.xml:28:13-55
+		ADDED from /home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/AndroidManifest.xml:32:13-55
 	android:name
-		ADDED from /home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/AndroidManifest.xml:27:13-47
+		ADDED from /home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/AndroidManifest.xml:31:13-47
 activity#org.ygba.youthgobudget.budget_cycle.BudgetCycleActivity
-ADDED from /home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/AndroidManifest.xml:29:9-31:58
+ADDED from /home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/AndroidManifest.xml:33:9-35:58
 	android:parentActivityName
-		ADDED from /home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/AndroidManifest.xml:31:13-55
+		ADDED from /home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/AndroidManifest.xml:35:13-55
 	android:name
-		ADDED from /home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/AndroidManifest.xml:30:13-61
+		ADDED from /home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/AndroidManifest.xml:34:13-61
 activity#org.ygba.youthgobudget.local_government.LocalGovernmentActivity
-ADDED from /home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/AndroidManifest.xml:32:9-34:58
-	android:parentActivityName
-		ADDED from /home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/AndroidManifest.xml:34:13-55
-	android:name
-		ADDED from /home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/AndroidManifest.xml:33:13-69
-activity#org.ygba.youthgobudget.budget_information.BudgetInformationActivity
-ADDED from /home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/AndroidManifest.xml:35:9-38:58
+ADDED from /home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/AndroidManifest.xml:36:9-38:58
 	android:parentActivityName
 		ADDED from /home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/AndroidManifest.xml:38:13-55
-	android:label
-		ADDED from /home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/AndroidManifest.xml:37:13-47
 	android:name
-		ADDED from /home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/AndroidManifest.xml:36:13-73
+		ADDED from /home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/AndroidManifest.xml:37:13-69
+activity#org.ygba.youthgobudget.budget_information.BudgetInformationActivity
+ADDED from /home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/AndroidManifest.xml:39:9-42:58
+	android:parentActivityName
+		ADDED from /home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/AndroidManifest.xml:42:13-55
+	android:label
+		ADDED from /home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/AndroidManifest.xml:41:13-47
+	android:name
+		ADDED from /home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/AndroidManifest.xml:40:13-73
 activity#org.ygba.youthgobudget.water_and_environment.WaterEnvironmentActivity
-ADDED from /home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/AndroidManifest.xml:39:9-41:58
+ADDED from /home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/AndroidManifest.xml:43:9-45:58
 	android:parentActivityName
-		ADDED from /home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/AndroidManifest.xml:41:13-55
+		ADDED from /home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/AndroidManifest.xml:45:13-55
 	android:name
-		ADDED from /home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/AndroidManifest.xml:40:13-75
+		ADDED from /home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/AndroidManifest.xml:44:13-75
 activity#org.ygba.youthgobudget.social_development.SocialDevelopmentListActivity
-ADDED from /home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/AndroidManifest.xml:42:9-86
+ADDED from /home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/AndroidManifest.xml:46:9-86
 	android:name
-		ADDED from /home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/AndroidManifest.xml:42:19-83
+		ADDED from /home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/AndroidManifest.xml:46:19-83
 activity#org.ygba.youthgobudget.dialogs.DatePickerActivity
-ADDED from /home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/AndroidManifest.xml:43:9-46:79
+ADDED from /home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/AndroidManifest.xml:47:9-50:79
 	android:label
-		ADDED from /home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/AndroidManifest.xml:45:13-38
+		ADDED from /home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/AndroidManifest.xml:49:13-38
 	android:theme
-		ADDED from /home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/AndroidManifest.xml:46:13-76
+		ADDED from /home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/AndroidManifest.xml:50:13-76
 	android:name
-		ADDED from /home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/AndroidManifest.xml:44:13-55
+		ADDED from /home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/AndroidManifest.xml:48:13-55
 activity#org.ygba.youthgobudget.social_development.SocialDevelopmentActivity
-ADDED from /home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/AndroidManifest.xml:47:9-49:58
-	android:parentActivityName
-		ADDED from /home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/AndroidManifest.xml:49:13-55
-	android:name
-		ADDED from /home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/AndroidManifest.xml:48:13-73
-activity#org.ygba.youthgobudget.education.EducationActivity
-ADDED from /home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/AndroidManifest.xml:50:9-53:58
+ADDED from /home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/AndroidManifest.xml:51:9-53:58
 	android:parentActivityName
 		ADDED from /home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/AndroidManifest.xml:53:13-55
+	android:name
+		ADDED from /home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/AndroidManifest.xml:52:13-73
+activity#org.ygba.youthgobudget.education.EducationActivity
+ADDED from /home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/AndroidManifest.xml:54:9-57:58
+	android:parentActivityName
+		ADDED from /home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/AndroidManifest.xml:57:13-55
 	android:exported
-		ADDED from /home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/AndroidManifest.xml:52:13-36
+		ADDED from /home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/AndroidManifest.xml:56:13-36
 	android:name
-		ADDED from /home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/AndroidManifest.xml:51:13-56
+		ADDED from /home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/AndroidManifest.xml:55:13-56
 activity#org.ygba.youthgobudget.health.HealthActivity
-ADDED from /home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/AndroidManifest.xml:54:9-56:58
+ADDED from /home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/AndroidManifest.xml:58:9-60:58
 	android:parentActivityName
-		ADDED from /home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/AndroidManifest.xml:56:13-55
+		ADDED from /home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/AndroidManifest.xml:60:13-55
 	android:name
-		ADDED from /home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/AndroidManifest.xml:55:13-50
+		ADDED from /home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/AndroidManifest.xml:59:13-50
 activity#org.ygba.youthgobudget.agriculture.AgricultureActivity
-ADDED from /home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/AndroidManifest.xml:57:9-59:58
+ADDED from /home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/AndroidManifest.xml:61:9-63:58
 	android:parentActivityName
-		ADDED from /home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/AndroidManifest.xml:59:13-55
+		ADDED from /home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/AndroidManifest.xml:63:13-55
 	android:name
-		ADDED from /home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/AndroidManifest.xml:58:13-60
+		ADDED from /home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/AndroidManifest.xml:62:13-60
 activity#org.ygba.youthgobudget.MainActivity
-ADDED from /home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/AndroidManifest.xml:60:9-69:20
+ADDED from /home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/AndroidManifest.xml:64:9-73:20
 	android:label
-		ADDED from /home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/AndroidManifest.xml:62:13-45
+		ADDED from /home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/AndroidManifest.xml:66:13-45
 	android:theme
-		ADDED from /home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/AndroidManifest.xml:63:13-56
+		ADDED from /home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/AndroidManifest.xml:67:13-56
 	android:name
-		ADDED from /home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/AndroidManifest.xml:61:13-41
+		ADDED from /home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/AndroidManifest.xml:65:13-41
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from /home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/AndroidManifest.xml:64:13-68:29
+ADDED from /home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/AndroidManifest.xml:68:13-72:29
 action#android.intent.action.MAIN
-ADDED from /home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/AndroidManifest.xml:65:17-69
+ADDED from /home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/AndroidManifest.xml:69:17-69
 	android:name
-		ADDED from /home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/AndroidManifest.xml:65:25-66
+		ADDED from /home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/AndroidManifest.xml:69:25-66
 category#android.intent.category.LAUNCHER
-ADDED from /home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/AndroidManifest.xml:67:17-77
+ADDED from /home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/AndroidManifest.xml:71:17-77
 	android:name
-		ADDED from /home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/AndroidManifest.xml:67:27-74
+		ADDED from /home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/AndroidManifest.xml:71:27-74
 uses-sdk
 INJECTED from /home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from /home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/AndroidManifest.xml
