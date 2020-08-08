@@ -342,18 +342,12 @@ public class SocialDevelopmentActivity extends AppCompatActivity implements Vali
         }
     }
 
-    private String getQ3ObjectiveAnswer() {
-        if (socialQn3RadioGroup.getCheckedRadioButtonId() == R.id.social_qn_3_radio_button_yes) {
-            return "Yes";
-        }
-        return "No";
+    private boolean getQ3ObjectiveAnswer() {
+        return socialQn3RadioGroup.getCheckedRadioButtonId() == R.id.social_qn_3_radio_button_yes;
     }
 
-    private String getQ4ObjectiveAnswer() {
-        if (socialQn4RadioGroup.getCheckedRadioButtonId() == R.id.social_qn_4_radio_button_yes) {
-            return "Yes";
-        }
-        return "No";
+    private boolean getQ4ObjectiveAnswer() {
+        return socialQn4RadioGroup.getCheckedRadioButtonId() == R.id.social_qn_4_radio_button_yes;
     }
 
     @Override
@@ -361,102 +355,117 @@ public class SocialDevelopmentActivity extends AppCompatActivity implements Vali
         SocialDevelopmentQuestion question = new SocialDevelopmentQuestion();
         question.setFinancialYear(selectedFinancialYear);
         question.setDate(DynamicData.getDate());
+        question.setDistrict(getStringValue(districtTextEdit));
+        question.setVillage(getStringValue(villageTextEdit));
+        question.setParish(getStringValue(parishTextEdit));
+        question.setDivision(getStringValue(divisionTextEdit));
+        question.setYgbaAgentFullName(getStringValue(fullNameTextEdit));
+        question.setYgbaTel(getStringValue(agentTelEditText));
+        question.setQ2CommunityExpected(getDoubleValue(communityExpectedAmountEditText));
+        question.setQ2CommunityAmountReceived(getDoubleValue(communityReceivedAmountEditText));
+        question.setQ2CommunityDateReceived(getStringValue(communityDateReceivedEditText));
+        question.setQ2CommunityDateWithdrawn(getStringValue(comDateWithdrawnEditText));
+        question.setQ2OtherExpectedAmount(getDoubleValue(otherExpectedAmountEditText));
+        question.setQ2OtherAmountedReceived(getDoubleValue(otherExpectedAmountEditText));
+        question.setQ2OthersDateReceived(getStringValue(otherDateReceivedEditText));
+        question.setQ2OthersDateWithdrawn(getStringValue(otherDateWithdrawnEditText));
+        question.setQ3WomenEmpowermentObjective(getQ3ObjectiveAnswer());
+        question.setQ3WomenEmpowermentObjectiveReason(getStringValue(socialQuestion3EditText));
 
-                DynamicData.getDate(),
-                districtTextEdit.getText().toString(),
-                villageTextEdit.getText().toString(),
-                parishTextEdit.getText().toString(),
-                divisionTextEdit.getText().toString(),
-                fullNameTextEdit.getText().toString(),
-                agentTelEditText.getText().toString(),
-                communityExpectedAmountEditText.getText().toString(),
-                communityReceivedAmountEditText.getText().toString(),
-                communityDateReceivedEditText.getText().toString(),
-                comDateWithdrawnEditText.getText().toString(),
-                otherExpectedAmountEditText.getText().toString(),
-                otherReceivedAmountEditText.getText().toString(),
-                otherDateReceivedEditText.getText().toString(),
-                otherDateWithdrawnEditText.getText().toString(),
-                getQ3ObjectiveAnswer(),
-                socialQuestion3EditText.getText().toString(),
-                sQuestion3GroupName1.getText().toString(),
-                sQuestion3GroupVillage1.getText().toString(),
-                sQuestion3GroupNumberMales1.getText().toString(),
-                sQuestion3GroupNumberFemales1.getText().toString(),
-                sQuestion3GroupAmountReceived1.getText().toString(),
-                sQuestion3GroupName2.getText().toString(),
-                sQuestion3GroupVillage2.getText().toString(),
-                sQuestion3GroupNumberMales2.getText().toString(),
-                sQuestion3GroupNumberFemales2.getText().toString(),
-                sQuestion3GroupAmountReceived2.getText().toString(),
-                sQuestion3GroupName3.getText().toString(),
-                sQuestion3GroupVillage3.getText().toString(),
-                sQuestion3GroupNumberMales3.getText().toString(),
-                sQuestion3GroupNumberFemales3.getText().toString(),
-                sQuestion3GroupAmountReceived3.getText().toString(),
-                sQuestion3GroupName4.getText().toString(),
-                sQuestion3GroupVillage4.getText().toString(),
-                sQuestion3GroupNumberMales4.getText().toString(),
-                sQuestion3GroupNumberFemales4.getText().toString(),
-                sQuestion3GroupAmountReceived4.getText().toString(),
-                sQuestion3GroupName5.getText().toString(),
-                sQuestion3GroupVillage5.getText().toString(),
-                sQuestion3GroupNumberMales5.getText().toString(),
-                sQuestion3GroupNumberFemales5.getText().toString(),
-                sQuestion3GroupAmountReceived5.getText().toString(),
-                sQuestion3GroupName6.getText().toString(),
-                sQuestion3GroupVillage6.getText().toString(),
-                sQuestion3GroupNumberMales6.getText().toString(),
-                sQuestion3GroupNumberFemales6.getText().toString(),
-                sQuestion3GroupAmountReceived6.getText().toString(),
-                sQuestion3GroupName7.getText().toString(),
-                sQuestion3GroupVillage7.getText().toString(),
-                sQuestion3GroupNumberMales7.getText().toString(),
-                sQuestion3GroupNumberFemales7.getText().toString(),
-                sQuestion3GroupAmountReceived7.getText().toString(),
-                getQ4ObjectiveAnswer(),
-                sQ4YouthList.getText().toString(),
-                sQuestion4GroupName1.getText().toString(),
-                sQuestion4GroupVillage1.getText().toString(),
-                sQuestion4GroupNumberMales1.getText().toString(),
-                sQuestion4GroupNumberFemales1.getText().toString(),
-                sQuestion4GroupAmountReceived1.getText().toString(),
-                sQuestion4GroupName2.getText().toString(),
-                sQuestion4GroupVillage2.getText().toString(),
-                sQuestion4GroupNumberMales2.getText().toString(),
-                sQuestion4GroupNumberFemales2.getText().toString(),
-                sQuestion4GroupAmountReceived2.getText().toString(),
-                sQuestion4GroupName3.getText().toString(),
-                sQuestion4GroupVillage3.getText().toString(),
-                sQuestion4GroupNumberMales3.getText().toString(),
-                sQuestion4GroupNumberFemales3.getText().toString(),
-                sQuestion4GroupAmountReceived3.getText().toString(),
-                sQuestion4GroupName4.getText().toString(),
-                sQuestion4GroupVillage4.getText().toString(),
-                sQuestion4GroupNumberMales4.getText().toString(),
-                sQuestion4GroupNumberFemales4.getText().toString(),
-                sQuestion4GroupAmountReceived4.getText().toString(),
-                sQuestion4GroupName5.getText().toString(),
-                sQuestion4GroupVillage5.getText().toString(),
-                sQuestion4GroupNumberMales5.getText().toString(),
-                sQuestion4GroupNumberFemales5.getText().toString(),
-                sQuestion4GroupAmountReceived5.getText().toString(),
-                sQuestion4GroupName6.getText().toString(),
-                sQuestion4GroupVillage6.getText().toString(),
-                sQuestion4GroupNumberMales6.getText().toString(),
-                sQuestion4GroupNumberFemales6.getText().toString(),
-                sQuestion4GroupAmountReceived6.getText().toString(),
-                sQuestion4GroupName7.getText().toString(),
-                sQuestion4GroupVillage7.getText().toString(),
-                sQuestion4GroupNumberMales7.getText().toString(),
-                sQuestion4GroupNumberFemales7.getText().toString(),
-                sQuestion4GroupAmountReceived7.getText().toString(),
-                sQuestion5NumberMaleTrained.getText().toString(),
-                sQuestion5NumberFemaleTrained.getText().toString(),
-                sQuestion6NumberCommunityGroupsTrained.getText().toString(),
-                sQuestion7ChallengerObservations.getText().toString()
-        );
-        activityViewModel.saveSocialDevelopmentQuestion(socialDevelopmentQuestion);
+        question.setQ3WomanGroup1Name(getStringValue(sQuestion3GroupName1));
+        question.setQ3WomenGroup1Village(getStringValue(sQuestion3GroupVillage1));
+        question.setQ3WomenGroup1MaleNumber(getIntegerValue(sQuestion3GroupNumberMales1));
+        question.setQ3WomenGroup1FemaleNumber(getIntegerValue(sQuestion3GroupNumberFemales1));
+        question.setQ3WomenGroup1AmountReceived(getDoubleValue(sQuestion3GroupAmountReceived1));
+
+        question.setQ3WomanGroup2Name(getStringValue(sQuestion3GroupName2));
+        question.setQ3WomenGroup2Village(getStringValue(sQuestion3GroupVillage2));
+        question.setQ3WomenGroup2MaleNumber(getIntegerValue(sQuestion3GroupNumberMales2));
+        question.setQ3WomenGroup2FemaleNumber(getIntegerValue(sQuestion3GroupNumberFemales2));
+        question.setQ3WomenGroup2AmountReceived(getDoubleValue(sQuestion3GroupAmountReceived2));
+
+        question.setQ3WomanGroup3Name(getStringValue(sQuestion3GroupName3));
+        question.setQ3WomenGroup3Village(getStringValue(sQuestion3GroupVillage3));
+        question.setQ3WomenGroup3MaleNumber(getIntegerValue(sQuestion3GroupNumberMales3));
+        question.setQ3WomenGroup3FemaleNumber(getIntegerValue(sQuestion3GroupNumberFemales3));
+        question.setQ3WomenGroup3AmountReceived(getDoubleValue(sQuestion3GroupAmountReceived3));
+
+        question.setQ3WomanGroup4Name(getStringValue(sQuestion3GroupName4));
+        question.setQ3WomenGroup4Village(getStringValue(sQuestion3GroupVillage4));
+        question.setQ3WomenGroup4MaleNumber(getIntegerValue(sQuestion3GroupNumberMales4));
+        question.setQ3WomenGroup4FemaleNumber(getIntegerValue(sQuestion3GroupNumberFemales4));
+        question.setQ3WomenGroup4AmountReceived(getDoubleValue(sQuestion3GroupAmountReceived4));
+
+        question.setQ3WomanGroup5Name(getStringValue(sQuestion3GroupName5));
+        question.setQ3WomenGroup5Village(getStringValue(sQuestion3GroupVillage5));
+        question.setQ3WomenGroup5MaleNumber(getIntegerValue(sQuestion3GroupNumberMales5));
+        question.setQ3WomenGroup5FemaleNumber(getIntegerValue(sQuestion3GroupNumberFemales5));
+        question.setQ3WomenGroup5AmountReceived(getDoubleValue(sQuestion3GroupAmountReceived5));
+
+        question.setQ3WomanGroup6Name(getStringValue(sQuestion3GroupName6));
+        question.setQ3WomenGroup6Village(getStringValue(sQuestion3GroupVillage6));
+        question.setQ3WomenGroup6MaleNumber(getIntegerValue(sQuestion3GroupNumberMales6));
+        question.setQ3WomenGroup6FemaleNumber(getIntegerValue(sQuestion3GroupNumberFemales6));
+        question.setQ3WomenGroup6AmountReceived(getDoubleValue(sQuestion3GroupAmountReceived6));
+
+        question.setQ3WomanGroup7Name(getStringValue(sQuestion3GroupName7));
+        question.setQ3WomenGroup7Village(getStringValue(sQuestion3GroupVillage7));
+        question.setQ3WomenGroup7MaleNumber(getIntegerValue(sQuestion3GroupNumberMales7));
+        question.setQ3WomenGroup7FemaleNumber(getIntegerValue(sQuestion3GroupNumberFemales7));
+        question.setQ3WomenGroup7AmountReceived(getDoubleValue(sQuestion3GroupAmountReceived7));
+
+        question.setQ4LivelihoodObjective(getQ4ObjectiveAnswer());
+        question.setQ4LivelihoodObjectiveReason(getStringValue(sQ4YouthList));
+
+
+        question.setQ4YouthGroup1Name(getStringValue(sQuestion4GroupName1));
+        question.setQ4YouthGroup1Village(getStringValue(sQuestion4GroupVillage1));
+        question.setQ4YouthGroup1MaleNumber(getIntegerValue(sQuestion4GroupNumberMales1));
+        question.setQ4YouthGroup1FemaleNumber(getIntegerValue(sQuestion4GroupNumberFemales1));
+        question.setQ4YouthGroup1AmountReceived(getDoubleValue(sQuestion4GroupAmountReceived1));
+
+        question.setQ4YouthGroup2Name(getStringValue(sQuestion4GroupName2));
+        question.setQ4YouthGroup2Village(getStringValue(sQuestion4GroupVillage2));
+        question.setQ4YouthGroup2MaleNumber(getIntegerValue(sQuestion4GroupNumberMales2));
+        question.setQ4YouthGroup2FemaleNumber(getIntegerValue(sQuestion4GroupNumberFemales2));
+        question.setQ4YouthGroup2AmountReceived(getDoubleValue(sQuestion4GroupAmountReceived2));
+
+        question.setQ4YouthGroup3Name(getStringValue(sQuestion4GroupName3));
+        question.setQ4YouthGroup3Village(getStringValue(sQuestion4GroupVillage3));
+        question.setQ4YouthGroup3MaleNumber(getIntegerValue(sQuestion4GroupNumberMales3));
+        question.setQ4YouthGroup3FemaleNumber(getIntegerValue(sQuestion4GroupNumberFemales3));
+        question.setQ4YouthGroup3AmountReceived(getDoubleValue(sQuestion4GroupAmountReceived3));
+
+        question.setQ4YouthGroup4Name(getStringValue(sQuestion4GroupName4));
+        question.setQ4YouthGroup4Village(getStringValue(sQuestion4GroupVillage4));
+        question.setQ4YouthGroup4MaleNumber(getIntegerValue(sQuestion4GroupNumberMales4));
+        question.setQ4YouthGroup4FemaleNumber(getIntegerValue(sQuestion4GroupNumberFemales4));
+        question.setQ4YouthGroup4AmountReceived(getDoubleValue(sQuestion4GroupAmountReceived4));
+
+        question.setQ4YouthGroup5Name(getStringValue(sQuestion4GroupName5));
+        question.setQ4YouthGroup5Village(getStringValue(sQuestion4GroupVillage5));
+        question.setQ4YouthGroup5MaleNumber(getIntegerValue(sQuestion4GroupNumberMales5));
+        question.setQ4YouthGroup5FemaleNumber(getIntegerValue(sQuestion4GroupNumberFemales5));
+        question.setQ4YouthGroup5AmountReceived(getDoubleValue(sQuestion4GroupAmountReceived5));
+
+        question.setQ4YouthGroup6Name(getStringValue(sQuestion4GroupName6));
+        question.setQ4YouthGroup6Village(getStringValue(sQuestion4GroupVillage6));
+        question.setQ4YouthGroup6MaleNumber(getIntegerValue(sQuestion4GroupNumberMales6));
+        question.setQ4YouthGroup6FemaleNumber(getIntegerValue(sQuestion4GroupNumberFemales6));
+        question.setQ4YouthGroup6AmountReceived(getDoubleValue(sQuestion4GroupAmountReceived6));
+
+        question.setQ4YouthGroup7Name(getStringValue(sQuestion4GroupName7));
+        question.setQ4YouthGroup7Village(getStringValue(sQuestion4GroupVillage7));
+        question.setQ4YouthGroup7MaleNumber(getIntegerValue(sQuestion4GroupNumberMales7));
+        question.setQ4YouthGroup7FemaleNumber(getIntegerValue(sQuestion4GroupNumberFemales7));
+        question.setQ4YouthGroup7AmountReceived(getDoubleValue(sQuestion4GroupAmountReceived7));
+
+        question.setQ5NumberMaleTrained(getIntegerValue(sQuestion5NumberMaleTrained));
+        question.setQ5NumberFemaleTrained(getIntegerValue(sQuestion5NumberFemaleTrained));
+        question.setQ6CommunityGroupFormed(getStringValue(sQuestion6NumberCommunityGroupsTrained));
+        question.setQ7OtherChallengesObservations(getStringValue(sQuestion7ChallengerObservations));
+
+        activityViewModel.saveSocialDevelopmentQuestion(question);
     }
 
     @Override
@@ -493,7 +502,7 @@ public class SocialDevelopmentActivity extends AppCompatActivity implements Vali
         return 90;
     }
 
-    private double getBooleanValue(EditText editText) {
+    private double getDoubleValue(EditText editText) {
         return 90.0;
     }
 }
