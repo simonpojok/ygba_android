@@ -111,6 +111,14 @@ public class SocialDevelopmentUploadWorker extends Worker {
 
                     JSONArray question4Array = new JSONArray();
 
+                    JSONObject object1 = new JSONObject();
+                    object1.put("youth_group_name", question.getQ4YouthGroup1Name());
+                    object1.put("village_or_sub_county", question.getQ4YouthGroup1Village());
+                    object1.put("number_of_group_members_males", question.getQ4YouthGroup1MaleNumber());
+                    object1.put("number_of_group_members_females", question.getQ4YouthGroup1FemaleNumber());
+                    object1.put("amount_received", question.getQ4YouthGroup1AmountReceived());
+                    question4Array.put(object1);
+
                 } catch (JSONException e) {
                     e.printStackTrace();
                 }
