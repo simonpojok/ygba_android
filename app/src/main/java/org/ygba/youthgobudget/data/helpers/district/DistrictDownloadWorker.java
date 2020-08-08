@@ -48,7 +48,7 @@ public class DistrictDownloadWorker extends Worker {
     @Override
     public Result doWork() {
         try {
-            HttpURLConnection httpURLConnection = (HttpURLConnection) new URL(SUB_COUNTY_COLLECTION_URL).openConnection();
+            HttpURLConnection httpURLConnection = (HttpURLConnection) new URL("https://ygba.org/api/areas/districts").openConnection();
 
             try {
                 InputStream inputStream = httpURLConnection.getInputStream();
