@@ -12,6 +12,7 @@ import com.android.volley.RequestQueue;
 import com.android.volley.Response;
 import com.android.volley.VolleyError;
 import com.android.volley.toolbox.JsonObjectRequest;
+import com.android.volley.toolbox.StringRequest;
 import com.android.volley.toolbox.Volley;
 import com.google.gson.Gson;
 
@@ -36,14 +37,12 @@ public class SubCountyDownloadWorker extends Worker {
     @NonNull
     @Override
     public Result doWork() {
-        JsonObjectRequest jsonObjectRequest = new JsonObjectRequest(
-                Request.Method.GET,
-                SUB_COUNTY_COLLECTION_URL,
-                new JSONObject(),
-                new Response.Listener<JSONObject>() {
+
+        StringRequest stringRequest = new StringRequest(Request.Method.GET, SUB_COUNTY_COLLECTION_URL,
+                new Response.Listener<String>() {
                     @Override
-                    public void onResponse(JSONObject response) {
-                        SubCountyList countyList = new Gson().fromJson(String.valueOf(response), SubCountyList.class);
+                    public void onResponse(String response) {
+                        SubCountyList countyList = new Gson().fromJson(response, SubCountyList.class);
                         for(final SubCounty subCounty : countyList.data) {
                             YGBDatabase.db_executor.execute(new Runnable() {
                                 @Override
@@ -56,17 +55,15 @@ public class SubCountyDownloadWorker extends Worker {
                             });
                         }
                     }
-                },
-                new Response.ErrorListener() {
-                    @Override
-                    public void onErrorResponse(VolleyError error) {
-                        Log.d("Error", error.toString());
-                    }
-                }
-        );
+                }, new Response.ErrorListener() {
+            @Override
+            public void onErrorResponse(VolleyError error) {
+                Log.d("Error", error.toString());
+            }
+        });
 
         RequestQueue requestQueue = Volley.newRequestQueue(context);
-        requestQueue.add(jsonObjectRequest);
+        requestQueue.add(stringRequest);
         return Result.retry();
     }
 
