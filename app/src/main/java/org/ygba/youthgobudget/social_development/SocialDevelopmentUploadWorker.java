@@ -1,10 +1,18 @@
 package org.ygba.youthgobudget.social_development;
 
 import android.content.Context;
+import android.util.Log;
 
 import androidx.annotation.NonNull;
 import androidx.work.Worker;
 import androidx.work.WorkerParameters;
+
+import com.android.volley.Request;
+import com.android.volley.RequestQueue;
+import com.android.volley.Response;
+import com.android.volley.VolleyError;
+import com.android.volley.toolbox.JsonObjectRequest;
+import com.android.volley.toolbox.Volley;
 
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -16,6 +24,9 @@ import org.ygba.youthgobudget.data.socialdevelopment.SocialDevelopmentQuestion;
 import java.util.List;
 import java.util.concurrent.Callable;
 import java.util.concurrent.ExecutionException;
+
+import static org.ygba.youthgobudget.utils.Constants.AGRICULTURE_COLLECTION_URL;
+import static org.ygba.youthgobudget.utils.Constants.SOCIAL_DEVELOPMENT_COLLECTION_URL;
 
 public class SocialDevelopmentUploadWorker extends Worker {
     private SocialDevelopmentDao socialDevelopmentDao;
@@ -29,7 +40,7 @@ public class SocialDevelopmentUploadWorker extends Worker {
     @NonNull
     @Override
     public Result doWork() {
-        List<SocialDevelopmentQuestion> questionList = null;
+        List<SocialDevelopmentQuestion> questionList = getList();
         if (questionList != null) {
             for (SocialDevelopmentQuestion question: questionList) {
                 try {
@@ -181,6 +192,32 @@ public class SocialDevelopmentUploadWorker extends Worker {
                     jsonObject.put("adult_literacy_number_of_female_trained", question.getQ5NumberFemaleTrained());
                     jsonObject.put("are_there_any_community_groups", question.getQ6CommunityGroupFormed());
                     jsonObject.put("any_other_challenges_or_observations", question.getQ7OtherChallengesObservations());
+
+                    JsonObjectRequest jsonObjectRequest = new JsonObjectRequest(
+                            Request.Method.POST,
+                            SOCIAL_DEVELOPMENT_COLLECTION_URL,
+                            jsonObject,
+                            new Response.Listener<JSONObject>() {
+                                @Override
+                                public void onResponse(JSONObject response) {
+//                                    try {
+//                                        deleteAgricultureQuestion(response.getInt("record_id"));
+//                                    } catch (JSONException e) {
+//                                        e.printStackTrace();
+//                                    }
+                                    Log.d("Result Soc", response.toString());
+                                }
+                            },
+                            new Response.ErrorListener() {
+                                @Override
+                                public void onErrorResponse(VolleyError error) {
+                                    Log.d("Error", error.toString());
+                                }
+                            }
+                    );
+
+                    RequestQueue requestQueue = Volley.newRequestQueue(context);
+                    requestQueue.add(jsonObjectRequest);
                 } catch (JSONException e) {
                     e.printStackTrace();
                 }
@@ -188,7 +225,7 @@ public class SocialDevelopmentUploadWorker extends Worker {
 
             }
         }
-        return null;
+        return Result.retry();
     }
 
     private List<SocialDevelopmentQuestion> getList(){

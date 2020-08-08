@@ -11,4 +11,5 @@ public class Constants {
     public static final String WATER_COLLECTION_URL = BASE_URL + "collect/water";
     public static final String DISTRICT_COLLECTION_URL = BASE_URL + "areas/district";
     public static final String SUB_COUNTY_COLLECTION_URL = BASE_URL + "areas/sub_counties";
+    public static final String SOCIAL_DEVELOPMENT_COLLECTION_URL = "collect/social-dev";
 }
