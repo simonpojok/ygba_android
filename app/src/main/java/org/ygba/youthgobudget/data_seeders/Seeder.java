@@ -6,7 +6,9 @@ import android.content.Context;
 import org.ygba.youthgobudget.YGBARepository;
 import org.ygba.youthgobudget.data.YGBDatabase;
 import org.ygba.youthgobudget.data.agriculture.AgricultureQuestion;
+import org.ygba.youthgobudget.data.socialdevelopment.SocialDevelopmentQuestion;
 import org.ygba.youthgobudget.data.water_and_environment.WaterEnvironmentQuestion;
+import org.ygba.youthgobudget.utils.DynamicData;
 
 public class Seeder {
     YGBARepository ygbaRepository;
@@ -16,6 +18,7 @@ public class Seeder {
     public void seed() {
         seedWaterAndEnvironment();
         seedAgriculture();
+        seedSocialDevelopment();
     }
 
     public void seedAgriculture() {
@@ -152,5 +155,124 @@ public class Seeder {
             ygbaRepository.saveWaterEnvironmentQuestion(waterEnvironmentQuestion);
         }
 
+    }
+
+    public void seedSocialDevelopment() {
+        for(int i = 0; i <= 20; i++) {
+            SocialDevelopmentQuestion question = new SocialDevelopmentQuestion();
+            question.setFinancialYear("2020-2025");
+            question.setDate(DynamicData.getDate());
+            question.setDistrict("Masaka");
+            question.setVillage("Kijjabwemi");
+            question.setParish("Kimaanya");
+            question.setDivision("Kyabakuzza");
+            question.setYgbaAgentFullName("Simon Peter Ojok");
+            question.setYgbaTel("0772241709");
+            question.setQ2CommunityExpected(500000.90);
+            question.setQ2CommunityAmountReceived(2000.50);
+            question.setQ2CommunityDateReceived("2020-08-05");
+            question.setQ2CommunityDateWithdrawn("2020-07-30");
+            question.setQ2OtherExpectedAmount(67000);
+            question.setQ2OtherAmountedReceived(60000.0);
+            question.setQ2OthersDateReceived("2020-04-30");
+            question.setQ2OthersDateWithdrawn("2020-05-05");
+            question.setQ3WomenEmpowermentObjective(true);
+            question.setQ3WomenEmpowermentObjectiveReason("This form was made under app development");
+
+            question.setQ3WomanGroup1Name("Youth For me");
+            question.setQ3WomenGroup1Village("Kijjabwemi");
+            question.setQ3WomenGroup1MaleNumber(90);
+            question.setQ3WomenGroup1FemaleNumber(10);
+            question.setQ3WomenGroup1AmountReceived(1000000);
+
+            question.setQ3WomanGroup2Name("Hope For Live");
+            question.setQ3WomenGroup2Village("Koro Abili");
+            question.setQ3WomenGroup2MaleNumber(0);
+            question.setQ3WomenGroup2FemaleNumber(10);
+            question.setQ3WomenGroup2AmountReceived(0.0);
+
+            question.setQ3WomanGroup3Name("Men Of All");
+            question.setQ3WomenGroup3Village("Anaka");
+            question.setQ3WomenGroup3MaleNumber(100);
+            question.setQ3WomenGroup3FemaleNumber(0);
+            question.setQ3WomenGroup3AmountReceived(40000.00);
+
+            question.setQ3WomanGroup4Name("Better For All");
+            question.setQ3WomenGroup4Village("Twangala");
+            question.setQ3WomenGroup4MaleNumber(78);
+            question.setQ3WomenGroup4FemaleNumber(60);
+            question.setQ3WomenGroup4AmountReceived(20);
+
+            question.setQ3WomanGroup5Name("Great God Love");
+            question.setQ3WomenGroup5Village("Palenga");
+            question.setQ3WomenGroup5MaleNumber(10);
+            question.setQ3WomenGroup5FemaleNumber(20);
+            question.setQ3WomenGroup5AmountReceived(20000);
+
+            question.setQ3WomanGroup6Name("Karamoja Men On Move");
+            question.setQ3WomenGroup6Village("Karamoja");
+            question.setQ3WomenGroup6MaleNumber(30);
+            question.setQ3WomenGroup6FemaleNumber(45);
+            question.setQ3WomenGroup6AmountReceived(56000);
+
+            question.setQ3WomanGroup7Name("Youth Lads");
+            question.setQ3WomenGroup7Village("Kirinya");
+            question.setQ3WomenGroup7MaleNumber(567);
+            question.setQ3WomenGroup7FemaleNumber(10);
+            question.setQ3WomenGroup7AmountReceived(45000.00);
+
+            question.setQ4LivelihoodObjective(true);
+            question.setQ4LivelihoodObjectiveReason("This answer was correct");
+
+
+            question.setQ4YouthGroup1Name("The Men And Gold");
+            question.setQ4YouthGroup1Village("Kijjabwemi");
+            question.setQ4YouthGroup1MaleNumber(10);
+            question.setQ4YouthGroup1FemaleNumber(10);
+            question.setQ4YouthGroup1AmountReceived(200000);
+
+            question.setQ4YouthGroup2Name("Love God Yeah");
+            question.setQ4YouthGroup2Village("Kijjabwemi");
+            question.setQ4YouthGroup2MaleNumber(10);
+            question.setQ4YouthGroup2FemaleNumber(20);
+            question.setQ4YouthGroup2AmountReceived(20000);
+
+            question.setQ4YouthGroup3Name("Men Love Me");
+            question.setQ4YouthGroup3Village("Kijjabwemi");
+            question.setQ4YouthGroup3MaleNumber(20);
+            question.setQ4YouthGroup3FemaleNumber(5);
+            question.setQ4YouthGroup3AmountReceived(2000);
+
+            question.setQ4YouthGroup4Name("Man Of Gold");
+            question.setQ4YouthGroup4Village("Kabalagala");
+            question.setQ4YouthGroup4MaleNumber(45);
+            question.setQ4YouthGroup4FemaleNumber(78);
+            question.setQ4YouthGroup4AmountReceived(200000);
+
+            question.setQ4YouthGroup5Name("Golden Trial");
+            question.setQ4YouthGroup5Village("Kwekungula");
+            question.setQ4YouthGroup5MaleNumber(56);
+            question.setQ4YouthGroup5FemaleNumber(90);
+            question.setQ4YouthGroup5AmountReceived(2000000);
+
+            question.setQ4YouthGroup6Name("The Gread Man");
+            question.setQ4YouthGroup6Village("Makerere Kavule");
+            question.setQ4YouthGroup6MaleNumber(30);
+            question.setQ4YouthGroup5FemaleNumber(30);
+            question.setQ4YouthGroup6AmountReceived(30000);
+
+            question.setQ4YouthGroup7Name("Total Grembet");
+            question.setQ4YouthGroup7Village("Kimanya");
+            question.setQ4YouthGroup7MaleNumber(89);
+            question.setQ4YouthGroup7FemaleNumber(89);
+            question.setQ4YouthGroup7AmountReceived(2000000);
+
+            question.setQ5NumberMaleTrained(69);
+            question.setQ5NumberFemaleTrained(89);
+            question.setQ6CommunityGroupFormed("They are still in the process of forming them");
+            question.setQ7OtherChallengesObservations("This data was generated by the computer, it took a lot og my time");
+
+            ygbaRepository.saveSocialDevelopmentQuestion(question);
+        }
     }
 }
