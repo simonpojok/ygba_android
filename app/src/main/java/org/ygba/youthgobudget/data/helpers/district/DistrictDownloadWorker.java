@@ -12,6 +12,7 @@ import com.android.volley.RequestQueue;
 import com.android.volley.Response;
 import com.android.volley.VolleyError;
 import com.android.volley.toolbox.JsonObjectRequest;
+import com.android.volley.toolbox.StringRequest;
 import com.android.volley.toolbox.Volley;
 import com.google.gson.Gson;
 
@@ -37,37 +38,32 @@ public class DistrictDownloadWorker extends Worker {
     @NonNull
     @Override
     public Result doWork() {
-        JsonObjectRequest jsonObjectRequest = new JsonObjectRequest(
-                Request.Method.POST,
-                DISTRICT_COLLECTION_URL,
-                new JSONObject(),
-                new Response.Listener<JSONObject>() {
+        StringRequest stringRequest = new StringRequest(Request.Method.GET, DISTRICT_COLLECTION_URL,
+                new Response.Listener<String>() {
                     @Override
-                    public void onResponse(JSONObject response) {
-                        DistrictList districtList = new Gson().fromJson(String.valueOf(response), DistrictList.class);
+                    public void onResponse(String response) {
+                        DistrictList districtList = new Gson().fromJson(response, DistrictList.class);
                         for(final District district: districtList.data) {
                             YGBDatabase.db_executor.execute(new Runnable() {
                                 @Override
                                 public void run() {
                                     District district1 = districtDao.getDistrictByID(district.getId());
                                     if ( district1 == null ) {
-                                       districtDao.saveDistrict(district);
+                                        districtDao.saveDistrict(district);
                                     }
                                 }
                             });
                         }
                     }
-                },
-                new Response.ErrorListener() {
-                    @Override
-                    public void onErrorResponse(VolleyError error) {
-                        Log.d("Error", error.toString());
-                    }
-                }
-        );
+                }, new Response.ErrorListener() {
+            @Override
+            public void onErrorResponse(VolleyError error) {
+                Log.d("Error", error.toString());
+            }
+        });
 
         RequestQueue requestQueue = Volley.newRequestQueue(context);
-        requestQueue.add(jsonObjectRequest);
+        requestQueue.add(stringRequest);
         return Result.retry();
     }
 

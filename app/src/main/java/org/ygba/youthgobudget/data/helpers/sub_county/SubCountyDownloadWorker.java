@@ -37,7 +37,7 @@ public class SubCountyDownloadWorker extends Worker {
     @Override
     public Result doWork() {
         JsonObjectRequest jsonObjectRequest = new JsonObjectRequest(
-                Request.Method.POST,
+                Request.Method.GET,
                 SUB_COUNTY_COLLECTION_URL,
                 new JSONObject(),
                 new Response.Listener<JSONObject>() {
