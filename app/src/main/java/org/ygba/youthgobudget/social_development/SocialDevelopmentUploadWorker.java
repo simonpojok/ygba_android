@@ -119,6 +119,54 @@ public class SocialDevelopmentUploadWorker extends Worker {
                     object1.put("amount_received", question.getQ4YouthGroup1AmountReceived());
                     question4Array.put(object1);
 
+                    JSONObject object2 = new JSONObject();
+                    object2.put("youth_group_name", question.getQ4YouthGroup2Name());
+                    object2.put("village_or_sub_county", question.getQ4YouthGroup2Village());
+                    object2.put("number_of_group_members_males", question.getQ4YouthGroup2MaleNumber());
+                    object2.put("number_of_group_members_females", question.getQ4YouthGroup2FemaleNumber());
+                    object2.put("amount_received", question.getQ4YouthGroup2AmountReceived());
+                    question4Array.put(object2);
+
+                    JSONObject object3 = new JSONObject();
+                    object3.put("youth_group_name", question.getQ4YouthGroup3Name());
+                    object3.put("village_or_sub_county", question.getQ4YouthGroup3Village());
+                    object3.put("number_of_group_members_males", question.getQ4YouthGroup3MaleNumber());
+                    object3.put("number_of_group_members_females", question.getQ4YouthGroup3FemaleNumber());
+                    object3.put("amount_received", question.getQ4YouthGroup3AmountReceived());
+                    question4Array.put(object3);
+
+                    JSONObject object4 = new JSONObject();
+                    object4.put("youth_group_name", question.getQ4YouthGroup4Name());
+                    object4.put("village_or_sub_county", question.getQ4YouthGroup4Village());
+                    object4.put("number_of_group_members_males", question.getQ4YouthGroup4MaleNumber());
+                    object4.put("number_of_group_members_females", question.getQ4YouthGroup4FemaleNumber());
+                    object4.put("amount_received", question.getQ4YouthGroup4AmountReceived());
+                    question4Array.put(object4);
+
+                    JSONObject object5 = new JSONObject();
+                    object5.put("youth_group_name", question.getQ4YouthGroup5Name());
+                    object5.put("village_or_sub_county", question.getQ4YouthGroup5Village());
+                    object5.put("number_of_group_members_males", question.getQ4YouthGroup5MaleNumber());
+                    object5.put("number_of_group_members_females", question.getQ4YouthGroup5FemaleNumber());
+                    object5.put("amount_received", question.getQ4YouthGroup5AmountReceived());
+                    question4Array.put(object5);
+
+                    JSONObject object6 = new JSONObject();
+                    object6.put("youth_group_name", question.getQ4YouthGroup6Name());
+                    object6.put("village_or_sub_county", question.getQ4YouthGroup6Village());
+                    object6.put("number_of_group_members_males", question.getQ4YouthGroup6MaleNumber());
+                    object6.put("number_of_group_members_females", question.getQ4YouthGroup6FemaleNumber());
+                    object6.put("amount_received", question.getQ4YouthGroup6AmountReceived());
+                    question4Array.put(object6);
+
+                    JSONObject object7 = new JSONObject();
+                    object7.put("youth_group_name", question.getQ4YouthGroup7Name());
+                    object7.put("village_or_sub_county", question.getQ4YouthGroup7Village());
+                    object7.put("number_of_group_members_males", question.getQ4YouthGroup7MaleNumber());
+                    object7.put("number_of_group_members_females", question.getQ4YouthGroup7FemaleNumber());
+                    object7.put("amount_received", question.getQ4YouthGroup7AmountReceived());
+                    question4Array.put(object7);
+
                 } catch (JSONException e) {
                     e.printStackTrace();
                 }
