@@ -358,8 +358,10 @@ public class SocialDevelopmentActivity extends AppCompatActivity implements Vali
 
     @Override
     public void onValidationSucceeded() {
-        SocialDevelopmentQuestion socialDevelopmentQuestion = new SocialDevelopmentQuestion(
-                selectedFinancialYear,
+        SocialDevelopmentQuestion question = new SocialDevelopmentQuestion();
+        question.setFinancialYear(selectedFinancialYear);
+        question.setDate(DynamicData.getDate());
+
                 DynamicData.getDate(),
                 districtTextEdit.getText().toString(),
                 villageTextEdit.getText().toString(),
@@ -476,5 +478,22 @@ public class SocialDevelopmentActivity extends AppCompatActivity implements Vali
     @Override
     public void onNothingSelected(AdapterView<?> adapterView) {
         selectedFinancialYear = "";
+    }
+
+
+    private String getStringValue(TextView textView) {
+        return textView.getText().toString();
+    }
+
+    private String getStringValue(EditText editText) {
+        return editText.getText().toString();
+    }
+
+    private int getIntegerValue(EditText editText) {
+        return 90;
+    }
+
+    private double getBooleanValue(EditText editText) {
+        return 90.0;
     }
 }

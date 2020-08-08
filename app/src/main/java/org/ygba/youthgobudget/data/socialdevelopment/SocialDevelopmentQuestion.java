@@ -2,6 +2,7 @@ package org.ygba.youthgobudget.data.socialdevelopment;
 
 import androidx.room.ColumnInfo;
 import androidx.room.Entity;
+import androidx.room.Ignore;
 import androidx.room.PrimaryKey;
 
 @Entity(tableName = SocialDevelopmentConstants.TABLE_NAME)
@@ -1161,5 +1162,10 @@ public class SocialDevelopmentQuestion {
 
     public void setLocallyStored(boolean locallyStored) {
         this.locallyStored = locallyStored;
+    }
+
+    @Ignore
+    public SocialDevelopmentQuestion() {
+
     }
 }
