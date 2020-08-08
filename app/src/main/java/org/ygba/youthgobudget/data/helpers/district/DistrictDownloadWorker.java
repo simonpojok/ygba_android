@@ -20,11 +20,20 @@ import org.json.JSONException;
 import org.json.JSONObject;
 import org.ygba.youthgobudget.YGBARepository;
 import org.ygba.youthgobudget.data.YGBDatabase;
+import org.ygba.youthgobudget.data.helpers.sub_county.SubCounty;
+import org.ygba.youthgobudget.data.helpers.sub_county.SubCountyDownloadWorker;
 
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.InputStreamReader;
+import java.net.HttpURLConnection;
+import java.net.URL;
 import java.util.List;
 
 import static org.ygba.youthgobudget.utils.Constants.AGRICULTURE_COLLECTION_URL;
 import static org.ygba.youthgobudget.utils.Constants.DISTRICT_COLLECTION_URL;
+import static org.ygba.youthgobudget.utils.Constants.SUB_COUNTY_COLLECTION_URL;
 
 public class DistrictDownloadWorker extends Worker {
     private DistrictDao districtDao;
@@ -38,32 +47,37 @@ public class DistrictDownloadWorker extends Worker {
     @NonNull
     @Override
     public Result doWork() {
-        StringRequest stringRequest = new StringRequest(Request.Method.GET, DISTRICT_COLLECTION_URL,
-                new Response.Listener<String>() {
-                    @Override
-                    public void onResponse(String response) {
-                        DistrictList districtList = new Gson().fromJson(response, DistrictList.class);
-                        for(final District district: districtList.data) {
-                            YGBDatabase.db_executor.execute(new Runnable() {
-                                @Override
-                                public void run() {
-                                    District district1 = districtDao.getDistrictByID(district.getId());
-                                    if ( district1 == null ) {
-                                        districtDao.saveDistrict(district);
-                                    }
-                                }
-                            });
-                        }
-                    }
-                }, new Response.ErrorListener() {
-            @Override
-            public void onErrorResponse(VolleyError error) {
-                Log.d("Error", error.toString());
-            }
-        });
+        try {
+            HttpURLConnection httpURLConnection = (HttpURLConnection) new URL(SUB_COUNTY_COLLECTION_URL).openConnection();
 
-        RequestQueue requestQueue = Volley.newRequestQueue(context);
-        requestQueue.add(stringRequest);
+            try {
+                InputStream inputStream = httpURLConnection.getInputStream();
+                BufferedReader reader = new BufferedReader(new InputStreamReader(inputStream));
+                DistrictList districtList = new Gson().fromJson(reader, DistrictList.class);
+                reader.close();
+
+                for(final District district: districtList.data) {
+                    YGBDatabase.db_executor.execute(new Runnable() {
+                        @Override
+                        public void run() {
+                            District district1 = districtDao.getDistrictByID(district.getId());
+                            if ( district1 == null ) {
+                                districtDao.saveDistrict(district);
+                            }
+                        }
+                    });
+                }
+                return Result.success();
+
+            } catch (IOException e) {
+                Log.e("Error", "There was errors");
+            } finally {
+                httpURLConnection.disconnect();
+            }
+
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
         return Result.retry();
     }
 
