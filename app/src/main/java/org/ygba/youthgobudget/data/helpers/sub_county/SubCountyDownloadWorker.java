@@ -20,6 +20,13 @@ import org.json.JSONException;
 import org.json.JSONObject;
 import org.ygba.youthgobudget.data.YGBDatabase;
 
+import java.io.BufferedInputStream;
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.InputStreamReader;
+import java.net.HttpURLConnection;
+import java.net.URL;
 import java.util.List;
 
 import static org.ygba.youthgobudget.utils.Constants.DISTRICT_COLLECTION_URL;
@@ -38,32 +45,37 @@ public class SubCountyDownloadWorker extends Worker {
     @Override
     public Result doWork() {
 
-        StringRequest stringRequest = new StringRequest(Request.Method.GET, SUB_COUNTY_COLLECTION_URL,
-                new Response.Listener<String>() {
-                    @Override
-                    public void onResponse(String response) {
-                        SubCountyList countyList = new Gson().fromJson(response, SubCountyList.class);
-                        for(final SubCounty subCounty : countyList.data) {
-                            YGBDatabase.db_executor.execute(new Runnable() {
-                                @Override
-                                public void run() {
-                                    SubCounty subCounty1 = subCountyDao.getSubCountyById(subCounty.getId());
-                                    if (subCounty1 == null) {
-                                        subCountyDao.saveSubCounty(subCounty);
-                                    }
-                                }
-                            });
-                        }
-                    }
-                }, new Response.ErrorListener() {
-            @Override
-            public void onErrorResponse(VolleyError error) {
-                Log.d("Error", error.toString());
-            }
-        });
+        try {
+            HttpURLConnection httpURLConnection = (HttpURLConnection) new URL(SUB_COUNTY_COLLECTION_URL).openConnection();
 
-        RequestQueue requestQueue = Volley.newRequestQueue(context);
-        requestQueue.add(stringRequest);
+            try {
+                InputStream inputStream = httpURLConnection.getInputStream();
+                BufferedReader reader = new BufferedReader(new InputStreamReader(inputStream));
+                SubCountyList countyList = new Gson().fromJson(reader, SubCountyList.class);
+                reader.close();
+
+                for(final SubCounty subCounty : countyList.data) {
+                    YGBDatabase.db_executor.execute(new Runnable() {
+                        @Override
+                        public void run() {
+                            SubCounty subCounty1 = subCountyDao.getSubCountyById(subCounty.getId());
+                            if (subCounty1 == null) {
+                                subCountyDao.saveSubCounty(subCounty);
+                            }
+                        }
+                    });
+                }
+                return Result.success();
+
+            } catch (IOException e) {
+                Log.e("Error", "There was errors");
+            } finally {
+                httpURLConnection.disconnect();
+            }
+
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
         return Result.retry();
     }
 
