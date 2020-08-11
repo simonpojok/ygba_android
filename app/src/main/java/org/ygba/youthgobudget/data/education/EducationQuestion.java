@@ -372,6 +372,14 @@ public class EducationQuestion {
 
     public EducationQuestion() {}
 
+    public String getQuarter() {
+        return "VI";
+    }
+
+    public String getRegion() {
+        return "Northern";
+    }
+
     public static class Builder {
         private final EducationQuestion INSTANCE;
         public Builder() {
