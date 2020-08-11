@@ -108,6 +108,31 @@ public class EducationUploadWorker extends Worker {
                     body.put("How_is_the_current_t_pared_to_last_term_s", educationQuestion.getQuestion41CurrentTermPerformance());
                     body.put("what_reason_is_attributed_to_the_above_answer", educationQuestion.getQuestion42ReasonAttribute());
 
+                    // question 5
+                    body.put("Sanitation_facility_oilet_No_of_Blocks", educationQuestion.getQuestion5ToiletNumberBlocks());
+                    body.put("Sanitation_facility_ilet_No_of_Stances", educationQuestion.getQuestion5ToiletNumberStances());
+                    body.put("Sanitation_facility_f_Pupil_Male_Stances", educationQuestion.getQuestion5ToiletNumberMaleStancesPupil());
+                    body.put("Sanitation_facility_Pupil_Female_Stances", educationQuestion.getQuestion5ToiletNumberFemaleStancesPupil());
+                    body.put("Sanitation_facility_Teacher_Male_Stances", educationQuestion.getQuestion5ToiletNumberMaleStancesTeacher());
+                    body.put("Sanitation_facility_acher_Female_Stances", educationQuestion.getQuestion5ToiletNumberStancesFemaleTeachers());
+                    body.put("Sanitation_facility_Teacher_Mix_Stances", educationQuestion.getQuestion5ToiletNumberStancesMixed());
+                    body.put("Sanitation_facility_Toilet_Functional", educationQuestion.getQuestion5ToiletFunctional());
+                    body.put("Sanitation_facility_ilet_Non_Functional", educationQuestion.getQuestion5ToiletNoneFunctional());
+
+                    // latrine
+                    body.put("Sanitation_facility_trine_No_of_Blocks", educationQuestion.getQuestion5LatrineNumberBlocks());
+                    body.put("Sanitation_facility_rine_No_of_Stances", educationQuestion.getQuestion5LatrineNumberStances());
+                    body.put("Sanitation_facility_Stances_Pupils_Male", educationQuestion.getQuestion5LatrineNumberStanceMalePupil());
+                    body.put("Sanitation_facility_ances_Pupils_Female", educationQuestion.getQuestion5LatrineNumberStanceFemalePupil());
+                    body.put("Sanitation_facility_tances_Teacher_Male", educationQuestion.getQuestion5LatrineNumberStancesMaleTeachers());
+                    body.put("Sanitation_facility_nces_Teacher_Female", educationQuestion.getQuestion5LatrineNumberStancesFemaleTeachers());
+                    body.put("Sanitation_facility_nces_Teachers_Mixed", educationQuestion.getQuestion5LatrineMixedTeachers());
+                    body.put("Sanitation_facility_Stances_Functional", educationQuestion.getQuestion5LatrineFunctional());
+                    body.put("Sanitation_facility_nces_Non_Functional", educationQuestion.getQuestion5LatrineNoneFunctional());
+
+                    // vip
+
+
 
 
                 } catch (JSONException e) {
@@ -130,24 +155,6 @@ public class EducationUploadWorker extends Worker {
     }
 }
 
-        $table->integer('Sanitation_facility_oilet_No_of_Blocks')->nullable();
-        $table->integer('Sanitation_facility_ilet_No_of_Stances')->nullable();
-        $table->integer('Sanitation_facility_f_Pupil_Male_Stances')->nullable();
-        $table->integer('Sanitation_facility_Pupil_Female_Stances')->nullable();
-        $table->integer('Sanitation_facility_Teacher_Male_Stances')->nullable();
-        $table->integer('Sanitation_facility_acher_Female_Stances')->nullable();
-        $table->integer('Sanitation_facility_Teacher_Mix_Stances')->nullable();
-        $table->integer('Sanitation_facility_Toilet_Functional')->nullable();
-        $table->integer('Sanitation_facility_ilet_Non_Functional')->nullable();
-        $table->integer('Sanitation_facility_trine_No_of_Blocks')->nullable();
-        $table->integer('Sanitation_facility_rine_No_of_Stances')->nullable();
-        $table->integer('Sanitation_facility_Stances_Pupils_Male')->nullable();
-        $table->integer('Sanitation_facility_ances_Pupils_Female')->nullable();
-        $table->integer('Sanitation_facility_tances_Teacher_Male')->nullable();
-        $table->integer('Sanitation_facility_nces_Teacher_Female')->nullable();
-        $table->integer('Sanitation_facility_nces_Teachers_Mixed')->nullable();
-        $table->integer('Sanitation_facility_Stances_Functional')->nullable();
-        $table->integer('Sanitation_facility_nces_Non_Functional')->nullable();
         $table->integer('Sanitation_facility_trine_No_of_Blocks_001')->nullable();
         $table->integer('Sanitation_facility_rine_No_of_Stances_001')->nullable();
         $table->integer('Sanitation_facility_Stances_Pupils_Male_001')->nullable();
