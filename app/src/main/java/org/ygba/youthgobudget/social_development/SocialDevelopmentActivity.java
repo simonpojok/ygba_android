@@ -499,10 +499,11 @@ public class SocialDevelopmentActivity extends AppCompatActivity implements Vali
     }
 
     private int getIntegerValue(EditText editText) {
-        return 90;
+        return Integer.parseInt(editText.getText().toString());
     }
 
     private double getDoubleValue(EditText editText) {
-        return 90.0;
+//        return 90.0;
+        return Double.parseDouble(editText.getText().toString());
     }
 }

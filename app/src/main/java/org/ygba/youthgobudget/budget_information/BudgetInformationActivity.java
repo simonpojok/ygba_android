@@ -282,11 +282,12 @@ public class BudgetInformationActivity extends AppCompatActivity implements Adap
     }
 
     private int getIntegerValue(EditText editText) {
-        try {
-            return Integer.getInteger(editText.getText().toString());
-        } catch (Exception e) {
-            return 0;
-        }
+//        try {
+//            return Integer.getInteger(editText.getText().toString());
+//        } catch (Exception e) {
+//            return 0;
+//        }
+        return Integer.parseInt(editText.getText().toString());
     }
 
     private String getStringValue(EditText editText) {

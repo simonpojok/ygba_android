@@ -287,6 +287,7 @@ public class WaterEnvironmentActivity extends AppCompatActivity implements  Adap
                 .setQuestion5Area4(getStringValue(wQ5Area4EditText))
                 .setQuestion5WaterSource4(getStringValue(wQ5WaterSource4EditText))
                 .setQuestion5Functional4(getIntegerValue(wQ5Functional4EditText))
+                .setQuestion5Functional4(getIntegerValue(wQ5Functional4EditText))
                 .setNonFunctional4(getIntegerValue(wQ5NoneFunctional4EditText))
                 .setQuestion5NoWaterSourceAvailable4(getIntegerValue(wQ5NoWaterSource4EditText))
 
@@ -343,11 +344,7 @@ public class WaterEnvironmentActivity extends AppCompatActivity implements  Adap
     }
 
     private int getIntegerValue(EditText editText) {
-        try {
-            return Integer.getInteger(editText.getText().toString());
-        } catch (Exception e) {
-            return 0;
-        }
+        return Integer.parseInt(editText.getText().toString());
     }
 
     private String getStringValue(EditText editText) {

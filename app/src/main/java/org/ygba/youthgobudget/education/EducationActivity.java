@@ -501,7 +501,7 @@ public class EducationActivity extends AppCompatActivity implements Validator.Va
     }
 
     private int getIntegerValue(EditText editText) {
-        return 0;
+        return Integer.parseInt(editText.getText().toString());
     }
 
     @Override

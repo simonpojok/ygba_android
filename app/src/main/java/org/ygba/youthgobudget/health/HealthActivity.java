@@ -571,7 +571,7 @@ public class HealthActivity extends AppCompatActivity implements Validator.Valid
     }
 
     private int getIntegerValue(EditText editText) {
-        return 34;
+        return Integer.parseInt(editText.getText().toString());
     }
 
     private int getIntegerValue(TextView textView) {
