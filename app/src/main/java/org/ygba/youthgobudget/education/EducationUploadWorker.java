@@ -157,6 +157,14 @@ public class EducationUploadWorker extends Worker {
                     body.put("Urinals_for_boys_Functional", educationQuestion.getQuestion5UrinalsForBoysTeacherFunctional());
                     body.put("Urinals_for_boys_Non_Functional", educationQuestion.getQuestion5UrinalsForBoysNoneFunctional());
 
+                    // question 5Yes
+                    body.put("Are_the_school_toilet_latrine_", educationQuestion.isQ5SchoolToiletAccessible());
+                    body.put("If_yes_how_accessib_ls_with_disabilities", "Missing value");
+                    body.put("Is_there_a_functional_water_po", educationQuestion.isQ5FunctionalWaterPoint());
+                    body.put("Estimate_Distance", educationQuestion.getQ5FunctionalWaterPointReasonIfNo());
+
+                    // QUESTION 6
+
 
 
 
@@ -181,10 +189,6 @@ public class EducationUploadWorker extends Worker {
 }
 
 
-        $table->string('Are_the_school_toilet_latrine_')->nullable();
-        $table->string('If_yes_how_accessib_ls_with_disabilities')->nullable();
-        $table->string('Is_there_a_functional_water_po')->nullable();
-        $table->integer('Estimate_Distance')->nullable();
         $table->integer('How_many_permanent_c_ks_are_at_the_school')->nullable();
         $table->integer('How_many_desks_are_i_he_time_of_the_visit')->nullable();
         $table->integer('What_is_the_pupil_desk_ratio')->nullable();
