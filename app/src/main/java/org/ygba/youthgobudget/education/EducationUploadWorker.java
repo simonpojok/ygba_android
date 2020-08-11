@@ -131,6 +131,15 @@ public class EducationUploadWorker extends Worker {
                     body.put("Sanitation_facility_nces_Non_Functional", educationQuestion.getQuestion5LatrineNoneFunctional());
 
                     // vip
+                    body.put("Sanitation_facility_vip_latrine_no_of_Blocks", educationQuestion.getQuestion5VIPLatrineNumberBlocks());
+                    body.put("Sanitation_facility_latrine_No_of_Stances", educationQuestion.getQuestion5VIPLatrineNumberStances());
+                    body.put("Sanitation_facility_vip_latrine_Stances_Pupils_Male", educationQuestion.getQuestion5VIPLatrineNumberStancesMalePupil());
+                    body.put("Sanitation_facility_vip_latrine_stances_Pupils_Female", educationQuestion.getQuestion5VIPLatrineNumberStancesFemalePupil());
+                    body.put("Sanitation_facility_vip_latrine_stances_Teacher_Male", educationQuestion.getQuestion5VIPLatrineNumberStancesMaleTeacher());
+                    body.put("Sanitation_facility_vip_latrine_stances_Teacher_Female", educationQuestion.getQuestion5VIPLatrineNumberStancesFemaleTeachers());
+                    body.put("Sanitation_facility_vip_latrine_stances_Teachers_Mixed", educationQuestion.getQuestion5VIPLatrineNumberStancesMixedTeachers());
+                    body.put("Sanitation_facility_vip_latrine_Stances_Functional", educationQuestion.getQuestion5VIPLatrineFunction());
+                    body.put("Sanitation_facility_vip_latrine_stances_Non_Functional", educationQuestion.getQuestion5VIPNoneFunctional());
 
 
 
@@ -154,15 +163,6 @@ public class EducationUploadWorker extends Worker {
         return null;
     }
 }
-
-        $table->integer('Sanitation_facility_trine_No_of_Blocks_001')->nullable();
-        $table->integer('Sanitation_facility_rine_No_of_Stances_001')->nullable();
-        $table->integer('Sanitation_facility_Stances_Pupils_Male_001')->nullable();
-        $table->integer('Sanitation_facility_ances_Pupils_Female_001')->nullable();
-        $table->integer('Sanitation_facility_ances_Teachers_Male')->nullable();
-        $table->integer('Sanitation_facility_ces_Teachers_Female')->nullable();
-        $table->integer('Sanitation_facility_rine_No_Functional')->nullable();
-        $table->integer('Sanitation_facility_No_Non_Functional')->nullable();
         $table->integer('Female_changing_rooms_Pupil_Female')->nullable();
         $table->integer('Female_changing_rooms_No_of_Blocks')->nullable();
         $table->integer('Female_changing_rooms_No_of_Stances')->nullable();
