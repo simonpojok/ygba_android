@@ -380,6 +380,10 @@ public class EducationQuestion {
         return "Northern";
     }
 
+    public String getQuestion31DisplayBudgetInformation() {
+        return "School Notice Board";
+    }
+
     public static class Builder {
         private final EducationQuestion INSTANCE;
         public Builder() {

@@ -89,6 +89,25 @@ public class EducationUploadWorker extends Worker {
                     body.put("Budget_released_Actual_Date_Received", educationQuestion.getQuestion3SFGDateReceived());
                     body.put("Budget_released_Actual_Date_Withdrawn", educationQuestion.getQuestion3SFGDateWithdrawn());
 
+                    body.put("Does_the_school_disp_ck_where_appropriate", educationQuestion.getQuestion31DisplayBudgetInformation());
+                    body.put("state_the_period_which_the_budget_relates", educationQuestion.getQuestion32StatementPeriod());
+
+                    // question 4
+                    body.put("P_7_TERMLY_PERFORMANCE_Grade_1_Male", educationQuestion.getQuestion4Grade1MaleNumber());
+                    body.put("P_7_TERMLY_PERFORMANCE_Grade_1_Female", educationQuestion.getQuestion4Grade1FemaleNumber());
+
+                    body.put("P_7_TERMLY_PERFORMANCE_Grade_2_Male", educationQuestion.getQuestion4Grade2MaleNumber());
+                    body.put("P_7_TERMLY_PERFORMANCE_Grade_2_Female", educationQuestion.getQuestion4Grade2FemaleNumber());
+
+                    body.put("P_7_TERMLY_PERFORMANCE_Grade_3_Male", educationQuestion.getQuestion4Grade3MaleNumber());
+                    body.put("P_7_TERMLY_PERFORMANCE_Grade_3_Female", educationQuestion.getQuestion4Grade3FemaleNumber());
+
+                    body.put("P_7_TERMLY_PERFORMANCE_Grade_Other_Male", educationQuestion.getQuestion4Grade4MaleNumber());
+                    body.put("P_7_TERMLY_PERFORMAN_Grade_Other_Female", educationQuestion.getQuestion4Grade4FemaleNumber());
+
+                    body.put("How_is_the_current_t_pared_to_last_term_s", educationQuestion.getQuestion41CurrentTermPerformance());
+                    body.put("what_reason_is_attributed_to_the_above_answer", educationQuestion.getQuestion42ReasonAttribute());
+
 
 
                 } catch (JSONException e) {
@@ -111,20 +130,6 @@ public class EducationUploadWorker extends Worker {
     }
 }
 
-        $table->date('Budget_released_Actual_Date_Received')->nullable();
-        $table->date('Budget_released_Actual_Date_Withdrawn')->nullable();
-        $table->string('Does_the_school_disp_ck_where_appropriate')->nullable();
-        $table->integer('P_7_TERMLY_PERFORMANCE_Grade_1_Male')->nullable();
-        $table->integer('P_7_TERMLY_PERFORMANCE_Grade_1_Female')->nullable();
-        $table->integer('P_7_TERMLY_PERFORMANCE_Grade_2_Male')->nullable();
-        $table->integer('P_7_TERMLY_PERFORMANCE_Grade_2_Female')->nullable();
-        $table->integer('P_7_TERMLY_PERFORMANCE_Grade_3_Male')->nullable();
-        $table->integer('P_7_TERMLY_PERFORMANCE_Grade_2_Female_001')->nullable();
-        $table->integer('P_7_TERMLY_PERFORMANCE_Grade_3_Male_001')->nullable();
-        $table->integer('P_7_TERMLY_PERFORMANCE_Grade_3_Female')->nullable();
-        $table->integer('P_7_TERMLY_PERFORMANCE_Grade_Other_Male')->nullable();
-        $table->integer('P_7_TERMLY_PERFORMAN_Grade_Other_Female')->nullable();
-        $table->string('How_is_the_current_t_pared_to_last_term_s')->nullable();
         $table->integer('Sanitation_facility_oilet_No_of_Blocks')->nullable();
         $table->integer('Sanitation_facility_ilet_No_of_Stances')->nullable();
         $table->integer('Sanitation_facility_f_Pupil_Male_Stances')->nullable();
