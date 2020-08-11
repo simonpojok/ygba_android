@@ -141,6 +141,22 @@ public class EducationUploadWorker extends Worker {
                     body.put("Sanitation_facility_vip_latrine_Stances_Functional", educationQuestion.getQuestion5VIPLatrineFunction());
                     body.put("Sanitation_facility_vip_latrine_stances_Non_Functional", educationQuestion.getQuestion5VIPNoneFunctional());
 
+                    body.put("Female_changing_rooms_Pupil_Female", educationQuestion.getQuestion5FemaleChangingRoomBlockNumber());
+                    body.put("Female_changing_rooms_No_of_Stances", educationQuestion.getQuestion5FemaleChangingRoomStanceNumber());
+                    body.put("Female_changing_rooms_No_Pupil_Female", educationQuestion.getQuestion5FemaleChangingRoomFemaleStances());
+                    body.put("Female_changing_room_ocks_Teachers_Female", educationQuestion.getQuestion5FemaleChangingRoomFemaleTeacher());
+                    body.put("Female_changing_rooms_Functional_mixed", educationQuestion.getQuestion5FemaleChangingRoomMixedTeacher());
+                    body.put("Female_changing_rooms_Functional", educationQuestion.getQuestion5FemaleChangingRoomFunctional());
+                    body.put("Female_changing_rooms_Non_Functional", educationQuestion.getQuestion5FemaleChangingRoomNoneFunctional());
+
+                    body.put("Urinals_for_boys_Blocks", educationQuestion.getQuestion5UrinalsForBoysBlockNumber());
+                    body.put("Urinals_for_boys_Stances", educationQuestion.getQuestion5UrinalsForBoysNumberStances());
+                    body.put("Urinals_for_boys_Pupil_Male", educationQuestion.getQuestion5UrinalsForBoysStancesPupil());
+                    body.put("Urinals_for_boys_Teachers_Male", educationQuestion.getQuestion5UrinalsForBoysNumberStancesTeacher());
+                    body.put("Urinals_for_boys_Teachers_Male_mixed", educationQuestion.getQuestion5UrinalsForBoysMixedTeachers());
+                    body.put("Urinals_for_boys_Functional", educationQuestion.getQuestion5UrinalsForBoysTeacherFunctional());
+                    body.put("Urinals_for_boys_Non_Functional", educationQuestion.getQuestion5UrinalsForBoysNoneFunctional());
+
 
 
 
@@ -163,19 +179,8 @@ public class EducationUploadWorker extends Worker {
         return null;
     }
 }
-        $table->integer('Female_changing_rooms_Pupil_Female')->nullable();
-        $table->integer('Female_changing_rooms_No_of_Blocks')->nullable();
-        $table->integer('Female_changing_rooms_No_of_Stances')->nullable();
-        $table->integer('Female_changing_rooms_No_Pupil_Female')->nullable();
-        $table->integer('Female_changing_room_ocks_Teachers_Female')->nullable();
-        $table->integer('Female_changing_rooms_Functional')->nullable();
-        $table->integer('Female_changing_rooms_Non_Functional')->nullable();
-        $table->integer('Urinals_for_boys_Blocks')->nullable();
-        $table->integer('Urinals_for_boys_Stances')->nullable();
-        $table->integer('Urinals_for_boys_Pupil_Male')->nullable();
-        $table->integer('Urinals_for_boys_Teachers_Male')->nullable();
-        $table->integer('Urinals_for_boys_Functional')->nullable();
-        $table->integer('Urinals_for_boys_Non_Functional')->nullable();
+
+
         $table->string('Are_the_school_toilet_latrine_')->nullable();
         $table->string('If_yes_how_accessib_ls_with_disabilities')->nullable();
         $table->string('Is_there_a_functional_water_po')->nullable();
