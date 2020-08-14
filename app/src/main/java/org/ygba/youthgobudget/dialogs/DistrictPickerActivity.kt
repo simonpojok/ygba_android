@@ -7,14 +7,21 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
+import androidx.lifecycle.AndroidViewModel
+import androidx.lifecycle.ViewModelProvider
+import androidx.lifecycle.ViewModelProviders
 import androidx.recyclerview.widget.RecyclerView
 import org.ygba.youthgobudget.R
 import org.ygba.youthgobudget.data.helpers.district.District
 
 class DistrictPickerActivity : AppCompatActivity() {
+    private lateinit var districtPickerViewModel: DistrictPickerViewModel;
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_district_picker)
+
+        districtPickerViewModel = ViewModelProviders.of(this).get(DistrictPickerViewModel::class.java)
 
         val districtRecyclerView: RecyclerView = findViewById(R.id.district_recycler_view);
         val districtAdapter: DistrictAdapter = DistrictAdapter(this);
