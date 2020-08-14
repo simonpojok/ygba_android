@@ -1,10 +1,12 @@
 package org.ygba.youthgobudget.agriculture;
 
+import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.cardview.widget.CardView;
 import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProvider;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
@@ -13,6 +15,7 @@ import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.RadioGroup;
 import android.widget.Spinner;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.mobsandgeeks.saripaar.ValidationError;
@@ -22,6 +25,7 @@ import com.mobsandgeeks.saripaar.annotation.NotEmpty;
 
 import org.ygba.youthgobudget.R;
 import org.ygba.youthgobudget.data.agriculture.AgricultureQuestion;
+import org.ygba.youthgobudget.dialogs.DistrictPickerActivity;
 import org.ygba.youthgobudget.utils.DynamicData;
 
 
@@ -29,8 +33,14 @@ import org.ygba.youthgobudget.utils.DynamicData;
 import java.util.List;
 
 public class AgricultureActivity extends AppCompatActivity implements  AdapterView.OnItemSelectedListener, Validator.ValidationListener {
+    private   final int DISTRICT_NAME_REQUESTER_CODE = 1;
+    private   final int SUB_COUNTY_NAME_REQUEST_CODE = 2;
+    private int districtId = 0;
     RadioGroup question1RadioGroup;
     Spinner financialYearSpinner;
+
+    EditText financialYear;
+    TextView districtText;
 
     @NotEmpty
     EditText villageEditText;
@@ -172,7 +182,7 @@ public class AgricultureActivity extends AppCompatActivity implements  AdapterVi
 
     private void saveAgricultureQuestion() {
         AgricultureQuestion agricultureQuestion = new AgricultureQuestion(
-                selectedFinancialYear,
+                financialYear.getText().toString(),
                 DynamicData.getDate(),
                 villageEditText.getText().toString(),
                 parishTextEdit.getText().toString(),
@@ -319,6 +329,19 @@ public class AgricultureActivity extends AppCompatActivity implements  AdapterVi
         question43Reason = findViewById(R.id.question43Reason);
         question43AnyReason =  findViewById(R.id.question43AnyReason);
         saveFormData = findViewById(R.id.saved_form_data);
+
+        financialYear = findViewById(R.id.financial_text_edit);
+        districtText = findViewById(R.id.district_text_edit);
+
+
+        // listeners
+        districtText.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(AgricultureActivity.this, DistrictPickerActivity.class);
+                startActivityForResult(intent, DISTRICT_NAME_REQUESTER_CODE);
+            }
+        });
     }
 
     @Override
@@ -343,6 +366,19 @@ public class AgricultureActivity extends AppCompatActivity implements  AdapterVi
             String message = error.getCollatedErrorMessage(this);
             if (view instanceof EditText) {
                ( (EditText) view).setError(message);
+            }
+        }
+    }
+
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
+        if (requestCode == RESULT_OK) {
+            if (data != null) {
+                if (requestCode == DISTRICT_NAME_REQUESTER_CODE) {
+                    districtText.setText(data.getStringExtra(DistrictPickerActivity.DISTRICT_NAME));
+                    districtId = data.getIntExtra(DistrictPickerActivity.DISTRICT_ID, 0);
+                }
             }
         }
     }
