@@ -246,6 +246,8 @@ public class AgricultureActivity extends AppCompatActivity implements  AdapterVi
                 question43Reason.getText().toString(),
                 question43AnyReason.getText().toString()
         );
+
+        agricultureQuestion.setQuarter(selectedFinancialYear);
         activityViewModel.saveAgricultureQuestion(agricultureQuestion);
     }
 

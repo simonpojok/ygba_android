@@ -65,4 +65,5 @@ public class AgricultureConstants {
     public static final String QUESTION_4_3_REASON = "q4_3_reason";
     public static final String QUESTION_4_3_ANY_REASON = "q4_3_any_other_reason";
     public static final String IS_STORED_LOCALLY = "locally";
+    public static final String QUARTER_COLUMN_NAME = "quarter";
 }

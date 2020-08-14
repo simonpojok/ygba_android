@@ -105,7 +105,7 @@ public class AgricultureUploadWorker extends Worker {
                 body.put("staff_name", agricultureQuestion.getAgentName());
                 body.put("phone_id", agricultureQuestion.getAgentNumber());
                 body.put("staff_number", agricultureQuestion.getAgentNumber());
-                body.put("quarter", "No recorded Yet");
+                body.put("quarter", agricultureQuestion.getQuarter());
                 body.put("gender", "gender");
                 body.put("is_there_substantive_agricultural_extension_worker", agricultureQuestion.getQuestion1Objective());
                 body.put("if_no_why", agricultureQuestion.getQuestion1Reason());
