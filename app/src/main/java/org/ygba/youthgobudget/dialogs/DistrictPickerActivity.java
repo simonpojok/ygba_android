@@ -29,6 +29,7 @@ public class DistrictPickerActivity extends AppCompatActivity {
         RecyclerView recyclerView = findViewById(R.id.district_recycler_view);
         DistrictAdapter districtAdapter = new DistrictAdapter(this, getDistricts());
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
+        recyclerView.setAdapter(districtAdapter);
     }
 
     public static  class DistrictAdapter extends RecyclerView.Adapter<DistrictAdapter.DistrictViewHolder> {
