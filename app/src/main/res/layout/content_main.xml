@@ -374,12 +374,12 @@
                         <ImageView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:src="@drawable/ic_baseline_history_24" />
+                            android:src="@drawable/ic_baseline_adjust_24" />
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="History"
+                            android:text="Com. Wish"
                             android:textColor="#ffffff" />
                     </LinearLayout>
                 </androidx.cardview.widget.CardView>
