@@ -1,25 +1,40 @@
 package org.ygba.youthgobudget.education;
 
 import android.content.Context;
+import android.util.Log;
 
 import androidx.annotation.NonNull;
 import androidx.work.Worker;
 import androidx.work.WorkerParameters;
+
+import com.android.volley.Request;
+import com.android.volley.RequestQueue;
+import com.android.volley.Response;
+import com.android.volley.VolleyError;
+import com.android.volley.toolbox.JsonObjectRequest;
+import com.android.volley.toolbox.Volley;
 
 import org.json.JSONException;
 import org.json.JSONObject;
 import org.ygba.youthgobudget.YGBARepository;
 import org.ygba.youthgobudget.data.YGBDatabase;
 import org.ygba.youthgobudget.data.education.EducationQuestion;
+import org.ygba.youthgobudget.data.education.EducationQuestionDao;
 
 import java.util.List;
 import java.util.concurrent.ExecutionException;
 
+import static org.ygba.youthgobudget.utils.Constants.WATER_COLLECTION_URL;
+
 public class EducationUploadWorker extends Worker {
     YGBARepository ygbaRepository;
+    EducationQuestionDao questionDao;
+    Context context;
     public EducationUploadWorker(@NonNull Context context, @NonNull WorkerParameters workerParams) {
         super(context, workerParams);
         ygbaRepository = YGBARepository.getInstance(YGBDatabase.getInstance(context.getApplicationContext()));
+        questionDao = YGBDatabase.getInstance(context.getApplicationContext()).educationQuestionDao();
+        this.context = context;
     }
 
     @NonNull
@@ -188,7 +203,31 @@ public class EducationUploadWorker extends Worker {
                     body.put("Is_the_school_manage_nt_committee_trained", educationQuestion.getQuestion85IsSMCTrained());
                     body.put("List_any_other_obser_ations_or_challenges", educationQuestion.getQuestion8ObservationsOrChallenges());
 
+                    JsonObjectRequest jsonObjectRequest = new JsonObjectRequest(
+                            Request.Method.POST,
+                            WATER_COLLECTION_URL,
+                            body,
+                            new Response.Listener<JSONObject>() {
+                                @Override
+                                public void onResponse(JSONObject response) {
+                                    Log.d("WaterEnvironmentWorker", response.toString());
+                                    try {
+                                        deleteEducationQuestion(response.getInt("record_id"));
+                                    } catch (JSONException e) {
+                                        e.printStackTrace();
+                                    }
+                                }
+                            },
+                            new Response.ErrorListener() {//
+                                @Override
+                                public void onErrorResponse(VolleyError error) {
+                                    Log.d("Error", error.toString());
+                                }
+                            }
+                    );
 
+                    RequestQueue requestQueue = Volley.newRequestQueue(context);
+                    requestQueue.add(jsonObjectRequest);
 
 
                 } catch (JSONException e) {
@@ -199,6 +238,18 @@ public class EducationUploadWorker extends Worker {
             return Result.success();
         }
         return Result.success();
+    }
+
+    private void deleteEducationQuestion(final int record_id) {
+        YGBDatabase.db_executor.execute(new Runnable() {
+            @Override
+            public void run() {
+                EducationQuestion educationQuestion = questionDao.getEducationQuestionByID(record_id);
+                if (educationQuestion != null) {
+                    questionDao.deleteEducationQuestion(educationQuestion);
+                }
+            }
+        });
     }
 
     private List<EducationQuestion> getList() {
