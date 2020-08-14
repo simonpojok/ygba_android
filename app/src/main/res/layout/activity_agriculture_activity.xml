@@ -167,7 +167,7 @@
         android:textColor="@color/white"
         android:textStyle="bold" />
 
-    <EditText
+    <TextView
         android:layout_marginBottom="5dp"
         android:hint="@string/division_hint"
         android:id="@+id/division_text_edit"
@@ -179,7 +179,6 @@
         android:paddingEnd="5dp"
         android:textSize="15sp"
         android:overScrollMode="always"
-        android:inputType="text"
         tools:ignore="LabelFor" />
 
     <TextView

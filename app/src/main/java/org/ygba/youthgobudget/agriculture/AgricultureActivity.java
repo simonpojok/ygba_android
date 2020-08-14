@@ -26,6 +26,7 @@ import com.mobsandgeeks.saripaar.annotation.NotEmpty;
 import org.ygba.youthgobudget.R;
 import org.ygba.youthgobudget.data.agriculture.AgricultureQuestion;
 import org.ygba.youthgobudget.dialogs.DistrictPickerActivity;
+import org.ygba.youthgobudget.dialogs.SubCountyPickerActivity;
 import org.ygba.youthgobudget.utils.DynamicData;
 
 
@@ -47,7 +48,7 @@ public class AgricultureActivity extends AppCompatActivity implements  AdapterVi
     @NotEmpty
     EditText parishTextEdit;
     @NotEmpty
-    EditText divisionEditText;
+    TextView divisionEditText;
     @NotEmpty
     EditText agentFullNameEditText;
     @NotEmpty
@@ -342,6 +343,18 @@ public class AgricultureActivity extends AppCompatActivity implements  AdapterVi
                 startActivityForResult(intent, DISTRICT_NAME_REQUESTER_CODE);
             }
         });
+
+        divisionEditText.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                if (districtId == 0) {
+                    divisionEditText.setError("Please Set District Continue");
+                } else {
+                    Intent intent = new Intent(AgricultureActivity.this, SubCountyPickerActivity.class);
+                    startActivityForResult(intent, SUB_COUNTY_NAME_REQUEST_CODE);
+                }
+            }
+        });
     }
 
     @Override
@@ -373,11 +386,13 @@ public class AgricultureActivity extends AppCompatActivity implements  AdapterVi
     @Override
     protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
-        if (requestCode == RESULT_OK) {
+        if (resultCode == RESULT_OK) {
             if (data != null) {
                 if (requestCode == DISTRICT_NAME_REQUESTER_CODE) {
                     districtText.setText(data.getStringExtra(DistrictPickerActivity.DISTRICT_NAME));
                     districtId = data.getIntExtra(DistrictPickerActivity.DISTRICT_ID, 0);
+                } else if (requestCode == SUB_COUNTY_NAME_REQUEST_CODE) {
+                    divisionEditText.setText(SubCountyPickerActivity.SUB_COUNTY_NAME);
                 }
             }
         }
