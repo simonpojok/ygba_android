@@ -18,13 +18,19 @@ import com.mobsandgeeks.saripaar.Validator;
 import com.mobsandgeeks.saripaar.annotation.NotEmpty;
 
 import org.ygba.youthgobudget.R;
+import org.ygba.youthgobudget.agriculture.AgricultureActivity;
 import org.ygba.youthgobudget.data.education.EducationQuestion;
 import org.ygba.youthgobudget.dialogs.DatePickerActivity;
+import org.ygba.youthgobudget.dialogs.DistrictPickerActivity;
+import org.ygba.youthgobudget.dialogs.SubCountyPickerActivity;
 import org.ygba.youthgobudget.utils.DynamicData;
 
 import java.util.List;
 
 public class EducationActivity extends AppCompatActivity implements Validator.ValidationListener{
+    private   final int DISTRICT_NAME_REQUESTER_CODE = 10;
+    private   final int SUB_COUNTY_NAME_REQUEST_CODE = 25;
+    private int districtId = 0;
     private final int CAPITAL_RECEIVED_DATE_REQUEST_CODE = 1;
     private final int CAPITAL_DATE_WITHDRAWN_REQUEST_CODE = 2;
     private final int SFG_DATE_RECEIVED_REQUEST_CODE = 3;
@@ -33,10 +39,11 @@ public class EducationActivity extends AppCompatActivity implements Validator.Va
     private TextView eDateTextView;
     private Spinner eFinancialYearSpinner;
     private EditText eVillageEditText;
+    private TextView  districtText;
     @NotEmpty
     private EditText eParishEditText;
     private EditText eDivisionEditText;
-    private EditText eDistrictEditText;
+    private TextView eDistrictEditText;
     private EditText eAgentEditText;
     private EditText eAgentTellEditText;
     private EditText eQuestion1EditText;
@@ -164,7 +171,7 @@ public class EducationActivity extends AppCompatActivity implements Validator.Va
     }
 
     private void initViews() {
-        eDateTextView = findViewById(R.id.education_date_text_view);
+        eDateTextView = findViewById(R.id.date);
         eDateTextView.setText(DynamicData.getDate());
         eFinancialYearSpinner = findViewById(R.id.financial_year_spinner);
         eDistrictEditText = findViewById(R.id.district_text_edit);
@@ -330,6 +337,28 @@ public class EducationActivity extends AppCompatActivity implements Validator.Va
             @Override
             public void onClick(View view) {
                 validator.validate();
+            }
+        });
+
+
+        // listeners
+        districtText.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(EducationActivity.this, DistrictPickerActivity.class);
+                startActivityForResult(intent, DISTRICT_NAME_REQUESTER_CODE);
+            }
+        });
+
+        eDivisionEditText.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                if (districtId == 0) {
+                    eDivisionEditText.setError("Please Set District Continue");
+                } else {
+                    Intent intent = new Intent(EducationActivity.this, SubCountyPickerActivity.class);
+                    startActivityForResult(intent, SUB_COUNTY_NAME_REQUEST_CODE);
+                }
             }
         });
     }
@@ -516,6 +545,11 @@ public class EducationActivity extends AppCompatActivity implements Validator.Va
                 eQ3SFGDateReceivedEditText.setText(data.getStringExtra(DatePickerActivity.SELECTED_DATE));
             } else if (requestCode == LAST_TIME_INSPECTOR_VISIT_REQUEST_CODE) {
                 question82LastTimeSchoolInspectorVisit.setText(data.getStringExtra(DatePickerActivity.SELECTED_DATE));
+            } else if (requestCode == DISTRICT_NAME_REQUESTER_CODE) {
+                districtText.setText(data.getStringExtra(DistrictPickerActivity.DISTRICT_NAME));
+                districtId = data.getIntExtra(DistrictPickerActivity.DISTRICT_ID, 0);
+            } else if (requestCode == SUB_COUNTY_NAME_REQUEST_CODE) {
+                eDivisionEditText.setText(data.getStringExtra(SubCountyPickerActivity.SUB_COUNTY_NAME));
             }
         }
     }
