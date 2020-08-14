@@ -27,7 +27,7 @@ public class DistrictPickerActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_district_picker);
         RecyclerView recyclerView = findViewById(R.id.district_recycler_view);
-        DistrictAdapter districtAdapter = new DistrictAdapter(this, null);
+        DistrictAdapter districtAdapter = new DistrictAdapter(this, getDistricts());
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
     }
 
