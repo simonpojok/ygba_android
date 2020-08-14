@@ -7,6 +7,7 @@ import org.ygba.youthgobudget.data.agriculture.AgricultureQuestion;
 import org.ygba.youthgobudget.data.budget_information.BudgetInformationForm;
 import org.ygba.youthgobudget.data.education.EducationQuestion;
 import org.ygba.youthgobudget.data.health.HealthQuestion;
+import org.ygba.youthgobudget.data.helpers.district.District;
 import org.ygba.youthgobudget.data.socialdevelopment.SocialDevelopmentQuestion;
 import org.ygba.youthgobudget.data.water_and_environment.WaterEnvironmentQuestion;
 
@@ -206,6 +207,17 @@ public class YGBARepository {
                 return ygbDatabase.agricultureDao().getAgricultureQuestionById(primaryKey);
             }
         };
+        return YGBDatabase.db_executor.submit(callable).get();
+    }
+
+    public List<District> getDistrictList() throws ExecutionException, InterruptedException {
+        Callable<List<District>> callable = new Callable<List<District>>() {
+            @Override
+            public List<District> call() throws Exception {
+                return ygbDatabase.districtDao().getAllDistricts();
+            }
+        };
+
         return YGBDatabase.db_executor.submit(callable).get();
     }
 }
