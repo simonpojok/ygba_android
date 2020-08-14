@@ -17,4 +17,9 @@ public interface SubCountyDao {
 
     @Query("SELECT * FROM " + SubCountyConstants.TABLE_NAME + " WHERE " + SubCountyConstants.SUB_COUNTY_ID_COLUMN + " =:id")
     SubCounty getSubCountyById(int id);
+
+    @Query(
+            "SELECT * FROm " + SubCountyConstants.TABLE_NAME + " WHERE " + SubCountyConstants.DISTRICT_ID_COLUMN + " =:districtId"
+    )
+    List<SubCounty> getSubCountyByDistrictId(int districtId);
 }
