@@ -44,7 +44,7 @@ public class SubCountyAdapter extends RecyclerView.Adapter<SubCountyAdapter.SubC
 
     @Override
     public int getItemCount() {
-        return 0;
+        return subCounties.size();
     }
 
     public static class SubCountyViewHolder extends RecyclerView.ViewHolder {

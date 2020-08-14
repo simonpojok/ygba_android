@@ -30,7 +30,7 @@ public final class AgricultureDao_Impl implements AgricultureDao {
     this.__insertionAdapterOfAgricultureQuestion = new EntityInsertionAdapter<AgricultureQuestion>(__db) {
       @Override
       public String createQuery() {
-        return "INSERT OR ABORT INTO `agric` (`id`,`fy`,`date`,`village`,`parish`,`sub_county`,`name`,`tel`,`num`,`q1o`,`q1reason`,`q2ext`,`q2extreceived`,`q2dateextReceived`,`q2extdatewithdrawn`,`q2devexp`,`q2devrecieved`,`q2devdaterecieved`,`q2devdatewithdrawn`,`q2_1`,`q2_2`,`q2_3`,`q2_4`,`q2_5`,`q3_1`,`q3_2_num`,`q3_3_mention`,`q3_4_male`,`q3_4_female`,`q3_5_reason`,`q4_1_inputs`,`q4_2_input_1`,`q4_2_date_1`,`q4_2_male_number_1`,`q4_2_female_number_1`,`q4_2_village_1`,`q4_2_input_2`,`q4_2_date_2`,`q4_2_male_number_2`,`q4_2_female_number_2`,`q4_2_village_2`,`q4_2_input_3`,`q4_2_date_3`,`q4_2_male_number_3`,`q4_2_female_number_3`,`q4_2_village_3`,`q4_2_input_4`,`q4_2_date_4`,`q4_2_male_number_4`,`q4_2_female_number_4`,`q4_2_village_4`,`q4_2_input_5`,`q4_2_date_5`,`q4_2_male_number_5`,`q4_2_female_number_5`,`q4_2_village_5`,`q4_3_reason`,`q4_3_any_other_reason`,`locally`) VALUES (nullif(?, 0),?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)";
+        return "INSERT OR ABORT INTO `agric` (`id`,`fy`,`date`,`village`,`parish`,`sub_county`,`name`,`tel`,`num`,`q1o`,`q1reason`,`q2ext`,`q2extreceived`,`q2dateextReceived`,`q2extdatewithdrawn`,`q2devexp`,`q2devrecieved`,`q2devdaterecieved`,`q2devdatewithdrawn`,`q2_1`,`q2_2`,`q2_3`,`q2_4`,`q2_5`,`q3_1`,`q3_2_num`,`q3_3_mention`,`q3_4_male`,`q3_4_female`,`q3_5_reason`,`q4_1_inputs`,`q4_2_input_1`,`q4_2_date_1`,`q4_2_male_number_1`,`q4_2_female_number_1`,`q4_2_village_1`,`q4_2_input_2`,`q4_2_date_2`,`q4_2_male_number_2`,`q4_2_female_number_2`,`q4_2_village_2`,`q4_2_input_3`,`q4_2_date_3`,`q4_2_male_number_3`,`q4_2_female_number_3`,`q4_2_village_3`,`q4_2_input_4`,`q4_2_date_4`,`q4_2_male_number_4`,`q4_2_female_number_4`,`q4_2_village_4`,`q4_2_input_5`,`q4_2_date_5`,`q4_2_male_number_5`,`q4_2_female_number_5`,`q4_2_village_5`,`q4_3_reason`,`q4_3_any_other_reason`,`locally`,`quarter`) VALUES (nullif(?, 0),?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)";
       }
 
       @Override
@@ -324,6 +324,11 @@ public final class AgricultureDao_Impl implements AgricultureDao {
         final int _tmp;
         _tmp = value.isStoredLocally() ? 1 : 0;
         stmt.bindLong(59, _tmp);
+        if (value.getQuarter() == null) {
+          stmt.bindNull(60);
+        } else {
+          stmt.bindString(60, value.getQuarter());
+        }
       }
     };
     this.__deletionAdapterOfAgricultureQuestion = new EntityDeletionOrUpdateAdapter<AgricultureQuestion>(__db) {
@@ -431,6 +436,7 @@ public final class AgricultureDao_Impl implements AgricultureDao {
           final int _cursorIndexOfAnswerQuestion43Reason = CursorUtil.getColumnIndexOrThrow(_cursor, "q4_3_reason");
           final int _cursorIndexOfAnswerQuestion43OtherReason = CursorUtil.getColumnIndexOrThrow(_cursor, "q4_3_any_other_reason");
           final int _cursorIndexOfStoredLocally = CursorUtil.getColumnIndexOrThrow(_cursor, "locally");
+          final int _cursorIndexOfQuarter = CursorUtil.getColumnIndexOrThrow(_cursor, "quarter");
           final List<AgricultureQuestion> _result = new ArrayList<AgricultureQuestion>(_cursor.getCount());
           while(_cursor.moveToNext()) {
             final AgricultureQuestion _item;
@@ -557,6 +563,9 @@ public final class AgricultureDao_Impl implements AgricultureDao {
             _tmp = _cursor.getInt(_cursorIndexOfStoredLocally);
             _tmpStoredLocally = _tmp != 0;
             _item.setStoredLocally(_tmpStoredLocally);
+            final String _tmpQuarter;
+            _tmpQuarter = _cursor.getString(_cursorIndexOfQuarter);
+            _item.setQuarter(_tmpQuarter);
             _result.add(_item);
           }
           return _result;
@@ -642,6 +651,7 @@ public final class AgricultureDao_Impl implements AgricultureDao {
       final int _cursorIndexOfAnswerQuestion43Reason = CursorUtil.getColumnIndexOrThrow(_cursor, "q4_3_reason");
       final int _cursorIndexOfAnswerQuestion43OtherReason = CursorUtil.getColumnIndexOrThrow(_cursor, "q4_3_any_other_reason");
       final int _cursorIndexOfStoredLocally = CursorUtil.getColumnIndexOrThrow(_cursor, "locally");
+      final int _cursorIndexOfQuarter = CursorUtil.getColumnIndexOrThrow(_cursor, "quarter");
       final List<AgricultureQuestion> _result = new ArrayList<AgricultureQuestion>(_cursor.getCount());
       while(_cursor.moveToNext()) {
         final AgricultureQuestion _item;
@@ -768,6 +778,9 @@ public final class AgricultureDao_Impl implements AgricultureDao {
         _tmp_1 = _cursor.getInt(_cursorIndexOfStoredLocally);
         _tmpStoredLocally = _tmp_1 != 0;
         _item.setStoredLocally(_tmpStoredLocally);
+        final String _tmpQuarter;
+        _tmpQuarter = _cursor.getString(_cursorIndexOfQuarter);
+        _item.setQuarter(_tmpQuarter);
         _result.add(_item);
       }
       return _result;
@@ -845,6 +858,7 @@ public final class AgricultureDao_Impl implements AgricultureDao {
       final int _cursorIndexOfAnswerQuestion43Reason = CursorUtil.getColumnIndexOrThrow(_cursor, "q4_3_reason");
       final int _cursorIndexOfAnswerQuestion43OtherReason = CursorUtil.getColumnIndexOrThrow(_cursor, "q4_3_any_other_reason");
       final int _cursorIndexOfStoredLocally = CursorUtil.getColumnIndexOrThrow(_cursor, "locally");
+      final int _cursorIndexOfQuarter = CursorUtil.getColumnIndexOrThrow(_cursor, "quarter");
       final AgricultureQuestion _result;
       if(_cursor.moveToFirst()) {
         final String _tmpFinancialYear;
@@ -970,6 +984,9 @@ public final class AgricultureDao_Impl implements AgricultureDao {
         _tmp = _cursor.getInt(_cursorIndexOfStoredLocally);
         _tmpStoredLocally = _tmp != 0;
         _result.setStoredLocally(_tmpStoredLocally);
+        final String _tmpQuarter;
+        _tmpQuarter = _cursor.getString(_cursorIndexOfQuarter);
+        _result.setQuarter(_tmpQuarter);
       } else {
         _result = null;
       }

@@ -1622,6 +1622,8 @@ id district_4
 id district_5
 id district_6
 id district_7
+id district_name
+id district_recycler_view
 id district_sector_spinner
 id district_text_edit
 id division_text_edit
@@ -1710,6 +1712,7 @@ id fill_vertical
 id filled
 id filter_chip
 id financial_sector_spinner
+id financial_text_edit
 id financial_year_1
 id financial_year_2
 id financial_year_3
@@ -2260,6 +2263,8 @@ id standard
 id start
 id status_bar_latest_event_content
 id stretch
+id sub_county_name
+id sub_county_recycler_view
 id subcounty_1
 id subcounty_2
 id subcounty_3
@@ -2453,6 +2458,7 @@ layout activity_community_wish
 layout activity_community_wishes
 layout activity_date_picker
 layout activity_district_picker
+layout activity_district_picker2
 layout activity_education
 layout activity_health
 layout activity_help
@@ -2462,6 +2468,7 @@ layout activity_main
 layout activity_poll
 layout activity_social_development
 layout activity_social_development_list
+layout activity_sub_county_picker
 layout activity_water_environment
 layout app_bar_main
 layout content_main
@@ -2482,6 +2489,8 @@ layout design_navigation_menu
 layout design_navigation_menu_item
 layout design_text_input_end_icon
 layout design_text_input_start_icon
+layout item_district
+layout item_sub_county
 layout mtrl_alert_dialog
 layout mtrl_alert_dialog_actions
 layout mtrl_alert_dialog_title
@@ -2870,6 +2879,7 @@ string pmtct
 string production_label
 string pupil_enrollment
 string pwd
+string quarter_year_label
 string quartly
 string question_1_reason_label
 string question_1_reason_text_edit
