@@ -32,48 +32,6 @@ public class DistrictPickerActivity extends AppCompatActivity {
         recyclerView.setAdapter(districtAdapter);
     }
 
-    public static  class DistrictAdapter extends RecyclerView.Adapter<DistrictAdapter.DistrictViewHolder> {
-        List<District> districts;
-        Context context;
-
-        public DistrictAdapter(Context context, List<District> districts) {
-            this.districts = districts;
-            this.context = context;
-        }
-
-        @NonNull
-        @Override
-        public DistrictViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-            View view = LayoutInflater.from(context).inflate(R.layout.item_district, parent, false);
-            return new DistrictViewHolder(view);
-        }
-
-        @Override
-        public void onBindViewHolder(@NonNull DistrictViewHolder holder, int position) {
-            if (districts != null ) {
-                holder.bindView(districts.get(position));
-            }
-        }
-
-        @Override
-        public int getItemCount() {
-            return districts.size();
-        }
-
-        static class DistrictViewHolder extends RecyclerView.ViewHolder {
-            TextView textView;
-
-            public DistrictViewHolder(@NonNull View itemView) {
-                super(itemView);
-                textView = itemView.findViewById(R.id.district_name);
-            }
-
-            public void bindView(District district) {
-                textView.setText(district.getName());
-            }
-        }
-    }
-
     private List<District> getDistricts() {
         try {
             return YGBARepository.getInstance(YGBDatabase.getInstance(this)).getDistrictList();
