@@ -24,14 +24,10 @@
         android:supportsRtl="true"
         android:testOnly="true"
         android:theme="@style/AppTheme" >
-        <activity
-            android:name="org.ygba.youthgobudget.dialogs.SubCountyPickerActivity"
-            android:label="Pick Sub County"
-            android:theme="@android:style/Theme.DeviceDefault.Light.Dialog" />
+        <activity android:name="org.ygba.youthgobudget.dialogs.SubCountyPickerActivity" />
         <activity
             android:name="org.ygba.youthgobudget.dialogs.DistrictPickerActivity"
-            android:label="Pick District"
-            android:theme="@android:style/Theme.DeviceDefault.Light.Dialog" />
+            android:label="Pick District" />
 
         <uses-library
             android:name="org.apache.http.legacy"

@@ -394,7 +394,7 @@ public class AgricultureActivity extends AppCompatActivity implements  AdapterVi
                     districtText.setText(data.getStringExtra(DistrictPickerActivity.DISTRICT_NAME));
                     districtId = data.getIntExtra(DistrictPickerActivity.DISTRICT_ID, 0);
                 } else if (requestCode == SUB_COUNTY_NAME_REQUEST_CODE) {
-                    divisionEditText.setText(SubCountyPickerActivity.SUB_COUNTY_NAME);
+                    divisionEditText.setText(data.getStringExtra(SubCountyPickerActivity.SUB_COUNTY_NAME));
                 }
             }
         }

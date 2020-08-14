@@ -2457,6 +2457,7 @@ layout activity_budget_information
 layout activity_community_wish
 layout activity_community_wishes
 layout activity_date_picker
+layout activity_district
 layout activity_district_picker
 layout activity_district_picker2
 layout activity_education

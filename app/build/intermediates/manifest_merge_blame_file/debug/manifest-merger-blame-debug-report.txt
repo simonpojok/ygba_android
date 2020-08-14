@@ -27,7 +27,7 @@
 15-->[androidx.work:work-runtime:2.3.4] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/a75852264f39bf8524c1928f8e3de566/work-runtime-2.3.4/AndroidManifest.xml:28:22-74
 16
 17    <application
-17-->/home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/AndroidManifest.xml:7:5-81:19
+17-->/home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/AndroidManifest.xml:7:5-77:19
 18        android:allowBackup="true"
 18-->/home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/AndroidManifest.xml:8:9-35
 19        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
@@ -44,333 +44,326 @@
 25        android:testOnly="true"
 26        android:theme="@style/AppTheme" >
 26-->/home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/AndroidManifest.xml:13:9-40
-27        <activity
-27-->/home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/AndroidManifest.xml:14:9-17:79
-28            android:name="org.ygba.youthgobudget.dialogs.SubCountyPickerActivity"
-28-->/home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/AndroidManifest.xml:15:13-60
-29            android:label="Pick Sub County"
-29-->/home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/AndroidManifest.xml:16:13-44
-30            android:theme="@android:style/Theme.DeviceDefault.Light.Dialog" />
-30-->/home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/AndroidManifest.xml:17:13-76
-31        <activity
-31-->/home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/AndroidManifest.xml:18:9-21:79
-32            android:name="org.ygba.youthgobudget.dialogs.DistrictPickerActivity"
-32-->/home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/AndroidManifest.xml:19:13-59
-33            android:label="Pick District"
-33-->/home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/AndroidManifest.xml:20:13-42
-34            android:theme="@android:style/Theme.DeviceDefault.Light.Dialog" />
-34-->/home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/AndroidManifest.xml:21:13-76
+27        <activity android:name="org.ygba.youthgobudget.dialogs.SubCountyPickerActivity" />
+27-->/home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/AndroidManifest.xml:14:9-69
+27-->/home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/AndroidManifest.xml:14:19-66
+28        <activity
+28-->/home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/AndroidManifest.xml:15:9-17:45
+29            android:name="org.ygba.youthgobudget.dialogs.DistrictPickerActivity"
+29-->/home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/AndroidManifest.xml:16:13-59
+30            android:label="Pick District" />
+30-->/home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/AndroidManifest.xml:17:13-42
+31
+32        <uses-library
+32-->/home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/AndroidManifest.xml:19:9-21:40
+33            android:name="org.apache.http.legacy"
+33-->/home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/AndroidManifest.xml:20:13-50
+34            android:required="false" />
+34-->/home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/AndroidManifest.xml:21:13-37
 35
-36        <uses-library
-36-->/home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/AndroidManifest.xml:23:9-25:40
-37            android:name="org.apache.http.legacy"
-37-->/home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/AndroidManifest.xml:24:13-50
-38            android:required="false" />
-38-->/home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/AndroidManifest.xml:25:13-37
-39
-40        <activity android:name="org.ygba.youthgobudget.community_wishes.CommunityWishesActivity" />
-40-->/home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/AndroidManifest.xml:27:9-78
-40-->/home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/AndroidManifest.xml:27:19-75
-41        <activity
-41-->/home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/AndroidManifest.xml:28:9-30:58
-42            android:name="org.ygba.youthgobudget.allocation.AllocationActivity"
-42-->/home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/AndroidManifest.xml:29:13-58
-43            android:parentActivityName="org.ygba.youthgobudget.MainActivity" />
-43-->/home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/AndroidManifest.xml:30:13-55
-44        <activity
-44-->/home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/AndroidManifest.xml:31:9-33:58
-45            android:name="org.ygba.youthgobudget.history.HistoryActivity"
-45-->/home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/AndroidManifest.xml:32:13-52
-46            android:parentActivityName="org.ygba.youthgobudget.MainActivity" />
-46-->/home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/AndroidManifest.xml:33:13-55
-47        <activity
-47-->/home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/AndroidManifest.xml:34:9-36:58
-48            android:name="org.ygba.youthgobudget.help.HelpActivity"
-48-->/home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/AndroidManifest.xml:35:13-46
-49            android:parentActivityName="org.ygba.youthgobudget.MainActivity" />
-49-->/home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/AndroidManifest.xml:36:13-55
-50        <activity
-50-->/home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/AndroidManifest.xml:37:9-39:58
-51            android:name="org.ygba.youthgobudget.polls.PollActivity"
-51-->/home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/AndroidManifest.xml:38:13-47
-52            android:parentActivityName="org.ygba.youthgobudget.MainActivity" />
-52-->/home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/AndroidManifest.xml:39:13-55
-53        <activity
-53-->/home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/AndroidManifest.xml:40:9-42:58
-54            android:name="org.ygba.youthgobudget.budget_cycle.BudgetCycleActivity"
-54-->/home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/AndroidManifest.xml:41:13-61
-55            android:parentActivityName="org.ygba.youthgobudget.MainActivity" />
-55-->/home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/AndroidManifest.xml:42:13-55
-56        <activity
-56-->/home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/AndroidManifest.xml:43:9-45:58
-57            android:name="org.ygba.youthgobudget.local_government.LocalGovernmentActivity"
-57-->/home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/AndroidManifest.xml:44:13-69
+36        <activity android:name="org.ygba.youthgobudget.community_wishes.CommunityWishesActivity" />
+36-->/home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/AndroidManifest.xml:23:9-78
+36-->/home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/AndroidManifest.xml:23:19-75
+37        <activity
+37-->/home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/AndroidManifest.xml:24:9-26:58
+38            android:name="org.ygba.youthgobudget.allocation.AllocationActivity"
+38-->/home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/AndroidManifest.xml:25:13-58
+39            android:parentActivityName="org.ygba.youthgobudget.MainActivity" />
+39-->/home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/AndroidManifest.xml:26:13-55
+40        <activity
+40-->/home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/AndroidManifest.xml:27:9-29:58
+41            android:name="org.ygba.youthgobudget.history.HistoryActivity"
+41-->/home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/AndroidManifest.xml:28:13-52
+42            android:parentActivityName="org.ygba.youthgobudget.MainActivity" />
+42-->/home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/AndroidManifest.xml:29:13-55
+43        <activity
+43-->/home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/AndroidManifest.xml:30:9-32:58
+44            android:name="org.ygba.youthgobudget.help.HelpActivity"
+44-->/home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/AndroidManifest.xml:31:13-46
+45            android:parentActivityName="org.ygba.youthgobudget.MainActivity" />
+45-->/home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/AndroidManifest.xml:32:13-55
+46        <activity
+46-->/home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/AndroidManifest.xml:33:9-35:58
+47            android:name="org.ygba.youthgobudget.polls.PollActivity"
+47-->/home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/AndroidManifest.xml:34:13-47
+48            android:parentActivityName="org.ygba.youthgobudget.MainActivity" />
+48-->/home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/AndroidManifest.xml:35:13-55
+49        <activity
+49-->/home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/AndroidManifest.xml:36:9-38:58
+50            android:name="org.ygba.youthgobudget.budget_cycle.BudgetCycleActivity"
+50-->/home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/AndroidManifest.xml:37:13-61
+51            android:parentActivityName="org.ygba.youthgobudget.MainActivity" />
+51-->/home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/AndroidManifest.xml:38:13-55
+52        <activity
+52-->/home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/AndroidManifest.xml:39:9-41:58
+53            android:name="org.ygba.youthgobudget.local_government.LocalGovernmentActivity"
+53-->/home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/AndroidManifest.xml:40:13-69
+54            android:parentActivityName="org.ygba.youthgobudget.MainActivity" />
+54-->/home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/AndroidManifest.xml:41:13-55
+55        <activity
+55-->/home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/AndroidManifest.xml:42:9-45:58
+56            android:name="org.ygba.youthgobudget.budget_information.BudgetInformationActivity"
+56-->/home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/AndroidManifest.xml:43:13-73
+57            android:label="Budget Information"
+57-->/home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/AndroidManifest.xml:44:13-47
 58            android:parentActivityName="org.ygba.youthgobudget.MainActivity" />
 58-->/home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/AndroidManifest.xml:45:13-55
 59        <activity
-59-->/home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/AndroidManifest.xml:46:9-49:58
-60            android:name="org.ygba.youthgobudget.budget_information.BudgetInformationActivity"
-60-->/home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/AndroidManifest.xml:47:13-73
-61            android:label="Budget Information"
-61-->/home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/AndroidManifest.xml:48:13-47
-62            android:parentActivityName="org.ygba.youthgobudget.MainActivity" />
-62-->/home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/AndroidManifest.xml:49:13-55
+59-->/home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/AndroidManifest.xml:46:9-48:58
+60            android:name="org.ygba.youthgobudget.water_and_environment.WaterEnvironmentActivity"
+60-->/home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/AndroidManifest.xml:47:13-75
+61            android:parentActivityName="org.ygba.youthgobudget.MainActivity" />
+61-->/home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/AndroidManifest.xml:48:13-55
+62        <activity android:name="org.ygba.youthgobudget.social_development.SocialDevelopmentListActivity" />
+62-->/home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/AndroidManifest.xml:49:9-86
+62-->/home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/AndroidManifest.xml:49:19-83
 63        <activity
-63-->/home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/AndroidManifest.xml:50:9-52:58
-64            android:name="org.ygba.youthgobudget.water_and_environment.WaterEnvironmentActivity"
-64-->/home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/AndroidManifest.xml:51:13-75
-65            android:parentActivityName="org.ygba.youthgobudget.MainActivity" />
-65-->/home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/AndroidManifest.xml:52:13-55
-66        <activity android:name="org.ygba.youthgobudget.social_development.SocialDevelopmentListActivity" />
-66-->/home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/AndroidManifest.xml:53:9-86
-66-->/home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/AndroidManifest.xml:53:19-83
+63-->/home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/AndroidManifest.xml:50:9-53:79
+64            android:name="org.ygba.youthgobudget.dialogs.DatePickerActivity"
+64-->/home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/AndroidManifest.xml:51:13-55
+65            android:label="Pick Date"
+65-->/home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/AndroidManifest.xml:52:13-38
+66            android:theme="@android:style/Theme.DeviceDefault.Light.Dialog" />
+66-->/home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/AndroidManifest.xml:53:13-76
 67        <activity
-67-->/home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/AndroidManifest.xml:54:9-57:79
-68            android:name="org.ygba.youthgobudget.dialogs.DatePickerActivity"
-68-->/home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/AndroidManifest.xml:55:13-55
-69            android:label="Pick Date"
-69-->/home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/AndroidManifest.xml:56:13-38
-70            android:theme="@android:style/Theme.DeviceDefault.Light.Dialog" />
-70-->/home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/AndroidManifest.xml:57:13-76
-71        <activity
-71-->/home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/AndroidManifest.xml:58:9-60:58
-72            android:name="org.ygba.youthgobudget.social_development.SocialDevelopmentActivity"
-72-->/home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/AndroidManifest.xml:59:13-73
+67-->/home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/AndroidManifest.xml:54:9-56:58
+68            android:name="org.ygba.youthgobudget.social_development.SocialDevelopmentActivity"
+68-->/home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/AndroidManifest.xml:55:13-73
+69            android:parentActivityName="org.ygba.youthgobudget.MainActivity" />
+69-->/home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/AndroidManifest.xml:56:13-55
+70        <activity
+70-->/home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/AndroidManifest.xml:57:9-60:58
+71            android:name="org.ygba.youthgobudget.education.EducationActivity"
+71-->/home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/AndroidManifest.xml:58:13-56
+72            android:exported="true"
+72-->/home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/AndroidManifest.xml:59:13-36
 73            android:parentActivityName="org.ygba.youthgobudget.MainActivity" />
 73-->/home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/AndroidManifest.xml:60:13-55
 74        <activity
-74-->/home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/AndroidManifest.xml:61:9-64:58
-75            android:name="org.ygba.youthgobudget.education.EducationActivity"
-75-->/home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/AndroidManifest.xml:62:13-56
-76            android:exported="true"
-76-->/home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/AndroidManifest.xml:63:13-36
-77            android:parentActivityName="org.ygba.youthgobudget.MainActivity" />
-77-->/home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/AndroidManifest.xml:64:13-55
-78        <activity
-78-->/home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/AndroidManifest.xml:65:9-67:58
-79            android:name="org.ygba.youthgobudget.health.HealthActivity"
-79-->/home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/AndroidManifest.xml:66:13-50
-80            android:parentActivityName="org.ygba.youthgobudget.MainActivity" />
-80-->/home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/AndroidManifest.xml:67:13-55
-81        <activity
-81-->/home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/AndroidManifest.xml:68:9-70:58
-82            android:name="org.ygba.youthgobudget.agriculture.AgricultureActivity"
-82-->/home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/AndroidManifest.xml:69:13-60
-83            android:parentActivityName="org.ygba.youthgobudget.MainActivity" />
-83-->/home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/AndroidManifest.xml:70:13-55
-84        <activity
-84-->/home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/AndroidManifest.xml:71:9-80:20
-85            android:name="org.ygba.youthgobudget.MainActivity"
-85-->/home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/AndroidManifest.xml:72:13-41
-86            android:label="@string/app_name"
-86-->/home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/AndroidManifest.xml:73:13-45
-87            android:theme="@style/AppTheme.NoActionBar" >
-87-->/home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/AndroidManifest.xml:74:13-56
-88            <intent-filter>
-88-->/home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/AndroidManifest.xml:75:13-79:29
-89                <action android:name="android.intent.action.MAIN" />
-89-->/home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/AndroidManifest.xml:76:17-69
-89-->/home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/AndroidManifest.xml:76:25-66
+74-->/home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/AndroidManifest.xml:61:9-63:58
+75            android:name="org.ygba.youthgobudget.health.HealthActivity"
+75-->/home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/AndroidManifest.xml:62:13-50
+76            android:parentActivityName="org.ygba.youthgobudget.MainActivity" />
+76-->/home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/AndroidManifest.xml:63:13-55
+77        <activity
+77-->/home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/AndroidManifest.xml:64:9-66:58
+78            android:name="org.ygba.youthgobudget.agriculture.AgricultureActivity"
+78-->/home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/AndroidManifest.xml:65:13-60
+79            android:parentActivityName="org.ygba.youthgobudget.MainActivity" />
+79-->/home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/AndroidManifest.xml:66:13-55
+80        <activity
+80-->/home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/AndroidManifest.xml:67:9-76:20
+81            android:name="org.ygba.youthgobudget.MainActivity"
+81-->/home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/AndroidManifest.xml:68:13-41
+82            android:label="@string/app_name"
+82-->/home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/AndroidManifest.xml:69:13-45
+83            android:theme="@style/AppTheme.NoActionBar" >
+83-->/home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/AndroidManifest.xml:70:13-56
+84            <intent-filter>
+84-->/home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/AndroidManifest.xml:71:13-75:29
+85                <action android:name="android.intent.action.MAIN" />
+85-->/home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/AndroidManifest.xml:72:17-69
+85-->/home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/AndroidManifest.xml:72:25-66
+86
+87                <category android:name="android.intent.category.LAUNCHER" />
+87-->/home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/AndroidManifest.xml:74:17-77
+87-->/home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/AndroidManifest.xml:74:27-74
+88            </intent-filter>
+89        </activity>
 90
-91                <category android:name="android.intent.category.LAUNCHER" />
-91-->/home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/AndroidManifest.xml:78:17-77
-91-->/home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/AndroidManifest.xml:78:27-74
-92            </intent-filter>
-93        </activity>
-94
-95        <provider
-95-->[androidx.work:work-runtime:2.3.4] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/a75852264f39bf8524c1928f8e3de566/work-runtime-2.3.4/AndroidManifest.xml:31:9-37:35
-96            android:name="androidx.work.impl.WorkManagerInitializer"
-96-->[androidx.work:work-runtime:2.3.4] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/a75852264f39bf8524c1928f8e3de566/work-runtime-2.3.4/AndroidManifest.xml:32:13-69
-97            android:authorities="org.ygba.youthgobudget.workmanager-init"
-97-->[androidx.work:work-runtime:2.3.4] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/a75852264f39bf8524c1928f8e3de566/work-runtime-2.3.4/AndroidManifest.xml:33:13-68
-98            android:directBootAware="false"
-98-->[androidx.work:work-runtime:2.3.4] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/a75852264f39bf8524c1928f8e3de566/work-runtime-2.3.4/AndroidManifest.xml:34:13-44
-99            android:exported="false"
-99-->[androidx.work:work-runtime:2.3.4] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/a75852264f39bf8524c1928f8e3de566/work-runtime-2.3.4/AndroidManifest.xml:35:13-37
-100            android:multiprocess="true" />
-100-->[androidx.work:work-runtime:2.3.4] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/a75852264f39bf8524c1928f8e3de566/work-runtime-2.3.4/AndroidManifest.xml:36:13-40
-101
-102        <service
-102-->[androidx.work:work-runtime:2.3.4] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/a75852264f39bf8524c1928f8e3de566/work-runtime-2.3.4/AndroidManifest.xml:39:9-44:35
-103            android:name="androidx.work.impl.background.systemalarm.SystemAlarmService"
-103-->[androidx.work:work-runtime:2.3.4] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/a75852264f39bf8524c1928f8e3de566/work-runtime-2.3.4/AndroidManifest.xml:40:13-88
-104            android:directBootAware="false"
-104-->[androidx.work:work-runtime:2.3.4] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/a75852264f39bf8524c1928f8e3de566/work-runtime-2.3.4/AndroidManifest.xml:41:13-44
-105            android:enabled="@bool/enable_system_alarm_service_default"
-105-->[androidx.work:work-runtime:2.3.4] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/a75852264f39bf8524c1928f8e3de566/work-runtime-2.3.4/AndroidManifest.xml:42:13-72
-106            android:exported="false" />
-106-->[androidx.work:work-runtime:2.3.4] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/a75852264f39bf8524c1928f8e3de566/work-runtime-2.3.4/AndroidManifest.xml:43:13-37
-107        <service
-107-->[androidx.work:work-runtime:2.3.4] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/a75852264f39bf8524c1928f8e3de566/work-runtime-2.3.4/AndroidManifest.xml:45:9-51:35
-108            android:name="androidx.work.impl.background.systemjob.SystemJobService"
-108-->[androidx.work:work-runtime:2.3.4] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/a75852264f39bf8524c1928f8e3de566/work-runtime-2.3.4/AndroidManifest.xml:46:13-84
-109            android:directBootAware="false"
-109-->[androidx.work:work-runtime:2.3.4] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/a75852264f39bf8524c1928f8e3de566/work-runtime-2.3.4/AndroidManifest.xml:47:13-44
-110            android:enabled="@bool/enable_system_job_service_default"
-110-->[androidx.work:work-runtime:2.3.4] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/a75852264f39bf8524c1928f8e3de566/work-runtime-2.3.4/AndroidManifest.xml:48:13-70
-111            android:exported="true"
-111-->[androidx.work:work-runtime:2.3.4] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/a75852264f39bf8524c1928f8e3de566/work-runtime-2.3.4/AndroidManifest.xml:49:13-36
-112            android:permission="android.permission.BIND_JOB_SERVICE" />
-112-->[androidx.work:work-runtime:2.3.4] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/a75852264f39bf8524c1928f8e3de566/work-runtime-2.3.4/AndroidManifest.xml:50:13-69
-113        <service
-113-->[androidx.work:work-runtime:2.3.4] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/a75852264f39bf8524c1928f8e3de566/work-runtime-2.3.4/AndroidManifest.xml:52:9-57:35
-114            android:name="androidx.work.impl.foreground.SystemForegroundService"
-114-->[androidx.work:work-runtime:2.3.4] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/a75852264f39bf8524c1928f8e3de566/work-runtime-2.3.4/AndroidManifest.xml:53:13-81
-115            android:directBootAware="false"
-115-->[androidx.work:work-runtime:2.3.4] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/a75852264f39bf8524c1928f8e3de566/work-runtime-2.3.4/AndroidManifest.xml:54:13-44
-116            android:enabled="@bool/enable_system_foreground_service_default"
-116-->[androidx.work:work-runtime:2.3.4] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/a75852264f39bf8524c1928f8e3de566/work-runtime-2.3.4/AndroidManifest.xml:55:13-77
-117            android:exported="false" />
-117-->[androidx.work:work-runtime:2.3.4] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/a75852264f39bf8524c1928f8e3de566/work-runtime-2.3.4/AndroidManifest.xml:56:13-37
-118
-119        <receiver
-119-->[androidx.work:work-runtime:2.3.4] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/a75852264f39bf8524c1928f8e3de566/work-runtime-2.3.4/AndroidManifest.xml:59:9-64:35
-120            android:name="androidx.work.impl.utils.ForceStopRunnable$BroadcastReceiver"
-120-->[androidx.work:work-runtime:2.3.4] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/a75852264f39bf8524c1928f8e3de566/work-runtime-2.3.4/AndroidManifest.xml:60:13-88
-121            android:directBootAware="false"
-121-->[androidx.work:work-runtime:2.3.4] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/a75852264f39bf8524c1928f8e3de566/work-runtime-2.3.4/AndroidManifest.xml:61:13-44
-122            android:enabled="true"
-122-->[androidx.work:work-runtime:2.3.4] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/a75852264f39bf8524c1928f8e3de566/work-runtime-2.3.4/AndroidManifest.xml:62:13-35
-123            android:exported="false" />
-123-->[androidx.work:work-runtime:2.3.4] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/a75852264f39bf8524c1928f8e3de566/work-runtime-2.3.4/AndroidManifest.xml:63:13-37
-124        <receiver
-124-->[androidx.work:work-runtime:2.3.4] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/a75852264f39bf8524c1928f8e3de566/work-runtime-2.3.4/AndroidManifest.xml:65:9-75:20
-125            android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy"
-125-->[androidx.work:work-runtime:2.3.4] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/a75852264f39bf8524c1928f8e3de566/work-runtime-2.3.4/AndroidManifest.xml:66:13-106
-126            android:directBootAware="false"
-126-->[androidx.work:work-runtime:2.3.4] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/a75852264f39bf8524c1928f8e3de566/work-runtime-2.3.4/AndroidManifest.xml:67:13-44
-127            android:enabled="false"
-127-->[androidx.work:work-runtime:2.3.4] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/a75852264f39bf8524c1928f8e3de566/work-runtime-2.3.4/AndroidManifest.xml:68:13-36
-128            android:exported="false" >
-128-->[androidx.work:work-runtime:2.3.4] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/a75852264f39bf8524c1928f8e3de566/work-runtime-2.3.4/AndroidManifest.xml:69:13-37
-129            <intent-filter>
-129-->[androidx.work:work-runtime:2.3.4] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/a75852264f39bf8524c1928f8e3de566/work-runtime-2.3.4/AndroidManifest.xml:71:13-74:29
-130                <action android:name="android.intent.action.ACTION_POWER_CONNECTED" />
-130-->[androidx.work:work-runtime:2.3.4] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/a75852264f39bf8524c1928f8e3de566/work-runtime-2.3.4/AndroidManifest.xml:72:17-87
-130-->[androidx.work:work-runtime:2.3.4] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/a75852264f39bf8524c1928f8e3de566/work-runtime-2.3.4/AndroidManifest.xml:72:25-84
-131                <action android:name="android.intent.action.ACTION_POWER_DISCONNECTED" />
-131-->[androidx.work:work-runtime:2.3.4] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/a75852264f39bf8524c1928f8e3de566/work-runtime-2.3.4/AndroidManifest.xml:73:17-90
-131-->[androidx.work:work-runtime:2.3.4] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/a75852264f39bf8524c1928f8e3de566/work-runtime-2.3.4/AndroidManifest.xml:73:25-87
-132            </intent-filter>
-133        </receiver>
-134        <receiver
-134-->[androidx.work:work-runtime:2.3.4] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/a75852264f39bf8524c1928f8e3de566/work-runtime-2.3.4/AndroidManifest.xml:76:9-86:20
-135            android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy"
-135-->[androidx.work:work-runtime:2.3.4] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/a75852264f39bf8524c1928f8e3de566/work-runtime-2.3.4/AndroidManifest.xml:77:13-104
-136            android:directBootAware="false"
-136-->[androidx.work:work-runtime:2.3.4] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/a75852264f39bf8524c1928f8e3de566/work-runtime-2.3.4/AndroidManifest.xml:78:13-44
-137            android:enabled="false"
-137-->[androidx.work:work-runtime:2.3.4] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/a75852264f39bf8524c1928f8e3de566/work-runtime-2.3.4/AndroidManifest.xml:79:13-36
-138            android:exported="false" >
-138-->[androidx.work:work-runtime:2.3.4] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/a75852264f39bf8524c1928f8e3de566/work-runtime-2.3.4/AndroidManifest.xml:80:13-37
-139            <intent-filter>
-139-->[androidx.work:work-runtime:2.3.4] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/a75852264f39bf8524c1928f8e3de566/work-runtime-2.3.4/AndroidManifest.xml:82:13-85:29
-140                <action android:name="android.intent.action.BATTERY_OKAY" />
-140-->[androidx.work:work-runtime:2.3.4] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/a75852264f39bf8524c1928f8e3de566/work-runtime-2.3.4/AndroidManifest.xml:83:17-77
-140-->[androidx.work:work-runtime:2.3.4] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/a75852264f39bf8524c1928f8e3de566/work-runtime-2.3.4/AndroidManifest.xml:83:25-74
-141                <action android:name="android.intent.action.BATTERY_LOW" />
-141-->[androidx.work:work-runtime:2.3.4] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/a75852264f39bf8524c1928f8e3de566/work-runtime-2.3.4/AndroidManifest.xml:84:17-76
-141-->[androidx.work:work-runtime:2.3.4] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/a75852264f39bf8524c1928f8e3de566/work-runtime-2.3.4/AndroidManifest.xml:84:25-73
-142            </intent-filter>
-143        </receiver>
-144        <receiver
-144-->[androidx.work:work-runtime:2.3.4] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/a75852264f39bf8524c1928f8e3de566/work-runtime-2.3.4/AndroidManifest.xml:87:9-97:20
-145            android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy"
-145-->[androidx.work:work-runtime:2.3.4] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/a75852264f39bf8524c1928f8e3de566/work-runtime-2.3.4/AndroidManifest.xml:88:13-104
-146            android:directBootAware="false"
-146-->[androidx.work:work-runtime:2.3.4] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/a75852264f39bf8524c1928f8e3de566/work-runtime-2.3.4/AndroidManifest.xml:89:13-44
-147            android:enabled="false"
-147-->[androidx.work:work-runtime:2.3.4] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/a75852264f39bf8524c1928f8e3de566/work-runtime-2.3.4/AndroidManifest.xml:90:13-36
-148            android:exported="false" >
-148-->[androidx.work:work-runtime:2.3.4] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/a75852264f39bf8524c1928f8e3de566/work-runtime-2.3.4/AndroidManifest.xml:91:13-37
-149            <intent-filter>
-149-->[androidx.work:work-runtime:2.3.4] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/a75852264f39bf8524c1928f8e3de566/work-runtime-2.3.4/AndroidManifest.xml:93:13-96:29
-150                <action android:name="android.intent.action.DEVICE_STORAGE_LOW" />
-150-->[androidx.work:work-runtime:2.3.4] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/a75852264f39bf8524c1928f8e3de566/work-runtime-2.3.4/AndroidManifest.xml:94:17-83
-150-->[androidx.work:work-runtime:2.3.4] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/a75852264f39bf8524c1928f8e3de566/work-runtime-2.3.4/AndroidManifest.xml:94:25-80
-151                <action android:name="android.intent.action.DEVICE_STORAGE_OK" />
-151-->[androidx.work:work-runtime:2.3.4] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/a75852264f39bf8524c1928f8e3de566/work-runtime-2.3.4/AndroidManifest.xml:95:17-82
-151-->[androidx.work:work-runtime:2.3.4] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/a75852264f39bf8524c1928f8e3de566/work-runtime-2.3.4/AndroidManifest.xml:95:25-79
-152            </intent-filter>
-153        </receiver>
-154        <receiver
-154-->[androidx.work:work-runtime:2.3.4] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/a75852264f39bf8524c1928f8e3de566/work-runtime-2.3.4/AndroidManifest.xml:98:9-107:20
-155            android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy"
-155-->[androidx.work:work-runtime:2.3.4] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/a75852264f39bf8524c1928f8e3de566/work-runtime-2.3.4/AndroidManifest.xml:99:13-103
-156            android:directBootAware="false"
-156-->[androidx.work:work-runtime:2.3.4] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/a75852264f39bf8524c1928f8e3de566/work-runtime-2.3.4/AndroidManifest.xml:100:13-44
-157            android:enabled="false"
-157-->[androidx.work:work-runtime:2.3.4] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/a75852264f39bf8524c1928f8e3de566/work-runtime-2.3.4/AndroidManifest.xml:101:13-36
-158            android:exported="false" >
-158-->[androidx.work:work-runtime:2.3.4] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/a75852264f39bf8524c1928f8e3de566/work-runtime-2.3.4/AndroidManifest.xml:102:13-37
-159            <intent-filter>
-159-->[androidx.work:work-runtime:2.3.4] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/a75852264f39bf8524c1928f8e3de566/work-runtime-2.3.4/AndroidManifest.xml:104:13-106:29
-160                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
-160-->[androidx.work:work-runtime:2.3.4] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/a75852264f39bf8524c1928f8e3de566/work-runtime-2.3.4/AndroidManifest.xml:105:17-79
-160-->[androidx.work:work-runtime:2.3.4] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/a75852264f39bf8524c1928f8e3de566/work-runtime-2.3.4/AndroidManifest.xml:105:25-76
-161            </intent-filter>
-162        </receiver>
-163        <receiver
-163-->[androidx.work:work-runtime:2.3.4] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/a75852264f39bf8524c1928f8e3de566/work-runtime-2.3.4/AndroidManifest.xml:108:9-119:20
-164            android:name="androidx.work.impl.background.systemalarm.RescheduleReceiver"
-164-->[androidx.work:work-runtime:2.3.4] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/a75852264f39bf8524c1928f8e3de566/work-runtime-2.3.4/AndroidManifest.xml:109:13-88
-165            android:directBootAware="false"
-165-->[androidx.work:work-runtime:2.3.4] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/a75852264f39bf8524c1928f8e3de566/work-runtime-2.3.4/AndroidManifest.xml:110:13-44
-166            android:enabled="false"
-166-->[androidx.work:work-runtime:2.3.4] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/a75852264f39bf8524c1928f8e3de566/work-runtime-2.3.4/AndroidManifest.xml:111:13-36
-167            android:exported="false" >
-167-->[androidx.work:work-runtime:2.3.4] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/a75852264f39bf8524c1928f8e3de566/work-runtime-2.3.4/AndroidManifest.xml:112:13-37
-168            <intent-filter>
-168-->[androidx.work:work-runtime:2.3.4] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/a75852264f39bf8524c1928f8e3de566/work-runtime-2.3.4/AndroidManifest.xml:114:13-118:29
-169                <action android:name="android.intent.action.BOOT_COMPLETED" />
-169-->[androidx.work:work-runtime:2.3.4] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/a75852264f39bf8524c1928f8e3de566/work-runtime-2.3.4/AndroidManifest.xml:115:17-79
-169-->[androidx.work:work-runtime:2.3.4] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/a75852264f39bf8524c1928f8e3de566/work-runtime-2.3.4/AndroidManifest.xml:115:25-76
-170                <action android:name="android.intent.action.TIME_SET" />
-170-->[androidx.work:work-runtime:2.3.4] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/a75852264f39bf8524c1928f8e3de566/work-runtime-2.3.4/AndroidManifest.xml:116:17-73
-170-->[androidx.work:work-runtime:2.3.4] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/a75852264f39bf8524c1928f8e3de566/work-runtime-2.3.4/AndroidManifest.xml:116:25-70
-171                <action android:name="android.intent.action.TIMEZONE_CHANGED" />
-171-->[androidx.work:work-runtime:2.3.4] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/a75852264f39bf8524c1928f8e3de566/work-runtime-2.3.4/AndroidManifest.xml:117:17-81
-171-->[androidx.work:work-runtime:2.3.4] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/a75852264f39bf8524c1928f8e3de566/work-runtime-2.3.4/AndroidManifest.xml:117:25-78
-172            </intent-filter>
-173        </receiver>
-174        <receiver
-174-->[androidx.work:work-runtime:2.3.4] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/a75852264f39bf8524c1928f8e3de566/work-runtime-2.3.4/AndroidManifest.xml:120:9-129:20
-175            android:name="androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver"
-175-->[androidx.work:work-runtime:2.3.4] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/a75852264f39bf8524c1928f8e3de566/work-runtime-2.3.4/AndroidManifest.xml:121:13-99
-176            android:directBootAware="false"
-176-->[androidx.work:work-runtime:2.3.4] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/a75852264f39bf8524c1928f8e3de566/work-runtime-2.3.4/AndroidManifest.xml:122:13-44
-177            android:enabled="@bool/enable_system_alarm_service_default"
-177-->[androidx.work:work-runtime:2.3.4] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/a75852264f39bf8524c1928f8e3de566/work-runtime-2.3.4/AndroidManifest.xml:123:13-72
-178            android:exported="false" >
-178-->[androidx.work:work-runtime:2.3.4] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/a75852264f39bf8524c1928f8e3de566/work-runtime-2.3.4/AndroidManifest.xml:124:13-37
-179            <intent-filter>
-179-->[androidx.work:work-runtime:2.3.4] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/a75852264f39bf8524c1928f8e3de566/work-runtime-2.3.4/AndroidManifest.xml:126:13-128:29
-180                <action android:name="androidx.work.impl.background.systemalarm.UpdateProxies" />
-180-->[androidx.work:work-runtime:2.3.4] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/a75852264f39bf8524c1928f8e3de566/work-runtime-2.3.4/AndroidManifest.xml:127:17-98
-180-->[androidx.work:work-runtime:2.3.4] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/a75852264f39bf8524c1928f8e3de566/work-runtime-2.3.4/AndroidManifest.xml:127:25-95
-181            </intent-filter>
-182        </receiver>
-183
-184        <service
-184-->[androidx.room:room-runtime:2.2.5] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/2d748680cf13dd7f220a248fe33b243e/room-runtime-2.2.5/AndroidManifest.xml:25:9-28:40
-185            android:name="androidx.room.MultiInstanceInvalidationService"
-185-->[androidx.room:room-runtime:2.2.5] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/2d748680cf13dd7f220a248fe33b243e/room-runtime-2.2.5/AndroidManifest.xml:26:13-74
-186            android:directBootAware="true"
-186-->[androidx.room:room-runtime:2.2.5] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/2d748680cf13dd7f220a248fe33b243e/room-runtime-2.2.5/AndroidManifest.xml:27:13-43
-187            android:exported="false" />
-187-->[androidx.room:room-runtime:2.2.5] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/2d748680cf13dd7f220a248fe33b243e/room-runtime-2.2.5/AndroidManifest.xml:28:13-37
-188
-189        <provider
-189-->[androidx.lifecycle:lifecycle-process:2.2.0] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/2361ea377168cc8246990125988fc654/jetified-lifecycle-process-2.2.0/AndroidManifest.xml:25:9-29:43
-190            android:name="androidx.lifecycle.ProcessLifecycleOwnerInitializer"
-190-->[androidx.lifecycle:lifecycle-process:2.2.0] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/2361ea377168cc8246990125988fc654/jetified-lifecycle-process-2.2.0/AndroidManifest.xml:26:13-79
-191            android:authorities="org.ygba.youthgobudget.lifecycle-process"
-191-->[androidx.lifecycle:lifecycle-process:2.2.0] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/2361ea377168cc8246990125988fc654/jetified-lifecycle-process-2.2.0/AndroidManifest.xml:27:13-69
-192            android:exported="false"
-192-->[androidx.lifecycle:lifecycle-process:2.2.0] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/2361ea377168cc8246990125988fc654/jetified-lifecycle-process-2.2.0/AndroidManifest.xml:28:13-37
-193            android:multiprocess="true" />
-193-->[androidx.lifecycle:lifecycle-process:2.2.0] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/2361ea377168cc8246990125988fc654/jetified-lifecycle-process-2.2.0/AndroidManifest.xml:29:13-40
-194    </application>
-195
-196</manifest>
+91        <provider
+91-->[androidx.work:work-runtime:2.3.4] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/a75852264f39bf8524c1928f8e3de566/work-runtime-2.3.4/AndroidManifest.xml:31:9-37:35
+92            android:name="androidx.work.impl.WorkManagerInitializer"
+92-->[androidx.work:work-runtime:2.3.4] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/a75852264f39bf8524c1928f8e3de566/work-runtime-2.3.4/AndroidManifest.xml:32:13-69
+93            android:authorities="org.ygba.youthgobudget.workmanager-init"
+93-->[androidx.work:work-runtime:2.3.4] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/a75852264f39bf8524c1928f8e3de566/work-runtime-2.3.4/AndroidManifest.xml:33:13-68
+94            android:directBootAware="false"
+94-->[androidx.work:work-runtime:2.3.4] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/a75852264f39bf8524c1928f8e3de566/work-runtime-2.3.4/AndroidManifest.xml:34:13-44
+95            android:exported="false"
+95-->[androidx.work:work-runtime:2.3.4] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/a75852264f39bf8524c1928f8e3de566/work-runtime-2.3.4/AndroidManifest.xml:35:13-37
+96            android:multiprocess="true" />
+96-->[androidx.work:work-runtime:2.3.4] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/a75852264f39bf8524c1928f8e3de566/work-runtime-2.3.4/AndroidManifest.xml:36:13-40
+97
+98        <service
+98-->[androidx.work:work-runtime:2.3.4] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/a75852264f39bf8524c1928f8e3de566/work-runtime-2.3.4/AndroidManifest.xml:39:9-44:35
+99            android:name="androidx.work.impl.background.systemalarm.SystemAlarmService"
+99-->[androidx.work:work-runtime:2.3.4] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/a75852264f39bf8524c1928f8e3de566/work-runtime-2.3.4/AndroidManifest.xml:40:13-88
+100            android:directBootAware="false"
+100-->[androidx.work:work-runtime:2.3.4] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/a75852264f39bf8524c1928f8e3de566/work-runtime-2.3.4/AndroidManifest.xml:41:13-44
+101            android:enabled="@bool/enable_system_alarm_service_default"
+101-->[androidx.work:work-runtime:2.3.4] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/a75852264f39bf8524c1928f8e3de566/work-runtime-2.3.4/AndroidManifest.xml:42:13-72
+102            android:exported="false" />
+102-->[androidx.work:work-runtime:2.3.4] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/a75852264f39bf8524c1928f8e3de566/work-runtime-2.3.4/AndroidManifest.xml:43:13-37
+103        <service
+103-->[androidx.work:work-runtime:2.3.4] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/a75852264f39bf8524c1928f8e3de566/work-runtime-2.3.4/AndroidManifest.xml:45:9-51:35
+104            android:name="androidx.work.impl.background.systemjob.SystemJobService"
+104-->[androidx.work:work-runtime:2.3.4] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/a75852264f39bf8524c1928f8e3de566/work-runtime-2.3.4/AndroidManifest.xml:46:13-84
+105            android:directBootAware="false"
+105-->[androidx.work:work-runtime:2.3.4] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/a75852264f39bf8524c1928f8e3de566/work-runtime-2.3.4/AndroidManifest.xml:47:13-44
+106            android:enabled="@bool/enable_system_job_service_default"
+106-->[androidx.work:work-runtime:2.3.4] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/a75852264f39bf8524c1928f8e3de566/work-runtime-2.3.4/AndroidManifest.xml:48:13-70
+107            android:exported="true"
+107-->[androidx.work:work-runtime:2.3.4] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/a75852264f39bf8524c1928f8e3de566/work-runtime-2.3.4/AndroidManifest.xml:49:13-36
+108            android:permission="android.permission.BIND_JOB_SERVICE" />
+108-->[androidx.work:work-runtime:2.3.4] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/a75852264f39bf8524c1928f8e3de566/work-runtime-2.3.4/AndroidManifest.xml:50:13-69
+109        <service
+109-->[androidx.work:work-runtime:2.3.4] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/a75852264f39bf8524c1928f8e3de566/work-runtime-2.3.4/AndroidManifest.xml:52:9-57:35
+110            android:name="androidx.work.impl.foreground.SystemForegroundService"
+110-->[androidx.work:work-runtime:2.3.4] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/a75852264f39bf8524c1928f8e3de566/work-runtime-2.3.4/AndroidManifest.xml:53:13-81
+111            android:directBootAware="false"
+111-->[androidx.work:work-runtime:2.3.4] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/a75852264f39bf8524c1928f8e3de566/work-runtime-2.3.4/AndroidManifest.xml:54:13-44
+112            android:enabled="@bool/enable_system_foreground_service_default"
+112-->[androidx.work:work-runtime:2.3.4] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/a75852264f39bf8524c1928f8e3de566/work-runtime-2.3.4/AndroidManifest.xml:55:13-77
+113            android:exported="false" />
+113-->[androidx.work:work-runtime:2.3.4] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/a75852264f39bf8524c1928f8e3de566/work-runtime-2.3.4/AndroidManifest.xml:56:13-37
+114
+115        <receiver
+115-->[androidx.work:work-runtime:2.3.4] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/a75852264f39bf8524c1928f8e3de566/work-runtime-2.3.4/AndroidManifest.xml:59:9-64:35
+116            android:name="androidx.work.impl.utils.ForceStopRunnable$BroadcastReceiver"
+116-->[androidx.work:work-runtime:2.3.4] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/a75852264f39bf8524c1928f8e3de566/work-runtime-2.3.4/AndroidManifest.xml:60:13-88
+117            android:directBootAware="false"
+117-->[androidx.work:work-runtime:2.3.4] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/a75852264f39bf8524c1928f8e3de566/work-runtime-2.3.4/AndroidManifest.xml:61:13-44
+118            android:enabled="true"
+118-->[androidx.work:work-runtime:2.3.4] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/a75852264f39bf8524c1928f8e3de566/work-runtime-2.3.4/AndroidManifest.xml:62:13-35
+119            android:exported="false" />
+119-->[androidx.work:work-runtime:2.3.4] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/a75852264f39bf8524c1928f8e3de566/work-runtime-2.3.4/AndroidManifest.xml:63:13-37
+120        <receiver
+120-->[androidx.work:work-runtime:2.3.4] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/a75852264f39bf8524c1928f8e3de566/work-runtime-2.3.4/AndroidManifest.xml:65:9-75:20
+121            android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy"
+121-->[androidx.work:work-runtime:2.3.4] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/a75852264f39bf8524c1928f8e3de566/work-runtime-2.3.4/AndroidManifest.xml:66:13-106
+122            android:directBootAware="false"
+122-->[androidx.work:work-runtime:2.3.4] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/a75852264f39bf8524c1928f8e3de566/work-runtime-2.3.4/AndroidManifest.xml:67:13-44
+123            android:enabled="false"
+123-->[androidx.work:work-runtime:2.3.4] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/a75852264f39bf8524c1928f8e3de566/work-runtime-2.3.4/AndroidManifest.xml:68:13-36
+124            android:exported="false" >
+124-->[androidx.work:work-runtime:2.3.4] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/a75852264f39bf8524c1928f8e3de566/work-runtime-2.3.4/AndroidManifest.xml:69:13-37
+125            <intent-filter>
+125-->[androidx.work:work-runtime:2.3.4] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/a75852264f39bf8524c1928f8e3de566/work-runtime-2.3.4/AndroidManifest.xml:71:13-74:29
+126                <action android:name="android.intent.action.ACTION_POWER_CONNECTED" />
+126-->[androidx.work:work-runtime:2.3.4] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/a75852264f39bf8524c1928f8e3de566/work-runtime-2.3.4/AndroidManifest.xml:72:17-87
+126-->[androidx.work:work-runtime:2.3.4] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/a75852264f39bf8524c1928f8e3de566/work-runtime-2.3.4/AndroidManifest.xml:72:25-84
+127                <action android:name="android.intent.action.ACTION_POWER_DISCONNECTED" />
+127-->[androidx.work:work-runtime:2.3.4] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/a75852264f39bf8524c1928f8e3de566/work-runtime-2.3.4/AndroidManifest.xml:73:17-90
+127-->[androidx.work:work-runtime:2.3.4] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/a75852264f39bf8524c1928f8e3de566/work-runtime-2.3.4/AndroidManifest.xml:73:25-87
+128            </intent-filter>
+129        </receiver>
+130        <receiver
+130-->[androidx.work:work-runtime:2.3.4] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/a75852264f39bf8524c1928f8e3de566/work-runtime-2.3.4/AndroidManifest.xml:76:9-86:20
+131            android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy"
+131-->[androidx.work:work-runtime:2.3.4] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/a75852264f39bf8524c1928f8e3de566/work-runtime-2.3.4/AndroidManifest.xml:77:13-104
+132            android:directBootAware="false"
+132-->[androidx.work:work-runtime:2.3.4] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/a75852264f39bf8524c1928f8e3de566/work-runtime-2.3.4/AndroidManifest.xml:78:13-44
+133            android:enabled="false"
+133-->[androidx.work:work-runtime:2.3.4] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/a75852264f39bf8524c1928f8e3de566/work-runtime-2.3.4/AndroidManifest.xml:79:13-36
+134            android:exported="false" >
+134-->[androidx.work:work-runtime:2.3.4] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/a75852264f39bf8524c1928f8e3de566/work-runtime-2.3.4/AndroidManifest.xml:80:13-37
+135            <intent-filter>
+135-->[androidx.work:work-runtime:2.3.4] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/a75852264f39bf8524c1928f8e3de566/work-runtime-2.3.4/AndroidManifest.xml:82:13-85:29
+136                <action android:name="android.intent.action.BATTERY_OKAY" />
+136-->[androidx.work:work-runtime:2.3.4] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/a75852264f39bf8524c1928f8e3de566/work-runtime-2.3.4/AndroidManifest.xml:83:17-77
+136-->[androidx.work:work-runtime:2.3.4] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/a75852264f39bf8524c1928f8e3de566/work-runtime-2.3.4/AndroidManifest.xml:83:25-74
+137                <action android:name="android.intent.action.BATTERY_LOW" />
+137-->[androidx.work:work-runtime:2.3.4] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/a75852264f39bf8524c1928f8e3de566/work-runtime-2.3.4/AndroidManifest.xml:84:17-76
+137-->[androidx.work:work-runtime:2.3.4] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/a75852264f39bf8524c1928f8e3de566/work-runtime-2.3.4/AndroidManifest.xml:84:25-73
+138            </intent-filter>
+139        </receiver>
+140        <receiver
+140-->[androidx.work:work-runtime:2.3.4] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/a75852264f39bf8524c1928f8e3de566/work-runtime-2.3.4/AndroidManifest.xml:87:9-97:20
+141            android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy"
+141-->[androidx.work:work-runtime:2.3.4] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/a75852264f39bf8524c1928f8e3de566/work-runtime-2.3.4/AndroidManifest.xml:88:13-104
+142            android:directBootAware="false"
+142-->[androidx.work:work-runtime:2.3.4] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/a75852264f39bf8524c1928f8e3de566/work-runtime-2.3.4/AndroidManifest.xml:89:13-44
+143            android:enabled="false"
+143-->[androidx.work:work-runtime:2.3.4] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/a75852264f39bf8524c1928f8e3de566/work-runtime-2.3.4/AndroidManifest.xml:90:13-36
+144            android:exported="false" >
+144-->[androidx.work:work-runtime:2.3.4] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/a75852264f39bf8524c1928f8e3de566/work-runtime-2.3.4/AndroidManifest.xml:91:13-37
+145            <intent-filter>
+145-->[androidx.work:work-runtime:2.3.4] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/a75852264f39bf8524c1928f8e3de566/work-runtime-2.3.4/AndroidManifest.xml:93:13-96:29
+146                <action android:name="android.intent.action.DEVICE_STORAGE_LOW" />
+146-->[androidx.work:work-runtime:2.3.4] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/a75852264f39bf8524c1928f8e3de566/work-runtime-2.3.4/AndroidManifest.xml:94:17-83
+146-->[androidx.work:work-runtime:2.3.4] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/a75852264f39bf8524c1928f8e3de566/work-runtime-2.3.4/AndroidManifest.xml:94:25-80
+147                <action android:name="android.intent.action.DEVICE_STORAGE_OK" />
+147-->[androidx.work:work-runtime:2.3.4] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/a75852264f39bf8524c1928f8e3de566/work-runtime-2.3.4/AndroidManifest.xml:95:17-82
+147-->[androidx.work:work-runtime:2.3.4] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/a75852264f39bf8524c1928f8e3de566/work-runtime-2.3.4/AndroidManifest.xml:95:25-79
+148            </intent-filter>
+149        </receiver>
+150        <receiver
+150-->[androidx.work:work-runtime:2.3.4] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/a75852264f39bf8524c1928f8e3de566/work-runtime-2.3.4/AndroidManifest.xml:98:9-107:20
+151            android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy"
+151-->[androidx.work:work-runtime:2.3.4] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/a75852264f39bf8524c1928f8e3de566/work-runtime-2.3.4/AndroidManifest.xml:99:13-103
+152            android:directBootAware="false"
+152-->[androidx.work:work-runtime:2.3.4] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/a75852264f39bf8524c1928f8e3de566/work-runtime-2.3.4/AndroidManifest.xml:100:13-44
+153            android:enabled="false"
+153-->[androidx.work:work-runtime:2.3.4] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/a75852264f39bf8524c1928f8e3de566/work-runtime-2.3.4/AndroidManifest.xml:101:13-36
+154            android:exported="false" >
+154-->[androidx.work:work-runtime:2.3.4] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/a75852264f39bf8524c1928f8e3de566/work-runtime-2.3.4/AndroidManifest.xml:102:13-37
+155            <intent-filter>
+155-->[androidx.work:work-runtime:2.3.4] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/a75852264f39bf8524c1928f8e3de566/work-runtime-2.3.4/AndroidManifest.xml:104:13-106:29
+156                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+156-->[androidx.work:work-runtime:2.3.4] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/a75852264f39bf8524c1928f8e3de566/work-runtime-2.3.4/AndroidManifest.xml:105:17-79
+156-->[androidx.work:work-runtime:2.3.4] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/a75852264f39bf8524c1928f8e3de566/work-runtime-2.3.4/AndroidManifest.xml:105:25-76
+157            </intent-filter>
+158        </receiver>
+159        <receiver
+159-->[androidx.work:work-runtime:2.3.4] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/a75852264f39bf8524c1928f8e3de566/work-runtime-2.3.4/AndroidManifest.xml:108:9-119:20
+160            android:name="androidx.work.impl.background.systemalarm.RescheduleReceiver"
+160-->[androidx.work:work-runtime:2.3.4] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/a75852264f39bf8524c1928f8e3de566/work-runtime-2.3.4/AndroidManifest.xml:109:13-88
+161            android:directBootAware="false"
+161-->[androidx.work:work-runtime:2.3.4] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/a75852264f39bf8524c1928f8e3de566/work-runtime-2.3.4/AndroidManifest.xml:110:13-44
+162            android:enabled="false"
+162-->[androidx.work:work-runtime:2.3.4] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/a75852264f39bf8524c1928f8e3de566/work-runtime-2.3.4/AndroidManifest.xml:111:13-36
+163            android:exported="false" >
+163-->[androidx.work:work-runtime:2.3.4] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/a75852264f39bf8524c1928f8e3de566/work-runtime-2.3.4/AndroidManifest.xml:112:13-37
+164            <intent-filter>
+164-->[androidx.work:work-runtime:2.3.4] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/a75852264f39bf8524c1928f8e3de566/work-runtime-2.3.4/AndroidManifest.xml:114:13-118:29
+165                <action android:name="android.intent.action.BOOT_COMPLETED" />
+165-->[androidx.work:work-runtime:2.3.4] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/a75852264f39bf8524c1928f8e3de566/work-runtime-2.3.4/AndroidManifest.xml:115:17-79
+165-->[androidx.work:work-runtime:2.3.4] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/a75852264f39bf8524c1928f8e3de566/work-runtime-2.3.4/AndroidManifest.xml:115:25-76
+166                <action android:name="android.intent.action.TIME_SET" />
+166-->[androidx.work:work-runtime:2.3.4] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/a75852264f39bf8524c1928f8e3de566/work-runtime-2.3.4/AndroidManifest.xml:116:17-73
+166-->[androidx.work:work-runtime:2.3.4] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/a75852264f39bf8524c1928f8e3de566/work-runtime-2.3.4/AndroidManifest.xml:116:25-70
+167                <action android:name="android.intent.action.TIMEZONE_CHANGED" />
+167-->[androidx.work:work-runtime:2.3.4] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/a75852264f39bf8524c1928f8e3de566/work-runtime-2.3.4/AndroidManifest.xml:117:17-81
+167-->[androidx.work:work-runtime:2.3.4] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/a75852264f39bf8524c1928f8e3de566/work-runtime-2.3.4/AndroidManifest.xml:117:25-78
+168            </intent-filter>
+169        </receiver>
+170        <receiver
+170-->[androidx.work:work-runtime:2.3.4] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/a75852264f39bf8524c1928f8e3de566/work-runtime-2.3.4/AndroidManifest.xml:120:9-129:20
+171            android:name="androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver"
+171-->[androidx.work:work-runtime:2.3.4] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/a75852264f39bf8524c1928f8e3de566/work-runtime-2.3.4/AndroidManifest.xml:121:13-99
+172            android:directBootAware="false"
+172-->[androidx.work:work-runtime:2.3.4] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/a75852264f39bf8524c1928f8e3de566/work-runtime-2.3.4/AndroidManifest.xml:122:13-44
+173            android:enabled="@bool/enable_system_alarm_service_default"
+173-->[androidx.work:work-runtime:2.3.4] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/a75852264f39bf8524c1928f8e3de566/work-runtime-2.3.4/AndroidManifest.xml:123:13-72
+174            android:exported="false" >
+174-->[androidx.work:work-runtime:2.3.4] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/a75852264f39bf8524c1928f8e3de566/work-runtime-2.3.4/AndroidManifest.xml:124:13-37
+175            <intent-filter>
+175-->[androidx.work:work-runtime:2.3.4] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/a75852264f39bf8524c1928f8e3de566/work-runtime-2.3.4/AndroidManifest.xml:126:13-128:29
+176                <action android:name="androidx.work.impl.background.systemalarm.UpdateProxies" />
+176-->[androidx.work:work-runtime:2.3.4] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/a75852264f39bf8524c1928f8e3de566/work-runtime-2.3.4/AndroidManifest.xml:127:17-98
+176-->[androidx.work:work-runtime:2.3.4] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/a75852264f39bf8524c1928f8e3de566/work-runtime-2.3.4/AndroidManifest.xml:127:25-95
+177            </intent-filter>
+178        </receiver>
+179
+180        <service
+180-->[androidx.room:room-runtime:2.2.5] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/2d748680cf13dd7f220a248fe33b243e/room-runtime-2.2.5/AndroidManifest.xml:25:9-28:40
+181            android:name="androidx.room.MultiInstanceInvalidationService"
+181-->[androidx.room:room-runtime:2.2.5] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/2d748680cf13dd7f220a248fe33b243e/room-runtime-2.2.5/AndroidManifest.xml:26:13-74
+182            android:directBootAware="true"
+182-->[androidx.room:room-runtime:2.2.5] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/2d748680cf13dd7f220a248fe33b243e/room-runtime-2.2.5/AndroidManifest.xml:27:13-43
+183            android:exported="false" />
+183-->[androidx.room:room-runtime:2.2.5] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/2d748680cf13dd7f220a248fe33b243e/room-runtime-2.2.5/AndroidManifest.xml:28:13-37
+184
+185        <provider
+185-->[androidx.lifecycle:lifecycle-process:2.2.0] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/2361ea377168cc8246990125988fc654/jetified-lifecycle-process-2.2.0/AndroidManifest.xml:25:9-29:43
+186            android:name="androidx.lifecycle.ProcessLifecycleOwnerInitializer"
+186-->[androidx.lifecycle:lifecycle-process:2.2.0] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/2361ea377168cc8246990125988fc654/jetified-lifecycle-process-2.2.0/AndroidManifest.xml:26:13-79
+187            android:authorities="org.ygba.youthgobudget.lifecycle-process"
+187-->[androidx.lifecycle:lifecycle-process:2.2.0] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/2361ea377168cc8246990125988fc654/jetified-lifecycle-process-2.2.0/AndroidManifest.xml:27:13-69
+188            android:exported="false"
+188-->[androidx.lifecycle:lifecycle-process:2.2.0] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/2361ea377168cc8246990125988fc654/jetified-lifecycle-process-2.2.0/AndroidManifest.xml:28:13-37
+189            android:multiprocess="true" />
+189-->[androidx.lifecycle:lifecycle-process:2.2.0] /home/mckeyo/.gradle/caches/transforms-2/files-2.1/2361ea377168cc8246990125988fc654/jetified-lifecycle-process-2.2.0/AndroidManifest.xml:29:13-40
+190    </application>
+191
+192</manifest>

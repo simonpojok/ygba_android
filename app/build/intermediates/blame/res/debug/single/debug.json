@@ -252,6 +252,10 @@
         "source": "/home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/res/drawable/ic_baseline_account_circle_24.xml"
     },
     {
+        "merged": "/home/mckeyo/AndroidStudioProjects/ygba_android/app/build/intermediates/res/merged/debug/layout_activity_district.xml.flat",
+        "source": "/home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/res/layout/activity_district.xml"
+    },
+    {
         "merged": "/home/mckeyo/AndroidStudioProjects/ygba_android/app/build/intermediates/res/merged/debug/layout_activity_allocation.xml.flat",
         "source": "/home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/res/layout/activity_allocation.xml"
     },
