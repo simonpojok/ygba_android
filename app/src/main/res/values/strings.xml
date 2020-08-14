@@ -413,4 +413,5 @@
     <string name="text_question_3_2">3.2 State the period to which the budget infromation relates ? (e.g FY 2018/19 Quarter one )</string>
     <string name="text_question_4_introduction">4. P. 7 TERMLY PERFORMANCE</string>
     <string name="small_female">Female</string>
+    <string name="quarter_year_label">Quarter</string>
 </resources>
