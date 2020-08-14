@@ -164,6 +164,29 @@ public class EducationUploadWorker extends Worker {
                     body.put("Estimate_Distance", educationQuestion.getQ5FunctionalWaterPointReasonIfNo());
 
                     // QUESTION 6
+                    body.put("How_many_permanent_c_ks_are_at_the_school", educationQuestion.getQuestion61NumberPermanentClassRooms());
+                    body.put("How_many_desks_are_i_he_time_of_the_visit", educationQuestion.getQuestion62NumberOfDeskInSchool());
+                    body.put("What_is_the_pupil_desk_ratio", educationQuestion.getQuestion63PupilDeskRatio());
+
+                    // question 7
+
+                    body.put("Total_No_of_teachers_enrolled_Male", educationQuestion.getQuestion70NumberOfMaleTeacherEnrolled());
+                    body.put("Total_No_of_teachers_enrolled_Female", educationQuestion.getQuestion70NumberOfFemaleTeacherEnrolled());
+                    body.put("No_of_teachers_prese_time_of_visit_Male", educationQuestion.getQuestion70NumberOfTeachersPresentMale());
+                    body.put("No_of_teachers_prese_ime_of_visit_Female", educationQuestion.getQuestion70NumberOfFemaleTeacherPresent());
+                    body.put("No_of_Teachers_accessing_payroll_Male", educationQuestion.getQuestion70NumberOfTeachersOnPayroll());
+                    body.put("No_of_Teachers_acce_sing_payroll_Female", educationQuestion.getQuestion70NumberOfTeachersOnPayroll());
+                    body.put("What_is_the_teacher_pupil_ratio", educationQuestion.getQuestion71TeacherPupilRatio());
+                    body.put("Does_the_school_have_senior_woman_teacher", educationQuestion.isQuestion72SeniorWomanTeacherYesNo());
+                    body.put("How_often_does_the_s_ticipation_in_school", educationQuestion.getQuestion73SWFOfferSupportHow());
+
+                    // question 8
+                    body.put("How_often_does_Schoo_tor_visit_the_school", educationQuestion.getQuestion8HowOftenSchoolInspectorVisit());
+                    body.put("When_was_the_last_ti_ed_the_school_Date", educationQuestion.getQuestion82LastTimeInspectorVisit());
+                    body.put("Does_the_school_have_a_Managem", educationQuestion.isQuestion83SchoolHaveSchoolManagementCommittee());
+                    body.put("If_Yes_how_often_do_they_meet", educationQuestion.getQuestion84HowOftenSMCMeet());
+                    body.put("Is_the_school_manage_nt_committee_trained", educationQuestion.getQuestion85IsSMCTrained());
+                    body.put("List_any_other_obser_ations_or_challenges", educationQuestion.getQuestion8ObservationsOrChallenges());
 
 
 
@@ -187,26 +210,3 @@ public class EducationUploadWorker extends Worker {
         return null;
     }
 }
-
-
-        $table->integer('How_many_permanent_c_ks_are_at_the_school')->nullable();
-        $table->integer('How_many_desks_are_i_he_time_of_the_visit')->nullable();
-        $table->integer('What_is_the_pupil_desk_ratio')->nullable();
-        $table->integer('Total_No_of_teachers_enrolled_Male')->nullable();
-        $table->integer('Total_No_of_teachers_enrolled_Female')->nullable();
-        $table->integer('No_of_teachers_prese_time_of_visit_Male')->nullable();
-        $table->integer('No_of_teachers_prese_ime_of_visit_Female')->nullable();
-        $table->integer('No_of_Teachers_accessing_payroll_Male')->nullable();
-        $table->integer('No_of_Teachers_acce_sing_payroll_Female')->nullable();
-        $table->integer('What_is_the_teacher_pupil_ratio')->nullable();
-        $table->string('Does_the_school_have_senior_woman_teacher')->nullable();
-        $table->string('How_often_does_the_s_ticipation_in_school')->nullable();
-        $table->string('How_often_does_Schoo_tor_visit_the_school')->nullable();
-        $table->date('When_was_the_last_ti_ed_the_school_Date')->nullable();
-        $table->string('Does_the_school_have_a_Managem')->nullable();
-        $table->string('If_Yes_how_often_do_they_meet')->nullable();
-        $table->string('Attach_Mininutes')->nullable();
-        $table->string('Is_the_school_manage_nt_committee_trained')->nullable();
-        $table->string('List_any_other_obser_ations_or_challenges')->nullable();
-        $table->timestamps();
-        $table->softDeletes();
