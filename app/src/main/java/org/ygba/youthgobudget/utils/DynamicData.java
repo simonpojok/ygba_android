@@ -1,8 +1,13 @@
 package org.ygba.youthgobudget.utils;
 
+import java.text.SimpleDateFormat;
+import java.util.Calendar;
+import java.util.Date;
+import java.util.Locale;
+
 public class DynamicData {
     public static String getDate() {
-        return "23-October-2020";
+        return new SimpleDateFormat("dd-MM-yyyy", Locale.getDefault()).format(Calendar.getInstance());
     }
 
     public static String getTime() {

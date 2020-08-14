@@ -45,7 +45,7 @@
 26        android:theme="@style/AppTheme" >
 26-->/home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/AndroidManifest.xml:13:9-40
 27        <activity android:name="org.ygba.youthgobudget.dialogs.SubCountyPickerActivity" />
-27-->/home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/AndroidManifest.xml:14:9-69
+27-->/home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/AndroidManifest.xml:14:9-78
 27-->/home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/AndroidManifest.xml:14:19-66
 28        <activity
 28-->/home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/AndroidManifest.xml:15:9-17:45

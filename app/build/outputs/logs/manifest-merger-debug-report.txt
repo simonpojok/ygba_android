@@ -110,7 +110,7 @@ MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] /home/mckey
 	android:theme
 		ADDED from /home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/AndroidManifest.xml:13:9-40
 activity#org.ygba.youthgobudget.dialogs.SubCountyPickerActivity
-ADDED from /home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/AndroidManifest.xml:14:9-69
+ADDED from /home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/AndroidManifest.xml:14:9-78
 	android:name
 		ADDED from /home/mckeyo/AndroidStudioProjects/ygba_android/app/src/main/AndroidManifest.xml:14:19-66
 activity#org.ygba.youthgobudget.dialogs.DistrictPickerActivity

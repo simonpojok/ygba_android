@@ -179,6 +179,9 @@ public class AgricultureActivity extends AppCompatActivity implements  AdapterVi
                 }
             }
         });
+
+        TextView textView = findViewById(R.id.date);
+        textView.setText(DynamicData.getDate());
     }
 
     private void saveAgricultureQuestion() {
