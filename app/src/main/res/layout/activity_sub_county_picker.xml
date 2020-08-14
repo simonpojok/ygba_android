@@ -9,6 +9,6 @@
     <androidx.recyclerview.widget.RecyclerView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:id="@+id/district_recycler_view"/>
+        android:id="@+id/sub_county_recycler_view"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

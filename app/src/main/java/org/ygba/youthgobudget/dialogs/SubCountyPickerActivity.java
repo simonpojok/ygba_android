@@ -2,6 +2,7 @@ package org.ygba.youthgobudget.dialogs;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.content.Context;
@@ -12,16 +13,30 @@ import android.view.ViewGroup;
 import android.widget.TextView;
 
 import org.ygba.youthgobudget.R;
+import org.ygba.youthgobudget.YGBARepository;
+import org.ygba.youthgobudget.data.YGBDatabase;
 import org.ygba.youthgobudget.data.helpers.sub_county.SubCounty;
 
 import java.util.List;
+import java.util.concurrent.ExecutionException;
 
 public class SubCountyPickerActivity extends AppCompatActivity {
+
+    private String DISTRICT_ID = "org.ygba.youthgobudget.dialogs.SubCountyPickerActivity.DISTRICT_ID";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_sub_county_picker);
+
+        List<SubCounty> subCounties = getSubCounties();
+        if (subCounties == null ) {
+            finish();
+        }
+
+        RecyclerView recyclerView = findViewById(R.id.sub_county_recycler_view);
+        recyclerView.setLayoutManager(new LinearLayoutManager(this));
+        recyclerView.setAdapter(new SubCountyAdapter(this, subCounties));
 
     }
 
@@ -65,5 +80,15 @@ public class SubCountyPickerActivity extends AppCompatActivity {
                 textView.setText(subCounty.getName());
             }
         }
+    }
+
+    private List<SubCounty> getSubCounties() {
+        int districtId = getIntent().getIntExtra(DISTRICT_ID, 1);
+        try {
+            return YGBARepository.getInstance(YGBDatabase.getInstance(this)).getSubCountyByDistrict(districtId);
+        } catch (ExecutionException | InterruptedException e) {
+            e.printStackTrace();
+        }
+        return null;
     }
 }
