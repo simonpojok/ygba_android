@@ -210,7 +210,7 @@ public class SocialDevelopmentActivity extends AppCompatActivity implements Vali
     private void initViews() {
         districtTextEdit = findViewById(R.id.district_text_edit);
         socialDateTextView = findViewById(R.id.social_date_text_view);
-        financialYearSpinner = findViewById(R.id.financial_year_spinner);
+        financialYearSpinner = findViewById(R.id.quarter_spinner);
         ArrayAdapter<String> aa=new ArrayAdapter<String>(this, android.R.layout.simple_spinner_item, financialYears);
         aa.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         financialYearSpinner.setAdapter(aa);

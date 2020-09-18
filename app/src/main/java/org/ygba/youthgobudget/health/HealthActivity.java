@@ -204,7 +204,7 @@ public class HealthActivity extends AppCompatActivity implements Validator.Valid
 
     private void initViews() {
         hDateTextView = findViewById(R.id.date_text_view);
-        hFinancialSpinner = findViewById(R.id.financial_year_spinner);
+        hFinancialSpinner = findViewById(R.id.quarter_spinner);
         villageEditText = findViewById(R.id.village_text_edit);
         parishEditText = findViewById(R.id.parish_text_edit);
         divisionEditText = findViewById(R.id.division_text_edit);

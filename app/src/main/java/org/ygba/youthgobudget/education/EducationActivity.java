@@ -18,7 +18,6 @@ import com.mobsandgeeks.saripaar.Validator;
 import com.mobsandgeeks.saripaar.annotation.NotEmpty;
 
 import org.ygba.youthgobudget.R;
-import org.ygba.youthgobudget.agriculture.AgricultureActivity;
 import org.ygba.youthgobudget.data.education.EducationQuestion;
 import org.ygba.youthgobudget.dialogs.DatePickerActivity;
 import org.ygba.youthgobudget.dialogs.DistrictPickerActivity;
@@ -173,7 +172,7 @@ public class EducationActivity extends AppCompatActivity implements Validator.Va
     private void initViews() {
         eDateTextView = findViewById(R.id.date);
         eDateTextView.setText(DynamicData.getDate());
-        eFinancialYearSpinner = findViewById(R.id.financial_year_spinner);
+        eFinancialYearSpinner = findViewById(R.id.quarter_spinner);
         eDistrictEditText = findViewById(R.id.district_text_edit);
         eVillageEditText = findViewById(R.id.village_text_edit);
         eParishEditText = findViewById(R.id.parish_text_edit);

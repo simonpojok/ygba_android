@@ -123,7 +123,7 @@ public class BudgetInformationActivity extends AppCompatActivity implements Adap
     }
 
     private void initViews() {
-        financialYearSpinner = findViewById(R.id.financial_year_spinner);
+        financialYearSpinner = findViewById(R.id.quarter_spinner);
         administrationApprovedBudgetED = findViewById(R.id.approved_budget_administration);
         administrationPercentageED = findViewById(R.id.percentage_administration);
         financeApprovedBudgetED = findViewById(R.id.approved_budget_finance);

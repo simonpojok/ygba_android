@@ -11,7 +11,6 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
-import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.RadioGroup;
 import android.widget.Spinner;
@@ -38,7 +37,8 @@ public class AgricultureActivity extends AppCompatActivity implements  AdapterVi
     private   final int SUB_COUNTY_NAME_REQUEST_CODE = 2;
     private int districtId = 0;
     RadioGroup question1RadioGroup;
-    Spinner financialYearSpinner;
+    Spinner quarterSpinner;
+    Spinner financialSpinner;
 
     EditText financialYear;
     TextView districtText;
@@ -276,10 +276,10 @@ public class AgricultureActivity extends AppCompatActivity implements  AdapterVi
     }
 
     private void initViews() {
-        financialYearSpinner = findViewById(R.id.financial_year_spinner);
+        quarterSpinner = findViewById(R.id.quarter_spinner);
         ArrayAdapter<String> aa=new ArrayAdapter<String>(this, android.R.layout.simple_spinner_item, financialYears);
         aa.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-        financialYearSpinner.setAdapter(aa);
+        quarterSpinner.setAdapter(aa);
         villageEditText = findViewById(R.id.village_text_edit);
         parishTextEdit = findViewById(R.id.parish_text_edit);
         divisionEditText = findViewById(R.id.division_text_edit);
