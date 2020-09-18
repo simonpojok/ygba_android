@@ -24,6 +24,7 @@ import com.mobsandgeeks.saripaar.annotation.NotEmpty;
 
 import org.ygba.youthgobudget.R;
 import org.ygba.youthgobudget.data.agriculture.AgricultureQuestion;
+import org.ygba.youthgobudget.dialogs.DatePickerActivity;
 import org.ygba.youthgobudget.dialogs.DistrictPickerActivity;
 import org.ygba.youthgobudget.dialogs.SubCountyPickerActivity;
 import org.ygba.youthgobudget.utils.DynamicData;
@@ -35,6 +36,10 @@ import java.util.List;
 public class AgricultureActivity extends AppCompatActivity implements  AdapterView.OnItemSelectedListener, Validator.ValidationListener {
     private   final int DISTRICT_NAME_REQUESTER_CODE = 1;
     private   final int SUB_COUNTY_NAME_REQUEST_CODE = 2;
+    private  final int QUESTION_2_DATE_RECEIVED_1_REQUEST_CODE = 3;
+    private  final int  QUESTION_2_DATE_WITHDRAWN_1_REQUEST_CODE = 4;
+    private  final int  QUESTION_2_DATE_RECEIVED_2_REQUEST_CODE = 5;
+    private  final int  QUESTION_2_DATE_WITHDRAWN_2_REQUEST_CODE = 6;
     private int districtId = 0;
     RadioGroup question1RadioGroup;
     Spinner quarterSpinner;
@@ -62,17 +67,17 @@ public class AgricultureActivity extends AppCompatActivity implements  AdapterVi
     @NotEmpty
     EditText extensionServiceAmountReceivedTextEdit;
     @NotEmpty
-    EditText extensionServiceDateReceivedEditText;
+    TextView extensionServiceDateReceivedEditText;
     @NotEmpty
-    EditText extensionServiceDateWithdrawnEditText;
+    TextView extensionServiceDateWithdrawnEditText;
     @NotEmpty
     EditText developmentExpectedOrApprovedTextEdit;
     @NotEmpty
     EditText developmentAmountReceived;
     @NotEmpty
-    EditText developmentDateReceived;
+    TextView developmentDateReceived;
     @NotEmpty
-    EditText developmentDateWithdrawn;
+    TextView developmentDateWithdrawn;
     @NotEmpty
     EditText question21EditText;
     RadioGroup question22RadioGroup;
@@ -149,7 +154,9 @@ public class AgricultureActivity extends AppCompatActivity implements  AdapterVi
     EditText question43AnyReason;
     CardView saveFormData;
     AgricultureActivityViewModel activityViewModel;
-    private final String[] financialYears = {"I", "II", "III", "IV", "V", "VI", "VII"};
+    private final String[] quarterList = {"I", "II", "III", "IV", "V", "VI", "VII"};
+    private final String[] financialYearList = {"2021/22", "2020/21", "2019/20"};
+    private String selectedQuarter;
     private String selectedFinancialYear;
     private Validator validator;
     RadioGroup question41RadioGroup;
@@ -250,7 +257,7 @@ public class AgricultureActivity extends AppCompatActivity implements  AdapterVi
                 question43AnyReason.getText().toString()
         );
 
-        agricultureQuestion.setQuarter(selectedFinancialYear);
+        agricultureQuestion.setQuarter(selectedQuarter);
         activityViewModel.saveAgricultureQuestion(agricultureQuestion);
     }
 
@@ -277,9 +284,16 @@ public class AgricultureActivity extends AppCompatActivity implements  AdapterVi
 
     private void initViews() {
         quarterSpinner = findViewById(R.id.quarter_spinner);
-        ArrayAdapter<String> aa=new ArrayAdapter<String>(this, android.R.layout.simple_spinner_item, financialYears);
+        ArrayAdapter<String> aa=new ArrayAdapter<String>(this, android.R.layout.simple_spinner_item, quarterList);
         aa.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         quarterSpinner.setAdapter(aa);
+
+        financialSpinner = findViewById(R.id.financial_year_spinner);
+        ArrayAdapter<String> fa=new ArrayAdapter<String>(this, android.R.layout.simple_spinner_item, financialYearList);
+        fa.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        financialSpinner.setAdapter(fa);
+
+
         villageEditText = findViewById(R.id.village_text_edit);
         parishTextEdit = findViewById(R.id.parish_text_edit);
         divisionEditText = findViewById(R.id.division_text_edit);
@@ -291,11 +305,35 @@ public class AgricultureActivity extends AppCompatActivity implements  AdapterVi
         extensionServiceExpectedOrReceivedEditText = findViewById(R.id.q2extension_services_expected_or_approved);
         extensionServiceAmountReceivedTextEdit = findViewById(R.id.q2extension_services_amount_received);
         extensionServiceDateReceivedEditText = findViewById(R.id.q2extension_services_date_received);
+        extensionServiceDateReceivedEditText.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivityForResult(new Intent(AgricultureActivity.this, DatePickerActivity.class), QUESTION_2_DATE_RECEIVED_1_REQUEST_CODE);
+            }
+        });
         extensionServiceDateWithdrawnEditText = findViewById(R.id.extension_services_date_withdrawn);
+        extensionServiceDateWithdrawnEditText.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivityForResult(new Intent(AgricultureActivity.this, DatePickerActivity.class), QUESTION_2_DATE_WITHDRAWN_1_REQUEST_CODE);
+            }
+        });
         developmentExpectedOrApprovedTextEdit = findViewById(R.id.development_expected_or_approved);
         developmentAmountReceived = findViewById(R.id.development_amount_received);
         developmentDateReceived = findViewById(R.id.development_date_received);
+        developmentDateReceived.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivityForResult(new Intent(AgricultureActivity.this, DatePickerActivity.class), QUESTION_2_DATE_RECEIVED_2_REQUEST_CODE);
+            }
+        });
         developmentDateWithdrawn = findViewById(R.id.development_date_withdrawn);
+        developmentDateWithdrawn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivityForResult(new Intent(AgricultureActivity.this, DatePickerActivity.class), QUESTION_2_DATE_WITHDRAWN_2_REQUEST_CODE);
+            }
+        });
         question21EditText = findViewById(R.id.question_2_1_edit_text);
         question23EditText = findViewById(R.id.question_2_3_edit_text);
         question22RadioGroup = findViewById(R.id.question22RadioGroup);
@@ -364,12 +402,16 @@ public class AgricultureActivity extends AppCompatActivity implements  AdapterVi
 
     @Override
     public void onItemSelected(AdapterView<?> adapterView, View view, int position, long id) {
-        selectedFinancialYear = financialYears[position];
+        if (view.getId() == R.id.financial_year_spinner) {
+            selectedFinancialYear = financialYearList[position];
+        } else if (view.getId() == R.id.quarter_spinner) {
+            selectedQuarter = quarterList[position];
+        }
     }
 
     @Override
     public void onNothingSelected(AdapterView<?> adapterView) {
-        selectedFinancialYear = "";
+        selectedQuarter = "";
     }
 
     @Override
@@ -398,6 +440,14 @@ public class AgricultureActivity extends AppCompatActivity implements  AdapterVi
                     districtId = data.getIntExtra(DistrictPickerActivity.DISTRICT_ID, 0);
                 } else if (requestCode == SUB_COUNTY_NAME_REQUEST_CODE) {
                     divisionEditText.setText(data.getStringExtra(SubCountyPickerActivity.SUB_COUNTY_NAME));
+                } else if (requestCode == QUESTION_2_DATE_RECEIVED_1_REQUEST_CODE) {
+                    extensionServiceDateReceivedEditText.setText(data.getStringExtra(DatePickerActivity.SELECTED_DATE));
+                } else if (requestCode == QUESTION_2_DATE_WITHDRAWN_1_REQUEST_CODE) {
+                    extensionServiceDateWithdrawnEditText.setText(data.getStringExtra(DatePickerActivity.SELECTED_DATE));
+                } else if (requestCode == QUESTION_2_DATE_RECEIVED_2_REQUEST_CODE) {
+                    developmentDateReceived.setText(data.getStringExtra(DatePickerActivity.SELECTED_DATE));
+                } else if (requestCode == QUESTION_2_DATE_WITHDRAWN_2_REQUEST_CODE) {
+                    developmentDateWithdrawn.setText(data.getStringExtra(DatePickerActivity.SELECTED_DATE));
                 }
             }
         }

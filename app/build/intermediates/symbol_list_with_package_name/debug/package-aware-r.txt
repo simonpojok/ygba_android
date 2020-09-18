@@ -2812,6 +2812,9 @@ string health_road_engineering
 string health_sector_header
 string hide_bottom_view_on_scroll_behavior
 string hint_agriculture_question_4_3
+string hint_amount_expected
+string hint_date_received
+string hint_date_withdrawn
 string hiv_counselling_testing
 string icon_content_description
 string immunization
