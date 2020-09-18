@@ -243,9 +243,10 @@
     <color name="cardview_shadow_end_color">#03000000</color>
     <color name="cardview_shadow_start_color">#37000000</color>
     <color name="colorAccent">#03DAC5</color>
-    <color name="colorActivityBackground">#D8FF6000</color>
-    <color name="colorPrimary">#F7FF6000</color>
-    <color name="colorPrimaryDark">#D8FF6000</color>
+    <color name="colorPrimary">#007cc2</color>
+    <color name="colorPrimaryDark">#005091</color>
+    <color name="colorPrimaryLight">#59abf5</color>
+    <color name="colorPrimaryText">#ffffff</color>
     <color name="design_bottom_navigation_shadow_color">#14000000</color>
     <color name="design_dark_default_color_background">#121212</color>
     <color name="design_dark_default_color_error">#CF6679</color>
@@ -334,7 +335,6 @@
     <color name="switch_thumb_normal_material_light">#fff1f1f1</color>
     <color name="tooltip_background_dark">#e6616161</color>
     <color name="tooltip_background_light">#e6FFFFFF</color>
-    <color name="white">#fff</color>
     <dimen name="abc_action_bar_content_inset_material">16dp</dimen>
     <dimen name="abc_action_bar_content_inset_with_nav">72dp</dimen>
     <dimen name="abc_action_bar_default_height_material">56dp</dimen>
