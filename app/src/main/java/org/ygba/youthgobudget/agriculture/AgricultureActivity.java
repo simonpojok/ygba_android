@@ -42,6 +42,9 @@ public class AgricultureActivity extends AppCompatActivity implements  AdapterVi
     private  final int  QUESTION_2_DATE_WITHDRAWN_2_REQUEST_CODE = 6;
     private  final int  QUESTION_4_DATE_WITHDRAWN_5_REQUEST_CODE = 8;
     private final int QUESTION_4_DATE_WITHDRAWN_4_REQUEST_CODE = 9;
+    private final int QUESTION_4_DATE_WITHDRAWN_3_REQUEST_CODE = 10;
+    private final int QUESTION_4_DATE_WITHDRAWN_2_REQUEST_CODE = 11;
+    private final int QUESTION_4_DATE_WITHDRAWN_1_REQUEST_CODE = 12;
     private int districtId = 0;
     RadioGroup question1RadioGroup;
     Spinner quarterSpinner;
@@ -122,7 +125,7 @@ public class AgricultureActivity extends AppCompatActivity implements  AdapterVi
     @NotEmpty
     EditText question42Plant3;
     @NotEmpty
-    EditText question42Date3;
+    TextView question42Date3;
     @NotEmpty
     EditText question42Male3;
     @NotEmpty
@@ -359,6 +362,12 @@ public class AgricultureActivity extends AppCompatActivity implements  AdapterVi
         question42Plant2 = findViewById(R.id.question42Plant2);
         question42Plant3 = findViewById(R.id.question42Plant3);
         question42Date3 = findViewById(R.id.question42Date3);
+        question42Date3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivityForResult(new Intent(AgricultureActivity.this, DatePickerActivity.class), QUESTION_4_DATE_WITHDRAWN_3_REQUEST_CODE);
+            }
+        });
         question42Male3 = findViewById(R.id.question42Male3);
         question42Female3 = findViewById(R.id.question42Female3);
         question42Village3 = findViewById(R.id.question42Village3);
@@ -464,8 +473,14 @@ public class AgricultureActivity extends AppCompatActivity implements  AdapterVi
                     developmentDateWithdrawn.setText(data.getStringExtra(DatePickerActivity.SELECTED_DATE));
                 } else if (requestCode == QUESTION_4_DATE_WITHDRAWN_5_REQUEST_CODE) {
                     question42Date5.setText(data.getStringExtra(DatePickerActivity.SELECTED_DATE));
-                }else if (requestCode == QUESTION_4_DATE_WITHDRAWN_4_REQUEST_CODE) {
+                } else if (requestCode == QUESTION_4_DATE_WITHDRAWN_4_REQUEST_CODE) {
                     question42Date4.setText(data.getStringExtra(DatePickerActivity.SELECTED_DATE));
+                } else if (requestCode == QUESTION_4_DATE_WITHDRAWN_3_REQUEST_CODE) {
+                    question42Date3.setText(data.getStringExtra(DatePickerActivity.SELECTED_DATE));
+                } else if (requestCode == QUESTION_4_DATE_WITHDRAWN_2_REQUEST_CODE) {
+                    question42Date2.setText(data.getStringExtra(DatePickerActivity.SELECTED_DATE));
+                } else if (requestCode == QUESTION_4_DATE_WITHDRAWN_1_REQUEST_CODE) {
+                    question42Date1.setText(data.getStringExtra(DatePickerActivity.SELECTED_DATE));
                 }
             }
         }
