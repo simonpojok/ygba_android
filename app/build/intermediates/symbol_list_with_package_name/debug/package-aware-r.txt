@@ -1415,6 +1415,7 @@ drawable ic_baseline_info_24
 drawable ic_baseline_local_drink_24
 drawable ic_baseline_local_hospital_24
 drawable ic_baseline_nature_people_24
+drawable ic_baseline_people_24
 drawable ic_batch_prediction_white_50dp
 drawable ic_calendar_black_24dp
 drawable ic_clear_black_24dp
@@ -1556,7 +1557,6 @@ id barrier
 id beginning
 id blocking
 id bottom
-id budget_info_icon
 id buttonPanel
 id button_cancel
 id button_ok
@@ -2324,6 +2324,7 @@ id unchecked
 id uniform
 id unlabeled
 id up
+id upload_data
 id useLogo
 id view_offset_helper
 id village_text_edit
