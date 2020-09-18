@@ -58,8 +58,7 @@
 
     <EditText
         android:layout_marginBottom="10dp"
-        android:paddingStart="5dp"
-        android:paddingEnd="5dp"
+        android:padding="5dp"
         android:id="@+id/financial_text_edit"
         android:layout_width="match_parent"
         android:layout_marginVertical="10dp"
@@ -97,8 +96,6 @@
 
     <TextView
         android:layout_marginBottom="10dp"
-        android:paddingStart="5dp"
-        android:paddingEnd="5dp"
         android:id="@+id/district_text_edit"
         android:layout_width="match_parent"
         android:layout_height="40dp"
@@ -120,8 +117,7 @@
 
     <EditText
         android:layout_marginBottom="10dp"
-        android:paddingStart="5dp"
-        android:paddingEnd="5dp"
+        android:padding="5dp"
         android:hint="@string/village_hint"
         android:id="@+id/village_text_edit"
         android:layout_width="match_parent"
@@ -142,8 +138,7 @@
 
     <EditText
         android:layout_marginBottom="10dp"
-        android:paddingStart="5dp"
-        android:paddingEnd="5dp"
+        android:padding="5dp"
         android:hint="@string/parish_hint"
         android:id="@+id/parish_text_edit"
         android:layout_width="match_parent"
@@ -172,8 +167,7 @@
         android:background="@drawable/edit_text_style"
         android:autofillHints=""
         android:gravity="start"
-        android:paddingStart="5dp"
-        android:paddingEnd="5dp"
+        android:padding="5dp"
         android:textSize="15sp"
         android:overScrollMode="always"
         tools:ignore="LabelFor" />
@@ -194,8 +188,7 @@
         android:layout_width="match_parent"
         android:layout_height="40dp"
         android:background="@drawable/edit_text_style"
-        android:paddingStart="5dp"
-        android:paddingEnd="5dp"
+        android:padding="5dp"
         android:autofillHints="" />
     <TextView
         android:layout_width="wrap_content"
@@ -213,8 +206,7 @@
         android:layout_height="40dp"
         android:textSize="15sp"
         android:background="@drawable/edit_text_style"
-        android:paddingStart="5dp"
-        android:paddingEnd="5dp" />
+        android:padding="5dp"/>
 
     <TextView
         android:layout_width="wrap_content"
@@ -230,9 +222,8 @@
         android:layout_width="match_parent"
         android:layout_height="40dp"
         android:background="@drawable/edit_text_style"
-        android:paddingStart="5dp"
-        android:textSize="15sp"
-        android:paddingEnd="5dp" />
+        android:padding="5dp"
+        android:textSize="15sp"/>
 
     <TextView
         android:layout_width="wrap_content"
@@ -292,8 +283,7 @@
         android:layout_width="match_parent"
         android:layout_height="100dp"
         android:background="@drawable/edit_text_style"
-        android:paddingStart="5dp"
-        android:paddingEnd="5dp"
+        android:padding="5dp"
         android:autofillHints=""
         tools:ignore="LabelFor" />
 
@@ -389,6 +379,7 @@
                     android:width="200dp"
                     android:layout_height="40dp"
                     android:layout_column="2"
+                    android:padding="5dp"
                     android:inputType="number"
                     android:id="@+id/q2extension_services_expected_or_approved"/>
 
@@ -401,6 +392,7 @@
                     android:layout_height="40dp"
                     android:layout_column="3"
                     android:inputType="number"
+                    android:padding="5dp"
                     android:id="@+id/q2extension_services_amount_received"/>
 
                 <EditText
@@ -412,6 +404,7 @@
                     android:width="200dp"
                     android:layout_height="40dp"
                     android:layout_column="4"
+                    android:padding="5dp"
                     android:inputType="date"
                     android:id="@+id/q2extension_services_date_received"/>
 
@@ -423,6 +416,7 @@
                     android:width="200dp"
                     android:layout_height="40dp"
                     android:layout_column="5"
+                    android:padding="5dp"
                     android:inputType="date"
                     android:id="@+id/extension_services_date_withdrawn"/>
 
@@ -450,6 +444,7 @@
                     android:background="@drawable/edit_text_style"
                     android:width="200dp"
                     android:layout_height="40dp"
+                    android:padding="5dp"
                     android:layout_column="2"
                     android:inputType="number"
                     android:id="@+id/development_expected_or_approved"/>
@@ -462,6 +457,7 @@
                     android:width="200dp"
                     android:layout_height="40dp"
                     android:layout_column="3"
+                    android:padding="5dp"
                     android:inputType="number"
                     android:id="@+id/development_amount_received"/>
 
@@ -472,6 +468,7 @@
                     android:textSize="15sp"
                     android:background="@drawable/edit_text_style"
                     android:width="200dp"
+                    android:padding="5dp"
                     android:layout_height="40dp"
                     android:layout_column="4"
                     android:inputType="date"
@@ -485,6 +482,7 @@
                     android:width="200dp"
                     android:layout_height="40dp"
                     android:layout_column="5"
+                    android:padding="5dp"
                     android:inputType="date"
                     android:id="@+id/development_date_withdrawn"/>
 
@@ -723,6 +721,7 @@
             android:layout_width="0dp"
             android:layout_weight="4"
             android:layout_height="40dp"
+            android:padding="5dp"
             android:background="@drawable/edit_text_style"
             android:autofillHints=""
             tools:ignore="LabelFor" />
