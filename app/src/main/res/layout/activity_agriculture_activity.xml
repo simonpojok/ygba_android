@@ -54,8 +54,7 @@
         android:layout_height="wrap_content"
         android:text="@string/financial_year_label"
         android:textSize="15sp"
-        android:textColor="@color/colorPrimaryText"
-        android:textStyle="bold" />
+        android:textColor="@color/colorPrimaryText"/>
 
     <EditText
         android:layout_marginBottom="10dp"
@@ -77,8 +76,7 @@
         android:layout_height="wrap_content"
         android:text="@string/quarter_year_label"
         android:textSize="15sp"
-        android:textColor="@color/colorPrimaryText"
-        android:textStyle="bold" />
+        android:textColor="@color/colorPrimaryText"/>
 
     <Spinner
         android:id="@+id/financial_year_spinner"
@@ -95,8 +93,7 @@
         android:labelFor="@id/district_text_edit"
         android:text="@string/district_label"
         android:textColor="@color/colorPrimaryText"
-        android:textSize="15sp"
-        android:textStyle="bold" />
+        android:textSize="15sp"/>
 
     <TextView
         android:layout_marginBottom="10dp"
@@ -119,8 +116,7 @@
         android:labelFor="@id/village_text_edit"
         android:text="@string/village_label"
         android:textColor="@color/colorPrimaryText"
-        android:textSize="15sp"
-        android:textStyle="bold" />
+        android:textSize="15sp"/>
 
     <EditText
         android:layout_marginBottom="10dp"
@@ -142,8 +138,7 @@
         android:layout_height="wrap_content"
         android:text="@string/parish_label"
         android:textSize="15sp"
-        android:textColor="@color/colorPrimaryText"
-        android:textStyle="bold" />
+        android:textColor="@color/colorPrimaryText"/>
 
     <EditText
         android:layout_marginBottom="10dp"
@@ -166,8 +161,7 @@
         android:layout_height="wrap_content"
         android:text="@string/division_label"
         android:textSize="15sp"
-        android:textColor="@color/colorPrimaryText"
-        android:textStyle="bold" />
+        android:textColor="@color/colorPrimaryText"/>
 
     <TextView
         android:layout_marginBottom="5dp"
@@ -190,7 +184,6 @@
         android:text="@string/ygb_agent_name_label"
         android:textSize="15sp"
         android:textColor="@color/colorPrimaryText"
-        android:textStyle="bold"
         android:layout_height="wrap_content" />
 
     <EditText
@@ -209,8 +202,7 @@
         android:layout_height="wrap_content"
         android:text="@string/ygb_agent_tel_label"
         android:textSize="15sp"
-        android:textColor="@color/colorPrimaryText"
-        android:textStyle="bold" />
+        android:textColor="@color/colorPrimaryText"/>
 
     <EditText
         android:layout_marginVertical="10dp"
@@ -229,8 +221,7 @@
         android:layout_height="wrap_content"
         android:text="@string/ygb_agent_no_label"
         android:textSize="15sp"
-        android:textColor="@color/colorPrimaryText"
-        android:textStyle="bold" />
+        android:textColor="@color/colorPrimaryText"/>
 
     <EditText
         android:layout_marginVertical="10dp"
@@ -250,10 +241,9 @@
         android:textSize="15sp"
         android:layout_marginBottom="10dp"
         android:textColor="@color/colorPrimaryText"
-        android:textStyle="bold" />
+        android:textStyle="italic" />
 
     <TextView
-        android:textStyle="bold"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/question_1_text_objective"
@@ -268,7 +258,6 @@
         >
         <RadioButton android:id="@+id/question1Yes"
             android:checked="true"
-            android:textStyle="bold"
             android:textSize="15sp"
             android:layout_marginEnd="10dp"
             android:textColor="@color/colorPrimaryText"
@@ -276,7 +265,6 @@
             android:layout_height="wrap_content"
             android:text="@string/yes" />
         <RadioButton
-            android:textStyle="bold"
             android:textSize="15sp"
             android:textColor="@color/colorPrimaryText"
             android:id="@+id/question2No"
@@ -292,7 +280,6 @@
         android:text="@string/question_1_reason_label"
         android:layout_marginVertical="10dp"
         android:textSize="15sp"
-        android:textStyle="bold"
         android:textColor="@color/colorPrimaryText" />
 
     <EditText
@@ -515,8 +502,7 @@
         android:layout_marginVertical="10dp"
         android:text="@string/question_2_1_text"
         android:textSize="15sp"
-        android:textColor="@color/colorPrimaryText"
-        android:textStyle="bold" />
+        android:textColor="@color/colorPrimaryText" />
 
     <EditText
         android:layout_marginVertical="10dp"
@@ -534,8 +520,7 @@
         android:layout_height="wrap_content"
         android:text="@string/question_2_2_text"
         android:textSize="15sp"
-        android:textColor="@color/colorPrimaryText"
-        android:textStyle="bold" />
+        android:textColor="@color/colorPrimaryText"/>
 
     <RadioGroup
         android:id="@+id/question22RadioGroup"
@@ -566,8 +551,7 @@
         android:text="@string/question_2_3_text"
         android:textSize="15sp"
         android:padding="5dp"
-        android:textColor="@color/colorPrimaryText"
-        android:textStyle="bold" />
+        android:textColor="@color/colorPrimaryText"/>
 
     <EditText
         android:textSize="15sp"
@@ -588,8 +572,7 @@
         android:text="@string/question_2_4_text"
         android:textSize="15sp"
         android:layout_marginVertical="10dp"
-        android:textColor="@color/colorPrimaryText"
-        android:textStyle="bold" />
+        android:textColor="@color/colorPrimaryText"/>
 
     <EditText
         android:textSize="15sp"
@@ -609,8 +592,7 @@
         android:text="@string/question_2_5_text"
         android:textSize="15sp"
         android:layout_marginVertical="10dp"
-        android:textColor="@color/colorPrimaryText"
-        android:textStyle="bold" />
+        android:textColor="@color/colorPrimaryText"/>
 
     <EditText
         android:gravity="start"
