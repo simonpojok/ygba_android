@@ -20,7 +20,6 @@ import org.ygba.youthgobudget.data_seeders.Seeder;
 import org.ygba.youthgobudget.education.EducationActivity;
 import org.ygba.youthgobudget.health.HealthActivity;
 import org.ygba.youthgobudget.help.HelpActivity;
-import org.ygba.youthgobudget.history.HistoryActivity;
 import org.ygba.youthgobudget.local_government.LocalGovernmentActivity;
 import org.ygba.youthgobudget.polls.PollActivity;
 import org.ygba.youthgobudget.social_development.SocialDevelopmentActivity;
@@ -103,7 +102,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        findViewById(R.id.budget_info_icon).setOnClickListener(new View.OnClickListener() {
+        findViewById(R.id.upload_data).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 startActivity(new Intent(MainActivity.this, BudgetInformationActivity.class));
