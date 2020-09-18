@@ -2813,8 +2813,14 @@ string health_sector_header
 string hide_bottom_view_on_scroll_behavior
 string hint_agriculture_question_4_3
 string hint_amount_expected
+string hint_date
 string hint_date_received
 string hint_date_withdrawn
+string hint_district
+string hint_number_of_females
+string hint_number_of_males
+string hint_plant_or_material
+string hint_village_name
 string hiv_counselling_testing
 string icon_content_description
 string immunization

@@ -1107,6 +1107,8 @@
                     android:text="4"/>
 
                 <EditText
+                    android:hint="@string/inputs_or_planting_materials"
+                    android:gravity="start|center_vertical"
                     android:id="@+id/question42Plant4"
                     android:layout_marginHorizontal="10dp"
                     android:textColor="@color/colorPrimaryText"
@@ -1118,7 +1120,9 @@
                     android:layout_height="40dp"
                     android:layout_column="1" />
 
-                <EditText
+                <TextView
+                    android:gravity="start|center_vertical"
+                    android:hint="@string/hint_date"
                     android:id="@+id/question42Date4"
                     android:layout_marginHorizontal="10dp"
                     android:textColor="@color/colorPrimaryText"
