@@ -23,7 +23,7 @@
         android:orientation="horizontal">
         <Button
             android:textSize="15sp"
-            android:textColor="@color/white"
+            android:textColor="@color/colorPrimaryText"
             android:background="@color/colorPrimary"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"

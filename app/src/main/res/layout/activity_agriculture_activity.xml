@@ -1313,7 +1313,7 @@
         android:layout_marginRight="70dp"
         android:layout_marginEnd="70dp"
         android:layout_marginBottom="27dp"
-        card_view:cardBackgroundColor="@color/white">
+        card_view:cardBackgroundColor="@color/colorPrimaryDark">
 
         <TextView
             android:layout_width="wrap_content"
@@ -1324,7 +1324,7 @@
             android:textStyle="bold"
             android:textSize="20sp"
             android:fontFamily="sans-serif-condensed"
-            android:textColor="#000"/>
+            android:textColor="@color/colorPrimaryText"/>
 
     </androidx.cardview.widget.CardView>
 
