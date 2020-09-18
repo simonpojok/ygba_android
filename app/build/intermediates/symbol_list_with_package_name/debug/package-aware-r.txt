@@ -1393,11 +1393,13 @@ drawable design_ic_visibility_off
 drawable design_password_eye
 drawable design_snackbar_background
 drawable edit_text_style
+drawable get
 drawable ic_agriculture_white_24dp
 drawable ic_agriculture_white_50dp
 drawable ic_baseline_account_balance_24
 drawable ic_baseline_account_box_24
 drawable ic_baseline_account_circle_24
+drawable ic_baseline_adjust_24
 drawable ic_baseline_autorenew_24
 drawable ic_baseline_chat_bubble_24
 drawable ic_baseline_cloud_download_24
@@ -1428,6 +1430,7 @@ drawable ic_mtrl_checked_circle
 drawable ic_mtrl_chip_checked_black
 drawable ic_mtrl_chip_checked_circle
 drawable ic_mtrl_chip_close_circle
+drawable irish_aid
 drawable mtrl_dialog_background
 drawable mtrl_dropdown_arrow
 drawable mtrl_ic_arrow_drop_down
@@ -1437,6 +1440,7 @@ drawable mtrl_ic_error
 drawable mtrl_popupmenu_background
 drawable mtrl_popupmenu_background_dark
 drawable mtrl_tabs_default_indicator
+drawable nac
 drawable navigation_empty_icon
 drawable notification_action_background
 drawable notification_bg
@@ -1454,6 +1458,7 @@ drawable side_nav_bar
 drawable test_custom_background
 drawable tooltip_frame_dark
 drawable tooltip_frame_light
+drawable uyonet_logo
 drawable white_background_rectangle
 id ALT
 id BOTTOM_END
@@ -2469,6 +2474,7 @@ layout activity_main
 layout activity_poll
 layout activity_social_development
 layout activity_social_development_list
+layout activity_splash_screen
 layout activity_sub_county_picker
 layout activity_water_environment
 layout app_bar_main
@@ -2554,6 +2560,7 @@ layout text_view_with_theme_line_height
 layout text_view_without_line_height
 menu main
 mipmap ic_launcher
+mipmap ic_launcher_foreground
 mipmap ic_launcher_round
 navigation mobile_navigation
 plurals mtrl_badge_content_description
