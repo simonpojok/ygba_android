@@ -1405,6 +1405,7 @@ drawable ic_baseline_autorenew_24
 drawable ic_baseline_chat_bubble_24
 drawable ic_baseline_cloud_download_24
 drawable ic_baseline_cloud_upload_24
+drawable ic_baseline_done_24
 drawable ic_baseline_help_outline_24
 drawable ic_baseline_history_24
 drawable ic_baseline_home_24
@@ -2478,6 +2479,7 @@ layout activity_social_development
 layout activity_social_development_list
 layout activity_splash_screen
 layout activity_sub_county_picker
+layout activity_success
 layout activity_water_environment
 layout app_bar_main
 layout content_main

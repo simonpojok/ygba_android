@@ -25,6 +25,10 @@
         android:supportsRtl="true"
         android:testOnly="true"
         android:theme="@style/AppTheme" >
+        <activity
+            android:name="org.ygba.youthgobudget.dialogs.SuccessActivity"
+            android:label="Operation Successful"
+            android:theme="@android:style/Theme.DeviceDefault.Light.Dialog" />
         <activity android:name="org.ygba.youthgobudget.sponsors.SplashScreenActivity" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
