@@ -206,7 +206,6 @@ public class AgricultureActivity extends AppCompatActivity implements  AdapterVi
                 question43AnyReason.getText().toString()
         );
 
-        agricultureQuestion.setQuarter(selectedQuarter);
         activityViewModel.saveAgricultureQuestion(agricultureQuestion);
         startActivityForResult(new Intent(this, SuccessActivity.class), DISPLAY_SUCCESS_MESSAGE_ACTIVITY);
     }
@@ -422,14 +421,68 @@ public class AgricultureActivity extends AppCompatActivity implements  AdapterVi
                     question42Date2.setText(data.getStringExtra(DatePickerActivity.SELECTED_DATE));
                 } else if (requestCode == QUESTION_4_DATE_WITHDRAWN_1_REQUEST_CODE) {
                     question42Date1.setText(data.getStringExtra(DatePickerActivity.SELECTED_DATE));
-                } else if (requestCode == DISPLAY_SUCCESS_MESSAGE_ACTIVITY ) {
-                    clearForm();
                 }
             }
+        }
+
+        if (requestCode == DISPLAY_SUCCESS_MESSAGE_ACTIVITY ) {
+            clearForm();
         }
     }
 
     private void clearForm() {
-
+        selectedQuarter = "";
+        selectedQuarter = "";
+        villageEditText.setText(null);
+        parishTextEdit.setText(null);
+        parishTextEdit.setText(null);
+        agentFullNameEditText.setText(null);
+        agentTelephoneEditText.setText(null);
+        agentNumberEditText.setText(null);
+        question1ReasonEditText.setText(null);
+        extensionServiceExpectedOrReceivedEditText.setText(null);
+        extensionServiceAmountReceivedTextEdit.setText(null);
+        extensionServiceDateReceivedEditText.setText(null);
+        extensionServiceDateWithdrawnEditText.setText(null);
+        developmentExpectedOrApprovedTextEdit.setText(null);
+        developmentAmountReceived.setText(null);
+        extensionServiceDateReceivedEditText.setText(null);
+        developmentDateWithdrawn.setText(null);
+        question21EditText.setText(null);
+        question23EditText.setText(null);
+        question24EditText.setText(null);
+        question25EditEdit.setText(null);
+        question32MeetingCapacity.setText(null);
+        question24MeetingCell.setText(null);
+        question34MaleNumber.setText(null);
+        question34FemaleNumber.setText(null);
+        question35EditText.setText(null);
+        question42Plant1.setText(null);
+        question42Date1.setText(null);
+        question42Male1.setText(null);
+        question42Female1.setText(null);
+        question42Village1.setText(null);
+        question42Plant2.setText(null);
+        question42Date2.setText(null);
+        question42Male2.setText(null);
+        question42Female2.setText(null);
+        question42Village2.setText(null);
+        question42Plant3.setText(null);
+        question42Date3.setText(null);
+        question42Male3.setText(null);
+        question42Female3.setText(null);
+        question42Village3.setText(null);
+        question42Plant4.setText(null);
+        question42Date4.setText(null);
+        question42Male4.setText(null);
+        question42Female4.setText(null);
+        question42Village4.setText(null);
+        question42Plant5.setText(null);
+        question42Date5.setText(null);
+        question42Male5.setText(null);
+        question42Female5.setText(null);
+        question42Village5.setText(null);
+        question43Reason.setText(null);
+        question43AnyReason.setText(null);
     }
 }

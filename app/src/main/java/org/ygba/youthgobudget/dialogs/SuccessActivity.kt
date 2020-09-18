@@ -16,6 +16,7 @@ class SuccessActivity : Activity() {
 
     override fun onDestroy() {
         val intent = Intent()
+        intent.putExtra("saved", "saved")
         setResult(RESULT_OK, intent)
         super.onDestroy()
     }
