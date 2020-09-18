@@ -3,7 +3,6 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:background="@color/colorActivityBackground"
     android:layout_height="match_parent"
     android:paddingHorizontal="8dp"
     tools:context=".health.HealthActivity">
@@ -21,7 +20,7 @@
             android:layout_marginTop="20dp"
             android:text="@string/health_sector_header"
             android:textSize="25sp"
-            android:textColor="@color/white"
+            android:textColor="@color/colorPrimaryText"
             android:textStyle="bold" />
 
         <TextView
@@ -33,7 +32,7 @@
             android:padding="10dp"
             android:text="@string/health_form_description"
             android:textSize="18sp"
-            android:textColor="@color/white"
+            android:textColor="@color/colorPrimaryText"
             android:textStyle="bold" />
 
         <TextView
@@ -46,7 +45,7 @@
             android:layout_marginEnd="20dp"
             android:text="23 - October 2020"
             android:textSize="18sp"
-            android:textColor="@color/white"
+            android:textColor="@color/colorPrimaryText"
             android:textStyle="bold" />
 
 
@@ -56,7 +55,7 @@
             android:layout_height="wrap_content"
             android:text="@string/financial_year_label"
             android:textSize="15sp"
-            android:textColor="@color/white"
+            android:textColor="@color/colorPrimaryText"
             android:textStyle="bold" />
 
         <Spinner
@@ -73,7 +72,7 @@
             android:layout_height="wrap_content"
             android:labelFor="@id/village_text_edit"
             android:text="@string/village_label"
-            android:textColor="@color/white"
+            android:textColor="@color/colorPrimaryText"
             android:textSize="15sp"
             android:textStyle="bold" />
 
@@ -97,7 +96,7 @@
             android:layout_height="wrap_content"
             android:text="@string/parish_label"
             android:textSize="15sp"
-            android:textColor="@color/white"
+            android:textColor="@color/colorPrimaryText"
             android:textStyle="bold" />
 
         <EditText
@@ -121,7 +120,7 @@
             android:layout_height="wrap_content"
             android:text="@string/division_label"
             android:textSize="15sp"
-            android:textColor="@color/white"
+            android:textColor="@color/colorPrimaryText"
             android:textStyle="bold" />
 
         <EditText
@@ -144,7 +143,7 @@
             android:layout_width="wrap_content"
             android:text="@string/ygb_agent_name_label"
             android:textSize="15sp"
-            android:textColor="@color/white"
+            android:textColor="@color/colorPrimaryText"
             android:textStyle="bold"
             android:layout_height="wrap_content" />
 
@@ -164,7 +163,7 @@
             android:layout_height="wrap_content"
             android:text="@string/ygb_agent_tel_label"
             android:textSize="15sp"
-            android:textColor="@color/white"
+            android:textColor="@color/colorPrimaryText"
             android:textStyle="bold" />
 
         <EditText
@@ -184,7 +183,7 @@
             android:layout_height="wrap_content"
             android:text="@string/health_note"
             android:textSize="15sp"
-            android:textColor="@color/white"
+            android:textColor="@color/colorPrimaryText"
             android:textStyle="italic" />
 
         <TextView
@@ -193,7 +192,7 @@
             android:layout_height="wrap_content"
             android:text="@string/h_question_a"
             android:textSize="15sp"
-            android:textColor="@color/white"
+            android:textColor="@color/colorPrimaryText"
             android:textStyle="bold" />
 
         <EditText
@@ -214,7 +213,7 @@
             android:layout_height="wrap_content"
             android:text="@string/h_question_b"
             android:textSize="15sp"
-            android:textColor="@color/white"
+            android:textColor="@color/colorPrimaryText"
             android:textStyle="bold" />
 
         <EditText
@@ -235,7 +234,7 @@
             android:layout_height="wrap_content"
             android:text="@string/h_question_c"
             android:textSize="15sp"
-            android:textColor="@color/white"
+            android:textColor="@color/colorPrimaryText"
             android:textStyle="bold" />
 
         <EditText
@@ -256,7 +255,7 @@
             android:layout_height="wrap_content"
             android:text="@string/h_question_1_introduction"
             android:textSize="18sp"
-            android:textColor="@color/white"
+            android:textColor="@color/colorPrimaryText"
             android:textStyle="bold" />
 
         <HorizontalScrollView
@@ -280,7 +279,7 @@
                     android:layout_height="wrap_content"
                     android:text="@string/grants"
                     android:textSize="15sp"
-                    android:textColor="@color/white"
+                    android:textColor="@color/colorPrimaryText"
                     android:textStyle="bold" />
 
                 <TextView
@@ -292,7 +291,7 @@
                     android:layout_height="wrap_content"
                     android:text="@string/health_budget_approved"
                     android:textSize="15sp"
-                    android:textColor="@color/white"
+                    android:textColor="@color/colorPrimaryText"
                     android:textStyle="bold" />
 
                 <TextView
@@ -304,7 +303,7 @@
                     android:layout_height="wrap_content"
                     android:text="@string/health_budget_released"
                     android:textSize="15sp"
-                    android:textColor="@color/white"
+                    android:textColor="@color/colorPrimaryText"
                     android:textStyle="bold" />
 
                 <TextView
@@ -316,7 +315,7 @@
                     android:layout_height="wrap_content"
                     android:text="@string/date_received"
                     android:textSize="15sp"
-                    android:textColor="@color/white"
+                    android:textColor="@color/colorPrimaryText"
                     android:textStyle="bold" />
 
                 <TextView
@@ -328,7 +327,7 @@
                     android:layout_height="wrap_content"
                     android:text="@string/date_withdrawn"
                     android:textSize="15sp"
-                    android:textColor="@color/white"
+                    android:textColor="@color/colorPrimaryText"
                     android:textStyle="bold" />
 
 <!--                     row 1 -->
@@ -341,7 +340,7 @@
                     android:layout_height="wrap_content"
                     android:text="@string/health_q_1_recurrent"
                     android:textSize="15sp"
-                    android:textColor="@color/white"
+                    android:textColor="@color/colorPrimaryText"
                     android:textStyle="bold" />
 
                 <EditText
@@ -421,7 +420,7 @@
                     android:layout_height="wrap_content"
                     android:text="@string/health_q_1_development"
                     android:textSize="15sp"
-                    android:textColor="@color/white"
+                    android:textColor="@color/colorPrimaryText"
                     android:textStyle="bold" />
 
                 <EditText
@@ -501,7 +500,7 @@
             android:layout_height="wrap_content"
             android:text="@string/h_question_1_1_objective"
             android:textSize="15sp"
-            android:textColor="@color/white"
+            android:textColor="@color/colorPrimaryText"
             android:textStyle="bold" />
 
         <CheckBox
@@ -510,7 +509,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Health Facility notice board"
-            android:textColor="@color/white"
+            android:textColor="@color/colorPrimaryText"
             android:textSize="15sp"
             android:textStyle="bold"/>
 
@@ -520,7 +519,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="In Charge's or Facility Admin Office"
-            android:textColor="@color/white"
+            android:textColor="@color/colorPrimaryText"
             android:textSize="15sp"
             android:textStyle="bold"/>
         <CheckBox
@@ -529,7 +528,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Health Facility notice board"
-            android:textColor="@color/white"
+            android:textColor="@color/colorPrimaryText"
             android:textSize="15sp"
             android:textStyle="bold"/>
 
@@ -539,7 +538,7 @@
             android:layout_height="wrap_content"
             android:text="@string/h_question_1_2_text"
             android:textSize="15sp"
-            android:textColor="@color/white"
+            android:textColor="@color/colorPrimaryText"
             android:textStyle="bold" />
 
         <EditText
@@ -560,7 +559,7 @@
             android:layout_height="wrap_content"
             android:text="@string/h_question_2_text"
             android:textSize="18sp"
-            android:textColor="@color/white"
+            android:textColor="@color/colorPrimaryText"
             android:textStyle="bold" />
 
         <HorizontalScrollView
@@ -585,7 +584,7 @@
                     android:layout_height="wrap_content"
                     android:text="@string/category"
                     android:textSize="15sp"
-                    android:textColor="@color/white"
+                    android:textColor="@color/colorPrimaryText"
                     android:textStyle="bold" />
 
                 <LinearLayout
@@ -603,7 +602,7 @@
                         android:layout_height="wrap_content"
                         android:text="@string/yes"
                         android:textSize="15sp"
-                        android:textColor="@color/white"
+                        android:textColor="@color/colorPrimaryText"
                         android:textStyle="bold" />
 
                     <TextView
@@ -613,7 +612,7 @@
                         android:layout_height="wrap_content"
                         android:text="@string/no"
                         android:textSize="15sp"
-                        android:textColor="@color/white"
+                        android:textColor="@color/colorPrimaryText"
                         android:textStyle="bold" />
                 </LinearLayout>
 
@@ -628,7 +627,7 @@
                     android:layout_height="wrap_content"
                     android:text="@string/maternity_ward"
                     android:textSize="15sp"
-                    android:textColor="@color/white"
+                    android:textColor="@color/colorPrimaryText"
                     android:textStyle="bold" />
 
                 <RadioGroup
@@ -649,7 +648,7 @@
                         android:text="@string/yes"
                         android:textStyle="bold"
                         android:textSize="15sp"
-                        android:textColor="@color/white" />
+                        android:textColor="@color/colorPrimaryText" />
 
                     <RadioButton
                         android:id="@+id/question_2_maternity_no"
@@ -659,7 +658,7 @@
                         android:text="@string/no"
                         android:textStyle="bold"
                         android:textSize="15sp"
-                        android:textColor="@color/white" />
+                        android:textColor="@color/colorPrimaryText" />
                 </RadioGroup>
 
                 <!--            row 2 -->
@@ -674,7 +673,7 @@
                     android:layout_height="wrap_content"
                     android:text="@string/general_ward"
                     android:textSize="15sp"
-                    android:textColor="@color/white"
+                    android:textColor="@color/colorPrimaryText"
                     android:textStyle="bold" />
 
                 <RadioGroup
@@ -695,7 +694,7 @@
                         android:text="@string/yes"
                         android:textStyle="bold"
                         android:textSize="15sp"
-                        android:textColor="@color/white" />
+                        android:textColor="@color/colorPrimaryText" />
 
                     <RadioButton
                         android:id="@+id/question_2_general_ward_no"
@@ -705,7 +704,7 @@
                         android:text="@string/no"
                         android:textStyle="bold"
                         android:textSize="15sp"
-                        android:textColor="@color/white" />
+                        android:textColor="@color/colorPrimaryText" />
                 </RadioGroup>
 
                 <!--            row 3 -->
@@ -719,7 +718,7 @@
                     android:layout_height="wrap_content"
                     android:text="@string/delivery_beds"
                     android:textSize="15sp"
-                    android:textColor="@color/white"
+                    android:textColor="@color/colorPrimaryText"
                     android:textStyle="bold" />
 
                 <RadioGroup
@@ -740,7 +739,7 @@
                         android:text="@string/yes"
                         android:textStyle="bold"
                         android:textSize="15sp"
-                        android:textColor="@color/white" />
+                        android:textColor="@color/colorPrimaryText" />
 
                     <RadioButton
                         android:id="@+id/question_2_delivery_beds_no"
@@ -750,7 +749,7 @@
                         android:text="@string/no"
                         android:textStyle="bold"
                         android:textSize="15sp"
-                        android:textColor="@color/white" />
+                        android:textColor="@color/colorPrimaryText" />
                 </RadioGroup>
 
                 <!--            row 4 -->
@@ -765,7 +764,7 @@
                     android:layout_height="wrap_content"
                     android:text="@string/family_planning_Services"
                     android:textSize="15sp"
-                    android:textColor="@color/white"
+                    android:textColor="@color/colorPrimaryText"
                     android:textStyle="bold" />
 
                 <RadioGroup
@@ -786,7 +785,7 @@
                         android:text="@string/yes"
                         android:textStyle="bold"
                         android:textSize="15sp"
-                        android:textColor="@color/white" />
+                        android:textColor="@color/colorPrimaryText" />
 
                     <RadioButton
                         android:id="@+id/question_2_family_planning_Services_no"
@@ -796,7 +795,7 @@
                         android:text="@string/no"
                         android:textStyle="bold"
                         android:textSize="15sp"
-                        android:textColor="@color/white" />
+                        android:textColor="@color/colorPrimaryText" />
                 </RadioGroup>
 
                 <!--            row 5 -->
@@ -811,7 +810,7 @@
                     android:layout_height="wrap_content"
                     android:text="@string/hiv_counselling_testing"
                     android:textSize="15sp"
-                    android:textColor="@color/white"
+                    android:textColor="@color/colorPrimaryText"
                     android:textStyle="bold" />
 
                 <RadioGroup
@@ -832,7 +831,7 @@
                         android:text="@string/yes"
                         android:textStyle="bold"
                         android:textSize="15sp"
-                        android:textColor="@color/white" />
+                        android:textColor="@color/colorPrimaryText" />
 
                     <RadioButton
                         android:id="@+id/question_2_hiv_counselling_testing_no"
@@ -842,7 +841,7 @@
                         android:text="@string/no"
                         android:textStyle="bold"
                         android:textSize="15sp"
-                        android:textColor="@color/white" />
+                        android:textColor="@color/colorPrimaryText" />
                 </RadioGroup>
 
                 <!--            row 6 -->
@@ -857,7 +856,7 @@
                     android:layout_height="wrap_content"
                     android:text="@string/pmtct"
                     android:textSize="15sp"
-                    android:textColor="@color/white"
+                    android:textColor="@color/colorPrimaryText"
                     android:textStyle="bold" />
 
                 <RadioGroup
@@ -878,7 +877,7 @@
                         android:text="@string/yes"
                         android:textStyle="bold"
                         android:textSize="15sp"
-                        android:textColor="@color/white" />
+                        android:textColor="@color/colorPrimaryText" />
 
                     <RadioButton
                         android:id="@+id/question_2_pmtct_no"
@@ -888,7 +887,7 @@
                         android:text="@string/no"
                         android:textStyle="bold"
                         android:textSize="15sp"
-                        android:textColor="@color/white" />
+                        android:textColor="@color/colorPrimaryText" />
                 </RadioGroup>
 
                 <!--            7 -->
@@ -903,7 +902,7 @@
                     android:layout_height="wrap_content"
                     android:text="@string/immunization"
                     android:textSize="15sp"
-                    android:textColor="@color/white"
+                    android:textColor="@color/colorPrimaryText"
                     android:textStyle="bold" />
 
                 <RadioGroup
@@ -924,7 +923,7 @@
                         android:text="@string/yes"
                         android:textStyle="bold"
                         android:textSize="15sp"
-                        android:textColor="@color/white" />
+                        android:textColor="@color/colorPrimaryText" />
 
                     <RadioButton
                         android:id="@+id/question_2_immunization_no"
@@ -934,7 +933,7 @@
                         android:text="@string/no"
                         android:textStyle="bold"
                         android:textSize="15sp"
-                        android:textColor="@color/white" />
+                        android:textColor="@color/colorPrimaryText" />
                 </RadioGroup>
 
                 <!--            8 -->
@@ -949,7 +948,7 @@
                     android:layout_height="wrap_content"
                     android:text="@string/youth_friendly_corners"
                     android:textSize="15sp"
-                    android:textColor="@color/white"
+                    android:textColor="@color/colorPrimaryText"
                     android:textStyle="bold" />
 
                 <RadioGroup
@@ -970,7 +969,7 @@
                         android:text="@string/yes"
                         android:textStyle="bold"
                         android:textSize="15sp"
-                        android:textColor="@color/white" />
+                        android:textColor="@color/colorPrimaryText" />
 
                     <RadioButton
                         android:id="@+id/question_2_youth_friendly_corners_no"
@@ -980,7 +979,7 @@
                         android:text="@string/no"
                         android:textStyle="bold"
                         android:textSize="15sp"
-                        android:textColor="@color/white" />
+                        android:textColor="@color/colorPrimaryText" />
                 </RadioGroup>
 
                 <!--            9 -->
@@ -995,7 +994,7 @@
                     android:layout_height="wrap_content"
                     android:text="@string/vaccination_for_hep_b"
                     android:textSize="15sp"
-                    android:textColor="@color/white"
+                    android:textColor="@color/colorPrimaryText"
                     android:textStyle="bold" />
 
                 <RadioGroup
@@ -1016,7 +1015,7 @@
                         android:text="@string/yes"
                         android:textStyle="bold"
                         android:textSize="15sp"
-                        android:textColor="@color/white" />
+                        android:textColor="@color/colorPrimaryText" />
 
                     <RadioButton
                         android:id="@+id/question_2_vaccination_for_hep_b_no"
@@ -1026,7 +1025,7 @@
                         android:text="@string/no"
                         android:textStyle="bold"
                         android:textSize="15sp"
-                        android:textColor="@color/white" />
+                        android:textColor="@color/colorPrimaryText" />
                 </RadioGroup>
             </GridLayout>
         </HorizontalScrollView>
@@ -1037,7 +1036,7 @@
             android:layout_height="wrap_content"
             android:text="@string/health_question_2_1_label"
             android:textSize="15sp"
-            android:textColor="@color/white"
+            android:textColor="@color/colorPrimaryText"
             android:textStyle="bold" />
 
         <HorizontalScrollView
@@ -1060,7 +1059,7 @@
                     android:layout_height="wrap_content"
                     android:text="@string/category"
                     android:textSize="15sp"
-                    android:textColor="@color/white"
+                    android:textColor="@color/colorPrimaryText"
                     android:textStyle="bold" />
                 <TextView
                     android:layout_marginVertical="5dp"
@@ -1071,7 +1070,7 @@
                     android:layout_height="wrap_content"
                     android:text="@string/number_deliveries"
                     android:textSize="15sp"
-                    android:textColor="@color/white"
+                    android:textColor="@color/colorPrimaryText"
                     android:textStyle="bold" />
 
 <!--                row 1 -->
@@ -1083,7 +1082,7 @@
                     android:layout_height="wrap_content"
                     android:text="@string/live"
                     android:textSize="15sp"
-                    android:textColor="@color/white"
+                    android:textColor="@color/colorPrimaryText"
                     android:textStyle="bold" />
 
                 <EditText
@@ -1111,7 +1110,7 @@
                     android:layout_height="wrap_content"
                     android:text="@string/still"
                     android:textSize="15sp"
-                    android:textColor="@color/white"
+                    android:textColor="@color/colorPrimaryText"
                     android:textStyle="bold" />
 
                 <EditText
@@ -1138,7 +1137,7 @@
             android:layout_height="wrap_content"
             android:text="@string/health_question_2_2_label"
             android:textSize="15sp"
-            android:textColor="@color/white"
+            android:textColor="@color/colorPrimaryText"
             android:textStyle="bold" />
 
         <EditText
@@ -1159,7 +1158,7 @@
             android:layout_height="wrap_content"
             android:text="@string/health_question_3_introduction"
             android:textSize="18sp"
-            android:textColor="@color/white"
+            android:textColor="@color/colorPrimaryText"
             android:textStyle="bold" />
 
         <HorizontalScrollView
@@ -1186,7 +1185,7 @@
                     android:layout_height="wrap_content"
                     android:text="@string/health_q_3_facilities"
                     android:textSize="15sp"
-                    android:textColor="@color/white"
+                    android:textColor="@color/colorPrimaryText"
                     android:textStyle="bold" />
 
                 <TextView
@@ -1199,7 +1198,7 @@
                     android:layout_height="wrap_content"
                     android:text="@string/health_q_3_patients"
                     android:textSize="15sp"
-                    android:textColor="@color/white"
+                    android:textColor="@color/colorPrimaryText"
                     android:textStyle="bold" />
 
                 <TextView
@@ -1212,7 +1211,7 @@
                     android:layout_height="wrap_content"
                     android:text="@string/health_q_3_health_facility_staff"
                     android:textSize="15sp"
-                    android:textColor="@color/white"
+                    android:textColor="@color/colorPrimaryText"
                     android:textStyle="bold" />
 
                 <TextView
@@ -1225,7 +1224,7 @@
                     android:layout_height="wrap_content"
                     android:text="@string/health_q_3_functionalities"
                     android:textSize="15sp"
-                    android:textColor="@color/white"
+                    android:textColor="@color/colorPrimaryText"
                     android:textStyle="bold" />
 
 <!--                row  1 -->
@@ -1238,7 +1237,7 @@
                     android:layout_height="wrap_content"
                     android:text="@string/health_question_3_2_sanitation_facility"
                     android:textSize="15sp"
-                    android:textColor="@color/white"
+                    android:textColor="@color/colorPrimaryText"
                     android:textStyle="bold" />
 
                 <TextView
@@ -1250,7 +1249,7 @@
                     android:layout_height="wrap_content"
                     android:text="@string/health_question_3_number_of_blocks"
                     android:textSize="15sp"
-                    android:textColor="@color/white"
+                    android:textColor="@color/colorPrimaryText"
                     android:textStyle="bold" />
 
                 <TextView
@@ -1262,7 +1261,7 @@
                     android:layout_height="wrap_content"
                     android:text="@string/health_question_3_number_of_stances"
                     android:textSize="15sp"
-                    android:textColor="@color/white"
+                    android:textColor="@color/colorPrimaryText"
                     android:textStyle="bold" />
 
                 <TextView
@@ -1274,7 +1273,7 @@
                 android:layout_height="wrap_content"
                 android:text="@string/health_question_3_male_stances"
                 android:textSize="15sp"
-                android:textColor="@color/white"
+                android:textColor="@color/colorPrimaryText"
                 android:textStyle="bold" />
 
                 <TextView
@@ -1286,7 +1285,7 @@
                     android:layout_height="wrap_content"
                     android:text="@string/health_question_3_female_stances"
                     android:textSize="15sp"
-                    android:textColor="@color/white"
+                    android:textColor="@color/colorPrimaryText"
                     android:textStyle="bold" />
 
                 <TextView
@@ -1298,7 +1297,7 @@
                     android:layout_height="wrap_content"
                     android:text="@string/health_question_3_male_stuff"
                     android:textSize="15sp"
-                    android:textColor="@color/white"
+                    android:textColor="@color/colorPrimaryText"
                     android:textStyle="bold" />
 
                 <TextView
@@ -1310,7 +1309,7 @@
                     android:layout_height="wrap_content"
                     android:text="@string/health_question_3_female_stuff"
                     android:textSize="15sp"
-                    android:textColor="@color/white"
+                    android:textColor="@color/colorPrimaryText"
                     android:textStyle="bold" />
 
                 <TextView
@@ -1322,7 +1321,7 @@
                     android:layout_height="wrap_content"
                     android:text="@string/health_question_3_mixed_stuff"
                     android:textSize="15sp"
-                    android:textColor="@color/white"
+                    android:textColor="@color/colorPrimaryText"
                     android:textStyle="bold" />
 
                 <TextView
@@ -1334,7 +1333,7 @@
                     android:layout_height="wrap_content"
                     android:text="@string/health_question_3_functional"
                     android:textSize="15sp"
-                    android:textColor="@color/white"
+                    android:textColor="@color/colorPrimaryText"
                     android:textStyle="bold" />
 
                 <TextView
@@ -1346,7 +1345,7 @@
                     android:layout_height="wrap_content"
                     android:text="@string/health_question_3_none"
                     android:textSize="15sp"
-                    android:textColor="@color/white"
+                    android:textColor="@color/colorPrimaryText"
                     android:textStyle="bold" />
 
 <!--                row 2 toilet -->
@@ -1360,7 +1359,7 @@
                     android:layout_height="wrap_content"
                     android:text="@string/health_question_3_toilet"
                     android:textSize="15sp"
-                    android:textColor="@color/white"
+                    android:textColor="@color/colorPrimaryText"
                     android:textStyle="bold" />
 
                 <EditText
@@ -1509,7 +1508,7 @@
                     android:layout_height="wrap_content"
                     android:text="@string/health_question_3_latrine"
                     android:textSize="15sp"
-                    android:textColor="@color/white"
+                    android:textColor="@color/colorPrimaryText"
                     android:textStyle="bold" />
 
                 <EditText
@@ -1658,7 +1657,7 @@
                     android:layout_height="wrap_content"
                     android:text="@string/health_question_3_ffc"
                     android:textSize="15sp"
-                    android:textColor="@color/white"
+                    android:textColor="@color/colorPrimaryText"
                     android:textStyle="bold" />
 
                 <EditText
@@ -1775,7 +1774,7 @@
             android:layout_height="wrap_content"
             android:text="@string/health_question_3_1_label"
             android:textSize="15sp"
-            android:textColor="@color/white"
+            android:textColor="@color/colorPrimaryText"
             android:textStyle="bold" />
 
         <RadioGroup
@@ -1794,7 +1793,7 @@
                 android:text="@string/yes"
                 android:textStyle="bold"
                 android:textSize="15sp"
-                android:textColor="@color/white" />
+                android:textColor="@color/colorPrimaryText" />
 
             <RadioButton
                 android:id="@+id/question_3_1_no"
@@ -1804,7 +1803,7 @@
                 android:text="@string/no"
                 android:textStyle="bold"
                 android:textSize="15sp"
-                android:textColor="@color/white" />
+                android:textColor="@color/colorPrimaryText" />
         </RadioGroup>
 
         <TextView
@@ -1813,7 +1812,7 @@
             android:layout_height="wrap_content"
             android:text="@string/health_question_3_2_label"
             android:textSize="15sp"
-            android:textColor="@color/white"
+            android:textColor="@color/colorPrimaryText"
             android:textStyle="bold" />
 
         <CheckBox
@@ -1822,7 +1821,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Ramp"
-            android:textColor="@color/white"
+            android:textColor="@color/colorPrimaryText"
             android:textSize="15sp"
             android:textStyle="bold"/>
 
@@ -1832,7 +1831,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Specialized Toilet / Latrine"
-            android:textColor="@color/white"
+            android:textColor="@color/colorPrimaryText"
             android:textSize="15sp"
             android:textStyle="bold"/>
         <CheckBox
@@ -1841,7 +1840,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Others ( Specify )"
-            android:textColor="@color/white"
+            android:textColor="@color/colorPrimaryText"
             android:textSize="15sp"
             android:textStyle="bold"/>
 
@@ -1863,7 +1862,7 @@
             android:layout_height="wrap_content"
             android:text="@string/health_question_4_label"
             android:textSize="18sp"
-            android:textColor="@color/white"
+            android:textColor="@color/colorPrimaryText"
             android:textStyle="bold" />
 
         <HorizontalScrollView
@@ -1888,7 +1887,7 @@
                     android:layout_height="wrap_content"
                     android:text="@string/health_question_4_water_point_label"
                     android:textSize="15sp"
-                    android:textColor="@color/white"
+                    android:textColor="@color/colorPrimaryText"
                     android:textStyle="bold" />
 
                 <TextView
@@ -1900,7 +1899,7 @@
                     android:layout_height="wrap_content"
                     android:text="@string/health_question_4_water_point_number_label"
                     android:textSize="15sp"
-                    android:textColor="@color/white"
+                    android:textColor="@color/colorPrimaryText"
                     android:textStyle="bold" />
 
                 <TextView
@@ -1914,7 +1913,7 @@
                     android:layout_height="wrap_content"
                     android:text="@string/health_question_4_water_point_functionality_label"
                     android:textSize="15sp"
-                    android:textColor="@color/white"
+                    android:textColor="@color/colorPrimaryText"
                     android:textStyle="bold" />
 
 <!--                row 1 -->
@@ -1927,7 +1926,7 @@
                     android:layout_height="wrap_content"
                     android:text="@string/health_question_4_water_point_functional_label"
                     android:textSize="15sp"
-                    android:textColor="@color/white"
+                    android:textColor="@color/colorPrimaryText"
                     android:textStyle="bold" />
 
                 <TextView
@@ -1939,7 +1938,7 @@
                     android:layout_height="wrap_content"
                     android:text="@string/health_question_4_water_point_none_label"
                     android:textSize="15sp"
-                    android:textColor="@color/white"
+                    android:textColor="@color/colorPrimaryText"
                     android:textStyle="bold" />
 
 <!--                row 2 -->
@@ -1953,7 +1952,7 @@
                     android:layout_height="wrap_content"
                     android:text="@string/health_question_4_water_point_bore_hole_label"
                     android:textSize="15sp"
-                    android:textColor="@color/white"
+                    android:textColor="@color/colorPrimaryText"
                     android:textStyle="bold" />
 
                 <EditText
@@ -2012,7 +2011,7 @@
                     android:layout_height="wrap_content"
                     android:text="@string/health_question_4_water_point_tap_label"
                     android:textSize="15sp"
-                    android:textColor="@color/white"
+                    android:textColor="@color/colorPrimaryText"
                     android:textStyle="bold" />
 
                 <EditText
@@ -2071,7 +2070,7 @@
                     android:layout_height="wrap_content"
                     android:text="@string/health_question_4_water_point_water_tank_label"
                     android:textSize="15sp"
-                    android:textColor="@color/white"
+                    android:textColor="@color/colorPrimaryText"
                     android:textStyle="bold" />
 
                 <EditText
@@ -2130,7 +2129,7 @@
                     android:layout_height="wrap_content"
                     android:text="@string/health_question_4_water_point_none_label"
                     android:textSize="15sp"
-                    android:textColor="@color/white"
+                    android:textColor="@color/colorPrimaryText"
                     android:textStyle="bold" />
 
                 <EditText
@@ -2193,7 +2192,7 @@
                         android:layout_height="wrap_content"
                         android:text="@string/health_question_4_water_point_others_label"
                         android:textSize="15sp"
-                        android:textColor="@color/white"
+                        android:textColor="@color/colorPrimaryText"
                         android:textStyle="bold" />
 
                     <EditText
@@ -2265,7 +2264,7 @@
             android:layout_height="wrap_content"
             android:text="@string/health_question_4_1_label"
             android:textSize="15sp"
-            android:textColor="@color/white"
+            android:textColor="@color/colorPrimaryText"
             android:textStyle="bold" />
 
         <RadioGroup
@@ -2283,7 +2282,7 @@
                 android:text="@string/yes"
                 android:textStyle="bold"
                 android:textSize="15sp"
-                android:textColor="@color/white" />
+                android:textColor="@color/colorPrimaryText" />
 
             <RadioButton
                 android:id="@+id/question_4_1_no"
@@ -2293,7 +2292,7 @@
                 android:text="@string/no"
                 android:textStyle="bold"
                 android:textSize="15sp"
-                android:textColor="@color/white" />
+                android:textColor="@color/colorPrimaryText" />
         </RadioGroup>
 
         <TextView
@@ -2302,7 +2301,7 @@
             android:layout_height="wrap_content"
             android:text="@string/health_question_4_3_label"
             android:textSize="15sp"
-            android:textColor="@color/white"
+            android:textColor="@color/colorPrimaryText"
             android:textStyle="bold" />
 
         <RadioGroup
@@ -2320,7 +2319,7 @@
                 android:text="@string/yes"
                 android:textStyle="bold"
                 android:textSize="15sp"
-                android:textColor="@color/white" />
+                android:textColor="@color/colorPrimaryText" />
 
             <RadioButton
                 android:id="@+id/question_4_3_no"
@@ -2330,7 +2329,7 @@
                 android:text="@string/no_4_3"
                 android:textStyle="bold"
                 android:textSize="15sp"
-                android:textColor="@color/white" />
+                android:textColor="@color/colorPrimaryText" />
 
         </RadioGroup>
 
@@ -2352,7 +2351,7 @@
             android:layout_height="wrap_content"
             android:text="@string/health_question_4_4_label"
             android:textSize="15sp"
-            android:textColor="@color/white"
+            android:textColor="@color/colorPrimaryText"
             android:textStyle="bold" />
 
         <RadioGroup
@@ -2370,7 +2369,7 @@
                 android:text="@string/yes"
                 android:textStyle="bold"
                 android:textSize="15sp"
-                android:textColor="@color/white" />
+                android:textColor="@color/colorPrimaryText" />
 
             <RadioButton
                 android:id="@+id/question_4_4_no"
@@ -2380,7 +2379,7 @@
                 android:text="@string/no"
                 android:textStyle="bold"
                 android:textSize="15sp"
-                android:textColor="@color/white" />
+                android:textColor="@color/colorPrimaryText" />
 
         </RadioGroup>
 
@@ -2390,7 +2389,7 @@
             android:layout_height="wrap_content"
             android:text="@string/health_question_5_label"
             android:textSize="18sp"
-            android:textColor="@color/white"
+            android:textColor="@color/colorPrimaryText"
             android:textStyle="bold" />
 
         <TextView
@@ -2399,7 +2398,7 @@
             android:layout_height="wrap_content"
             android:text="@string/health_question_5_1_label"
             android:textSize="15sp"
-            android:textColor="@color/white"
+            android:textColor="@color/colorPrimaryText"
             android:textStyle="bold" />
 
         <RadioGroup
@@ -2417,7 +2416,7 @@
                 android:text="@string/yes"
                 android:textStyle="bold"
                 android:textSize="15sp"
-                android:textColor="@color/white" />
+                android:textColor="@color/colorPrimaryText" />
 
             <RadioButton
                 android:id="@+id/question_5_1_HUMC_no"
@@ -2427,7 +2426,7 @@
                 android:text="@string/no"
                 android:textStyle="bold"
                 android:textSize="15sp"
-                android:textColor="@color/white" />
+                android:textColor="@color/colorPrimaryText" />
 
         </RadioGroup>
 
@@ -2437,7 +2436,7 @@
             android:layout_height="wrap_content"
             android:text="@string/health_question_5_2_label"
             android:textSize="15sp"
-            android:textColor="@color/white"
+            android:textColor="@color/colorPrimaryText"
             android:textStyle="bold" />
 
         <RadioGroup
@@ -2455,7 +2454,7 @@
                 android:text="@string/monthly"
                 android:textStyle="bold"
                 android:textSize="15sp"
-                android:textColor="@color/white" />
+                android:textColor="@color/colorPrimaryText" />
 
             <RadioButton
                 android:id="@+id/question_5_2_quartly"
@@ -2465,7 +2464,7 @@
                 android:text="@string/quartly"
                 android:textStyle="bold"
                 android:textSize="15sp"
-                android:textColor="@color/white" />
+                android:textColor="@color/colorPrimaryText" />
 
             <RadioButton
                 android:id="@+id/question_5_2_others"
@@ -2475,7 +2474,7 @@
                 android:text="@string/others"
                 android:textStyle="bold"
                 android:textSize="15sp"
-                android:textColor="@color/white" />
+                android:textColor="@color/colorPrimaryText" />
         </RadioGroup>
 
         <EditText
@@ -2496,7 +2495,7 @@
             android:layout_height="wrap_content"
             android:text="@string/health_question_5_3_label"
             android:textSize="15sp"
-            android:textColor="@color/white"
+            android:textColor="@color/colorPrimaryText"
             android:textStyle="bold" />
 
         <EditText
@@ -2519,7 +2518,7 @@
             android:layout_height="wrap_content"
             android:text="@string/health_question_6_label"
             android:textSize="18sp"
-            android:textColor="@color/white"
+            android:textColor="@color/colorPrimaryText"
             android:textStyle="bold" />
 
         <TextView
@@ -2528,7 +2527,7 @@
             android:layout_height="wrap_content"
             android:text="@string/health_question_6_1_label"
             android:textSize="15sp"
-            android:textColor="@color/white"
+            android:textColor="@color/colorPrimaryText"
             android:textStyle="bold" />
 
         <HorizontalScrollView
@@ -2551,7 +2550,7 @@
                     android:layout_marginHorizontal="5dp"
                     android:text="@string/health_question_6_staff_ceiling_label"
                     android:textSize="15sp"
-                    android:textColor="@color/white"
+                    android:textColor="@color/colorPrimaryText"
                     android:textStyle="bold" />
 
                 <TextView
@@ -2563,7 +2562,7 @@
                     android:layout_marginHorizontal="5dp"
                     android:text="@string/health_question_6_total_staff_no_label"
                     android:textSize="15sp"
-                    android:textColor="@color/white"
+                    android:textColor="@color/colorPrimaryText"
                     android:textStyle="bold" />
 
                 <TextView
@@ -2575,7 +2574,7 @@
                     android:layout_marginHorizontal="5dp"
                     android:text="@string/health_question_6_total_staff_no_present_label"
                     android:textSize="15sp"
-                    android:textColor="@color/white"
+                    android:textColor="@color/colorPrimaryText"
                     android:textStyle="bold" />
 
 <!--                row 1 -->
@@ -2588,7 +2587,7 @@
                     android:layout_marginEnd="5dp"
                     android:text="@string/health_question_6_medical_staff_label"
                     android:textSize="15sp"
-                    android:textColor="@color/white"
+                    android:textColor="@color/colorPrimaryText"
                     android:textStyle="bold" />
 
                 <EditText
@@ -2647,7 +2646,7 @@
                     android:layout_marginEnd="5dp"
                     android:text="@string/health_question_6_none_medical_staff_label"
                     android:textSize="15sp"
-                    android:textColor="@color/white"
+                    android:textColor="@color/colorPrimaryText"
                     android:textStyle="bold" />
 
                 <EditText
@@ -2703,7 +2702,7 @@
             android:layout_height="wrap_content"
             android:text="@string/health_question_6_note_label"
             android:textSize="15sp"
-            android:textColor="@color/white"
+            android:textColor="@color/colorPrimaryText"
             android:textStyle="italic" />
 
         <TextView
@@ -2712,7 +2711,7 @@
             android:layout_height="wrap_content"
             android:text="@string/health_question_6_2_label"
             android:textSize="15sp"
-            android:textColor="@color/white"
+            android:textColor="@color/colorPrimaryText"
             android:textStyle="italic" />
 
         <EditText
@@ -2734,7 +2733,7 @@
             android:layout_height="wrap_content"
             android:text="@string/health_question_6_3_label"
             android:textSize="15sp"
-            android:textColor="@color/white"
+            android:textColor="@color/colorPrimaryText"
             android:textStyle="bold" />
 
         <EditText
@@ -2757,7 +2756,7 @@
             android:layout_height="wrap_content"
             android:text="@string/health_question_6_4_label"
             android:textSize="15sp"
-            android:textColor="@color/white"
+            android:textColor="@color/colorPrimaryText"
             android:textStyle="bold" />
 
         <EditText
@@ -2779,7 +2778,7 @@
             android:layout_height="wrap_content"
             android:text="@string/health_question_7_introduction_label"
             android:textSize="18sp"
-            android:textColor="@color/white"
+            android:textColor="@color/colorPrimaryText"
             android:textStyle="bold" />
 
         <TextView
@@ -2788,7 +2787,7 @@
             android:layout_height="wrap_content"
             android:text="@string/health_question_7_1_label"
             android:textSize="15sp"
-            android:textColor="@color/white"
+            android:textColor="@color/colorPrimaryText"
             android:textStyle="bold" />
 
         <RadioGroup
@@ -2806,7 +2805,7 @@
                 android:text="@string/yes"
                 android:textStyle="bold"
                 android:textSize="15sp"
-                android:textColor="@color/white" />
+                android:textColor="@color/colorPrimaryText" />
 
             <RadioButton
                 android:id="@+id/question_7_1_no"
@@ -2816,7 +2815,7 @@
                 android:text="@string/no"
                 android:textStyle="bold"
                 android:textSize="15sp"
-                android:textColor="@color/white" />
+                android:textColor="@color/colorPrimaryText" />
         </RadioGroup>
 
         <TextView
@@ -2825,7 +2824,7 @@
             android:layout_height="wrap_content"
             android:text="@string/health_question_7_1_reason_label"
             android:textSize="15sp"
-            android:textColor="@color/white"
+            android:textColor="@color/colorPrimaryText"
             android:textStyle="bold" />
 
         <EditText
@@ -2847,7 +2846,7 @@
             android:layout_height="wrap_content"
             android:text="@string/health_question_7_2_reason_label"
             android:textSize="18sp"
-            android:textColor="@color/white"
+            android:textColor="@color/colorPrimaryText"
             android:textStyle="bold" />
 
         <HorizontalScrollView
@@ -2871,7 +2870,7 @@
                     android:layout_marginEnd="5dp"
                     android:text="@string/health_question_7_2_name_essential_drug"
                     android:textSize="15sp"
-                    android:textColor="@color/white"
+                    android:textColor="@color/colorPrimaryText"
                     android:textStyle="bold" />
 
                 <TextView
@@ -2883,7 +2882,7 @@
                     android:layout_marginHorizontal="5dp"
                     android:text="@string/health_question_7_2_stock_required"
                     android:textSize="15sp"
-                    android:textColor="@color/white"
+                    android:textColor="@color/colorPrimaryText"
                     android:textStyle="bold" />
 <!--                row 1 -->
                 <TextView
@@ -2895,7 +2894,7 @@
                     android:layout_marginEnd="10dp"
                     android:text="1"
                     android:textSize="15sp"
-                    android:textColor="@color/white"
+                    android:textColor="@color/colorPrimaryText"
                     android:textStyle="bold" />
 
                 <EditText
@@ -2941,7 +2940,7 @@
                     android:layout_marginEnd="10dp"
                     android:text="2"
                     android:textSize="15sp"
-                    android:textColor="@color/white"
+                    android:textColor="@color/colorPrimaryText"
                     android:textStyle="bold" />
 
                 <EditText
@@ -2987,7 +2986,7 @@
                     android:layout_marginEnd="10dp"
                     android:text="3"
                     android:textSize="15sp"
-                    android:textColor="@color/white"
+                    android:textColor="@color/colorPrimaryText"
                     android:textStyle="bold" />
 
                 <EditText
@@ -3033,7 +3032,7 @@
                     android:layout_marginEnd="10dp"
                     android:text="4"
                     android:textSize="15sp"
-                    android:textColor="@color/white"
+                    android:textColor="@color/colorPrimaryText"
                     android:textStyle="bold" />
 
                 <EditText
@@ -3079,7 +3078,7 @@
                     android:layout_marginEnd="10dp"
                     android:text="5"
                     android:textSize="15sp"
-                    android:textColor="@color/white"
+                    android:textColor="@color/colorPrimaryText"
                     android:textStyle="bold" />
 
                 <EditText
@@ -3125,7 +3124,7 @@
                     android:layout_marginEnd="10dp"
                     android:text="6"
                     android:textSize="15sp"
-                    android:textColor="@color/white"
+                    android:textColor="@color/colorPrimaryText"
                     android:textStyle="bold" />
 
                 <EditText
@@ -3168,7 +3167,7 @@
             android:layout_height="wrap_content"
             android:text="@string/health_question_7_3_label"
             android:textSize="15sp"
-            android:textColor="@color/white"
+            android:textColor="@color/colorPrimaryText"
             android:textStyle="bold" />
 
         <EditText
@@ -3191,7 +3190,7 @@
             android:layout_height="wrap_content"
             android:text="@string/health_question_7_4_label"
             android:textSize="15sp"
-            android:textColor="@color/white"
+            android:textColor="@color/colorPrimaryText"
             android:textStyle="bold" />
 
         <EditText
@@ -3213,7 +3212,7 @@
             android:layout_height="wrap_content"
             android:text="@string/health_question_7_5_label"
             android:textSize="15sp"
-            android:textColor="@color/white"
+            android:textColor="@color/colorPrimaryText"
             android:textStyle="bold" />
 
         <RadioGroup
@@ -3231,7 +3230,7 @@
                 android:text="@string/yes"
                 android:textStyle="bold"
                 android:textSize="15sp"
-                android:textColor="@color/white" />
+                android:textColor="@color/colorPrimaryText" />
 
             <RadioButton
                 android:id="@+id/question_7_5_ambulance_no"
@@ -3241,7 +3240,7 @@
                 android:text="@string/no"
                 android:textStyle="bold"
                 android:textSize="15sp"
-                android:textColor="@color/white" />
+                android:textColor="@color/colorPrimaryText" />
         </RadioGroup>
 
         <TextView
@@ -3250,7 +3249,7 @@
             android:layout_height="wrap_content"
             android:text="@string/health_question_7_6_label"
             android:textSize="15sp"
-            android:textColor="@color/white"
+            android:textColor="@color/colorPrimaryText"
             android:textStyle="bold" />
 
         <EditText
@@ -3272,7 +3271,7 @@
             android:layout_height="wrap_content"
             android:text="@string/health_question_8_label"
             android:textSize="15sp"
-            android:textColor="@color/white"
+            android:textColor="@color/colorPrimaryText"
             android:textStyle="bold" />
 
         <EditText
@@ -3299,7 +3298,7 @@
             android:layout_marginRight="70dp"
             android:layout_marginEnd="70dp"
             android:layout_marginBottom="27dp"
-            card_view:cardBackgroundColor="@color/white">
+            card_view:cardBackgroundColor="@color/colorPrimaryDark">
 
             <TextView
                 android:layout_width="wrap_content"
@@ -3310,7 +3309,7 @@
                 android:textStyle="bold"
                 android:textSize="20sp"
                 android:fontFamily="sans-serif-condensed"
-                android:textColor="#000"/>
+                android:textColor="@color/colorPrimaryText"/>
 
         </androidx.cardview.widget.CardView>
 

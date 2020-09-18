@@ -2,13 +2,12 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:background="@color/colorActivityBackground"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".local_government.LocalGovernmentActivity">
 
     <TextView
-        android:textColor="@color/white"
+        android:textColor="@color/colorPrimaryText"
         android:gravity="center"
         android:textStyle="bold"
         android:textSize="40sp"

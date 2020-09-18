@@ -4,7 +4,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:paddingHorizontal="8dp"
-    android:background="@color/colorActivityBackground"
     android:layout_height="match_parent"
     tools:context=".water_and_environment.WaterEnvironmentActivity">
 
@@ -20,7 +19,7 @@
             android:layout_marginTop="20dp"
             android:text="@string/water_env_sector_header"
             android:textSize="25sp"
-            android:textColor="@color/white"
+            android:textColor="@color/colorPrimaryText"
             android:textStyle="bold" />
 
         <TextView
@@ -32,7 +31,7 @@
             android:padding="10dp"
             android:text="@string/water_env_form_description"
             android:textSize="18sp"
-            android:textColor="@color/white"
+            android:textColor="@color/colorPrimaryText"
             android:textStyle="bold" />
 
         <TextView
@@ -44,7 +43,7 @@
             android:layout_marginStart="10dp"
             android:layout_marginEnd="20dp"
             android:textSize="18sp"
-            android:textColor="@color/white" />
+            android:textColor="@color/colorPrimaryText" />
 
         <TextView
             android:layout_marginBottom="10dp"
@@ -52,7 +51,7 @@
             android:layout_height="wrap_content"
             android:text="@string/financial_year_label"
             android:textSize="15sp"
-            android:textColor="@color/white" />
+            android:textColor="@color/colorPrimaryText" />
 
         <Spinner
             android:id="@+id/water_financial_year_spinner"
@@ -68,7 +67,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/district_label"
-            android:textColor="@color/white"
+            android:textColor="@color/colorPrimaryText"
             android:textSize="15sp" />
 
         <EditText
@@ -93,7 +92,7 @@
             android:layout_height="wrap_content"
             android:labelFor="@id/village_text_edit"
             android:text="@string/village_label"
-            android:textColor="@color/white"
+            android:textColor="@color/colorPrimaryText"
             android:textSize="15sp" />
 
         <EditText
@@ -117,7 +116,7 @@
             android:layout_height="wrap_content"
             android:text="@string/parish_label"
             android:textSize="15sp"
-            android:textColor="@color/white" />
+            android:textColor="@color/colorPrimaryText" />
 
         <EditText
             android:layout_marginVertical="10dp"
@@ -140,7 +139,7 @@
             android:layout_height="wrap_content"
             android:text="@string/division_label"
             android:textSize="15sp"
-            android:textColor="@color/white" />
+            android:textColor="@color/colorPrimaryText" />
 
         <EditText
             android:layout_marginVertical="10dp"
@@ -163,7 +162,7 @@
             android:layout_width="wrap_content"
             android:text="@string/ygb_agent_name_label"
             android:textSize="15sp"
-            android:textColor="@color/white"
+            android:textColor="@color/colorPrimaryText"
             android:layout_height="wrap_content" />
 
         <EditText
@@ -185,7 +184,7 @@
             android:layout_height="wrap_content"
             android:text="@string/ygb_agent_tel_label"
             android:textSize="15sp"
-            android:textColor="@color/white" />
+            android:textColor="@color/colorPrimaryText" />
 
         <EditText
             android:layout_marginVertical="10dp"
@@ -205,7 +204,7 @@
             android:layout_height="wrap_content"
             android:text="@string/ygb_agent_no_label"
             android:textSize="15sp"
-            android:textColor="@color/white" />
+            android:textColor="@color/colorPrimaryText" />
 
         <EditText
             android:layout_marginVertical="10dp"
@@ -225,7 +224,7 @@
             android:text="@string/water_tool_note"
             android:textSize="15sp"
             android:textStyle="italic"
-            android:textColor="@color/white" />
+            android:textColor="@color/colorPrimaryText" />
 
         <TextView
             android:layout_marginTop="10dp"
@@ -233,7 +232,7 @@
             android:layout_height="wrap_content"
             android:text="@string/water_question_1_text"
             android:textSize="15sp"
-            android:textColor="@color/white" />
+            android:textColor="@color/colorPrimaryText" />
 
         <RadioGroup
             android:layout_width="match_parent"
@@ -246,7 +245,7 @@
                 android:layout_height="wrap_content"
                 android:textStyle="normal"
                 android:textSize="15sp"
-                android:textColor="@color/white"
+                android:textColor="@color/colorPrimaryText"
                 android:text="@string/yes"
                 android:id="@+id/water_question_1_yes"/>
 
@@ -257,7 +256,7 @@
                 android:layout_height="wrap_content"
                 android:textStyle="normal"
                 android:textSize="15sp"
-                android:textColor="@color/white"
+                android:textColor="@color/colorPrimaryText"
                 android:text="@string/no"
                 android:id="@+id/water_question_1_no"/>
         </RadioGroup>
@@ -268,7 +267,7 @@
             android:layout_height="wrap_content"
             android:text="@string/water_question_1_if_text"
             android:textSize="15sp"
-            android:textColor="@color/white" />
+            android:textColor="@color/colorPrimaryText" />
 
         <EditText
             android:gravity="start"
@@ -288,7 +287,7 @@
             android:layout_height="wrap_content"
             android:text="@string/water_question_2_text"
             android:textSize="15sp"
-            android:textColor="@color/white" />
+            android:textColor="@color/colorPrimaryText" />
 
         <EditText
             android:gravity="start"
@@ -309,7 +308,7 @@
             android:layout_height="wrap_content"
             android:text="@string/water_question_3_text"
             android:textSize="15sp"
-            android:textColor="@color/white" />
+            android:textColor="@color/colorPrimaryText" />
 
         <RadioGroup
             android:layout_width="match_parent"
@@ -323,7 +322,7 @@
                 android:layout_height="wrap_content"
                 android:textStyle="normal"
                 android:textSize="15sp"
-                android:textColor="@color/white"
+                android:textColor="@color/colorPrimaryText"
                 android:text="@string/yes"
                 android:id="@+id/water_question_3_yes"/>
 
@@ -333,7 +332,7 @@
                 android:layout_height="wrap_content"
                 android:textStyle="normal"
                 android:textSize="15sp"
-                android:textColor="@color/white"
+                android:textColor="@color/colorPrimaryText"
                 android:text="@string/no"
                 android:id="@+id/water_question_3_no"/>
         </RadioGroup>
@@ -344,7 +343,7 @@
             android:layout_height="wrap_content"
             android:text="@string/water_question_4_text"
             android:textSize="15sp"
-            android:textColor="@color/white" />
+            android:textColor="@color/colorPrimaryText" />
 
         <EditText
             android:gravity="start"
@@ -366,7 +365,7 @@
             android:layout_height="wrap_content"
             android:text="@string/water_question_5_text"
             android:textSize="18sp"
-            android:textColor="@color/white" />
+            android:textColor="@color/colorPrimaryText" />
 
         <HorizontalScrollView
             android:layout_width="wrap_content"
@@ -390,7 +389,7 @@
                     android:layout_height="wrap_content"
                     android:text="@string/water_question_4_area"
                     android:textSize="15sp"
-                    android:textColor="@color/white" />
+                    android:textColor="@color/colorPrimaryText" />
 
                 <TextView
                     android:layout_marginVertical="5dp"
@@ -402,7 +401,7 @@
                     android:layout_height="wrap_content"
                     android:text="@string/water_question_4_water_source"
                     android:textSize="15sp"
-                    android:textColor="@color/white" />
+                    android:textColor="@color/colorPrimaryText" />
 
                 <TextView
                     android:layout_marginVertical="5dp"
@@ -415,7 +414,7 @@
                     android:layout_height="wrap_content"
                     android:text="@string/water_question_4_functionality"
                     android:textSize="15sp"
-                    android:textColor="@color/white" />
+                    android:textColor="@color/colorPrimaryText" />
 
                 <TextView
                     android:layout_marginVertical="5dp"
@@ -427,7 +426,7 @@
                     android:layout_height="wrap_content"
                     android:text="@string/water_question_4_no_water_source"
                     android:textSize="15sp"
-                    android:textColor="@color/white" />
+                    android:textColor="@color/colorPrimaryText" />
 
 <!--                row 1 -->
                 <TextView
@@ -440,7 +439,7 @@
                     android:layout_height="wrap_content"
                     android:text="@string/water_question_5_functional"
                     android:textSize="15sp"
-                    android:textColor="@color/white" />
+                    android:textColor="@color/colorPrimaryText" />
                 <TextView
                     android:layout_marginVertical="5dp"
                     android:layout_marginHorizontal="5dp"
@@ -451,7 +450,7 @@
                     android:layout_height="wrap_content"
                     android:text="@string/water_question_5_none_functional"
                     android:textSize="15sp"
-                    android:textColor="@color/white" />
+                    android:textColor="@color/colorPrimaryText" />
 
 <!--                row 2 -->
                 <TextView
@@ -464,7 +463,7 @@
                     android:layout_height="wrap_content"
                     android:text="1"
                     android:textSize="15sp"
-                    android:textColor="@color/white" />
+                    android:textColor="@color/colorPrimaryText" />
 
                 <EditText
                     android:layout_row="2"
@@ -557,7 +556,7 @@
                     android:layout_height="wrap_content"
                     android:text="2"
                     android:textSize="15sp"
-                    android:textColor="@color/white" />
+                    android:textColor="@color/colorPrimaryText" />
 
                 <EditText
                     android:layout_row="3"
@@ -650,7 +649,7 @@
                     android:layout_height="wrap_content"
                     android:text="3"
                     android:textSize="15sp"
-                    android:textColor="@color/white" />
+                    android:textColor="@color/colorPrimaryText" />
 
                 <EditText
                     android:layout_row="4"
@@ -743,7 +742,7 @@
                     android:layout_height="wrap_content"
                     android:text="4"
                     android:textSize="15sp"
-                    android:textColor="@color/white" />
+                    android:textColor="@color/colorPrimaryText" />
 
                 <EditText
                     android:layout_row="5"
@@ -836,7 +835,7 @@
                     android:layout_height="wrap_content"
                     android:text="5"
                     android:textSize="15sp"
-                    android:textColor="@color/white" />
+                    android:textColor="@color/colorPrimaryText" />
 
                 <EditText
                     android:layout_row="6"
@@ -929,7 +928,7 @@
                     android:layout_height="wrap_content"
                     android:text="6"
                     android:textSize="15sp"
-                    android:textColor="@color/white" />
+                    android:textColor="@color/colorPrimaryText" />
 
                 <EditText
                     android:layout_row="7"
@@ -1019,7 +1018,7 @@
             android:layout_height="wrap_content"
             android:text="@string/water_question_5_objective_text"
             android:textSize="15sp"
-            android:textColor="@color/white" />
+            android:textColor="@color/colorPrimaryText" />
 
         <RadioGroup
             android:layout_width="match_parent"
@@ -1032,7 +1031,7 @@
                 android:layout_height="wrap_content"
                 android:textStyle="normal"
                 android:textSize="15sp"
-                android:textColor="@color/white"
+                android:textColor="@color/colorPrimaryText"
                 android:text="@string/yes"
                 android:id="@+id/water_question_5_yes"/>
 
@@ -1043,7 +1042,7 @@
                 android:layout_height="wrap_content"
                 android:textStyle="normal"
                 android:textSize="15sp"
-                android:textColor="@color/white"
+                android:textColor="@color/colorPrimaryText"
                 android:text="@string/no"
                 android:id="@+id/water_question_5_no"/>
         </RadioGroup>
@@ -1054,7 +1053,7 @@
             android:layout_height="wrap_content"
             android:text="@string/water_question_5_objective_if_text"
             android:textSize="15sp"
-            android:textColor="@color/white" />
+            android:textColor="@color/colorPrimaryText" />
 
         <EditText
             android:gravity="start"
@@ -1075,7 +1074,7 @@
             android:layout_height="wrap_content"
             android:text="@string/water_question_6_text"
             android:textSize="15sp"
-            android:textColor="@color/white" />
+            android:textColor="@color/colorPrimaryText" />
 
         <EditText
             android:gravity="start"
@@ -1096,7 +1095,7 @@
             android:layout_height="wrap_content"
             android:text="@string/water_question_6_1_text"
             android:textSize="15sp"
-            android:textColor="@color/white" />
+            android:textColor="@color/colorPrimaryText" />
 
         <HorizontalScrollView
             android:layout_width="wrap_content"
@@ -1117,7 +1116,7 @@
                     android:layout_height="wrap_content"
                     android:text="@string/water_question_7_village_label"
                     android:textSize="15sp"
-                    android:textColor="@color/white" />
+                    android:textColor="@color/colorPrimaryText" />
 
                 <TextView
                     android:layout_column="2"
@@ -1128,7 +1127,7 @@
                     android:layout_height="wrap_content"
                     android:text="@string/water_question_7_wetland_label"
                     android:textSize="15sp"
-                    android:textColor="@color/white" />
+                    android:textColor="@color/colorPrimaryText" />
 
 <!--                row 1 -->
                 <TextView
@@ -1140,7 +1139,7 @@
                     android:layout_height="wrap_content"
                     android:text="1"
                     android:textSize="15sp"
-                    android:textColor="@color/white" />
+                    android:textColor="@color/colorPrimaryText" />
 
                 <EditText
                     android:layout_row="1"
@@ -1183,7 +1182,7 @@
                     android:layout_height="wrap_content"
                     android:text="2"
                     android:textSize="15sp"
-                    android:textColor="@color/white" />
+                    android:textColor="@color/colorPrimaryText" />
 
                 <EditText
                     android:layout_row="2"
@@ -1226,7 +1225,7 @@
                     android:layout_height="wrap_content"
                     android:text="3"
                     android:textSize="15sp"
-                    android:textColor="@color/white" />
+                    android:textColor="@color/colorPrimaryText" />
 
                 <EditText
                     android:layout_row="3"
@@ -1269,7 +1268,7 @@
                     android:layout_height="wrap_content"
                     android:text="4"
                     android:textSize="15sp"
-                    android:textColor="@color/white" />
+                    android:textColor="@color/colorPrimaryText" />
 
                 <EditText
                     android:layout_row="4"
@@ -1312,7 +1311,7 @@
                     android:layout_height="wrap_content"
                     android:text="5"
                     android:textSize="15sp"
-                    android:textColor="@color/white" />
+                    android:textColor="@color/colorPrimaryText" />
 
                 <EditText
                     android:layout_row="5"
@@ -1355,7 +1354,7 @@
                     android:layout_height="wrap_content"
                     android:text="6"
                     android:textSize="15sp"
-                    android:textColor="@color/white" />
+                    android:textColor="@color/colorPrimaryText" />
 
                 <EditText
                     android:layout_row="6"
@@ -1395,7 +1394,7 @@
             android:layout_height="wrap_content"
             android:text="@string/water_question_6_2_text"
             android:textSize="15sp"
-            android:textColor="@color/white" />
+            android:textColor="@color/colorPrimaryText" />
 
         <EditText
             android:gravity="start"
@@ -1421,7 +1420,7 @@
             android:layout_marginRight="70dp"
             android:layout_marginEnd="70dp"
             android:layout_marginBottom="27dp"
-            card_view:cardBackgroundColor="@color/white">
+            card_view:cardBackgroundColor="@color/colorPrimaryDark">
 
             <TextView
                 android:layout_width="wrap_content"
@@ -1432,7 +1431,7 @@
                 android:textStyle="bold"
                 android:textSize="20sp"
                 android:fontFamily="sans-serif-condensed"
-                android:textColor="#000"/>
+                android:textColor="@color/colorPrimaryText"/>
 
         </androidx.cardview.widget.CardView>
 

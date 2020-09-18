@@ -5,7 +5,6 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:paddingHorizontal="8dp"
-    android:background="@color/colorActivityBackground"
     tools:context=".education.EducationActivity">
     <LinearLayout
         android:orientation="vertical"
@@ -19,7 +18,7 @@
             android:layout_marginTop="20dp"
             android:text="@string/education_sector_header"
             android:textSize="25sp"
-            android:textColor="@color/white"
+            android:textColor="@color/colorPrimaryText"
             android:textStyle="bold" />
 
         <TextView
@@ -31,7 +30,7 @@
             android:padding="10dp"
             android:text="@string/agriculture_form_description"
             android:textSize="18sp"
-            android:textColor="@color/white"
+            android:textColor="@color/colorPrimaryText"
             android:textStyle="bold" />
 
         <TextView
@@ -43,7 +42,7 @@
             android:layout_marginEnd="20dp"
             android:text="23 - October 2020"
             android:textSize="18sp"
-            android:textColor="@color/white"
+            android:textColor="@color/colorPrimaryText"
             android:textStyle="bold" />
 
         <TextView
@@ -52,7 +51,7 @@
             android:layout_height="wrap_content"
             android:text="@string/financial_year_label"
             android:textSize="15sp"
-            android:textColor="@color/white"
+            android:textColor="@color/colorPrimaryText"
             android:textStyle="bold" />
 
         <Spinner
@@ -69,7 +68,7 @@
             android:layout_height="wrap_content"
             android:labelFor="@id/village_text_edit"
             android:text="@string/village_label"
-            android:textColor="@color/white"
+            android:textColor="@color/colorPrimaryText"
             android:textSize="15sp"
             android:textStyle="bold" />
 
@@ -94,7 +93,7 @@
             android:layout_height="wrap_content"
             android:text="@string/parish_label"
             android:textSize="15sp"
-            android:textColor="@color/white"
+            android:textColor="@color/colorPrimaryText"
             android:textStyle="bold" />
 
         <EditText
@@ -118,7 +117,7 @@
             android:layout_height="wrap_content"
             android:text="@string/division_label"
             android:textSize="15sp"
-            android:textColor="@color/white"
+            android:textColor="@color/colorPrimaryText"
             android:textStyle="bold" />
 
         <EditText
@@ -141,7 +140,7 @@
             android:layout_width="wrap_content"
             android:text="@string/ygb_agent_name_label"
             android:textSize="15sp"
-            android:textColor="@color/white"
+            android:textColor="@color/colorPrimaryText"
             android:textStyle="bold"
             android:layout_height="wrap_content" />
 
@@ -163,7 +162,7 @@
             android:layout_height="wrap_content"
             android:text="@string/ygb_agent_tel_label"
             android:textSize="15sp"
-            android:textColor="@color/white"
+            android:textColor="@color/colorPrimaryText"
             android:textStyle="bold" />
 
         <EditText
@@ -183,7 +182,7 @@
             android:layout_height="wrap_content"
             android:text="@string/education_question_1_note"
             android:textSize="15sp"
-            android:textColor="@color/white"
+            android:textColor="@color/colorPrimaryText"
             android:textStyle="bold" />
 
         <TextView
@@ -192,7 +191,7 @@
             android:layout_height="wrap_content"
             android:text="@string/education_question_1_upe"
             android:textSize="15sp"
-            android:textColor="@color/white"
+            android:textColor="@color/colorPrimaryText"
             android:textStyle="bold" />
 
         <EditText
@@ -222,7 +221,7 @@
                     android:layout_marginHorizontal="5dp"
                     android:layout_marginBottom="5dp"
                     android:text="@string/school_name"
-                    android:textColor="@color/white"
+                    android:textColor="@color/colorPrimaryText"
                     android:textStyle="bold"
                     android:layout_column="0"
                     android:layout_row="0"
@@ -249,7 +248,7 @@
                     android:layout_marginHorizontal="5dp"
                     android:layout_marginVertical="5dp"
                     android:text="@string/school_teachers"
-                    android:textColor="@color/white"
+                    android:textColor="@color/colorPrimaryText"
                     android:textStyle="bold"
                     android:layout_column="0"
                     android:layout_row="3"
@@ -259,7 +258,7 @@
                     android:layout_marginHorizontal="5dp"
                     android:layout_marginVertical="5dp"
                     android:text="@string/pupil_enrollment"
-                    android:textColor="@color/white"
+                    android:textColor="@color/colorPrimaryText"
                     android:textStyle="bold"
                     android:layout_column="0"
                     android:layout_row="4"
@@ -269,7 +268,7 @@
                     android:layout_marginHorizontal="5dp"
                     android:layout_marginVertical="5dp"
                     android:text="@string/school_number_p_7_pupils"
-                    android:textColor="@color/white"
+                    android:textColor="@color/colorPrimaryText"
                     android:textStyle="bold"
                     android:layout_column="0"
                     android:layout_row="5"
@@ -281,7 +280,7 @@
                     android:layout_marginHorizontal="5dp"
                     android:layout_marginVertical="5dp"
                     android:text="@string/number_of_dropout"
-                    android:textColor="@color/white"
+                    android:textColor="@color/colorPrimaryText"
                     android:textStyle="bold"
                     android:layout_column="0"
                     android:layout_row="6"
@@ -296,7 +295,7 @@
                     android:layout_column="1"
                     android:layout_marginHorizontal="5dp"
                     android:text="@string/category"
-                    android:textColor="@color/white"
+                    android:textColor="@color/colorPrimaryText"
                     android:textSize="15sp"
                     android:textStyle="bold" />
 
@@ -304,7 +303,7 @@
                 <TextView
                     android:layout_marginHorizontal="5dp"
                     android:text="@string/male"
-                    android:textColor="@color/white"
+                    android:textColor="@color/colorPrimaryText"
                     android:textStyle="bold"
                     android:layout_row="2"
                     android:layout_height="wrap_content"
@@ -318,7 +317,7 @@
                     android:layout_marginHorizontal="5dp"
                     android:gravity="center"
                     android:text="@string/female"
-                    android:textColor="@color/white"
+                    android:textColor="@color/colorPrimaryText"
                     android:textStyle="bold"
                     android:layout_row="2"
                     android:layout_height="wrap_content"
@@ -332,7 +331,7 @@
                     android:layout_marginHorizontal="5dp"
                     android:gravity="center"
                     android:text="@string/male_pwds"
-                    android:textColor="@color/white"
+                    android:textColor="@color/colorPrimaryText"
                     android:textStyle="bold"
                     android:layout_row="2"
                     android:layout_height="wrap_content"
@@ -346,7 +345,7 @@
                     android:layout_marginHorizontal="5dp"
                     android:gravity="center"
                     android:text="@string/female_pwds"
-                    android:textColor="@color/white"
+                    android:textColor="@color/colorPrimaryText"
                     android:textStyle="bold"
                     android:layout_row="2"
                     android:layout_height="wrap_content"
@@ -360,7 +359,7 @@
                     android:layout_marginHorizontal="5dp"
                     android:gravity="center"
                     android:text="@string/total"
-                    android:textColor="@color/white"
+                    android:textColor="@color/colorPrimaryText"
                     android:textStyle="bold"
                     android:layout_row="2"
                     android:layout_height="wrap_content"
@@ -687,7 +686,7 @@
             android:layout_height="wrap_content"
             android:text="@string/education_question_2_1_dropout"
             android:textSize="15sp"
-            android:textColor="@color/white"
+            android:textColor="@color/colorPrimaryText"
             android:textStyle="italic" />
 
         <!--        question 2 _ 1 answer -->
@@ -709,7 +708,7 @@
             android:layout_height="wrap_content"
             android:text="@string/education_question_3_introduction"
             android:textSize="18sp"
-            android:textColor="@color/white"
+            android:textColor="@color/colorPrimaryText"
             android:textStyle="bold" />
 
         <HorizontalScrollView
@@ -732,7 +731,7 @@
                     android:layout_height="wrap_content"
                     android:text="@string/education_question_3_header"
                     android:textSize="15sp"
-                    android:textColor="@color/white"
+                    android:textColor="@color/colorPrimaryText"
                     android:textStyle="bold" />
                 <!--                Grants row 1 column 0 -->
                 <TextView
@@ -743,7 +742,7 @@
                     android:layout_height="wrap_content"
                     android:text="@string/education_question_3_grant"
                     android:textSize="15sp"
-                    android:textColor="@color/white"
+                    android:textColor="@color/colorPrimaryText"
                     android:textStyle="bold" />
                 <!--                Capitation grant row 2 column 1 -->
                 <TextView
@@ -754,7 +753,7 @@
                     android:layout_height="wrap_content"
                     android:text="@string/education_question_3_capitation_grant"
                     android:textSize="15sp"
-                    android:textColor="@color/white"
+                    android:textColor="@color/colorPrimaryText"
                     android:textStyle="bold" />
                 <!--                SFG text -->
                 <TextView
@@ -766,7 +765,7 @@
                     android:layout_height="wrap_content"
                     android:text="@string/education_question_3_SFG"
                     android:textSize="15sp"
-                    android:textColor="@color/white"
+                    android:textColor="@color/colorPrimaryText"
                     android:textStyle="bold" />
 
                 <!--                Approved Budgets row 1 column 1 -->
@@ -778,7 +777,7 @@
                     android:layout_marginHorizontal="5dp"
                     android:layout_marginVertical="5dp"
                     android:text="@string/education_question_3_approved_budget"
-                    android:textColor="@color/white"
+                    android:textColor="@color/colorPrimaryText"
                     android:textSize="15sp"
                     android:textStyle="bold" />
 
@@ -917,7 +916,7 @@
                     android:layout_height="wrap_content"
                     android:text="@string/education_question_3_budget_released"
                     android:textSize="15sp"
-                    android:textColor="@color/white"
+                    android:textColor="@color/colorPrimaryText"
                     android:textStyle="bold" />
 
                 <TextView
@@ -930,7 +929,7 @@
                     android:layout_height="wrap_content"
                     android:text="@string/education_question_3_date_recieved"
                     android:textSize="15sp"
-                    android:textColor="@color/white"
+                    android:textColor="@color/colorPrimaryText"
                     android:textStyle="bold" />
 
                 <TextView
@@ -941,7 +940,7 @@
                     android:layout_height="wrap_content"
                     android:text="@string/education_question_3_date_withdrawn"
                     android:textSize="15sp"
-                    android:textColor="@color/white"
+                    android:textColor="@color/colorPrimaryText"
                     android:textStyle="bold" />
 
             </GridLayout>
@@ -953,7 +952,7 @@
             android:layout_height="wrap_content"
             android:text="@string/education_question_3_1_text"
             android:textSize="15sp"
-            android:textColor="@color/white"
+            android:textColor="@color/colorPrimaryText"
             android:textStyle="bold" />
 
         <CheckBox
@@ -961,7 +960,7 @@
             android:layout_height="wrap_content"
             android:textStyle="bold"
             android:textSize="15sp"
-            android:textColor="@color/white"
+            android:textColor="@color/colorPrimaryText"
             android:text="@string/school_notice_board"
             android:id="@+id/question_3_1_sch_noticeboard_cb"/>
 
@@ -970,7 +969,7 @@
             android:layout_height="wrap_content"
             android:textStyle="bold"
             android:textSize="15sp"
-            android:textColor="@color/white"
+            android:textColor="@color/colorPrimaryText"
             android:text="@string/head_teacher_notice"
             android:id="@+id/question_3_1_head_teacher_notice_cb"/>
 
@@ -979,7 +978,7 @@
             android:layout_height="wrap_content"
             android:textStyle="bold"
             android:textSize="15sp"
-            android:textColor="@color/white"
+            android:textColor="@color/colorPrimaryText"
             android:text="@string/staff_room"
             android:id="@+id/question_3_1_staff_room_cb"/>
 
@@ -988,7 +987,7 @@
             android:layout_height="wrap_content"
             android:textStyle="bold"
             android:textSize="15sp"
-            android:textColor="@color/white"
+            android:textColor="@color/colorPrimaryText"
             android:text="@string/displayed"
             android:id="@+id/question_3_1_displayed_cb"
             tools:ignore="TooManyViews" />
@@ -999,7 +998,7 @@
             android:layout_height="wrap_content"
             android:text="@string/education_question_3_2_text"
             android:textSize="15sp"
-            android:textColor="@color/white"
+            android:textColor="@color/colorPrimaryText"
             android:textStyle="bold" />
 
         <EditText
@@ -1020,7 +1019,7 @@
             android:layout_height="wrap_content"
             android:text="@string/education_question_4_1_text"
             android:textSize="18sp"
-            android:textColor="@color/white"
+            android:textColor="@color/colorPrimaryText"
             android:textStyle="bold" />
 
         <HorizontalScrollView
@@ -1043,7 +1042,7 @@
                     android:layout_height="wrap_content"
                     android:text="@string/male"
                     android:textSize="15sp"
-                    android:textColor="@color/white"
+                    android:textColor="@color/colorPrimaryText"
                     android:textStyle="bold" />
 
                 <TextView
@@ -1056,7 +1055,7 @@
                     android:layout_height="wrap_content"
                     android:text="@string/female"
                     android:textSize="15sp"
-                    android:textColor="@color/white"
+                    android:textColor="@color/colorPrimaryText"
                     android:textStyle="bold" />
 
                 <TextView
@@ -1068,7 +1067,7 @@
                     android:layout_height="wrap_content"
                     android:text="@string/grade_1"
                     android:textSize="15sp"
-                    android:textColor="@color/white"
+                    android:textColor="@color/colorPrimaryText"
                     android:textStyle="bold" />
 
                 <TextView
@@ -1080,7 +1079,7 @@
                     android:layout_height="wrap_content"
                     android:text="@string/grade_2"
                     android:textSize="15sp"
-                    android:textColor="@color/white"
+                    android:textColor="@color/colorPrimaryText"
                     android:textStyle="bold" />
 
                 <TextView
@@ -1092,7 +1091,7 @@
                     android:layout_height="wrap_content"
                     android:text="@string/grade_3"
                     android:textSize="15sp"
-                    android:textColor="@color/white"
+                    android:textColor="@color/colorPrimaryText"
                     android:textStyle="bold" />
 
                 <TextView
@@ -1104,7 +1103,7 @@
                     android:layout_height="wrap_content"
                     android:text="@string/grade_others"
                     android:textSize="15sp"
-                    android:textColor="@color/white"
+                    android:textColor="@color/colorPrimaryText"
                     android:textStyle="bold" />
                 <!-- male -->
                 <EditText
@@ -1238,7 +1237,7 @@
             android:layout_height="wrap_content"
             android:text="@string/education_question_4_1_1_text"
             android:textSize="15sp"
-            android:textColor="@color/white"
+            android:textColor="@color/colorPrimaryText"
             android:textStyle="bold" />
 
         <RadioGroup
@@ -1250,14 +1249,14 @@
                 android:checked="true"
                 android:textSize="15sp"
                 android:layout_marginEnd="10dp"
-                android:textColor="@color/white"
+                android:textColor="@color/colorPrimaryText"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/good" />
             <RadioButton
                 android:layout_marginHorizontal="10dp"
                 android:textSize="15sp"
-                android:textColor="@color/white"
+                android:textColor="@color/colorPrimaryText"
                 android:id="@+id/education_question_4_1_bad"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -1265,7 +1264,7 @@
 
             <RadioButton
                 android:textSize="15sp"
-                android:textColor="@color/white"
+                android:textColor="@color/colorPrimaryText"
                 android:id="@+id/education_question_4_1_same"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -1278,7 +1277,7 @@
             android:layout_height="wrap_content"
             android:text="@string/education_question_4_2_text"
             android:textSize="15sp"
-            android:textColor="@color/white"
+            android:textColor="@color/colorPrimaryText"
             android:textStyle="bold" />
 
         <EditText
@@ -1300,7 +1299,7 @@
             android:layout_height="wrap_content"
             android:text="@string/education_question_5_text"
             android:textSize="18sp"
-            android:textColor="@color/white"
+            android:textColor="@color/colorPrimaryText"
             android:textStyle="bold" />
 
         <TextView
@@ -1309,7 +1308,7 @@
             android:layout_height="wrap_content"
             android:text="@string/education_question_5_0_text"
             android:textSize="15sp"
-            android:textColor="@color/white"
+            android:textColor="@color/colorPrimaryText"
             android:textStyle="bold" />
 
         <HorizontalScrollView
@@ -1334,7 +1333,7 @@
                     android:layout_height="wrap_content"
                     android:text="@string/education_question_5_pupils"
                     android:textSize="15sp"
-                    android:textColor="@color/white"
+                    android:textColor="@color/colorPrimaryText"
                     android:textStyle="bold" />
 
                 <TextView
@@ -1346,7 +1345,7 @@
                     android:layout_height="wrap_content"
                     android:text="@string/education_question_5_teachers"
                     android:textSize="15sp"
-                    android:textColor="@color/white"
+                    android:textColor="@color/colorPrimaryText"
                     android:textStyle="bold" />
 
                 <TextView
@@ -1358,7 +1357,7 @@
                     android:layout_height="wrap_content"
                     android:text="@string/education_question_5_functionality"
                     android:textSize="15sp"
-                    android:textColor="@color/white"
+                    android:textColor="@color/colorPrimaryText"
                     android:textStyle="bold" />
                 <!--                row 1 -->
                 <TextView
@@ -1369,7 +1368,7 @@
                     android:layout_height="wrap_content"
                     android:text="@string/education_question_5_facility"
                     android:textSize="15sp"
-                    android:textColor="@color/white"
+                    android:textColor="@color/colorPrimaryText"
                     android:textStyle="bold" />
 
                 <TextView
@@ -1380,7 +1379,7 @@
                     android:layout_height="wrap_content"
                     android:text="@string/education_question_5_number_of_blocks"
                     android:textSize="15sp"
-                    android:textColor="@color/white"
+                    android:textColor="@color/colorPrimaryText"
                     android:textStyle="bold" />
 
                 <TextView
@@ -1391,7 +1390,7 @@
                     android:layout_height="wrap_content"
                     android:text="@string/education_question_5_number_of_stances"
                     android:textSize="15sp"
-                    android:textColor="@color/white"
+                    android:textColor="@color/colorPrimaryText"
                     android:textStyle="bold" />
 
                 <TextView
@@ -1402,7 +1401,7 @@
                     android:layout_height="wrap_content"
                     android:text="@string/education_question_5_male_stances"
                     android:textSize="15sp"
-                    android:textColor="@color/white"
+                    android:textColor="@color/colorPrimaryText"
                     android:textStyle="bold" />
 
                 <TextView
@@ -1413,7 +1412,7 @@
                     android:layout_height="wrap_content"
                     android:text="@string/education_question_5_female_stances"
                     android:textSize="15sp"
-                    android:textColor="@color/white"
+                    android:textColor="@color/colorPrimaryText"
                     android:textStyle="bold" />
 
                 <TextView
@@ -1424,7 +1423,7 @@
                     android:layout_height="wrap_content"
                     android:text="@string/education_question_5_teacher_male_stances"
                     android:textSize="15sp"
-                    android:textColor="@color/white"
+                    android:textColor="@color/colorPrimaryText"
                     android:textStyle="bold" />
 
                 <TextView
@@ -1435,7 +1434,7 @@
                     android:layout_height="wrap_content"
                     android:text="@string/education_question_5_teacher_female_stances"
                     android:textSize="15sp"
-                    android:textColor="@color/white"
+                    android:textColor="@color/colorPrimaryText"
                     android:textStyle="bold" />
 
                 <TextView
@@ -1446,7 +1445,7 @@
                     android:layout_height="wrap_content"
                     android:text="@string/education_question_5_teacher_mixed_stances"
                     android:textSize="15sp"
-                    android:textColor="@color/white"
+                    android:textColor="@color/colorPrimaryText"
                     android:textStyle="bold" />
 
                 <TextView
@@ -1457,7 +1456,7 @@
                     android:layout_height="wrap_content"
                     android:text="@string/education_question_5_functional"
                     android:textSize="15sp"
-                    android:textColor="@color/white"
+                    android:textColor="@color/colorPrimaryText"
                     android:textStyle="bold" />
 
                 <TextView
@@ -1468,7 +1467,7 @@
                     android:layout_height="wrap_content"
                     android:text="@string/education_question_5_none"
                     android:textSize="15sp"
-                    android:textColor="@color/white"
+                    android:textColor="@color/colorPrimaryText"
                     android:textStyle="bold" />
 
                 <!--                row 2 -->
@@ -1480,7 +1479,7 @@
                     android:layout_height="wrap_content"
                     android:text="@string/education_question_5_toilet"
                     android:textSize="15sp"
-                    android:textColor="@color/white"
+                    android:textColor="@color/colorPrimaryText"
                     android:textStyle="bold" />
 
                 <EditText
@@ -1635,7 +1634,7 @@
                     android:layout_height="wrap_content"
                     android:text="@string/education_question_5_latrine"
                     android:textSize="15sp"
-                    android:textColor="@color/white"
+                    android:textColor="@color/colorPrimaryText"
                     android:textStyle="bold" />
 
                 <EditText
@@ -1781,7 +1780,7 @@
                     android:layout_height="wrap_content"
                     android:text="@string/education_question_5_VIP_latrine"
                     android:textSize="15sp"
-                    android:textColor="@color/white"
+                    android:textColor="@color/colorPrimaryText"
                     android:textStyle="bold" />
 
                 <EditText
@@ -1927,7 +1926,7 @@
                     android:layout_height="wrap_content"
                     android:text="@string/education_question_5_FCR_latrine"
                     android:textSize="15sp"
-                    android:textColor="@color/white"
+                    android:textColor="@color/colorPrimaryText"
                     android:textStyle="bold" />
 
                 <EditText
@@ -2043,7 +2042,7 @@
                     android:layout_height="wrap_content"
                     android:text="@string/education_question_5_Urinals"
                     android:textSize="15sp"
-                    android:textColor="@color/white"
+                    android:textColor="@color/colorPrimaryText"
                     android:textStyle="bold" />
 
                 <EditText
@@ -2205,7 +2204,7 @@
             android:layout_height="wrap_content"
             android:text="@string/education_question_5_3_text"
             android:textSize="15sp"
-            android:textColor="@color/white"
+            android:textColor="@color/colorPrimaryText"
             android:textStyle="bold" />
 
         <RadioGroup
@@ -2218,14 +2217,14 @@
                 android:checked="true"
                 android:textSize="15sp"
                 android:layout_marginEnd="10dp"
-                android:textColor="@color/white"
+                android:textColor="@color/colorPrimaryText"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/yes" />
             <RadioButton
                 android:layout_marginHorizontal="10dp"
                 android:textSize="15sp"
-                android:textColor="@color/white"
+                android:textColor="@color/colorPrimaryText"
                 android:id="@+id/education_question_5_3_no"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -2238,7 +2237,7 @@
             android:layout_height="wrap_content"
             android:text="@string/education_question_5_3_estimate_text"
             android:textSize="15sp"
-            android:textColor="@color/white"
+            android:textColor="@color/colorPrimaryText"
             android:textStyle="bold" />
 
         <EditText
@@ -2258,7 +2257,7 @@
             android:layout_height="wrap_content"
             android:text="@string/education_question_6_0_introduction_text"
             android:textSize="18sp"
-            android:textColor="@color/white"
+            android:textColor="@color/colorPrimaryText"
             android:textStyle="bold" />
 
         <TextView
@@ -2267,7 +2266,7 @@
             android:layout_height="wrap_content"
             android:text="@string/education_question_6_1_text"
             android:textSize="15sp"
-            android:textColor="@color/white" />
+            android:textColor="@color/colorPrimaryText" />
         <EditText
             android:gravity="start"
             android:layout_marginVertical="5dp"
@@ -2285,7 +2284,7 @@
             android:layout_height="wrap_content"
             android:text="@string/education_question_6_2_text"
             android:textSize="15sp"
-            android:textColor="@color/white"
+            android:textColor="@color/colorPrimaryText"
             android:textStyle="bold" />
 
         <EditText
@@ -2305,7 +2304,7 @@
             android:layout_height="wrap_content"
             android:text="@string/education_question_6_3_text"
             android:textSize="15sp"
-            android:textColor="@color/white"
+            android:textColor="@color/colorPrimaryText"
             android:textStyle="bold" />
 
         <EditText
@@ -2326,7 +2325,7 @@
             android:layout_height="wrap_content"
             android:text="@string/education_question_7_introduction_text"
             android:textSize="18sp"
-            android:textColor="@color/white"
+            android:textColor="@color/colorPrimaryText"
             android:textStyle="bold" />
 
         <HorizontalScrollView
@@ -2347,7 +2346,7 @@
                     android:layout_height="wrap_content"
                     android:text="@string/education_question_7_0_present_teachers_text"
                     android:textSize="15sp"
-                    android:textColor="@color/white"
+                    android:textColor="@color/colorPrimaryText"
                     android:textStyle="bold" />
 
                 <TextView
@@ -2358,7 +2357,7 @@
                     android:layout_height="wrap_content"
                     android:text="@string/education_question_7_0_present_at_visit_teachers_text"
                     android:textSize="15sp"
-                    android:textColor="@color/white"
+                    android:textColor="@color/colorPrimaryText"
                     android:textStyle="bold" />
 
                 <!--                 row 1 -->
@@ -2376,7 +2375,7 @@
                         android:layout_height="wrap_content"
                         android:text="@string/education_question_7_0_enrolled_teachers_male_text"
                         android:textSize="15sp"
-                        android:textColor="@color/white"
+                        android:textColor="@color/colorPrimaryText"
                         android:textStyle="bold" />
 
                     <EditText
@@ -2397,7 +2396,7 @@
                         android:layout_height="wrap_content"
                         android:text="@string/education_question_7_0_enrolled_teachers_female_text"
                         android:textSize="15sp"
-                        android:textColor="@color/white"
+                        android:textColor="@color/colorPrimaryText"
                         android:textStyle="bold" />
 
                     <EditText
@@ -2417,7 +2416,7 @@
                         android:layout_height="wrap_content"
                         android:text="@string/education_question_7_0_total_text"
                         android:textSize="15sp"
-                        android:textColor="@color/white"
+                        android:textColor="@color/colorPrimaryText"
                         android:textStyle="bold" />
 
                     <EditText
@@ -2446,7 +2445,7 @@
                         android:layout_height="wrap_content"
                         android:text="@string/education_question_7_0_enrolled_teachers_male_present_text"
                         android:textSize="15sp"
-                        android:textColor="@color/white"
+                        android:textColor="@color/colorPrimaryText"
                         android:textStyle="bold" />
 
                     <EditText
@@ -2467,7 +2466,7 @@
                         android:layout_height="wrap_content"
                         android:text="@string/education_question_7_0_enrolled_teachers_female_present_text"
                         android:textSize="15sp"
-                        android:textColor="@color/white"
+                        android:textColor="@color/colorPrimaryText"
                         android:textStyle="bold" />
 
                     <EditText
@@ -2489,7 +2488,7 @@
             android:layout_height="wrap_content"
             android:text="@string/education_question_7_note_text"
             android:textSize="15sp"
-            android:textColor="@color/white"
+            android:textColor="@color/colorPrimaryText"
             android:textStyle="italic" />
 
         <!--       question 7 1  -->
@@ -2499,7 +2498,7 @@
             android:layout_height="wrap_content"
             android:text="@string/education_question_7_1_text"
             android:textSize="15sp"
-            android:textColor="@color/white"
+            android:textColor="@color/colorPrimaryText"
             android:textStyle="bold" />
 
         <EditText
@@ -2519,7 +2518,7 @@
             android:layout_height="wrap_content"
             android:text="@string/education_question_7_2_text"
             android:textSize="15sp"
-            android:textColor="@color/white"
+            android:textColor="@color/colorPrimaryText"
             android:textStyle="bold" />
 
         <RadioGroup
@@ -2532,14 +2531,14 @@
                 android:checked="true"
                 android:textSize="15sp"
                 android:layout_marginEnd="10dp"
-                android:textColor="@color/white"
+                android:textColor="@color/colorPrimaryText"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/yes" />
             <RadioButton
                 android:layout_marginHorizontal="10dp"
                 android:textSize="15sp"
-                android:textColor="@color/white"
+                android:textColor="@color/colorPrimaryText"
                 android:id="@+id/education_question_7_2_no"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -2552,7 +2551,7 @@
             android:layout_height="wrap_content"
             android:text="@string/education_question_7_3_text"
             android:textSize="15sp"
-            android:textColor="@color/white"
+            android:textColor="@color/colorPrimaryText"
             android:textStyle="bold" />
 
         <EditText
@@ -2572,7 +2571,7 @@
             android:layout_height="wrap_content"
             android:text="@string/education_question_8_introduction_text"
             android:textSize="16sp"
-            android:textColor="@color/white"
+            android:textColor="@color/colorPrimaryText"
             android:textStyle="bold" />
 
         <TextView
@@ -2581,7 +2580,7 @@
             android:layout_height="wrap_content"
             android:text="@string/education_question_8_1_text"
             android:textSize="15sp"
-            android:textColor="@color/white"
+            android:textColor="@color/colorPrimaryText"
             android:textStyle="bold" />
 
         <EditText
@@ -2601,7 +2600,7 @@
             android:layout_height="wrap_content"
             android:text="@string/education_question_8_2_text"
             android:textSize="15sp"
-            android:textColor="@color/white"
+            android:textColor="@color/colorPrimaryText"
             android:textStyle="bold" />
 
         <EditText
@@ -2621,7 +2620,7 @@
             android:layout_height="wrap_content"
             android:text="@string/education_question_8_3_text"
             android:textSize="15sp"
-            android:textColor="@color/white"
+            android:textColor="@color/colorPrimaryText"
             android:textStyle="bold" />
 
         <RadioGroup
@@ -2634,14 +2633,14 @@
                 android:checked="true"
                 android:textSize="15sp"
                 android:layout_marginEnd="10dp"
-                android:textColor="@color/white"
+                android:textColor="@color/colorPrimaryText"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/yes" />
             <RadioButton
                 android:layout_marginHorizontal="10dp"
                 android:textSize="15sp"
-                android:textColor="@color/white"
+                android:textColor="@color/colorPrimaryText"
                 android:id="@+id/education_question_8_3_no"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -2654,7 +2653,7 @@
             android:layout_height="wrap_content"
             android:text="@string/education_question_8_4_text"
             android:textSize="15sp"
-            android:textColor="@color/white"
+            android:textColor="@color/colorPrimaryText"
             android:textStyle="bold" />
 
         <RadioGroup
@@ -2667,7 +2666,7 @@
                 android:checked="true"
                 android:textSize="15sp"
                 android:layout_marginEnd="10dp"
-                android:textColor="@color/white"
+                android:textColor="@color/colorPrimaryText"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/monthly" />
@@ -2676,7 +2675,7 @@
                 android:checked="true"
                 android:textSize="15sp"
                 android:layout_marginEnd="10dp"
-                android:textColor="@color/white"
+                android:textColor="@color/colorPrimaryText"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/termly" />
@@ -2686,7 +2685,7 @@
                 android:checked="true"
                 android:textSize="15sp"
                 android:layout_marginEnd="10dp"
-                android:textColor="@color/white"
+                android:textColor="@color/colorPrimaryText"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/others" />
@@ -2709,7 +2708,7 @@
             android:layout_height="wrap_content"
             android:text="@string/education_question_8_5_text"
             android:textSize="15sp"
-            android:textColor="@color/white"
+            android:textColor="@color/colorPrimaryText"
             android:textStyle="bold" />
 
         <RadioGroup
@@ -2722,7 +2721,7 @@
                 android:checked="true"
                 android:textSize="15sp"
                 android:layout_marginEnd="10dp"
-                android:textColor="@color/white"
+                android:textColor="@color/colorPrimaryText"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/yes" />
@@ -2731,7 +2730,7 @@
                 android:checked="true"
                 android:textSize="15sp"
                 android:layout_marginEnd="10dp"
-                android:textColor="@color/white"
+                android:textColor="@color/colorPrimaryText"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/no" />
@@ -2741,7 +2740,7 @@
                 android:checked="true"
                 android:textSize="15sp"
                 android:layout_marginEnd="10dp"
-                android:textColor="@color/white"
+                android:textColor="@color/colorPrimaryText"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/not_sure" />
@@ -2753,7 +2752,7 @@
             android:layout_height="wrap_content"
             android:text="@string/education_question_8_5_others_text"
             android:textSize="15sp"
-            android:textColor="@color/white"
+            android:textColor="@color/colorPrimaryText"
             android:textStyle="bold" />
 
         <EditText
@@ -2778,7 +2777,7 @@
             android:layout_marginRight="70dp"
             android:layout_marginEnd="70dp"
             android:layout_marginBottom="27dp"
-            card_view:cardBackgroundColor="@color/white">
+            card_view:cardBackgroundColor="@color/colorPrimaryDark">
 
             <TextView
                 android:layout_width="wrap_content"
@@ -2789,7 +2788,7 @@
                 android:textStyle="bold"
                 android:textSize="20sp"
                 android:fontFamily="sans-serif-condensed"
-                android:textColor="#000"/>
+                android:textColor="@color/colorPrimaryText"/>
 
         </androidx.cardview.widget.CardView>
 
