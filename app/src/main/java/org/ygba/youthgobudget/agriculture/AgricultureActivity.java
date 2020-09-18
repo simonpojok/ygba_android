@@ -206,6 +206,7 @@ public class AgricultureActivity extends AppCompatActivity implements  AdapterVi
 
         agricultureQuestion.setQuarter(selectedQuarter);
         activityViewModel.saveAgricultureQuestion(agricultureQuestion);
+        resetForm();
     }
 
     private String getQuestion41Answer() {
