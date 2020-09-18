@@ -53,24 +53,39 @@
             app:cardBackgroundColor="@color/colorPrimary"
             app:cardCornerRadius="10dp">
 
-            <LinearLayout
+            <FrameLayout
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:background="@color/colorPrimary"
-                android:gravity="center"
-                android:orientation="vertical">
+                android:layout_height="match_parent">
 
-                <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:src="@drawable/ic_agriculture_white_50dp" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/colorPrimary"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_agriculture_white_50dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Agriculture"
+                        android:textColor="#ffffff" />
+                </LinearLayout>
 
                 <TextView
+                    android:layout_margin="5dp"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Agriculture"
-                    android:textColor="#ffffff" />
-            </LinearLayout>
+                    android:text="20"
+                    android:textStyle="bold"
+                    android:textSize="15sp"
+                    android:layout_gravity="end|top"
+                    android:textColor="#000000" />
+            </FrameLayout>
         </androidx.cardview.widget.CardView>
 
         <androidx.cardview.widget.CardView
