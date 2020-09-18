@@ -359,6 +359,12 @@ public class AgricultureActivity extends AppCompatActivity implements  AdapterVi
         question42Female2 = findViewById(R.id.question42Female2);
         question42Male2 = findViewById(R.id.question42Male2);
         question42Date2 = findViewById(R.id.question42Date2);
+        question42Date2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivityForResult(new Intent(AgricultureActivity.this, DatePickerActivity.class), QUESTION_4_DATE_WITHDRAWN_2_REQUEST_CODE);
+            }
+        });
         question42Plant2 = findViewById(R.id.question42Plant2);
         question42Plant3 = findViewById(R.id.question42Plant3);
         question42Date3 = findViewById(R.id.question42Date3);
