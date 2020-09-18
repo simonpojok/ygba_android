@@ -4,7 +4,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/colorActivityBackground"
     android:paddingHorizontal="8dp"
     tools:context=".budget_information.BudgetInformationActivity">
 
@@ -21,7 +20,7 @@
             android:layout_marginTop="20dp"
             android:text="@string/budget_information_sector_header"
             android:textSize="25sp"
-            android:textColor="@color/white"
+            android:textColor="@color/colorPrimaryText"
             android:textStyle="bold" />
 
         <TextView
@@ -31,7 +30,7 @@
             android:layout_marginTop="20dp"
             android:text="@string/department_label"
             android:textSize="18sp"
-            android:textColor="@color/white"
+            android:textColor="@color/colorPrimaryText"
             android:textStyle="bold" />
 
         <HorizontalScrollView
@@ -55,7 +54,7 @@
                     android:layout_marginTop="5dp"
                     android:text="@string/department_label_normal"
                     android:textSize="15sp"
-                    android:textColor="@color/white" />
+                    android:textColor="@color/colorPrimaryText" />
 
                 <LinearLayout
                     android:layout_row="0"
@@ -72,7 +71,7 @@
                         android:padding="10dp"
                         android:text="@string/financial_year_label"
                         android:textSize="15sp"
-                        android:textColor="@color/white" />
+                        android:textColor="@color/colorPrimaryText" />
 
                     <Spinner
                         android:layout_marginHorizontal="5dp"
@@ -93,7 +92,7 @@
                     android:layout_height="wrap_content"
                     android:text="@string/expected_approved_budget"
                     android:textSize="15sp"
-                    android:textColor="@color/white" />
+                    android:textColor="@color/colorPrimaryText" />
 
                 <TextView
                     android:layout_gravity="end"
@@ -105,7 +104,7 @@
                     android:padding="10dp"
                     android:text="@string/expected_approved_budget_percentage"
                     android:textSize="15sp"
-                    android:textColor="@color/white" />
+                    android:textColor="@color/colorPrimaryText" />
 
 <!--                row 2 -->
                 <TextView
@@ -116,7 +115,7 @@
                     android:layout_marginTop="5dp"
                     android:text="@string/administration_label"
                     android:textSize="15sp"
-                    android:textColor="@color/white" />
+                    android:textColor="@color/colorPrimaryText" />
 
                 <EditText
                     android:layout_marginVertical="5dp"
@@ -162,7 +161,7 @@
                     android:layout_marginTop="5dp"
                     android:text="@string/financial_label"
                     android:textSize="15sp"
-                    android:textColor="@color/white" />
+                    android:textColor="@color/colorPrimaryText" />
 
                 <EditText
                     android:layout_marginVertical="5dp"
@@ -208,7 +207,7 @@
                     android:layout_marginTop="5dp"
                     android:text="@string/statutory_bodies_label"
                     android:textSize="15sp"
-                    android:textColor="@color/white" />
+                    android:textColor="@color/colorPrimaryText" />
 
                 <EditText
                     android:layout_marginVertical="5dp"
@@ -254,7 +253,7 @@
                     android:layout_marginTop="5dp"
                     android:text="@string/production_label"
                     android:textSize="15sp"
-                    android:textColor="@color/white" />
+                    android:textColor="@color/colorPrimaryText" />
 
                 <EditText
                     android:layout_marginVertical="5dp"
@@ -300,7 +299,7 @@
                     android:layout_marginTop="5dp"
                     android:text="@string/health_label"
                     android:textSize="15sp"
-                    android:textColor="@color/white" />
+                    android:textColor="@color/colorPrimaryText" />
 
                 <EditText
                     android:layout_marginVertical="5dp"
@@ -345,7 +344,7 @@
                     android:layout_marginTop="5dp"
                     android:text="@string/health_education"
                     android:textSize="15sp"
-                    android:textColor="@color/white" />
+                    android:textColor="@color/colorPrimaryText" />
 
                 <EditText
                     android:layout_marginVertical="5dp"
@@ -391,7 +390,7 @@
                     android:layout_marginTop="5dp"
                     android:text="@string/health_road_engineering"
                     android:textSize="15sp"
-                    android:textColor="@color/white" />
+                    android:textColor="@color/colorPrimaryText" />
 
                 <EditText
                     android:layout_marginVertical="5dp"
@@ -436,7 +435,7 @@
                     android:layout_marginTop="5dp"
                     android:text="@string/water_approved_budget"
                     android:textSize="15sp"
-                    android:textColor="@color/white" />
+                    android:textColor="@color/colorPrimaryText" />
 
                 <EditText
                     android:layout_marginVertical="5dp"
@@ -482,7 +481,7 @@
                     android:layout_marginTop="5dp"
                     android:text="@string/natural_label"
                     android:textSize="15sp"
-                    android:textColor="@color/white" />
+                    android:textColor="@color/colorPrimaryText" />
 
                 <EditText
                     android:layout_marginVertical="5dp"
@@ -528,7 +527,7 @@
                     android:layout_marginTop="5dp"
                     android:text="@string/community_based_label"
                     android:textSize="15sp"
-                    android:textColor="@color/white" />
+                    android:textColor="@color/colorPrimaryText" />
 
                 <EditText
                     android:layout_marginVertical="5dp"
@@ -574,7 +573,7 @@
                     android:layout_marginTop="5dp"
                     android:text="@string/planning_label"
                     android:textSize="15sp"
-                    android:textColor="@color/white" />
+                    android:textColor="@color/colorPrimaryText" />
 
                 <EditText
                     android:layout_marginVertical="5dp"
@@ -620,7 +619,7 @@
                     android:layout_marginTop="5dp"
                     android:text="@string/internal_audit_label"
                     android:textSize="15sp"
-                    android:textColor="@color/white" />
+                    android:textColor="@color/colorPrimaryText" />
 
                 <EditText
                     android:layout_marginVertical="5dp"
@@ -666,7 +665,7 @@
                     android:layout_marginTop="5dp"
                     android:text="@string/trade_label"
                     android:textSize="15sp"
-                    android:textColor="@color/white" />
+                    android:textColor="@color/colorPrimaryText" />
 
                 <EditText
                     android:layout_marginVertical="5dp"
@@ -712,7 +711,7 @@
                     android:layout_marginTop="5dp"
                     android:text="@string/total_label"
                     android:textSize="15sp"
-                    android:textColor="@color/white" />
+                    android:textColor="@color/colorPrimaryText" />
 
                 <EditText
                     android:layout_marginVertical="5dp"
@@ -758,7 +757,7 @@
                     android:layout_marginTop="5dp"
                     android:text="@string/wage_label"
                     android:textSize="15sp"
-                    android:textColor="@color/white" />
+                    android:textColor="@color/colorPrimaryText" />
 
                 <EditText
                     android:layout_marginVertical="5dp"
@@ -804,7 +803,7 @@
                     android:layout_marginTop="5dp"
                     android:text="@string/recurrent_label"
                     android:textSize="15sp"
-                    android:textColor="@color/white" />
+                    android:textColor="@color/colorPrimaryText" />
 
                 <EditText
                     android:layout_marginVertical="5dp"
@@ -849,7 +848,7 @@
                     android:layout_marginTop="5dp"
                     android:text="@string/domestic_label"
                     android:textSize="15sp"
-                    android:textColor="@color/white" />
+                    android:textColor="@color/colorPrimaryText" />
 
                 <EditText
                     android:layout_marginVertical="5dp"
@@ -895,7 +894,7 @@
                     android:layout_marginTop="5dp"
                     android:text="@string/ext_label"
                     android:textSize="15sp"
-                    android:textColor="@color/white" />
+                    android:textColor="@color/colorPrimaryText" />
 
                 <EditText
                     android:layout_marginVertical="5dp"
@@ -941,7 +940,7 @@
             android:layout_marginHorizontal="10dp"
             android:text="@string/community_budget_wish_list"
             android:textSize="18sp"
-            android:textColor="@color/white"
+            android:textColor="@color/colorPrimaryText"
             android:textStyle="bold" />
 
         <HorizontalScrollView
@@ -970,7 +969,7 @@
                         android:layout_marginEnd="5dp"
                         android:text="@string/department_label"
                         android:textSize="15sp"
-                        android:textColor="@color/white" />
+                        android:textColor="@color/colorPrimaryText" />
 
                     <Spinner
                         android:layout_marginEnd="5dp"
@@ -993,7 +992,7 @@
                     android:layout_height="wrap_content"
                     android:text="@string/sub_county_label_sub"
                     android:textSize="15sp"
-                    android:textColor="@color/white" />
+                    android:textColor="@color/colorPrimaryText" />
 
                 <LinearLayout
                     android:layout_column="2"
@@ -1009,7 +1008,7 @@
                         android:layout_height="wrap_content"
                         android:text="@string/financial_year_label"
                         android:textSize="15sp"
-                        android:textColor="@color/white" />
+                        android:textColor="@color/colorPrimaryText" />
 
                     <Spinner
                         android:layout_marginHorizontal="5dp"
@@ -1036,7 +1035,7 @@
                         android:layout_height="wrap_content"
                         android:text="@string/service"
                         android:textSize="15sp"
-                        android:textColor="@color/white" />
+                        android:textColor="@color/colorPrimaryText" />
 
                     <Spinner
                         android:layout_marginHorizontal="5dp"
@@ -1063,7 +1062,7 @@
                         android:layout_height="wrap_content"
                         android:text="@string/community_needs"
                         android:textSize="15sp"
-                        android:textColor="@color/white" />
+                        android:textColor="@color/colorPrimaryText" />
 
                     <Spinner
                         android:layout_marginHorizontal="5dp"
@@ -1642,7 +1641,7 @@
             android:layout_marginRight="70dp"
             android:layout_marginEnd="70dp"
             android:layout_marginBottom="27dp"
-            card_view:cardBackgroundColor="@color/white">
+            card_view:cardBackgroundColor="@color/colorPrimaryDark">
 
             <TextView
                 android:layout_width="wrap_content"
