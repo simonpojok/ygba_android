@@ -2296,6 +2296,7 @@ id test_checkbox_android_button_tint
 id test_checkbox_app_button_tint
 id text
 id text2
+id textClock
 id textEnd
 id textSpacerNoButtons
 id textSpacerNoTitle

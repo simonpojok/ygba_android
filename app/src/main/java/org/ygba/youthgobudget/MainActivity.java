@@ -9,6 +9,7 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.TextClock;
 
 import org.ygba.youthgobudget.agriculture.AgricultureActivity;
 import org.ygba.youthgobudget.allocation.AllocationActivity;
@@ -33,6 +34,11 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
+
+        TextClock textClock = (TextClock) findViewById(R.id.textClock);
+        textClock.setFormat12Hour(null);
+        //textClock.setFormat24Hour("dd/MM/yyyy hh:mm:ss a");
+        textClock.setFormat24Hour("hh:mm:ss");
 
         findViewById(R.id.cv_agriculture).setOnClickListener(new View.OnClickListener() {
             @Override

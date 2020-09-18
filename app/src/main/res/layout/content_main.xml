@@ -13,15 +13,26 @@
         android:layout_marginBottom="10dp"
         android:layout_weight="1"
         android:layout_width="match_parent"
-        app:cardBackgroundColor="@color/colorPrimaryDark"
         app:cardCornerRadius="10dp"
         android:layout_height="0dp">
         <LinearLayout
             android:layout_margin="5dp"
-            android:orientation="horizontal"
+            android:orientation="vertical"
             android:layout_width="match_parent"
             android:background="@drawable/rounded_corner_border"
-            android:layout_height="match_parent"></LinearLayout>
+            android:layout_height="match_parent">
+
+            <TextClock
+                android:gravity="center"
+                android:textColor="@color/colorPrimaryText"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:id="@+id/textClock"
+                android:textStyle="bold"
+                android:textSize="30sp"/>
+
+        </LinearLayout>
     </androidx.cardview.widget.CardView>
 
 
