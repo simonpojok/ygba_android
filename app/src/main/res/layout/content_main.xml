@@ -11,7 +11,7 @@
 
     <androidx.cardview.widget.CardView
         android:layout_marginBottom="10dp"
-        android:layout_weight="1"
+        android:layout_weight="40"
         android:layout_width="match_parent"
         app:cardCornerRadius="10dp"
         android:layout_height="0dp">
@@ -38,7 +38,8 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="15"
         android:layout_marginBottom="8dp"
         android:gravity="center_horizontal"
         android:orientation="horizontal">
@@ -47,7 +48,7 @@
             android:id="@+id/cv_agriculture"
             android:layout_width="0dp"
             android:layout_weight="1"
-            android:layout_height="90dp"
+            android:layout_height="match_parent"
             android:layout_gravity="center"
             app:cardBackgroundColor="@color/colorPrimary"
             app:cardCornerRadius="10dp">
@@ -76,7 +77,7 @@
             android:id="@+id/cv_allocation_icon"
             android:layout_width="0dp"
             android:layout_weight="1"
-            android:layout_height="90dp"
+            android:layout_height="match_parent"
             android:layout_gravity="center_horizontal"
             android:layout_marginHorizontal="15dp"
             app:cardBackgroundColor="@color/colorPrimary"
@@ -105,7 +106,7 @@
             android:id="@+id/cv_social_development_icon"
             android:layout_width="0dp"
             android:layout_weight="1"
-            android:layout_height="90dp"
+            android:layout_height="match_parent"
             android:layout_gravity="end"
             app:cardBackgroundColor="@color/colorPrimary"
             app:cardCornerRadius="10dp">
@@ -132,7 +133,8 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="15"
         android:layout_marginBottom="8dp"
         android:gravity="center_horizontal"
         android:orientation="horizontal">
@@ -141,7 +143,7 @@
             android:id="@+id/water_environment_icon"
             android:layout_width="0dp"
             android:layout_weight="1"
-            android:layout_height="90dp"
+            android:layout_height="match_parent"
             android:layout_gravity="center"
             app:cardBackgroundColor="@color/colorPrimary"
             app:cardCornerRadius="10dp">
@@ -169,7 +171,7 @@
             android:id="@+id/cv_local_government_icon"
             android:layout_width="0dp"
             android:layout_weight="1"
-            android:layout_height="90dp"
+            android:layout_height="match_parent"
             android:layout_gravity="center_horizontal"
             android:layout_marginHorizontal="15dp"
             app:cardBackgroundColor="@color/colorPrimary"
@@ -198,7 +200,7 @@
             android:id="@+id/cv_budget_cycle_icon"
             android:layout_width="0dp"
             android:layout_weight="1"
-            android:layout_height="90dp"
+            android:layout_height="match_parent"
             android:layout_gravity="end"
             app:cardBackgroundColor="@color/colorPrimary"
             app:cardCornerRadius="10dp">
@@ -225,7 +227,8 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="15"
         android:layout_marginBottom="8dp"
         android:gravity="center_horizontal"
         android:orientation="horizontal">
@@ -234,7 +237,7 @@
             android:id="@+id/cv_health_icon"
             android:layout_width="0dp"
             android:layout_weight="1"
-            android:layout_height="90dp"
+            android:layout_height="match_parent"
             android:layout_gravity="center"
             app:cardBackgroundColor="@color/colorPrimary"
             app:cardCornerRadius="10dp">
@@ -262,7 +265,7 @@
             android:id="@+id/cv_polls_icon"
             android:layout_width="0dp"
             android:layout_weight="1"
-            android:layout_height="90dp"
+            android:layout_height="match_parent"
             android:layout_gravity="center_horizontal"
             android:layout_marginHorizontal="15dp"
             app:cardBackgroundColor="@color/colorPrimary"
@@ -291,7 +294,7 @@
             android:id="@+id/cv_education"
             android:layout_width="0dp"
             android:layout_weight="1"
-            android:layout_height="90dp"
+            android:layout_height="match_parent"
             android:layout_gravity="end"
             app:cardBackgroundColor="@color/colorPrimary"
             app:cardCornerRadius="10dp">
@@ -318,7 +321,8 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="15"
         android:layout_marginBottom="8dp"
         android:gravity="center_horizontal"
         android:orientation="horizontal">
@@ -327,7 +331,7 @@
             android:id="@+id/upload_data"
             android:layout_width="0dp"
             android:layout_weight="1"
-            android:layout_height="90dp"
+            android:layout_height="match_parent"
             android:layout_gravity="center"
             app:cardBackgroundColor="@color/colorPrimary"
             app:cardCornerRadius="10dp">
@@ -355,7 +359,7 @@
             android:id="@+id/cv_help_icon"
             android:layout_width="0dp"
             android:layout_weight="1"
-            android:layout_height="90dp"
+            android:layout_height="match_parent"
             android:layout_gravity="center_horizontal"
             android:layout_marginHorizontal="15dp"
             app:cardBackgroundColor="@color/colorPrimary"
@@ -384,7 +388,7 @@
             android:id="@+id/cv_community_wishes"
             android:layout_width="0dp"
             android:layout_weight="1"
-            android:layout_height="90dp"
+            android:layout_height="match_parent"
             android:layout_gravity="end"
             app:cardBackgroundColor="@color/colorPrimary"
             app:cardCornerRadius="10dp">
