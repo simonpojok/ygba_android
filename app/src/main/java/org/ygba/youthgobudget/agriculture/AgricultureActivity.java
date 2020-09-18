@@ -23,6 +23,7 @@ import org.ygba.youthgobudget.data.agriculture.AgricultureQuestion;
 import org.ygba.youthgobudget.dialogs.DatePickerActivity;
 import org.ygba.youthgobudget.dialogs.DistrictPickerActivity;
 import org.ygba.youthgobudget.dialogs.SubCountyPickerActivity;
+import org.ygba.youthgobudget.dialogs.SuccessActivity;
 import org.ygba.youthgobudget.utils.DynamicData;
 
 
@@ -41,6 +42,7 @@ public class AgricultureActivity extends AppCompatActivity implements  AdapterVi
     private final int QUESTION_4_DATE_WITHDRAWN_3_REQUEST_CODE = 10;
     private final int QUESTION_4_DATE_WITHDRAWN_2_REQUEST_CODE = 11;
     private final int QUESTION_4_DATE_WITHDRAWN_1_REQUEST_CODE = 12;
+    private final int DISPLAY_SUCCESS_MESSAGE_ACTIVITY = 13;
     private int districtId = 0;
     RadioGroup question1RadioGroup;
     Spinner quarterSpinner;
@@ -206,7 +208,7 @@ public class AgricultureActivity extends AppCompatActivity implements  AdapterVi
 
         agricultureQuestion.setQuarter(selectedQuarter);
         activityViewModel.saveAgricultureQuestion(agricultureQuestion);
-        resetForm();
+        startActivityForResult(new Intent(this, SuccessActivity.class), DISPLAY_SUCCESS_MESSAGE_ACTIVITY);
     }
 
     private String getQuestion41Answer() {
@@ -420,8 +422,14 @@ public class AgricultureActivity extends AppCompatActivity implements  AdapterVi
                     question42Date2.setText(data.getStringExtra(DatePickerActivity.SELECTED_DATE));
                 } else if (requestCode == QUESTION_4_DATE_WITHDRAWN_1_REQUEST_CODE) {
                     question42Date1.setText(data.getStringExtra(DatePickerActivity.SELECTED_DATE));
+                } else if (requestCode == DISPLAY_SUCCESS_MESSAGE_ACTIVITY ) {
+                    clearForm();
                 }
             }
         }
+    }
+
+    private void clearForm() {
+
     }
 }
