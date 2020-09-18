@@ -88,6 +88,10 @@
         "source": "/home/dev/AndroidStudioProjects/ygba_android/app/src/main/res/drawable/ic_baseline_account_balance_24.xml"
     },
     {
+        "merged": "/home/dev/AndroidStudioProjects/ygba_android/app/build/intermediates/res/merged/debug/drawable_circular_green_background.xml.flat",
+        "source": "/home/dev/AndroidStudioProjects/ygba_android/app/src/main/res/drawable/circular_green_background.xml"
+    },
+    {
         "merged": "/home/dev/AndroidStudioProjects/ygba_android/app/build/intermediates/res/merged/debug/mipmap-hdpi_ic_launcher_foreground.png.flat",
         "source": "/home/dev/AndroidStudioProjects/ygba_android/app/src/main/res/mipmap-hdpi/ic_launcher_foreground.png"
     },
