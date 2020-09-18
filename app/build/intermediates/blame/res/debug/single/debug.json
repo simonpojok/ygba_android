@@ -1,11 +1,11 @@
 [
     {
-        "merged": "/home/dev/AndroidStudioProjects/ygba_android/app/build/intermediates/res/merged/debug/drawable_ic_menu_camera.xml.flat",
-        "source": "/home/dev/AndroidStudioProjects/ygba_android/app/src/main/res/drawable/ic_menu_camera.xml"
-    },
-    {
         "merged": "/home/dev/AndroidStudioProjects/ygba_android/app/build/intermediates/res/merged/debug/mipmap-hdpi_ic_launcher.png.flat",
         "source": "/home/dev/AndroidStudioProjects/ygba_android/app/src/main/res/mipmap-hdpi/ic_launcher.png"
+    },
+    {
+        "merged": "/home/dev/AndroidStudioProjects/ygba_android/app/build/intermediates/res/merged/debug/drawable_ic_menu_camera.xml.flat",
+        "source": "/home/dev/AndroidStudioProjects/ygba_android/app/src/main/res/drawable/ic_menu_camera.xml"
     },
     {
         "merged": "/home/dev/AndroidStudioProjects/ygba_android/app/build/intermediates/res/merged/debug/drawable_ic_baseline_done_24.xml.flat",
@@ -20,12 +20,12 @@
         "source": "/home/dev/AndroidStudioProjects/ygba_android/app/src/main/res/layout/nav_header_main.xml"
     },
     {
-        "merged": "/home/dev/AndroidStudioProjects/ygba_android/app/build/intermediates/res/merged/debug/drawable_side_nav_bar.xml.flat",
-        "source": "/home/dev/AndroidStudioProjects/ygba_android/app/src/main/res/drawable/side_nav_bar.xml"
-    },
-    {
         "merged": "/home/dev/AndroidStudioProjects/ygba_android/app/build/intermediates/res/merged/debug/layout_activity_budget_cycle.xml.flat",
         "source": "/home/dev/AndroidStudioProjects/ygba_android/app/src/main/res/layout/activity_budget_cycle.xml"
+    },
+    {
+        "merged": "/home/dev/AndroidStudioProjects/ygba_android/app/build/intermediates/res/merged/debug/drawable_side_nav_bar.xml.flat",
+        "source": "/home/dev/AndroidStudioProjects/ygba_android/app/src/main/res/drawable/side_nav_bar.xml"
     },
     {
         "merged": "/home/dev/AndroidStudioProjects/ygba_android/app/build/intermediates/res/merged/debug/mipmap-xhdpi_ic_launcher.png.flat",
