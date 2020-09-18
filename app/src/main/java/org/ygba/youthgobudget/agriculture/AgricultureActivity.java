@@ -17,11 +17,6 @@ import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.mobsandgeeks.saripaar.ValidationError;
-import com.mobsandgeeks.saripaar.Validator;
-import com.mobsandgeeks.saripaar.annotation.Min;
-import com.mobsandgeeks.saripaar.annotation.NotEmpty;
-
 import org.w3c.dom.Text;
 import org.ygba.youthgobudget.R;
 import org.ygba.youthgobudget.data.agriculture.AgricultureQuestion;
@@ -34,7 +29,7 @@ import org.ygba.youthgobudget.utils.DynamicData;
 
 import java.util.List;
 
-public class AgricultureActivity extends AppCompatActivity implements  AdapterView.OnItemSelectedListener, Validator.ValidationListener {
+public class AgricultureActivity extends AppCompatActivity implements  AdapterView.OnItemSelectedListener {
     private   final int DISTRICT_NAME_REQUESTER_CODE = 1;
     private   final int SUB_COUNTY_NAME_REQUEST_CODE = 2;
     private  final int QUESTION_2_DATE_RECEIVED_1_REQUEST_CODE = 3;
@@ -54,109 +49,57 @@ public class AgricultureActivity extends AppCompatActivity implements  AdapterVi
     EditText financialYear;
     TextView districtText;
 
-    @NotEmpty
     EditText villageEditText;
-    @NotEmpty
     EditText parishTextEdit;
-    @NotEmpty
     TextView divisionEditText;
-    @NotEmpty
     EditText agentFullNameEditText;
-    @NotEmpty
     EditText agentTelephoneEditText;
-    @NotEmpty
     EditText agentNumberEditText;
-    @NotEmpty
     EditText question1ReasonEditText;
-    @NotEmpty
     EditText extensionServiceExpectedOrReceivedEditText;
-    @NotEmpty
     EditText extensionServiceAmountReceivedTextEdit;
-    @NotEmpty
     TextView extensionServiceDateReceivedEditText;
-    @NotEmpty
     TextView extensionServiceDateWithdrawnEditText;
-    @NotEmpty
     EditText developmentExpectedOrApprovedTextEdit;
-    @NotEmpty
     EditText developmentAmountReceived;
-    @NotEmpty
     TextView developmentDateReceived;
-    @NotEmpty
     TextView developmentDateWithdrawn;
-    @NotEmpty
     EditText question21EditText;
     RadioGroup question22RadioGroup;
-    @NotEmpty
     EditText question23EditText;
-    @NotEmpty
     EditText question24EditText;
-    @NotEmpty
     EditText question25EditEdit;
-    @NotEmpty
     EditText question32MeetingCapacity;
-    @NotEmpty
     EditText question24MeetingCell;
-    @NotEmpty
     EditText question34FemaleNumber;
-    @NotEmpty
     EditText question34MaleNumber;
-    @NotEmpty
     EditText question35EditText;
-    @NotEmpty
     EditText question42Plant1;
-    @NotEmpty
     TextView question42Date1;
-    @NotEmpty
     EditText question42Male1;
-    @NotEmpty
     EditText question42Female1;
-    @NotEmpty
     EditText question42Village1;
-    @NotEmpty
     EditText question42Village2;
-    @NotEmpty
     EditText question42Female2;
-    @NotEmpty
     EditText question42Male2;
-    @NotEmpty
     TextView question42Date2;
-    @NotEmpty
     EditText question42Plant2;
-    @NotEmpty
     EditText question42Plant3;
-    @NotEmpty
     TextView question42Date3;
-    @NotEmpty
     EditText question42Male3;
-    @NotEmpty
     EditText question42Female3;
-    @NotEmpty
     EditText question42Village3;
-    @NotEmpty
     EditText question42Plant4;
-    @NotEmpty
     TextView question42Date4;
-    @NotEmpty
     EditText question42Male4;
-    @NotEmpty
     EditText question42Female4;
-    @NotEmpty
     EditText question42Village4;
-    @NotEmpty
     EditText question42Village5;
-    @NotEmpty
     EditText question42Female5;
-    @NotEmpty
     EditText question42Male5;
-    @NotEmpty
     TextView question42Date5;
-    @NotEmpty
     EditText question42Plant5;
-    @NotEmpty
     EditText question43Reason;
-    @NotEmpty
-    @Min(10)
     EditText question43AnyReason;
     CardView saveFormData;
     AgricultureActivityViewModel activityViewModel;
@@ -164,7 +107,6 @@ public class AgricultureActivity extends AppCompatActivity implements  AdapterVi
     private final String[] financialYearList = {"2021/22", "2020/21", "2019/20"};
     private String selectedQuarter;
     private String selectedFinancialYear;
-    private Validator validator;
     RadioGroup question41RadioGroup;
 
     @Override
@@ -172,15 +114,13 @@ public class AgricultureActivity extends AppCompatActivity implements  AdapterVi
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_agriculture_activity);
          activityViewModel = new ViewModelProvider(this).get(AgricultureActivityViewModel.class);
-         validator = new Validator(this);
-         validator.setValidationListener(this);
 
         initViews();
 
         saveFormData.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                validator.validate();
+                saveAgricultureQuestion();
             }
         });
 
@@ -199,7 +139,8 @@ public class AgricultureActivity extends AppCompatActivity implements  AdapterVi
 
     private void saveAgricultureQuestion() {
         AgricultureQuestion agricultureQuestion = new AgricultureQuestion(
-                financialYear.getText().toString(),
+                selectedQuarter,
+                selectedQuarter,
                 DynamicData.getDate(),
                 villageEditText.getText().toString(),
                 parishTextEdit.getText().toString(),
@@ -448,22 +389,6 @@ public class AgricultureActivity extends AppCompatActivity implements  AdapterVi
     @Override
     public void onNothingSelected(AdapterView<?> adapterView) {
         selectedQuarter = "";
-    }
-
-    @Override
-    public void onValidationSucceeded() {
-        saveAgricultureQuestion();
-    }
-
-    @Override
-    public void onValidationFailed(List<ValidationError> errors) {
-        for (ValidationError error: errors) {
-            View view = error.getView();
-            String message = error.getCollatedErrorMessage(this);
-            if (view instanceof EditText) {
-               ( (EditText) view).setError(message);
-            }
-        }
     }
 
     @Override
