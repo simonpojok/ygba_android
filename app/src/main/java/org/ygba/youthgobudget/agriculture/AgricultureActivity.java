@@ -22,6 +22,7 @@ import com.mobsandgeeks.saripaar.Validator;
 import com.mobsandgeeks.saripaar.annotation.Min;
 import com.mobsandgeeks.saripaar.annotation.NotEmpty;
 
+import org.w3c.dom.Text;
 import org.ygba.youthgobudget.R;
 import org.ygba.youthgobudget.data.agriculture.AgricultureQuestion;
 import org.ygba.youthgobudget.dialogs.DatePickerActivity;
@@ -105,7 +106,7 @@ public class AgricultureActivity extends AppCompatActivity implements  AdapterVi
     @NotEmpty
     EditText question42Plant1;
     @NotEmpty
-    EditText question42Date1;
+    TextView question42Date1;
     @NotEmpty
     EditText question42Male1;
     @NotEmpty
@@ -119,7 +120,7 @@ public class AgricultureActivity extends AppCompatActivity implements  AdapterVi
     @NotEmpty
     EditText question42Male2;
     @NotEmpty
-    EditText question42Date2;
+    TextView question42Date2;
     @NotEmpty
     EditText question42Plant2;
     @NotEmpty
@@ -352,6 +353,12 @@ public class AgricultureActivity extends AppCompatActivity implements  AdapterVi
         question41RadioGroup = findViewById(R.id.question41RadioGroup);
         question42Plant1 = findViewById(R.id.question42Plant1);
         question42Date1 = findViewById(R.id.question42Date1);
+        question42Date1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivityForResult(new Intent(AgricultureActivity.this, DatePickerActivity.class), QUESTION_4_DATE_WITHDRAWN_1_REQUEST_CODE);
+            }
+        });
         question42Male1 = findViewById(R.id.question42Male1);
         question42Female1 = findViewById(R.id.question42Female1);
         question42Village1 = findViewById(R.id.question42Village1);
