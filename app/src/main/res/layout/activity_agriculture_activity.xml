@@ -1262,6 +1262,7 @@
         android:layout_height="100dp"
         android:background="@drawable/edit_text_style"
         android:padding="10dp"
+        android:hint="@string/hint_agriculture_question_4_3"
         android:autofillHints="" />
 
     <TextView
@@ -1280,8 +1281,7 @@
         android:layout_width="match_parent"
         android:layout_height="200dp"
         android:background="@drawable/edit_text_style"
-        android:paddingStart="10dp"
-        android:paddingEnd="10dp"
+        android:padding="10dp"
         android:autofillHints="" />
     <androidx.cardview.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
         android:layout_width="match_parent"
@@ -1305,7 +1305,7 @@
             android:textStyle="bold"
             android:textSize="20sp"
             android:fontFamily="sans-serif-condensed"
-            android:textColor="@color/colorPrimaryText"/>
+            android:textColor="@color/colorPrimaryTextWhite"/>
 
     </androidx.cardview.widget.CardView>
 
