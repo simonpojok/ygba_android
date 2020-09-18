@@ -4,7 +4,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/colorActivityBackground"
     android:paddingHorizontal="8dp"
     tools:context=".budget_information.BudgetInformationActivity">
 
@@ -21,7 +20,7 @@
             android:layout_marginTop="20dp"
             android:text="@string/community_budget_wish_list"
             android:textSize="25sp"
-            android:textColor="@color/white"
+            android:textColor="@color/colorPrimaryText"
             android:textStyle="bold" />
 
         <HorizontalScrollView
@@ -50,7 +49,7 @@
                         android:layout_marginEnd="5dp"
                         android:text="@string/department_label"
                         android:textSize="15sp"
-                        android:textColor="@color/white" />
+                        android:textColor="@color/colorPrimaryText" />
 
                     <Spinner
                         android:layout_marginEnd="5dp"
@@ -73,7 +72,7 @@
                     android:layout_height="wrap_content"
                     android:text="@string/sub_county_label_sub"
                     android:textSize="15sp"
-                    android:textColor="@color/white" />
+                    android:textColor="@color/colorPrimaryText" />
 
                 <LinearLayout
                     android:layout_column="2"
@@ -89,7 +88,7 @@
                         android:layout_height="wrap_content"
                         android:text="@string/financial_year_label"
                         android:textSize="15sp"
-                        android:textColor="@color/white" />
+                        android:textColor="@color/colorPrimaryText" />
 
                     <Spinner
                         android:layout_marginHorizontal="5dp"
@@ -116,7 +115,7 @@
                         android:layout_height="wrap_content"
                         android:text="@string/service"
                         android:textSize="15sp"
-                        android:textColor="@color/white" />
+                        android:textColor="@color/colorPrimaryText" />
 
                     <Spinner
                         android:layout_marginHorizontal="5dp"
@@ -143,7 +142,7 @@
                         android:layout_height="wrap_content"
                         android:text="@string/community_needs"
                         android:textSize="15sp"
-                        android:textColor="@color/white" />
+                        android:textColor="@color/colorPrimaryText" />
 
                     <Spinner
                         android:layout_marginHorizontal="5dp"
@@ -722,7 +721,7 @@
             android:layout_marginRight="70dp"
             android:layout_marginEnd="70dp"
             android:layout_marginBottom="27dp"
-            card_view:cardBackgroundColor="@color/white">
+            card_view:cardBackgroundColor="@color/colorPrimaryDark">
 
             <TextView
                 android:layout_width="wrap_content"

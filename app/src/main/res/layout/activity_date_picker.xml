@@ -10,7 +10,7 @@
     tools:context=".dialogs.DatePickerActivity">
 
     <DatePicker
-        android:calendarTextColor="@color/white"
+        android:calendarTextColor="@color/colorPrimaryText"
         android:id="@+id/date_picker_activity_date_picker"
         android:layout_width="wrap_content"
         android:datePickerMode="spinner"
@@ -32,7 +32,7 @@
             android:text="CANCEL"/>
         <Button
             android:textSize="15sp"
-            android:textColor="@color/white"
+            android:textColor="@color/colorPrimaryText"
             android:background="@color/colorPrimary"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
