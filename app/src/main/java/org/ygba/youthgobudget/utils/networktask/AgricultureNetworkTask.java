@@ -3,8 +3,6 @@ package org.ygba.youthgobudget.utils.networktask;
 import android.content.Context;
 import android.util.Log;
 
-import androidx.work.ListenableWorker;
-
 import com.android.volley.Request;
 import com.android.volley.RequestQueue;
 import com.android.volley.Response;
@@ -14,6 +12,7 @@ import com.android.volley.toolbox.Volley;
 
 import org.json.JSONException;
 import org.json.JSONObject;
+import org.ygba.youthgobudget.YGBARepository;
 import org.ygba.youthgobudget.data.YGBDatabase;
 import org.ygba.youthgobudget.data.agriculture.AgricultureDao;
 import org.ygba.youthgobudget.data.agriculture.AgricultureQuestion;
@@ -27,8 +26,15 @@ import static org.ygba.youthgobudget.utils.Constants.AGRICULTURE_COLLECTION_URL;
 public class AgricultureNetworkTask {
     private Context context;
     private AgricultureDao agricultureDao;
+    private YGBARepository ygbaRepository;
 
-    public AgricultureNetworkTask() {
+    public AgricultureNetworkTask(Context context, AgricultureDao agricultureDao, YGBARepository ygbaRepository) {
+        this.context = context;
+        this.agricultureDao = agricultureDao;
+        this.ygbaRepository = ygbaRepository;
+    }
+
+    public void doAgricultureNetworkTask() {
         try {
             List<AgricultureQuestion> agricultureQuestions = getAgricultureQuestion();
 
