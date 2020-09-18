@@ -139,11 +139,13 @@ public class AgricultureUploadWorker extends Worker {
                         new Response.Listener<JSONObject>() {
                             @Override
                             public void onResponse(JSONObject response) {
-//                                try {
-////                                    deleteAgricultureQuestion(response.getInt("record_id"));
-//                                } catch (JSONException e) {
-//                                    e.printStackTrace();
-//                                }
+                                Log.d("Agr", response.toString());
+                                try {
+                                    int recordId = response.getInt("record_id");
+                                    deleteAgricultureQuestion(recordId);
+                                } catch (JSONException e) {
+                                    e.printStackTrace();
+                                }
                             }
                         },
                         new Response.ErrorListener() {
