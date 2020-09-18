@@ -82,8 +82,7 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Allocation"
-                            android:textColor="#ffffff" />
+                            android:text="Allocation" />
                     </LinearLayout>
                 </androidx.cardview.widget.CardView>
 
@@ -109,8 +108,7 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Social Dev.."
-                            android:textColor="#ffffff" />
+                            android:text="Social Dev.." />
                     </LinearLayout>
                 </androidx.cardview.widget.CardView>
             </LinearLayout>
@@ -144,8 +142,7 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Water San.."
-                            android:textColor="#ffffff" />
+                            android:text="Water San.." />
                     </LinearLayout>
                 </androidx.cardview.widget.CardView>
 
@@ -172,8 +169,7 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Local Gov."
-                            android:textColor="#ffffff" />
+                            android:text="Local Gov."/>
                     </LinearLayout>
                 </androidx.cardview.widget.CardView>
 
@@ -199,8 +195,7 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Budget Cy.."
-                            android:textColor="#ffffff" />
+                            android:text="Budget Cy.."/>
                     </LinearLayout>
                 </androidx.cardview.widget.CardView>
             </LinearLayout>
@@ -234,8 +229,7 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Health"
-                            android:textColor="#ffffff" />
+                            android:text="Health" />
                     </LinearLayout>
                 </androidx.cardview.widget.CardView>
 
@@ -262,8 +256,7 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Polls"
-                            android:textColor="#ffffff" />
+                            android:text="Polls"/>
                     </LinearLayout>
                 </androidx.cardview.widget.CardView>
 
@@ -289,8 +282,7 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Education"
-                            android:textColor="#ffffff" />
+                            android:text="Education"/>
                     </LinearLayout>
                 </androidx.cardview.widget.CardView>
             </LinearLayout>
@@ -324,8 +316,7 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Budget In.."
-                            android:textColor="#ffffff" />
+                            android:text="Budget In.."/>
                     </LinearLayout>
                 </androidx.cardview.widget.CardView>
 
@@ -352,8 +343,7 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Help"
-                            android:textColor="#ffffff" />
+                            android:text="Help"/>
                     </LinearLayout>
                 </androidx.cardview.widget.CardView>
 
@@ -379,8 +369,7 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Com. Wish"
-                            android:textColor="#ffffff" />
+                            android:text="Com. Wish"/>
                     </LinearLayout>
                 </androidx.cardview.widget.CardView>
             </LinearLayout>
