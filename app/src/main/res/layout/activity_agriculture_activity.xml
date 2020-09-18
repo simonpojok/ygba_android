@@ -879,6 +879,8 @@
                     android:text="1"/>
 
                 <EditText
+                    android:hint="@string/hint_plant_or_material"
+                    android:gravity="start|center_vertical"
                     android:id="@+id/question42Plant1"
                     android:layout_marginHorizontal="10dp"
                     android:textColor="@color/colorPrimaryText"
@@ -891,7 +893,9 @@
                     android:layout_column="1"
                     android:inputType="text" />
 
-                <EditText
+                <TextView
+                    android:hint="@string/hint_date"
+                    android:gravity="start|center_vertical"
                     android:id="@+id/question42Date1"
                     android:layout_marginHorizontal="10dp"
                     android:textColor="@color/colorPrimaryText"
@@ -906,6 +910,8 @@
                     tools:ignore="LabelFor" />
 
                 <EditText
+                    android:hint="@string/hint_number_of_males"
+                    android:gravity="start|center_vertical"
                     android:id="@+id/question42Male1"
                     android:textColor="@color/colorPrimaryText"
                     android:layout_width="200dp"
@@ -919,6 +925,8 @@
                     tools:ignore="LabelFor" />
 
                 <EditText
+                    android:gravity="start|center_vertical"
+                    android:hint="@string/hint_number_of_females"
                     android:id="@+id/question42Female1"
                     android:layout_marginHorizontal="10dp"
                     android:textColor="@color/colorPrimaryText"
@@ -932,6 +940,8 @@
                     android:autofillHints="" />
 
                 <EditText
+                    android:gravity="start|center_vertical"
+                    android:hint="@string/hint_village_name"
                     android:id="@+id/question42Village1"
                     android:textColor="@color/colorPrimaryText"
                     android:layout_width="200dp"
@@ -959,6 +969,8 @@
                     android:text="2"/>
 
                 <EditText
+                    android:hint="@string/inputs_or_planting_materials"
+                    android:gravity="start|center_vertical"
                     android:id="@+id/question42Plant2"
                     android:layout_marginHorizontal="10dp"
                     android:textColor="@color/colorPrimaryText"
