@@ -32,10 +32,14 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="org.ygba.youthgobudget.dialogs.SubCountyPickerActivity" />
+        <activity
+            android:name="org.ygba.youthgobudget.dialogs.SubCountyPickerActivity"
+            android:label="Sub County Picker"
+            android:theme="@android:style/Theme.DeviceDefault.Light.Dialog" />
         <activity
             android:name="org.ygba.youthgobudget.dialogs.DistrictPickerActivity"
-            android:label="Pick District" />
+            android:label="Pick District"
+            android:theme="@android:style/Theme.DeviceDefault.Light.Dialog" />
 
         <uses-library
             android:name="org.apache.http.legacy"

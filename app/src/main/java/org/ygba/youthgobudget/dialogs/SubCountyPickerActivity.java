@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 
@@ -15,7 +16,7 @@ import org.ygba.youthgobudget.data.helpers.sub_county.SubCounty;
 import java.util.List;
 import java.util.concurrent.ExecutionException;
 
-public class SubCountyPickerActivity extends AppCompatActivity implements SubCountyAdapter.OnSubCountyClickListener {
+public class SubCountyPickerActivity extends Activity implements SubCountyAdapter.OnSubCountyClickListener {
 
     public static final String DISTRICT_ID = "org.ygba.youthgobudget.dialogs.SubCountyPickerActivity.DISTRICT_ID";
     public static final String SUB_COUNTY_NAME = "org.ygba.youthgobudget.dialogs.SubCountyPickerActivity.SUB_COUNTY_NAME";

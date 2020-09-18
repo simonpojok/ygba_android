@@ -18,8 +18,12 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".dialogs.SubCountyPickerActivity" />
         <activity
+            android:theme="@android:style/Theme.DeviceDefault.Light.Dialog"
+            android:label="Sub County Picker"
+            android:name=".dialogs.SubCountyPickerActivity" />
+        <activity
+            android:theme="@android:style/Theme.DeviceDefault.Light.Dialog"
             android:name=".dialogs.DistrictPickerActivity"
             android:label="Pick District" />
 

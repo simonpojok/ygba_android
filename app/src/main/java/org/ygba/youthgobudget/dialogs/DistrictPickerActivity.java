@@ -22,7 +22,7 @@ import org.ygba.youthgobudget.data.helpers.district.District;
 import java.util.List;
 import java.util.concurrent.ExecutionException;
 
-public class DistrictPickerActivity extends AppCompatActivity implements DistrictPickerAdapter.OnDistrictClickListener {
+public class DistrictPickerActivity extends Activity implements DistrictPickerAdapter.OnDistrictClickListener {
     public static final String DISTRICT_NAME = "org.ygba.youthgobudget.dialogs.DistrictPickerActivity.DISTRICT_NAME";
     public static final String DISTRICT_ID = "org.ygba.youthgobudget.dialogs.DistrictPickerActivity.DISTRICT_ID";
 
