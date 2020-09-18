@@ -1395,6 +1395,7 @@ drawable design_password_eye
 drawable design_snackbar_background
 drawable edit_text_style
 drawable get
+drawable ic_agriculture_blue_24dp
 drawable ic_agriculture_white_24dp
 drawable ic_agriculture_white_50dp
 drawable ic_baseline_account_balance_24

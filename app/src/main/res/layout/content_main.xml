@@ -16,6 +16,7 @@
         app:cardCornerRadius="10dp"
         android:layout_height="0dp">
         <LinearLayout
+            android:gravity="center"
             android:layout_margin="5dp"
             android:orientation="vertical"
             android:layout_width="match_parent"
@@ -26,8 +27,7 @@
                 android:gravity="center"
                 android:textColor="@color/colorPrimaryText"
                 android:layout_width="match_parent"
-                android:layout_height="0dp"
-                android:layout_weight="1"
+                android:layout_height="wrap_content"
                 android:id="@+id/textClock"
                 android:textStyle="bold"
                 android:textSize="30sp"/>

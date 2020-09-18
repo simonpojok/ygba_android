@@ -236,6 +236,10 @@
         "source": "/home/dev/AndroidStudioProjects/ygba_android/app/src/main/res/layout/activity_poll.xml"
     },
     {
+        "merged": "/home/dev/AndroidStudioProjects/ygba_android/app/build/intermediates/res/merged/debug/drawable_ic_agriculture_blue_24dp.xml.flat",
+        "source": "/home/dev/AndroidStudioProjects/ygba_android/app/src/main/res/drawable/ic_agriculture_blue_24dp.xml"
+    },
+    {
         "merged": "/home/dev/AndroidStudioProjects/ygba_android/app/build/intermediates/res/merged/debug/layout_activity_health.xml.flat",
         "source": "/home/dev/AndroidStudioProjects/ygba_android/app/src/main/res/layout/activity_health.xml"
     },
