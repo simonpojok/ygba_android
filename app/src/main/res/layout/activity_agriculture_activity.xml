@@ -1298,7 +1298,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_marginTop="0dp"
-            android:text="Save"
+            android:text="@string/save_and_submit_label"
             android:textStyle="bold"
             android:textSize="20sp"
             android:fontFamily="sans-serif-condensed"

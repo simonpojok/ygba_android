@@ -415,4 +415,5 @@
     <string name="small_female">Female</string>
     <string name="quarter_year_label">Quarter</string>
     <string name="hint_agriculture_question_4_3">Type Here</string>
+    <string name="save_and_submit_label">Save And Submit</string>
 </resources>

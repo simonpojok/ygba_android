@@ -2923,6 +2923,7 @@ string reason_hint
 string recurrent_label
 string revamps
 string same
+string save_and_submit_label
 string school_name
 string school_name_education_question_2
 string school_name_hint
