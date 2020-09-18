@@ -40,6 +40,7 @@ public class AgricultureActivity extends AppCompatActivity implements  AdapterVi
     private  final int  QUESTION_2_DATE_WITHDRAWN_1_REQUEST_CODE = 4;
     private  final int  QUESTION_2_DATE_RECEIVED_2_REQUEST_CODE = 5;
     private  final int  QUESTION_2_DATE_WITHDRAWN_2_REQUEST_CODE = 6;
+    private  final int  QUESTION_4_DATE_WITHDRAWN_5_REQUEST_CODE = 8;
     private int districtId = 0;
     RadioGroup question1RadioGroup;
     Spinner quarterSpinner;
@@ -144,7 +145,7 @@ public class AgricultureActivity extends AppCompatActivity implements  AdapterVi
     @NotEmpty
     EditText question42Male5;
     @NotEmpty
-    EditText question42Date5;
+    TextView question42Date5;
     @NotEmpty
     EditText question42Plant5;
     @NotEmpty
@@ -369,6 +370,12 @@ public class AgricultureActivity extends AppCompatActivity implements  AdapterVi
         question42Female5 = findViewById(R.id.question42Female5);
         question42Male5 = findViewById(R.id.question42Male5);
         question42Date5 = findViewById(R.id.question42Date5);
+        question42Date5.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivityForResult(new Intent(AgricultureActivity.this, DatePickerActivity.class), QUESTION_4_DATE_WITHDRAWN_5_REQUEST_CODE);
+            }
+        });
         question42Plant5 =  findViewById(R.id.question42Plant5);
         question43Reason = findViewById(R.id.question43Reason);
         question43AnyReason =  findViewById(R.id.question43AnyReason);
@@ -448,6 +455,8 @@ public class AgricultureActivity extends AppCompatActivity implements  AdapterVi
                     developmentDateReceived.setText(data.getStringExtra(DatePickerActivity.SELECTED_DATE));
                 } else if (requestCode == QUESTION_2_DATE_WITHDRAWN_2_REQUEST_CODE) {
                     developmentDateWithdrawn.setText(data.getStringExtra(DatePickerActivity.SELECTED_DATE));
+                } else if (requestCode == QUESTION_4_DATE_WITHDRAWN_5_REQUEST_CODE) {
+                    question42Date5.setText(data.getStringExtra(DatePickerActivity.SELECTED_DATE));
                 }
             }
         }
