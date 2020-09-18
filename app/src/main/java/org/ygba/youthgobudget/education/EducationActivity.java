@@ -42,7 +42,7 @@ public class EducationActivity extends AppCompatActivity implements Validator.Va
     private TextView  districtText;
     @NotEmpty
     private EditText eParishEditText;
-    private EditText eDivisionEditText;
+    private TextView eDivisionEditText;
     private TextView eDistrictEditText;
     private EditText eAgentEditText;
     private EditText eAgentTellEditText;
@@ -342,7 +342,7 @@ public class EducationActivity extends AppCompatActivity implements Validator.Va
 
 
         // listeners
-        districtText.setOnClickListener(new View.OnClickListener() {
+        eDistrictEditText.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(EducationActivity.this, DistrictPickerActivity.class);
@@ -546,7 +546,7 @@ public class EducationActivity extends AppCompatActivity implements Validator.Va
             } else if (requestCode == LAST_TIME_INSPECTOR_VISIT_REQUEST_CODE) {
                 question82LastTimeSchoolInspectorVisit.setText(data.getStringExtra(DatePickerActivity.SELECTED_DATE));
             } else if (requestCode == DISTRICT_NAME_REQUESTER_CODE) {
-                districtText.setText(data.getStringExtra(DistrictPickerActivity.DISTRICT_NAME));
+                eDistrictEditText.setText(data.getStringExtra(DistrictPickerActivity.DISTRICT_NAME));
                 districtId = data.getIntExtra(DistrictPickerActivity.DISTRICT_ID, 0);
             } else if (requestCode == SUB_COUNTY_NAME_REQUEST_CODE) {
                 eDivisionEditText.setText(data.getStringExtra(SubCountyPickerActivity.SUB_COUNTY_NAME));
