@@ -65,6 +65,7 @@
         tools:ignore="RtlSymmetry" />
 
     <TextView
+        android:hint="@string/hint_district"
         android:layout_marginBottom="10dp"
         android:layout_marginTop="10dp"
         android:layout_width="wrap_content"
@@ -1180,6 +1181,8 @@
                     android:text="5"/>
 
                 <EditText
+                    android:gravity="start|center_vertical"
+                    android:hint="@string/hint_plant_or_material"
                     android:id="@+id/question42Plant5"
                     android:layout_marginHorizontal="10dp"
                     android:textColor="@color/colorPrimaryText"
@@ -1191,7 +1194,9 @@
                     android:layout_height="40dp"
                     android:layout_column="1" />
 
-                <EditText
+                <TextView
+                    android:gravity="start|center_vertical"
+                    android:hint="@string/hint_date"
                     android:id="@+id/question42Date5"
                     android:layout_marginHorizontal="10dp"
                     android:textColor="@color/colorPrimaryText"
@@ -1204,6 +1209,8 @@
                     android:layout_column="2"/>
 
                 <EditText
+                    android:gravity="start|center_vertical"
+                    android:hint="@string/hint_number_of_males"
                     android:id="@+id/question42Male5"
                     android:textColor="@color/colorPrimaryText"
                     android:layout_width="200dp"
@@ -1216,6 +1223,8 @@
                     android:inputType="number" />
 
                 <EditText
+                    android:gravity="start|center_vertical"
+                    android:hint="@string/hint_number_of_females"
                     android:id="@+id/question42Female5"
                     android:layout_marginHorizontal="10dp"
                     android:textColor="@color/colorPrimaryText"
@@ -1228,6 +1237,8 @@
                     android:inputType="number" />
 
                 <EditText
+                    android:gravity="start|center_vertical"
+                    android:hint="@string/hint_village_name"
                     android:id="@+id/question42Village5"
                     android:textColor="@color/colorPrimaryText"
                     android:layout_width="200dp"
