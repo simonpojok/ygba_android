@@ -111,7 +111,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 new AgricultureNetworkTask(
                         MainActivity.this,
-                        YGBDatabase.getInstance(context.getApplicationContext()).agricultureDao(),
+                        YGBDatabase.getInstance(MainActivity.this.getApplicationContext()).agricultureDao(),
                         YGBARepository.getInstance(YGBDatabase.getInstance(MainActivity.this.getApplicationContext()))
                 ).doAgricultureNetworkTask();
                 Snackbar.make(view, "Done Uploading Agriculture", Snackbar.LENGTH_LONG).show();

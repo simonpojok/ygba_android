@@ -190,12 +190,14 @@ public class YGBARepository {
     public  void getAgricultureQuestionByIdAndDelete(int primaryKey) {
         try {
             final AgricultureQuestion agricultureQuestion = getAgricultureQuestionById(primaryKey);
-            YGBDatabase.db_executor.execute(new Runnable() {
-                @Override
-                public void run() {
-                    ygbDatabase.agricultureDao().deleteAgricultureQuestion(agricultureQuestion);
-                }
-            });
+            if (agricultureQuestion != null) {
+                YGBDatabase.db_executor.execute(new Runnable() {
+                    @Override
+                    public void run() {
+                        ygbDatabase.agricultureDao().deleteAgricultureQuestion(agricultureQuestion);
+                    }
+                });
+            }
         } catch (ExecutionException | InterruptedException e) {
             e.printStackTrace();
         }
