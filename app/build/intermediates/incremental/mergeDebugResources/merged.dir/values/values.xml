@@ -1052,7 +1052,9 @@
     <string name="hint_district">District</string>
     <string name="hint_number_of_females">Number Of Females</string>
     <string name="hint_number_of_males">Number Of Males</string>
+    <string name="hint_number_of_visits">NUmber of visits</string>
     <string name="hint_plant_or_material">Plant or Material</string>
+    <string name="hint_please_type">Please Type</string>
     <string name="hint_village_name">Village Name</string>
     <string name="hiv_counselling_testing">HIV Counselling, Test and Treatment</string>
     <string description="Content description for an icon that appears in the title area of a dialog" name="icon_content_description">Dialog Icon</string>

@@ -2819,7 +2819,9 @@ string hint_date_withdrawn
 string hint_district
 string hint_number_of_females
 string hint_number_of_males
+string hint_number_of_visits
 string hint_plant_or_material
+string hint_please_type
 string hint_village_name
 string hiv_counselling_testing
 string icon_content_description
