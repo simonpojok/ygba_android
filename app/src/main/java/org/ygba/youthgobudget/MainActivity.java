@@ -11,11 +11,14 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.TextClock;
 
+import com.google.android.material.snackbar.Snackbar;
+
 import org.ygba.youthgobudget.agriculture.AgricultureActivity;
 import org.ygba.youthgobudget.allocation.AllocationActivity;
 import org.ygba.youthgobudget.budget_cycle.BudgetCycleActivity;
 import org.ygba.youthgobudget.budget_information.BudgetInformationActivity;
 import org.ygba.youthgobudget.community_wishes.CommunityWishesActivity;
+import org.ygba.youthgobudget.data.YGBDatabase;
 import org.ygba.youthgobudget.data_seeders.Seeder;
 import org.ygba.youthgobudget.education.EducationActivity;
 import org.ygba.youthgobudget.health.HealthActivity;
@@ -23,6 +26,7 @@ import org.ygba.youthgobudget.help.HelpActivity;
 import org.ygba.youthgobudget.local_government.LocalGovernmentActivity;
 import org.ygba.youthgobudget.polls.PollActivity;
 import org.ygba.youthgobudget.social_development.SocialDevelopmentActivity;
+import org.ygba.youthgobudget.utils.networktask.AgricultureNetworkTask;
 import org.ygba.youthgobudget.water_and_environment.WaterEnvironmentActivity;
 
 public class MainActivity extends AppCompatActivity {
@@ -105,7 +109,12 @@ public class MainActivity extends AppCompatActivity {
         findViewById(R.id.upload_data).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(MainActivity.this, BudgetInformationActivity.class));
+                new AgricultureNetworkTask(
+                        MainActivity.this,
+                        YGBDatabase.getInstance(context.getApplicationContext()).agricultureDao(),
+                        YGBARepository.getInstance(YGBDatabase.getInstance(MainActivity.this.getApplicationContext()))
+                ).doAgricultureNetworkTask();
+                Snackbar.make(view, "Done Uploading Agriculture", Snackbar.LENGTH_LONG).show();
             }
         });
 
