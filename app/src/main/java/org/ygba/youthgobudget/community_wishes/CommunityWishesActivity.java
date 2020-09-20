@@ -1,6 +1,7 @@
 package org.ygba.youthgobudget.community_wishes;
 
 import android.os.Bundle;
+import android.widget.ArrayAdapter;
 import android.widget.EditText;
 import android.widget.RadioGroup;
 import android.widget.Spinner;
@@ -39,9 +40,35 @@ public class CommunityWishesActivity extends AppCompatActivity {
     EditText agentTelephoneEditText;
     EditText agentNumberEditText;
 
+    private final String[] quarterList = {"I", "II", "III", "IV", "V", "VI", "VII"};
+    private final String[] financialYearList = {"2021/22", "2020/21", "2019/20"};
+    private String selectedQuarter;
+    private String selectedFinancialYear;
+
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_community_wish);
+        initViews();
+    }
+
+    private void initViews() {
+        quarterSpinner = findViewById(R.id.quarter_spinner);
+        ArrayAdapter<String> aa=new ArrayAdapter<String>(this, android.R.layout.simple_spinner_item, quarterList);
+        aa.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        quarterSpinner.setAdapter(aa);
+
+        financialSpinner = findViewById(R.id.financial_year_spinner);
+        ArrayAdapter<String> fa=new ArrayAdapter<String>(this, android.R.layout.simple_spinner_item, financialYearList);
+        fa.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        financialSpinner.setAdapter(fa);
+
+
+        villageEditText = findViewById(R.id.village_text_edit);
+        parishTextEdit = findViewById(R.id.parish_text_edit);
+        divisionEditText = findViewById(R.id.division_text_edit);
+        agentFullNameEditText = findViewById(R.id.ygb_agent_name_edit_view);
+        agentTelephoneEditText = findViewById(R.id.ygb_agent_tel_edit_view);
+        agentNumberEditText = findViewById(R.id.ygb_agent_no_edit_view);
     }
 }
