@@ -14,6 +14,7 @@ import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
 import org.ygba.youthgobudget.R;
+import org.ygba.youthgobudget.agriculture.AgricultureActivity;
 import org.ygba.youthgobudget.dialogs.DatePickerActivity;
 import org.ygba.youthgobudget.dialogs.DistrictPickerActivity;
 import org.ygba.youthgobudget.dialogs.SubCountyPickerActivity;
@@ -76,6 +77,27 @@ public class CommunityWishesActivity extends AppCompatActivity implements  Adapt
         agentFullNameEditText = findViewById(R.id.ygb_agent_name_edit_view);
         agentTelephoneEditText = findViewById(R.id.ygb_agent_tel_edit_view);
         agentNumberEditText = findViewById(R.id.ygb_agent_no_edit_view);
+
+        // listeners
+        districtText.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(CommunityWishesActivity.this, DistrictPickerActivity.class);
+                startActivityForResult(intent, DISTRICT_NAME_REQUESTER_CODE);
+            }
+        });
+
+        divisionEditText.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                if (districtId == 0) {
+                    divisionEditText.setError("Please Set District Continue");
+                } else {
+                    Intent intent = new Intent(CommunityWishesActivity.this, SubCountyPickerActivity.class);
+                    startActivityForResult(intent, SUB_COUNTY_NAME_REQUEST_CODE);
+                }
+            }
+        });
     }
 
     @Override
