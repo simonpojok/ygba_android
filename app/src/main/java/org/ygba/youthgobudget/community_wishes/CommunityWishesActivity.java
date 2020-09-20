@@ -1,5 +1,6 @@
 package org.ygba.youthgobudget.community_wishes;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.widget.ArrayAdapter;
 import android.widget.EditText;
@@ -11,6 +12,9 @@ import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
 import org.ygba.youthgobudget.R;
+import org.ygba.youthgobudget.dialogs.DatePickerActivity;
+import org.ygba.youthgobudget.dialogs.DistrictPickerActivity;
+import org.ygba.youthgobudget.dialogs.SubCountyPickerActivity;
 
 public class CommunityWishesActivity extends AppCompatActivity {
     private   final int DISTRICT_NAME_REQUESTER_CODE = 1;
@@ -70,5 +74,28 @@ public class CommunityWishesActivity extends AppCompatActivity {
         agentFullNameEditText = findViewById(R.id.ygb_agent_name_edit_view);
         agentTelephoneEditText = findViewById(R.id.ygb_agent_tel_edit_view);
         agentNumberEditText = findViewById(R.id.ygb_agent_no_edit_view);
+    }
+
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
+        if (resultCode == RESULT_OK) {
+            if (data != null) {
+                if (requestCode == DISTRICT_NAME_REQUESTER_CODE) {
+                    districtText.setText(data.getStringExtra(DistrictPickerActivity.DISTRICT_NAME));
+                    districtId = data.getIntExtra(DistrictPickerActivity.DISTRICT_ID, 0);
+                } else if (requestCode == SUB_COUNTY_NAME_REQUEST_CODE) {
+                    divisionEditText.setText(data.getStringExtra(SubCountyPickerActivity.SUB_COUNTY_NAME));
+                }
+            }
+        }
+
+        if (requestCode == DISPLAY_SUCCESS_MESSAGE_ACTIVITY ) {
+            clearForm();
+        }
+    }
+
+    private void clearForm() {
+
     }
 }
