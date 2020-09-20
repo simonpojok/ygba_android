@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:paddingHorizontal="8dp"
-    tools:context=".budget_information.BudgetInformationActivity">
+    tools:context=".agriculture.AgricultureActivity">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -15,700 +14,217 @@
         <TextView
             android:layout_gravity="center_horizontal"
             android:gravity="center_horizontal"
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
-            android:text="@string/community_budget_wish_list"
+            android:text="@string/agriculture_sector_header"
             android:textSize="25sp"
             android:textColor="@color/colorPrimaryText"
             android:textStyle="bold" />
 
-        <HorizontalScrollView
-            android:layout_marginVertical="10dp"
+        <TextView
+            android:gravity="center"
+            android:layout_gravity="center_horizontal"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:padding="10dp"
+            android:text="@string/agriculture_form_description"
+            android:textSize="18sp"
+            android:textColor="@color/colorPrimaryText"
+            android:textStyle="bold" />
 
-            <GridLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:columnCount="5"
-                android:rowCount="8"
-                android:orientation="horizontal">
+        <TextView
+            android:id="@+id/date"
+            android:layout_gravity="end"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="20dp"
+            android:text="23 - October 2020"
+            android:textSize="18sp"
+            android:textColor="@color/colorPrimaryText"
+            android:textStyle="bold" />
 
-                <LinearLayout
-                    android:layout_row="0"
-                    android:layout_column="0"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical">
 
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginVertical="5dp"
-                        android:layout_marginEnd="5dp"
-                        android:text="@string/department_label"
-                        android:textSize="15sp"
-                        android:textColor="@color/colorPrimaryText" />
+        <TextView
+            android:layout_marginBottom="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/financial_year_label"
+            android:textSize="15sp"
+            android:textColor="@color/colorPrimaryText"/>
 
-                    <Spinner
-                        android:layout_marginEnd="5dp"
-                        android:layout_gravity="end"
-                        android:id="@+id/district_sector_spinner"
-                        android:layout_width="200dp"
-                        android:layout_height="40dp"
-                        android:textSize="15sp"
-                        android:background="@drawable/edit_text_style"
-                        tools:ignore="RtlSymmetry" />
+        <Spinner
+            android:id="@+id/financial_year_spinner"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:textSize="15sp"
+            android:background="@drawable/edit_text_style"
+            tools:ignore="RtlSymmetry" />
 
-                </LinearLayout>
+        <TextView
+            android:hint="@string/hint_district"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:labelFor="@id/district_text_edit"
+            android:text="@string/district_label"
+            android:textColor="@color/colorPrimaryText"
+            android:textSize="15sp"/>
 
-                <TextView
-                    android:layout_row="0"
-                    android:layout_column="1"
-                    android:layout_marginVertical="5dp"
-                    android:layout_marginHorizontal="5dp"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/sub_county_label_sub"
-                    android:textSize="15sp"
-                    android:textColor="@color/colorPrimaryText" />
+        <TextView
+            android:hint="@string/hint_district"
+            android:layout_marginBottom="10dp"
+            android:id="@+id/district_text_edit"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/edit_text_style"
+            android:autofillHints=""
+            android:gravity="start|center_vertical"
+            android:padding="5dp"
+            android:textSize="15sp"
+            tools:ignore="LabelFor" />
 
-                <LinearLayout
-                    android:layout_column="2"
-                    android:layout_row="0"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical">
+        <TextView
+            android:layout_marginBottom="10dp"
+            android:labelFor="@id/division_text_edit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/division_label"
+            android:textSize="15sp"
+            android:textColor="@color/colorPrimaryText"/>
 
-                    <TextView
-                        android:layout_marginVertical="5dp"
-                        android:layout_marginHorizontal="5dp"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="@string/financial_year_label"
-                        android:textSize="15sp"
-                        android:textColor="@color/colorPrimaryText" />
 
-                    <Spinner
-                        android:layout_marginHorizontal="5dp"
-                        android:layout_gravity="end"
-                        android:id="@+id/financial_sector_spinner"
-                        android:layout_width="200dp"
-                        android:layout_height="40dp"
-                        android:textSize="15sp"
-                        android:background="@drawable/edit_text_style"
-                        tools:ignore="RtlSymmetry" />
+        <TextView
+            android:layout_marginBottom="10dp"
+            android:id="@+id/division_text_edit"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/edit_text_style"
+            android:autofillHints=""
+            android:gravity="start|center_vertical"
+            android:padding="5dp"
+            android:textSize="15sp"
+            android:hint="@string/division_hint"
+            tools:ignore="LabelFor" />
 
-                </LinearLayout>
-                <LinearLayout
-                    android:layout_column="3"
-                    android:layout_row="0"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical">
+        <TextView
+            android:labelFor="@id/parish_text_edit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/parish_label"
+            android:textSize="15sp"
+            android:textColor="@color/colorPrimaryText"/>
 
-                    <TextView
-                        android:layout_marginVertical="5dp"
-                        android:layout_marginHorizontal="5dp"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="@string/service"
-                        android:textSize="15sp"
-                        android:textColor="@color/colorPrimaryText" />
+        <EditText
+            android:layout_marginBottom="10dp"
+            android:padding="5dp"
+            android:hint="@string/parish_hint"
+            android:id="@+id/parish_text_edit"
+            android:layout_width="match_parent"
+            android:layout_marginVertical="10dp"
+            android:layout_height="40dp"
+            android:background="@drawable/edit_text_style"
+            android:autofillHints=""
+            android:inputType="text"
+            android:textSize="15sp"
+            tools:ignore="LabelFor" />
 
-                    <Spinner
-                        android:layout_marginHorizontal="5dp"
-                        android:layout_gravity="end"
-                        android:id="@+id/sector_sector_spinner"
-                        android:layout_width="200dp"
-                        android:layout_height="40dp"
-                        android:textSize="15sp"
-                        android:background="@drawable/edit_text_style"
-                        tools:ignore="RtlSymmetry" />
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:labelFor="@id/village_text_edit"
+            android:text="@string/village_label"
+            android:textColor="@color/colorPrimaryText"
+            android:textSize="15sp"/>
 
-                </LinearLayout>
-                <LinearLayout
-                    android:layout_column="4"
-                    android:layout_row="0"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical">
+        <EditText
+            android:layout_marginBottom="10dp"
+            android:padding="5dp"
+            android:hint="@string/village_hint"
+            android:id="@+id/village_text_edit"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/edit_text_style"
+            android:autofillHints=""
+            android:textSize="15sp"
+            android:inputType="text"
+            tools:ignore="LabelFor" />
 
-                    <TextView
-                        android:layout_marginVertical="5dp"
-                        android:layout_marginHorizontal="5dp"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="@string/community_needs"
-                        android:textSize="15sp"
-                        android:textColor="@color/colorPrimaryText" />
 
-                    <Spinner
-                        android:layout_marginHorizontal="5dp"
-                        android:layout_gravity="end"
-                        android:id="@+id/community_needs_sector_spinner"
-                        android:layout_width="200dp"
-                        android:layout_height="40dp"
-                        android:textSize="15sp"
-                        android:background="@drawable/edit_text_style"
-                        tools:ignore="RtlSymmetry" />
+        <TextView
+            android:layout_marginBottom="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/quarter_year_label"
+            android:textSize="15sp"
+            android:textColor="@color/colorPrimaryText"/>
 
-                </LinearLayout>
+        <Spinner
+            android:id="@+id/quarter_spinner"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:textSize="15sp"
+            android:background="@drawable/edit_text_style"
+            tools:ignore="RtlSymmetry" />
 
-                <!--                row 1 -->
-                <EditText
-                    android:layout_row="1"
-                    android:layout_column="0"
-                    android:layout_marginVertical="5dp"
-                    android:layout_marginEnd="5dp"
-                    android:layout_marginBottom="10dp"
-                    android:paddingStart="5dp"
-                    android:paddingEnd="5dp"
-                    android:id="@+id/district_1"
-                    android:layout_width="200dp"
-                    android:layout_height="40dp"
-                    android:background="@drawable/edit_text_style"
-                    android:autofillHints=""
-                    android:textSize="15sp"
-                    android:inputType="text"
-                    tools:ignore="LabelFor" />
-                <EditText
-                    android:layout_row="1"
-                    android:layout_column="1"
-                    android:layout_marginVertical="5dp"
-                    android:layout_marginHorizontal="5dp"
-                    android:paddingStart="5dp"
-                    android:paddingEnd="5dp"
-                    android:id="@+id/subcounty_1"
-                    android:layout_width="200dp"
-                    android:layout_height="40dp"
-                    android:background="@drawable/edit_text_style"
-                    android:autofillHints=""
-                    android:textSize="15sp"
-                    android:inputType="text"
-                    tools:ignore="LabelFor" />
-                <EditText
-                    android:layout_row="1"
-                    android:layout_column="2"
-                    android:layout_marginVertical="5dp"
-                    android:layout_marginHorizontal="5dp"
-                    android:paddingStart="5dp"
-                    android:paddingEnd="5dp"
-                    android:id="@+id/financial_year_1"
-                    android:layout_width="200dp"
-                    android:layout_height="40dp"
-                    android:background="@drawable/edit_text_style"
-                    android:autofillHints=""
-                    android:textSize="15sp"
-                    android:inputType="text"
-                    tools:ignore="LabelFor" />
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:text="@string/ygb_agent_name_label"
+            android:textSize="15sp"
+            android:textColor="@color/colorPrimaryText"
+            android:layout_height="wrap_content" />
 
-                <EditText
-                    android:layout_row="1"
-                    android:layout_column="3"
-                    android:layout_marginVertical="5dp"
-                    android:layout_marginHorizontal="5dp"
-                    android:paddingStart="5dp"
-                    android:paddingEnd="5dp"
-                    android:id="@+id/service_1"
-                    android:layout_width="200dp"
-                    android:layout_height="40dp"
-                    android:background="@drawable/edit_text_style"
-                    android:autofillHints=""
-                    android:textSize="15sp"
-                    android:inputType="text"
-                    tools:ignore="LabelFor" />
+        <EditText
+            android:hint="@string/fullname_hint"
+            android:inputType="text"
+            android:textSize="15sp"
+            android:id="@+id/ygb_agent_name_edit_view"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/edit_text_style"
+            android:padding="5dp"
+            android:autofillHints="" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/ygb_agent_tel_label"
+            android:textSize="15sp"
+            android:textColor="@color/colorPrimaryText"/>
 
-                <EditText
-                    android:layout_row="1"
-                    android:layout_column="4"
-                    android:layout_marginVertical="5dp"
-                    android:layout_marginHorizontal="5dp"
-                    android:paddingStart="5dp"
-                    android:paddingEnd="5dp"
-                    android:id="@+id/community_need_1"
-                    android:layout_width="200dp"
-                    android:layout_height="40dp"
-                    android:background="@drawable/edit_text_style"
-                    android:autofillHints=""
-                    android:textSize="15sp"
-                    android:inputType="text"
-                    tools:ignore="LabelFor" />
+        <EditText
+            android:layout_marginVertical="10dp"
+            android:inputType="phone"
+            android:hint="@string/telephone_hint"
+            android:id="@+id/ygb_agent_tel_edit_view"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:textSize="15sp"
+            android:background="@drawable/edit_text_style"
+            android:padding="5dp"/>
 
-                <!--                row 2 -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/ygb_agent_no_label"
+            android:textSize="15sp"
+            android:textColor="@color/colorPrimaryText"/>
 
-                <EditText
-                    android:layout_row="2"
-                    android:layout_column="0"
-                    android:layout_marginVertical="5dp"
-                    android:layout_marginEnd="5dp"
-                    android:layout_marginBottom="10dp"
-                    android:paddingStart="5dp"
-                    android:paddingEnd="5dp"
-                    android:id="@+id/district_2"
-                    android:layout_width="200dp"
-                    android:layout_height="40dp"
-                    android:background="@drawable/edit_text_style"
-                    android:autofillHints=""
-                    android:textSize="15sp"
-                    android:inputType="text"
-                    tools:ignore="LabelFor" />
-                <EditText
-                    android:layout_row="2"
-                    android:layout_column="1"
-                    android:layout_marginVertical="5dp"
-                    android:layout_marginHorizontal="5dp"
-                    android:paddingStart="5dp"
-                    android:paddingEnd="5dp"
-                    android:id="@+id/subcounty_2"
-                    android:layout_width="200dp"
-                    android:layout_height="40dp"
-                    android:background="@drawable/edit_text_style"
-                    android:autofillHints=""
-                    android:textSize="15sp"
-                    android:inputType="text"
-                    tools:ignore="LabelFor" />
-                <EditText
-                    android:layout_row="2"
-                    android:layout_column="2"
-                    android:layout_marginVertical="5dp"
-                    android:layout_marginHorizontal="5dp"
-                    android:paddingStart="5dp"
-                    android:paddingEnd="5dp"
-                    android:id="@+id/financial_year_2"
-                    android:layout_width="200dp"
-                    android:layout_height="40dp"
-                    android:background="@drawable/edit_text_style"
-                    android:autofillHints=""
-                    android:textSize="15sp"
-                    android:inputType="text"
-                    tools:ignore="LabelFor" />
-                <EditText
-                    android:layout_row="2"
-                    android:layout_column="3"
-                    android:layout_marginVertical="5dp"
-                    android:layout_marginHorizontal="5dp"
-                    android:paddingStart="5dp"
-                    android:paddingEnd="5dp"
-                    android:id="@+id/service_2"
-                    android:layout_width="200dp"
-                    android:layout_height="40dp"
-                    android:background="@drawable/edit_text_style"
-                    android:autofillHints=""
-                    android:textSize="15sp"
-                    android:inputType="text"
-                    tools:ignore="LabelFor" />
-                <EditText
-                    android:layout_row="2"
-                    android:layout_column="4"
-                    android:layout_marginVertical="5dp"
-                    android:layout_marginHorizontal="5dp"
-                    android:paddingStart="5dp"
-                    android:paddingEnd="5dp"
-                    android:id="@+id/community_need_2"
-                    android:layout_width="200dp"
-                    android:layout_height="40dp"
-                    android:background="@drawable/edit_text_style"
-                    android:autofillHints=""
-                    android:textSize="15sp"
-                    android:inputType="text"
-                    tools:ignore="LabelFor" />
+        <EditText
+            android:layout_marginVertical="10dp"
+            android:hint="@string/agent_number_hint"
+            android:id="@+id/ygb_agent_no_edit_view"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/edit_text_style"
+            android:padding="5dp"
+            android:textSize="15sp"/>
 
-                <!--                row 3 -->
-
-                <EditText
-                    android:layout_row="3"
-                    android:layout_column="0"
-                    android:layout_marginVertical="5dp"
-                    android:layout_marginEnd="5dp"
-                    android:layout_marginBottom="10dp"
-                    android:paddingStart="5dp"
-                    android:paddingEnd="5dp"
-                    android:id="@+id/district_3"
-                    android:layout_width="200dp"
-                    android:layout_height="40dp"
-                    android:background="@drawable/edit_text_style"
-                    android:autofillHints=""
-                    android:textSize="15sp"
-                    android:inputType="text"
-                    tools:ignore="LabelFor" />
-                <EditText
-                    android:layout_row="3"
-                    android:layout_column="1"
-                    android:layout_marginVertical="5dp"
-                    android:layout_marginHorizontal="5dp"
-                    android:paddingStart="5dp"
-                    android:paddingEnd="5dp"
-                    android:id="@+id/subcounty_3"
-                    android:layout_width="200dp"
-                    android:layout_height="40dp"
-                    android:background="@drawable/edit_text_style"
-                    android:autofillHints=""
-                    android:textSize="15sp"
-                    android:inputType="text"
-                    tools:ignore="LabelFor" />
-                <EditText
-                    android:layout_row="3"
-                    android:layout_column="2"
-                    android:layout_marginVertical="5dp"
-                    android:layout_marginHorizontal="5dp"
-                    android:paddingStart="5dp"
-                    android:paddingEnd="5dp"
-                    android:id="@+id/financial_year_3"
-                    android:layout_width="200dp"
-                    android:layout_height="40dp"
-                    android:background="@drawable/edit_text_style"
-                    android:autofillHints=""
-                    android:textSize="15sp"
-                    android:inputType="text"
-                    tools:ignore="LabelFor" />
-                <EditText
-                    android:layout_row="3"
-                    android:layout_column="3"
-                    android:layout_marginVertical="5dp"
-                    android:layout_marginHorizontal="5dp"
-                    android:paddingStart="5dp"
-                    android:paddingEnd="5dp"
-                    android:id="@+id/service_3"
-                    android:layout_width="200dp"
-                    android:layout_height="40dp"
-                    android:background="@drawable/edit_text_style"
-                    android:autofillHints=""
-                    android:textSize="15sp"
-                    android:inputType="text"
-                    tools:ignore="LabelFor" />
-                <EditText
-                    android:layout_row="3"
-                    android:layout_column="4"
-                    android:layout_marginVertical="5dp"
-                    android:layout_marginHorizontal="5dp"
-                    android:paddingStart="5dp"
-                    android:paddingEnd="5dp"
-                    android:id="@+id/community_need_3"
-                    android:layout_width="200dp"
-                    android:layout_height="40dp"
-                    android:background="@drawable/edit_text_style"
-                    android:autofillHints=""
-                    android:textSize="15sp"
-                    android:inputType="text"
-                    tools:ignore="LabelFor" />
-
-                <!--                row 4 -->
-
-                <EditText
-                    android:layout_row="4"
-                    android:layout_column="0"
-                    android:layout_marginVertical="5dp"
-                    android:layout_marginEnd="5dp"
-                    android:layout_marginBottom="10dp"
-                    android:paddingStart="5dp"
-                    android:paddingEnd="5dp"
-                    android:id="@+id/district_4"
-                    android:layout_width="200dp"
-                    android:layout_height="40dp"
-                    android:background="@drawable/edit_text_style"
-                    android:autofillHints=""
-                    android:textSize="15sp"
-                    android:inputType="text"
-                    tools:ignore="LabelFor" />
-                <EditText
-                    android:layout_row="4"
-                    android:layout_column="1"
-                    android:layout_marginVertical="5dp"
-                    android:layout_marginHorizontal="5dp"
-                    android:paddingStart="5dp"
-                    android:paddingEnd="5dp"
-                    android:id="@+id/subcounty_4"
-                    android:layout_width="200dp"
-                    android:layout_height="40dp"
-                    android:background="@drawable/edit_text_style"
-                    android:autofillHints=""
-                    android:textSize="15sp"
-                    android:inputType="text"
-                    tools:ignore="LabelFor" />
-                <EditText
-                    android:layout_row="4"
-                    android:layout_column="2"
-                    android:layout_marginVertical="5dp"
-                    android:layout_marginHorizontal="5dp"
-                    android:paddingStart="5dp"
-                    android:paddingEnd="5dp"
-                    android:id="@+id/financial_year_4"
-                    android:layout_width="200dp"
-                    android:layout_height="40dp"
-                    android:background="@drawable/edit_text_style"
-                    android:autofillHints=""
-                    android:textSize="15sp"
-                    android:inputType="text"
-                    tools:ignore="LabelFor" />
-                <EditText
-                    android:layout_row="4"
-                    android:layout_column="3"
-                    android:layout_marginVertical="5dp"
-                    android:layout_marginHorizontal="5dp"
-                    android:paddingStart="5dp"
-                    android:paddingEnd="5dp"
-                    android:id="@+id/service_4"
-                    android:layout_width="200dp"
-                    android:layout_height="40dp"
-                    android:background="@drawable/edit_text_style"
-                    android:autofillHints=""
-                    android:textSize="15sp"
-                    android:inputType="text"
-                    tools:ignore="LabelFor" />
-                <EditText
-                    android:layout_row="4"
-                    android:layout_column="4"
-                    android:layout_marginVertical="5dp"
-                    android:layout_marginHorizontal="5dp"
-                    android:paddingStart="5dp"
-                    android:paddingEnd="5dp"
-                    android:id="@+id/community_need_4"
-                    android:layout_width="200dp"
-                    android:layout_height="40dp"
-                    android:background="@drawable/edit_text_style"
-                    android:autofillHints=""
-                    android:textSize="15sp"
-                    android:inputType="text"
-                    tools:ignore="LabelFor" />
-
-                <!--                row 5 -->
-
-                <EditText
-                    android:layout_row="5"
-                    android:layout_column="0"
-                    android:layout_marginVertical="5dp"
-                    android:layout_marginEnd="5dp"
-                    android:layout_marginBottom="10dp"
-                    android:paddingStart="5dp"
-                    android:paddingEnd="5dp"
-                    android:id="@+id/district_5"
-                    android:layout_width="200dp"
-                    android:layout_height="40dp"
-                    android:background="@drawable/edit_text_style"
-                    android:autofillHints=""
-                    android:textSize="15sp"
-                    android:inputType="text"
-                    tools:ignore="LabelFor" />
-                <EditText
-                    android:layout_row="5"
-                    android:layout_column="1"
-                    android:layout_marginVertical="5dp"
-                    android:layout_marginHorizontal="5dp"
-                    android:paddingStart="5dp"
-                    android:paddingEnd="5dp"
-                    android:id="@+id/subcounty_5"
-                    android:layout_width="200dp"
-                    android:layout_height="40dp"
-                    android:background="@drawable/edit_text_style"
-                    android:autofillHints=""
-                    android:textSize="15sp"
-                    android:inputType="text"
-                    tools:ignore="LabelFor" />
-                <EditText
-                    android:layout_row="5"
-                    android:layout_column="2"
-                    android:layout_marginVertical="5dp"
-                    android:layout_marginHorizontal="5dp"
-                    android:paddingStart="5dp"
-                    android:paddingEnd="5dp"
-                    android:id="@+id/financial_year_5"
-                    android:layout_width="200dp"
-                    android:layout_height="40dp"
-                    android:background="@drawable/edit_text_style"
-                    android:autofillHints=""
-                    android:textSize="15sp"
-                    android:inputType="text"
-                    tools:ignore="LabelFor" />
-                <EditText
-                    android:layout_row="5"
-                    android:layout_column="3"
-                    android:layout_marginVertical="5dp"
-                    android:layout_marginHorizontal="5dp"
-                    android:paddingStart="5dp"
-                    android:paddingEnd="5dp"
-                    android:id="@+id/service_5"
-                    android:layout_width="200dp"
-                    android:layout_height="40dp"
-                    android:background="@drawable/edit_text_style"
-                    android:autofillHints=""
-                    android:textSize="15sp"
-                    android:inputType="text"
-                    tools:ignore="LabelFor" />
-                <EditText
-                    android:layout_row="5"
-                    android:layout_column="4"
-                    android:layout_marginVertical="5dp"
-                    android:layout_marginHorizontal="5dp"
-                    android:paddingStart="5dp"
-                    android:paddingEnd="5dp"
-                    android:id="@+id/community_need_5"
-                    android:layout_width="200dp"
-                    android:layout_height="40dp"
-                    android:background="@drawable/edit_text_style"
-                    android:autofillHints=""
-                    android:textSize="15sp"
-                    android:inputType="text"
-                    tools:ignore="LabelFor" />
-                <!-- row 6 -->
-                <EditText
-                    android:layout_row="6"
-                    android:layout_column="0"
-                    android:layout_marginVertical="5dp"
-                    android:layout_marginEnd="5dp"
-                    android:layout_marginBottom="10dp"
-                    android:paddingStart="5dp"
-                    android:paddingEnd="5dp"
-                    android:id="@+id/district_6"
-                    android:layout_width="200dp"
-                    android:layout_height="40dp"
-                    android:background="@drawable/edit_text_style"
-                    android:autofillHints=""
-                    android:textSize="15sp"
-                    android:inputType="text"
-                    tools:ignore="LabelFor" />
-                <EditText
-                    android:layout_row="6"
-                    android:layout_column="1"
-                    android:layout_marginVertical="5dp"
-                    android:layout_marginHorizontal="5dp"
-                    android:paddingStart="5dp"
-                    android:paddingEnd="5dp"
-                    android:id="@+id/subcounty_6"
-                    android:layout_width="200dp"
-                    android:layout_height="40dp"
-                    android:background="@drawable/edit_text_style"
-                    android:autofillHints=""
-                    android:textSize="15sp"
-                    android:inputType="text"
-                    tools:ignore="LabelFor" />
-                <EditText
-                    android:layout_row="6"
-                    android:layout_column="2"
-                    android:layout_marginVertical="5dp"
-                    android:layout_marginHorizontal="5dp"
-                    android:paddingStart="5dp"
-                    android:paddingEnd="5dp"
-                    android:id="@+id/financial_year_6"
-                    android:layout_width="200dp"
-                    android:layout_height="40dp"
-                    android:background="@drawable/edit_text_style"
-                    android:autofillHints=""
-                    android:textSize="15sp"
-                    android:inputType="text"
-                    tools:ignore="LabelFor" />
-                <EditText
-                    android:layout_row="6"
-                    android:layout_column="3"
-                    android:layout_marginVertical="5dp"
-                    android:layout_marginHorizontal="5dp"
-                    android:paddingStart="5dp"
-                    android:paddingEnd="5dp"
-                    android:id="@+id/service_6"
-                    android:layout_width="200dp"
-                    android:layout_height="40dp"
-                    android:background="@drawable/edit_text_style"
-                    android:autofillHints=""
-                    android:textSize="15sp"
-                    android:inputType="text"
-                    tools:ignore="LabelFor" />
-                <EditText
-                    android:layout_row="6"
-                    android:layout_column="4"
-                    android:layout_marginVertical="5dp"
-                    android:layout_marginHorizontal="5dp"
-                    android:paddingStart="5dp"
-                    android:paddingEnd="5dp"
-                    android:id="@+id/community_need_6"
-                    android:layout_width="200dp"
-                    android:layout_height="40dp"
-                    android:background="@drawable/edit_text_style"
-                    android:autofillHints=""
-                    android:textSize="15sp"
-                    android:inputType="text"
-                    tools:ignore="LabelFor" />
-
-                <!--                row 7 -->
-
-                <EditText
-                    android:layout_row="7"
-                    android:layout_column="0"
-                    android:layout_marginVertical="5dp"
-                    android:layout_marginEnd="5dp"
-                    android:layout_marginBottom="10dp"
-                    android:paddingStart="5dp"
-                    android:paddingEnd="5dp"
-                    android:id="@+id/district_7"
-                    android:layout_width="200dp"
-                    android:layout_height="40dp"
-                    android:background="@drawable/edit_text_style"
-                    android:autofillHints=""
-                    android:textSize="15sp"
-                    android:inputType="text"
-                    tools:ignore="LabelFor" />
-                <EditText
-                    android:layout_row="7"
-                    android:layout_column="1"
-                    android:layout_marginVertical="5dp"
-                    android:layout_marginHorizontal="5dp"
-                    android:paddingStart="5dp"
-                    android:paddingEnd="5dp"
-                    android:id="@+id/subcounty_7"
-                    android:layout_width="200dp"
-                    android:layout_height="40dp"
-                    android:background="@drawable/edit_text_style"
-                    android:autofillHints=""
-                    android:textSize="15sp"
-                    android:inputType="text"
-                    tools:ignore="LabelFor" />
-                <EditText
-                    android:layout_row="7"
-                    android:layout_column="2"
-                    android:layout_marginVertical="5dp"
-                    android:layout_marginHorizontal="5dp"
-                    android:paddingStart="5dp"
-                    android:paddingEnd="5dp"
-                    android:id="@+id/financial_year_7"
-                    android:layout_width="200dp"
-                    android:layout_height="40dp"
-                    android:background="@drawable/edit_text_style"
-                    android:autofillHints=""
-                    android:textSize="15sp"
-                    android:inputType="text"
-                    tools:ignore="LabelFor" />
-                <EditText
-                    android:layout_row="7"
-                    android:layout_column="3"
-                    android:layout_marginVertical="5dp"
-                    android:layout_marginHorizontal="5dp"
-                    android:paddingStart="5dp"
-                    android:paddingEnd="5dp"
-                    android:id="@+id/service_7"
-                    android:layout_width="200dp"
-                    android:layout_height="40dp"
-                    android:background="@drawable/edit_text_style"
-                    android:autofillHints=""
-                    android:textSize="15sp"
-                    android:inputType="text"
-                    tools:ignore="LabelFor" />
-                <EditText
-                    android:layout_row="7"
-                    android:layout_column="4"
-                    android:layout_marginVertical="5dp"
-                    android:layout_marginHorizontal="5dp"
-                    android:paddingStart="5dp"
-                    android:paddingEnd="5dp"
-                    android:id="@+id/community_need_7"
-                    android:layout_width="200dp"
-                    android:layout_height="40dp"
-                    android:background="@drawable/edit_text_style"
-                    android:autofillHints=""
-                    android:textSize="15sp"
-                    android:inputType="text"
-                    tools:ignore="LabelFor" />
-            </GridLayout>
-        </HorizontalScrollView>
 
         <androidx.cardview.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
             android:layout_width="match_parent"
@@ -728,13 +244,14 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:layout_marginTop="0dp"
-                android:text="Save"
+                android:text="@string/save_and_submit_label"
                 android:textStyle="bold"
                 android:textSize="20sp"
                 android:fontFamily="sans-serif-condensed"
-                android:textColor="#000"/>
+                android:textColor="@color/colorPrimaryTextWhite"/>
 
         </androidx.cardview.widget.CardView>
+
     </LinearLayout>
 
 </ScrollView>
