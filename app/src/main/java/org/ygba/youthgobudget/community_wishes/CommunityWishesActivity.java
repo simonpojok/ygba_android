@@ -2,6 +2,8 @@ package org.ygba.youthgobudget.community_wishes;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.EditText;
 import android.widget.RadioGroup;
@@ -16,7 +18,7 @@ import org.ygba.youthgobudget.dialogs.DatePickerActivity;
 import org.ygba.youthgobudget.dialogs.DistrictPickerActivity;
 import org.ygba.youthgobudget.dialogs.SubCountyPickerActivity;
 
-public class CommunityWishesActivity extends AppCompatActivity {
+public class CommunityWishesActivity extends AppCompatActivity implements  AdapterView.OnItemSelectedListener {
     private   final int DISTRICT_NAME_REQUESTER_CODE = 1;
     private   final int SUB_COUNTY_NAME_REQUEST_CODE = 2;
     private  final int QUESTION_2_DATE_RECEIVED_1_REQUEST_CODE = 3;
@@ -77,6 +79,19 @@ public class CommunityWishesActivity extends AppCompatActivity {
     }
 
     @Override
+    public void onItemSelected(AdapterView<?> adapterView, View view, int position, long id) {
+        if (view.getId() == R.id.financial_year_spinner) {
+            selectedFinancialYear = financialYearList[position];
+        } else if (view.getId() == R.id.quarter_spinner) {
+            selectedQuarter = quarterList[position];
+        }
+    }
+
+    @Override
+    public void onNothingSelected(AdapterView<?> adapterView) {
+    }
+
+    @Override
     protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
         if (resultCode == RESULT_OK) {
@@ -96,6 +111,13 @@ public class CommunityWishesActivity extends AppCompatActivity {
     }
 
     private void clearForm() {
-
+        selectedQuarter = "";
+        selectedQuarter = "";
+        villageEditText.setText("");
+        parishTextEdit.setText("");
+        parishTextEdit.setText("");
+        agentFullNameEditText.setText("");
+        agentTelephoneEditText.setText("");
+        agentNumberEditText.setText("");
     }
 }
